@@ -1,0 +1,2709 @@
+{
+  "files": [
+    {
+      "path": "admet_v38_run.py",
+      "sha256": "dc9ab25d0a7985b119552987721689036da02df86e12702e69cfc53de47d60a8",
+      "bytes": 7896
+    },
+    {
+      "path": "admet_v46_collect_remote.py",
+      "sha256": "86244f6fa7aa8b4f62d353a9e46970c0abb7278ee148a4663cf300f191670a83",
+      "bytes": 414
+    },
+    {
+      "path": "admet_v62_start_parallel.py",
+      "sha256": "29c8ac06ad511974a1f60dcb43dcc35f347dab03f239384c081933d4532c270e",
+      "bytes": 472
+    },
+    {
+      "path": "admet_v58_train.py",
+      "sha256": "bd853164253a2599ec7f3675cad5fb80b864e12923b9749f98166ea5d6d0d238",
+      "bytes": 9751
+    },
+    {
+      "path": "admet_v33_diagnostics.py",
+      "sha256": "4e8c0e4809a82ca6c6adc095499af7092bff77e8838571360ba64fab6f44b24f",
+      "bytes": 3011
+    },
+    {
+      "path": "admet_v61_run.py",
+      "sha256": "099d365b3821e9de960654996f3f6b323856652d0dc81aae6171381204d5c79e",
+      "bytes": 17373
+    },
+    {
+      "path": "admet_v44_collect.py",
+      "sha256": "d3966882cb032e6c67dc75900d175d917fa946de8998f9bb60ad128ebb6996d5",
+      "bytes": 498
+    },
+    {
+      "path": "admet_v37_launch.py",
+      "sha256": "5907302eaf5fa7669c1b11b070267b68cee0c0b8dbf09d0087128078f4bc6c22",
+      "bytes": 700
+    },
+    {
+      "path": "admet_v36_protocol.json",
+      "sha256": "08e68a90ce8fb089ed77943d3322bf8c87a31dc6d106526ed02dc71fc0f1d268",
+      "bytes": 1100
+    },
+    {
+      "path": "admet_v39_collect.py",
+      "sha256": "8e95a9cb4c9202f630de950e71c3ad4f9f00afec59f112ecc831f0af8c9f40da",
+      "bytes": 723
+    },
+    {
+      "path": "admet_v28_run.py",
+      "sha256": "c087d3f778d831d1ead7bfb4f3255ee632e2481d6d2c85e68ea4e0d5663066d1",
+      "bytes": 7912
+    },
+    {
+      "path": "admet_v61_verify.py",
+      "sha256": "bcffe50334ddc0532493c34f6b50bf2c9deffd26749400a354189f123503439c",
+      "bytes": 2052
+    },
+    {
+      "path": "admet_v40_run.py",
+      "sha256": "0968881bc7391b40b19cf400bdf528d023212009410bb656cd07c84a1e28a265",
+      "bytes": 17277
+    },
+    {
+      "path": "admet_v37_remote_verify.py",
+      "sha256": "a1bcc2de89cc3b11ddfb81e2c11f8964f4bcf523ac616a16100dc5c1329b852e",
+      "bytes": 3440
+    },
+    {
+      "path": "admet_v8_models.py",
+      "sha256": "b19892414dcf34f099be4748990799be2a2260a94708b605b75eb9577b53ab50",
+      "bytes": 13689
+    },
+    {
+      "path": "admet_v26_protocol.json",
+      "sha256": "dc5524ac6737036c1864f2da85e858d80dc89a71d51baacd4b777202f8c4b5f7",
+      "bytes": 1089
+    },
+    {
+      "path": "admet_v63_run.py",
+      "sha256": "b0dd92e5975b39ce8f9efbd176d1eda8c72862d28932087e0d12a1411c2eb152",
+      "bytes": 12195
+    },
+    {
+      "path": "admet_v34_launch.py",
+      "sha256": "7c11a7c351530a5f793b97a41f9d1e500c99e2b647ceacc9c7c6aaff3524b6fa",
+      "bytes": 567
+    },
+    {
+      "path": "admet_v25_local_verify.py",
+      "sha256": "86c13e01911f19ed20796b682f3e6ef07054bacb4088be792874f1a9b4e0ef82",
+      "bytes": 3891
+    },
+    {
+      "path": "admet_v29_protocol.json",
+      "sha256": "f296286e4555d0f1dab53729ed3ec9beac2ccc5df117bfd3ec93548f6c21f3e8",
+      "bytes": 1397
+    },
+    {
+      "path": "admet_v65_verify.py",
+      "sha256": "0b68f22e2511edc667305f81b2212e4623f047227001f3f3484b35ff463f2568",
+      "bytes": 2135
+    },
+    {
+      "path": "admet_v65_shortlist_fresh.py",
+      "sha256": "a221b364b40e9ea35d018c74a7a65fc1ab90f458e0ead85dd73d0bd0263d7186",
+      "bytes": 2013
+    },
+    {
+      "path": "admet_v60_baseline.py",
+      "sha256": "d59e18d5980e9427250c993c3691d461f715b78f0c331288fa2fa9a1d71a7d75",
+      "bytes": 4981
+    },
+    {
+      "path": "admet_v31_protocol.json",
+      "sha256": "7fb73b4a0ee631e8b8913552e355e8630103bd0164eb45c3658458bff305d087",
+      "bytes": 1992
+    },
+    {
+      "path": "admet_v38_schedule.py",
+      "sha256": "2fa79d63bd904b289723bffe16ac196a9b511a585717995711d59444c53aafef",
+      "bytes": 523
+    },
+    {
+      "path": "admet_v36_finish.py",
+      "sha256": "123d6b0721c62e2f86f0c275324a2aa9f582a7283540d9ccfc8c6ceb14752225",
+      "bytes": 971
+    },
+    {
+      "path": "admet_v45c_search.py",
+      "sha256": "b839a5fa67ce27395993db9c09347f9e4ec03d0c4d57c450e2e3698aab9116b5",
+      "bytes": 6137
+    },
+    {
+      "path": "admet_v36_run.py",
+      "sha256": "c2f8c0c0fd0c3bf6c31cfae4c455e20e138da74fe8d796162b4a5608f5d52dbc",
+      "bytes": 6782
+    },
+    {
+      "path": "admet_v42_finish.py",
+      "sha256": "1eded1d2ec6ece4bda4d8cda4090ffeb8bb582be827842cf19cb86d95f7deca5",
+      "bytes": 994
+    },
+    {
+      "path": "admet_v24_models.py",
+      "sha256": "8294acbc185b2616dc81f42693387c36bf57920f749102c62752e03ff9a09267",
+      "bytes": 17591
+    },
+    {
+      "path": "admet_v46_delivery.py",
+      "sha256": "8b0df51561a8d7259eb8cb2a41b2200988da28c37ccc22d01746db33721c2bf8",
+      "bytes": 6522
+    },
+    {
+      "path": "admet_v43_protocol.json",
+      "sha256": "31aeba14e0d2e31492ac5fae9c6cf8b56fae47b3ad38cdb47518f71cfbd94cdb",
+      "bytes": 1949
+    },
+    {
+      "path": "admet_v52_neural.py",
+      "sha256": "d01aaa41c0250c5c0b3de46f2c337b47ce18572d3b94d5b083ff8c42ca25eb59",
+      "bytes": 7195
+    },
+    {
+      "path": "admet_v40_finish.py",
+      "sha256": "99bb1fb67caa1bc371a482a5cec2c075f47f54e2e17445809fdaf4ee7ea829b2",
+      "bytes": 930
+    },
+    {
+      "path": "admet_v46_local_verify.py",
+      "sha256": "508ec664ae944dd085b02b1d27ea0f2ec10ab3d8f05f025736af991da71352df",
+      "bytes": 3101
+    },
+    {
+      "path": "admet_v31_launch.py",
+      "sha256": "0446e717e6903ef08b258289cc6ffef1d8d778f7bd749415c7b4556a4149532b",
+      "bytes": 679
+    },
+    {
+      "path": "admet_v30_run.py",
+      "sha256": "947c9a222e4363868feee1c6401e8e4bf776398a8112637c52d1f274619874a5",
+      "bytes": 8514
+    },
+    {
+      "path": "admet_v34_protocol.json",
+      "sha256": "143ada9c0111d6306d1f3f6aff5382a4296dfa8ae4a32810fdcf7861815837ea",
+      "bytes": 905
+    },
+    {
+      "path": "admet_v41_run.py",
+      "sha256": "449e29575b9653fff066c614af4002834b6a6e9970559eb8da27c16072459fcd",
+      "bytes": 8273
+    },
+    {
+      "path": "admet_v38_wait_launch.py",
+      "sha256": "1ec2e10ecde2c70258ad3ffb2006ff1ac08c904afdf6383d5975718d07be75b3",
+      "bytes": 519
+    },
+    {
+      "path": "admet_v43_audit.py",
+      "sha256": "fb84dcd2e8ce52fc4ce8269d909e09f94cab246b816402aecf21b3b5cbd8eb69",
+      "bytes": 4110
+    },
+    {
+      "path": "admet_v55_nested_calibration.py",
+      "sha256": "cfa90f1d343eb2621c2189c3413442c90accdfedadf8e6b0f018c00de8c90ef0",
+      "bytes": 3055
+    },
+    {
+      "path": "admet_v33_start_finish.py",
+      "sha256": "584422d7cfaa63ec53201745671fd4a3eaf717bb5058e961a66a77982b4a357a",
+      "bytes": 440
+    },
+    {
+      "path": "admet_v51_run.py",
+      "sha256": "2584edb47a6aab4d08848d3387693637617582143f990bb075b5efe003a5254e",
+      "bytes": 15068
+    },
+    {
+      "path": "admet_v64_launch.py",
+      "sha256": "2a5c7a5e147b48435cddffbd684458b4d7c95b98f56dabaedd9c599d60d8ec60",
+      "bytes": 743
+    },
+    {
+      "path": "admet_v20_residual.py",
+      "sha256": "6118a530b02ae29618244732c838903104b92447109a4dbe74d3af5f2e45b5a2",
+      "bytes": 12206
+    },
+    {
+      "path": "admet_v46_remote_verify.py",
+      "sha256": "a896b52cbe58676cc7bea60e698f837001ff4cf4157a03bcb1e676cc12611f2c",
+      "bytes": 4144
+    },
+    {
+      "path": "admet_v46_launch.py",
+      "sha256": "aff236d535111751588070002eb2a514ebc2da8c064d12029aff5f587dfc16c4",
+      "bytes": 630
+    },
+    {
+      "path": "admet_v62_parallel.py",
+      "sha256": "430670ba5981377174261fccea7b5b77a6c53dfc782fc156b296642a1bef3f55",
+      "bytes": 1933
+    },
+    {
+      "path": "admet_v42_launch.py",
+      "sha256": "c9bcdb24d5dbc16da840aa8fd67e4510241807d9ac81e417a9b5d8ddf1ed37ff",
+      "bytes": 501
+    },
+    {
+      "path": "admet_v54_graph_protocol.json",
+      "sha256": "d6698803b5af71f313ba8310cf81730c1b48403cd517113c586bca9000bf2fb8",
+      "bytes": 738
+    },
+    {
+      "path": "admet_v56_launch.py",
+      "sha256": "5213d2a03dfd2f684be0e387895dcad4887239f1edea697ac2864ee7f46bd6f0",
+      "bytes": 919
+    },
+    {
+      "path": "admet_v49_fusion.py",
+      "sha256": "3330c32d1eae6df71b382ffdad216c0e966b5cee40afb516f3ba478bb6f2d09a",
+      "bytes": 13270
+    },
+    {
+      "path": "admet_v50_meta.py",
+      "sha256": "beddf2354859731bd261965082f99a7a315de3faaa30f3617207f0e6a39cce6d",
+      "bytes": 6261
+    },
+    {
+      "path": "admet_v43_remote_verify.py",
+      "sha256": "47b06a82e518cc0106c359f631bb0854c260772cd1bb8c434f0d8f62a72fc12a",
+      "bytes": 5118
+    },
+    {
+      "path": "admet_v29_coordinate.py",
+      "sha256": "d28d79551e89ddd2ec6967e49c9761d0998fd9154440b1d88d467b30f157b846",
+      "bytes": 1048
+    },
+    {
+      "path": "admet_v64_status.py",
+      "sha256": "28725945c45e24fe2cdd5433ce19886ff97a42073fc75663e85ff21f18684c56",
+      "bytes": 1280
+    },
+    {
+      "path": "admet_v32_collect.py",
+      "sha256": "69898485be75728bb96862a8d9c8123abf044e582f464affd14475168384ebaf",
+      "bytes": 916
+    },
+    {
+      "path": "admet_v43_launch.py",
+      "sha256": "0a8589afadc4630139e80b19a23a367dbbbb5e4ada31db9bc02a744896ffe600",
+      "bytes": 735
+    },
+    {
+      "path": "admet_v27_launch.py",
+      "sha256": "033fe5a1f83582db4333e88bb0119309cefa49df8801dea180ae78b6a98a0497",
+      "bytes": 835
+    },
+    {
+      "path": "admet_v16_models.py",
+      "sha256": "fac16b83fac36c74dfd266fa2d2787d21ab20e05f05773ff8003eec1a1418dda",
+      "bytes": 8564
+    },
+    {
+      "path": "admet_v37_resume.py",
+      "sha256": "94b463de2d802a7c8f34804f3b5c87853b0183832f75a4970b8440cd8d10ad62",
+      "bytes": 1123
+    },
+    {
+      "path": "admet_v33_parallel.py",
+      "sha256": "fe9abfe1c146cf6614bf6f3e0075271cfb35453816beae4e677ff6f975b3a903",
+      "bytes": 2796
+    },
+    {
+      "path": "admet_v35_protocol.json",
+      "sha256": "a11f225c87054d93d15c6f9a20d1e74fbf4095036952a1756cc69fcab2898d64",
+      "bytes": 771
+    },
+    {
+      "path": "admet_v27_collect.py",
+      "sha256": "181720c38df97a30234f7866a4e415426ec2ee2f63fdcb1ef167548c140374b9",
+      "bytes": 930
+    },
+    {
+      "path": "admet_v43_finish.py",
+      "sha256": "2610fe9b0e88c98d2c64882b71c3df9f37e7e5d98c7d37bb489086b9bdcf6e71",
+      "bytes": 704
+    },
+    {
+      "path": "admet_v33_launch_refit.py",
+      "sha256": "0d2fc461c2b8631e55979b26e2e176dcdec5dd5cc9330e234da56e0ecaee183b",
+      "bytes": 447
+    },
+    {
+      "path": "admet_v33_refit_selected.py",
+      "sha256": "ba119d6ae0d5b37cfb888019707655ec2076d0a370cb84bc19dc3070c56c1dfd",
+      "bytes": 1657
+    },
+    {
+      "path": "admet_v6_features.py",
+      "sha256": "86a3c6b5f8ec1f13a6cd46030e4ab1dfe09267ff3333928f0afe9dc2baeb4d05",
+      "bytes": 5546
+    },
+    {
+      "path": "admet_v33_worker.py",
+      "sha256": "6fb2ef39e7d24fc3ae3d104b79f8d3d80d97ce74d3be6d0ca1aeb391940c89a1",
+      "bytes": 2417
+    },
+    {
+      "path": "admet_v43_run.py",
+      "sha256": "b9e9266d33c68ad9c5e55cd81814611286c6bcfdaddf3a5727145b6399563327",
+      "bytes": 18466
+    },
+    {
+      "path": "admet_v45b_search.py",
+      "sha256": "d2829519c68395c725d78e8a45d6ac1e71e7a1becb690df4f3a19f90f5d7bf41",
+      "bytes": 6029
+    },
+    {
+      "path": "admet_v33_resume_verify.py",
+      "sha256": "701cc48f4dc331d98cc2d7d29aa5be26db6505f9f206ec01a6330dffed583e0c",
+      "bytes": 789
+    },
+    {
+      "path": "admet_v33_finish_remote.py",
+      "sha256": "dc60b5c0ec1baa0fb5c582ccac44ebbbbdee81ec603be091706016cdccac736a",
+      "bytes": 1260
+    },
+    {
+      "path": "admet_v44_finish.py",
+      "sha256": "62c48cc22cb000b5dcb5033455f8760c930ab81c006c85508df70501b8892b3e",
+      "bytes": 598
+    },
+    {
+      "path": "admet_v62_verify.py",
+      "sha256": "ca1753f151a3785ca599b26bf11b26ffb497a3f3731570c7da8c08eec6f5c6bb",
+      "bytes": 2107
+    },
+    {
+      "path": "admet_v61_extra_gate.py",
+      "sha256": "e7c3ddf6986f1d8d252cd3c4138c36bb9cd539f9c2d8b300b5a9571e11160c1b",
+      "bytes": 2051
+    },
+    {
+      "path": "admet_v58_launch.py",
+      "sha256": "49b423fc7fc90f22a8258028026f6f9013eb03b0f8a85c9c7574272c143e71b8",
+      "bytes": 979
+    },
+    {
+      "path": "admet_v62_worker.py",
+      "sha256": "0962a7261242df47699ea377ec4459239891b008eac5e73f7745ee3077ce29d3",
+      "bytes": 992
+    },
+    {
+      "path": "admet_v40_launch_finish.py",
+      "sha256": "ea93dbb1f74eb9336e183480792c8acb54ed65469ae5b9c902eb449a41e87f94",
+      "bytes": 448
+    },
+    {
+      "path": "admet_v65_protocol.json",
+      "sha256": "4428832851d18c41ad329cddd6ff1746054825652d5e7d352fb0be1207a98d7b",
+      "bytes": 2606
+    },
+    {
+      "path": "admet_v40_remote_verify.py",
+      "sha256": "81090b1964d8af0737b1b0c1870f2a2227c9a5c9e066089b80dc6c2c0a90ff42",
+      "bytes": 3921
+    },
+    {
+      "path": "admet_v44_remote_verify.py",
+      "sha256": "b92eb1e05ef9fe3d034f7a28f135f4a6cf6d8a4b88597fcb0ceda97988e6c537",
+      "bytes": 3745
+    },
+    {
+      "path": "admet_v58_probe.py",
+      "sha256": "872be8def700ee080a524a9a4b7786d3a74cbd6110a9da7a57e283fedca60dde",
+      "bytes": 875
+    },
+    {
+      "path": "admet_v62_model.py",
+      "sha256": "f2d026303da861580103c6eccef272c71eb9ca9da49d3fa885b57b5fb4fb3678",
+      "bytes": 9480
+    },
+    {
+      "path": "admet_v65_run.py",
+      "sha256": "8336bee8389519b5403bfe121708fc84ec907ad7416858db8c21a674cd865649",
+      "bytes": 11143
+    },
+    {
+      "path": "admet_features_v2.py",
+      "sha256": "6348d369567ff19786dfa75a22e1512f5ec1ca5fd036c314b1f76ca09e6d5906",
+      "bytes": 2948
+    },
+    {
+      "path": "admet_v59_launch.py",
+      "sha256": "c95623e117c9bac651736988b2d25be923649365fed426fac4be4287ea37ef9c",
+      "bytes": 904
+    },
+    {
+      "path": "admet_v63_verify.py",
+      "sha256": "02a14eda5100a9be417f953334e7fbd4db629d3b02a9eeeb80865a3b0733f1b6",
+      "bytes": 2079
+    },
+    {
+      "path": "admet_v59_kernel.py",
+      "sha256": "4b28878461d8151dd378d5dd3ff74c00cc8a2f606ca4635e2cc37b785c88e053",
+      "bytes": 6140
+    },
+    {
+      "path": "admet_v42_diagnostics.py",
+      "sha256": "6653b3f0f410deed172656411529de7e20f72fc994abe67e93fe8f1ebd8b20e9",
+      "bytes": 2957
+    },
+    {
+      "path": "admet_v48_fusion.py",
+      "sha256": "b9edd9b923b4ba850e14c05408cff900eec836dff1e816f4b7876e6baf0e63b9",
+      "bytes": 13018
+    },
+    {
+      "path": "admet_v15_models.py",
+      "sha256": "7c78ce8fb774aafc58f923871baadb86063c764b72c03d2d0957f0d434f324db",
+      "bytes": 1896
+    },
+    {
+      "path": "admet_v56_remote_verify.py",
+      "sha256": "365342c2d5e9a9ea1c7deeaf8b42f58e9b1744c28881d678f5d28810399af67e",
+      "bytes": 4200
+    },
+    {
+      "path": "admet_v24_run.py",
+      "sha256": "9c3acaac4616d2157c766be6e9fcb43b2d8378531f03c709b2438168e109fc48",
+      "bytes": 12374
+    },
+    {
+      "path": "admet_v44_run.py",
+      "sha256": "8a9e0db2aeaf02a19f2d19d4db9fc82774514608e54354e6f9e7c8dcc714d64b",
+      "bytes": 16978
+    },
+    {
+      "path": "admet_v25_models.py",
+      "sha256": "7a1c110e42689a0666bbbb66057c8453e83250cdbb6ab04e701e6f2f014f86d4",
+      "bytes": 7450
+    },
+    {
+      "path": "admet_v37_launch_finish.py",
+      "sha256": "0af1aeef0590564f7e1f09f16837b4a92a25eb8c1a61b8d506e6b7580e1fb67e",
+      "bytes": 465
+    },
+    {
+      "path": "admet_v46_protocol.json",
+      "sha256": "5358b62251201ede819e8641d2d2f0484a98803a60f6248b858d693d1e7de6c2",
+      "bytes": 2139
+    },
+    {
+      "path": "admet_v33_cpu_probe.py",
+      "sha256": "6897565d34d93597e9234051b3fa551b9ea7e5f664c3031c744a92bb3a943135",
+      "bytes": 803
+    },
+    {
+      "path": "admet_v38_protocol.json",
+      "sha256": "43dccc55550ccc44ed7764332d472e6f16d6264e0c7a00ca24853354fbaee8a4",
+      "bytes": 1158
+    },
+    {
+      "path": "admet_v42_protocol.json",
+      "sha256": "01351c62b20b0a177ad4cb7ba93dbb37b680b9f599a0b7fac7a0cb7d56b5e093",
+      "bytes": 846
+    },
+    {
+      "path": "admet_v52_launch.py",
+      "sha256": "a0182305aab6492836106143e865ceb2f4c0a1993ba467c16a1215f9b0c1a915",
+      "bytes": 1008
+    },
+    {
+      "path": "admet_tabicl_inference.py",
+      "sha256": "d1970ba6d4dd24fb96cccb43eecfd16984053c830c8439333374b471f11a3ff6",
+      "bytes": 895
+    },
+    {
+      "path": "admet_v47_fusion.py",
+      "sha256": "e0d1a8361b4da6482929f26c4c248c3cd44b6fb99d9073d6db3f0d8c7ce21630",
+      "bytes": 11252
+    },
+    {
+      "path": "admet_v32_run.py",
+      "sha256": "2a0b374d496c967dcf4392fe69804b5845aefa919efa1bced8138cf688e89ea8",
+      "bytes": 18782
+    },
+    {
+      "path": "admet_v41_features.py",
+      "sha256": "9e870982b6f0f7dbe4ce886bb9f78c9fd1da21c7ed330936c4f46798e2b83241",
+      "bytes": 326
+    },
+    {
+      "path": "admet_v25_run.py",
+      "sha256": "aceacf6d14e7cd49270194efec6e4461d3515dbe5f629e1176bd1b16d71e44c8",
+      "bytes": 11073
+    },
+    {
+      "path": "admet_v31_run.py",
+      "sha256": "4b7c608da709a9b3d34a6a9a4516811a622f34a7e8312c4c1dbbe7321596887d",
+      "bytes": 9348
+    },
+    {
+      "path": "admet_v51_remote_verify.py",
+      "sha256": "dba7cbda77679525c46f6a8e01342410fd726338407b7f68abf51cbd21b8199b",
+      "bytes": 2068
+    },
+    {
+      "path": "admet_v41_schedule.py",
+      "sha256": "518ef457f73f800944bfe42f766e855c2ebc56ce9d4c2fb6ca38e10c9baf0831",
+      "bytes": 861
+    },
+    {
+      "path": "admet_v56_finish.py",
+      "sha256": "a99b21cda9010a9cb11f91ff2888e635e8ef8cda39e9f9f06caef384db942965",
+      "bytes": 11591
+    },
+    {
+      "path": "admet_v30_protocol.json",
+      "sha256": "41f41e35717dbd783c6a2c5e0296f30793eb0cca2f78965db5f3d0c7b92bde75",
+      "bytes": 1865
+    },
+    {
+      "path": "admet_v38_remote_verify.py",
+      "sha256": "c6cf290ba0a2f5c4ab14a5c52794692f2e1b3977a7a54dd7ad3e8f4624aa1725",
+      "bytes": 2395
+    },
+    {
+      "path": "admet_v40_diagnostics.py",
+      "sha256": "c9b326fadfcfea69af90a5d80370070aa64b0e831c418999d644aac1150414ed",
+      "bytes": 2492
+    },
+    {
+      "path": "admet_v33_launch.py",
+      "sha256": "ced86de0edfdebccdc3d4976f3bd0f75e285f5dc723072d8a0db57debbabc625",
+      "bytes": 741
+    },
+    {
+      "path": "admet_v46_run.py",
+      "sha256": "4ce1d82e7aea4dc1e877bfb1f34756201e16520524860296e7f3b2fc9f161d36",
+      "bytes": 14684
+    },
+    {
+      "path": "admet_v27_protocol.json",
+      "sha256": "55e125cf1bf64e2fe12bfc7ee8eb59f457baf896d36bafaae3915690cdade4f6",
+      "bytes": 2246
+    },
+    {
+      "path": "admet_v44_diagnostics.py",
+      "sha256": "a71b9037a0cd36c2dabaf6c6b488027cffb24668a4200ddbaf271a8ae9ca23e5",
+      "bytes": 4812
+    },
+    {
+      "path": "admet_v34_run.py",
+      "sha256": "f1c7078582e58170497bae4000302c20c754ffc12e4fc93149b5df078379d644",
+      "bytes": 6757
+    },
+    {
+      "path": "admet_v27_run.py",
+      "sha256": "8f027ef4b75b2196d6c75e295ceeb937c7ab0ab6a57fa0358767c8ad79e58acd",
+      "bytes": 8092
+    },
+    {
+      "path": "admet_v39_launch.py",
+      "sha256": "ed46032ef0589e41c56c589247165fc38f986163e2b66adef04ff6d89bbf855f",
+      "bytes": 518
+    },
+    {
+      "path": "admet_v54_graph.py",
+      "sha256": "f176950a2f9111aced3570cc37c68e87302589d272b7872eb97eb833fc90aa67",
+      "bytes": 6817
+    },
+    {
+      "path": "admet_v63_protocol.json",
+      "sha256": "a335148864a36b31ce16942b600fdf7fc23d238bc634208e57ec26a80898a901",
+      "bytes": 2716
+    },
+    {
+      "path": "admet_v29_remote_verify.py",
+      "sha256": "264749132cbf57738599f8fd3ec7239dd7c35b9807ba7e4ddf82dac980599730",
+      "bytes": 5487
+    },
+    {
+      "path": "admet_v39_finish.py",
+      "sha256": "41afe85cc870a733c762eaf8ec0d89c16986dabf3b2fdd81ba59666ef162eea6",
+      "bytes": 992
+    },
+    {
+      "path": "admet_v62_protocol.json",
+      "sha256": "316e46cd545802898d13b9e890f361e03e6fbd1691341f1d573ae2120b7566d8",
+      "bytes": 1908
+    },
+    {
+      "path": "admet_v33_collect.py",
+      "sha256": "007fbcfb57ea1abceb8bd069aba09f62087577464897abbf88bb3196e7556088",
+      "bytes": 657
+    },
+    {
+      "path": "admet_v37_diagnostics.py",
+      "sha256": "1bde0b36ce90d1c3e1843f8efbd89f573203b84532e08002e40215e648a3f9c6",
+      "bytes": 2643
+    },
+    {
+      "path": "admet_v38_launch.py",
+      "sha256": "844200a213ef3b8c496dfc06cca752ed4d73a53e7a13fd80da5aa4d558321d3c",
+      "bytes": 619
+    },
+    {
+      "path": "admet_v32_remote_verify.py",
+      "sha256": "904015ad105383542a2e895ac7878caec35f341453b0d85d1836677e2a7a218a",
+      "bytes": 2686
+    },
+    {
+      "path": "admet_v36_diagnostics.py",
+      "sha256": "ed0b41be7ed39145a5fece157ca845fa54f236d9e4111ec7fa6ed7cbe8d2fc80",
+      "bytes": 2546
+    },
+    {
+      "path": "admet_v35_launch.py",
+      "sha256": "da3d93ff752752b75bc269444c44f662fb07270180fd1bf2b53757fd9dc3ab88",
+      "bytes": 567
+    },
+    {
+      "path": "admet_v29_collect.py",
+      "sha256": "2b58907a44d1f36ec31570389ec154365ee562f60ab8eef5d49ffc63500bf2ea",
+      "bytes": 1196
+    },
+    {
+      "path": "admet_v64_pipeline.py",
+      "sha256": "2b6a23f486086bfb4f48f36529b6f8017f0bb33263c9b816df71483c143a4ec5",
+      "bytes": 1821
+    },
+    {
+      "path": "admet_v41_protocol.json",
+      "sha256": "2fbda86b9efdf0eb6579e729d7cce59debcd7005d190bdf9336f7ec5e2612a09",
+      "bytes": 1288
+    },
+    {
+      "path": "admet_v33_launch_parallel.py",
+      "sha256": "376f6a7a6a458bfdbae428c767c87ea9b42ce19bc37d67908943943230d4acd0",
+      "bytes": 432
+    },
+    {
+      "path": "admet_v60_verify.py",
+      "sha256": "e61e8b80b7803226ada574b50a51faf3a85ed1d19385651c57ffd1ec1014ef33",
+      "bytes": 3896
+    },
+    {
+      "path": "admet_v25_protocol.json",
+      "sha256": "253c7686fde6f9ad728511ca3468ec696417cecee0e4ebb8642da45316679436",
+      "bytes": 2314
+    },
+    {
+      "path": "admet_v25_collect.py",
+      "sha256": "6b01fc67bdf914a95b46fca452f756394daf459d64964c66c585c95af8b35fbf",
+      "bytes": 1194
+    },
+    {
+      "path": "admet_v54_launch.py",
+      "sha256": "abf2b875a4d7699732b3e31bc41c09ae25e72b2c5e96b93c60bd306232741e63",
+      "bytes": 923
+    },
+    {
+      "path": "admet_v64_resume_sources.py",
+      "sha256": "641bde9263a88b0a3d35bd5deb3e0fd3c01ab6da88119c441c9a1566e7ca375f",
+      "bytes": 1160
+    },
+    {
+      "path": "admet_v65_precision_probe.py",
+      "sha256": "f8bd7ef44beac75c1bbe4ee878efaf2da32a6cb9cd8230d2a043b535c7803781",
+      "bytes": 1453
+    },
+    {
+      "path": "admet_v41_launch.py",
+      "sha256": "6ebed850745d25753b7abe8a87d039cf6faae73bdfba21c8b55dff9770676796",
+      "bytes": 503
+    },
+    {
+      "path": "admet_v52_calibration.py",
+      "sha256": "f9e955a93093e4aaf57b8c11b8e45e607df805c03699b2374700a369c50e6fc4",
+      "bytes": 3265
+    },
+    {
+      "path": "admet_v62_launch.py",
+      "sha256": "c325b8e088bd22d3e5955d28b34474bab87e72aa65f1aef8fe9e938c270ec53e",
+      "bytes": 904
+    },
+    {
+      "path": "admet_v37_collect.py",
+      "sha256": "08b93bc92bbc8e08c52c84054ce8acaf30f7abf0e5ae39d9a2ac444b691de8a0",
+      "bytes": 764
+    },
+    {
+      "path": "admet_v63_launch.py",
+      "sha256": "e79e8e80063a91f6c69d14dd12c63703b56042be9caf46d3b513dbc931161eff",
+      "bytes": 904
+    },
+    {
+      "path": "admet_v37_protocol.json",
+      "sha256": "ca1e5277ea2c9f6fb158a611d9510063b2b363c774cac815e36fe8f41be40e57",
+      "bytes": 1522
+    },
+    {
+      "path": "admet_v37_finish.py",
+      "sha256": "06138cb326b3415adab595a7b0e07cc0f65541b6296b074d5085351f0d93e8c5",
+      "bytes": 1105
+    },
+    {
+      "path": "admet_v24_protocol.json",
+      "sha256": "ee12fbdbad0ba21f49c4f4a18d8da2f445ff877928a1f7e1526e04ea129b89f4",
+      "bytes": 2104
+    },
+    {
+      "path": "admet_v42_collect.py",
+      "sha256": "713d5ad6af855cae969a6a2d0a90e309937efb2ba2cd82c053e4f92342797dd0",
+      "bytes": 737
+    },
+    {
+      "path": "admet_v61_protocol.json",
+      "sha256": "95c20b323dd42226622d93e6a5ba51ff31aacea4ee3bf771b5e793545fc8e211",
+      "bytes": 2002
+    },
+    {
+      "path": "admet_v39_run.py",
+      "sha256": "529aad5d085d09624e5b279a0dc84b05d23b526e7ac9cdafa8b6cdcc852a2cbd",
+      "bytes": 7849
+    },
+    {
+      "path": "admet_v33_run.py",
+      "sha256": "9a635831e083df1299fc77a8218027ea957cb8371ed63e45749f3a3384048ca9",
+      "bytes": 20330
+    },
+    {
+      "path": "admet_v60_launch.py",
+      "sha256": "3b0bccfc64c87421fce8fa93f26f5765583be76c199fb679cf736b36ef39998c",
+      "bytes": 904
+    },
+    {
+      "path": "admet_v65_launch.py",
+      "sha256": "ec49d89ebc5db1536ec12bba1b471e014a56efc4515e24820da2628aec4183ad",
+      "bytes": 880
+    },
+    {
+      "path": "admet_v45_search.py",
+      "sha256": "b47f6f67bd08587f02e9b1c174c4bb8b826ffde066d80560f7da1a3eab9ab8de",
+      "bytes": 6135
+    },
+    {
+      "path": "admet_v20_rare.py",
+      "sha256": "0ca8200cfa877d1d1cc1f7d49c98f279690d35dd338dcbce62c760196f5e1c7c",
+      "bytes": 7918
+    },
+    {
+      "path": "admet_v44_launch.py",
+      "sha256": "3a1044c89eb05cba8d320299214187181de0aa442d6b73cb6464cb690c3fb7f4",
+      "bytes": 638
+    },
+    {
+      "path": "admet_v26_run.py",
+      "sha256": "716d60b2259b2700af4cbe21da7ef327070f32af818d86ed613f2cc60a635685",
+      "bytes": 6347
+    },
+    {
+      "path": "admet_v46_diagnostics.py",
+      "sha256": "6e13dbe4e866fcb1784229baddee2a3f921a05576673433bd907bc66cab20159",
+      "bytes": 4702
+    },
+    {
+      "path": "admet_v58_protocol.json",
+      "sha256": "a1567c9708966a817827cc5e795a7fd3f418f955efb6e27acd95dfa160b0ae03",
+      "bytes": 1044
+    },
+    {
+      "path": "admet_v42_run.py",
+      "sha256": "76c16a7ea64625266ef2f7b8f4a3f209cc51967fd55c4fc34b3ec67da5158865",
+      "bytes": 8003
+    },
+    {
+      "path": "admet_v6_models.py",
+      "sha256": "be5cff636e22ffb171650bb70ff05bdce055a9c0bd2fa0eb3cf46b0a50fddce0",
+      "bytes": 9601
+    },
+    {
+      "path": "admet_v40_protocol.json",
+      "sha256": "1f77582a4f96ec99b6b6448d84d67128beb940edafe5da0987d10eae8174f8e3",
+      "bytes": 1727
+    },
+    {
+      "path": "admet_v23_remote_mtl.py",
+      "sha256": "b95e193c73bd2f9c6d3128573c5d5a964964549f74c6d0ebc940a90906b13b49",
+      "bytes": 9591
+    },
+    {
+      "path": "admet_v33_freeze_completed.py",
+      "sha256": "7c7a0f0d8a8982d2ea50aaeec8e50d7d57e3b1b141aa558fe9d9e360e46f082a",
+      "bytes": 1450
+    },
+    {
+      "path": "admet_v29_run.py",
+      "sha256": "44d989550fe2c3f9b2a57d3a2f349fdca7800838a180d6ca14dec676b320c320",
+      "bytes": 10484
+    },
+    {
+      "path": "admet_v6_runner.py",
+      "sha256": "12129b9219e1275ad8d79ab668b21c5038e7db5dc7f6174b051f56f00fa1e317",
+      "bytes": 11943
+    },
+    {
+      "path": "admet_v33_protocol.json",
+      "sha256": "0e7f115ab907f48e61ef134722eea5cd71867fa147c8f0c281d9f464134c6eac",
+      "bytes": 2348
+    },
+    {
+      "path": "admet_v55_launch.py",
+      "sha256": "0dc677396721b6b2cce8e7a80f83365ef80350320fa0e49664833194903df99d",
+      "bytes": 962
+    },
+    {
+      "path": "admet_v60_finish.py",
+      "sha256": "782a0a40d9fef06f5f84552c6bc73fa039400394544deb50f3732fcd76e1222b",
+      "bytes": 9446
+    },
+    {
+      "path": "admet_v41_remote_verify.py",
+      "sha256": "f6834cb065370878fd2e993f31d27018d43e9b175dec8085388b1fdeca079da7",
+      "bytes": 2983
+    },
+    {
+      "path": "admet_v43_collect.py",
+      "sha256": "a1789326260430dd591f75bf05d4a1b29a128033dbfb01fffe3d3d8498bbefd6",
+      "bytes": 756
+    },
+    {
+      "path": "admet_v33_status.py",
+      "sha256": "1cd79a50355906de2521e86d3f7e1d3e9601732a9885167c94fe8f452d50f867",
+      "bytes": 1085
+    },
+    {
+      "path": "admet_v41_launch_features.py",
+      "sha256": "87af4e5e715ba922a4ab9f171f07cd9f1ca020fab9cf4647ddb48010e812117e",
+      "bytes": 612
+    },
+    {
+      "path": "admet_v36_launch.py",
+      "sha256": "235a3538ad272a68febf8543565bdfb16d4bfb4bd820fcc2384a036573f61a36",
+      "bytes": 471
+    },
+    {
+      "path": "admet_v31_audit.py",
+      "sha256": "524cfd8b1f5db6233626c6d3a6a042a4fbd56f9e7e7a49a2d70a1ec0bb9a241d",
+      "bytes": 1296
+    },
+    {
+      "path": "admet_v64_protocol.json",
+      "sha256": "d542e387a744f153c2bcbb5e76b286b6c4d1445e540c5c4e37b739d25eaa9bc6",
+      "bytes": 1366
+    },
+    {
+      "path": "admet_v64_finish.py",
+      "sha256": "dfd4a1d38f5b00ca670148b006998b7ba224f34b6b6e8544c4210ba559c54217",
+      "bytes": 6103
+    },
+    {
+      "path": "admet_v40_collect.py",
+      "sha256": "4c5f75ead06e3f9daecb14effca607b572418dbe5d5cede9bb955939901b3388",
+      "bytes": 620
+    },
+    {
+      "path": "admet_v62_run.py",
+      "sha256": "7a03670c328f283bf3b3db4e074ddc3a8e04ffa53e7c3fbfaf54118e685f81c5",
+      "bytes": 7454
+    },
+    {
+      "path": "admet_v32_probe.py",
+      "sha256": "d749fd9c0536d273687ce15071089c4f6410bcbaf89d6096a6637fd34f0474b1",
+      "bytes": 919
+    },
+    {
+      "path": "admet_v30_launch.py",
+      "sha256": "769d371da644e5e063d768f20bf9a79fad160bd5089270df4b06547487a6aa32",
+      "bytes": 757
+    },
+    {
+      "path": "admet_v33_final_features.py",
+      "sha256": "c72cf595c8203f5748e0d774e72ce77ea308e241fc71a0953480233430723ab0",
+      "bytes": 121
+    },
+    {
+      "path": "admet_v43_diagnostics.py",
+      "sha256": "29e4a41fd7d67176117bd721e58cd61536c11a945aa7b31d5adbbe4536ec5ea6",
+      "bytes": 3607
+    },
+    {
+      "path": "admet_v33_remote_verify.py",
+      "sha256": "eea8122379462edf660caab36a71f65c9c0643f32fd83182471b6fb36085a36c",
+      "bytes": 4824
+    },
+    {
+      "path": "admet_v33_launch_verify.py",
+      "sha256": "ac41a4d72f2d7feed434cdbaa0a9633724b1f64927185dc290aa04c9e865b0fc",
+      "bytes": 447
+    },
+    {
+      "path": "admet_v51_launch.py",
+      "sha256": "2174f2ad8dd415d2129d22b91c841bfa7d02d9e519ab73a3e91e47620b8e4158",
+      "bytes": 1037
+    },
+    {
+      "path": "admet_v27_models.py",
+      "sha256": "e2615723280602ba0d33e4af1bfe0041a9a4414d2d6d08a85e53921772b0ca75",
+      "bytes": 12260
+    },
+    {
+      "path": "admet_v36_collect.py",
+      "sha256": "93f53c07202c79776def3a98e5c91a66bf93d813ad3bd3b7c48f424a590521b4",
+      "bytes": 652
+    },
+    {
+      "path": "admet_v53_calibration_verify.py",
+      "sha256": "5d8dd791d0244b0f1e82a46496a78c37c310a205f1acc9bdb9fa634b074564b9",
+      "bytes": 2867
+    },
+    {
+      "path": "admet_v44_protocol.json",
+      "sha256": "447928296bb934ae095666738ff07fd3e0dd1dfaceb5e3ff2ae4e2a185249935",
+      "bytes": 2186
+    },
+    {
+      "path": "admet_v35_run.py",
+      "sha256": "2112d3426cda59184020b2de65fb7d47a99fa66ade31e7f4818abee1f11acdce",
+      "bytes": 5829
+    },
+    {
+      "path": "admet_v51_protocol.json",
+      "sha256": "fb1722f5f96bd228de1ae5025b890430d234db4eb61cda892b8d7bb1173ed582",
+      "bytes": 1640
+    },
+    {
+      "path": "admet_v21_anchor.py",
+      "sha256": "e904ec746d6f451b8f05a372f78f4b163460c4b765f86029e85e2abaa1ff8e2d",
+      "bytes": 1798
+    },
+    {
+      "path": "admet_v40_launch.py",
+      "sha256": "b660bd9f151e2532566975d53ada5b475c5f1b91eac00fea60060abf80bea687",
+      "bytes": 609
+    },
+    {
+      "path": "admet_v37_run.py",
+      "sha256": "fbed4629e0abf231d03efbdb5d1cfb8e378527c8f819a10f5ee2940117ac6479",
+      "bytes": 18233
+    },
+    {
+      "path": "admet_v37_launch_resume.py",
+      "sha256": "afbd33808edc84c2cbba43dc8f4c6552486fe3410f4e6076377801dacf56cac5",
+      "bytes": 569
+    },
+    {
+      "path": "admet_v32_protocol.json",
+      "sha256": "f2d46f528afa25049dc303468b29d89ee8c44d1a830a1636adb0509e01531a27",
+      "bytes": 2025
+    },
+    {
+      "path": "admet_v39_protocol.json",
+      "sha256": "cf5b665f1a956b2421bc6b24b1bc140d0eb7e3f1c2a455b6dc57a10c74b9e740",
+      "bytes": 854
+    },
+    {
+      "path": "admet_v61_launch.py",
+      "sha256": "c2ff01e93da01f7be0bac72f527fbffbe69f0a219eaaacbe25a2189cb61feb2f",
+      "bytes": 904
+    },
+    {
+      "path": "admet_v39_diagnostics.py",
+      "sha256": "431218cded286aa71b916f44c883b6fba22c63f84bfcd19c872c314849246bca",
+      "bytes": 2751
+    },
+    {
+      "path": "admet_v29_launch.py",
+      "sha256": "6bb3091d75b45bfa9645fb07d6f6a11cb23b9b80189c41958d60df3ba01e1342",
+      "bytes": 580
+    },
+    {
+      "path": "admet_v36_remote_verify.py",
+      "sha256": "1ea517b97fe3cbf4c71cc20b7ce2943da3927598595161e94b4e38654c20acfd",
+      "bytes": 3269
+    },
+    {
+      "path": "admet_v28_protocol.json",
+      "sha256": "82b501480dfb330cc4a660dd5b6600cac1445f87f0e95eb951e78e38171958d0",
+      "bytes": 1292
+    },
+    {
+      "path": "admet_model_outputs_v60/model_replay.json",
+      "sha256": "5f9aa5530e0498480e9e135e3c00cc0c6cc3cfc343999a9da9cf26cee1fcf3d7",
+      "bytes": 799
+    },
+    {
+      "path": "admet_model_outputs_v60/rechecked.json",
+      "sha256": "480a224f22987adcdc6dfff73a7d8a0497dbd2024bfcab88b79fd3f831196d9a",
+      "bytes": 4573
+    },
+    {
+      "path": "admet_model_outputs_v60/fresh.json",
+      "sha256": "8b50d774fb7adb8ae8fa7ee85921447c2e8c52328cc81daebf7817623cc686a2",
+      "bytes": 8846
+    },
+    {
+      "path": "admet_model_outputs_v60/fusion_replay.json",
+      "sha256": "4a81c17d7488dbc47deca8fa88ca3de23015ee66e79afc76df142d0b278f62df",
+      "bytes": 107950
+    },
+    {
+      "path": "admet_model_outputs_v60/baseline_replay.json",
+      "sha256": "106da0bab7d51671a092704f7d193cd5c226e3498257774ed5ab5cae8748207f",
+      "bytes": 2595
+    },
+    {
+      "path": "admet_model_outputs_v60/completed.json",
+      "sha256": "5e13d95fd4dcce1ec8ed416463bd276e1b382eb41255836dbaa1852812c95eb0",
+      "bytes": 109
+    },
+    {
+      "path": "admet_model_outputs_v60/release.json",
+      "sha256": "d225225a01c4f28139d122498e195dbc9b956b4280d02b520632486776e95d0a",
+      "bytes": 7529
+    },
+    {
+      "path": "admet_model_outputs_v60/run.log",
+      "sha256": "f81c012b58ecf16bda9094139bd5a2895fd758eda32a5fc02a40a810c19a0c45",
+      "bytes": 11941
+    },
+    {
+      "path": "admet_submissions/v60/verification.json",
+      "sha256": "180a42b50a14112fbacff91fc90f1fb6bc426fe445d8d14627672d59e3f5f8b9",
+      "bytes": 673
+    },
+    {
+      "path": "admet_submissions/v60/我从山北来带着兰花草-小分子药物预测技术创新赛-20261017.csv",
+      "sha256": "030689508e9437a8d42d0adb183cc1321530df75fdea467edf92bfdf4b0f925b",
+      "bytes": 1772921
+    },
+    {
+      "path": "admet_model_outputs_v61/model_replay.json",
+      "sha256": "fb8ea5658699b0a60e8622fe254171d7b715b9b200c6c38821d10024e55bf861",
+      "bytes": 974
+    },
+    {
+      "path": "admet_model_outputs_v61/analysis.json",
+      "sha256": "23abf70761f3a20fc31334c74e93e27613ee7777cce8d4dd479f3e3b5b5cbf05",
+      "bytes": 192845
+    },
+    {
+      "path": "admet_model_outputs_v61/fresh.json",
+      "sha256": "96ee500f97465853a2d40a641216d30ff6dcf3d77bb2205244959e366276133c",
+      "bytes": 57909
+    },
+    {
+      "path": "admet_model_outputs_v61/fusion_replay.json",
+      "sha256": "b0b575c9643cc613227e24a0d963479dd6d6c7b8b794fd37dd0b6baee8e81105",
+      "bytes": 678905
+    },
+    {
+      "path": "admet_model_outputs_v61/domain_check.json",
+      "sha256": "5945f45bdc7653dcf8242e519fb9432b3871fe20ad47b5bbe5ed23cc1fa9cc58",
+      "bytes": 3400
+    },
+    {
+      "path": "admet_model_outputs_v61/release.json",
+      "sha256": "c6c4128375a703e79bf74de48fd2a9edeec149ab48503aeab5200dd5c205a54f",
+      "bytes": 58365
+    },
+    {
+      "path": "admet_model_outputs_v61/all_completed.json",
+      "sha256": "aa8f5abe23dd6b3dcd6f30cf1909d0236b504a4a31932a44acbcf1def0094834",
+      "bytes": 109
+    },
+    {
+      "path": "admet_model_outputs_v61/run.log",
+      "sha256": "c36aab367397062f4e480f79ed6e5d4ec2861d7e5b4116b50876c36eaa5dbc31",
+      "bytes": 24000
+    },
+    {
+      "path": "admet_model_outputs_v61/bbb_martins/valid/metadata.json",
+      "sha256": "6297f8fe90b686a75c8f74c3f8924198fc607d5f25538ee7670cca0def638746",
+      "bytes": 689
+    },
+    {
+      "path": "admet_model_outputs_v61/bbb_martins/fold1/metadata.json",
+      "sha256": "2689045d13e71b73f80f07d1555cc66e620d3bc9123cc6ccf158c2f8c049e403",
+      "bytes": 690
+    },
+    {
+      "path": "admet_model_outputs_v61/bbb_martins/fold2/metadata.json",
+      "sha256": "ecf3dd3f2c6c5de4068b4e0191f68fdbbf166a48d857ec1e17b13bc625609276",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/bbb_martins/fold0/metadata.json",
+      "sha256": "b45d428abfc55b2a15f36f2f7dfe6f8f5fbfc575dd28cc00cc395d7d10dcffa8",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2c9_substrate_carbonmangels/valid/metadata.json",
+      "sha256": "d8250f4c3e437481b46ee5b3de4a410d9680187da099d641763182aacd6bb7ef",
+      "bytes": 687
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2c9_substrate_carbonmangels/fold1/metadata.json",
+      "sha256": "29c6a80113985e1309515901acb112798bbd0b6f2e34b92252dcade32f1a37c5",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2c9_substrate_carbonmangels/fold2/metadata.json",
+      "sha256": "7ae3762cb9539929f402c1f26fcc0c9522e409d178a985c0b43b63eef0e583ae",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2c9_substrate_carbonmangels/fold0/metadata.json",
+      "sha256": "7c2871f3b09f636d82cdce9fa5b8c6c808c032bb90eeddc1c89b2f359361ef43",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp3a4_veith/valid/metadata.json",
+      "sha256": "58d2ffc5408fb9e44106d078e402a0ec10dbdb9f729ed76e53c8967aec7fcd3f",
+      "bytes": 689
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp3a4_veith/fold1/metadata.json",
+      "sha256": "9368509f4339ccba55e076a671fa60713cc81c06e173a9106130a98d383ce628",
+      "bytes": 693
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp3a4_veith/fold2/metadata.json",
+      "sha256": "bb5dc9ba465bf09e1cdbee7b1976f92fc3849a89a22bfecea458b5edd94a4f68",
+      "bytes": 693
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp3a4_veith/fold0/metadata.json",
+      "sha256": "79bbdc9eb4a3030a13681dcd9cda15101c74871afdb01f9435772961501c714b",
+      "bytes": 692
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2d6_substrate_carbonmangels/valid/metadata.json",
+      "sha256": "d858a5f4989834b87bc499f7db3cdbe10ec2c85f756d767d69b4dd32c298dc5e",
+      "bytes": 687
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2d6_substrate_carbonmangels/fold1/metadata.json",
+      "sha256": "fe8f1d765a606440ce9aaad90706348acb02d6ce788f0d5625d5bcae6e516eda",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2d6_substrate_carbonmangels/fold2/metadata.json",
+      "sha256": "8d7d13bff25e993268fc9b3f8db62d693fd1036998dd4423904180bf973b09e1",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2d6_substrate_carbonmangels/fold0/metadata.json",
+      "sha256": "161125aaa7eeb4f7b42153f7f855fa42efb7e1c75439296a825538973747bb99",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/half_life_obach/valid/metadata.json",
+      "sha256": "39a653fed3c0320050a10e3a15611f8c7c1801b68375ff52cee87b135fc3f87f",
+      "bytes": 686
+    },
+    {
+      "path": "admet_model_outputs_v61/half_life_obach/fold1/metadata.json",
+      "sha256": "c9d3e3bbe28e69f3c7c54d77a610d7a9b188ef5cc998d3b2258346afa1b0fcb8",
+      "bytes": 690
+    },
+    {
+      "path": "admet_model_outputs_v61/half_life_obach/fold2/metadata.json",
+      "sha256": "5a295a5dfdf8cd3a6065cbba8f7d89f1918b84285b8d0c0c48b50115518110e8",
+      "bytes": 688
+    },
+    {
+      "path": "admet_model_outputs_v61/half_life_obach/fold0/metadata.json",
+      "sha256": "b4dab6e158d7be7bb69a15ef9b86bc80791374a6bedbcae35c4436286d8400be",
+      "bytes": 690
+    },
+    {
+      "path": "admet_model_outputs_v61/ld50_zhu/valid/metadata.json",
+      "sha256": "84d3df21bbb144845b0083fbc6ea2e380b7d2876895613fbb5eb414422eaabd3",
+      "bytes": 690
+    },
+    {
+      "path": "admet_model_outputs_v61/ld50_zhu/final/metadata.json",
+      "sha256": "b141feff364f928dff8f1147e518c4a400db610cfc1ccbcbfa5c712df72fc672",
+      "bytes": 658
+    },
+    {
+      "path": "admet_model_outputs_v61/ld50_zhu/fresh1/metadata.json",
+      "sha256": "189fde5ffbb2038b203131fed2be3f715a8f86333e01dd676e151595e254e894",
+      "bytes": 657
+    },
+    {
+      "path": "admet_model_outputs_v61/ld50_zhu/fold1/metadata.json",
+      "sha256": "dfd871dc93b85dabd5d6082960a69728ceeca6522872d3bb29cb249ef3906219",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/ld50_zhu/fresh0/metadata.json",
+      "sha256": "c74069fc4d67f61ffca30f4a769a9682aee30f2e7963c59d06d6b078e6850c14",
+      "bytes": 655
+    },
+    {
+      "path": "admet_model_outputs_v61/ld50_zhu/fold2/metadata.json",
+      "sha256": "2640c0dff33dd4a377c19e32bd6457f0a049eb789e95bc7b1799aa0359e53cfd",
+      "bytes": 693
+    },
+    {
+      "path": "admet_model_outputs_v61/ld50_zhu/fold0/metadata.json",
+      "sha256": "adb73be48e244540c74a0f937dca6bd13fb906114529c25cffd2b60ab4e9a915",
+      "bytes": 692
+    },
+    {
+      "path": "admet_model_outputs_v61/features/feature_audit.json",
+      "sha256": "a6cbdfcd0a4e22f46c704064086caf9135b7410ab604a48c366e07901682ffb3",
+      "bytes": 370
+    },
+    {
+      "path": "admet_model_outputs_v61/features/chemistry.json",
+      "sha256": "cf5fc0ce7cf87a9993daa8d32b3d7fd6a526931414698e64e9ebdda63ed6da15",
+      "bytes": 355
+    },
+    {
+      "path": "admet_model_outputs_v61/features/cv_fold2/phenotype.json",
+      "sha256": "ad5ea2484c26b052504f253c90526dea7b714d32340c879a76a9e3b1c8d5f2c7",
+      "bytes": 304
+    },
+    {
+      "path": "admet_model_outputs_v61/features/valid/phenotype.json",
+      "sha256": "378718e1f394db77a1c203bbac834ff1b06868695a3d795f68f39c20b9bf006e",
+      "bytes": 304
+    },
+    {
+      "path": "admet_model_outputs_v61/features/cv_fold0/phenotype.json",
+      "sha256": "0020190f427bcbf32d34638cf0b990467f6b4af338cbb16b37aa6a8a2ee3193a",
+      "bytes": 304
+    },
+    {
+      "path": "admet_model_outputs_v61/features/final/phenotype.json",
+      "sha256": "01a641984fe01073db8f6309f2a8b32f3823eba54b6b70048f16533ee1aaba28",
+      "bytes": 304
+    },
+    {
+      "path": "admet_model_outputs_v61/features/cv_fold1/phenotype.json",
+      "sha256": "51f99c7c2261c51b6975f75d93c5f2aa3e93d4da03795a94af5a84668e7d1291",
+      "bytes": 304
+    },
+    {
+      "path": "admet_model_outputs_v61/ppbr_az/valid/metadata.json",
+      "sha256": "44162ad5c86dfac81f8804e4c68e52512f37ceddec1b714d1b247ae417e81116",
+      "bytes": 688
+    },
+    {
+      "path": "admet_model_outputs_v61/ppbr_az/fold1/metadata.json",
+      "sha256": "831db8ba8f81e785b6f30ea1e88b1a089ecab8e661dd74c5f632909f77999467",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/ppbr_az/fold2/metadata.json",
+      "sha256": "5b81f46d59a67ee0ce0ea1cf93cefaa7ccece23bb7f6ef9c86994cc5760ceba7",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/ppbr_az/fold0/metadata.json",
+      "sha256": "55f5300465129a8e5aa0d05ee5276872c8ba2bdbe3350f93b31cb5d2747cc1b1",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/lipophilicity_astrazeneca/valid/metadata.json",
+      "sha256": "639b0edd23ba91eb4e40974d2e21386bfa4fb57658469c12153cedcdd032fe69",
+      "bytes": 688
+    },
+    {
+      "path": "admet_model_outputs_v61/lipophilicity_astrazeneca/fold1/metadata.json",
+      "sha256": "2dee04e36bced68f09bfc15aaeba7a0cd4a0b78c44212bae5dd511deea2094a9",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/lipophilicity_astrazeneca/fold2/metadata.json",
+      "sha256": "f7228d04635c6173e6852085db301f96a9f2f459f996d11ff5d382eff86819cd",
+      "bytes": 690
+    },
+    {
+      "path": "admet_model_outputs_v61/lipophilicity_astrazeneca/fold0/metadata.json",
+      "sha256": "b2e8d973b5d41ad1af5753671c06c4edb289212d6f792f8be457e95d74c6426c",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/herg/valid/metadata.json",
+      "sha256": "41d04b95a5f2c7a90b29b39f8672d6f454141963fb0f4a5e1ae12dcf1c1b71e6",
+      "bytes": 687
+    },
+    {
+      "path": "admet_model_outputs_v61/herg/fold1/metadata.json",
+      "sha256": "c67411f9ec30a39124ccc5d08bea7ff64c33d2661a60188593104b6a19194f74",
+      "bytes": 690
+    },
+    {
+      "path": "admet_model_outputs_v61/herg/fold2/metadata.json",
+      "sha256": "2faf5efd17d031fd7303faefc18367f70b529d5d7107b24e2ce2ea5fdb235193",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/herg/fold0/metadata.json",
+      "sha256": "40792fdbf5c14a170e4f6ffcd54021c383d283c5f8a8031e71caaf4f669f6788",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/clearance_hepatocyte_az/valid/metadata.json",
+      "sha256": "79431aa3a05c244f0e3ec38c918dc37aaa595baf879c53bb75f6b864a1464f2b",
+      "bytes": 688
+    },
+    {
+      "path": "admet_model_outputs_v61/clearance_hepatocyte_az/fold1/metadata.json",
+      "sha256": "8dd663adb0868ef6a09ad2e7be4c1cfafae85bf58d6b475f2a3d4bc604bf51ef",
+      "bytes": 690
+    },
+    {
+      "path": "admet_model_outputs_v61/clearance_hepatocyte_az/fold2/metadata.json",
+      "sha256": "4cbb35785fb086c084c7ab43c1a2e38a4086a231e4f4cbb94efe35e64ad44dfa",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/clearance_hepatocyte_az/fold0/metadata.json",
+      "sha256": "3e6b4bb68df68eaba2684e92ae8e03aebd54b8dcc29574829fd23230b242bf7f",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/caco2_wang/valid/metadata.json",
+      "sha256": "39baf13e75b8e408f440d02f4e789a1e6427429c35d816f3fb60212c01304363",
+      "bytes": 687
+    },
+    {
+      "path": "admet_model_outputs_v61/caco2_wang/final/metadata.json",
+      "sha256": "66c5c1646b4ca729e5775b59af4c24c6e1bd92924d5af6ec7f1b7483f3fa896e",
+      "bytes": 655
+    },
+    {
+      "path": "admet_model_outputs_v61/caco2_wang/fresh1/metadata.json",
+      "sha256": "89d552afa535cacd584f499cb096ff95a3c472042dbf06841b2a382e1aea7228",
+      "bytes": 656
+    },
+    {
+      "path": "admet_model_outputs_v61/caco2_wang/fold1/metadata.json",
+      "sha256": "891f82e51816a8a949cf99163efc88fa5b363b20b45a5f01f466ed907c8cb410",
+      "bytes": 690
+    },
+    {
+      "path": "admet_model_outputs_v61/caco2_wang/fresh0/metadata.json",
+      "sha256": "5f6ae79e8739199b1ea2ff7583bd085392ceb345a2aa081e99a757e0c0584362",
+      "bytes": 656
+    },
+    {
+      "path": "admet_model_outputs_v61/caco2_wang/fold2/metadata.json",
+      "sha256": "391e5eb3368de1ec9024063c522d4f8a6adc5dc4934024acc85efdb62b26a550",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/caco2_wang/fold0/metadata.json",
+      "sha256": "c4a04b26d626cd0431d07b71eae6cbd8ce11cae04ac3bec367248d766ae201f5",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/hia_hou/valid/metadata.json",
+      "sha256": "e84745a3eaa85bc78ad7fb850af253ba118c1923aa8fe0db583bd05c5372749f",
+      "bytes": 686
+    },
+    {
+      "path": "admet_model_outputs_v61/hia_hou/final/metadata.json",
+      "sha256": "5803780f0cc7f0c598c7787a1840a625b94d92b77ee2f938facad8ac19510c68",
+      "bytes": 371
+    },
+    {
+      "path": "admet_model_outputs_v61/hia_hou/fresh1/metadata.json",
+      "sha256": "9ab8065ab6294760a90b53a45bcc64f0be3b6b1eb7560326cddf0445439c5a9f",
+      "bytes": 371
+    },
+    {
+      "path": "admet_model_outputs_v61/hia_hou/fresh_independent/metadata.json",
+      "sha256": "5fe2714fb310f6d59d3520612ece74209270cc8c81a4b4a4d7732d390a0ac6cf",
+      "bytes": 370
+    },
+    {
+      "path": "admet_model_outputs_v61/hia_hou/fold1/metadata.json",
+      "sha256": "c6280337194ef4c06c50cf6c956c3694246535b051b9f9535f91f1edd8b945f5",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/hia_hou/fresh0/metadata.json",
+      "sha256": "e3aa5449d87c125ccb382ac9c9e1b0fdf7c7e08b56911f1d0636527fe74be4c6",
+      "bytes": 370
+    },
+    {
+      "path": "admet_model_outputs_v61/hia_hou/fold2/metadata.json",
+      "sha256": "7fc65afe52347e1044d02d585cf86d7432f674c04d65024e1555222fe7e9c877",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/hia_hou/fold0/metadata.json",
+      "sha256": "88a50d34483b72711b8ad3c7801ea61e0b872492797fd3fc475a06e77c8faa49",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/vdss_lombardo/valid/metadata.json",
+      "sha256": "2651d5afcd9fc8672b4729bd4b49414971db37cb412ae1ee70aa271b0e470c44",
+      "bytes": 688
+    },
+    {
+      "path": "admet_model_outputs_v61/vdss_lombardo/fold1/metadata.json",
+      "sha256": "67f4a8a6214e5648ff4d29942597638ed76ad42c636168c994a5539e27e145d6",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/vdss_lombardo/fold2/metadata.json",
+      "sha256": "71d278034d26d8f3e1ca42acd39fcb1850022017037108c29004469cb7d6232a",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/vdss_lombardo/fold0/metadata.json",
+      "sha256": "97ef3fb47b4ef2004ad73adee98bcad0f21900b2d184ac60c5299d293046490e",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2c9_veith/valid/metadata.json",
+      "sha256": "b25240fe1e56ae552f1d826213d99a5243619f133bdf4a55002157566a8fda5a",
+      "bytes": 689
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2c9_veith/fold1/metadata.json",
+      "sha256": "b6a21688803cbac00c7b75ff89c11223c7f7d46b9b6c0724b0e8342df6b7d156",
+      "bytes": 693
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2c9_veith/fold2/metadata.json",
+      "sha256": "c76135183641501ad54f6c5d35b00335cb5e3102e3c79de0d18f5a498e2e69fc",
+      "bytes": 693
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2c9_veith/fold0/metadata.json",
+      "sha256": "625ab3ef6042fd9dc16fa4111a65b6362dfb29058291bce7b0324520cbe6d746",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/bioavailability_ma/valid/metadata.json",
+      "sha256": "c6122752425c0ecb94b6c5161a9284a99ad02c5f66d67138f225245259abfb97",
+      "bytes": 687
+    },
+    {
+      "path": "admet_model_outputs_v61/bioavailability_ma/fold1/metadata.json",
+      "sha256": "0eab37e7b76a882d31b83ca7e98b88b78ae341d5e7d6b372b8e0306700e12c92",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/bioavailability_ma/fold2/metadata.json",
+      "sha256": "069b0e56af9aeaf3ceba988a78d3d14cfe804a668bbe67f806a536ff39620ea9",
+      "bytes": 690
+    },
+    {
+      "path": "admet_model_outputs_v61/bioavailability_ma/fold0/metadata.json",
+      "sha256": "f879e7d4d0eddcd443fbc8048a23e95f743c4bbd1f3bf6463697546fe71b7046",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/clearance_microsome_az/valid/metadata.json",
+      "sha256": "2e819d65f4cf126f3f8cbb0b1189893de2b3ce5ec9a91e1a84ae69b547d7df80",
+      "bytes": 687
+    },
+    {
+      "path": "admet_model_outputs_v61/clearance_microsome_az/fold1/metadata.json",
+      "sha256": "26a6856badf827561f919005b502ac0d1bebb03caddae3036933648d3166784a",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/clearance_microsome_az/fold2/metadata.json",
+      "sha256": "c6085855b6695aadedd41e41d47db3f0d8241a5bac9d3c37966ae7d42bbcb451",
+      "bytes": 690
+    },
+    {
+      "path": "admet_model_outputs_v61/clearance_microsome_az/fold0/metadata.json",
+      "sha256": "7ac9846de5ecc511cbabfe27789e34c0c9c596c133ccf37943be4062b3822e53",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp3a4_substrate_carbonmangels/valid/metadata.json",
+      "sha256": "d0575de940a9405216cecca0ece7686081cff9df3797e86148f5a72380ab86ed",
+      "bytes": 687
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp3a4_substrate_carbonmangels/fold1/metadata.json",
+      "sha256": "35286df876dc6f37c5180dd805aff4f8d72f77cc747b8bb1737253144463f3c5",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp3a4_substrate_carbonmangels/fold2/metadata.json",
+      "sha256": "73eab51557efb80f7df1fe3026a0fec9b0de5562e95b79147e69c7b07491fa0b",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp3a4_substrate_carbonmangels/fold0/metadata.json",
+      "sha256": "2ac18165618386d2ab555b9ca6c73d60585c9d8e237127e7ddf9f2163e7e55bc",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/solubility_aqsoldb/valid/metadata.json",
+      "sha256": "4528e00dceb8169978685bc6492f94597da6f7947de21e8c49bd5182acbf6d34",
+      "bytes": 689
+    },
+    {
+      "path": "admet_model_outputs_v61/solubility_aqsoldb/final/metadata.json",
+      "sha256": "e77c01a96c5d643ebc9fd6ad8281567bce25e4fa5374081567586edc94271a19",
+      "bytes": 658
+    },
+    {
+      "path": "admet_model_outputs_v61/solubility_aqsoldb/fresh1/metadata.json",
+      "sha256": "7367fd122d3025b6667f1786cad6523ed56590a31f9aa94148e2f60a37c2e1a5",
+      "bytes": 658
+    },
+    {
+      "path": "admet_model_outputs_v61/solubility_aqsoldb/fold1/metadata.json",
+      "sha256": "cf7136e64a97a329e0d7837427611b35c711e03393ad662c819cbebe8fea49c7",
+      "bytes": 692
+    },
+    {
+      "path": "admet_model_outputs_v61/solubility_aqsoldb/fresh0/metadata.json",
+      "sha256": "6cfd7675016dfb33f4e65f44a3cc6661a6e67ff3c5f6088dedebb6ff52322047",
+      "bytes": 658
+    },
+    {
+      "path": "admet_model_outputs_v61/solubility_aqsoldb/fold2/metadata.json",
+      "sha256": "d1bd12077c626bd401608e34b88f7b73677e5ce37ec7f4fbbaf98014eaf4ccb6",
+      "bytes": 692
+    },
+    {
+      "path": "admet_model_outputs_v61/solubility_aqsoldb/fold0/metadata.json",
+      "sha256": "88006d7a614f2209d15eff51190123a758cd26e187606a55f3911a26b19aeed4",
+      "bytes": 692
+    },
+    {
+      "path": "admet_model_outputs_v61/dili/valid/metadata.json",
+      "sha256": "9a1d01734663e9c3dd445a3615924c1c3802ad4e843a47991be603a7c7365f8f",
+      "bytes": 687
+    },
+    {
+      "path": "admet_model_outputs_v61/dili/fold1/metadata.json",
+      "sha256": "efe5199828861fa3d52b1f10c2bfda72f4ea534eb75c859b2d518e92d3409592",
+      "bytes": 690
+    },
+    {
+      "path": "admet_model_outputs_v61/dili/fold2/metadata.json",
+      "sha256": "4315f374a755e497eef7da1d0b0b59eab402f1354f5eae315a8500048ee8eb12",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/dili/fold0/metadata.json",
+      "sha256": "f3b937c2ebd8c64807fcc896b8431394ec37abe93c59d65d299dd2401d7b7603",
+      "bytes": 690
+    },
+    {
+      "path": "admet_model_outputs_v61/ames/valid/metadata.json",
+      "sha256": "3df3cb5bcf5bd29022dbc4c2f9188a8ac442e209d07eb4581c9070dbbb57974b",
+      "bytes": 688
+    },
+    {
+      "path": "admet_model_outputs_v61/ames/final/metadata.json",
+      "sha256": "9f41bdc1281ed07ea8cc18c47aa31c1375b473909fe0fe95604fea1607a354fc",
+      "bytes": 371
+    },
+    {
+      "path": "admet_model_outputs_v61/ames/fresh1/metadata.json",
+      "sha256": "85d7208e0370fa51b45e644b0acd8a9c92b838b31427c90229f911fa16bd5974",
+      "bytes": 372
+    },
+    {
+      "path": "admet_model_outputs_v61/ames/fresh_independent/metadata.json",
+      "sha256": "d02b9f22cb0aaaf9a9558f10726c7dfbffb0dcb1e0b03c5aaa6bd927b70d4c6b",
+      "bytes": 371
+    },
+    {
+      "path": "admet_model_outputs_v61/ames/fold1/metadata.json",
+      "sha256": "9106bb89df1dcbd1b6c5116ddfcf8bf98447015bee5376ece6bc0b72f559bee7",
+      "bytes": 692
+    },
+    {
+      "path": "admet_model_outputs_v61/ames/fresh0/metadata.json",
+      "sha256": "f45260e52a48ec72bf6e38d755cab62768e9e0c79bb44dc3811559d0d66a3ec1",
+      "bytes": 371
+    },
+    {
+      "path": "admet_model_outputs_v61/ames/fold2/metadata.json",
+      "sha256": "948ebcee3e69a8268349e2e7c8ca308c27515c9f5c20cf4be0a53dc8b5d87466",
+      "bytes": 692
+    },
+    {
+      "path": "admet_model_outputs_v61/ames/fold0/metadata.json",
+      "sha256": "dd9b95542c8834410ed0fa6f368dbb265f31903f9538843408f929942fe5b83f",
+      "bytes": 693
+    },
+    {
+      "path": "admet_model_outputs_v61/pgp_broccatelli/valid/metadata.json",
+      "sha256": "5045673fe16d2127136e45d3a32c471cdf9d0f7a8951619caf88252cce47598a",
+      "bytes": 688
+    },
+    {
+      "path": "admet_model_outputs_v61/pgp_broccatelli/fold1/metadata.json",
+      "sha256": "53e996dd3fb5b7c158389f98e3a466b4134a7d02199c448e2e948d94a6645398",
+      "bytes": 690
+    },
+    {
+      "path": "admet_model_outputs_v61/pgp_broccatelli/fold2/metadata.json",
+      "sha256": "6b545946148c50f7ba1963f46b76106641c97157a8cea53291045bfc0026fd7d",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/pgp_broccatelli/fold0/metadata.json",
+      "sha256": "d3a6460a632895acaff5bd8a2c2c2edd606132d5929e03e30b1f7be43bf453e7",
+      "bytes": 691
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2d6_veith/valid/metadata.json",
+      "sha256": "b4c9981f98b0061d59d172c8cb2555e9bd3dd7a7c64195ccde4b7f761d43cfe2",
+      "bytes": 689
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2d6_veith/final/metadata.json",
+      "sha256": "75fe95fe385f2b8c950440d0d24bdb25e2e01ad683638336d2e61fd2eb340451",
+      "bytes": 372
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2d6_veith/fresh1/metadata.json",
+      "sha256": "41dfd47780d1740545591edc4954e9927ea266f0d4b116256452a48ecf6db58b",
+      "bytes": 372
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2d6_veith/fresh_independent/metadata.json",
+      "sha256": "ada35e262787e4a500d252c9fabad348be04ed2bb94bd2c472b597fc3704fb1b",
+      "bytes": 372
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2d6_veith/fold1/metadata.json",
+      "sha256": "dcab290ac9295f2bd995558b708bac6232711d52ea5e2bbdf320569799e1d091",
+      "bytes": 693
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2d6_veith/fresh0/metadata.json",
+      "sha256": "3fcb5412d7ee00d84b24d11ad4a08f584742948f1d93eb95e62654c6db53c380",
+      "bytes": 372
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2d6_veith/fold2/metadata.json",
+      "sha256": "5eb0fb59c20f09aab16dfa145642710f712ebe8afdb9e8a8161d26f8db3c2029",
+      "bytes": 693
+    },
+    {
+      "path": "admet_model_outputs_v61/cyp2d6_veith/fold0/metadata.json",
+      "sha256": "075cce9f09ae9a6e5f40f91aab2b89995a169db204d64d0789b99274c69dbe6c",
+      "bytes": 693
+    },
+    {
+      "path": "admet_submissions/v61/verification.json",
+      "sha256": "0d99c674eaa6e22ae5916d25b845da8dbf8bad786d8d7e28fc18332f0831d65b",
+      "bytes": 717
+    },
+    {
+      "path": "admet_submissions/v61/我从山北来带着兰花草-小分子药物预测技术创新赛-20261017.csv",
+      "sha256": "216d11e43d94ed015cc1aae661820844e3aa109d967cf0f14aa9c3c990ba0c18",
+      "bytes": 1772858
+    },
+    {
+      "path": "admet_model_outputs_v62/fold2_worker_completed.json",
+      "sha256": "71621b1d758eccc2bdc55cf90e414e5d4e7c218e4de0db9775f6523ba70923dc",
+      "bytes": 109
+    },
+    {
+      "path": "admet_model_outputs_v62/valid_worker_completed.json",
+      "sha256": "71621b1d758eccc2bdc55cf90e414e5d4e7c218e4de0db9775f6523ba70923dc",
+      "bytes": 109
+    },
+    {
+      "path": "admet_model_outputs_v62/fold1_worker.log",
+      "sha256": "8d70217aca773787e4383245424ba62b4638b9efcdbd5748925e96b1be25fab7",
+      "bytes": 2846
+    },
+    {
+      "path": "admet_model_outputs_v62/model_replay.json",
+      "sha256": "523d727ecf71a417fcfefe0e1bf0e969ac19896791dadfb9e04a501c2e98f2c8",
+      "bytes": 562
+    },
+    {
+      "path": "admet_model_outputs_v62/fold1_worker_completed.json",
+      "sha256": "71621b1d758eccc2bdc55cf90e414e5d4e7c218e4de0db9775f6523ba70923dc",
+      "bytes": 109
+    },
+    {
+      "path": "admet_model_outputs_v62/analysis.json",
+      "sha256": "da06dc2b2a7b0c9f8b3134fcc649981cb3c8a9b394beaf9aab6f389f5580043c",
+      "bytes": 98239
+    },
+    {
+      "path": "admet_model_outputs_v62/fresh.json",
+      "sha256": "bb39c90bcb85709cafbf239b43eb3edf26c0aa0527da33177736107a7abc6f87",
+      "bytes": 20098
+    },
+    {
+      "path": "admet_model_outputs_v62/fusion_replay.json",
+      "sha256": "cc1077024e6fc88537c7d799bab33f5e391cfc8a467dc25a0e75753705d84e52",
+      "bytes": 412995
+    },
+    {
+      "path": "admet_model_outputs_v62/parallel_workers.json",
+      "sha256": "c6ee47eb6d2ffe943530a0bd8be5f3233613a5929dc366a3024d7218eba3aa43",
+      "bytes": 59
+    },
+    {
+      "path": "admet_model_outputs_v62/fold2_worker.log",
+      "sha256": "aec3edf05d2f7d19492fc5f9f06337411020bf47ab6a0f024bc355372254cce0",
+      "bytes": 2841
+    },
+    {
+      "path": "admet_model_outputs_v62/parallel.log",
+      "sha256": "7c389e78754c3cd7bd9b66a96acdaa7d09dabed39936863f99a90bc62e9daeaa",
+      "bytes": 250
+    },
+    {
+      "path": "admet_model_outputs_v62/valid_worker.log",
+      "sha256": "f3533303538691a35f389ceeac62dfc43be89aec9fb57d2dad06399964d6775c",
+      "bytes": 2779
+    },
+    {
+      "path": "admet_model_outputs_v62/selftest.json",
+      "sha256": "0168f8540fb00a48c703bd34f4434a329fa2010339364834deac986c29fabd23",
+      "bytes": 87
+    },
+    {
+      "path": "admet_model_outputs_v62/release.json",
+      "sha256": "97e94d93716d823033c745fa72442d857fcfebea2b787809c51a0274b56d7070",
+      "bytes": 20177
+    },
+    {
+      "path": "admet_model_outputs_v62/all_completed.json",
+      "sha256": "71621b1d758eccc2bdc55cf90e414e5d4e7c218e4de0db9775f6523ba70923dc",
+      "bytes": 109
+    },
+    {
+      "path": "admet_model_outputs_v62/run.log",
+      "sha256": "96feda8c53f7cc995381a53bb771999c231d7da9bf1813e76eab794aeb6e65fe",
+      "bytes": 12307
+    },
+    {
+      "path": "admet_model_outputs_v62/valid/621017/metadata.json",
+      "sha256": "b5e919b94ad39a5f80f71a68c773b3a3d539f57d973beeab68d2f7fe2cf83111",
+      "bytes": 534
+    },
+    {
+      "path": "admet_model_outputs_v62/valid/621018/metadata.json",
+      "sha256": "46cc818c3914b56b735e51aaec27fb6d891d0d1c5b581d9c8733409539e5d1f5",
+      "bytes": 534
+    },
+    {
+      "path": "admet_model_outputs_v62/final/621017/metadata.json",
+      "sha256": "2ef319755f3af608a2d9d53aafaf2a013ba83a2ab1034a13601aac02b16d4af5",
+      "bytes": 537
+    },
+    {
+      "path": "admet_model_outputs_v62/final/621018/metadata.json",
+      "sha256": "6f7939f3954b5df9edd04ad27d2b94d9b17ae08929485a230a7569e36b71fea1",
+      "bytes": 537
+    },
+    {
+      "path": "admet_model_outputs_v62/cv/fold1/621017/metadata.json",
+      "sha256": "4470ef63080de1e4a4683d44652f4cf545d01a2cf6aab2ff14cf510b7de9dd9f",
+      "bytes": 534
+    },
+    {
+      "path": "admet_model_outputs_v62/cv/fold1/621018/metadata.json",
+      "sha256": "2c31374e229fab8cd0541f6e1c2943d420d7a42c16d9f5ac7617d2d33cf50d3d",
+      "bytes": 534
+    },
+    {
+      "path": "admet_model_outputs_v62/cv/fold2/621017/metadata.json",
+      "sha256": "57314fdf6266ced80730f21424c6c05174280433468a5f89ee313cc4ba974a9b",
+      "bytes": 533
+    },
+    {
+      "path": "admet_model_outputs_v62/cv/fold2/621018/metadata.json",
+      "sha256": "0fb40b2487e56b059a25415e6b2ac1098543f09eaf29eeab46e002a68669018d",
+      "bytes": 534
+    },
+    {
+      "path": "admet_model_outputs_v62/cv/fold0/621017/metadata.json",
+      "sha256": "e0274c7545e3a20bcf9057e294c58087bb83384eeeb13bc0c971db402551c850",
+      "bytes": 534
+    },
+    {
+      "path": "admet_model_outputs_v62/cv/fold0/621018/metadata.json",
+      "sha256": "017e49e55f81aa1cbbf5862f22cb196aecb39d4d5d0700a8177c52929dd74be5",
+      "bytes": 533
+    },
+    {
+      "path": "admet_model_outputs_v62/fresh/621017/metadata.json",
+      "sha256": "c4b96c17aebe1c8b3e8811854773ef8b669abf6318a2cbeb3ebdd5f9b76655e8",
+      "bytes": 534
+    },
+    {
+      "path": "admet_submissions/v62/verification.json",
+      "sha256": "2800f6843b9ca930bab64756b453ef1d6c08590d1b08822ef3d8de9e951c8e48",
+      "bytes": 677
+    },
+    {
+      "path": "admet_submissions/v62/我从山北来带着兰花草-小分子药物预测技术创新赛-20261017.csv",
+      "sha256": "67d368d875257e2a37fe86431791f2e77987dfccb1a73d9d3aadea576aecc14e",
+      "bytes": 1772876
+    },
+    {
+      "path": "admet_model_outputs_v63/model_replay.json",
+      "sha256": "b32cdbb3e50100aafb8769d6993e6b0fe009c87e494d2dbf34b9749e21deb673",
+      "bytes": 799
+    },
+    {
+      "path": "admet_model_outputs_v63/analysis.json",
+      "sha256": "acff68d5c139d772648f1a8a89a4ce520a96c3e491e833fe5649dabb5e01839d",
+      "bytes": 50426
+    },
+    {
+      "path": "admet_model_outputs_v63/fresh.json",
+      "sha256": "3a588c8d3699a202ef6271595c93a9818667b7d877606ba2865ad7af85ba9b6a",
+      "bytes": 24125
+    },
+    {
+      "path": "admet_model_outputs_v63/fusion_replay.json",
+      "sha256": "fc6a5cb45964b1070c224110c085ed8849f80f7e6733fce34738edd08867bf93",
+      "bytes": 185307
+    },
+    {
+      "path": "admet_model_outputs_v63/release.json",
+      "sha256": "0a1e2fb2f995ae8ef86fb5bbc9e9abddd5532fce90e9bc13894ca6088d6b00bb",
+      "bytes": 24629
+    },
+    {
+      "path": "admet_model_outputs_v63/all_completed.json",
+      "sha256": "0e978ccb81d6e5e9658504bf1be13936f8f3ba4cb586d6715e8565a609431bad",
+      "bytes": 109
+    },
+    {
+      "path": "admet_model_outputs_v63/run.log",
+      "sha256": "a90a49a5c70323a14956da78c8cb32426f31cfc2d375374d245b13f176081d74",
+      "bytes": 15277
+    },
+    {
+      "path": "admet_model_outputs_v63/bbb_martins/valid/metadata.json",
+      "sha256": "dcb950ad95916bf7d50d38dd5971bfb751214d1b8e7536df74dbb8ca1eeea829",
+      "bytes": 591
+    },
+    {
+      "path": "admet_model_outputs_v63/bbb_martins/fold1/metadata.json",
+      "sha256": "44b24a9577b504c645e46cd6bd92207fb95e4cc369b0b60180280592d10062f3",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/bbb_martins/fold2/metadata.json",
+      "sha256": "2477a0a43a0dfe527898426bb3d8e67bbc11bd03852e0678ea069a3eee3f541b",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/bbb_martins/fold0/metadata.json",
+      "sha256": "64ef0578fd37b27bf5538ab80d9721919bb52536c25cb2d31d4b5d3036d80a8b",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/cyp2c9_substrate_carbonmangels/valid/metadata.json",
+      "sha256": "e31d23ec9e32636646a4772decbe017b9784deb577b59921891ab35e2ef93c4c",
+      "bytes": 588
+    },
+    {
+      "path": "admet_model_outputs_v63/cyp2c9_substrate_carbonmangels/fold1/metadata.json",
+      "sha256": "a6a4e6cdd9a1f3ba49d5bd8be411ed5073551c3dfceca2767e2d316fccc413e0",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/cyp2c9_substrate_carbonmangels/fold2/metadata.json",
+      "sha256": "a317291a64edae9dbbad0ca785f2859647f4a028440a5d735b0b42af3f2b035b",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/cyp2c9_substrate_carbonmangels/fold0/metadata.json",
+      "sha256": "343542a23e150142705ac05ca336f188d8056443d1a76c8db44417c171aafb8c",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/cyp2d6_substrate_carbonmangels/valid/metadata.json",
+      "sha256": "a5fe2ef86565dda7d089d6eed59991af011ffcc83ffeeff1bc3dd09223c94c6f",
+      "bytes": 589
+    },
+    {
+      "path": "admet_model_outputs_v63/cyp2d6_substrate_carbonmangels/fold1/metadata.json",
+      "sha256": "53bcada5463bac8baed9631dc99f6e406f8d22b9b05a078a548e10fce4b8fde7",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/cyp2d6_substrate_carbonmangels/fold2/metadata.json",
+      "sha256": "e0eb4b4e9d1918c8cbed3c69675e5abffab593da4932ba45997704d8de1c659d",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/cyp2d6_substrate_carbonmangels/fold0/metadata.json",
+      "sha256": "60ffedbd43c2daa47c8b5aaff0ec6f0db15abca36cf5b42af1949b51ca17d570",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/half_life_obach/valid/metadata.json",
+      "sha256": "b5e10fb306747834bb86b67945d04f1e52176744df9a8d6d774baeba0cc220c7",
+      "bytes": 587
+    },
+    {
+      "path": "admet_model_outputs_v63/half_life_obach/fold1/metadata.json",
+      "sha256": "109a0602e4658821ecc660ede3883f820bcc3ec12b1384ef509484250e2a474d",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/half_life_obach/fold2/metadata.json",
+      "sha256": "2f880290c7bc2e55dc45957061149cb0f8757f27613b45a4d2a4c0244d42a48d",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/half_life_obach/fold0/metadata.json",
+      "sha256": "ee1666034e22c925b7e8d468c1a273f15d79268b6d554e54a7850c006d35cae5",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/ppbr_az/valid/metadata.json",
+      "sha256": "1c9754485cf00c05a2985d251d8ba1ffefa5330e3eb5dbf99d0a746ea873d82f",
+      "bytes": 590
+    },
+    {
+      "path": "admet_model_outputs_v63/ppbr_az/final/metadata.json",
+      "sha256": "3476d080e6b9989a8f276808f5f9058fe3db439c9b3ac121ef9e77545161a880",
+      "bytes": 300
+    },
+    {
+      "path": "admet_model_outputs_v63/ppbr_az/fresh1/metadata.json",
+      "sha256": "e28e3736ab611bca3c6c9c5fc4bb7f669dbaa0222b07c4eaeee85754dcf25449",
+      "bytes": 300
+    },
+    {
+      "path": "admet_model_outputs_v63/ppbr_az/fresh_independent/metadata.json",
+      "sha256": "6d92b2f8e4c1064134c590977f762230c78eba4db0df2858c8cd60605b5ca4bc",
+      "bytes": 300
+    },
+    {
+      "path": "admet_model_outputs_v63/ppbr_az/fold1/metadata.json",
+      "sha256": "c3626024f20c1abbb53e3b7a43b594d2ad0fed3784be4447d973d2be2c20036f",
+      "bytes": 594
+    },
+    {
+      "path": "admet_model_outputs_v63/ppbr_az/fresh0/metadata.json",
+      "sha256": "937684855ed615ee2b83db4b8cbf1d4211c5bb8046f6b5269652cfb1797fde19",
+      "bytes": 299
+    },
+    {
+      "path": "admet_model_outputs_v63/ppbr_az/fold2/metadata.json",
+      "sha256": "d6b9b535b3e86b9d5fe67240ea5d8c749c968835593742032a6c34b5b09b217c",
+      "bytes": 594
+    },
+    {
+      "path": "admet_model_outputs_v63/ppbr_az/fold0/metadata.json",
+      "sha256": "14f1a26c3404774e08d757b40830dac494e046e51c7c76bc18ee594def3aece6",
+      "bytes": 594
+    },
+    {
+      "path": "admet_model_outputs_v63/lipophilicity_astrazeneca/valid/metadata.json",
+      "sha256": "1e24ac5fd49502194cf6b19f32c5ad6b0d24fdcfd8ed749b4f2d2fc54ab08f21",
+      "bytes": 591
+    },
+    {
+      "path": "admet_model_outputs_v63/lipophilicity_astrazeneca/final/metadata.json",
+      "sha256": "4bbef75c758f0e0a6500aea12f33b4af60716ff82ee339cdbf2eac244a20bd0e",
+      "bytes": 300
+    },
+    {
+      "path": "admet_model_outputs_v63/lipophilicity_astrazeneca/fresh1/metadata.json",
+      "sha256": "cb83b86013cf737b3c42d4110a9253827fc9c0a3852d885c23c347855026a335",
+      "bytes": 300
+    },
+    {
+      "path": "admet_model_outputs_v63/lipophilicity_astrazeneca/fresh_independent/metadata.json",
+      "sha256": "73ca96b69c301b2c93c3b9ea2c944923eb69d4553d89426c1d58792ad9a5957f",
+      "bytes": 300
+    },
+    {
+      "path": "admet_model_outputs_v63/lipophilicity_astrazeneca/fold1/metadata.json",
+      "sha256": "6cb0f4e11f084958d3860c358c5f3838cfc386699994e9c3b2ca155cb43429b5",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/lipophilicity_astrazeneca/fresh0/metadata.json",
+      "sha256": "55d333c788f81d554842ee3675a4a30970d2c1b5bbd698d14f3b786c7a20a01b",
+      "bytes": 301
+    },
+    {
+      "path": "admet_model_outputs_v63/lipophilicity_astrazeneca/fold2/metadata.json",
+      "sha256": "976b635699e4d7791e555bc3e53781ee78ede0c88f68baeab711cb56bb446e91",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/lipophilicity_astrazeneca/fold0/metadata.json",
+      "sha256": "afde06d653ba676dc56dae6854068ca77c460a5810054e2185e9559e97dea20e",
+      "bytes": 594
+    },
+    {
+      "path": "admet_model_outputs_v63/herg/valid/metadata.json",
+      "sha256": "4b04ac056b839920c2d2ebf2b509108c3f508994099b3dee03d4898713aeddf2",
+      "bytes": 588
+    },
+    {
+      "path": "admet_model_outputs_v63/herg/final/metadata.json",
+      "sha256": "3bb3f1c7457fe9f91518ad6d02c72bc9692a927f84acea54bb5ee1df0a85d4e9",
+      "bytes": 299
+    },
+    {
+      "path": "admet_model_outputs_v63/herg/fresh1/metadata.json",
+      "sha256": "0c1eea62dfbc2f67aad8633dfcc9d96c237995ffaea04be5074e1b4d390bf1ff",
+      "bytes": 299
+    },
+    {
+      "path": "admet_model_outputs_v63/herg/fresh_independent/metadata.json",
+      "sha256": "4eecdbcd4da344e9ba38a04c1b95bdf7276377d82ac8769f24ae77eceb9bf059",
+      "bytes": 299
+    },
+    {
+      "path": "admet_model_outputs_v63/herg/fold1/metadata.json",
+      "sha256": "5bb707d1e0746cbc95382999b8ce231f1f6a798af9070088380e92f08ff05e92",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/herg/fresh0/metadata.json",
+      "sha256": "a682b465b4a42cab841b948fc011ef62e6aa570bc1dba0a24dd20f3f8306fba4",
+      "bytes": 299
+    },
+    {
+      "path": "admet_model_outputs_v63/herg/fold2/metadata.json",
+      "sha256": "1ed643a0516267c88cde417b27de384dd233ee34860e3cb7e22989a77b3b1c46",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/herg/fold0/metadata.json",
+      "sha256": "769fedf60ca925cf28c38ae0560aeb37438fb5ae0ef31e1503e252419944e7fe",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/clearance_hepatocyte_az/valid/metadata.json",
+      "sha256": "66ea298ea488b587070aa934649f200516883f45fa56e52acbb76e86c9afcef0",
+      "bytes": 590
+    },
+    {
+      "path": "admet_model_outputs_v63/clearance_hepatocyte_az/final/metadata.json",
+      "sha256": "6079462771798fe032dc57ba9235197a2a9f364c9b0a5b232f2e44f9f3b547f5",
+      "bytes": 299
+    },
+    {
+      "path": "admet_model_outputs_v63/clearance_hepatocyte_az/fresh1/metadata.json",
+      "sha256": "1af2b17ef6a7789adba5b4a3550c851570ac70e15a88b6a565a49021b948021c",
+      "bytes": 299
+    },
+    {
+      "path": "admet_model_outputs_v63/clearance_hepatocyte_az/fresh_independent/metadata.json",
+      "sha256": "413636a22563f5864bcea2a0f6083ee84be5c85e79532533d29650b79af3b48c",
+      "bytes": 299
+    },
+    {
+      "path": "admet_model_outputs_v63/clearance_hepatocyte_az/fold1/metadata.json",
+      "sha256": "11c1f0441fdeeab98cbfa0e9e90f72caf711be70cb0d646be7bf6ba679ae566d",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/clearance_hepatocyte_az/fresh0/metadata.json",
+      "sha256": "6a5bafcf47a59a6696ed50ee7f4edd032e0b5a5a6784de57918d8724311bab95",
+      "bytes": 299
+    },
+    {
+      "path": "admet_model_outputs_v63/clearance_hepatocyte_az/fold2/metadata.json",
+      "sha256": "8b599cdf6d11a7c1684c1ed9d6bc6289a3df2d5d543e7b943dc3952b5f42cbeb",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/clearance_hepatocyte_az/fold0/metadata.json",
+      "sha256": "5ef9e57c2e663e1feb4e6bdc90413dce5b24df78b49447b2a4bb0ab526e68f72",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/caco2_wang/valid/metadata.json",
+      "sha256": "cb33137626591cac40172bf888c96760e4933ab7bfda73b3f8471742b0311c6c",
+      "bytes": 588
+    },
+    {
+      "path": "admet_model_outputs_v63/caco2_wang/final/metadata.json",
+      "sha256": "8d1a009a2d192b6f6ec24ed7211768b8ec9e1362f0d5c0d75daf2e9c16f05209",
+      "bytes": 299
+    },
+    {
+      "path": "admet_model_outputs_v63/caco2_wang/fresh1/metadata.json",
+      "sha256": "e9d69ef176129fa4e7fa830414cb702a92122b70fd137a35b039f20c28533a07",
+      "bytes": 300
+    },
+    {
+      "path": "admet_model_outputs_v63/caco2_wang/fresh_independent/metadata.json",
+      "sha256": "ba471bdd9bbdbf248f83be394735a0e250ef713d6ee3930d8b13bb704f79ad61",
+      "bytes": 299
+    },
+    {
+      "path": "admet_model_outputs_v63/caco2_wang/fold1/metadata.json",
+      "sha256": "cc1f808e8610c254f3cf8f4ea2d4bffd2e3cab3832edd5c39aa7611f4c0d27d0",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/caco2_wang/fresh0/metadata.json",
+      "sha256": "6032c0a48c6e85d75efa897e9a9d3ef4d8036ad71952fe1932225b576b4ad84d",
+      "bytes": 299
+    },
+    {
+      "path": "admet_model_outputs_v63/caco2_wang/fold2/metadata.json",
+      "sha256": "c26d0045a447e171eebf88bde45356909996874631a4b27a1d20cfd5438f8a5e",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/caco2_wang/fold0/metadata.json",
+      "sha256": "6d7a3ac8719728355516b377e4bd1af362992d4381d145d8cf67a21eed33caab",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/hia_hou/valid/metadata.json",
+      "sha256": "417f6cdd74985f4246b8e2cad57d6daf57b6ca72cf583bc4fd670161c9c15042",
+      "bytes": 589
+    },
+    {
+      "path": "admet_model_outputs_v63/hia_hou/final/metadata.json",
+      "sha256": "4ed0b7e95778a9c783a94ac7dcf23e9182dcb36149b75da93fa4b7203c5110d0",
+      "bytes": 298
+    },
+    {
+      "path": "admet_model_outputs_v63/hia_hou/fresh1/metadata.json",
+      "sha256": "be0e337fbca446d4ab882bd4c6a6d3ec6a4b44584fcd9168c5d7970515329e17",
+      "bytes": 299
+    },
+    {
+      "path": "admet_model_outputs_v63/hia_hou/fresh_independent/metadata.json",
+      "sha256": "29159335d5923b43c34af52fe998e5e31c386009812af8bec667c90c7787184f",
+      "bytes": 299
+    },
+    {
+      "path": "admet_model_outputs_v63/hia_hou/fold1/metadata.json",
+      "sha256": "9a8536d9f95008dd0c5907090c9d46704b7e76e352e95c6ebb0b99008d299cc9",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/hia_hou/fresh0/metadata.json",
+      "sha256": "9a11011264968c5f380f9d3e0ab98180d5c90a22259a1153b5a511ccfacff043",
+      "bytes": 299
+    },
+    {
+      "path": "admet_model_outputs_v63/hia_hou/fold2/metadata.json",
+      "sha256": "8ae74d6cdaec0b0eaab5852abcc638b0dbcdaa99353f617c7a3c6cc03f5f82ac",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/hia_hou/fold0/metadata.json",
+      "sha256": "9ff6ff0fd0478d1e980e66f65679887de975c5dfb91f0ab00a6144cf57311454",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/vdss_lombardo/valid/metadata.json",
+      "sha256": "0edb6cdfcb4c9fe656c17420c66f306fa5f57c39fd59cb316eb08ff81ab3c239",
+      "bytes": 589
+    },
+    {
+      "path": "admet_model_outputs_v63/vdss_lombardo/fold1/metadata.json",
+      "sha256": "f3ce9878b22ef514f6dde9d29e3c2cc86726dba9880f1943cba90a6b50526bdc",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/vdss_lombardo/fold2/metadata.json",
+      "sha256": "49e2309ee06323426807cb391b2740641ed43575024fc6381a6561d55cf266da",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/vdss_lombardo/fold0/metadata.json",
+      "sha256": "8284b72c45545db76daa62dcb141d0355a7a35140b7533129edbe82d78552c14",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/bioavailability_ma/valid/metadata.json",
+      "sha256": "187aa30312abf1d15af2c20bb4d4af5115cd39b390d6560b3c4cd793fe52a9d1",
+      "bytes": 589
+    },
+    {
+      "path": "admet_model_outputs_v63/bioavailability_ma/fold1/metadata.json",
+      "sha256": "9659fd2476795bc383d9efcf7c2dc4c3a1ecf6b24b7d42905da195ccd922c98b",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/bioavailability_ma/fold2/metadata.json",
+      "sha256": "e162fd22eae4c4ad1074a3c90af70e953213ddab6058a24db4a2933c93387280",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/bioavailability_ma/fold0/metadata.json",
+      "sha256": "6b63c879da0836370d31a0e9c47913602f5e6a5f8312b583dde737e86a2fbeb3",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/clearance_microsome_az/valid/metadata.json",
+      "sha256": "f88134a5769c38666bbb4266f7595fa3acc749c1ce5d252b2eca1f1163732c76",
+      "bytes": 589
+    },
+    {
+      "path": "admet_model_outputs_v63/clearance_microsome_az/fold1/metadata.json",
+      "sha256": "635f1cb6d94c150259baa3be382d4cb2cdb39fd0e803ae5c0aa670ad5f15a9c5",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/clearance_microsome_az/fold2/metadata.json",
+      "sha256": "698b34b1991e2bdd84eebfa3e1bad0e3f3dd29d291b9bf6f87d20186fa85722a",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/clearance_microsome_az/fold0/metadata.json",
+      "sha256": "9cd905343a0d836ed1968eb97e6326bb842322cf45c4698170341e799cffebe9",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/cyp3a4_substrate_carbonmangels/valid/metadata.json",
+      "sha256": "b609f3e71fe491a04cd63096c941bb18315111cffc3685a5e752acaee4252cdb",
+      "bytes": 589
+    },
+    {
+      "path": "admet_model_outputs_v63/cyp3a4_substrate_carbonmangels/fold1/metadata.json",
+      "sha256": "8ebdb79396d491302a86cf5b1fd960a6b060d8686ffd488a6b6635970677e544",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/cyp3a4_substrate_carbonmangels/fold2/metadata.json",
+      "sha256": "137ba5e058ecfd32104bd873cdca9f5d9cddc9f52ef06de1c0b7770c23c2a88d",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/cyp3a4_substrate_carbonmangels/fold0/metadata.json",
+      "sha256": "3ef4f3269731984f1e069f27110102d2293a5066d3c370703da58555c49da732",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/dili/valid/metadata.json",
+      "sha256": "4e835d3f7682fce238bcd356d05cb280e5816adcc8beb1637f4f4b45bf3a7507",
+      "bytes": 589
+    },
+    {
+      "path": "admet_model_outputs_v63/dili/fold1/metadata.json",
+      "sha256": "73f04a7e7c3b016286f93374bee11d2f8d43a5c90c05dd0be4ea6e27c1c4b261",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/dili/fold2/metadata.json",
+      "sha256": "d26b19562b8ee200a49fc62b64f59d800b558758e788802e73bc12336fd640c4",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/dili/fold0/metadata.json",
+      "sha256": "3aa4ab06ab3af1779e7751715f5f522a9d403cf40b1de01d2274eb03db266116",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/pgp_broccatelli/valid/metadata.json",
+      "sha256": "2fafa160772914616ec4779444abb53040ae321dabeb7d9f02b39f2ae364e2d9",
+      "bytes": 590
+    },
+    {
+      "path": "admet_model_outputs_v63/pgp_broccatelli/fold1/metadata.json",
+      "sha256": "7d729fe09d9c86ee2bf2862fb2c59a4fa46b72509584a150ed08c4a8066c584d",
+      "bytes": 592
+    },
+    {
+      "path": "admet_model_outputs_v63/pgp_broccatelli/fold2/metadata.json",
+      "sha256": "94e093ef225b21b71c90521db603348c251ce4a443c2acfef1a8580c00dcd05a",
+      "bytes": 593
+    },
+    {
+      "path": "admet_model_outputs_v63/pgp_broccatelli/fold0/metadata.json",
+      "sha256": "61d87e711519dbfb7c0ef69efee1c32bd7f512525f11cc0199e3c8dc8dc05970",
+      "bytes": 593
+    },
+    {
+      "path": "admet_submissions/v63/verification.json",
+      "sha256": "5c6efbdbba02579ce4130cd6a888a096442cc92b6d1c39e54865c0fdd5edbb0b",
+      "bytes": 730
+    },
+    {
+      "path": "admet_submissions/v63/我从山北来带着兰花草-小分子药物预测技术创新赛-20261017.csv",
+      "sha256": "d3ba7a517f75390c70be547d0b39ae195d3e460750f2360c92a5273990155550",
+      "bytes": 1773354
+    },
+    {
+      "path": "admet_model_outputs_v64/pipeline.log",
+      "sha256": "3d7d9bb16b21896d6cbf62e4c711b108ae0a370ba265ffd7d7ac27bd6b9d6fef",
+      "bytes": 2307
+    },
+    {
+      "path": "admet_model_outputs_v64/pipeline_status.json",
+      "sha256": "707b7287599d2503ca6bb75b60843dcc695a30dc40f5596b509a17b7c8f16f63",
+      "bytes": 117
+    },
+    {
+      "path": "admet_model_outputs_v65/model_replay.json",
+      "sha256": "bbb73f891259f4ac0c6a4697e279e010ddb9ae2b9af19c53fa9a180fc13e26d4",
+      "bytes": 887
+    },
+    {
+      "path": "admet_model_outputs_v65/analysis.json",
+      "sha256": "455323e946d71051819ce4e199c8e9741665b6e5fb97717723eae239df11ca06",
+      "bytes": 38134
+    },
+    {
+      "path": "admet_model_outputs_v65/fresh.json",
+      "sha256": "58c9dd9b28d4c5c70bc17f943f22e317f076ec0678aceae9c2158aa41cc6ae7d",
+      "bytes": 17835
+    },
+    {
+      "path": "admet_model_outputs_v65/fusion_replay.json",
+      "sha256": "b92448f9db6f9fa8209e6b62c50212802c610562efbf6208eaca24b7ba86f6c9",
+      "bytes": 295803
+    },
+    {
+      "path": "admet_model_outputs_v65/release.json",
+      "sha256": "a7c2611da8b64499f01c4fd8831dcf7cdcce6c823ba097336362d0e9ad95caac",
+      "bytes": 14752
+    },
+    {
+      "path": "admet_model_outputs_v65/all_completed.json",
+      "sha256": "3492b632ffcfe22b436340d7e9daa9021c41e629872746028d6c96b46d12c799",
+      "bytes": 109
+    },
+    {
+      "path": "admet_model_outputs_v65/run.log",
+      "sha256": "48b43faf5581745a01c1ea1e4eb86ae9aa1de206b4fe03094d72fe18a2a042c8",
+      "bytes": 8120
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2c9_substrate_carbonmangels/valid/metadata.json",
+      "sha256": "0732b12b84794b39915d75bc2100d82f35fcfc66d6574e4eeca725d9ee626aee",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2c9_substrate_carbonmangels/fold1/metadata.json",
+      "sha256": "b202c51f226e5f8e3628163582734fbce12be32612263a5de20581f8d3080ae8",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2c9_substrate_carbonmangels/fresh/metadata.json",
+      "sha256": "dd8cb4249643bef37785ff4e0dfa50877092445dad86d411a00e5f31f63c445c",
+      "bytes": 2638
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2c9_substrate_carbonmangels/fold2/metadata.json",
+      "sha256": "c8a8d5cc4698fdb1bfe11f6ad55e2353232f994cb2737be80282f6844adefb2a",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2c9_substrate_carbonmangels/fold0/metadata.json",
+      "sha256": "fce89b9c3cc0041220983428b01d71804643825b4124feb1a93043f2ec4fbb07",
+      "bytes": 2629
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp3a4_veith/valid/metadata.json",
+      "sha256": "69074eaa69e804da237bf4084ac63a9c22c0ff4ef6daccaf1b7d716182ebd1eb",
+      "bytes": 2627
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp3a4_veith/fold1/metadata.json",
+      "sha256": "9510ee7eeff305eabfa65cf8e9f0f194773fc76cf366e17dd3297d3fd75e288c",
+      "bytes": 2628
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp3a4_veith/fold2/metadata.json",
+      "sha256": "e15a7d95d114b3acd114eb876e7593ed7c4d93a4d837ab54fec139c92c43369e",
+      "bytes": 2626
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp3a4_veith/fold0/metadata.json",
+      "sha256": "15865b0c4d22ffec7924869ac709880446bfd198b85baa9e7ce49f855718f537",
+      "bytes": 2627
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2d6_substrate_carbonmangels/valid/metadata.json",
+      "sha256": "efdbf43f756a1dba693f2737c5154360f3e43e8e15bef9a4c4c1acacb76d12d7",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2d6_substrate_carbonmangels/final/metadata.json",
+      "sha256": "5fb33d06f3f296e202398e5f6763840760ae4c6c14e530c9a167fd50636be839",
+      "bytes": 2638
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2d6_substrate_carbonmangels/fold1/metadata.json",
+      "sha256": "c994b8461089c3dfe6dc2512961d69fcca787a7aa1f2da01464f492b1b39f5a3",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2d6_substrate_carbonmangels/fresh/metadata.json",
+      "sha256": "aaf2e48067a3e40b84e747f19cb11ad4bae1e6a17b6cce96236d343f39fc3d63",
+      "bytes": 2637
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2d6_substrate_carbonmangels/fold2/metadata.json",
+      "sha256": "a5e9a7846c5a7510cc939bd70835ae5be92a932241ad2ae6fcafeeeac8719a4e",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2d6_substrate_carbonmangels/fold0/metadata.json",
+      "sha256": "ca4ec8781ad9436cd887af799aba9c5e622c467ce9bfb206971f5e2d5229ec3c",
+      "bytes": 2629
+    },
+    {
+      "path": "admet_model_outputs_v65/half_life_obach/valid/metadata.json",
+      "sha256": "820db030dbd64a719c5ebc7211ae3d8c4ec269e77e6b2f4d8be2647e103be523",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/half_life_obach/fold1/metadata.json",
+      "sha256": "cabf6ebdf134deafa85cedaa7a8229d64183debdcfb50c45b1ba249825f34f9f",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/half_life_obach/fold2/metadata.json",
+      "sha256": "ef0b35331e6e01f689a42d27342727f6190883fce21fc239df59018b8621b539",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/half_life_obach/fold0/metadata.json",
+      "sha256": "46cdc79afe5f731c355459b9f00fbd2646f54f304c4ddfa822832b8563f992f9",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/ppbr_az/valid/metadata.json",
+      "sha256": "a2d12c0d124f9dc817e09f8016d1ccecfa306cb3d96601c0b715a4cd0d432d6d",
+      "bytes": 2627
+    },
+    {
+      "path": "admet_model_outputs_v65/ppbr_az/final/metadata.json",
+      "sha256": "aa90e5c930cf4994961bf1a329f81bb6f2a0c65e341dc3a0882bb1b45a3efe23",
+      "bytes": 2637
+    },
+    {
+      "path": "admet_model_outputs_v65/ppbr_az/fold1/metadata.json",
+      "sha256": "c2381ad827f181a5fc8ec6ac5a715199af6be92fc4373959dbf87a2ef9c61fef",
+      "bytes": 2627
+    },
+    {
+      "path": "admet_model_outputs_v65/ppbr_az/fresh/metadata.json",
+      "sha256": "c7b931cac55fabe4a1daba9ce2d22cbf92584f70a05223ef44ae33988f573eb7",
+      "bytes": 2636
+    },
+    {
+      "path": "admet_model_outputs_v65/ppbr_az/fold2/metadata.json",
+      "sha256": "2daff7666496de2025a3931fd6d48d5a12aa6f7e1fd82ff383b28f5923c91f40",
+      "bytes": 2628
+    },
+    {
+      "path": "admet_model_outputs_v65/ppbr_az/fold0/metadata.json",
+      "sha256": "3925704e3594089224375589b815316d01c130bebe8e9bb47206eb6d53bf08f1",
+      "bytes": 2628
+    },
+    {
+      "path": "admet_model_outputs_v65/clearance_hepatocyte_az/valid/metadata.json",
+      "sha256": "ea2bff923e4bdd2f7c8c58a5c53c1885e221671e36ec28aa06b8efb9aff5ed26",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/clearance_hepatocyte_az/final/metadata.json",
+      "sha256": "ecb64adb2ab4ea006077e7981c9664e26f3e8fc6b5c3d81aa67c453797695729",
+      "bytes": 2639
+    },
+    {
+      "path": "admet_model_outputs_v65/clearance_hepatocyte_az/fold1/metadata.json",
+      "sha256": "96d76d95573f4781db174b6392cf1eb65abef98dc8bd599d785d3beb92e2497f",
+      "bytes": 2629
+    },
+    {
+      "path": "admet_model_outputs_v65/clearance_hepatocyte_az/fresh/metadata.json",
+      "sha256": "9974a4bd134039c48f1e058487e827679e92feb83413bd7d4ca0cc7e5a43e7d6",
+      "bytes": 2639
+    },
+    {
+      "path": "admet_model_outputs_v65/clearance_hepatocyte_az/fold2/metadata.json",
+      "sha256": "85623a8ee001e9591487000bbc8d06df40fdb7c6988b74bec8d5948b928f30b8",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/clearance_hepatocyte_az/fold0/metadata.json",
+      "sha256": "f3ec6ca3a6c29ecba0cc5636907f11fcb70044d109023bf9dd0f94b8e7ad6d19",
+      "bytes": 2629
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2c9_veith/valid/metadata.json",
+      "sha256": "bb8e772087ccbe79772a84fff17233ebab15a1cd9ca8e04c8f183b042c16de92",
+      "bytes": 2627
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2c9_veith/fold1/metadata.json",
+      "sha256": "355622c31039e00737f35599fb36805505b3d2d781226dbbd3d63ee39499884d",
+      "bytes": 2627
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2c9_veith/fold2/metadata.json",
+      "sha256": "eee96d19da9a2d65d632f73c6225b73005f63e8c6143529213f9d9763bd8450c",
+      "bytes": 2627
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2c9_veith/fold0/metadata.json",
+      "sha256": "ed38e800d1533aba4f335e55a0424afe15dd9e3e4ee4681710ff744b69291262",
+      "bytes": 2627
+    },
+    {
+      "path": "admet_model_outputs_v65/bioavailability_ma/valid/metadata.json",
+      "sha256": "be984ddd1aaa025325743f5802c7f504c2b6800cc5db85fc1563604a16e728fd",
+      "bytes": 2618
+    },
+    {
+      "path": "admet_model_outputs_v65/bioavailability_ma/fold1/metadata.json",
+      "sha256": "2a9c38a459b8afe5fa3d766149844f7587305f261f5dab2133761d553e820869",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/bioavailability_ma/fold2/metadata.json",
+      "sha256": "d4e3ed3f4bb0a7bf06986dc6558e30911cd5bb9403f2bc8a660e878fd3ef5158",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/bioavailability_ma/fold0/metadata.json",
+      "sha256": "d087b76c1be843bd98aed2e9a5cde1b356d5969361a7973fd26c73cb86f4c006",
+      "bytes": 2615
+    },
+    {
+      "path": "admet_model_outputs_v65/clearance_microsome_az/valid/metadata.json",
+      "sha256": "1e2a6f26504fde36312c02a32479e23bccd0559750bec13b3a28c15bfe10d72f",
+      "bytes": 2629
+    },
+    {
+      "path": "admet_model_outputs_v65/clearance_microsome_az/fold1/metadata.json",
+      "sha256": "976f2051e43aa8efaaf2a67be0f59dceb7738dfb9597e3b130804838fccd9961",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/clearance_microsome_az/fold2/metadata.json",
+      "sha256": "d14f1b2959ff2319e3843e345173c7f2d76930ccbe80e99dd57b9d354df287d4",
+      "bytes": 2629
+    },
+    {
+      "path": "admet_model_outputs_v65/clearance_microsome_az/fold0/metadata.json",
+      "sha256": "66b172f53a771ecdc850460dda7108c5eafa8cde53d3d77717e9ed8a24faccdc",
+      "bytes": 2620
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp3a4_substrate_carbonmangels/valid/metadata.json",
+      "sha256": "7bcef5bdc898c18a8be20cedf8506da8b326c62ba46ae5d3131fd98d312e118f",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp3a4_substrate_carbonmangels/fold1/metadata.json",
+      "sha256": "1d4fa2efb7b00302d3c11bfed035f7d0db706c9cb4e1073494326ff85e53151e",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp3a4_substrate_carbonmangels/fold2/metadata.json",
+      "sha256": "1b398939567a3708fdeaf6945ad17b73d10793a2fcfbe0f5ce627e3ba900d975",
+      "bytes": 2629
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp3a4_substrate_carbonmangels/fold0/metadata.json",
+      "sha256": "b5616a1474e13bbf041df9420aa33e8e6d1dd9149a265bd0d74bcbab83879207",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/dili/valid/metadata.json",
+      "sha256": "5cd3e3b07e3bf0c6f638b43dc189808a51c90c75e338f1153bfb0b0e2a7196d0",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/dili/fold1/metadata.json",
+      "sha256": "9e7141221b14063559a29fa0500205e8f94665143dcaf2067ba9031fe5264af9",
+      "bytes": 2630
+    },
+    {
+      "path": "admet_model_outputs_v65/dili/fold2/metadata.json",
+      "sha256": "28e93e782a8cb02a4611be7f09f054a4cbb9ae09090d841275e7d7801f2859be",
+      "bytes": 2629
+    },
+    {
+      "path": "admet_model_outputs_v65/dili/fold0/metadata.json",
+      "sha256": "6f91c99d20cd4aa9e6d9231ea386f77ccd6952cdd9006e5036bd173f4c8a9b46",
+      "bytes": 2629
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2d6_veith/valid/metadata.json",
+      "sha256": "961a99efd55096ce379b73c43c0d77487d687c8e952d461527ca78e2d5de6bce",
+      "bytes": 2627
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2d6_veith/final/metadata.json",
+      "sha256": "2217fad8c67abf497525ae7d9eec8444b7e8d1569a3ff4d02c43b4223d084c1e",
+      "bytes": 2634
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2d6_veith/fold1/metadata.json",
+      "sha256": "56caacf9cd448f27a12788fe5dc251ec00ebf1c9e1ae3740c2bec0e158ca2190",
+      "bytes": 2628
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2d6_veith/fresh/metadata.json",
+      "sha256": "68809af1ffd5584f6d35bdc6b8380e6a1f14043dcd702e4bcc5e32b9923e17d6",
+      "bytes": 2635
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2d6_veith/fold2/metadata.json",
+      "sha256": "56feeac0b0acc5832017f448a70f3faf47a479b5f930bff0f2971184bbbecdb8",
+      "bytes": 2628
+    },
+    {
+      "path": "admet_model_outputs_v65/cyp2d6_veith/fold0/metadata.json",
+      "sha256": "67397cb86899884edd4b28258d7ef214870806e24165867ee16b54165a43e878",
+      "bytes": 2627
+    },
+    {
+      "path": "admet_submissions/v65/verification.json",
+      "sha256": "40d41c6eb828f2f907c7c1c6a1a1bed98edc9fc21c8f5ce547f198318f8e3038",
+      "bytes": 701
+    },
+    {
+      "path": "admet_submissions/v65/我从山北来带着兰花草-小分子药物预测技术创新赛-20261017.csv",
+      "sha256": "443ececd84320e5e2b93c1d148d98b12e72e6adbb414e1a18cc50e14e52d8ee1",
+      "bytes": 1773398
+    }
+  ],
+  "environment": {
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "platform": "Linux-5.19.0-32-generic-x86_64-with-glibc2.35",
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.7.2",
+      "torch": "2.13.0",
+      "transformers": "4.48.3",
+      "xgboost": "2.1.4",
+      "catboost": "1.2.8",
+      "joblib": "1.5.3",
+      "threadpoolctl": "3.6.0"
+    },
+    "isolated": {
+      "tabicl": "2.2.0",
+      "einops": "0.8.1"
+    }
+  }
+}

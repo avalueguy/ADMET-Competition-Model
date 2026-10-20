@@ -1,0 +1,12 @@
+{
+  "version": 20,
+  "baseline": "v19",
+  "method": "scaffold-safe residual stacking with descriptor, fingerprint, embedding and anchor prediction features",
+  "corrector": "CatBoostRegressor residual model, depth 5, 500 iterations, two-stage alpha selection",
+  "alpha_grid": [0.0, 0.15, 0.25, 0.35, 0.5, 0.75, 1.0],
+  "outer_folds": 3,
+  "selection": "fold mean minus variance and negative-fold penalties",
+  "remote_only": true,
+  "automatic_submission": false,
+  "blind_labels_used": false
+}

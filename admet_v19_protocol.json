@@ -1,0 +1,25 @@
+{
+  "version": 19,
+  "baseline_release": "v16",
+  "new_families": ["view_attention_v2", "mol_boost_v2"],
+  "seeds": [17201, 17202],
+  "neural_epochs": 100,
+  "neural_patience": 5,
+  "neural_check_every": 5,
+  "hidden": 128,
+  "batch_size": 128,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.012,
+  "view_dropout": 0.10,
+  "boost_depths": [6, 7],
+  "boost_max_iterations": 1400,
+  "boost_patience": 120,
+  "grid": [0, 0.25, 0.5, 0.75, 1.0],
+  "modes": ["raw", "rank"],
+  "objective": {
+    "oof_weight": 0.60,
+    "official_valid_weight": 0.40,
+    "fold_standard_deviation_penalty": 0.08,
+    "weight_penalty": 0.0005
+  }
+}

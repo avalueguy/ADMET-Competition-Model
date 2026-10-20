@@ -1,0 +1,111 @@
+{
+  "handoff_date": "2026-10-20",
+  "timezone": "Asia/Hong_Kong",
+  "latest_completed_model_branch": "v65",
+  "latest_completed_model_branch_is_proven_best": false,
+  "rollback_baseline": "v60",
+  "latest_aggregate_plan": "v64",
+  "aggregate_status": "INCOMPLETE_V61_EXTRA_CHEMICAL_GATE_MISSING",
+  "official_score": null,
+  "last_user_reported_score_upper_bound": 50.804792,
+  "target_achieved": false,
+  "running_admet_v61_v65_processes_at_snapshot": 0,
+  "local_gpu_training": false,
+  "automatic_platform_submission": false,
+  "releases": {
+    "60": {
+      "csv": "admet_submissions/v60/我从山北来带着兰花草-小分子药物预测技术创新赛-20261017.csv",
+      "sha256": "030689508e9437a8d42d0adb183cc1321530df75fdea467edf92bfdf4b0f925b",
+      "rows": 16379,
+      "columns": 6,
+      "tasks": 22,
+      "official_score": null,
+      "status": "AWAITING_PLATFORM_EVALUATION",
+      "changed_tasks": {
+        "herg": 132,
+        "dili": 96,
+        "vdss_lombardo": 226,
+        "lipophilicity_astrazeneca": 840
+      },
+      "recorded_remote_model_replay": "PASS"
+    },
+    "61": {
+      "csv": "admet_submissions/v61/我从山北来带着兰花草-小分子药物预测技术创新赛-20261017.csv",
+      "sha256": "216d11e43d94ed015cc1aae661820844e3aa109d967cf0f14aa9c3c990ba0c18",
+      "rows": 16379,
+      "columns": 6,
+      "tasks": 22,
+      "official_score": null,
+      "status": "AWAITING_PLATFORM_EVALUATION",
+      "changed_tasks": {
+        "solubility_aqsoldb": 1997,
+        "caco2_wang": 182,
+        "ld50_zhu": 1478,
+        "ames": 1457,
+        "cyp2d6_veith": 2623,
+        "hia_hou": 114
+      },
+      "recorded_remote_model_replay": "PASS"
+    },
+    "62": {
+      "csv": "admet_submissions/v62/我从山北来带着兰花草-小分子药物预测技术创新赛-20261017.csv",
+      "sha256": "67d368d875257e2a37fe86431791f2e77987dfccb1a73d9d3aadea576aecc14e",
+      "rows": 16379,
+      "columns": 6,
+      "tasks": 22,
+      "official_score": null,
+      "status": "AWAITING_PLATFORM_EVALUATION",
+      "changed_tasks": {
+        "caco2_wang": 182,
+        "cyp2d6_veith": 2625,
+        "hia_hou": 117,
+        "solubility_aqsoldb": 1997
+      },
+      "recorded_remote_model_replay": "PASS"
+    },
+    "63": {
+      "csv": "admet_submissions/v63/我从山北来带着兰花草-小分子药物预测技术创新赛-20261017.csv",
+      "sha256": "d3ba7a517f75390c70be547d0b39ae195d3e460750f2360c92a5273990155550",
+      "rows": 16379,
+      "columns": 6,
+      "tasks": 22,
+      "official_score": null,
+      "status": "AWAITING_PLATFORM_EVALUATION",
+      "changed_tasks": {
+        "clearance_hepatocyte_az": 241,
+        "caco2_wang": 182,
+        "herg": 131,
+        "hia_hou": 116,
+        "ppbr_az": 559,
+        "lipophilicity_astrazeneca": 840
+      },
+      "recorded_remote_model_replay": "PASS"
+    },
+    "65": {
+      "csv": "admet_submissions/v65/我从山北来带着兰花草-小分子药物预测技术创新赛-20261017.csv",
+      "sha256": "443ececd84320e5e2b93c1d148d98b12e72e6adbb414e1a18cc50e14e52d8ee1",
+      "rows": 16379,
+      "columns": 6,
+      "tasks": 22,
+      "official_score": null,
+      "status": "AWAITING_PLATFORM_EVALUATION",
+      "changed_tasks": {
+        "cyp2d6_substrate_carbonmangels": 135,
+        "clearance_hepatocyte_az": 243,
+        "ppbr_az": 558,
+        "cyp2d6_veith": 2619
+      },
+      "recorded_remote_model_replay": "PASS"
+    }
+  },
+  "known_issues": [
+    "v64 pipeline exceeded four-hour wait and exited; status file is stale",
+    "v61 independent_chemical_gate.json missing; do not fabricate or bypass",
+    "Historical full-ensemble CV is a proxy, not independent OOF",
+    "v65 uses public other-assay measurements for same molecule; conditional evaluation",
+    "Official valid repeatedly inspected historically; not untouched independent evaluation",
+    "v65 CYP2D6 substrate official-valid drop about 0.138; allowed risk must be disclosed",
+    "Earlier historical ensemble cannot be rebuilt for arbitrary novel molecules from these selected weights alone"
+  ],
+  "priority_next_step": "Restore exact environment and artifacts, verify signatures/model replay, then finish v61 chemical gate and v64 consolidation."
+}

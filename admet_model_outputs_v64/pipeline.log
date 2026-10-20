@@ -1,0 +1,21 @@
+{"stage": "REPLAY_START", "version": 65}
+{"stage": "v65_model_replay", "task": "cyp2d6_substrate_carbonmangels", "model_reload_passed": true, "fit_query_indices_exact": true, "own_task_assay_excluded": true, "conditional_features": true}
+{"stage": "v65_model_replay", "task": "clearance_hepatocyte_az", "model_reload_passed": true, "fit_query_indices_exact": true, "own_task_assay_excluded": true, "conditional_features": true}
+{"stage": "v65_model_replay", "task": "ppbr_az", "model_reload_passed": true, "fit_query_indices_exact": true, "own_task_assay_excluded": true, "conditional_features": true}
+{"stage": "v65_model_replay", "task": "cyp2d6_veith", "model_reload_passed": true, "fit_query_indices_exact": true, "own_task_assay_excluded": true, "conditional_features": true}
+{"stage": "REPLAY_START", "version": 63}
+{"stage": "v63_model_replay", "task": "clearance_hepatocyte_az", "model_reload_passed": true, "fit_query_indices_exact": true}
+{"stage": "v63_model_replay", "task": "caco2_wang", "model_reload_passed": true, "fit_query_indices_exact": true}
+{"stage": "v63_model_replay", "task": "herg", "model_reload_passed": true, "fit_query_indices_exact": true}
+{"stage": "v63_model_replay", "task": "hia_hou", "model_reload_passed": true, "fit_query_indices_exact": true}
+{"stage": "v63_model_replay", "task": "ppbr_az", "model_reload_passed": true, "fit_query_indices_exact": true}
+{"stage": "v63_model_replay", "task": "lipophilicity_astrazeneca", "model_reload_passed": true, "fit_query_indices_exact": true}
+{"stage": "REPLAY_START", "version": 62}
+{"stage": "v62_model_replay", "task": "caco2_wang", "model_reload_passed": true, "fit_query_indices_exact": true}
+{"stage": "v62_model_replay", "task": "cyp2d6_veith", "model_reload_passed": true, "fit_query_indices_exact": true}
+{"stage": "v62_model_replay", "task": "hia_hou", "model_reload_passed": true, "fit_query_indices_exact": true}
+{"stage": "v62_model_replay", "task": "solubility_aqsoldb", "model_reload_passed": true, "fit_query_indices_exact": true}
+Traceback (most recent call last):
+  File "/home/czp123/admet_v23_20260928/admet_v64_pipeline.py", line 12, in <module>
+    if time.time()-start>14400:raise TimeoutError('Four-hour experiment completion bound exceeded')
+TimeoutError: Four-hour experiment completion bound exceeded

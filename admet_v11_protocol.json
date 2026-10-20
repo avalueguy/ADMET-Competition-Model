@@ -1,0 +1,29 @@
+{
+  "version": 11,
+  "execution": "remote_only",
+  "baseline_release": "v10_guard",
+  "baseline_platform_score_user_reported": 49.375594,
+  "baseline_sha256": "af4320ed59b4d2eb8855311e714a4f021cfe4b9f42e922da803f6dba98311977",
+  "target_score": 51.584929,
+  "score_formula": null,
+  "tasks": ["ames", "bbb_martins", "bioavailability_ma", "caco2_wang", "clearance_hepatocyte_az", "clearance_microsome_az", "cyp2c9_substrate_carbonmangels", "cyp2c9_veith", "cyp2d6_substrate_carbonmangels", "cyp2d6_veith", "cyp3a4_substrate_carbonmangels", "cyp3a4_veith", "dili", "half_life_obach", "herg", "hia_hou", "ld50_zhu", "lipophilicity_astrazeneca", "pgp_broccatelli", "ppbr_az", "solubility_aqsoldb", "vdss_lombardo"],
+  "families": ["sparse_uniform", "sparse_scaffold"],
+  "kernel_cs": [3.0, 30.0],
+  "alphas": [0.15, 0.3, 0.5],
+  "confirmation_seed": 692509,
+  "selection": "Complete both families; choose one family/alpha only on existing scaffold OOF with unchanged mean-minus-half-standard-deviation objective. Lock before official valid. No runner-up retry after any rejection.",
+  "fold_primary_tolerance": {"MAE_relative": 0.01, "ranking_absolute": 0.005},
+  "secondary_tolerance": {"MAE_relative": 0.03, "ranking_absolute": 0.015},
+  "distant_primary_tolerance": {"MAE_relative": 0.03, "ranking_absolute": 0.01},
+  "distant_secondary_gate": true,
+  "notes": [
+    "Use sparse raw 32-bit Morgan identifiers rather than folding to 2048/4096 positions; native hash collisions remain possible, so this is not a collision-free representation.",
+    "Fit-only vocabulary; unseen query substructures remain in the denominator. Descriptor preprocessing uses fitting rows only.",
+    "Fixed weighted binary/count ECFP1/2/3 and FCFP2 plus descriptor RBF. Two C values averaged as one fixed candidate.",
+    "Compare uniform fitting versus moderate inverse fourth-root scaffold-frequency weights, clipped and normalized on fitting rows only.",
+    "No auxiliary/external labels, no test-label access. Final target fitting may use official target train+valid.",
+    "Reconstruct cumulative v10_guard baseline, including DILI fallback, for OOF/valid/repeat. Reject any task that exceeds either main or distant auxiliary gate.",
+    "All previously used validation splits are reused and selection biased. No platform score projection or hidden-set non-regression guarantee.",
+    "Preserve successful files and exact rejected-task CSV strings. No automatic platform submission."
+  ]
+}

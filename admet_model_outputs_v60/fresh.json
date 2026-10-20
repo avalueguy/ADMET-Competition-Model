@@ -1,0 +1,276 @@
+{
+  "status": "COMPLETE",
+  "tasks": [
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "family": "sequence",
+      "selection": {
+        "variant": 0,
+        "weight": 0.35,
+        "cv_gains": [
+          0.00520833333333337,
+          0.009615384615384581,
+          0.006069958847736645
+        ],
+        "cv_mean": 0.006964558932151532,
+        "valid_gain": -0.0004960317460317443,
+        "objective": 0.005711970741295398
+      },
+      "versus_v57": {
+        "cv_gains": [
+          0.00520833333333337,
+          0.009615384615384581,
+          0.006069958847736645
+        ],
+        "cv_mean": 0.006964558932151532,
+        "valid_gain": -0.0004960317460317443,
+        "objective": 0.005711970741295398
+      },
+      "eligible": true,
+      "fresh": [
+        {
+          "seed": 601017,
+          "fit_rows": 373,
+          "query_rows": 150,
+          "control": 0.882152447841355,
+          "candidate": 0.8811196033877298,
+          "gain": -0.0010328444536252812,
+          "global_scaffold_overlap": 0,
+          "test_labels_used": false,
+          "provenance": "New scaffold repartition; freshly trained fixed source control, not full historical ensemble"
+        },
+        {
+          "seed": 601018,
+          "fit_rows": 408,
+          "query_rows": 115,
+          "control": 0.8335148874364561,
+          "candidate": 0.8489469862018881,
+          "gain": 0.015432098765432056,
+          "global_scaffold_overlap": 0,
+          "test_labels_used": false,
+          "provenance": "New scaffold repartition; freshly trained fixed source control, not full historical ensemble"
+        }
+      ],
+      "mean_fresh_gain": 0.0071996271559033875,
+      "pass_gate": true
+    },
+    {
+      "task": "dili",
+      "metric": "AUROC",
+      "family": "sequence",
+      "selection": {
+        "variant": 0,
+        "weight": 0.15,
+        "cv_gains": [
+          0.0023419203747073736,
+          -0.0008311170212765839,
+          0.0033602150537632713
+        ],
+        "cv_mean": 0.0016236728023980203,
+        "valid_gain": 0.004395604395604491,
+        "objective": 0.0019145205374235892
+      },
+      "versus_v57": {
+        "cv_gains": [
+          0.0023419203747071515,
+          -0.0016622340425532789,
+          0.0013440860215054862
+        ],
+        "cv_mean": 0.0006745907845531196,
+        "valid_gain": 1.1102230246251565e-16,
+        "objective": 0.00045427210583780865
+      },
+      "eligible": true,
+      "fresh": [
+        {
+          "seed": 601017,
+          "fit_rows": 294,
+          "query_rows": 85,
+          "control": 0.7806603773584905,
+          "candidate": 0.7759433962264151,
+          "gain": -0.004716981132075415,
+          "global_scaffold_overlap": 0,
+          "test_labels_used": false,
+          "provenance": "New scaffold repartition; freshly trained fixed source control, not full historical ensemble"
+        },
+        {
+          "seed": 601018,
+          "fit_rows": 294,
+          "query_rows": 85,
+          "control": 0.7971175166297118,
+          "candidate": 0.8032150776053214,
+          "gain": 0.0060975609756096505,
+          "global_scaffold_overlap": 0,
+          "test_labels_used": false,
+          "provenance": "New scaffold repartition; freshly trained fixed source control, not full historical ensemble"
+        }
+      ],
+      "mean_fresh_gain": 0.0006902899217671177,
+      "pass_gate": true
+    },
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "family": "kernel",
+      "selection": {
+        "variant": 5,
+        "weight": 0.6,
+        "cv_gains": [
+          0.007612179487179516,
+          0.034134615384615374,
+          0.02438271604938269
+        ],
+        "cv_mean": 0.022043170307059195,
+        "valid_gain": -0.008928571428571397,
+        "objective": 0.016630672005633285
+      },
+      "versus_v57": {
+        "cv_gains": [
+          0.007612179487179516,
+          0.034134615384615374,
+          0.02438271604938269
+        ],
+        "cv_mean": 0.022043170307059195,
+        "valid_gain": -0.008928571428571397,
+        "objective": 0.016630672005633285
+      },
+      "eligible": true,
+      "fresh": [
+        {
+          "seed": 601017,
+          "fit_rows": 397,
+          "query_rows": 126,
+          "control": 0.8402593575007368,
+          "candidate": 0.8663424697907457,
+          "gain": 0.026083112290008925,
+          "global_scaffold_overlap": 0,
+          "test_labels_used": false,
+          "provenance": "Resampled 80% of source-excluded fold groups; remaining allowed train+valid rows refitted; original graph-hybrid control, not complete ensemble"
+        },
+        {
+          "seed": 601018,
+          "fit_rows": 403,
+          "query_rows": 120,
+          "control": 0.8597560975609756,
+          "candidate": 0.8790115532734275,
+          "gain": 0.019255455712451908,
+          "global_scaffold_overlap": 0,
+          "test_labels_used": false,
+          "provenance": "Resampled 80% of source-excluded fold groups; remaining allowed train+valid rows refitted; original graph-hybrid control, not complete ensemble"
+        }
+      ],
+      "mean_fresh_gain": 0.022669284001230416,
+      "pass_gate": true
+    },
+    {
+      "task": "vdss_lombardo",
+      "metric": "Spearman",
+      "family": "kernel",
+      "selection": {
+        "variant": 2,
+        "weight": 0.15,
+        "cv_gains": [
+          0.005325628910335944,
+          0.002267934794906945,
+          0.0035139011228674244
+        ],
+        "cv_mean": 0.0037024882760367714,
+        "valid_gain": -0.002094232751288949,
+        "objective": 0.0027451020583421004
+      },
+      "versus_v57": {
+        "cv_gains": [
+          0.004447086855430493,
+          0.0018666670394053009,
+          0.001990243177137585
+        ],
+        "cv_mean": 0.0027679990239911265,
+        "valid_gain": -0.001892371878446264,
+        "objective": 0.0019857577863010446
+      },
+      "eligible": true,
+      "fresh": [
+        {
+          "seed": 601017,
+          "fit_rows": 696,
+          "query_rows": 208,
+          "control": 0.5932757265942545,
+          "candidate": 0.6040790095566904,
+          "gain": 0.010803282962435823,
+          "global_scaffold_overlap": 0,
+          "test_labels_used": false,
+          "provenance": "Resampled 80% of source-excluded fold groups; remaining allowed train+valid rows refitted; original graph-hybrid control, not complete ensemble"
+        },
+        {
+          "seed": 601018,
+          "fit_rows": 699,
+          "query_rows": 205,
+          "control": 0.6821587850794626,
+          "candidate": 0.7004134601202515,
+          "gain": 0.018254675040788926,
+          "global_scaffold_overlap": 0,
+          "test_labels_used": false,
+          "provenance": "Resampled 80% of source-excluded fold groups; remaining allowed train+valid rows refitted; original graph-hybrid control, not complete ensemble"
+        }
+      ],
+      "mean_fresh_gain": 0.014528979001612374,
+      "pass_gate": true
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "family": "kernel",
+      "selection": {
+        "variant": 2,
+        "weight": 0.15,
+        "cv_gains": [
+          -0.0039628907032292415,
+          0.009947879500927756,
+          0.006713959407462427
+        ],
+        "cv_mean": 0.004232982735053647,
+        "valid_gain": -0.012002773696927307,
+        "objective": 0.0013815506079025881
+      },
+      "versus_v57": {
+        "cv_gains": [
+          -0.00886781081332027,
+          0.008382408029095196,
+          0.00981755827402623
+        ],
+        "cv_mean": 0.0031107184966003847,
+        "valid_gain": -0.004731649025325195,
+        "objective": 0.0013400396304091154
+      },
+      "eligible": true,
+      "fresh": [
+        {
+          "seed": 601017,
+          "fit_rows": 2571,
+          "query_rows": 789,
+          "control": 0.6437468687209793,
+          "candidate": 0.6185739406771812,
+          "gain": 0.039103767749290405,
+          "global_scaffold_overlap": 0,
+          "test_labels_used": false,
+          "provenance": "Resampled 80% of source-excluded fold groups; remaining allowed train+valid rows refitted; original graph-hybrid control, not complete ensemble"
+        },
+        {
+          "seed": 601018,
+          "fit_rows": 2571,
+          "query_rows": 789,
+          "control": 0.5723363067321149,
+          "candidate": 0.5345407793908403,
+          "gain": 0.06603727021456453,
+          "global_scaffold_overlap": 0,
+          "test_labels_used": false,
+          "provenance": "Resampled 80% of source-excluded fold groups; remaining allowed train+valid rows refitted; original graph-hybrid control, not complete ensemble"
+        }
+      ],
+      "mean_fresh_gain": 0.052570518981927467,
+      "pass_gate": true
+    }
+  ],
+  "signature": "24793dab555230843f70e1974c741c84e68b84a9ab46cd1d631209ca6d806264"
+}

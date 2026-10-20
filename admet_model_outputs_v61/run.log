@@ -1,0 +1,149 @@
+{"stage": "v61_chemistry", "done": 0, "total": 46202}
+{"stage": "v61_chemistry", "done": 15000, "total": 46202}
+{"stage": "v61_chemistry", "done": 30000, "total": 46202}
+{"stage": "v61_chemistry", "done": 45000, "total": 46202}
+{"stage": "v61_phenotype", "partition": "cv/fold0", "seed_file": "admet_model_outputs_v27/cv/fold0/270601/checkpoint_5500.pt"}
+{"stage": "v61_phenotype", "partition": "cv/fold0", "seed_file": "admet_model_outputs_v27/cv/fold0/270602/checkpoint_5500.pt"}
+{"stage": "v61_fit", "task": "half_life_obach", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 8}
+{"stage": "v61_phenotype", "partition": "cv/fold1", "seed_file": "admet_model_outputs_v27/cv/fold1/270601/checkpoint_5500.pt"}
+{"stage": "v61_phenotype", "partition": "cv/fold1", "seed_file": "admet_model_outputs_v27/cv/fold1/270602/checkpoint_5500.pt"}
+{"stage": "v61_fit", "task": "half_life_obach", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 7}
+{"stage": "v61_phenotype", "partition": "cv/fold2", "seed_file": "admet_model_outputs_v27/cv/fold2/270601/checkpoint_5500.pt"}
+{"stage": "v61_phenotype", "partition": "cv/fold2", "seed_file": "admet_model_outputs_v27/cv/fold2/270602/checkpoint_5500.pt"}
+{"stage": "v61_fit", "task": "half_life_obach", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 7}
+{"stage": "v61_phenotype", "partition": "valid", "seed_file": "admet_model_outputs_v27/valid/270601/checkpoint_5500.pt"}
+{"stage": "v61_phenotype", "partition": "valid", "seed_file": "admet_model_outputs_v27/valid/270602/checkpoint_5500.pt"}
+{"stage": "v61_fit", "task": "half_life_obach", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 7}
+{"stage": "v61_selection", "task": "half_life_obach", "metric": "Spearman", "selection": null, "held_selection_gains": [-0.006857500529172056, 0.0, -0.00643533887260983], "held_mean": -0.0044309464672606285, "baseline_cv": [0.5030547072169325, 0.33002157536541576, 0.5837760992823565]}
+{"stage": "v61_fit", "task": "clearance_hepatocyte_az", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "clearance_hepatocyte_az", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "clearance_hepatocyte_az", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "clearance_hepatocyte_az", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_selection", "task": "clearance_hepatocyte_az", "metric": "Spearman", "selection": null, "held_selection_gains": [-0.01738986566048739, -0.007066826568356999, 0.003173053549694993], "held_mean": -0.007094546226383132, "baseline_cv": [0.5584745855624825, 0.565544855290873, 0.5921137136800847]}
+{"stage": "v61_fit", "task": "clearance_microsome_az", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "clearance_microsome_az", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "clearance_microsome_az", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "clearance_microsome_az", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_selection", "task": "clearance_microsome_az", "metric": "Spearman", "selection": null, "held_selection_gains": [-0.018282749390816644, 0.0, 0.0], "held_mean": -0.006094249796938882, "baseline_cv": [0.7019076327178516, 0.5046604490997971, 0.6489244662174136]}
+{"stage": "v61_fit", "task": "cyp2c9_substrate_carbonmangels", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "cyp2c9_substrate_carbonmangels", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "cyp2c9_substrate_carbonmangels", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "cyp2c9_substrate_carbonmangels", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_selection", "task": "cyp2c9_substrate_carbonmangels", "metric": "AUPRC", "selection": null, "held_selection_gains": [0.0, 0.0, 0.0], "held_mean": 0.0, "baseline_cv": [0.39843492111002066, 0.4256736865726447, 0.3666512083482971]}
+{"stage": "v61_fit", "task": "cyp2d6_substrate_carbonmangels", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "cyp2d6_substrate_carbonmangels", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "cyp2d6_substrate_carbonmangels", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "cyp2d6_substrate_carbonmangels", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_selection", "task": "cyp2d6_substrate_carbonmangels", "metric": "AUPRC", "selection": null, "held_selection_gains": [-0.015775014765473938, 0.021337555073762227, -0.003911859203005075], "held_mean": 0.0005502270350944046, "baseline_cv": [0.5598190512560328, 0.6263693099686853, 0.6406048369816288]}
+{"stage": "v61_fit", "task": "cyp3a4_substrate_carbonmangels", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "cyp3a4_substrate_carbonmangels", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "cyp3a4_substrate_carbonmangels", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "cyp3a4_substrate_carbonmangels", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_selection", "task": "cyp3a4_substrate_carbonmangels", "metric": "AUROC", "selection": null, "held_selection_gains": [0.0, -0.008355614973262093, -0.0160493827160495], "held_mean": -0.008134999229770531, "baseline_cv": [0.6445010685517015, 0.6934324866310161, 0.7051028806584363]}
+{"stage": "v61_fit", "task": "bioavailability_ma", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "bioavailability_ma", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "bioavailability_ma", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "bioavailability_ma", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_selection", "task": "bioavailability_ma", "metric": "AUROC", "selection": null, "held_selection_gains": [0.0, 0.00015179113539753875, -0.021250758955676963], "held_mean": -0.007032989273426475, "baseline_cv": [0.7021604938271605, 0.7506071645415907, 0.7531876138433515]}
+{"stage": "v61_fit", "task": "ppbr_az", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 2}
+{"stage": "v61_fit", "task": "ppbr_az", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 2}
+{"stage": "v61_fit", "task": "ppbr_az", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 2}
+{"stage": "v61_fit", "task": "ppbr_az", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 3}
+{"stage": "v61_selection", "task": "ppbr_az", "metric": "MAE", "selection": null, "held_selection_gains": [-0.031180489117901014, 0.0, 0.0], "held_mean": -0.01039349637263367, "baseline_cv": [8.111323747961864, 7.6633340030754145, 8.912979381281136]}
+{"stage": "v61_fit", "task": "solubility_aqsoldb", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 10}
+{"stage": "v61_fit", "task": "solubility_aqsoldb", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 10}
+{"stage": "v61_fit", "task": "solubility_aqsoldb", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 9}
+{"stage": "v61_fit", "task": "solubility_aqsoldb", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 22}
+{"stage": "v61_selection", "task": "solubility_aqsoldb", "metric": "MAE", "selection": {"variant": 4, "weight": 0.25, "cv_gains": [0.005812557230115139, 0.013137729296186321, 0.009241853715843396], "cv_mean": 0.009397380080714952, "objective": 0.009098129040204203, "valid_gain": -0.0005702604294405972}, "held_selection_gains": [0.005420383493653909, 0.013137729296186321, 0.009072553372649141], "held_mean": 0.009210222054163124, "baseline_cv": [0.7675069205648937, 0.7502386159917903, 0.6269016415832172]}
+{"stage": "v61_fit", "task": "lipophilicity_astrazeneca", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 4}
+{"stage": "v61_fit", "task": "lipophilicity_astrazeneca", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 4}
+{"stage": "v61_fit", "task": "lipophilicity_astrazeneca", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 4}
+{"stage": "v61_fit", "task": "lipophilicity_astrazeneca", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 7}
+{"stage": "v61_selection", "task": "lipophilicity_astrazeneca", "metric": "MAE", "selection": null, "held_selection_gains": [-0.004479515150807687, -0.00603214339837033, 0.0], "held_mean": -0.0035038861830593393, "baseline_cv": [0.49435035284641987, 0.4725149287655303, 0.498234580261878]}
+{"stage": "v61_fit", "task": "caco2_wang", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "caco2_wang", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "caco2_wang", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "caco2_wang", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_selection", "task": "caco2_wang", "metric": "MAE", "selection": {"variant": 5, "weight": 0.25, "cv_gains": [-0.0022998100706538294, 0.0026531808411545503, 0.00790267698881597], "cv_mean": 0.00275201591977223, "objective": 0.0023354425022394884, "valid_gain": 0.0040101007058084325}, "held_selection_gains": [-0.0022998100706538294, 0.0026531808411545503, 0.00790267698881597], "held_mean": 0.00275201591977223, "baseline_cv": [0.38815645870734267, 0.3348527606452333, 0.3570673877285404]}
+{"stage": "v61_fit", "task": "ld50_zhu", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 7}
+{"stage": "v61_fit", "task": "ld50_zhu", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 7}
+{"stage": "v61_fit", "task": "ld50_zhu", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 6}
+{"stage": "v61_fit", "task": "ld50_zhu", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 14}
+{"stage": "v61_selection", "task": "ld50_zhu", "metric": "MAE", "selection": {"variant": 4, "weight": 0.25, "cv_gains": [0.0067086964754369755, 0.00573341575477804, 0.0016643977916808584], "cv_mean": 0.004702170007298625, "objective": 0.0044837081395885416, "valid_gain": -0.012145810478503319}, "held_selection_gains": [0.0067086964754369755, 0.00573341575477804, 0.0016643977916808584], "held_mean": 0.004702170007298625, "baseline_cv": [0.4642859078866628, 0.534364444193799, 0.4463626043905969]}
+{"stage": "v61_fit", "task": "ames", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 7}
+{"stage": "v61_fit", "task": "ames", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 6}
+{"stage": "v61_fit", "task": "ames", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 6}
+{"stage": "v61_fit", "task": "ames", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 12}
+{"stage": "v61_selection", "task": "ames", "metric": "AUROC", "selection": {"variant": 0, "weight": 0.5, "cv_gains": [0.0082228755564413, 0.008328515681456872, 0.003009677031231006], "cv_mean": 0.006520356089709726, "objective": 0.006272076132836655, "valid_gain": 0.0013119404026878945}, "held_selection_gains": [0.0082228755564413, 0.008328515681456872, 0.0004761168119079562], "held_mean": 0.005675836016602043, "baseline_cv": [0.8601264035612253, 0.8553489074879449, 0.8766101170525449]}
+{"stage": "v61_fit", "task": "cyp2d6_veith", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 26}
+{"stage": "v61_fit", "task": "cyp2d6_veith", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 24}
+{"stage": "v61_fit", "task": "cyp2d6_veith", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 24}
+{"stage": "v61_fit", "task": "cyp2d6_veith", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 49}
+{"stage": "v61_selection", "task": "cyp2d6_veith", "metric": "AUPRC", "selection": {"variant": 0, "weight": 0.25, "cv_gains": [0.0049104093320770925, 0.0068813323578067465, 0.003153118062186877], "cv_mean": 0.004981619917356905, "objective": 0.004829332936755411, "valid_gain": -0.0005591839180683067}, "held_selection_gains": [0.0007305503348585818, 0.0068813323578067465, 0.003153118062186877], "held_mean": 0.003588333584950735, "baseline_cv": [0.6734005897148622, 0.7033613661797807, 0.7503140254265467]}
+{"stage": "v61_fit", "task": "cyp2c9_veith", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 21}
+{"stage": "v61_fit", "task": "cyp2c9_veith", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 21}
+{"stage": "v61_fit", "task": "cyp2c9_veith", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 21}
+{"stage": "v61_fit", "task": "cyp2c9_veith", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 35}
+{"stage": "v61_selection", "task": "cyp2c9_veith", "metric": "AUPRC", "selection": null, "held_selection_gains": [0.0032535458031829334, 0.000584930481041579, 0.0001776585147353904], "held_mean": 0.001338711599653301, "baseline_cv": [0.8403048391841382, 0.8042860452617954, 0.8361141977043102]}
+{"stage": "v61_fit", "task": "cyp3a4_veith", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 19}
+{"stage": "v61_fit", "task": "cyp3a4_veith", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 19}
+{"stage": "v61_fit", "task": "cyp3a4_veith", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 19}
+{"stage": "v61_fit", "task": "cyp3a4_veith", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 36}
+{"stage": "v61_selection", "task": "cyp3a4_veith", "metric": "AUPRC", "selection": null, "held_selection_gains": [0.0008466049268639475, 0.00046352205959032666, 0.0027880990081412538], "held_mean": 0.0013660753315318426, "baseline_cv": [0.8711275258382954, 0.879519641716686, 0.8698486874731598]}
+{"stage": "v61_fit", "task": "herg", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "herg", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "herg", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "herg", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_selection", "task": "herg", "metric": "AUROC", "selection": null, "held_selection_gains": [0.004607371794871806, -0.0026923076923076605, -0.008230452674897082], "held_mean": -0.002105129524110979, "baseline_cv": [0.8359375, 0.8650961538461538, 0.8813786008230452]}
+{"stage": "v61_fit", "task": "bbb_martins", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "bbb_martins", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "bbb_martins", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "bbb_martins", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_selection", "task": "bbb_martins", "metric": "AUROC", "selection": null, "held_selection_gains": [0.0011044101953191499, -0.0012578960321583121, 0.001604704260543599], "held_mean": 0.0004837394745681456, "baseline_cv": [0.9241183332092423, 0.9502310700319943, 0.9154568560720286]}
+{"stage": "v61_fit", "task": "dili", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "dili", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "dili", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "dili", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_selection", "task": "dili", "metric": "AUROC", "selection": null, "held_selection_gains": [-0.0026764804282366494, 0.000831117021276695, -0.0013440860215054862], "held_mean": -0.0010631498094884801, "baseline_cv": [0.8979591836734693, 0.8620345744680851, 0.8108198924731184]}
+{"stage": "v61_fit", "task": "hia_hou", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "hia_hou", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "hia_hou", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "hia_hou", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_selection", "task": "hia_hou", "metric": "AUROC", "selection": {"variant": 0, "weight": 0.5, "cv_gains": [0.024157660521296753, 0.005199999999999982, -0.004070881226053591], "cv_mean": 0.008428926431747715, "objective": 0.007254101290938228, "valid_gain": -0.0010416666666666075}, "held_selection_gains": [0.015893197711379425, 0.005199999999999982, -0.004070881226053591], "held_mean": 0.005674105495108606, "baseline_cv": [0.9326128417037509, 0.9676, 0.9875478927203065]}
+{"stage": "v61_fit", "task": "pgp_broccatelli", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "pgp_broccatelli", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "pgp_broccatelli", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "pgp_broccatelli", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_selection", "task": "pgp_broccatelli", "metric": "AUROC", "selection": null, "held_selection_gains": [-0.00010055304172962298, -0.00180598555211553, -0.003074786748661018], "held_mean": -0.0016604417808353904, "baseline_cv": [0.9474610356963299, 0.9008513931888544, 0.9504562586788337]}
+{"stage": "v61_fit", "task": "vdss_lombardo", "partition": "fold0", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "vdss_lombardo", "partition": "fold1", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "vdss_lombardo", "partition": "fold2", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_fit", "task": "vdss_lombardo", "partition": "valid", "configs": [0, 1, 2, 3, 4, 5], "seconds": 1}
+{"stage": "v61_selection", "task": "vdss_lombardo", "metric": "Spearman", "selection": null, "held_selection_gains": [0.0, -0.006123801274784291, -0.009076342769558488], "held_mean": -0.005066714681447593, "baseline_cv": [0.7035840298241193, 0.7336269214531692, 0.7738954714319205]}
+{"stage": "v61_fit", "task": "solubility_aqsoldb", "partition": "fresh0", "configs": [4], "seconds": 16}
+{"stage": "v61_fit", "task": "solubility_aqsoldb", "partition": "fresh1", "configs": [4], "seconds": 16}
+{"stage": "v61_fresh", "task": "solubility_aqsoldb", "pass_gate": true, "results": [{"fold": 0, "fit_rows": 6586, "query_rows": 1399, "control": 1.0209234060294283, "blend": 0.9428071112829987, "gain": 0.07651533335908056, "scaffold_overlap": 0, "control_is_full_ensemble": false}, {"fold": 1, "fit_rows": 6750, "query_rows": 1235, "control": 1.0017975185525225, "blend": 0.915726280345538, "gain": 0.08591680116292075, "scaffold_overlap": 0, "control_is_full_ensemble": false}]}
+{"stage": "v61_fit", "task": "caco2_wang", "partition": "fresh0", "configs": [5], "seconds": 1}
+{"stage": "v61_fit", "task": "caco2_wang", "partition": "fresh1", "configs": [5], "seconds": 1}
+{"stage": "v61_fresh", "task": "caco2_wang", "pass_gate": true, "results": [{"fold": 0, "fit_rows": 559, "query_rows": 169, "control": 0.43092212984677825, "blend": 0.4080680604823726, "gain": 0.053035265031600505, "scaffold_overlap": 0, "control_is_full_ensemble": false}, {"fold": 1, "fit_rows": 571, "query_rows": 157, "control": 0.3974373681427391, "blend": 0.3755410239743853, "gain": 0.05509382338826716, "scaffold_overlap": 0, "control_is_full_ensemble": false}]}
+{"stage": "v61_fit", "task": "ld50_zhu", "partition": "fresh0", "configs": [4], "seconds": 9}
+{"stage": "v61_fit", "task": "ld50_zhu", "partition": "fresh1", "configs": [4], "seconds": 10}
+{"stage": "v61_fresh", "task": "ld50_zhu", "pass_gate": true, "results": [{"fold": 0, "fit_rows": 4975, "query_rows": 932, "control": 0.5192274999664577, "blend": 0.4883656936967399, "gain": 0.05943792705839248, "scaffold_overlap": 0, "control_is_full_ensemble": false}, {"fold": 1, "fit_rows": 5023, "query_rows": 884, "control": 0.6082022725176487, "blend": 0.582761670660977, "gain": 0.04182917921592197, "scaffold_overlap": 0, "control_is_full_ensemble": false}]}
+{"stage": "v61_fit", "task": "ames", "partition": "fresh0", "configs": [0], "seconds": 7}
+{"stage": "v61_fit", "task": "ames", "partition": "fresh1", "configs": [0], "seconds": 7}
+{"stage": "v61_fresh", "task": "ames", "pass_gate": true, "results": [{"fold": 0, "fit_rows": 4557, "query_rows": 1264, "control": 0.8203596895311415, "blend": 0.8598144759260427, "gain": 0.03945478639490119, "scaffold_overlap": 0, "control_is_full_ensemble": false}, {"fold": 1, "fit_rows": 4464, "query_rows": 1357, "control": 0.8134549457051371, "blend": 0.8489739228038423, "gain": 0.03551897709870522, "scaffold_overlap": 0, "control_is_full_ensemble": false}]}
+{"stage": "v61_fit", "task": "cyp2d6_veith", "partition": "fresh0", "configs": [0], "seconds": 31}
+{"stage": "v61_fit", "task": "cyp2d6_veith", "partition": "fresh1", "configs": [0], "seconds": 29}
+{"stage": "v61_fresh", "task": "cyp2d6_veith", "pass_gate": true, "results": [{"fold": 0, "fit_rows": 8042, "query_rows": 2462, "control": 0.6318356810087453, "blend": 0.6684204339795468, "gain": 0.03658475297080144, "scaffold_overlap": 0, "control_is_full_ensemble": false}, {"fold": 1, "fit_rows": 8017, "query_rows": 2487, "control": 0.6609387845608108, "blend": 0.6869454016631243, "gain": 0.026006617102313556, "scaffold_overlap": 0, "control_is_full_ensemble": false}]}
+{"stage": "v61_fit", "task": "hia_hou", "partition": "fresh0", "configs": [0], "seconds": 0}
+{"stage": "v61_fit", "task": "hia_hou", "partition": "fresh1", "configs": [0], "seconds": 0}
+{"stage": "v61_fresh", "task": "hia_hou", "pass_gate": true, "results": [{"fold": 0, "fit_rows": 358, "query_rows": 103, "control": 0.9002976190476191, "blend": 0.9486607142857142, "gain": 0.04836309523809512, "scaffold_overlap": 0, "control_is_full_ensemble": false}, {"fold": 1, "fit_rows": 351, "query_rows": 110, "control": 0.946078431372549, "blend": 0.9730392156862746, "gain": 0.026960784313725616, "scaffold_overlap": 0, "control_is_full_ensemble": false}]}
+{"stage": "v61_phenotype", "partition": "final", "seed_file": "admet_model_outputs_v27/final/270601/checkpoint_5500.pt"}
+{"stage": "v61_phenotype", "partition": "final", "seed_file": "admet_model_outputs_v27/final/270602/checkpoint_5500.pt"}
+{"stage": "v61_fit", "task": "solubility_aqsoldb", "partition": "final", "configs": [4], "seconds": 32}
+{"stage": "v61_fit", "task": "caco2_wang", "partition": "final", "configs": [5], "seconds": 1}
+{"stage": "v61_fit", "task": "ld50_zhu", "partition": "final", "configs": [4], "seconds": 15}
+{"stage": "v61_fit", "task": "ames", "partition": "final", "configs": [0], "seconds": 12}
+{"stage": "v61_fit", "task": "cyp2d6_veith", "partition": "final", "configs": [0], "seconds": 64}
+{"stage": "v61_fit", "task": "hia_hou", "partition": "final", "configs": [0], "seconds": 0}
+{"stage": "v61_export", "sha256": "216d11e43d94ed015cc1aae661820844e3aa109d967cf0f14aa9c3c990ba0c18", "changed_tasks": {"solubility_aqsoldb": 1997, "caco2_wang": 182, "ld50_zhu": 1478, "ames": 1457, "cyp2d6_veith": 2623, "hia_hou": 114}}

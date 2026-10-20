@@ -1,0 +1,26 @@
+{
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "Linux-5.19.0-32-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "torch": "2.13.0+cu130",
+    "transformers": "4.48.3",
+    "xgboost": "2.1.4",
+    "catboost": "1.2.8",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0",
+    "rdkit-pypi": "2022.9.5"
+  },
+  "isolated": {
+    "tabicl": "2.2.0",
+    "einops": "0.8.1"
+  },
+  "rdkit": "2022.09.5",
+  "torch": "2.13.0+cu130",
+  "cuda_runtime": "13.0",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "cuda_available": true
+}

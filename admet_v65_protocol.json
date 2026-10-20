@@ -1,0 +1,63 @@
+{
+  "version": 65,
+  "baseline_release": "v60",
+  "baseline_sha256": "030689508e9437a8d42d0adb183cc1321530df75fdea467edf92bfdf4b0f925b",
+  "tasks": [
+    "cyp2c9_substrate_carbonmangels",
+    "cyp2d6_substrate_carbonmangels",
+    "cyp3a4_substrate_carbonmangels",
+    "clearance_hepatocyte_az",
+    "clearance_microsome_az",
+    "half_life_obach",
+    "bioavailability_ma",
+    "dili",
+    "ppbr_az",
+    "cyp2d6_veith",
+    "cyp2c9_veith",
+    "cyp3a4_veith"
+  ],
+  "checkpoint_classifier": [
+    "tabicl-classifier-v2-20260212.ckpt",
+    "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0"
+  ],
+  "checkpoint_regressor": [
+    "tabicl-regressor-v2-20260212.ckpt",
+    "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a"
+  ],
+  "families": [
+    "descriptor_other_assay_tabicl",
+    "descriptor_other_assay_plus_embedding_pca32_tabicl"
+  ],
+  "n_estimators": 4,
+  "seed": 651017,
+  "weights": [
+    0.25,
+    0.5,
+    0.8,
+    1.0
+  ],
+  "auxiliary": "Official public train labels only in CV and valid; train+valid in final and fresh. Remove target task values and masks completely before reading any features. Exact same-molecule other-assay values are available covariates; this is conditional validation, not globally unseen-scaffold evaluation.",
+  "selection": "CV only; mean and objective >0.004, at least 2 folds positive, leave-one-fold-out selection mean >0.002. Official valid report-only. One new scaffold split refits both candidate and fixed CatBoost conditional control, requires positive blend gain >0.001.",
+  "fresh_seed": 651019,
+  "local_gpu_training": false,
+  "automatic_upload": false,
+  "test_labels_used": false,
+  "tenth_place_threshold": 50.804792,
+  "limitations": "Conditional public-covariate setting. Development labels reused; full historical ensemble OOF unavailable. Foundation model synthetic pretraining, no additional ADMET target labels. Source-control gain is not gain against full ensemble or platform points.",
+  "inference_revision": {
+    "reason": "Adaptive GPU-memory batching caused repeat and save/load drift up to 0.0113; fixed internal batches passed exact repeat/reload probe.",
+    "use_amp": true,
+    "use_fa3": false,
+    "ensemble_batch_size": 1,
+    "internal_batches": {
+      "COL_CONFIG": 8,
+      "ROW_CONFIG": 64,
+      "ICL_CONFIG": 1
+    },
+    "adaptive_batching": false,
+    "offload": "cpu",
+    "async_copy": false,
+    "prior_cache": "Archived before complete recomputation; no mixed signatures",
+    "selection_thresholds_changed": false
+  }
+}

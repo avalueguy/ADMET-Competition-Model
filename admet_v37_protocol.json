@@ -1,0 +1,22 @@
+{
+  "version": 37,
+  "baseline": "v36",
+  "baseline_score": 50.470960,
+  "baseline_sha256": "9f16e51d46f4b36d4c3bd262ca6c9053a8cd91009f66813ab29d9b02ea136ba9",
+  "remote_root": "/home/czp123/admet_v23_20260928",
+  "training_host": "czp123@100.109.143.42",
+  "chemical_views": ["chiral_count_Morgan_radius3_4096", "path_RDKit_2048", "chiral_atom_pair_1024", "chiral_topological_torsion_1024"],
+  "fingerprint_columns": 1536,
+  "families": ["expanded_chemistry", "expanded_chemistry_with_assay_transfer", "metric_aligned_transfer"],
+  "seeds": [370610, 370611],
+  "depths": [4, 6],
+  "estimators": [650, 850],
+  "weights": [0.15, 0.35, 0.6, 0.85, 1.0],
+  "selection": "Frozen screen shortlist on full v36 historical valid; three scaffold-fold proxy gains; objective 0.45 valid +0.55 CV mean -0.04 CV SD, require valid gain >0.0002 and CV mean >0 and objective >0.0005. Individual folds may decline.",
+  "metric_alignment": "AUPRC: rank:map; AUROC: rank:pairwise; Spearman: fit-only 32-level relevance and rank:pairwise; MAE: median reg:quantileerror. Standard-loss chemistry and assay branches provide comparators.",
+  "external_labels": false,
+  "test_labels_used": false,
+  "automatic_submission": false,
+  "local_gpu_training": false,
+  "limitations": "Historical valid and scaffold folds reused. CV is v36 newer-source fusion over a historical v24 proxy, not full historical ensemble OOF. Other-task supplied assays make prediction conditional. Official aggregate weights/formula unknown; no platform score forecast."
+}

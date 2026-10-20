@@ -1,0 +1,21 @@
+{
+  "version": 26,
+  "status": "posthoc_exploratory_after_v25_primary_gate_rejected_every_task",
+  "baseline": "v24",
+  "baseline_user_reported_score": 50.248759,
+  "baseline_sha256": "d8d6a5f776aeea0f71149702f267894974ade314b87ccfe48925f9719e02aa86",
+  "training_host": "czp123@100.109.143.42",
+  "remote_root": "/home/czp123/admet_v23_20260928",
+  "source_training": "admet_v25_models.py frozen after initial v25 evaluation",
+  "choices": [
+    {"task": "dili", "variant": 1, "weight": 0.05},
+    {"task": "half_life_obach", "variant": 1, "weight": 0.03},
+    {"task": "lipophilicity_astrazeneca", "variant": 1, "weight": 0.05}
+  ],
+  "selection": "Exploratory low-weight grid checked after seeing the full v25 results; positive historical-valid delta and at least two nonnegative scaffold folds required at the exact chosen weight. No claim of fresh holdout evidence.",
+  "final_seeds": [240931, 240932, 240933],
+  "final_fit": "all labelled train and valid; test labels never used",
+  "official_score_prediction": null,
+  "automatic_submission": false,
+  "local_gpu_training": false
+}

@@ -1,0 +1,1027 @@
+[
+  {
+    "path": "admet_competition_data/data_benchmark/ames/test.csv",
+    "bytes": 73818,
+    "sha256": "490271384316e8f4bd414346ef74105057383682389006f2e24a77a87891ae1a"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/ames/train.csv",
+    "bytes": 203518,
+    "sha256": "1f31f914999a8b1281dc9353d6d8a6f9e11cdabf4d9b43cb2984edd1775a771d"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/ames/valid.csv",
+    "bytes": 42087,
+    "sha256": "128351f2830547b4de22a1d8bccff5b2d128f0386bffef74bcb9e5ad437c7d1a"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/bbb_martins/test.csv",
+    "bytes": 23573,
+    "sha256": "19deb430b339574eec9f0b9e04acca64adc2c3979bf200634bb03cbbeda99ef5"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/bbb_martins/train.csv",
+    "bytes": 93999,
+    "sha256": "b3223c2fa0fff26ab990b4dbafbbe435a8ceb6114d76488bc3be27a68dfe23b9"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/bbb_martins/valid.csv",
+    "bytes": 13032,
+    "sha256": "eaed2376463a79a7783308be4c35f74b7662f66df29811f8462d3ebfda47b58f"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/bioavailability_ma/test.csv",
+    "bytes": 8905,
+    "sha256": "4f8eb0694b2f72d83e9131667980bd0ba54ba2ecdb5a8ef2fce0f36a5f73e786"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/bioavailability_ma/train.csv",
+    "bytes": 28421,
+    "sha256": "67d201f36ee1eb8b202ea5ac30624045a839747143d45ef11ee91017db82ccca"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/bioavailability_ma/valid.csv",
+    "bytes": 4190,
+    "sha256": "ba5b96027613461c29dade0355eb83bb90ed36e39f5b2889da8e42658e6d5bc1"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/caco2_wang/test.csv",
+    "bytes": 16063,
+    "sha256": "d87dac944bedcefb216bce57ba5a8de93d3781172c66653b937e5065b9c2579c"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/caco2_wang/train.csv",
+    "bytes": 53598,
+    "sha256": "3061c58d3601d081e5459a2de03dc1d189243c4b5683d1b7288577a29fed4d6f"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/caco2_wang/valid.csv",
+    "bytes": 8098,
+    "sha256": "63328bf307b850a4a0986165d0800bae5aa737c41bd63f1026d16114d8560bb4"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/clearance_hepatocyte_az/test.csv",
+    "bytes": 17001,
+    "sha256": "104ed6e16c206737f97c2e814ae36aa8acce459d94d39df78bbc07eb0ac2ef90"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/clearance_hepatocyte_az/train.csv",
+    "bytes": 61158,
+    "sha256": "5075b6a07d08d50c22a3a434e4708eb34b2d310b612a0a1c523bd153c11ba1f0"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/clearance_hepatocyte_az/valid.csv",
+    "bytes": 8539,
+    "sha256": "70b8909657f590a92b84ef4d3758e10a7ab688083971b939daf0c5004bbe04e5"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/clearance_microsome_az/test.csv",
+    "bytes": 15575,
+    "sha256": "fbd5934690e000e1fba8ea5aa0fdf5cd8977fdff91a0abbd06f78c62085fb39a"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/clearance_microsome_az/train.csv",
+    "bytes": 53776,
+    "sha256": "4a0844973f3b059417c1214becff7ed7be69d457661c3ebb96a26099cc2e0038"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/clearance_microsome_az/valid.csv",
+    "bytes": 8000,
+    "sha256": "b5df9dd9902e743b932811acb330edf1250bca279aa7086a087dd8e58394fbb5"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp2c9_substrate_carbonmangels/test.csv",
+    "bytes": 9762,
+    "sha256": "a14381ca18fb91af76b336917a42bdec7dd71ffc745230684bfe674c96488a44"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp2c9_substrate_carbonmangels/train.csv",
+    "bytes": 29773,
+    "sha256": "cbd2423a4da38cfadcd266f3287c0894f23577917d5f12144eade9f5c0967009"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp2c9_substrate_carbonmangels/valid.csv",
+    "bytes": 3832,
+    "sha256": "020195bff8520972c02dc7bf0739fd7815c548372bd1e6b12eca95619ddcfe0f"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp2c9_veith/test.csv",
+    "bytes": 146639,
+    "sha256": "10a2feb061bf63c48da7ad74b94991693e382d7fa0d56acb37fc4a306ae727d2"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp2c9_veith/train.csv",
+    "bytes": 504822,
+    "sha256": "4414aaa7ce7ac6d588c55d09292a47dd74b4c70bb78338affff655fbe715ebf2"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp2c9_veith/valid.csv",
+    "bytes": 71369,
+    "sha256": "3eb039546951c292faeac419ed22f0e08e3a38a2b90ef62c76e6db736a89b864"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp2d6_substrate_carbonmangels/test.csv",
+    "bytes": 9838,
+    "sha256": "e0ccecf7b99a3b0629cfe8a0423b65e48e1f4a6049c4d4b8e69926b8de0783ca"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp2d6_substrate_carbonmangels/train.csv",
+    "bytes": 28444,
+    "sha256": "8278fde03c27e594079d600e9565d48c3c97dc6daf51113f3b4ba7023ecd8301"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp2d6_substrate_carbonmangels/valid.csv",
+    "bytes": 4881,
+    "sha256": "46d79fa0b3cf13975f97364835e3f4f97c648de7041332101bbb02f1456b1e4c"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp2d6_veith/test.csv",
+    "bytes": 151028,
+    "sha256": "45e6e276b45169003f4e73c795fa4ea059780cfce04c1d06fdb1852b8849dccc"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp2d6_veith/train.csv",
+    "bytes": 549852,
+    "sha256": "f9ddcf3ef3bfda8ec7ccfc3f3882296f3562861df01a28432560781bc9eaa1d6"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp2d6_veith/valid.csv",
+    "bytes": 80283,
+    "sha256": "a783012454209e47640cadb83cf5f84408bf375ca13fa0ea3335482e901823e7"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp3a4_substrate_carbonmangels/test.csv",
+    "bytes": 9700,
+    "sha256": "909ac1d0820299fe87037bf2b375f7316f37ba13b3b110c7a0d83a45a67ece6f"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp3a4_substrate_carbonmangels/train.csv",
+    "bytes": 29459,
+    "sha256": "f840554ef680fe42b5334aac398141fb94b510bee7f935549ee2521a47eda55b"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp3a4_substrate_carbonmangels/valid.csv",
+    "bytes": 4649,
+    "sha256": "368546f70970e88249dd0cfa93f943ea97a4363abaf98861cbc701690efaabc6"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp3a4_veith/test.csv",
+    "bytes": 155537,
+    "sha256": "340a65aa43306ab010fb20607938ea37d5c45a03be7152081b9949520ab03228"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp3a4_veith/train.csv",
+    "bytes": 499184,
+    "sha256": "ed009e2d43cbc4278cf7f4c0923b63aa570009f0bfd532a7139ea395cfe5be90"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/cyp3a4_veith/valid.csv",
+    "bytes": 74243,
+    "sha256": "db7aa095189723c24dc30b73caa76c53b381cebe9a5d409ef54da3644313e6a6"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/dili/test.csv",
+    "bytes": 5828,
+    "sha256": "9b4c5f90f78005a305e425076ef2adf59404152134786991db3e13acdaa7f847"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/dili/train.csv",
+    "bytes": 17948,
+    "sha256": "33981936021d3c360fc0e6e92a701fea80705a3915c0cdb49751312dcd2235cd"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/dili/valid.csv",
+    "bytes": 2083,
+    "sha256": "944ca7ad4f4416a43aa5a5d943d0b4fbed3fcf763a63c835b7d3761bcc15c626"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/half_life_obach/test.csv",
+    "bytes": 10625,
+    "sha256": "c6fbbab02b52618c35661a350d3c3aec700b835ad0bdc9f820fc6b3145ff985d"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/half_life_obach/train.csv",
+    "bytes": 35187,
+    "sha256": "61774bf5dfc29bee0768038dcbf16319e9fc19e2bee63659f2cfed687477e2f9"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/half_life_obach/valid.csv",
+    "bytes": 5237,
+    "sha256": "34b97b09010371060136b6af941c84ede93be9d563807ac5d35ca6fba618aa9a"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/herg/test.csv",
+    "bytes": 9283,
+    "sha256": "df63e59212e9667145c4c9b371cd32207e7339b360ce0469b23287766b973cc8"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/herg/train.csv",
+    "bytes": 32629,
+    "sha256": "97f2f48846378bc4bb51e9d0a0041ac9e3686423a06f20a5119a842212a5b64e"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/herg/valid.csv",
+    "bytes": 5844,
+    "sha256": "4898ea81ba70fcacc21f733e9e8446bf8001566032902245405978f0d86332a6"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/hia_hou/test.csv",
+    "bytes": 8506,
+    "sha256": "acd125be19a4b7b361152e331c80dc3124f1eda36fe7a112cbbc6e921fbdf137"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/hia_hou/train.csv",
+    "bytes": 25761,
+    "sha256": "59291200064e1b3be437437208a45d62f8eea6f6c372b4820e11e20fd1ffb2be"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/hia_hou/valid.csv",
+    "bytes": 3948,
+    "sha256": "31990f1c03ca7c4aad2115835a5e0a6f9de2e83609fd855205508513cbfb14bd"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/ld50_zhu/test.csv",
+    "bytes": 148614,
+    "sha256": "ddf437d076faebad8fb5e74a85379643f3e05824fa5a8aeaf37f725edf8cad5d"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/ld50_zhu/train.csv",
+    "bytes": 390707,
+    "sha256": "749c76c38fdf4fb147f8fa5ae4dfa247cca26b152461a1e52234bca441626daa"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/ld50_zhu/valid.csv",
+    "bytes": 131765,
+    "sha256": "6943341be1314231509651426ea0293e9460bfd80e76f8df8e76485c820e0b05"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/lipophilicity_astrazeneca/test.csv",
+    "bytes": 57704,
+    "sha256": "d768c259d5e8222b5a9dd29bcfccb5cc46560b190a4ec66b1ca4bf1a4ff59568"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/lipophilicity_astrazeneca/train.csv",
+    "bytes": 196225,
+    "sha256": "0049aa6d5b56d2f8c22e475b11b837ebfa86536d0c8ede06d432e854fb9d83d3"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/lipophilicity_astrazeneca/valid.csv",
+    "bytes": 27420,
+    "sha256": "5dd44fdbcefd3dc94de24479f557c3fa6f1e4f69094f2161173b005cb6da5b01"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/pgp_broccatelli/test.csv",
+    "bytes": 23538,
+    "sha256": "4c831f1af48c75b931954ef2c1462e48000c53dcba9e501edf58856a50bd67fe"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/pgp_broccatelli/train.csv",
+    "bytes": 87006,
+    "sha256": "6eb86ba5d8cfa87b8d0950d55e8054586994ea21c8b59e461743117ffe8a9a46"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/pgp_broccatelli/valid.csv",
+    "bytes": 11243,
+    "sha256": "9e10c20d5e373547c69ffb5db88c6bece98a6da079f86314147b492fb78b0f57"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/ppbr_az/test.csv",
+    "bytes": 40577,
+    "sha256": "d1512eb4a58d434663cd3edfc7b0d5c80a376445e1d00cb0c6e65100b4a81be4"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/ppbr_az/train.csv",
+    "bytes": 142030,
+    "sha256": "92842d88cc0f9fe41a14d1effcf1f3a23d0a6415df4d6e615af6458dc6de8281"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/ppbr_az/valid.csv",
+    "bytes": 19434,
+    "sha256": "c1effe3ddc607ce177d59c1f5eebb9466a96f714edbf34f6f4f725988640cb36"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/solubility_aqsoldb/test.csv",
+    "bytes": 177443,
+    "sha256": "ad5814c7b77ff79de9c99b97d667ab8762e78933a4f0147030c6615d3111ce90"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/solubility_aqsoldb/train.csv",
+    "bytes": 438986,
+    "sha256": "744ee3d69e3f0d9230894a62a95bc64ea15b2d6d44f1a5fb890c5c3260ce89c2"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/solubility_aqsoldb/valid.csv",
+    "bytes": 191046,
+    "sha256": "576ef180e4c3ab36853708e092bb8a1da7178a0a0456ef7bbfc41e4e9ec97817"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/vdss_lombardo/test.csv",
+    "bytes": 16250,
+    "sha256": "e59e7ba03645b2086bb67a8a8e063c1959f5ef93e592dc5efcdc0e39a65479e8"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/vdss_lombardo/train.csv",
+    "bytes": 60375,
+    "sha256": "246dd203c300181b1df73c90cb349a0db1a1bd848dfa32895222cd4d4d89bc94"
+  },
+  {
+    "path": "admet_competition_data/data_benchmark/vdss_lombardo/valid.csv",
+    "bytes": 8928,
+    "sha256": "572d0d7b72016acc9feefcb0d1652d0c356cf304fb71fd123652cca3fbbe0661"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/ames_test.npz",
+    "bytes": 132752,
+    "sha256": "93dcb5529e5e66e22ffeadb27d7de4eff18bd55b4f93bbda1c633a53ab0e04ad"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/ames_train.npz",
+    "bytes": 413093,
+    "sha256": "1c2f75073db498a8b39f1b2a86493cbc518efc600284b7f210aacb33abf092ab"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/ames_valid.npz",
+    "bytes": 100635,
+    "sha256": "953d11ece6f0c440a58caa691a77ffc44bbf9ec7d9b426b429b520a6147d7700"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/bbb_martins_test.npz",
+    "bytes": 42923,
+    "sha256": "5d995119d2a610dc77d310bd314e682b821b85cace2878f277542a9036f973fe"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/bbb_martins_train.npz",
+    "bytes": 163942,
+    "sha256": "c0022e7ac9cb85863ea470fec185e53aae7a4bfcc168241aec235a5530adbe05"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/bbb_martins_valid.npz",
+    "bytes": 23893,
+    "sha256": "11fa2b8166e3c76ea2f5b9d83ae8844914c38cc14693376de23082b984db555a"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/bioavailability_ma_test.npz",
+    "bytes": 16194,
+    "sha256": "677020c5bd7f4b99f1d68c548aa20c09a483bd4fb9d45e96edff0017a10cf21a"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/bioavailability_ma_train.npz",
+    "bytes": 53136,
+    "sha256": "d1c80dac0e5fa2eaf949c6b1eb634b17e852d52b3c22a8a82ea64e9aebf55e2f"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/bioavailability_ma_valid.npz",
+    "bytes": 8367,
+    "sha256": "016ecbcb2dd1bffe287356c82d15836349d913e44cbf9963b4bf9dbf9c7ea32f"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/caco2_wang_test.npz",
+    "bytes": 19143,
+    "sha256": "2eaaac241248a8467a00bfa2562edef55d6fd8390ac2cfab22a84b5ef7ddd00f"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/caco2_wang_train.npz",
+    "bytes": 74560,
+    "sha256": "16467d3c610bc591aafa14277fe5e50dcf218b9eb63aec59da3e520d15ca8db6"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/caco2_wang_valid.npz",
+    "bytes": 11993,
+    "sha256": "9349d1c7851abf7044474eb2a1164b685ef1ef20e0947a3d4bc58973a71ec0bb"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/clearance_hepatocyte_az_test.npz",
+    "bytes": 28028,
+    "sha256": "56c6e0acb30bdff440746873ce4609c6cfdb6c45365281fbc1bde92482d372f9"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/clearance_hepatocyte_az_train.npz",
+    "bytes": 96828,
+    "sha256": "73dce959a6557089999cc3791afa104101d5a2230cfbc308968a7992a4af3add"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/clearance_hepatocyte_az_valid.npz",
+    "bytes": 14148,
+    "sha256": "b848f7c4bfc60b2e160a4845175587ba5befb19da25dbc92de03ea48952a01a9"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/clearance_microsome_az_test.npz",
+    "bytes": 26283,
+    "sha256": "cb04ffdf1fc75efbfb679a38b69dcae48ad2d525e309a40ac9c5bf04bc042535"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/clearance_microsome_az_train.npz",
+    "bytes": 93432,
+    "sha256": "1102f38b3e723193ff04925b4e4502879a6082f4de2d5eb6160f50f52d6f437c"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/clearance_microsome_az_valid.npz",
+    "bytes": 14022,
+    "sha256": "40c9e684fbaf930f915c37bf4d821d608ba5147dfb6d16582bc9c108d8fa2ac1"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp2c9_substrate_carbonmangels_test.npz",
+    "bytes": 17090,
+    "sha256": "8480833021b0c34ffa873264941846b78e9d866cc3073207e8172c72634dac73"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp2c9_substrate_carbonmangels_train.npz",
+    "bytes": 54294,
+    "sha256": "34ab5eed75a5dfd60cbdf1536a836358edb01bab7b52589e2c40f0b0b2b35ece"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp2c9_substrate_carbonmangels_valid.npz",
+    "bytes": 8287,
+    "sha256": "350ade4bccd127ad070d9f332fc8f6f6caca0a084834e4f04b709fb34123dd8a"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp2c9_veith_test.npz",
+    "bytes": 273726,
+    "sha256": "45620e8d5faa3f221820ed33e1da76d6f6d78b1adb04bd202453fb21fe9c394a"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp2c9_veith_train.npz",
+    "bytes": 976042,
+    "sha256": "0c0ef435285f15e36abedfab9dc9026048ee3542cdf90adcde65581816cea8e8"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp2c9_veith_valid.npz",
+    "bytes": 140611,
+    "sha256": "60fe40d2dacb5122e6af5753a1e9a5a27a953ae0cb811cb1872708172ef0af0c"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp2d6_substrate_carbonmangels_test.npz",
+    "bytes": 16708,
+    "sha256": "1f8054afe60b86fb6db9ac41c590e6d8ff2fe59da5e177bd173c0542c50dfb5c"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp2d6_substrate_carbonmangels_train.npz",
+    "bytes": 53474,
+    "sha256": "9c20d07c04fe379a773ff8f7489d82095ead8b9e346f7c20125c5ee2e476f672"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp2d6_substrate_carbonmangels_valid.npz",
+    "bytes": 9002,
+    "sha256": "51efbb2bf78a866105725fa13be996e0f8625857a7f05889b8622aef3739f2de"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp2d6_veith_test.npz",
+    "bytes": 289930,
+    "sha256": "8a3438ff4296e13b6170c34212bb159adf8a5098343423628f66bcc0cca65343"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp2d6_veith_train.npz",
+    "bytes": 1066692,
+    "sha256": "72e2cd69f6ecdab58fdf94bfc19f9a2594ca3f474088d0aefdf726a3958f6b67"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp2d6_veith_valid.npz",
+    "bytes": 154834,
+    "sha256": "d43aebb08ff8f4c73cf5e02bcb6c74474d70a9501ccf6a025780ac4ba5157a16"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp3a4_substrate_carbonmangels_test.npz",
+    "bytes": 16813,
+    "sha256": "e576fee77ec042fa01d10cc98acb6b36c8a2503c385689c2d14105e6e6b9d6fd"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp3a4_substrate_carbonmangels_train.npz",
+    "bytes": 54278,
+    "sha256": "515a030f2d03f10ce85364aea7576d2d5effdb1214095cfb5b02fd98fd17c774"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp3a4_substrate_carbonmangels_valid.npz",
+    "bytes": 8753,
+    "sha256": "ea28f040f97ba77f406eebc8f0ec65f624eb9f8109cb5cbf33deafee5e265b6a"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp3a4_veith_test.npz",
+    "bytes": 288249,
+    "sha256": "af41e947b37dc5d16dce244809b4f835079e1edc8fc27c471eb8409c92c1d0ae"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp3a4_veith_train.npz",
+    "bytes": 989375,
+    "sha256": "90bd98d5fa9f9ca853fb3b15b20df16e954272df1db80b54fa82821c3f5cd6b7"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/cyp3a4_veith_valid.npz",
+    "bytes": 144382,
+    "sha256": "444d275d6983cc456bd0980c55c5b179ce152581c3f87046ee37b77238442c33"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/dili_test.npz",
+    "bytes": 12182,
+    "sha256": "94455a5e808fe4c2bab28978b13a84fc675552667457797f7cf9c3bfeb1f3fd0"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/dili_train.npz",
+    "bytes": 39173,
+    "sha256": "e6081c962e0f386a4ae61b1932db576376104b3ddd0c4739ce35c96a666426bb"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/dili_valid.npz",
+    "bytes": 4952,
+    "sha256": "2a0d77eb9610d705ff31f80bbc1a5902f00e4f256c7889bd8f9ed7433ce9aab6"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/half_life_obach_test.npz",
+    "bytes": 17622,
+    "sha256": "ad637bf244f3c6106e577ff2a50669bd3ab4b2e734bebee18a4d069f822682c1"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/half_life_obach_train.npz",
+    "bytes": 57512,
+    "sha256": "188ac3854aa840e8d6c39ae3043b556f5deed8721c5a78aba9b9e49676319372"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/half_life_obach_valid.npz",
+    "bytes": 8584,
+    "sha256": "261ee3d40b12ec734d00301dfe2ae9c50e077a6796a87a0a9b1d7ef4c3d537ec"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/herg_test.npz",
+    "bytes": 15125,
+    "sha256": "d6afde9fd944d097077a9da1b077ef0233a8a5ac05db707e2dbdf2b9d1a96c9f"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/herg_train.npz",
+    "bytes": 53233,
+    "sha256": "b343327c0102504a2fc5638424ec442e15747e55e8d3fb2167aa4eabdc99e08a"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/herg_valid.npz",
+    "bytes": 8528,
+    "sha256": "e78b8800eb3614749847ca8629d5429653e70d8fe9311efa5a76938ef93b4122"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/hia_hou_test.npz",
+    "bytes": 14086,
+    "sha256": "9d0bceef4fd0076a09b4e8d48cfe4534e2e345297be53644aefbed89d71abdea"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/hia_hou_train.npz",
+    "bytes": 47167,
+    "sha256": "128648d748e922a221bed24b9773f761d74776700bc7c6b9dc530a2a0c62f838"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/hia_hou_valid.npz",
+    "bytes": 7329,
+    "sha256": "187a3a5d69d9aa1ded450e805d0b632d2828f80a78b5d8718c358fb5756afebc"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/ld50_zhu_test.npz",
+    "bytes": 142093,
+    "sha256": "4002964ad060ae8a73645e90981b51451a7d30dd4d3ff6d39281e2fed56082f1"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/ld50_zhu_train.npz",
+    "bytes": 381731,
+    "sha256": "0de6befeb60f9fc72e4bb055f945f379a5657f40429d28f04edd164ad51fa200"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/ld50_zhu_valid.npz",
+    "bytes": 146871,
+    "sha256": "900e9a3801548db18a7e2f642cb41ee67846932a44952e68bc84eb3c45f9ce45"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/lipophilicity_astrazeneca_test.npz",
+    "bytes": 98727,
+    "sha256": "fb5b8ef2cbdcad6622b6d32401d619f07f1f0d1707ef5fd88636c6b7d15d896d"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/lipophilicity_astrazeneca_train.npz",
+    "bytes": 342475,
+    "sha256": "b15e1bb444112d400dec01fee29cf7dc75fa57b1a38f2a543fb328ee827797f7"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/lipophilicity_astrazeneca_valid.npz",
+    "bytes": 48759,
+    "sha256": "e14d9c921e05ecf48d3ab620d7db729a0f4ef0fc88d29a465eac5d418579720f"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/pgp_broccatelli_test.npz",
+    "bytes": 27802,
+    "sha256": "b5fb59ff20396ba8fc254b0c3019c751c944db7e90c9b9d4bea55e8eb1d9c586"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/pgp_broccatelli_train.npz",
+    "bytes": 95915,
+    "sha256": "e827b5b9fb0b6707d8fabea2432b69c4c74a9ca376668770ec15b56e535685dc"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/pgp_broccatelli_valid.npz",
+    "bytes": 14850,
+    "sha256": "daceb4cb1fd4d90f6634f2c1bed160728aa72e34a91d1dfeee9ec909f7c0d7b7"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/ppbr_az_test.npz",
+    "bytes": 55551,
+    "sha256": "930d12dea51a143957ee30d28307e882807a485c6036533281b9a9fb7afc9cde"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/ppbr_az_train.npz",
+    "bytes": 196643,
+    "sha256": "beee851e99ec582a0a37c271ba838648b03c067706338b6764def3a7a331a1cf"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/ppbr_az_valid.npz",
+    "bytes": 27584,
+    "sha256": "5119c334af6b20d133aa331df0b3df740d4017cae3c5ded06977e7841869c165"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/solubility_aqsoldb_test.npz",
+    "bytes": 189003,
+    "sha256": "807a4c7c0c1527dfedd6cf7f433e99b1277f7bc0a88801d598de282e62ec5123"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/solubility_aqsoldb_train.npz",
+    "bytes": 471868,
+    "sha256": "c66592c51954d401bd68634f075f24440c407b51862a72f622837217c4ffd8d1"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/solubility_aqsoldb_valid.npz",
+    "bytes": 215153,
+    "sha256": "28cf87da61b58afa969f85ff0f637f74bab7fe5943854de35999ee8d86e5f71d"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/vdss_lombardo_test.npz",
+    "bytes": 28447,
+    "sha256": "ebca6c2efde1fd537fc09683379e85974d25ef8829b0b80d76d6434184e44624"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/vdss_lombardo_train.npz",
+    "bytes": 100320,
+    "sha256": "a75b6625e03498224984c219338f12b53af50cc97ed5790f057c2684102e4e57"
+  },
+  {
+    "path": "admet_model_outputs_v23/features/vdss_lombardo_valid.npz",
+    "bytes": 15284,
+    "sha256": "599b15a9ff65c1b8500be2b0102f9aa0f5934b372c23adbae63123ca46381f5f"
+  },
+  {
+    "path": "admet_model_outputs_v24/features/chemberta.json",
+    "bytes": 228,
+    "sha256": "ce9beeffbd43656e3d2248b63c78529b8e28ab1c88a30341724f44fced281397"
+  },
+  {
+    "path": "admet_model_outputs_v24/features/chemberta.npy",
+    "bytes": 70966400,
+    "sha256": "4e9ff5227d9c676cfe37ab6c655b503bd32e71227700f90105e0eaa98ad1dc23"
+  },
+  {
+    "path": "admet_model_outputs_v24/features/chemistry.json",
+    "bytes": 225,
+    "sha256": "ade4e6b0dfbfbe7b34390e8855f7dd27b833d9101c96c8f5c0db79030c4e2b4a"
+  },
+  {
+    "path": "admet_model_outputs_v24/features/chemistry.npz",
+    "bytes": 24497933,
+    "sha256": "a9995a8bc43db4bd4fd02b304b6c4e9c7c42d44b37e6ad7d314a2236769ff994"
+  },
+  {
+    "path": "admet_model_outputs_v27/features/graphs.json",
+    "bytes": 170,
+    "sha256": "0fc6de464ed63da24d53ab007bc4e5ffd710fb3f6381864e94707f19a6a99082"
+  },
+  {
+    "path": "admet_model_outputs_v27/features/graphs.npz",
+    "bytes": 7812734,
+    "sha256": "04ab9252b2348c42a0ebc4a856cefd0ee1994a497175a6e38d53fb3d1f6d8cdf"
+  },
+  {
+    "path": "admet_official/app.js",
+    "bytes": 77876,
+    "sha256": "6f691be85edaad1835e439009f989bd7eb0d6d59b123c047c2c617af5f49690a"
+  },
+  {
+    "path": "admet_official/home.html",
+    "bytes": 2155,
+    "sha256": "f26adac300f4f47228add9faf13f8d5ae49e6fce3211a7783284cd880802540b"
+  },
+  {
+    "path": "admet_official/scoring_recheck_20260925.md",
+    "bytes": 657,
+    "sha256": "052b641ac7d8fe69b01e6aa34873d2b5171736b23e3025561f51be6c217805eb"
+  },
+  {
+    "path": "admet_official/submission_template.csv",
+    "bytes": 1477800,
+    "sha256": "8ee41589d2c98e7b93081c058b3f928ac09bea4b3ffc899fa13677051e9baa20"
+  },
+  {
+    "path": "admet_official/track995.js",
+    "bytes": 23597,
+    "sha256": "5261685b70f7a8a281cacb713bb6783c939ad3e5f734ba3a8c9c7543a92c5f21"
+  },
+  {
+    "path": "admet_official/verified_rules.md",
+    "bytes": 1083,
+    "sha256": "c5ac2c19499f590b27293eb8aaed9d09d459de10480f52559e355c5536abffed"
+  },
+  {
+    "path": "admet_pretrained/chemberta_mlm/added_tokens.json",
+    "bytes": 25,
+    "sha256": "2b0e66b84bd97bc08467f7a7c033cfd5a66c6335eb79779a144b50f8e7b2557d"
+  },
+  {
+    "path": "admet_pretrained/chemberta_mlm/config.json",
+    "bytes": 631,
+    "sha256": "b9ec477f76a173461741cb0f339b89661c9d9249af2f6a84df7593c3baede9b0"
+  },
+  {
+    "path": "admet_pretrained/chemberta_mlm/merges.txt",
+    "bytes": 52,
+    "sha256": "291976363a8a20ed148ff687cf3da54ada8ddbc99655fa876326f0ef28dbd6ad"
+  },
+  {
+    "path": "admet_pretrained/chemberta_mlm/provenance.json",
+    "bytes": 1452,
+    "sha256": "787de3b74b2133d5d96ce712ae3d4a868e087d497cc13ce0b6c46656bf1e9bde"
+  },
+  {
+    "path": "admet_pretrained/chemberta_mlm/pytorch_model.bin",
+    "bytes": 13734116,
+    "sha256": "95571af26b61ba8d56b9d61ff108b5c9afe96fd69ea3cbd1901d9421e3d2dd6d"
+  },
+  {
+    "path": "admet_pretrained/chemberta_mlm/special_tokens_map.json",
+    "bytes": 420,
+    "sha256": "23dbc119b7e11cb23d3c43b13004c5a4ab4e6530c7146e34fa1f9564856b5580"
+  },
+  {
+    "path": "admet_pretrained/chemberta_mlm/tokenizer.json",
+    "bytes": 8262,
+    "sha256": "1197005224bc8917f46f8d6fc360aec71c6626858966e167b2ff8af62214f814"
+  },
+  {
+    "path": "admet_pretrained/chemberta_mlm/tokenizer_config.json",
+    "bytes": 1271,
+    "sha256": "79919cd4b54bdf241f19956753e8a47b8b782eb4b38eec0e0254bd2434545abd"
+  },
+  {
+    "path": "admet_pretrained/chemberta_mlm/vocab.json",
+    "bytes": 6963,
+    "sha256": "0c9afbd534ab59fa51718c998027da0e7932293c9a51de03317d4c83d3fe48f6"
+  },
+  {
+    "path": "admet_pretrained/tabicl_v2/tabicl-classifier-v2-20260212.ckpt",
+    "bytes": 110368038,
+    "sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0"
+  },
+  {
+    "path": "admet_pretrained/tabicl_v2/tabicl-regressor-v2-20260212.ckpt",
+    "bytes": 114324594,
+    "sha256": "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a"
+  },
+  {
+    "path": "admet_submissions/v20/我从山北来带着兰花草-小分子药物预测技术创新赛-20260927-v20.csv",
+    "bytes": 1768813,
+    "sha256": "7c4001cf13f7cd98f714575a1dce12a827ac7c9800cb65ec163c4f5826587789"
+  },
+  {
+    "path": "admet_submissions/v23/v23_upload.csv",
+    "bytes": 1770609,
+    "sha256": "b2dc3eacc5c621f007fbacde47b55f751d87509e4721e76d47b686dde36004e1"
+  },
+  {
+    "path": "admet_submissions/v23/verification.json",
+    "bytes": 1709,
+    "sha256": "c1a14968f2dd1aef494ac0e76bebcf437598c4f71b684f0f1041f6ae4dbe952d"
+  },
+  {
+    "path": "admet_submissions/v23/我从山北来带着兰花草-小分子药物预测技术创新赛-20260928-v23.csv",
+    "bytes": 1770609,
+    "sha256": "b2dc3eacc5c621f007fbacde47b55f751d87509e4721e76d47b686dde36004e1"
+  },
+  {
+    "path": "admet_submissions/v24/verification.json",
+    "bytes": 1074,
+    "sha256": "9f864761841f07cf9832a7d2a2231b7cf89ca50644d30fd9a009cb03e3e835db"
+  },
+  {
+    "path": "admet_submissions/v24/我从山北来带着兰花草-小分子药物预测技术创新赛-20260928-v24.csv",
+    "bytes": 1770727,
+    "sha256": "d8d6a5f776aeea0f71149702f267894974ade314b87ccfe48925f9719e02aa86"
+  },
+  {
+    "path": "admet_submissions/v26/verification.json",
+    "bytes": 992,
+    "sha256": "ed6588f19a3d970c4995e91c02731536525a480f48e3b7e91dba16fd538e7ae9"
+  },
+  {
+    "path": "admet_submissions/v26/我从山北来带着兰花草-小分子药物预测技术创新赛-20260928-v26.csv",
+    "bytes": 1771130,
+    "sha256": "2d70b861382fe148e37cc199e68d8dac851de23b0a3084bf5942b2ab5cc05d6d"
+  },
+  {
+    "path": "admet_submissions/v27/verification.json",
+    "bytes": 1183,
+    "sha256": "e11c42f64c41cb4919cdf15d6d9a0ca9b5fd43bfc81f225beff88d42bbbc9880"
+  },
+  {
+    "path": "admet_submissions/v27/我从山北来带着兰花草-小分子药物预测技术创新赛-20261006-v27.csv",
+    "bytes": 1771729,
+    "sha256": "ff4a8c26eea7f6d9573dce39f0b8ef650ace4fbc9faea0812abcf19e19def176"
+  },
+  {
+    "path": "admet_submissions/v29/verification.json",
+    "bytes": 1455,
+    "sha256": "85c2657180a871dd57162d1d508574152678e257bc8bb0dec06b115f04604d5e"
+  },
+  {
+    "path": "admet_submissions/v29/我从山北来带着兰花草-小分子药物预测技术创新赛-20261006.csv",
+    "bytes": 1772082,
+    "sha256": "b0b2b872986f06699b80e77f7d13ac61510a6835891fa6a0f9e73c41daebcb53"
+  },
+  {
+    "path": "admet_submissions/v32/verification.json",
+    "bytes": 1302,
+    "sha256": "89e4b525e985adc40549b517d410a531826f38072a1c80366076c538a6a9129b"
+  },
+  {
+    "path": "admet_submissions/v32/我从山北来带着兰花草-小分子药物预测技术创新赛-20261006.csv",
+    "bytes": 1772628,
+    "sha256": "179f39d79eabe7ebc7d4fda8d3abe45fa56a2a0e1a1e45bc58b07c12945f28ac"
+  },
+  {
+    "path": "admet_submissions/v33/verification.json",
+    "bytes": 1194,
+    "sha256": "0152a6a477673645b1012142bb4ec6c2bd452d2480a12f1238ca3b13903ea7e5"
+  },
+  {
+    "path": "admet_submissions/v33/我从山北来带着兰花草-小分子药物预测技术创新赛-20261006.csv",
+    "bytes": 1772618,
+    "sha256": "d38072724cd657341d8e4a1dbb3c3af6fae68c7a74cece553bc960c42d06f8ea"
+  },
+  {
+    "path": "admet_submissions/v36/verification.json",
+    "bytes": 1314,
+    "sha256": "fb320d3ddabf91c093f259e72dc77994d6788afd05af83d836626b4e2a5fa0fb"
+  },
+  {
+    "path": "admet_submissions/v36/我从山北来带着兰花草-小分子药物预测技术创新赛-20261006.csv",
+    "bytes": 1772586,
+    "sha256": "9f16e51d46f4b36d4c3bd262ca6c9053a8cd91009f66813ab29d9b02ea136ba9"
+  },
+  {
+    "path": "admet_submissions/v37/verification.json",
+    "bytes": 996,
+    "sha256": "17006264b659c44937782f6a389583ed47c4ec0553a40d365fc5452d730c4901"
+  },
+  {
+    "path": "admet_submissions/v37/我从山北来带着兰花草-小分子药物预测技术创新赛-20261006.csv",
+    "bytes": 1772618,
+    "sha256": "7f14d29cd40562671a59536c40f4f6e9e9bf7113900323614fc808c4623e7bac"
+  },
+  {
+    "path": "admet_submissions/v39/verification.json",
+    "bytes": 954,
+    "sha256": "5216daacd82e8d4af1d63822117540e1059d1fc9a12a3903fb7b518b65281e4c"
+  },
+  {
+    "path": "admet_submissions/v39/我从山北来带着兰花草-小分子药物预测技术创新赛-20261006.csv",
+    "bytes": 1772618,
+    "sha256": "7f14d29cd40562671a59536c40f4f6e9e9bf7113900323614fc808c4623e7bac"
+  },
+  {
+    "path": "admet_submissions/v40/verification.json",
+    "bytes": 1023,
+    "sha256": "a8e42ac6691b3c88a9b601658409ae578fec51a5f9bf72537a90e76fd59b01cb"
+  },
+  {
+    "path": "admet_submissions/v40/我从山北来带着兰花草-小分子药物预测技术创新赛-20261008.csv",
+    "bytes": 1773364,
+    "sha256": "47ee8841cab35644f67f24f95a1483dd00eafbe38b2f65c864d21aad75c5d5c4"
+  },
+  {
+    "path": "admet_submissions/v42/verification.json",
+    "bytes": 1023,
+    "sha256": "5b2dbaf9baa978b73bbfa1c271381eaacda47919c656ca06896b94739a7a324b"
+  },
+  {
+    "path": "admet_submissions/v42/我从山北来带着兰花草-小分子药物预测技术创新赛-20261008.csv",
+    "bytes": 1773392,
+    "sha256": "d20a0e8e3b126ce8f8dd492b77d5343e30c35cc16cb0be30af50ba74c795b00d"
+  },
+  {
+    "path": "admet_submissions/v43/verification.json",
+    "bytes": 1103,
+    "sha256": "d6dc7bd9d561318222382fd489e1ab88bd8427707335a8451fb6b5684dfbe35b"
+  },
+  {
+    "path": "admet_submissions/v43/我从山北来带着兰花草-小分子药物预测技术创新赛-20261008.csv",
+    "bytes": 1773481,
+    "sha256": "1c426ece3cafbeb4294a44b66f11a4b5e0801779123af718d3e5a73831ec6220"
+  },
+  {
+    "path": "admet_submissions/v44/verification.json",
+    "bytes": 1129,
+    "sha256": "83eaacf36a1864662df507ceafd140b285354656382e735fd5942783ce35e2a5"
+  },
+  {
+    "path": "admet_submissions/v44/我从山北来带着兰花草-小分子药物预测技术创新赛-20261012.csv",
+    "bytes": 1773435,
+    "sha256": "45b72ad8f9f697962690091c59de09905bbb3c2e06065e1a1235eb1daa7a538c"
+  },
+  {
+    "path": "admet_submissions/v45/我从山北来带着兰花草-小分子药物预测技术创新赛-20261014-v45.csv",
+    "bytes": 1773519,
+    "sha256": "8be41528f71c1dce5a3c46430f5838838a2127260f9abe519ac79409e72886d7"
+  },
+  {
+    "path": "admet_submissions/v45b/我从山北来带着兰花草-小分子药物预测技术创新赛-20261014-v45.csv",
+    "bytes": 1773519,
+    "sha256": "8be41528f71c1dce5a3c46430f5838838a2127260f9abe519ac79409e72886d7"
+  },
+  {
+    "path": "admet_submissions/v45c/我从山北来带着兰花草-小分子药物预测技术创新赛-20261014-v45.csv",
+    "bytes": 1773403,
+    "sha256": "49ffd97565da895035f407decedc30664c9efb3e3cf4e786e8eb8dd1d341effb"
+  },
+  {
+    "path": "admet_submissions/v46/verification.json",
+    "bytes": 2926,
+    "sha256": "220dd33b65af9aaeea06ba3ee2bdef874087d706c0e1d6aee63ebb63341b3bd0"
+  },
+  {
+    "path": "admet_submissions/v46/我从山北来带着兰花草-小分子药物预测技术创新赛-20261015-v46.csv",
+    "bytes": 1773326,
+    "sha256": "579383a3c91a3c57c9cd9a216b37830723f8de1bf65d66d0de80f0b77a1c1e95"
+  },
+  {
+    "path": "admet_submissions/v47/我从山北来带着兰花草-小分子药物预测技术创新赛-20261015-v47.csv",
+    "bytes": 1773271,
+    "sha256": "a29ac71382b26380c9de142ffda632adf994563588438440d745e620ba6c6ef0"
+  },
+  {
+    "path": "admet_submissions/v56/verification.json",
+    "bytes": 625,
+    "sha256": "d3e200be0fffb1e712093e00ca837e5306d8b772080b36805693f3d6eb3e8ade"
+  },
+  {
+    "path": "admet_submissions/v56/我从山北来带着兰花草-小分子药物预测技术创新赛-20261016.csv",
+    "bytes": 1772879,
+    "sha256": "ef8a199bedb658ed4fc2147581589cfd5d830a568d4505a83ff05ecfa3cfc8f3"
+  },
+  {
+    "path": "admet_submissions/v57/verification.json",
+    "bytes": 677,
+    "sha256": "b32ed8cbdab7b33128d08216e63a8d93c1697192622f445c6bf078f3b583b38c"
+  },
+  {
+    "path": "admet_submissions/v57/我从山北来带着兰花草-小分子药物预测技术创新赛-20261016-v57.csv",
+    "bytes": 1772821,
+    "sha256": "e5aef127f9d093860e2e77aad67e559bca320a34e82e8272ea066aa86354d31b"
+  },
+  {
+    "path": "admet_submissions/v60/verification.json",
+    "bytes": 673,
+    "sha256": "180a42b50a14112fbacff91fc90f1fb6bc426fe445d8d14627672d59e3f5f8b9"
+  },
+  {
+    "path": "admet_submissions/v60/我从山北来带着兰花草-小分子药物预测技术创新赛-20261017.csv",
+    "bytes": 1772921,
+    "sha256": "030689508e9437a8d42d0adb183cc1321530df75fdea467edf92bfdf4b0f925b"
+  },
+  {
+    "path": "admet_submissions/v61/verification.json",
+    "bytes": 717,
+    "sha256": "0d99c674eaa6e22ae5916d25b845da8dbf8bad786d8d7e28fc18332f0831d65b"
+  },
+  {
+    "path": "admet_submissions/v61/我从山北来带着兰花草-小分子药物预测技术创新赛-20261017.csv",
+    "bytes": 1772858,
+    "sha256": "216d11e43d94ed015cc1aae661820844e3aa109d967cf0f14aa9c3c990ba0c18"
+  },
+  {
+    "path": "admet_submissions/v62/verification.json",
+    "bytes": 677,
+    "sha256": "2800f6843b9ca930bab64756b453ef1d6c08590d1b08822ef3d8de9e951c8e48"
+  },
+  {
+    "path": "admet_submissions/v62/我从山北来带着兰花草-小分子药物预测技术创新赛-20261017.csv",
+    "bytes": 1772876,
+    "sha256": "67d368d875257e2a37fe86431791f2e77987dfccb1a73d9d3aadea576aecc14e"
+  },
+  {
+    "path": "admet_submissions/v63/verification.json",
+    "bytes": 730,
+    "sha256": "5c6efbdbba02579ce4130cd6a888a096442cc92b6d1c39e54865c0fdd5edbb0b"
+  },
+  {
+    "path": "admet_submissions/v63/我从山北来带着兰花草-小分子药物预测技术创新赛-20261017.csv",
+    "bytes": 1773354,
+    "sha256": "d3ba7a517f75390c70be547d0b39ae195d3e460750f2360c92a5273990155550"
+  },
+  {
+    "path": "admet_submissions/v65/verification.json",
+    "bytes": 701,
+    "sha256": "40d41c6eb828f2f907c7c1c6a1a1bed98edc9fc21c8f5ce547f198318f8e3038"
+  },
+  {
+    "path": "admet_submissions/v65/我从山北来带着兰花草-小分子药物预测技术创新赛-20261017.csv",
+    "bytes": 1773398,
+    "sha256": "443ececd84320e5e2b93c1d148d98b12e72e6adbb414e1a18cc50e14e52d8ee1"
+  }
+]

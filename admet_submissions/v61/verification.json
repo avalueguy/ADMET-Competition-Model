@@ -1,0 +1,24 @@
+{
+  "status": "AWAITING_PLATFORM_EVALUATION",
+  "signature": "c7e015da357a177d10e0c6915e3ffe1a169056229e69910ef442f17090e66a64",
+  "sha256": "216d11e43d94ed015cc1aae661820844e3aa109d967cf0f14aa9c3c990ba0c18",
+  "baseline_sha256": "030689508e9437a8d42d0adb183cc1321530df75fdea467edf92bfdf4b0f925b",
+  "rows": 16379,
+  "columns": 6,
+  "tasks": 22,
+  "changed_tasks": {
+    "solubility_aqsoldb": 1997,
+    "caco2_wang": 182,
+    "ld50_zhu": 1478,
+    "ames": 1457,
+    "cyp2d6_veith": 2623,
+    "hia_hou": 114
+  },
+  "bytes": 1772858,
+  "encoding": "UTF-8 BOM",
+  "line_endings": "CRLF",
+  "official_score": null,
+  "known_score_upper_bound": 50.804792,
+  "local_gpu_training": false,
+  "automatically_uploaded": false
+}

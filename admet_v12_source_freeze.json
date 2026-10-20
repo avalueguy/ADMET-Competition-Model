@@ -1,0 +1,12 @@
+{
+  "admet_v12_coordinate.py": "a2df9c3022d17e2201b5b38f794b8a79d350749158d932147d74eeaf0f25fac4",
+  "admet_v12_finish.py": "0b60b18c5488068dcfaf3c2ff5a9bb17cfd484486d4b46ba64221a794c53696c",
+  "admet_v12_local_verify.py": "cdc5bb57db3045894a7f4ae64b487f24e0f653eaf4175aaa25f0b6a619258dd5",
+  "admet_v12_models.py": "2666c571d28f6fbe5c7d2de2d92c8dacc847a7d5b4220e58a729146871731df8",
+  "admet_v12_release.py": "d8c9455e544784bcf5667f6a5688a20d2c5ece6a62cd07531cb29ea1e0cd4b64",
+  "admet_v12_runner.py": "0f0964080967954ce611bacf220bea096ab9556822de94685fa0d27a6ced8d51",
+  "admet_v12_uncertainty.py": "ba9cc4157b4e32292e82e66311dbea7916ba921fa0bf9d93ccd517fe920be979",
+  "test_admet_v12.py": "28c037a2286ff16bcf827332a2662847d93a1ddc7b1d1e9a0689eb8076f00590",
+  "test_admet_v12_export.py": "f2536d45462f0c1fedcd1efa4f23c7b99794264078b3cf277721fbf8d5d7aa71",
+  "admet_v12_protocol.json": "aa6595d1e194e43013ba47ebd9ff013b4a73134fb93e3f6065a2546481f7c998"
+}

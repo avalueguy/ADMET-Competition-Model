@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "rows": 16379,
+  "columns": 6,
+  "tasks": 22,
+  "bytes": 1773354,
+  "sha256": "d3ba7a517f75390c70be547d0b39ae195d3e460750f2360c92a5273990155550",
+  "baseline_sha256": "030689508e9437a8d42d0adb183cc1321530df75fdea467edf92bfdf4b0f925b",
+  "nonprediction_fields_exact": true,
+  "finite_predictions": true,
+  "independent_fusion_replay": true,
+  "changed_tasks": {
+    "caco2_wang": 182,
+    "clearance_hepatocyte_az": 241,
+    "herg": 131,
+    "hia_hou": 116,
+    "lipophilicity_astrazeneca": 840,
+    "ppbr_az": 559
+  },
+  "changed_rows": 2069,
+  "encoding": "UTF-8 BOM",
+  "line_endings": "CRLF",
+  "official_score": null,
+  "local_gpu_training": false,
+  "automatically_uploaded": false
+}

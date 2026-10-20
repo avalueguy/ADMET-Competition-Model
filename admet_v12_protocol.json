@@ -1,0 +1,92 @@
+{
+  "version": 12,
+  "execution": "remote_only",
+  "baseline_release": "v11",
+  "baseline_platform_score_user_reported": 49.381036,
+  "baseline_sha256": "082183f0c462081ea8735a41ec2e47326ef4cdcaf9d1188ae86a006f8057122d",
+  "target_score": 51.584929,
+  "score_formula": null,
+  "tasks": [
+    "ames",
+    "bbb_martins",
+    "bioavailability_ma",
+    "caco2_wang",
+    "clearance_hepatocyte_az",
+    "clearance_microsome_az",
+    "cyp2c9_substrate_carbonmangels",
+    "cyp2c9_veith",
+    "cyp2d6_substrate_carbonmangels",
+    "cyp2d6_veith",
+    "cyp3a4_substrate_carbonmangels",
+    "cyp3a4_veith",
+    "dili",
+    "half_life_obach",
+    "herg",
+    "hia_hou",
+    "ld50_zhu",
+    "lipophilicity_astrazeneca",
+    "pgp_broccatelli",
+    "ppbr_az",
+    "solubility_aqsoldb",
+    "vdss_lombardo"
+  ],
+  "families": [
+    "boost_compact",
+    "boost_fragments",
+    "kernel_adaptive"
+  ],
+  "kernel_cs": [
+    3.0,
+    30.0
+  ],
+  "alphas": [
+    0.15,
+    0.3,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "confirmation_seed": 692509,
+  "selection": "One frozen candidate pool (three families and their equal mixture), choose family+alpha on existing scaffold OOF once; official valid and repeat are vetoes. No retries after rejection.",
+  "fold_primary_tolerance": {
+    "MAE_relative": 0.01,
+    "ranking_absolute": 0.005
+  },
+  "secondary_tolerance": {
+    "MAE_relative": 0.03,
+    "ranking_absolute": 0.015
+  },
+  "distant_primary_tolerance": {
+    "MAE_relative": 0.03,
+    "ranking_absolute": 0.01
+  },
+  "distant_secondary_gate": true,
+  "notes": [
+    "Fit-only inner scaffold split chooses boosting iterations and adaptive kernel C/power independently within each outer fit. No outer/official valid labels enter this inner selection.",
+    "Descriptor/MACCS/frozen-embedding compact learner and fragment learner use two fixed CatBoost GPU depths. Fit-only variance screening; no external assay labels.",
+    "Adaptive sparse kernels choose C and elementwise power on fit-only inner scaffold holdout. Final stage independently applies same inner procedure to train+valid.",
+    "Allow replacement weights up to 1 only if all fixed primary, secondary and distant gates pass. Do not reduce tolerances to meet requested 0.6.",
+    "V11 exact scored file is baseline, including HIA previously released despite limited distant valid coverage; no historical file is silently altered. New candidates require adequate distant coverage in every gate.",
+    "All historical validation splits are reused and selection biased. Internal split does not make outer validation untouched. No guaranteed hidden score; user requested next score at least 49.981036, final goal 51.584929.",
+    "No automatic platform upload. All model fits remote only."
+  ],
+  "next_version_target": 49.981036,
+  "requested_gain": 0.6,
+  "seeds": [
+    12201,
+    12202
+  ],
+  "boost_depths": [
+    5,
+    7
+  ],
+  "boost_max_iterations": 1600,
+  "boost_patience": 120,
+  "adaptive_cs": [
+    0.3,
+    3.0,
+    30.0,
+    300.0
+  ],
+  "pooled_candidate": true
+}

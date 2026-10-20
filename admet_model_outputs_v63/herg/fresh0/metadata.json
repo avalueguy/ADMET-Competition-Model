@@ -1,0 +1,13 @@
+{
+  "signature": "b68e15a134ca5656197da68f7778a71eb1fd022e62ecd5f5e906a50c80d4c19c",
+  "fit_rows": 397,
+  "query_rows": 126,
+  "families": [
+    0
+  ],
+  "model_reload_passed": true,
+  "fit_only_pca": true,
+  "test_labels_used": false,
+  "local_gpu_training": false,
+  "seconds": 5.122260570526123
+}

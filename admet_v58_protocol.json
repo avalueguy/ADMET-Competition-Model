@@ -1,0 +1,22 @@
+{
+  "version": 58,
+  "date": "2026-10-17",
+  "remote_root": "/home/czp123/admet_v23_20260928",
+  "tasks": ["cyp2c9_substrate_carbonmangels", "cyp2d6_substrate_carbonmangels", "cyp3a4_substrate_carbonmangels", "bioavailability_ma", "herg", "bbb_martins", "caco2_wang", "half_life_obach", "clearance_hepatocyte_az", "clearance_microsome_az", "vdss_lombardo", "dili"],
+  "seeds": [581017, 581018],
+  "encoder_learning_rates": [0.000008, 0.000025],
+  "steps": 180,
+  "snapshots": [120, 180],
+  "batch_size": 32,
+  "max_tokens": 192,
+  "head_learning_rate": 0.0005,
+  "dropout": 0.22,
+  "weights": [0.15, 0.35, 0.60, 0.85, 1.0],
+  "folds": 3,
+  "validation": "Existing globally isolated scaffold folds; leave-one-fold-out hyperparameter-selection diagnostic, then newly drawn scaffold source-control evaluation. Historical development labels reused; not independent platform evidence.",
+  "test_labels_used": false,
+  "local_gpu_training": false,
+  "external_labels": false,
+  "automatic_upload": false,
+  "score_upper_bound_from_user": 50.755035
+}

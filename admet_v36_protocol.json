@@ -1,0 +1,17 @@
+{
+  "version": 36,
+  "baseline": "v32",
+  "baseline_score": 50.399027,
+  "baseline_sha256": "179f39d79eabe7ebc7d4fda8d3abe45fa56a2a0e1a1e45bc58b07c12945f28ac",
+  "training_host": "czp123@100.109.143.42",
+  "remote_root": "/home/czp123/admet_v23_20260928",
+  "sources": [33, 34, 35],
+  "weights": [0.15, 0.35, 0.6, 0.85, 1.0],
+  "candidate_set": "Each source's frozen selected variant; one equal blend of the source winners if at least two exist. Rank within task/fold for non-MAE; raw values for MAE.",
+  "selection": "Historical full-v32 valid gain >0.0002, CV proxy mean >0, objective 0.55 valid +0.45 CV mean -0.04 CV SD >0.0005. Maximize objective. Individual folds may decline.",
+  "test_labels_used": false,
+  "external_labels": false,
+  "automatic_submission": false,
+  "local_gpu_training": false,
+  "limitations": "Official total score formula unknown; valid and folds historically reused. CV is newer-branch fusion over v24 neural proxy, not full historical ensemble OOF. Conditional OTHER-task official assay prediction. Selection bias increases when combining searched source winners."
+}

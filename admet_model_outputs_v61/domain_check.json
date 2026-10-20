@@ -1,0 +1,169 @@
+{
+  "status": "COMPLETE",
+  "tasks": [
+    {
+      "task": "solubility_aqsoldb",
+      "test_cyclic": 1.0,
+      "diagnostics": [
+        {
+          "fold": 0,
+          "cyclic": 1,
+          "rows": 1635,
+          "gain": 0.005812557230115139
+        },
+        {
+          "fold": 1,
+          "cyclic": 1,
+          "rows": 1635,
+          "gain": 0.013137729296186321
+        },
+        {
+          "fold": 2,
+          "cyclic": 1,
+          "rows": 1775,
+          "gain": 0.009241853715843396
+        }
+      ]
+    },
+    {
+      "task": "caco2_wang",
+      "test_cyclic": 1.0,
+      "diagnostics": [
+        {
+          "fold": 0,
+          "cyclic": 1,
+          "rows": 202,
+          "gain": -0.002851047988869636
+        },
+        {
+          "fold": 1,
+          "cyclic": 1,
+          "rows": 208,
+          "gain": 0.0005168118843317234
+        },
+        {
+          "fold": 2,
+          "cyclic": 1,
+          "rows": 202,
+          "gain": 0.011046886900015705
+        }
+      ]
+    },
+    {
+      "task": "ld50_zhu",
+      "test_cyclic": 1.0,
+      "diagnostics": [
+        {
+          "fold": 0,
+          "cyclic": 1,
+          "rows": 1210,
+          "gain": 0.0067086964754369755
+        },
+        {
+          "fold": 1,
+          "cyclic": 1,
+          "rows": 1210,
+          "gain": 0.00573341575477804
+        },
+        {
+          "fold": 2,
+          "cyclic": 1,
+          "rows": 1550,
+          "gain": 0.0016643977916808584
+        }
+      ]
+    },
+    {
+      "task": "ames",
+      "test_cyclic": 1.0,
+      "diagnostics": [
+        {
+          "fold": 0,
+          "cyclic": 0,
+          "rows": 402,
+          "gain": 0.0036905965621841785
+        },
+        {
+          "fold": 0,
+          "cyclic": 1,
+          "rows": 1159,
+          "gain": 0.010619685512389343
+        },
+        {
+          "fold": 1,
+          "cyclic": 0,
+          "rows": 407,
+          "gain": 0.008416642164069343
+        },
+        {
+          "fold": 1,
+          "cyclic": 1,
+          "rows": 1155,
+          "gain": 0.008269230769230806
+        },
+        {
+          "fold": 2,
+          "cyclic": 0,
+          "rows": 459,
+          "gain": 0.0009602458229305277
+        },
+        {
+          "fold": 2,
+          "cyclic": 1,
+          "rows": 1102,
+          "gain": 0.004628020082167894
+        }
+      ]
+    },
+    {
+      "task": "cyp2d6_veith",
+      "test_cyclic": 0.8960396039603961,
+      "diagnostics": [
+        {
+          "fold": 0,
+          "cyclic": 1,
+          "rows": 3064,
+          "gain": 0.0049104093320770925
+        },
+        {
+          "fold": 1,
+          "cyclic": 1,
+          "rows": 3063,
+          "gain": 0.0068813323578067465
+        },
+        {
+          "fold": 2,
+          "cyclic": 1,
+          "rows": 3064,
+          "gain": 0.003153118062186877
+        }
+      ]
+    },
+    {
+      "task": "hia_hou",
+      "test_cyclic": 0.8376068376068376,
+      "diagnostics": [
+        {
+          "fold": 0,
+          "cyclic": 1,
+          "rows": 134,
+          "gain": 0.024157660521296753
+        },
+        {
+          "fold": 1,
+          "cyclic": 1,
+          "rows": 135,
+          "gain": 0.005199999999999982
+        },
+        {
+          "fold": 2,
+          "cyclic": 1,
+          "rows": 134,
+          "gain": -0.004070881226053591
+        }
+      ]
+    }
+  ],
+  "selection_changed": false,
+  "test_labels_used": false
+}

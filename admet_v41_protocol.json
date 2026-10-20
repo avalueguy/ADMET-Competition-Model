@@ -1,0 +1,21 @@
+{
+  "version": 41,
+  "baseline": "v39",
+  "baseline_score": 50.490698,
+  "baseline_sha256": "7f14d29cd40562671a59536c40f4f6e9e9bf7113900323614fc808c4623e7bac",
+  "remote_root": "/home/czp123/admet_v23_20260928",
+  "training_host": "czp123@100.109.143.42",
+  "standardization": "RDKit Cleanup, FragmentParent(skipStandardize=True), Uncharger; retain original views alongside the neutral principal fragment. No tautomer canonicalization or assay lookup.",
+  "families": ["original_plus_parent_chemistry", "parent_chemistry_plus_other_assay_neighbors", "equal_mix"],
+  "seeds": [410810, 410811],
+  "depths": [4, 6],
+  "estimators": [650, 850],
+  "fingerprint_columns": 1024,
+  "weights": [0.1, 0.25, 0.5, 0.75, 1.0],
+  "selection": "Inherited v40 full-v39 valid shortlist freeze then 3 scaffold folds; objective 0.45 valid +0.55 CV mean -0.04 CV SD; valid gain>0.0002, CV mean>0, objective>0.0005. Individual folds allowed to decline.",
+  "test_labels_used": false,
+  "external_labels": false,
+  "automatic_submission": false,
+  "local_gpu_training": false,
+  "limitations": "Reused historical valid and folds; CV is proxy. Other-task supplied assays conditional. Parent features might change pH/salt interpretation; final selections remain validation-based. No official score guarantee."
+}

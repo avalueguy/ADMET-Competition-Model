@@ -1,0 +1,26 @@
+{
+  "version": 5,
+  "execution": "remote_only",
+  "remote_host": "root@connect.westd.seetacloud.com:43926",
+  "platform_baseline": 48.862655,
+  "official_score_formula": null,
+  "cv_folds": 3,
+  "cv_seed": 20260925,
+  "seeds": [4201, 4202, 4203],
+  "neural_epochs": 80,
+  "candidates": ["neural", "catboost", "kernel"],
+  "kernel_max_train": 3000,
+  "validation_blend_weight": 0.25,
+  "promotion": "do_not_publish_automatically",
+  "notes": [
+    "Choose candidate family by mean scaffold CV score using train labels only.",
+    "Evaluate a fixed 25 percent blend against the submitted v4 on official valid only after family selection.",
+    "MAE and Spearman, or AUROC and AUPRC, must both avoid regression in observed valid for a provisional pass.",
+    "Public valid and old scaffold holdout have been reused; neither is an untouched test.",
+    "CV scores compare new candidate families, not the full historical v4 ensemble.",
+    "A provisional pass is not a blind-test or platform-score guarantee.",
+    "No test labels, auxiliary assay labels, external ADMET labels or test-target lookup.",
+    "The frozen external encoder is a masked-language-model checkpoint, not an ADMET fine-tuned checkpoint.",
+    "Leave existing Qwen jobs and environments untouched; require working remote CUDA before experiments."
+  ]
+}

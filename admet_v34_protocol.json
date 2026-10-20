@@ -1,0 +1,17 @@
+{
+  "version": 34,
+  "baseline": "v32",
+  "baseline_score": 50.399027,
+  "remote_root": "/home/czp123/admet_v23_20260928",
+  "training_host": "czp123@100.109.143.42",
+  "maximum_fit_rows": 3000,
+  "c_values": [1.0, 10.0],
+  "weights": [0.15, 0.35, 0.6, 0.85, 1.0],
+  "kernel": "0.55 multi-fingerprint Tanimoto +0.15 squared Tanimoto +0.15 descriptor-embedding Gaussian +0.15 retrieved-assay Gaussian",
+  "families": ["retrieved_assay_kernel", "retrieved_assay_kernel_structure_equal"],
+  "selection": "Historical full-v32 valid gain >0.0002, CV proxy mean >0, 0.55 valid +0.45 CV mean -0.04 CV SD >0.0005",
+  "test_labels_used": false,
+  "external_labels": false,
+  "local_gpu_training": false,
+  "limitations": "Historically reused labels and validation; CV baseline is a proxy, not full historical ensemble OOF. Conditional official other-task assay prediction. Official total score formula unknown."
+}

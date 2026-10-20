@@ -1,0 +1,33 @@
+{
+  "version": 29,
+  "baseline": "v24",
+  "baseline_score": 50.248759,
+  "baseline_sha256": "d8d6a5f776aeea0f71149702f267894974ade314b87ccfe48925f9719e02aa86",
+  "leader_score": 52.723518,
+  "remote_root": "/home/czp123/admet_v23_20260928",
+  "training_host": "czp123@100.109.143.42",
+  "candidates": [
+    "v27 graph",
+    "v27 graph+features",
+    "v28 fingerprint MAE neural",
+    "v28 descriptor embedding MAE boosting",
+    "v31 official auxiliary assay conditional models",
+    "equal mixture of best eligible distinct families"
+  ],
+  "weights": [
+    0.15,
+    0.35,
+    0.6,
+    1.0
+  ],
+  "selection_objective": "0.6 full v24 reused valid gain + 0.4 paired CV gain versus v24 neural branch - 0.1 CV gain SD",
+  "eligibility": "historical valid gain >0.0001, mean paired CV gain >-0.01, at least one CV fold >=0, objective >0.0001",
+  "per_task_no_regression": false,
+  "classification_fusion": "average percentile ranks",
+  "MAE_fusion": "raw values",
+  "test_labels_used": false,
+  "external_labels": false,
+  "official_score_prediction": null,
+  "automatic_submission": false,
+  "limitations": "Repeated development labels and official valid, neural-only CV comparator; v31 conditional-assay CV can see officially provided other-task labels of target-scaffold molecules, so it is not globally novel-scaffold evaluation; official score formula unknown"
+}

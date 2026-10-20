@@ -1,0 +1,20 @@
+{
+  "vocabulary_label_free": true,
+  "query_labels_used": false,
+  "fixed_length_folding": false,
+  "note": "RDKit fragment IDs still have intrinsic hashing; no claim of mathematically collision-free IDs.",
+  "dimensions": [
+    9577,
+    101363,
+    306589,
+    36988,
+    12974
+  ],
+  "nonzeros": [
+    1102890,
+    1788458,
+    2420981,
+    1416389,
+    1176921
+  ]
+}

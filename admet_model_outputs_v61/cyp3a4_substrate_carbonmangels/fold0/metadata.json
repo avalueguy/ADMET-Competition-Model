@@ -1,0 +1,26 @@
+{
+  "graph_partition": "cv/fold0",
+  "source_fit_rows": 35959,
+  "queried_target_labels_seen_by_graph": 0,
+  "graph_source_query_group_overlap": 0,
+  "graph_source_query_identity_overlap": 0,
+  "graph_source_signature": "1d8a6356fd719635f11e051eeff1332ee754ffdb1a2104fdb93a1487d2da22f0",
+  "signature": "c7e015da357a177d10e0c6915e3ffe1a169056229e69910ef442f17090e66a64",
+  "configs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "fit_rows": 312,
+  "query_rows": 156,
+  "preprocessor_fit_only": true,
+  "idf_fit_only": true,
+  "own_task_phenotype_removed": true,
+  "model_reload_passed": true,
+  "test_labels_used": false,
+  "local_gpu_training": false,
+  "seconds": 0.9109096527099609
+}

@@ -1,0 +1,17 @@
+{
+  "version": 35,
+  "baseline": "v32",
+  "baseline_score": 50.399027,
+  "remote_root": "/home/czp123/admet_v23_20260928",
+  "training_host": "czp123@100.109.143.42",
+  "families": ["retrieval_xgboost_dense", "retrieval_xgboost_fragments", "equal_rank_or_raw_mix"],
+  "seeds": [350610, 350611],
+  "depths": [3, 5],
+  "estimators": [500, 700],
+  "weights": [0.15, 0.35, 0.6, 0.85, 1.0],
+  "selection": "Full historical v32 valid gain >0.0002, CV proxy mean >0, objective 0.55 valid +0.45 CV mean -0.04 CV SD >0.0005",
+  "test_labels_used": false,
+  "external_labels": false,
+  "local_gpu_training": false,
+  "limitations": "Historical validation reused; CV is proxy fusion, not full ensemble OOF. Conditional official OTHER-task assays. Official score formula unknown."
+}

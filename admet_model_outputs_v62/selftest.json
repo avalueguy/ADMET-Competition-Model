@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "batch_invariance": true,
+  "molecule_order_invariance": true
+}

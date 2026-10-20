@@ -1,0 +1,33 @@
+{
+  "version": 9,
+  "execution": "remote_only",
+  "platform_anchor": {"version": 7, "score_user_reported": 49.343821, "sha256": "88e81b9d16e48cb941f18c5fd6c4a49e067c73659de808e896e51dea8de5acf0"},
+  "baseline_version": 8,
+  "baseline_platform_score": null,
+  "target_score": 51.584929,
+  "score_formula": null,
+  "tasks": ["bbb_martins", "bioavailability_ma", "caco2_wang", "clearance_hepatocyte_az", "clearance_microsome_az", "cyp2c9_substrate_carbonmangels", "cyp2d6_substrate_carbonmangels", "cyp3a4_substrate_carbonmangels", "dili", "half_life_obach", "herg", "pgp_broccatelli", "ppbr_az", "vdss_lombardo"],
+  "families": ["gated_short"],
+  "seeds": [9201, 9202, 9203],
+  "epochs": 35,
+  "snapshots": [30, 35],
+  "target_batch": 64,
+  "aux_batch": 32,
+  "steps_per_epoch": "ceil(target_training_rows / target_batch), fresh permutation without replacement for target",
+  "hidden": 64,
+  "learning_rate": 0.001,
+  "weight_decay": 0.03,
+  "label_smoothing": 0.02,
+  "alphas": [0.15, 0.3, 0.5],
+  "confirmation_seed": 692509,
+  "source_policy": "Reuse v8 scaffold and canonical exclusion; source train.csv only. No external labels. No test-label access.",
+  "selection": "One fixed candidate family, three blend weights selected only by historical train OOF; official valid and repeat gates unchanged. No retries after rejection.",
+  "notes": [
+    "This separately versioned training correction caps target exposures at 35 true passes instead of v8 fixed 115200 draws per seed.",
+    "Keep all v8 decisions frozen. v9 baseline reconstructs cumulative v8 OOF and repeat predictions; v8 platform score is unknown.",
+    "No relaxation of task-level, fold-level, auxiliary-metric, or low-similarity gates.",
+    "Three deterministic seeds and label smoothing reduce variance and confident fitting of sparse classification noise.",
+    "Same data has historical reuse and is not untouched evidence. Cannot infer platform score or guarantee blind non-regression.",
+    "No automatic upload. Final submission must retain the successful original CSV format."
+  ]
+}

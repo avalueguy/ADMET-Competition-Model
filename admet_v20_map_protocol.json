@@ -1,0 +1,23 @@
+{
+  "version": "v20_map",
+  "tasks": ["cyp2c9_substrate_carbonmangels", "cyp2c9_veith", "cyp2d6_substrate_carbonmangels", "cyp2d6_veith", "cyp3a4_veith"],
+  "baseline": "v19",
+  "objective": "rank:map",
+  "model": "XGBoost LambdaMART on molecular representations and fit-selected substructure counts",
+  "features": ["MolFormer", "ChemBERTa", "RDKit descriptors", "MACCS", "Morgan2 counts", "FCFP3 counts"],
+  "fingerprint_columns": 1536,
+  "seeds": [20627, 20628],
+  "depths": [4, 6],
+  "learning_rate": 0.035,
+  "max_iterations": 800,
+  "early_stopping_rounds": 90,
+  "inner_split": "scaffold holdout using existing inner_split; fit-only iteration selection",
+  "final_refit": "Train plus official valid labels; no blind test labels",
+  "modes": ["rank"],
+  "weight_grid": [0, 0.15, 0.3, 0.5, 0.75, 1.0],
+  "selection": "Same positive mean OOF and valid gain criteria as rare branch, at least 2/3 fold gains >= -0.002",
+  "training_remote_only": true,
+  "external_assay_labels": false,
+  "automatic_submission": false,
+  "limitation": "Repeatedly reused scaffold OOF and validation are selection diagnostics, not a guarantee or unbiased score estimate."
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "rows": 16379,
+  "columns": 6,
+  "tasks": 22,
+  "bytes": 1773398,
+  "sha256": "443ececd84320e5e2b93c1d148d98b12e72e6adbb414e1a18cc50e14e52d8ee1",
+  "baseline_sha256": "030689508e9437a8d42d0adb183cc1321530df75fdea467edf92bfdf4b0f925b",
+  "nonprediction_fields_exact": true,
+  "finite_predictions": true,
+  "independent_fusion_replay": true,
+  "changed_tasks": {
+    "clearance_hepatocyte_az": 243,
+    "cyp2d6_substrate_carbonmangels": 135,
+    "cyp2d6_veith": 2619,
+    "ppbr_az": 558
+  },
+  "changed_rows": 3555,
+  "encoding": "UTF-8 BOM",
+  "line_endings": "CRLF",
+  "official_score": null,
+  "local_gpu_training": false,
+  "automatically_uploaded": false
+}

@@ -1,0 +1,47 @@
+{
+  "version": 51,
+  "remote_root": "/home/czp123/admet_v23_20260928",
+  "host": "czp123@100.109.143.42",
+  "tasks": [
+    "solubility_aqsoldb",
+    "lipophilicity_astrazeneca",
+    "ld50_zhu",
+    "ppbr_az",
+    "caco2_wang"
+  ],
+  "families": [
+    "direct_catboost",
+    "physchem_residual_catboost",
+    "cyclic_residual_catboost"
+  ],
+  "seeds": [
+    511016,
+    511017
+  ],
+  "iterations": [
+    1000,
+    1400
+  ],
+  "depths": [
+    6,
+    7
+  ],
+  "learning_rate": 0.04,
+  "fingerprint_columns": 1024,
+  "weights": [
+    0.15,
+    0.35,
+    0.6,
+    0.85,
+    1.0
+  ],
+  "baseline_version": 46,
+  "baseline_sha256": "579383a3c91a3c57c9cd9a216b37830723f8de1bf65d66d0de80f0b77a1c1e95",
+  "selection": "Three old scaffold folds versus exactly replayed v46 MAE proxy; leave-one-fold selection must improve >0.001 and two folds must improve. Prioritize CV on tasks whose official valid is acyclic and test cyclic. Freeze before a new 25% scaffold holdout, refit candidate and v44 direct/pair control from scratch there. Final release requires positive heldout blend gain versus v44 source control.",
+  "fresh_seed": 511026,
+  "test_labels_used": false,
+  "external_labels": false,
+  "local_gpu_training": false,
+  "automatic_submission": false,
+  "limitations": "Current official score unknown, latest user correction. Official aggregate formula unavailable. Historical labels reused; fresh holdout is repartitioned known data, not new external data. Historical ensemble CV remains a proxy. Fresh control is refitted v44 source, not refitted full ensemble. No official score guarantee."
+}

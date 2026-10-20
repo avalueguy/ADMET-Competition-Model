@@ -1,0 +1,19 @@
+{
+  "version": 38,
+  "baseline": "v36",
+  "baseline_score": 50.470960,
+  "remote_root": "/home/czp123/admet_v23_20260928",
+  "training_host": "czp123@100.109.143.42",
+  "tasks": ["caco2_wang", "ppbr_az", "lipophilicity_astrazeneca", "solubility_aqsoldb", "ld50_zhu", "clearance_hepatocyte_az", "clearance_microsome_az", "half_life_obach", "vdss_lombardo"],
+  "families": ["multi_chemical_generalized_tanimoto_robust_kernel", "chemical_and_dense_rbf_robust_kernel"],
+  "alphas": [3.0, 15.0],
+  "irls_iterations": 5,
+  "mae_smoothing": 0.05,
+  "weights": [0.15, 0.35, 0.6, 0.85, 1.0],
+  "kernel": "0.30 Morgan2 +0.15 FCFP3 +0.25 Morgan3-4096 +0.10 path +0.10 atom-pair +0.10 torsion generalized count Tanimoto. Hybrid 0.85 chemistry +0.15 descriptor/ChemBERTa RBF.",
+  "selection": "Same full-v36 historical valid and CV proxy selection as v37; fixed family grid, no test labels.",
+  "test_labels_used": false,
+  "external_labels": false,
+  "local_gpu_training": false,
+  "limitations": "Repeated historical valid/folds. CV is a proxy, not complete historical ensemble OOF. Score formula unknown. Post-screen selected results are not independent estimates."
+}

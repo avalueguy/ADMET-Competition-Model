@@ -1,0 +1,89 @@
+{
+  "version": 16,
+  "created_at_utc": "2026-09-26T06:56:37.383660+00:00",
+  "baseline_release": "v15",
+  "baseline_score": 49.750495,
+  "baseline_sha256": "39d93d4a0ee56b7d09d9280d9e0958c7dcaf604b63a8a7501da0ebdef2b6d8dd",
+  "next_target": 50.019624,
+  "ultimate_target": 51.584929,
+  "training_location": "remote_only",
+  "automatic_submission": false,
+  "per_metric_nonregression_required": false,
+  "tasks": [
+    "ames",
+    "bbb_martins",
+    "bioavailability_ma",
+    "caco2_wang",
+    "clearance_hepatocyte_az",
+    "clearance_microsome_az",
+    "cyp2c9_substrate_carbonmangels",
+    "cyp2c9_veith",
+    "cyp2d6_substrate_carbonmangels",
+    "cyp2d6_veith",
+    "cyp3a4_substrate_carbonmangels",
+    "cyp3a4_veith",
+    "dili",
+    "half_life_obach",
+    "herg",
+    "hia_hou",
+    "ld50_zhu",
+    "lipophilicity_astrazeneca",
+    "pgp_broccatelli",
+    "ppbr_az",
+    "solubility_aqsoldb",
+    "vdss_lombardo"
+  ],
+  "new_families": [
+    "view_attention",
+    "mol_boost"
+  ],
+  "seeds": [
+    16201,
+    16202
+  ],
+  "neural_epochs": 70,
+  "neural_patience": 4,
+  "neural_check_every": 5,
+  "hidden": 96,
+  "batch_size": 128,
+  "learning_rate": 0.0007,
+  "weight_decay": 0.025,
+  "view_dropout": 0.15,
+  "boost_depths": [
+    5,
+    6
+  ],
+  "boost_max_iterations": 1000,
+  "boost_patience": 90,
+  "shortlist": "Two new trained families for every task plus one historical primitive not in v15 shortlist, best mean half-blend OOF main-metric gain across raw/rank. Historical selection fixed before new fits. No per-task or secondary vetoes.",
+  "grid": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "modes": [
+    "raw",
+    "rank"
+  ],
+  "objective": {
+    "oof_weight": 0.65,
+    "official_valid_weight": 0.35,
+    "fold_standard_deviation_penalty": 0.05,
+    "weight_penalty": 0.0005
+  },
+  "primary_scale": "Relative MAE improvement or absolute AUROC/AUPRC/Spearman improvement, tasks equally weighted surrogate only",
+  "architecture": "Four-view input-dependent gated residual neural network with random view dropout and two seeds; pretrained embedding CatBoost heads with two depths/seeds. Fit-only inner scaffold early stopping, refit on full fitting rows.",
+  "extra_split": {
+    "seed": 692509,
+    "fraction": 0.25,
+    "role": "Report-only reused scaffold diagnostic"
+  },
+  "limits": [
+    "OOF, official validation and repeat split reused across versions; not unbiased generalization estimates.",
+    "Official validation participates in ensemble selection. Meta leave-one-fold diagnostic is not independent nested CV.",
+    "No external assay labels, blind labels, or answer lookup. Only official train/valid labels for final refit.",
+    "No calibrated mapping to official score; no guaranteed improvement. v15 preserved."
+  ]
+}

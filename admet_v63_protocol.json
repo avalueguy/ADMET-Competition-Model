@@ -1,0 +1,71 @@
+{
+  "version": 63,
+  "remote_root": "/home/czp123/admet_v23_20260928",
+  "baseline_release": "v60",
+  "baseline_sha256": "030689508e9437a8d42d0adb183cc1321530df75fdea467edf92bfdf4b0f925b",
+  "tasks": [
+    "half_life_obach",
+    "clearance_hepatocyte_az",
+    "clearance_microsome_az",
+    "cyp2c9_substrate_carbonmangels",
+    "cyp2d6_substrate_carbonmangels",
+    "cyp3a4_substrate_carbonmangels",
+    "bioavailability_ma",
+    "caco2_wang",
+    "herg",
+    "bbb_martins",
+    "dili",
+    "hia_hou",
+    "pgp_broccatelli",
+    "vdss_lombardo",
+    "ppbr_az",
+    "lipophilicity_astrazeneca"
+  ],
+  "model": "TabICLv2 2.2.0 synthetic tabular pretraining; no ADMET labels downloaded",
+  "checkpoint_files": {
+    "classifier": [
+      "tabicl-classifier-v2-20260212.ckpt",
+      "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0"
+    ],
+    "regressor": [
+      "tabicl-regressor-v2-20260212.ckpt",
+      "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a"
+    ]
+  },
+  "families": [
+    "physchem_descriptors",
+    "physchem_plus_fit_pca_graph64_chemberta32_fingerprint64"
+  ],
+  "ensemble_size": 4,
+  "seed": 631017,
+  "weights": [
+    0.25,
+    0.5,
+    0.8,
+    1.0
+  ],
+  "selection": "3 global scaffold folds, weight and view selected on CV only, leave-one-fold-out gain positive >0.002, mean >0.003 and at least two folds positive. Official valid report-only. Source-excluded fresh graphs checked on 80% query scaffolds of folds 0 and 1. Selected descriptor-only experts additionally checked on a new scaffold split against fixed ExtraTrees.",
+  "fresh_seed": 631019,
+  "local_gpu_training": false,
+  "automatic_upload": false,
+  "test_labels_used": false,
+  "exact_official_score": null,
+  "tenth_place_threshold": 50.804792,
+  "limitations": "Development labels repeatedly reused. Full historical ensemble honest OOF unavailable. Synthetic pretraining checkpoints from public authorized source; this is in-context model conditioning, not gradient fine-tuning. Fresh controls are sources rather than full ensemble. No official-score forecast.",
+  "inference_revision": {
+    "reason": "Adaptive GPU-memory batching caused repeat and save/load drift up to 0.0113; fixed internal batches passed exact repeat/reload probe.",
+    "use_amp": true,
+    "use_fa3": false,
+    "ensemble_batch_size": 1,
+    "internal_batches": {
+      "COL_CONFIG": 8,
+      "ROW_CONFIG": 64,
+      "ICL_CONFIG": 1
+    },
+    "adaptive_batching": false,
+    "offload": "cpu",
+    "async_copy": false,
+    "prior_cache": "Archived before complete recomputation; no mixed signatures",
+    "selection_thresholds_changed": false
+  }
+}

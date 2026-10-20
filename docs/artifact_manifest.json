@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-20",
+  "timezone": "Asia/Hong_Kong",
+  "archives": [
+    {
+      "name": "runtime-inputs.tar.gz",
+      "bytes": 344250076,
+      "sha256": "028c7911e797a0820a55c4012140908dec78eae7995918b45e5a78aedbc229a4",
+      "members": 205,
+      "uncompressed_bytes": 407170740,
+      "seconds": 37
+    },
+    {
+      "name": "graph-sources.tar.gz",
+      "bytes": 388224163,
+      "sha256": "5d2a4938d93d6f109487adc5dd09bbf74133e6da6c666f35c409d98550b4c122",
+      "members": 69,
+      "uncompressed_bytes": 405812270,
+      "seconds": 24
+    },
+    {
+      "name": "latest-models-v61-v65.tar.gz",
+      "bytes": 719547346,
+      "sha256": "2b8de9600e6363229f9b832f3fb0738cf4206a579f51548fadf01af6d23a0b65",
+      "members": 1639,
+      "uncompressed_bytes": 1518831649,
+      "seconds": 78
+    },
+    {
+      "name": "exact-remote-source-and-metadata.tar.gz",
+      "bytes": 6763413,
+      "sha256": "d0fbb1a1acd96afa2edc11e0e795e57115533460738525a451f544010da8ebc4",
+      "members": 1567,
+      "uncompressed_bytes": 24978276,
+      "seconds": 5
+    },
+    {
+      "name": "fold-state.tar.gz",
+      "bytes": 27404,
+      "sha256": "1ce1f9596bc30450f7d09d91d0f13ec5495d537018c61b0dca76e87bc5be1422",
+      "members": 1,
+      "uncompressed_bytes": 654600
+    }
+  ],
+  "omitted": [
+    "Python .venv; install from environment file",
+    "Unselected old training weights v25-v59; lightweight metadata preserved",
+    "Adaptive inference failure archive; invalid old caches are not active models",
+    "SSH private keys, GitHub credentials, PID files"
+  ],
+  "status": "PACKAGED"
+}

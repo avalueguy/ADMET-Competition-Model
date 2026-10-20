@@ -1,0 +1,58 @@
+{
+  "version": 15,
+  "created_at_utc": "2026-09-26T03:53:46.523558+00:00",
+  "baseline_release": "v14",
+  "baseline_score": 49.419624,
+  "baseline_sha256": "97c3eb59a65585cd897e843d990940bd2a7ac67ef8ea825f7a70598101a1fd94",
+  "requested_gain": 0.6,
+  "next_target": 50.019624,
+  "ultimate_target": 51.584929,
+  "user_constraint_change": "Per-metric no-decrease constraint explicitly removed. Optimize aggregate expected primary utility; report regressions without veto.",
+  "training_location": "remote_only",
+  "automatic_submission": false,
+  "official_aggregation_formula": null,
+  "candidate_versions": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "max_candidates_per_task": 2,
+  "shortlist": "All available primitive v6-v13 OOF models; rank by mean primary utility of 50% raw blend to v14; choose first, then highest remaining with absolute OOF Spearman < .995 to first, otherwise next. No secondary or worst-fold veto.",
+  "grid": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "modes": [
+    "raw",
+    "rank"
+  ],
+  "objective": {
+    "oof_weight": 0.65,
+    "official_valid_weight": 0.35,
+    "fold_standard_deviation_penalty": 0.05,
+    "weight_penalty": 0.0005
+  },
+  "primary_scale": "MAE improvement divided by v14 MAE within each split; AUROC/AUPRC/Spearman absolute improvement. Equal task weights, a surrogate only.",
+  "rank_mode": "For ranking metrics only: within each prediction partition map each model to average percentile rank. Classification outputs percentile scores; Spearman maps combined percentile through v14 query prediction quantiles. No target labels in rank mapping.",
+  "selection": "Two OOF-shortlisted families refit on target train for valid. Choose convex weights and raw/rank mode by aggregate primary surrogate. No individual-fold, valid, secondary, distant, or small-coverage veto. Baseline remains in grid.",
+  "extra_split": {
+    "seed": 692509,
+    "fraction": 0.25,
+    "role": "Report-only repeated scaffold diagnostic, no selection or veto"
+  },
+  "model_recipes": "Reuse frozen historical base model recipes; new ensemble weights learned, then selected bases retrained on train+valid and saved for independent replay.",
+  "limits": [
+    "Historical OOF/valid/repeat reused; all reported scores are selection-biased.",
+    "Meta cross-fold check is diagnostic, not nested independent CV: cached base models can include other folds in training.",
+    "No external assay labels, blind test labels, or answer lookup. No automatic platform upload.",
+    "No reliable conversion from surrogate to platform points. No guarantee of +0.6 or hidden-score increase."
+  ]
+}

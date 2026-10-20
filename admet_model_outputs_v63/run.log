@@ -1,0 +1,111 @@
+{"stage": "v63_fit", "task": "half_life_obach", "partition": "fold0", "families": [0, 1], "seconds": 35}
+{"stage": "v63_fit", "task": "half_life_obach", "partition": "fold1", "families": [0, 1], "seconds": 31}
+{"stage": "v63_fit", "task": "half_life_obach", "partition": "fold2", "families": [0, 1], "seconds": 31}
+{"stage": "v63_fit", "task": "half_life_obach", "partition": "valid", "families": [0, 1], "seconds": 32}
+{"stage": "v63_selection", "task": "half_life_obach", "selection": null, "held_mean": -0.009835768103973483}
+{"stage": "v63_fit", "task": "clearance_hepatocyte_az", "partition": "fold0", "families": [0, 1], "seconds": 33}
+{"stage": "v63_fit", "task": "clearance_hepatocyte_az", "partition": "fold1", "families": [0, 1], "seconds": 33}
+{"stage": "v63_fit", "task": "clearance_hepatocyte_az", "partition": "fold2", "families": [0, 1], "seconds": 33}
+{"stage": "v63_fit", "task": "clearance_hepatocyte_az", "partition": "valid", "families": [0, 1], "seconds": 30}
+{"stage": "v63_selection", "task": "clearance_hepatocyte_az", "selection": {"variant": 0, "weight": 0.25, "cv_gains": [0.005583938388977749, 0.0015891612563347923, 0.005603031899757194], "cv_mean": 0.004258710515023245, "objective": 0.004069943267264503, "valid_gain": -0.01903821431094066}, "held_mean": 0.0031003089734883047}
+{"stage": "v63_fit", "task": "clearance_microsome_az", "partition": "fold0", "families": [0, 1], "seconds": 29}
+{"stage": "v63_fit", "task": "clearance_microsome_az", "partition": "fold1", "families": [0, 1], "seconds": 28}
+{"stage": "v63_fit", "task": "clearance_microsome_az", "partition": "fold2", "families": [0, 1], "seconds": 28}
+{"stage": "v63_fit", "task": "clearance_microsome_az", "partition": "valid", "families": [0, 1], "seconds": 30}
+{"stage": "v63_selection", "task": "clearance_microsome_az", "selection": null, "held_mean": 0.0}
+{"stage": "v63_fit", "task": "cyp2c9_substrate_carbonmangels", "partition": "fold0", "families": [0, 1], "seconds": 26}
+{"stage": "v63_fit", "task": "cyp2c9_substrate_carbonmangels", "partition": "fold1", "families": [0, 1], "seconds": 24}
+{"stage": "v63_fit", "task": "cyp2c9_substrate_carbonmangels", "partition": "fold2", "families": [0, 1], "seconds": 24}
+{"stage": "v63_fit", "task": "cyp2c9_substrate_carbonmangels", "partition": "valid", "families": [0, 1], "seconds": 25}
+{"stage": "v63_selection", "task": "cyp2c9_substrate_carbonmangels", "selection": null, "held_mean": 0.0}
+{"stage": "v63_fit", "task": "cyp2d6_substrate_carbonmangels", "partition": "fold0", "families": [0, 1], "seconds": 24}
+{"stage": "v63_fit", "task": "cyp2d6_substrate_carbonmangels", "partition": "fold1", "families": [0, 1], "seconds": 24}
+{"stage": "v63_fit", "task": "cyp2d6_substrate_carbonmangels", "partition": "fold2", "families": [0, 1], "seconds": 24}
+{"stage": "v63_fit", "task": "cyp2d6_substrate_carbonmangels", "partition": "valid", "families": [0, 1], "seconds": 25}
+{"stage": "v63_selection", "task": "cyp2d6_substrate_carbonmangels", "selection": null, "held_mean": -0.01089393761287727}
+{"stage": "v63_fit", "task": "cyp3a4_substrate_carbonmangels", "partition": "fold0", "families": [0, 1], "seconds": 24}
+{"stage": "v63_fit", "task": "cyp3a4_substrate_carbonmangels", "partition": "fold1", "families": [0, 1], "seconds": 25}
+{"stage": "v63_fit", "task": "cyp3a4_substrate_carbonmangels", "partition": "fold2", "families": [0, 1], "seconds": 26}
+{"stage": "v63_fit", "task": "cyp3a4_substrate_carbonmangels", "partition": "valid", "families": [0, 1], "seconds": 27}
+{"stage": "v63_selection", "task": "cyp3a4_substrate_carbonmangels", "selection": null, "held_mean": 0.0}
+{"stage": "v63_fit", "task": "bioavailability_ma", "partition": "fold0", "families": [0, 1], "seconds": 25}
+{"stage": "v63_fit", "task": "bioavailability_ma", "partition": "fold1", "families": [0, 1], "seconds": 26}
+{"stage": "v63_fit", "task": "bioavailability_ma", "partition": "fold2", "families": [0, 1], "seconds": 26}
+{"stage": "v63_fit", "task": "bioavailability_ma", "partition": "valid", "families": [0, 1], "seconds": 27}
+{"stage": "v63_selection", "task": "bioavailability_ma", "selection": null, "held_mean": -0.02620926937866826}
+{"stage": "v63_fit", "task": "caco2_wang", "partition": "fold0", "families": [0, 1], "seconds": 27}
+{"stage": "v63_fit", "task": "caco2_wang", "partition": "fold1", "families": [0, 1], "seconds": 28}
+{"stage": "v63_fit", "task": "caco2_wang", "partition": "fold2", "families": [0, 1], "seconds": 27}
+{"stage": "v63_fit", "task": "caco2_wang", "partition": "valid", "families": [0, 1], "seconds": 29}
+{"stage": "v63_selection", "task": "caco2_wang", "selection": {"variant": 0, "weight": 0.5, "cv_gains": [0.02377977890198919, -0.005912393480474979, 0.031022937864440152], "cv_mean": 0.016296774428651455, "objective": 0.01469875233378822, "valid_gain": 0.015403000395443981}, "held_mean": 0.009951930582253991}
+{"stage": "v63_fit", "task": "herg", "partition": "fold0", "families": [0, 1], "seconds": 26}
+{"stage": "v63_fit", "task": "herg", "partition": "fold1", "families": [0, 1], "seconds": 27}
+{"stage": "v63_fit", "task": "herg", "partition": "fold2", "families": [0, 1], "seconds": 27}
+{"stage": "v63_fit", "task": "herg", "partition": "valid", "families": [0, 1], "seconds": 27}
+{"stage": "v63_selection", "task": "herg", "selection": {"variant": 0, "weight": 0.5, "cv_gains": [0.006310096153846145, 0.0043269230769230616, 0.011625514403292292], "cv_mean": 0.007420844544687166, "objective": 0.007112703015211342, "valid_gain": 0.010912698412698374}, "held_mean": 0.007420844544687166}
+{"stage": "v63_fit", "task": "bbb_martins", "partition": "fold0", "families": [0, 1], "seconds": 34}
+{"stage": "v63_fit", "task": "bbb_martins", "partition": "fold1", "families": [0, 1], "seconds": 34}
+{"stage": "v63_fit", "task": "bbb_martins", "partition": "fold2", "families": [0, 1], "seconds": 34}
+{"stage": "v63_fit", "task": "bbb_martins", "partition": "valid", "families": [0, 1], "seconds": 35}
+{"stage": "v63_selection", "task": "bbb_martins", "selection": null, "held_mean": 0.0003722730995458316}
+{"stage": "v63_fit", "task": "dili", "partition": "fold0", "families": [0, 1], "seconds": 27}
+{"stage": "v63_fit", "task": "dili", "partition": "fold1", "families": [0, 1], "seconds": 26}
+{"stage": "v63_fit", "task": "dili", "partition": "fold2", "families": [0, 1], "seconds": 23}
+{"stage": "v63_fit", "task": "dili", "partition": "valid", "families": [0, 1], "seconds": 24}
+{"stage": "v63_selection", "task": "dili", "selection": null, "held_mean": 0.0}
+{"stage": "v63_fit", "task": "hia_hou", "partition": "fold0", "families": [0, 1], "seconds": 24}
+{"stage": "v63_fit", "task": "hia_hou", "partition": "fold1", "families": [0, 1], "seconds": 25}
+{"stage": "v63_fit", "task": "hia_hou", "partition": "fold2", "families": [0, 1], "seconds": 29}
+{"stage": "v63_fit", "task": "hia_hou", "partition": "valid", "families": [0, 1], "seconds": 23}
+{"stage": "v63_selection", "task": "hia_hou", "selection": {"variant": 0, "weight": 0.8, "cv_gains": [0.02638270820088995, 0.02079999999999993, 0.00838122605363989], "cv_mean": 0.01852131141817659, "objective": 0.01776894778218603, "valid_gain": 0.002083333333333326}, "held_mean": 0.014787978084843298}
+{"stage": "v63_fit", "task": "pgp_broccatelli", "partition": "fold0", "families": [0, 1], "seconds": 23}
+{"stage": "v63_fit", "task": "pgp_broccatelli", "partition": "fold1", "families": [0, 1], "seconds": 23}
+{"stage": "v63_fit", "task": "pgp_broccatelli", "partition": "fold2", "families": [0, 1], "seconds": 23}
+{"stage": "v63_fit", "task": "pgp_broccatelli", "partition": "valid", "families": [0, 1], "seconds": 23}
+{"stage": "v63_selection", "task": "pgp_broccatelli", "selection": null, "held_mean": -0.00024390128227513852}
+{"stage": "v63_fit", "task": "vdss_lombardo", "partition": "fold0", "families": [0, 1], "seconds": 22}
+{"stage": "v63_fit", "task": "vdss_lombardo", "partition": "fold1", "families": [0, 1], "seconds": 22}
+{"stage": "v63_fit", "task": "vdss_lombardo", "partition": "fold2", "families": [0, 1], "seconds": 21}
+{"stage": "v63_fit", "task": "vdss_lombardo", "partition": "valid", "families": [0, 1], "seconds": 22}
+{"stage": "v63_selection", "task": "vdss_lombardo", "selection": null, "held_mean": -0.0031573447964002486}
+{"stage": "v63_fit", "task": "ppbr_az", "partition": "fold0", "families": [0, 1], "seconds": 25}
+{"stage": "v63_fit", "task": "ppbr_az", "partition": "fold1", "families": [0, 1], "seconds": 25}
+{"stage": "v63_fit", "task": "ppbr_az", "partition": "fold2", "families": [0, 1], "seconds": 25}
+{"stage": "v63_fit", "task": "ppbr_az", "partition": "valid", "families": [0, 1], "seconds": 27}
+{"stage": "v63_selection", "task": "ppbr_az", "selection": {"variant": 0, "weight": 0.5, "cv_gains": [0.020926456224128732, 0.008171667929553995, 0.01858446270234098], "cv_mean": 0.01589419561867457, "objective": 0.015339823247754389, "valid_gain": -0.018141397081421137}, "held_mean": 0.01589419561867457}
+{"stage": "v63_fit", "task": "lipophilicity_astrazeneca", "partition": "fold0", "families": [0, 1], "seconds": 31}
+{"stage": "v63_fit", "task": "lipophilicity_astrazeneca", "partition": "fold1", "families": [0, 1], "seconds": 30}
+{"stage": "v63_fit", "task": "lipophilicity_astrazeneca", "partition": "fold2", "families": [0, 1], "seconds": 30}
+{"stage": "v63_fit", "task": "lipophilicity_astrazeneca", "partition": "valid", "families": [0, 1], "seconds": 33}
+{"stage": "v63_selection", "task": "lipophilicity_astrazeneca", "selection": {"variant": 0, "weight": 0.25, "cv_gains": [-0.0020250316355772562, 0.011220057977889856, 0.02276757012336159], "cv_mean": 0.010654198821891397, "objective": 0.009641254522887565, "valid_gain": -0.0005183848090925849}, "held_mean": 0.010654198821891397}
+{"stage": "v63_fit", "task": "clearance_hepatocyte_az", "partition": "fresh0", "families": [0], "seconds": 6}
+{"stage": "v63_fit", "task": "clearance_hepatocyte_az", "partition": "fresh1", "families": [0], "seconds": 6}
+{"stage": "v63_fit", "task": "clearance_hepatocyte_az", "partition": "fresh_independent", "families": [0], "seconds": 6}
+{"stage": "v63_fresh", "task": "clearance_hepatocyte_az", "pass_gate": true, "results": [{"gain": 0.028588840496529988, "control": 0.5039539629651224, "blend": 0.5325428034616524, "rows": 227, "control_is_full_ensemble": false}, {"gain": 0.0378532739105944, "control": 0.4697455460036604, "blend": 0.5075988199142548, "rows": 228, "control_is_full_ensemble": false}, {"gain": 0.012313917215921566, "rows": 232, "control": "fresh ExtraTrees", "control_is_full_ensemble": false}]}
+{"stage": "v63_fit", "task": "caco2_wang", "partition": "fresh0", "families": [0], "seconds": 6}
+{"stage": "v63_fit", "task": "caco2_wang", "partition": "fresh1", "families": [0], "seconds": 5}
+{"stage": "v63_fit", "task": "caco2_wang", "partition": "fresh_independent", "families": [0], "seconds": 6}
+{"stage": "v63_fresh", "task": "caco2_wang", "pass_gate": true, "results": [{"gain": 0.10117926885034048, "control": 0.44201897621433034, "blend": 0.39729581938298836, "rows": 170, "control_is_full_ensemble": false}, {"gain": 0.1383009762656815, "control": 0.40512666279971343, "blend": 0.3490972498232555, "rows": 169, "control_is_full_ensemble": false}, {"gain": 0.011030357746119787, "rows": 177, "control": "fresh ExtraTrees", "control_is_full_ensemble": false}]}
+{"stage": "v63_fit", "task": "herg", "partition": "fresh0", "families": [0], "seconds": 5}
+{"stage": "v63_fit", "task": "herg", "partition": "fresh1", "families": [0], "seconds": 5}
+{"stage": "v63_fit", "task": "herg", "partition": "fresh_independent", "families": [0], "seconds": 5}
+{"stage": "v63_fresh", "task": "herg", "pass_gate": true, "results": [{"gain": 0.030352870813397104, "control": 0.8101076555023924, "blend": 0.8404605263157895, "rows": 126, "control_is_full_ensemble": false}, {"gain": 0.020933977455716457, "control": 0.8282340311325819, "blend": 0.8491680085882983, "rows": 127, "control_is_full_ensemble": false}, {"gain": 0.0002622377622377714, "rows": 159, "control": "fresh ExtraTrees", "control_is_full_ensemble": false}]}
+{"stage": "v63_fit", "task": "hia_hou", "partition": "fresh0", "families": [0], "seconds": 5}
+{"stage": "v63_fit", "task": "hia_hou", "partition": "fresh1", "families": [0], "seconds": 5}
+{"stage": "v63_fit", "task": "hia_hou", "partition": "fresh_independent", "families": [0], "seconds": 5}
+{"stage": "v63_fresh", "task": "hia_hou", "pass_gate": true, "results": [{"gain": 0.02639296187683282, "control": 0.9608993157380255, "blend": 0.9872922776148583, "rows": 104, "control_is_full_ensemble": false}, {"gain": 0.03287981859410449, "control": 0.95578231292517, "blend": 0.9886621315192745, "rows": 107, "control_is_full_ensemble": false}, {"gain": 0.008225108225108246, "rows": 116, "control": "fresh ExtraTrees", "control_is_full_ensemble": false}]}
+{"stage": "v63_fit", "task": "ppbr_az", "partition": "fresh0", "families": [0], "seconds": 8}
+{"stage": "v63_fit", "task": "ppbr_az", "partition": "fresh1", "families": [0], "seconds": 8}
+{"stage": "v63_fit", "task": "ppbr_az", "partition": "fresh_independent", "families": [0], "seconds": 8}
+{"stage": "v63_fresh", "task": "ppbr_az", "pass_gate": true, "results": [{"gain": 0.10736760183605881, "control": 9.221777744437707, "blend": 8.231657583352291, "rows": 528, "control_is_full_ensemble": false}, {"gain": 0.09159841914852915, "control": 7.685733961254196, "blend": 6.981732880407149, "rows": 551, "control_is_full_ensemble": false}, {"gain": 0.09515191232813014, "rows": 595, "control": "fresh ExtraTrees", "control_is_full_ensemble": false}]}
+{"stage": "v63_fit", "task": "lipophilicity_astrazeneca", "partition": "fresh0", "families": [0], "seconds": 10}
+{"stage": "v63_fit", "task": "lipophilicity_astrazeneca", "partition": "fresh1", "families": [0], "seconds": 10}
+{"stage": "v63_fit", "task": "lipophilicity_astrazeneca", "partition": "fresh_independent", "families": [0], "seconds": 10}
+{"stage": "v63_fresh", "task": "lipophilicity_astrazeneca", "pass_gate": true, "results": [{"gain": 0.09064330737051178, "control": 0.6428724742523693, "blend": 0.5846003869686703, "rows": 811, "control_is_full_ensemble": false}, {"gain": 0.09999139413621498, "control": 0.5695602811977176, "blend": 0.5126091546361432, "rows": 815, "control_is_full_ensemble": false}, {"gain": 0.05093489211511763, "rows": 940, "control": "fresh ExtraTrees", "control_is_full_ensemble": false}]}
+{"stage": "v63_fit", "task": "clearance_hepatocyte_az", "partition": "final", "families": [0], "seconds": 6}
+{"stage": "v63_fit", "task": "caco2_wang", "partition": "final", "families": [0], "seconds": 6}
+{"stage": "v63_fit", "task": "herg", "partition": "final", "families": [0], "seconds": 5}
+{"stage": "v63_fit", "task": "hia_hou", "partition": "final", "families": [0], "seconds": 5}
+{"stage": "v63_fit", "task": "ppbr_az", "partition": "final", "families": [0], "seconds": 9}
+{"stage": "v63_fit", "task": "lipophilicity_astrazeneca", "partition": "final", "families": [0], "seconds": 11}
+{"stage": "v63_export", "sha256": "d3ba7a517f75390c70be547d0b39ae195d3e460750f2360c92a5273990155550", "changed_tasks": {"clearance_hepatocyte_az": 241, "caco2_wang": 182, "herg": 131, "hia_hou": 116, "ppbr_az": 559, "lipophilicity_astrazeneca": 840}}

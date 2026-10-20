@@ -1,0 +1,22 @@
+{
+  "status": "AWAITING_PLATFORM_EVALUATION",
+  "signature": "24793dab555230843f70e1974c741c84e68b84a9ab46cd1d631209ca6d806264",
+  "sha256": "030689508e9437a8d42d0adb183cc1321530df75fdea467edf92bfdf4b0f925b",
+  "baseline_sha256": "e5aef127f9d093860e2e77aad67e559bca320a34e82e8272ea066aa86354d31b",
+  "rows": 16379,
+  "columns": 6,
+  "tasks": 22,
+  "changed_tasks": {
+    "herg": 132,
+    "dili": 96,
+    "vdss_lombardo": 226,
+    "lipophilicity_astrazeneca": 840
+  },
+  "bytes": 1772921,
+  "encoding": "UTF-8 BOM",
+  "line_endings": "CRLF",
+  "official_score": null,
+  "known_score_upper_bound": 50.755035,
+  "local_gpu_training": false,
+  "automatically_uploaded": false
+}

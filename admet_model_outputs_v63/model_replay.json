@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "tasks": [
+    {
+      "task": "clearance_hepatocyte_az",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true
+    },
+    {
+      "task": "caco2_wang",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true
+    },
+    {
+      "task": "herg",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true
+    },
+    {
+      "task": "hia_hou",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true
+    },
+    {
+      "task": "ppbr_az",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true
+    }
+  ],
+  "test_labels_used": false,
+  "local_gpu_training": false
+}

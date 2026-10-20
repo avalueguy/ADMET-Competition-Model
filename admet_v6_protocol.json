@@ -1,0 +1,27 @@
+{
+  "version": 6,
+  "execution": "remote_only",
+  "baseline_score": 48.98128,
+  "leader_score_user_reported": 50.584929,
+  "target_score": 51.584929,
+  "score_formula": null,
+  "folds": "same three scaffold folds as v5, explicitly reused for selection",
+  "seeds": [6201, 6202],
+  "graph_epochs": 65,
+  "dense_epochs": 100,
+  "alphas": [0.15, 0.3, 0.5, 0.75],
+  "primary_fold_tolerance": {"MAE_relative": 0.01, "ranking_absolute": 0.005},
+  "secondary_tolerance": {"MAE_relative": 0.03, "ranking_absolute": 0.015},
+  "selection": "train OOF primary metric with fold downside penalty; lock family and alpha before checking reused official valid; require valid primary non-regression",
+  "confirmation_seed": 692509,
+  "confirmation_fraction": 0.25,
+  "notes": [
+    "No blind-label access, label retrieval, or platform score fitting.",
+    "Old validation sets are reused and cannot certify hidden-set non-regression.",
+    "Repeat split confirmation is a robustness check, not an independent untouched test.",
+    "All candidate training and heavy features remain on the remote server.",
+    "New feature schema excludes AvgIpc, Ipc and BalabanJ.",
+    "No external ADMET labels. Frozen MLM features come from the previously audited cache.",
+    "The historical v5 release remains immutable. No automatic platform submission."
+  ]
+}

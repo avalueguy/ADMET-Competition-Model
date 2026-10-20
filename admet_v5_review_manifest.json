@@ -1,0 +1,8 @@
+{
+  "archive": "admet_v5_review.tar.gz",
+  "bytes": 5039270,
+  "sha256": "001ce375e2510788d37cb363709a252eba8f0e982f6f26202f939419038fd99c",
+  "files": 370,
+  "model_location": "remote /root/autodl-tmp/admet_20260925",
+  "checkpoint_policy": "Heavy checkpoints/caches excluded from local review package"
+}

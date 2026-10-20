@@ -1,0 +1,20 @@
+{
+  "graph_partition": "valid",
+  "source_fit_rows": 33449,
+  "queried_target_labels_seen_by_graph": 0,
+  "graph_source_query_group_overlap": 0,
+  "graph_source_query_identity_overlap": 0,
+  "graph_source_signature": "1d8a6356fd719635f11e051eeff1332ee754ffdb1a2104fdb93a1487d2da22f0",
+  "signature": "b68e15a134ca5656197da68f7778a71eb1fd022e62ecd5f5e906a50c80d4c19c",
+  "fit_rows": 637,
+  "query_rows": 91,
+  "families": [
+    0,
+    1
+  ],
+  "model_reload_passed": true,
+  "fit_only_pca": true,
+  "test_labels_used": false,
+  "local_gpu_training": false,
+  "seconds": 28.59934163093567
+}

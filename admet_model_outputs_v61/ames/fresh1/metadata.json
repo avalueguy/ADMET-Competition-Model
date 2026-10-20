@@ -1,0 +1,15 @@
+{
+  "signature": "c7e015da357a177d10e0c6915e3ffe1a169056229e69910ef442f17090e66a64",
+  "configs": [
+    0
+  ],
+  "fit_rows": 4464,
+  "query_rows": 1357,
+  "preprocessor_fit_only": true,
+  "idf_fit_only": true,
+  "own_task_phenotype_removed": true,
+  "model_reload_passed": true,
+  "test_labels_used": false,
+  "local_gpu_training": false,
+  "seconds": 6.8302202224731445
+}

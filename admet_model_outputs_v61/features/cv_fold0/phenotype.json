@@ -1,0 +1,8 @@
+{
+  "graph_signature": "1d8a6356fd719635f11e051eeff1332ee754ffdb1a2104fdb93a1487d2da22f0",
+  "sources": [
+    "d7fcd6d53dd9c205bb0ccfe3c247abb9577152eb95305bc2ffffb0497f33146f",
+    "1955ff9e8aabe90ccb95bb7c8e08b26ae7e929d218315b06c3f7412f1c227c33"
+  ],
+  "readout": "mean_graph_hybrid_logits_per_seed"
+}

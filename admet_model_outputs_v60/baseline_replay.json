@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "task": "ames",
+      "max_test_replay_error": 0.0,
+      "already_expanded_cv": true,
+      "actual_test_from_real_v57": true,
+      "replay_exact": true
+    },
+    {
+      "task": "bbb_martins",
+      "max_test_replay_error": 0.0,
+      "already_expanded_cv": true,
+      "actual_test_from_real_v57": true,
+      "replay_exact": true
+    },
+    {
+      "task": "bioavailability_ma",
+      "max_test_replay_error": 0.0,
+      "already_expanded_cv": true,
+      "actual_test_from_real_v57": true,
+      "replay_exact": true
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "max_test_replay_error": 0.0,
+      "already_expanded_cv": true,
+      "actual_test_from_real_v57": true,
+      "replay_exact": true
+    },
+    {
+      "task": "clearance_microsome_az",
+      "max_test_replay_error": 0.0,
+      "already_expanded_cv": true,
+      "actual_test_from_real_v57": true,
+      "replay_exact": true
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "max_test_replay_error": 0.0,
+      "already_expanded_cv": true,
+      "actual_test_from_real_v57": true,
+      "replay_exact": true
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "max_test_replay_error": 0.0026666666666666783,
+      "already_expanded_cv": true,
+      "actual_test_from_real_v57": true,
+      "replay_exact": false
+    },
+    {
+      "task": "cyp2d6_veith",
+      "max_test_replay_error": 0.0,
+      "already_expanded_cv": true,
+      "actual_test_from_real_v57": true,
+      "replay_exact": true
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "max_test_replay_error": 0.0,
+      "already_expanded_cv": true,
+      "actual_test_from_real_v57": true,
+      "replay_exact": true
+    },
+    {
+      "task": "dili",
+      "max_test_replay_error": 0.0,
+      "already_expanded_cv": true,
+      "actual_test_from_real_v57": true,
+      "replay_exact": true
+    },
+    {
+      "task": "half_life_obach",
+      "max_test_replay_error": 0.0,
+      "already_expanded_cv": true,
+      "actual_test_from_real_v57": true,
+      "replay_exact": true
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "max_test_replay_error": 0.0,
+      "already_expanded_cv": true,
+      "actual_test_from_real_v57": true,
+      "replay_exact": true
+    },
+    {
+      "task": "vdss_lombardo",
+      "max_test_replay_error": 0.0,
+      "already_expanded_cv": true,
+      "actual_test_from_real_v57": true,
+      "replay_exact": true
+    }
+  ],
+  "current_score_unknown": true,
+  "score_upper_bound": 50.755035,
+  "historical_proxy": true
+}

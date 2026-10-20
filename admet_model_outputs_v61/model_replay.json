@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "tasks": [
+    {
+      "task": "solubility_aqsoldb",
+      "model_reload_passed": true,
+      "batch_invariance": true,
+      "fit_query_indices_exact": true
+    },
+    {
+      "task": "caco2_wang",
+      "model_reload_passed": true,
+      "batch_invariance": true,
+      "fit_query_indices_exact": true
+    },
+    {
+      "task": "ld50_zhu",
+      "model_reload_passed": true,
+      "batch_invariance": true,
+      "fit_query_indices_exact": true
+    },
+    {
+      "task": "ames",
+      "model_reload_passed": true,
+      "batch_invariance": true,
+      "fit_query_indices_exact": true
+    },
+    {
+      "task": "cyp2d6_veith",
+      "model_reload_passed": true,
+      "batch_invariance": true,
+      "fit_query_indices_exact": true
+    },
+    {
+      "task": "hia_hou",
+      "model_reload_passed": true,
+      "batch_invariance": true,
+      "fit_query_indices_exact": true
+    }
+  ],
+  "test_labels_used": false,
+  "local_gpu_training": false
+}

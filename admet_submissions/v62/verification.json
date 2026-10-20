@@ -1,0 +1,22 @@
+{
+  "status": "AWAITING_PLATFORM_EVALUATION",
+  "signature": "4c40a64652db694c31d1d6317decd466a9790beef8ca9fdf66f1cd0f4c065030",
+  "sha256": "67d368d875257e2a37fe86431791f2e77987dfccb1a73d9d3aadea576aecc14e",
+  "baseline_sha256": "030689508e9437a8d42d0adb183cc1321530df75fdea467edf92bfdf4b0f925b",
+  "rows": 16379,
+  "columns": 6,
+  "tasks": 22,
+  "changed_tasks": {
+    "caco2_wang": 182,
+    "cyp2d6_veith": 2625,
+    "hia_hou": 117,
+    "solubility_aqsoldb": 1997
+  },
+  "bytes": 1772876,
+  "encoding": "UTF-8 BOM",
+  "line_endings": "CRLF",
+  "official_score": null,
+  "known_score_upper_bound": 50.804792,
+  "local_gpu_training": false,
+  "automatically_uploaded": false
+}

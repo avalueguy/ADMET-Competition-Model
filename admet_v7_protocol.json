@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "execution": "remote_only",
+  "baseline_score_user_reported": 49.247501,
+  "baseline_submission_sha256": "8a677b09bbc8f263ef9ae27055cd2cc88de56a0ed7c7991de67a5256cdb628a4",
+  "target_score": 51.584929,
+  "score_formula": null,
+  "families_all": ["pharm_kernel", "pharm_cat"],
+  "finetune_tasks": ["bbb_martins", "bioavailability_ma", "caco2_wang", "clearance_hepatocyte_az", "clearance_microsome_az", "cyp2c9_substrate_carbonmangels", "cyp2d6_substrate_carbonmangels", "cyp3a4_substrate_carbonmangels", "dili", "half_life_obach", "herg", "pgp_broccatelli", "vdss_lombardo"],
+  "seeds": [7201, 7202],
+  "cat_iterations": 700,
+  "cat_fingerprint_columns": 768,
+  "ft_epochs": 20,
+  "ft_max_tokens": 256,
+  "alphas": [0.15, 0.3, 0.5],
+  "primary_fold_tolerance": {"MAE_relative": 0.01, "ranking_absolute": 0.005},
+  "secondary_tolerance": {"MAE_relative": 0.03, "ranking_absolute": 0.015},
+  "selection": "Complete fixed candidate pool, then select once by three train scaffold folds against reconstructed v6; lock before official valid; no second-choice retry after rejection",
+  "objective": "mean primary gain minus half fold standard deviation",
+  "confirmation_seed": 692509,
+  "confirmation_fraction": 0.25,
+  "distant_threshold": 0.3,
+  "distant_primary_tolerance": {"MAE_relative": 0.03, "ranking_absolute": 0.01},
+  "notes": [
+    "All three OOF folds, official valid and repeat split have historical reuse; selection-biased robustness evidence, not independent tests.",
+    "No test labels, external assay labels or leaderboard label lookup.",
+    "Pharmacophore/topological view adds atom-pair, topological torsion and MACCS representations plus fit-only descriptor RBF.",
+    "ChemBERTa weights are actually fine-tuned with two train-only SMILES enumerations; fixed 20 epochs, no validation early stopping.",
+    "Candidate selection never uses platform score estimates; unknown aggregation prevents reliable score prediction.",
+    "No automatic submission. Historical v6 files remain frozen."
+  ]
+}

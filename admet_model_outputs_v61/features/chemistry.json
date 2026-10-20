@@ -1,0 +1,27 @@
+{
+  "smiles_sha": "14e1fa04138f1931cf569e9fdd736da656eeeadb6d977234fa06b3c8a5e9a3a0",
+  "rdkit": "2022.09.5",
+  "views": [
+    [
+      "ecfp1",
+      0.1
+    ],
+    [
+      "ecfp2",
+      0.3
+    ],
+    [
+      "ecfp3",
+      0.25
+    ],
+    [
+      "fcfp2",
+      0.2
+    ],
+    [
+      "torsion",
+      0.15
+    ]
+  ],
+  "recipe": "unfolded_binary_v1"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "rows": 16379,
+  "columns": 6,
+  "tasks": 22,
+  "bytes": 1772858,
+  "sha256": "216d11e43d94ed015cc1aae661820844e3aa109d967cf0f14aa9c3c990ba0c18",
+  "baseline_sha256": "030689508e9437a8d42d0adb183cc1321530df75fdea467edf92bfdf4b0f925b",
+  "nonprediction_fields_exact": true,
+  "finite_predictions": true,
+  "independent_fusion_replay": true,
+  "changed_tasks": {
+    "ames": 1457,
+    "caco2_wang": 182,
+    "cyp2d6_veith": 2623,
+    "hia_hou": 114,
+    "ld50_zhu": 1478,
+    "solubility_aqsoldb": 1997
+  },
+  "changed_rows": 7851,
+  "encoding": "UTF-8 BOM",
+  "line_endings": "CRLF",
+  "official_score": null,
+  "local_gpu_training": false,
+  "automatically_uploaded": false
+}

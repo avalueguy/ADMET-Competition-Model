@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "rows": 16379,
+  "columns": 6,
+  "tasks": 22,
+  "bytes": 1772921,
+  "sha256": "030689508e9437a8d42d0adb183cc1321530df75fdea467edf92bfdf4b0f925b",
+  "nonprediction_fields_exact": true,
+  "finite_predictions": true,
+  "independent_fusion_replay": true,
+  "changed_tasks": {
+    "dili": 96,
+    "herg": 132,
+    "lipophilicity_astrazeneca": 840,
+    "vdss_lombardo": 226
+  },
+  "changed_rows": 1294,
+  "encoding": "UTF-8 BOM",
+  "line_endings": "CRLF",
+  "official_score": null,
+  "local_gpu_training": false,
+  "automatically_uploaded": false
+}

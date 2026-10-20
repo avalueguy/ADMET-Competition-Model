@@ -1,0 +1,93 @@
+{
+  "version": 13,
+  "execution": "remote_only",
+  "baseline_release": "v11",
+  "baseline_platform_score_user_reported": 49.381036,
+  "baseline_sha256": "082183f0c462081ea8735a41ec2e47326ef4cdcaf9d1188ae86a006f8057122d",
+  "target_score": 51.584929,
+  "score_formula": null,
+  "tasks": [
+    "ames",
+    "bbb_martins",
+    "bioavailability_ma",
+    "caco2_wang",
+    "clearance_hepatocyte_az",
+    "clearance_microsome_az",
+    "cyp2c9_substrate_carbonmangels",
+    "cyp2c9_veith",
+    "cyp2d6_substrate_carbonmangels",
+    "cyp2d6_veith",
+    "cyp3a4_substrate_carbonmangels",
+    "cyp3a4_veith",
+    "dili",
+    "half_life_obach",
+    "herg",
+    "hia_hou",
+    "ld50_zhu",
+    "lipophilicity_astrazeneca",
+    "pgp_broccatelli",
+    "ppbr_az",
+    "solubility_aqsoldb",
+    "vdss_lombardo"
+  ],
+  "families": [
+    "mol_kernel",
+    "mol_fusion",
+    "mol_mlp"
+  ],
+  "kernel_cs": [
+    1.0,
+    10.0
+  ],
+  "alphas": [
+    0.15,
+    0.3,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "confirmation_seed": 692509,
+  "selection": "Three frozen families; choose one family and alpha from historical OOF once, then valid and repeat vetoes. No pooled candidate or runner-up retry.",
+  "fold_primary_tolerance": {
+    "MAE_relative": 0.01,
+    "ranking_absolute": 0.005
+  },
+  "secondary_tolerance": {
+    "MAE_relative": 0.03,
+    "ranking_absolute": 0.015
+  },
+  "distant_primary_tolerance": {
+    "MAE_relative": 0.03,
+    "ranking_absolute": 0.01
+  },
+  "distant_secondary_gate": true,
+  "notes": [
+    "Uses pinned self-supervised MoLFormer frozen embeddings; no external assay labels. Pretraining may include test structures without labels.",
+    "Compare embedding RBF kernel, embedding+substructure kernel, and residual neural head. Neural training epochs selected within current fitting rows on inner scaffold split.",
+    "Use v11 scored baseline directly, independently of v12; final union of disjoint accepted tasks is allowed. For overlap choose v13 only if it passes nonregression gates against v12, otherwise retain v12; do not search new weights.",
+    "Historical OOF/valid/repeat are reused, selection-biased diagnostics. Cannot guarantee 0.6 platform gain.",
+    "Unknown or insufficient distant coverage rejects new promotion. Preserve exact rejected predictions. Remote fitting only; no automatic upload."
+  ],
+  "next_version_target": 49.981036,
+  "requested_gain": 0.6,
+  "seeds": [
+    13201,
+    13202
+  ],
+  "boost_depths": [
+    5,
+    7
+  ],
+  "boost_max_iterations": 1600,
+  "boost_patience": 120,
+  "adaptive_cs": [
+    0.3,
+    3.0,
+    30.0,
+    300.0
+  ],
+  "pooled_candidate": false,
+  "mlp_epochs": 80,
+  "pretrained_model": "ibm/MoLFormer-XL-both-10pct",
+  "pretrained_revision": "7b12d946c181a37f6012b9dc3b002275de070314"
+}

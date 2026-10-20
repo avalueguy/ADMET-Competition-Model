@@ -1,0 +1,15 @@
+{
+  "version": 42,
+  "baseline": "v39",
+  "baseline_score": 50.490698,
+  "baseline_sha256": "7f14d29cd40562671a59536c40f4f6e9e9bf7113900323614fc808c4623e7bac",
+  "training_host": "czp123@100.109.143.42",
+  "weights": [0.1, 0.25, 0.5, 0.75, 1.0],
+  "sources": [40, 41],
+  "selection": "Source frozen winners plus optional equal combination; 0.45 full-v39 historical valid gain +0.55 CV proxy mean -0.04 CV SD. Eligibility valid>0.0002, CV mean>0, objective>0.0005; individual fold declines allowed.",
+  "test_labels_used": false,
+  "external_labels": false,
+  "automatic_submission": false,
+  "local_gpu_training": false,
+  "limitations": "Historical validation reused, multiple-source selection bias. CV is a proxy rather than full historical ensemble OOF. Conditional other-task assays. Official formula unknown; no guaranteed platform gain."
+}

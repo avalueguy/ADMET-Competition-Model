@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "tasks": [
+    {
+      "task": "herg",
+      "family": "kernel",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true,
+      "test_labels_used": false
+    },
+    {
+      "task": "dili",
+      "family": "sequence",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true,
+      "test_labels_used": false
+    },
+    {
+      "task": "vdss_lombardo",
+      "family": "kernel",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true,
+      "test_labels_used": false
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "family": "kernel",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true,
+      "test_labels_used": false
+    }
+  ],
+  "local_gpu_training": false,
+  "test_labels_used": false
+}

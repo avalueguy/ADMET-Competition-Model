@@ -1,0 +1,347 @@
+[
+  {
+    "path": "admet_model_outputs_v27/analysis.json",
+    "bytes": 82382,
+    "sha256": "e078f5263948e50e8d699d9164e55eeb806eacafa86713d412528672ffa97f7f"
+  },
+  {
+    "path": "admet_model_outputs_v27/baseline_valid.npy",
+    "bytes": 654600,
+    "sha256": "8c7ced1e35908f03823d5ff5f13b9d8b04c2b0c0b1069aa82df5cbdaa21da328"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold0/270601/checkpoint_4500.pt",
+    "bytes": 7481350,
+    "sha256": "57ac6583f8514d6e10ce95de251c3cfb45179dfd5315f31eeaa7a7f8dd57acc4"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold0/270601/checkpoint_5500.pt",
+    "bytes": 7481350,
+    "sha256": "d7fcd6d53dd9c205bb0ccfe3c247abb9577152eb95305bc2ffffb0497f33146f"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold0/270601/metadata.json",
+    "bytes": 1010,
+    "sha256": "c9dc8df0bc3080bae08a74c3f87980174941b2aa01a2a16ec117d7a829aa0043"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold0/270601/predictions.npz",
+    "bytes": 240029,
+    "sha256": "83b4e933fedd21682bb4166ae5c31945465788ab3536dac48e598f996d2df575"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold0/270602/checkpoint_4500.pt",
+    "bytes": 7481350,
+    "sha256": "a69e23e56f8e52f9d836e2ca931206f24819e2f3814a06e3dca83cb4f57ae37a"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold0/270602/checkpoint_5500.pt",
+    "bytes": 7481350,
+    "sha256": "1955ff9e8aabe90ccb95bb7c8e08b26ae7e929d218315b06c3f7412f1c227c33"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold0/270602/metadata.json",
+    "bytes": 1009,
+    "sha256": "bc5181aa27dcb42c284eaa94120f67d758edcad09afdd4024434b9675de87a4e"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold0/270602/predictions.npz",
+    "bytes": 240044,
+    "sha256": "93bc2e38e2e8995e36cdb5e1fe793eac5299b90a3d2eaeca7b4b7b1454ab57bc"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold1/270601/checkpoint_4500.pt",
+    "bytes": 7481286,
+    "sha256": "729a45687d463f0b194fe4fe9efe669857f8d579a9700f2e179ccf0ab1a61298"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold1/270601/checkpoint_5500.pt",
+    "bytes": 7481286,
+    "sha256": "dc64a5d2627d47e519ceb7d87dc00e223044946839c4c710e6938bedaeece14b"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold1/270601/metadata.json",
+    "bytes": 1010,
+    "sha256": "dc42959487f94546861841289791a0f680e64fdf465282128f6be0094c3d9994"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold1/270601/predictions.npz",
+    "bytes": 239953,
+    "sha256": "7b1fbc6d54d27bbbb479e23444a4e808210d71a2fe71039d2d82bd3d22f53c79"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold1/270602/checkpoint_4500.pt",
+    "bytes": 7481286,
+    "sha256": "769e3ea866915b656f4423b6f1efaaa5d3a11a3e428a242401b169b0c9897bc2"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold1/270602/checkpoint_5500.pt",
+    "bytes": 7481286,
+    "sha256": "51ae766c66759872bb85eb4bc27c1038c540cc83c234c81bef7e18d95e139db8"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold1/270602/metadata.json",
+    "bytes": 1010,
+    "sha256": "28648c69a1bdec133495106260c3eeee5c2ab8c78ac2f8d350853778506f73ab"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold1/270602/predictions.npz",
+    "bytes": 240213,
+    "sha256": "a9c77500c190e0f7f61756d85dd455e8813b2adcb91af86c7e463c4e90f0b0c0"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold2/270601/checkpoint_4500.pt",
+    "bytes": 7481478,
+    "sha256": "81087df84aaf22f465fe61dd0f994eff4ba948bc5b3ba776704bd4f5da7ffa61"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold2/270601/checkpoint_5500.pt",
+    "bytes": 7481478,
+    "sha256": "5b9518761368dffcd2e012a90d17852acc6cda3672abe7795a684fc014ec21d7"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold2/270601/metadata.json",
+    "bytes": 1009,
+    "sha256": "3f671cf4ae4afc7dbcaf22af8fa3d025fead7b9244a955b4326157ee4c182846"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold2/270601/predictions.npz",
+    "bytes": 244057,
+    "sha256": "48851d5c2cff43a0e9d8e734576d6c91a4b97d97d7df267fe15e1b1793e95194"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold2/270602/checkpoint_4500.pt",
+    "bytes": 7481478,
+    "sha256": "14a230e24b579a0904e9165aac6bb38544ca54ead431ae2df10a71a845a080b6"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold2/270602/checkpoint_5500.pt",
+    "bytes": 7481478,
+    "sha256": "1c92a42c55504e01e5dd8f9c6bc62ef2e57c3874d1dc8469f20088922650a350"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold2/270602/metadata.json",
+    "bytes": 1009,
+    "sha256": "00389cd232e6f0e396f2e2cc0197f1663fbd30911299347591be79eafb89d6d4"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv/fold2/270602/predictions.npz",
+    "bytes": 244206,
+    "sha256": "7da231bef36b79b0fe5395b195fd72ca370f7e8ac89814173065b1e53d629df0"
+  },
+  {
+    "path": "admet_model_outputs_v27/cv_predictions.npy",
+    "bytes": 1309072,
+    "sha256": "fb3bf812ed619314169e43de39ae1a8849705082713a3bf72247a3ffd7aead02"
+  },
+  {
+    "path": "admet_model_outputs_v27/final/270601/checkpoint_4500.pt",
+    "bytes": 7486982,
+    "sha256": "0544dcc5db3f09193ca293ca9f466607ccb1fbc038f856859bf900acf164753d"
+  },
+  {
+    "path": "admet_model_outputs_v27/final/270601/checkpoint_5500.pt",
+    "bytes": 7486982,
+    "sha256": "15b09e5bbeab4d4d65852b0ad62e067c059d4965b4feec5655af57ca34474e18"
+  },
+  {
+    "path": "admet_model_outputs_v27/final/270601/metadata.json",
+    "bytes": 1010,
+    "sha256": "f4fd40e6d8b849093f44a5d771916e315f35a87ca7296512b2c4e62456f86217"
+  },
+  {
+    "path": "admet_model_outputs_v27/final/270601/predictions.npz",
+    "bytes": 269263,
+    "sha256": "17b688b9a7344adebc01bca0b290a42808118f6ad76385ea6d502c188c7cee8c"
+  },
+  {
+    "path": "admet_model_outputs_v27/final/270602/checkpoint_4500.pt",
+    "bytes": 7486982,
+    "sha256": "2c3a680abd725fe127c325407f3a38071d4bcad7d341b53d28f484f8ed4721a5"
+  },
+  {
+    "path": "admet_model_outputs_v27/final/270602/checkpoint_5500.pt",
+    "bytes": 7486982,
+    "sha256": "4a9e9aaf9e01e6b9509d6e388d02ab1587caa0d13859465f18ba5f756163054e"
+  },
+  {
+    "path": "admet_model_outputs_v27/final/270602/metadata.json",
+    "bytes": 1010,
+    "sha256": "d0596068c5928b4aa7c7690a591cb90b020d361ebd38c5e357c777d3347b0ef0"
+  },
+  {
+    "path": "admet_model_outputs_v27/final/270602/predictions.npz",
+    "bytes": 269287,
+    "sha256": "bd95f11d990333e475a662d353fda41e370648802346ff669f746d618e976a24"
+  },
+  {
+    "path": "admet_model_outputs_v27/final/270603/checkpoint_4500.pt",
+    "bytes": 7486982,
+    "sha256": "e24ebf4ae650c7de36dae96c175faa70252cc0407d71f02e02500bc8901f9312"
+  },
+  {
+    "path": "admet_model_outputs_v27/final/270603/checkpoint_5500.pt",
+    "bytes": 7486982,
+    "sha256": "fe142137f7c976c92771efe9fe1d7e4fcbc1268def8b2c604124fe5bafaec215"
+  },
+  {
+    "path": "admet_model_outputs_v27/final/270603/metadata.json",
+    "bytes": 1011,
+    "sha256": "1a7e8b0c2fde1acc0d0d223ba27be27e4ee51bd46d2c58fd184428138bc45967"
+  },
+  {
+    "path": "admet_model_outputs_v27/final/270603/predictions.npz",
+    "bytes": 268936,
+    "sha256": "80362cc7a4cf9b3628119b80c1390a9341d7b7c33b999970f3d659d6f6558ba4"
+  },
+  {
+    "path": "admet_model_outputs_v27/launch.json",
+    "bytes": 140,
+    "sha256": "87351eb9a4b722f67fb6448a4181050aaa72672c1c00c01af8e202158b1506b4"
+  },
+  {
+    "path": "admet_model_outputs_v27/run.log",
+    "bytes": 16049,
+    "sha256": "a131572f6a2439c7853a84dd3d609a8aaffefa9deefba1b1dd09c5254651aeaa"
+  },
+  {
+    "path": "admet_model_outputs_v27/selftest.json",
+    "bytes": 123,
+    "sha256": "c5250efce78fcc897bbf77ebe8223ac4f13e41548a1e0163ea86337c55e71455"
+  },
+  {
+    "path": "admet_model_outputs_v27/test_predictions.npy",
+    "bytes": 1309072,
+    "sha256": "015932014ebdfd1a7224fe38f3c4d90e4c9a41fcc7baea8a93e886081fd0b9b4"
+  },
+  {
+    "path": "admet_model_outputs_v27/test_predictions_compact.json",
+    "bytes": 867260,
+    "sha256": "22a3eb16322d3822fe688495f5540460cae272dc1379ffb5fccf7e720f58c513"
+  },
+  {
+    "path": "admet_model_outputs_v27/v62_fresh_control/270601/checkpoint_4500.pt",
+    "bytes": 7484422,
+    "sha256": "ac21e6c7a90cc40ad84ef26cb6f7edec1d6cff6fc5ba578883d3c96ae0f67bba"
+  },
+  {
+    "path": "admet_model_outputs_v27/v62_fresh_control/270601/checkpoint_5500.pt",
+    "bytes": 7484422,
+    "sha256": "8abd39fd3221b79534a73c7792b0666a941b3e3263db848bcf91ebcfd29e3420"
+  },
+  {
+    "path": "admet_model_outputs_v27/v62_fresh_control/270601/metadata.json",
+    "bytes": 1010,
+    "sha256": "3eb65d178dfadb4a0378f07104c2f2a69f131c13fdbb049f1f2e52063dd60642"
+  },
+  {
+    "path": "admet_model_outputs_v27/v62_fresh_control/270601/predictions.npz",
+    "bytes": 232469,
+    "sha256": "5986f48d012326a73c2d574b65c861046aa66385e700398e65f347cfc49b2f4d"
+  },
+  {
+    "path": "admet_model_outputs_v27/valid/270601/checkpoint_4500.pt",
+    "bytes": 7480518,
+    "sha256": "a0c653106258a02ef24b1503c565b6fa42350404e94a664b269829bf903baa99"
+  },
+  {
+    "path": "admet_model_outputs_v27/valid/270601/checkpoint_5500.pt",
+    "bytes": 7480518,
+    "sha256": "043645a1a383760c399f8bc78e97422aaa4154322b212e45eefd36a44c95610e"
+  },
+  {
+    "path": "admet_model_outputs_v27/valid/270601/metadata.json",
+    "bytes": 1010,
+    "sha256": "53f40752d97cf039897945185ff114af550ff0e23cba850d30ac20592d396581"
+  },
+  {
+    "path": "admet_model_outputs_v27/valid/270601/predictions.npz",
+    "bytes": 173695,
+    "sha256": "e405be8f7addaff6b99f919bf09583d6b848bf8f3ca3aca12ae84336d5b42410"
+  },
+  {
+    "path": "admet_model_outputs_v27/valid/270602/checkpoint_4500.pt",
+    "bytes": 7480518,
+    "sha256": "a8359705430275b59ebfb7b2befb30a74fc2e4d6c09801de629b396846d13711"
+  },
+  {
+    "path": "admet_model_outputs_v27/valid/270602/checkpoint_5500.pt",
+    "bytes": 7480518,
+    "sha256": "dc39e30d2ed25dfd9bb2c1d949ef1a6cafe3c39dd266d0633fe624a1355405ab"
+  },
+  {
+    "path": "admet_model_outputs_v27/valid/270602/metadata.json",
+    "bytes": 1010,
+    "sha256": "17503a64b344684c6beea64a852e562c37841c5f6902e54a4a892645c390b30a"
+  },
+  {
+    "path": "admet_model_outputs_v27/valid/270602/predictions.npz",
+    "bytes": 173698,
+    "sha256": "fb02f71f7a42674cfd4e9c6b5989519d9f8fc39d500e32185b6b3b43c1712533"
+  },
+  {
+    "path": "admet_model_outputs_v27/valid_diagnostic.json",
+    "bytes": 5196,
+    "sha256": "b3e9c08fa0a1b5b51f311b27b73be3407d51b73c720f02c190cdbcb8630c68f6"
+  },
+  {
+    "path": "admet_model_outputs_v27/valid_predictions.npy",
+    "bytes": 1309072,
+    "sha256": "c6c6319c89cd4626749a444e39d00d8b19ddbf156962975ef9b1efab274704af"
+  },
+  {
+    "path": "admet_model_outputs_v27/valid_split_audit.json",
+    "bytes": 134,
+    "sha256": "026495581985b2a0bb404d6ecf7fec5e0cb8c94090eb5a7c8d8b1a6bc7c39935"
+  },
+  {
+    "path": "admet_model_outputs_v43/features/cv_fold0/latent.json",
+    "bytes": 509,
+    "sha256": "0767a57a98fc24ed2f123716f981e5003604ff4c746e2c4ce8965dc962d84d16"
+  },
+  {
+    "path": "admet_model_outputs_v43/features/cv_fold0/latent.npz",
+    "bytes": 43555009,
+    "sha256": "1e3c2915a492876786c8a7c2d6e77a8304154b02c8eaf60a61a308398a64fbad"
+  },
+  {
+    "path": "admet_model_outputs_v43/features/cv_fold1/latent.json",
+    "bytes": 509,
+    "sha256": "339efe7753af474d997a8cca713b9ec658c1817b282a52baf082dae0d3f9f4b0"
+  },
+  {
+    "path": "admet_model_outputs_v43/features/cv_fold1/latent.npz",
+    "bytes": 43572799,
+    "sha256": "a3351584c50d5daa2732a489f9679b3d2e64e78b46f745ac968a7e8e12a24059"
+  },
+  {
+    "path": "admet_model_outputs_v43/features/cv_fold2/latent.json",
+    "bytes": 509,
+    "sha256": "93924d6d2ec75baa7c7e6e12d8fce767d5e869aa824f18d7f8cf3acc821e0e3a"
+  },
+  {
+    "path": "admet_model_outputs_v43/features/cv_fold2/latent.npz",
+    "bytes": 43567148,
+    "sha256": "cf2204b36a4924ff6a1656261ea14f7022dd2c24ed52510a69f1fb80d2ec6c5a"
+  },
+  {
+    "path": "admet_model_outputs_v43/features/final/latent.json",
+    "bytes": 503,
+    "sha256": "be7fffa529270197799666666035f94d3f9ddc1488b3f9cd11d8132dd419a67d"
+  },
+  {
+    "path": "admet_model_outputs_v43/features/final/latent.npz",
+    "bytes": 43549026,
+    "sha256": "4af54ad54819804aa1a97c5f45a3c2330bc20e54c1b1cdbc0873affdfef241f2"
+  },
+  {
+    "path": "admet_model_outputs_v43/features/valid/latent.json",
+    "bytes": 503,
+    "sha256": "c6fa2225dbcb78b3d7c5de602e535a0d128e034d4849868b9ca0b21f1e6b8143"
+  },
+  {
+    "path": "admet_model_outputs_v43/features/valid/latent.npz",
+    "bytes": 43575423,
+    "sha256": "00970633035642b2796ef56e2c7d06e6db52a9e66fa4ad17e66bc5e7d09c8439"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "tasks": [
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true,
+      "own_task_assay_excluded": true,
+      "conditional_features": true
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true,
+      "own_task_assay_excluded": true,
+      "conditional_features": true
+    },
+    {
+      "task": "ppbr_az",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true,
+      "own_task_assay_excluded": true,
+      "conditional_features": true
+    },
+    {
+      "task": "cyp2d6_veith",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true,
+      "own_task_assay_excluded": true,
+      "conditional_features": true
+    }
+  ],
+  "test_labels_used": false,
+  "local_gpu_training": false
+}

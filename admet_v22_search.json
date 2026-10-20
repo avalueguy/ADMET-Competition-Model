@@ -1,0 +1,1927 @@
+[
+  {
+    "task": "ames",
+    "metric": "AUROC",
+    "valid_n": 1137,
+    "valid_base": 0.8311182110653528,
+    "top": [
+      {
+        "delta": 0.0001792615060502989,
+        "alpha": 0.3,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.00010787418063196164,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.00010470141061347249,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0001031150256041169,
+        "alpha": 0.25,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 9.359671554842741e-05,
+        "alpha": 0.2,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 8.090563547413776e-05,
+        "alpha": 0.2,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 6.980094040898166e-05,
+        "alpha": 0.2,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 4.9177935288136077e-05,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 4.9177935288136077e-05,
+        "alpha": 0.1,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 4.4418780260291335e-05,
+        "alpha": 0.25,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 3.9659625232446594e-05,
+        "alpha": 0.35000000000000003,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 3.965962523233557e-05,
+        "alpha": 0.3,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      }
+    ],
+    "candidate_versions": [
+      "v15",
+      "v17",
+      "v18"
+    ],
+    "choice": {
+      "delta": 0.0001792615060502989,
+      "alpha": 0.3,
+      "mode": "raw",
+      "name": "v15"
+    }
+  },
+  {
+    "task": "bbb_martins",
+    "metric": "AUROC",
+    "valid_n": 203,
+    "valid_base": 0.9237509321401939,
+    "top": [
+      {
+        "delta": 0.0007457121551082135,
+        "alpha": 0.25,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.000497141436738735,
+        "alpha": 0.2,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.000497141436738735,
+        "alpha": 0.8500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.000497141436738624,
+        "alpha": 0.7000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.00037285607755410677,
+        "alpha": 0.9000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0002485707183693675,
+        "alpha": 0.15000000000000002,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0002485707183693675,
+        "alpha": 0.25,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0002485707183693675,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.00012428535918462824,
+        "alpha": 0.3,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.45,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.00012428535918462824,
+        "alpha": 0.8,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.00012428535918462824,
+        "alpha": 0.15000000000000002,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      }
+    ],
+    "candidate_versions": [
+      "v15",
+      "v16",
+      "v17",
+      "v18"
+    ],
+    "choice": {
+      "delta": 0.0007457121551082135,
+      "alpha": 0.25,
+      "mode": "raw",
+      "name": "v15"
+    }
+  },
+  {
+    "task": "bioavailability_ma",
+    "metric": "AUROC",
+    "valid_n": 64,
+    "valid_base": 0.7297895902547066,
+    "top": [
+      {
+        "delta": 0.021594684385381924,
+        "alpha": 0.9000000000000001,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.019933554817275656,
+        "alpha": 0.8500000000000001,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.019379844961240233,
+        "alpha": 0.9500000000000001,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.014950166112956742,
+        "alpha": 0.8,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.01439645625692143,
+        "alpha": 0.45,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.013842746400885897,
+        "alpha": 0.5,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.013289036544850474,
+        "alpha": 0.55,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.013289036544850363,
+        "alpha": 0.6000000000000001,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.013289036544850252,
+        "alpha": 0.6500000000000001,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.011074197120708673,
+        "alpha": 0.7500000000000001,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.01052048726467325,
+        "alpha": 0.2,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.01052048726467325,
+        "alpha": 0.25,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      }
+    ],
+    "candidate_versions": [
+      "v15",
+      "v21"
+    ],
+    "choice": {
+      "delta": 0.021594684385381924,
+      "alpha": 0.9000000000000001,
+      "mode": "rank",
+      "name": "v15"
+    }
+  },
+  {
+    "task": "caco2_wang",
+    "metric": "MAE",
+    "valid_n": 91,
+    "valid_base": -0.35738994273027047,
+    "top": [
+      {
+        "delta": -0.03493162077474743,
+        "alpha": 0.9500000000000001,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": -0.03176848318086428,
+        "alpha": 0.9000000000000001,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": -0.028605345586981024,
+        "alpha": 0.8500000000000001,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": -0.027923280294473163,
+        "alpha": 0.9500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.026340529880442665,
+        "alpha": 0.9000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.025442207993097987,
+        "alpha": 0.8,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": -0.02475777946641211,
+        "alpha": 0.8500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.023241906271099844,
+        "alpha": 0.8,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.022296033277255156,
+        "alpha": 0.7500000000000001,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": -0.021733245194895834,
+        "alpha": 0.7500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.020224584118691602,
+        "alpha": 0.7000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.01943842732799128,
+        "alpha": 0.7000000000000001,
+        "mode": "raw",
+        "name": "v21"
+      }
+    ],
+    "candidate_versions": [],
+    "choice": null
+  },
+  {
+    "task": "clearance_hepatocyte_az",
+    "metric": "Spearman",
+    "valid_n": 122,
+    "valid_base": 0.5148498438811758,
+    "top": [
+      {
+        "delta": -0.0003082353741488131,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.0008102164687168179,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": -0.001269042880324034,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.001368427662621463,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.0020036428802882034,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.0033784679737300927,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.004108134827957466,
+        "alpha": 0.1,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.005105295477009553,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.005353757432753459,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": -0.0054100754760554315,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.006185276777976312,
+        "alpha": 0.15000000000000002,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.006750907810921913,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      }
+    ],
+    "candidate_versions": [],
+    "choice": null
+  },
+  {
+    "task": "clearance_microsome_az",
+    "metric": "Spearman",
+    "valid_n": 111,
+    "valid_base": 0.6791540585597573,
+    "top": [
+      {
+        "delta": -0.0016331054053462246,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.002928551336063956,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.0031253848102001935,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.0034240162146730313,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": -0.0037941332996871413,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": -0.004967920166767059,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.00542357090334511,
+        "alpha": 0.1,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": -0.006461686667727062,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": -0.0066437991742243074,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": -0.007148850391358597,
+        "alpha": 0.1,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.007710672173352751,
+        "alpha": 0.15000000000000002,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.008781230214633062,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      }
+    ],
+    "candidate_versions": [],
+    "choice": null
+  },
+  {
+    "task": "cyp2c9_substrate_carbonmangels",
+    "metric": "AUPRC",
+    "valid_n": 67,
+    "valid_base": 0.3371651830396855,
+    "top": [
+      {
+        "delta": 0.10622082085372636,
+        "alpha": 0.8500000000000001,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.10545634272137516,
+        "alpha": 0.7500000000000001,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.10420751431127273,
+        "alpha": 0.8,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.10382865918366485,
+        "alpha": 0.7000000000000001,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.10339061353616064,
+        "alpha": 0.9000000000000001,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": 0.09865300010289502,
+        "alpha": 0.9500000000000001,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": 0.09814419461823659,
+        "alpha": 0.6500000000000001,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.09800829750962403,
+        "alpha": 0.9000000000000001,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.09527739852639394,
+        "alpha": 0.8500000000000001,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0934742797962585,
+        "alpha": 0.9500000000000001,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0888367249861387,
+        "alpha": 0.6500000000000001,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": 0.08845716415213734,
+        "alpha": 0.8,
+        "mode": "raw",
+        "name": "v21"
+      }
+    ],
+    "candidate_versions": [
+      "v15",
+      "v16",
+      "v17",
+      "v18",
+      "v21"
+    ],
+    "choice": {
+      "delta": 0.10622082085372636,
+      "alpha": 0.8500000000000001,
+      "mode": "rank",
+      "name": "v21"
+    }
+  },
+  {
+    "task": "cyp2c9_veith",
+    "metric": "AUPRC",
+    "valid_n": 1210,
+    "valid_base": 0.8141176938616315,
+    "top": [
+      {
+        "delta": 0.0011932617854497618,
+        "alpha": 0.3,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0010428266831230548,
+        "alpha": 0.25,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0010169184707642387,
+        "alpha": 0.35000000000000003,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0009523279803416163,
+        "alpha": 0.4,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0008319781128910408,
+        "alpha": 0.2,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.0008174211010965049,
+        "alpha": 0.15000000000000002,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.0007977473242056776,
+        "alpha": 0.15000000000000002,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0006764245598385177,
+        "alpha": 0.2,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0006187103902357549,
+        "alpha": 0.45,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.00048248271142092847,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.00047808404925175907,
+        "alpha": 0.5,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.00038076073183068715,
+        "alpha": 0.5,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      }
+    ],
+    "candidate_versions": [
+      "v15",
+      "v18"
+    ],
+    "choice": {
+      "delta": 0.0011932617854497618,
+      "alpha": 0.3,
+      "mode": "raw",
+      "name": "v15"
+    }
+  },
+  {
+    "task": "cyp2d6_substrate_carbonmangels",
+    "metric": "AUPRC",
+    "valid_n": 67,
+    "valid_base": 0.636627749914195,
+    "top": [
+      {
+        "delta": 0.0012095747389864187,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": -0.0008912655971480277,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.0008912655971480277,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.004275952805364636,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.018898628031755127,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.035745207173778715,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.03779133663034606,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": -0.03844614400784241,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": -0.04186401833460662,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.04440503474116919,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": -0.04461791341490595,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.047789181922308965,
+        "alpha": 0.1,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      }
+    ],
+    "candidate_versions": [
+      "v15",
+      "v16",
+      "v17",
+      "v18",
+      "v19"
+    ],
+    "choice": {
+      "delta": -0.0008912655971480277,
+      "alpha": 0.05,
+      "mode": "rank",
+      "name": "v15"
+    }
+  },
+  {
+    "task": "cyp2d6_veith",
+    "metric": "AUPRC",
+    "valid_n": 1313,
+    "valid_base": 0.7594556641872584,
+    "top": [
+      {
+        "delta": 0.0004016112426897811,
+        "alpha": 0.2,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.0003240258601175938,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.00031740614888386975,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.0002729039613066364,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.00021645004728576556,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -6.792987398973604e-05,
+        "alpha": 0.25,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.00016448611031383287,
+        "alpha": 0.15000000000000002,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.0002301945369830305,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.00023789747013924778,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.00032722283558239695,
+        "alpha": 0.1,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.00040139361153002096,
+        "alpha": 0.3,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.0005186375935841703,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      }
+    ],
+    "candidate_versions": [],
+    "choice": null
+  },
+  {
+    "task": "cyp3a4_substrate_carbonmangels",
+    "metric": "AUROC",
+    "valid_n": 67,
+    "valid_base": 0.7620967741935485,
+    "top": [
+      {
+        "delta": 0.0022401433691755512,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0017921146953404632,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0013440860215052641,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0008960573476700651,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.00044802867383508804,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.00044802867383508804,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.00044802867383508804,
+        "alpha": 0.2,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.00044802867383508804,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.00044802867383508804,
+        "alpha": 0.1,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.00044802867383508804,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.00044802867383508804,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.00044802867383519906,
+        "alpha": 0.2,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      }
+    ],
+    "candidate_versions": [
+      "v15",
+      "v17",
+      "v18"
+    ],
+    "choice": {
+      "delta": 0.00044802867383508804,
+      "alpha": 0.05,
+      "mode": "raw",
+      "name": "v15"
+    }
+  },
+  {
+    "task": "cyp3a4_veith",
+    "metric": "AUPRC",
+    "valid_n": 1233,
+    "valid_base": 0.8992257604588995,
+    "top": [
+      {
+        "delta": 1.604741752603278e-05,
+        "alpha": 0.35000000000000003,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 1.2628095776845427e-05,
+        "alpha": 0.2,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -1.0327776254204224e-06,
+        "alpha": 0.3,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -5.2556648499901826e-06,
+        "alpha": 0.1,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -1.6441912942144477e-05,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -1.9010107329520132e-05,
+        "alpha": 0.25,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -2.6087720621403854e-05,
+        "alpha": 0.2,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -3.782741719005056e-05,
+        "alpha": 0.4,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -4.333416223167852e-05,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -4.773939441760078e-05,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -6.522378712392474e-05,
+        "alpha": 0.3,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -7.72616096131884e-05,
+        "alpha": 0.15000000000000002,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      }
+    ],
+    "candidate_versions": [],
+    "choice": null
+  },
+  {
+    "task": "dili",
+    "metric": "AUROC",
+    "valid_n": 48,
+    "valid_base": 0.9054945054945055,
+    "top": [
+      {
+        "delta": 0.001098901098901095,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": -0.001098901098901095,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.002197802197802079,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.002197802197802079,
+        "alpha": 0.2,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.00219780219780219,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.00219780219780219,
+        "alpha": 0.1,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.00219780219780219,
+        "alpha": 0.15000000000000002,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.00219780219780219,
+        "alpha": 0.2,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      }
+    ],
+    "candidate_versions": [
+      "v15"
+    ],
+    "choice": {
+      "delta": 0.0,
+      "alpha": 0.05,
+      "mode": "rank",
+      "name": "v15"
+    }
+  },
+  {
+    "task": "half_life_obach",
+    "metric": "Spearman",
+    "valid_n": 67,
+    "valid_base": 0.6420667224199589,
+    "top": [
+      {
+        "delta": 0.00923994941349704,
+        "alpha": 0.3,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.008581378504975645,
+        "alpha": 0.25,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": 0.007572541358966678,
+        "alpha": 0.25,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.007084626440154396,
+        "alpha": 0.2,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": 0.00403125222791878,
+        "alpha": 0.15000000000000002,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0037583018430769055,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0036385604832431806,
+        "alpha": 0.35000000000000003,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0026542403282830973,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.002414759997911742,
+        "alpha": 0.3,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0009579213214856441,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0007583543795094405,
+        "alpha": 0.1,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0006785276027190257,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v21"
+      }
+    ],
+    "candidate_versions": [
+      "v15"
+    ],
+    "choice": {
+      "delta": 0.00036562998112221745,
+      "alpha": 0.05,
+      "mode": "rank",
+      "name": "v15"
+    }
+  },
+  {
+    "task": "herg",
+    "metric": "AUROC",
+    "valid_n": 66,
+    "valid_base": 0.8938492063492064,
+    "top": [
+      {
+        "delta": 0.001984126984126977,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": -1.1102230246251565e-16,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -1.1102230246251565e-16,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -1.1102230246251565e-16,
+        "alpha": 0.25,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": -1.1102230246251565e-16,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": -0.0009920634920634885,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.0009920634920634885,
+        "alpha": 0.15000000000000002,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.0009920634920634885,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.0009920634920634885,
+        "alpha": 0.1,
+        "mode": "raw",
+        "name": "v21"
+      }
+    ],
+    "candidate_versions": [
+      "v15",
+      "v17",
+      "v18"
+    ],
+    "choice": {
+      "delta": 0.0,
+      "alpha": 0.1,
+      "mode": "rank",
+      "name": "v15"
+    }
+  },
+  {
+    "task": "hia_hou",
+    "metric": "AUROC",
+    "valid_n": 58,
+    "valid_base": 1.0,
+    "top": [
+      {
+        "delta": 0.0,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.1,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.15000000000000002,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.2,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.25,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.3,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.35000000000000003,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.4,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.45,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.5,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.55,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0,
+        "alpha": 0.6000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      }
+    ],
+    "candidate_versions": [
+      "v15",
+      "v17",
+      "v18"
+    ],
+    "choice": {
+      "delta": 0.0,
+      "alpha": 0.05,
+      "mode": "raw",
+      "name": "v15"
+    }
+  },
+  {
+    "task": "ld50_zhu",
+    "metric": "MAE",
+    "valid_n": 1937,
+    "valid_base": -0.5405225111833729,
+    "top": [
+      {
+        "delta": -0.02072858876251138,
+        "alpha": 0.9500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.01891419213878054,
+        "alpha": 0.9000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.017196593254101278,
+        "alpha": 0.8500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.01558528471226639,
+        "alpha": 0.8,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.014068967460765136,
+        "alpha": 0.7500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.013511526583927291,
+        "alpha": 0.9500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.012615310204744934,
+        "alpha": 0.7000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.012340228272808451,
+        "alpha": 0.9000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.011244734419406877,
+        "alpha": 0.8500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.011240258369389022,
+        "alpha": 0.6500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.01020880131021562,
+        "alpha": 0.8,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.009921169939351215,
+        "alpha": 0.6000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      }
+    ],
+    "candidate_versions": [
+      "v15",
+      "v18"
+    ],
+    "choice": {
+      "delta": -0.02072858876251138,
+      "alpha": 0.9500000000000001,
+      "mode": "raw",
+      "name": "v15"
+    }
+  },
+  {
+    "task": "lipophilicity_astrazeneca",
+    "metric": "MAE",
+    "valid_n": 420,
+    "valid_base": -0.49570873163303675,
+    "top": [
+      {
+        "delta": -0.018826452922188985,
+        "alpha": 0.9500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.017336440869628378,
+        "alpha": 0.9000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.015851438590040567,
+        "alpha": 0.8500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.014399704742798058,
+        "alpha": 0.8,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.012971208238350962,
+        "alpha": 0.7500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.011692819494243833,
+        "alpha": 0.7000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.010449966588316428,
+        "alpha": 0.6500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.009277388220738203,
+        "alpha": 0.6000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.008174263488879618,
+        "alpha": 0.55,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.0071035718436551765,
+        "alpha": 0.5,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.006089829553555193,
+        "alpha": 0.45,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.0051660289491822775,
+        "alpha": 0.4,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      }
+    ],
+    "candidate_versions": [],
+    "choice": null
+  },
+  {
+    "task": "pgp_broccatelli",
+    "metric": "AUROC",
+    "valid_n": 122,
+    "valid_base": 0.9384574039236765,
+    "top": [
+      {
+        "delta": -1.1102230246251565e-16,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -1.1102230246251565e-16,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -1.1102230246251565e-16,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -1.1102230246251565e-16,
+        "alpha": 0.1,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -1.1102230246251565e-16,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.00026874496103201917,
+        "alpha": 0.1,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.00026874496103201917,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.00026874496103201917,
+        "alpha": 0.2,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.0002687449610321302,
+        "alpha": 0.2,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.0005374899220640383,
+        "alpha": 0.15000000000000002,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.0005374899220640383,
+        "alpha": 0.3,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.0008062348830960575,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      }
+    ],
+    "candidate_versions": [],
+    "choice": null
+  },
+  {
+    "task": "ppbr_az",
+    "metric": "MAE",
+    "valid_n": 279,
+    "valid_base": -10.09215770199964,
+    "top": [
+      {
+        "delta": -2.0282304388005112,
+        "alpha": 0.9500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -1.8282990926294183,
+        "alpha": 0.9000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -1.6609709401930353,
+        "alpha": 0.8500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -1.5017586498593438,
+        "alpha": 0.8,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -1.3516071769724167,
+        "alpha": 0.7500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -1.2044889711938698,
+        "alpha": 0.7000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -1.067916574736845,
+        "alpha": 0.6500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.9336363920927173,
+        "alpha": 0.6000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.8053110583194556,
+        "alpha": 0.55,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.6781633662661779,
+        "alpha": 0.5,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.5557380483089105,
+        "alpha": 0.45,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.4586372069610274,
+        "alpha": 0.4,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      }
+    ],
+    "candidate_versions": [
+      "v21"
+    ],
+    "choice": {
+      "delta": 0.042818349929378385,
+      "alpha": 0.05,
+      "mode": "raw",
+      "name": "v21"
+    }
+  },
+  {
+    "task": "solubility_aqsoldb",
+    "metric": "MAE",
+    "valid_n": 2940,
+    "valid_base": -0.9878681306763293,
+    "top": [
+      {
+        "delta": -0.1892478534807609,
+        "alpha": 0.9500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.17367613597211728,
+        "alpha": 0.9000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.15846507450080538,
+        "alpha": 0.8500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.14360102258699436,
+        "alpha": 0.8,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.12909963810379677,
+        "alpha": 0.7500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.11509810397017595,
+        "alpha": 0.7000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.10169630605803381,
+        "alpha": 0.6500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.08987050647155659,
+        "alpha": 0.9500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.0888708353607166,
+        "alpha": 0.6000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.08175733695788634,
+        "alpha": 0.9000000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.07646283926234432,
+        "alpha": 0.55,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": -0.0740309571318809,
+        "alpha": 0.8500000000000001,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      }
+    ],
+    "candidate_versions": [],
+    "choice": null
+  },
+  {
+    "task": "vdss_lombardo",
+    "metric": "Spearman",
+    "valid_n": 113,
+    "valid_base": 0.7886476274272894,
+    "top": [
+      {
+        "delta": 0.0015819146574335141,
+        "alpha": 0.15000000000000002,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": 0.001428029471713721,
+        "alpha": 0.1,
+        "mode": "raw",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0013360932816088855,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 0.0012367127543324585,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.0009285046448926915,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.0005463089481300143,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.0005005592983213791,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": 0.00043401435314516235,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v15:candidate_1"
+      },
+      {
+        "delta": 0.00010128962726463353,
+        "alpha": 0.05,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": 2.9706412623231593e-05,
+        "alpha": 0.1,
+        "mode": "rank",
+        "name": "v15:candidate_0"
+      },
+      {
+        "delta": -0.00021964005395536113,
+        "alpha": 0.2,
+        "mode": "rank",
+        "name": "v21"
+      },
+      {
+        "delta": -0.0005142511156146501,
+        "alpha": 0.05,
+        "mode": "raw",
+        "name": "v21"
+      }
+    ],
+    "candidate_versions": [
+      "v15",
+      "v17"
+    ],
+    "choice": {
+      "delta": 0.0012367127543324585,
+      "alpha": 0.05,
+      "mode": "rank",
+      "name": "v15"
+    }
+  }
+]

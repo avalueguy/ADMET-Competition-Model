@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "tasks": [
+    {
+      "task": "caco2_wang",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true
+    },
+    {
+      "task": "cyp2d6_veith",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true
+    },
+    {
+      "task": "hia_hou",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "model_reload_passed": true,
+      "fit_query_indices_exact": true
+    }
+  ],
+  "test_labels_used": false,
+  "local_gpu_training": false
+}

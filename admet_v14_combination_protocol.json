@@ -1,0 +1,20 @@
+{
+  "version": 14,
+  "anchor_release": "v11",
+  "anchor_score": 49.381036,
+  "required_gain": 0.6,
+  "next_target": 49.981036,
+  "ultimate_target": 51.584929,
+  "sources": [
+    12,
+    13
+  ],
+  "policy": "Use task promotions passing all fixed gates in v12 or v13. For overlap, retain v12 unless v13 independently passes all primary/secondary/distant gates versus v12. No new fitting, weights or per-molecule routing.",
+  "frozen_before_any_v12_promotion": true,
+  "frozen_when_v13_decided": [
+    "ames rejected"
+  ],
+  "code_sha256": "4065cf180e2d478b735624ee93667066c03f5097bce13ffba0b466a7b2b2a98f",
+  "validation_reused": true,
+  "automatic_submission": false
+}

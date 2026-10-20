@@ -1,0 +1,16 @@
+{
+  "reason": "Runtime GPU memory fraction .32, disjoint three-way fragment task shards after compact completion; model, protocol and gate settings unchanged",
+  "files": {
+    "admet_v12_models.py": "a7cef9b2795e2c73828ee0a71f1c6560763b7c7e9b396e7f009490c8a613c1dd",
+    "admet_v12_coordinate.py": "a0da0eab793ea3b5a3cdf2fa6ec4860bd3bb38fc5f15178e9eb25576eb10b65f"
+  },
+  "history": [
+    {
+      "reason": "Runtime GPU memory fraction .32, two concurrent tree workers; model, protocol and gate settings unchanged",
+      "files": {
+        "admet_v12_models.py": "a7cef9b2795e2c73828ee0a71f1c6560763b7c7e9b396e7f009490c8a613c1dd",
+        "admet_v12_coordinate.py": "a0da0eab793ea3b5a3cdf2fa6ec4860bd3bb38fc5f15178e9eb25576eb10b65f"
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{"stage": "v65_fit", "task": "cyp2c9_substrate_carbonmangels", "partition": "fold0", "seconds": 17}
+{"stage": "v65_fit", "task": "cyp2c9_substrate_carbonmangels", "partition": "fold1", "seconds": 14}
+{"stage": "v65_fit", "task": "cyp2c9_substrate_carbonmangels", "partition": "fold2", "seconds": 13}
+{"stage": "v65_fit", "task": "cyp2c9_substrate_carbonmangels", "partition": "valid", "seconds": 12}
+{"stage": "v65_selection", "task": "cyp2c9_substrate_carbonmangels", "selection": {"variant": 1, "weight": 1.0, "cv_gains": [0.03148090117170421, 0.09290087882043452, 0.09025021600165034], "cv_mean": 0.07154399866459636, "objective": 0.06870904382793264, "valid_gain": -0.15535533776232513}, "held_mean": 0.06227704354646093}
+{"stage": "v65_fit", "task": "cyp2d6_substrate_carbonmangels", "partition": "fold0", "seconds": 13}
+{"stage": "v65_fit", "task": "cyp2d6_substrate_carbonmangels", "partition": "fold1", "seconds": 12}
+{"stage": "v65_fit", "task": "cyp2d6_substrate_carbonmangels", "partition": "fold2", "seconds": 12}
+{"stage": "v65_fit", "task": "cyp2d6_substrate_carbonmangels", "partition": "valid", "seconds": 12}
+{"stage": "v65_selection", "task": "cyp2d6_substrate_carbonmangels", "selection": {"variant": 0, "weight": 0.8, "cv_gains": [0.015478837470626727, 0.07647533468778833, 0.01608936745015943], "cv_mean": 0.036014513202858166, "objective": 0.03315339250967922, "valid_gain": -0.13750121260625459}, "held_mean": 0.028836167147554475}
+{"stage": "v65_fit", "task": "cyp3a4_substrate_carbonmangels", "partition": "fold0", "seconds": 13}
+{"stage": "v65_fit", "task": "cyp3a4_substrate_carbonmangels", "partition": "fold1", "seconds": 12}
+{"stage": "v65_fit", "task": "cyp3a4_substrate_carbonmangels", "partition": "fold2", "seconds": 12}
+{"stage": "v65_fit", "task": "cyp3a4_substrate_carbonmangels", "partition": "valid", "seconds": 12}
+{"stage": "v65_selection", "task": "cyp3a4_substrate_carbonmangels", "selection": null, "held_mean": -0.017476174916399967}
+{"stage": "v65_fit", "task": "clearance_hepatocyte_az", "partition": "fold0", "seconds": 15}
+{"stage": "v65_fit", "task": "clearance_hepatocyte_az", "partition": "fold1", "seconds": 13}
+{"stage": "v65_fit", "task": "clearance_hepatocyte_az", "partition": "fold2", "seconds": 13}
+{"stage": "v65_fit", "task": "clearance_hepatocyte_az", "partition": "valid", "seconds": 14}
+{"stage": "v65_selection", "task": "clearance_hepatocyte_az", "selection": {"variant": 1, "weight": 0.5, "cv_gains": [0.0284626876826638, 0.02120229528868922, 0.03410588869204789], "cv_mean": 0.027923623887800304, "objective": 0.02739545962666557, "valid_gain": -0.02366831974445799}, "held_mean": 0.023007034901546358}
+{"stage": "v65_fit", "task": "clearance_microsome_az", "partition": "fold0", "seconds": 14}
+{"stage": "v65_fit", "task": "clearance_microsome_az", "partition": "fold1", "seconds": 13}
+{"stage": "v65_fit", "task": "clearance_microsome_az", "partition": "fold2", "seconds": 13}
+{"stage": "v65_fit", "task": "clearance_microsome_az", "partition": "valid", "seconds": 13}
+{"stage": "v65_selection", "task": "clearance_microsome_az", "selection": null, "held_mean": 0.0003677359160955314}
+{"stage": "v65_fit", "task": "half_life_obach", "partition": "fold0", "seconds": 13}
+{"stage": "v65_fit", "task": "half_life_obach", "partition": "fold1", "seconds": 12}
+{"stage": "v65_fit", "task": "half_life_obach", "partition": "fold2", "seconds": 12}
+{"stage": "v65_fit", "task": "half_life_obach", "partition": "valid", "seconds": 12}
+{"stage": "v65_selection", "task": "half_life_obach", "selection": null, "held_mean": -0.008350418781354507}
+{"stage": "v65_fit", "task": "bioavailability_ma", "partition": "fold0", "seconds": 13}
+{"stage": "v65_fit", "task": "bioavailability_ma", "partition": "fold1", "seconds": 11}
+{"stage": "v65_fit", "task": "bioavailability_ma", "partition": "fold2", "seconds": 12}
+{"stage": "v65_fit", "task": "bioavailability_ma", "partition": "valid", "seconds": 12}
+{"stage": "v65_selection", "task": "bioavailability_ma", "selection": null, "held_mean": -0.01638621447364615}
+{"stage": "v65_fit", "task": "dili", "partition": "fold0", "seconds": 13}
+{"stage": "v65_fit", "task": "dili", "partition": "fold1", "seconds": 11}
+{"stage": "v65_fit", "task": "dili", "partition": "fold2", "seconds": 11}
+{"stage": "v65_fit", "task": "dili", "partition": "valid", "seconds": 11}
+{"stage": "v65_selection", "task": "dili", "selection": null, "held_mean": 0.0}
+{"stage": "v65_fit", "task": "ppbr_az", "partition": "fold0", "seconds": 18}
+{"stage": "v65_fit", "task": "ppbr_az", "partition": "fold1", "seconds": 17}
+{"stage": "v65_fit", "task": "ppbr_az", "partition": "fold2", "seconds": 17}
+{"stage": "v65_fit", "task": "ppbr_az", "partition": "valid", "seconds": 18}
+{"stage": "v65_selection", "task": "ppbr_az", "selection": {"variant": 0, "weight": 0.5, "cv_gains": [0.04902922920617949, 0.03001643417949384, 0.038288471180413626], "cv_mean": 0.03911137818869565, "objective": 0.03833300605986994, "valid_gain": 0.03394479462865096}, "held_mean": 0.02772299233660711}
+{"stage": "v65_fit", "task": "cyp2d6_veith", "partition": "fold0", "seconds": 44}
+{"stage": "v65_fit", "task": "cyp2d6_veith", "partition": "fold1", "seconds": 41}
+{"stage": "v65_fit", "task": "cyp2d6_veith", "partition": "fold2", "seconds": 48}
+{"stage": "v65_fit", "task": "cyp2d6_veith", "partition": "valid", "seconds": 58}
+{"stage": "v65_selection", "task": "cyp2d6_veith", "selection": {"variant": 0, "weight": 0.25, "cv_gains": [0.013970588104329384, 0.011399968900335677, 0.0051802756142640405], "cv_mean": 0.010183610872976367, "objective": 0.009814584735182211, "valid_gain": -0.0008648723972605188}, "held_mean": 0.008516354904687199}
+{"stage": "v65_fit", "task": "cyp2c9_veith", "partition": "fold0", "seconds": 50}
+{"stage": "v65_fit", "task": "cyp2c9_veith", "partition": "fold1", "seconds": 48}
+{"stage": "v65_fit", "task": "cyp2c9_veith", "partition": "fold2", "seconds": 49}
+{"stage": "v65_fit", "task": "cyp2c9_veith", "partition": "valid", "seconds": 56}
+{"stage": "v65_selection", "task": "cyp2c9_veith", "selection": null, "held_mean": 0.0008851756247435875}
+{"stage": "v65_fit", "task": "cyp3a4_veith", "partition": "fold0", "seconds": 51}
+{"stage": "v65_fit", "task": "cyp3a4_veith", "partition": "fold1", "seconds": 50}
+{"stage": "v65_fit", "task": "cyp3a4_veith", "partition": "fold2", "seconds": 49}
+{"stage": "v65_fit", "task": "cyp3a4_veith", "partition": "valid", "seconds": 56}
+{"stage": "v65_selection", "task": "cyp3a4_veith", "selection": null, "held_mean": 0.001825928840340496}
+{"stage": "v65_fit", "task": "cyp2c9_substrate_carbonmangels", "partition": "fresh", "seconds": 10}
+{"stage": "v65_fresh", "task": "cyp2c9_substrate_carbonmangels", "gain": -0.06929024689245639, "pass_gate": false}
+{"stage": "v65_fit", "task": "cyp2d6_substrate_carbonmangels", "partition": "fresh", "seconds": 9}
+{"stage": "v65_fresh", "task": "cyp2d6_substrate_carbonmangels", "gain": 0.054933695074758315, "pass_gate": true}
+{"stage": "v65_fit", "task": "clearance_hepatocyte_az", "partition": "fresh", "seconds": 11}
+{"stage": "v65_fresh", "task": "clearance_hepatocyte_az", "gain": 0.03511388419222261, "pass_gate": true}
+{"stage": "v65_fit", "task": "ppbr_az", "partition": "fresh", "seconds": 12}
+{"stage": "v65_fresh", "task": "ppbr_az", "gain": 0.06491143328806892, "pass_gate": true}
+{"stage": "v65_fit", "task": "cyp2d6_veith", "partition": "fresh", "seconds": 30}
+{"stage": "v65_fresh", "task": "cyp2d6_veith", "gain": 0.023546989602057478, "pass_gate": true}
+{"stage": "v65_fit", "task": "cyp2d6_substrate_carbonmangels", "partition": "final", "seconds": 9}
+{"stage": "v65_fit", "task": "clearance_hepatocyte_az", "partition": "final", "seconds": 11}
+{"stage": "v65_fit", "task": "ppbr_az", "partition": "final", "seconds": 13}
+{"stage": "v65_fit", "task": "cyp2d6_veith", "partition": "final", "seconds": 36}
+{"stage": "v65_export", "sha256": "443ececd84320e5e2b93c1d148d98b12e72e6adbb414e1a18cc50e14e52d8ee1", "changed_tasks": {"cyp2d6_substrate_carbonmangels": 135, "clearance_hepatocyte_az": 243, "ppbr_az": 558, "cyp2d6_veith": 2619}}

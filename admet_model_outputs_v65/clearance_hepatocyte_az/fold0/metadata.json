@@ -1,0 +1,125 @@
+{
+  "source_splits": [
+    0
+  ],
+  "target": "clearance_hepatocyte_az",
+  "target_column_removed": true,
+  "source_rows": 52847,
+  "test_source_rows": 0,
+  "other_tasks": [
+    {
+      "task": "ames",
+      "rows": 4684,
+      "observed_identities": 4339
+    },
+    {
+      "task": "bbb_martins",
+      "rows": 1421,
+      "observed_identities": 1368
+    },
+    {
+      "task": "bioavailability_ma",
+      "rows": 448,
+      "observed_identities": 448
+    },
+    {
+      "task": "caco2_wang",
+      "rows": 637,
+      "observed_identities": 599
+    },
+    {
+      "task": "clearance_microsome_az",
+      "rows": 770,
+      "observed_identities": 761
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "rows": 467,
+      "observed_identities": 464
+    },
+    {
+      "task": "cyp2c9_veith",
+      "rows": 8463,
+      "observed_identities": 8299
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "rows": 465,
+      "observed_identities": 463
+    },
+    {
+      "task": "cyp2d6_veith",
+      "rows": 9191,
+      "observed_identities": 9040
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "rows": 468,
+      "observed_identities": 466
+    },
+    {
+      "task": "cyp3a4_veith",
+      "rows": 8628,
+      "observed_identities": 8499
+    },
+    {
+      "task": "dili",
+      "rows": 331,
+      "observed_identities": 331
+    },
+    {
+      "task": "half_life_obach",
+      "rows": 465,
+      "observed_identities": 459
+    },
+    {
+      "task": "herg",
+      "rows": 457,
+      "observed_identities": 426
+    },
+    {
+      "task": "hia_hou",
+      "rows": 403,
+      "observed_identities": 402
+    },
+    {
+      "task": "ld50_zhu",
+      "rows": 3970,
+      "observed_identities": 3946
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "rows": 2940,
+      "observed_identities": 2873
+    },
+    {
+      "task": "pgp_broccatelli",
+      "rows": 851,
+      "observed_identities": 814
+    },
+    {
+      "task": "ppbr_az",
+      "rows": 1952,
+      "observed_identities": 1248
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "rows": 5045,
+      "observed_identities": 4886
+    },
+    {
+      "task": "vdss_lombardo",
+      "rows": 791,
+      "observed_identities": 778
+    }
+  ],
+  "conditional_assay_evaluation": true,
+  "global_scaffold_evaluation": false,
+  "query_other_assay_coverage": 0.875886524822695,
+  "target_aux_values_and_mask_removed": true,
+  "signature": "e61076852771150a792da66f74f5f4132dad8158f4a93786d346b05bfd9c6373",
+  "model_reload_passed": true,
+  "local_gpu_training": false,
+  "test_labels_used": false,
+  "seconds": 14.668376922607422
+}

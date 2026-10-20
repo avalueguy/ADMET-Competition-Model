@@ -1,0 +1,16 @@
+{
+  "version": 64,
+  "baseline_release": "v60",
+  "baseline_sha256": "030689508e9437a8d42d0adb183cc1321530df75fdea467edf92bfdf4b0f925b",
+  "source_versions": [61, 62, 63, 65],
+  "selection_rule": "Only source choices already frozen and fresh-gated can enter. Compare those choices against the same v60 historical proxy. Within each task choose maximum mean CV gain minus 0.1 fold SD, evaluated leave-one-fold-out. If combined selector held mean <=0.001, retain the earliest source already accepted. Never sum improvements or tune fresh gains.",
+  "source_prediction_semantics": "v61/v63/v65 task CV arrays are already raw family predictions; v62 multi-task arrays need graph/hybrid/rank-mean expansion separately within fold. Official valid not used for combined routing. v65 uses conditional official OTHER-assay covariates, separately disclosed.",
+  "cross_source_average": false,
+  "test_baseline": "Actual v60 CSV, never reconstructed historical test predictions",
+  "automatic_upload": false,
+  "test_labels_used": false,
+  "local_gpu_training": false,
+  "exact_official_score": null,
+  "tenth_place_threshold": 50.804792,
+  "limitations": "Historical proxy CV and repeated development labels; leave-fold routing is a stability diagnostic rather than unbiased nested validation. Source controls are not full historical ensemble. No official-score guarantee."
+}

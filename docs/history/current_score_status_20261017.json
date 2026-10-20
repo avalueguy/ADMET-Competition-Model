@@ -1,0 +1,15 @@
+{
+  "recorded_date": "2026-10-17",
+  "timezone": "Asia/Hong_Kong",
+  "current_official_score": null,
+  "current_rank": "outside_top_10",
+  "current_score_upper_bound": 50.804792,
+  "source": "User reports score below current tenth place 50.804792.",
+  "release_prepared": "v60",
+  "experimental_release": "v61",
+  "release_official_score": null,
+  "training_status": "RUNNING",
+  "automatically_uploaded": false,
+  "local_gpu_training": false,
+  "remote_host": "czp123@100.109.143.42"
+}

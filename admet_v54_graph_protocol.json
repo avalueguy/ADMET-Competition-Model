@@ -1,0 +1,17 @@
+{
+  "tasks": ["clearance_hepatocyte_az", "clearance_microsome_az", "half_life_obach", "vdss_lombardo", "ppbr_az"],
+  "steps": 450,
+  "snapshots": [250, 450],
+  "seeds": [270601, 270602],
+  "batch_size": 80,
+  "encoder_lr": 0.00004,
+  "head_lr": 0.00015,
+  "rank_coefficient": 0.30,
+  "distillation": 0.015,
+  "weights": [0.15, 0.35, 0.6, 0.85, 1.0],
+  "validation": "All three scaffold folds; source checkpoint fit excludes queried scaffolds globally. Ranking on raw continuous head outputs; no inverse ECDF quantization. Leave-one-fold selection required. Official valid and fresh source control before release.",
+  "current_official_score": null,
+  "test_labels_used": false,
+  "external_labels": false,
+  "local_gpu_training": false
+}

@@ -1,0 +1,4 @@
+{"stage": "PARTITION_STARTED", "partition": "fold1", "pid": 301004}
+{"stage": "PARTITION_STARTED", "partition": "fold2", "pid": 301005}
+{"stage": "PARTITION_STARTED", "partition": "valid", "pid": 301006}
+{"stage": "SELECTION_RESUMED", "pid": 304473}
