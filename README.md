@@ -1,46 +1,36 @@
-# ADMET Competition Model — 2026-10-20 交接
+# ADMET Competition Model — 当前交接 v366
 
-面向小分子 ADMET 竞赛的多任务模型、历史集成基线、训练协议、预测文件与验证证据。**最新完成的模型分支为 v65；v64 是尚未完成的跨分支汇总流程。当前精确官方得分未知，不能将内部验证增益换算为比赛总分。**
+更新于 2026-11-04（香港时间）。用户反馈的官方最好成绩为 **v364：51.269**；最新 **v366 是尚未取得官方成绩的实验候选**。目标 52 尚未达到。
 
-本仓库为私有交接项目。请给接手者添加仓库访问权限，再分享此仓库及 Release 链接。
-
-## 从这里开始
-
-1. 阅读 [完整交接日志](docs/HANDOFF.md) 和 [当前状态](CURRENT_STATUS.json)。
-2. 获取 [handoff-2026-10-20 Release](https://github.com/avalueguy/ADMET-Competition-Model/releases/tag/handoff-2026-10-20) 的五个 `.tar.gz` 附件；查看 [附件说明](docs/ARTIFACTS.md)。
-3. 按 [恢复与复现](docs/REPRODUCE.md) 校验 SHA256、恢复运行目录和环境。
-4. 先运行轻量检查，再在获授权的远程 CUDA 主机上运行模型重载检查。没有在本机执行 GPU 训练。
-
-## 版本状态
-
-| 版本 | 方法 | 当前状态 | 提交文件 |
-| --- | --- | --- | --- |
-| v60 | 既有集成 + 图核/神经分支 | 历史回退基线 | [v60](admet_submissions/v60/) |
-| v61 | 频率加权稀疏分子指纹核 + 跨任务图表型核 | 已导出、重载通过；额外化学门控缺失 | [v61](admet_submissions/v61/) |
-| v62 | 残差 GINE、虚拟节点、注意力/多层读出、任务门控 | 训练、额外划分、重载、文件复算完成 | [v62](admet_submissions/v62/) |
-| v63 | TabICLv2，结构描述符/图和序列特征 | 条件化、额外划分、重载、文件复算完成 | [v63](admet_submissions/v63/) |
-| v65 | TabICLv2 + 同分子其他公开任务测量值 | 最新完成分支；条件化验证，非完全未知骨架泛化 | [v65](admet_submissions/v65/) |
-| v64 | v61/v62/v63/v65 按任务选择合并 | **未完成，不存在可交付 v64 CSV** | 不应将流程编号视作完成版本 |
-
-所有已导出候选都等待真实平台评测；没有证据证明 v65 的官方得分高于 v60/v61/v62/v63。
-
-## 包含什么
-
-- 根目录的 `admet_*.py` 与协议：保留远程签名所需的原始字节和历史导入依赖。主入口是 `admet_v61_run.py`、`admet_v62_run.py`、`admet_v63_run.py`、`admet_v65_run.py`。
-- `admet_model_outputs_v60` 至 `v65`：轻量结果、逐任务验证、模型重放与训练日志。
-- `admet_submissions/`：实际 CSV 和独立格式/融合复算结果。
-- `docs/`：交接、恢复、实际环境、已知问题与历史说明。
-- Release 附件：必要输入与特征、源图模型、最新分支权重/条件化模型、精确远程源码和历史元数据。总计约 1.46 GB。
-
-原始模型代码包含固定远程路径和源代码哈希校验。**不要直接批量修改路径或换行符再加载旧缓存**；恢复时使用说明中的固定目录。新增实验应另开版本/目录。
-
-## 快速轻量校验
-
-在仓库根目录运行（无需 GPU，无需安装训练库）：
+先读 [当前交接说明](HANDOFF_CURRENT.md)。完整源码在 `admet-v366-source.zip`，固定输入、两阶段证据、六份最终权重及 CSV 在 `admet-v366-runtime.tar.gz.partNNN`，逐文件校验清单为 `handoff-manifest-v366.json`。
 
 ```bash
-python tools/verify_handoff.py
-python admet_release_local_verify.py 65
+python restore_v366_handoff.py --bundle-dir . --destination ../ADMET-v366-restored
 ```
 
-完整推理与训练需要 Release 附件和匹配环境。历史集成的真实基线以 v60 CSV 为准；更早的部分训练权重未归档，不能声称已能对任意新分子完整重建整个历代集成。
+|版本|状态|本轮改动|CSV SHA256|
+|---|---|---|---|
+|v364|官方 51.269，当前最好|脂溶性、溶解度各加入 20% 相关任务迁移图 Transformer|`777eca282b59101463fe02f71802c24502a87ba7352482b24a64943ef81ede79`|
+|v366|实验候选，官方未知|在 v364 上仅更新 LD50，20% 图 Transformer 迁移专家；其余 21 项保留|`45982f798555d88f2c934d187c709091db02841e257c1f2450b470b9a02c04fc`|
+
+v366 的 LD50 四分区 MAE 相对下降 0.708%、0.822%、1.475%、1.073%；骨架 bootstrap 有一区间跨零，未通过严格稳定性验收。PPBR 确认失败，未采用。部分历史集成 OOF 仍为代理，不能保证隐藏测试提分。
+
+GPU 训练只能在用户指定的远端执行。上传内容不含 SSH 密码或访问令牌。当前状态以本节、`HANDOFF_CURRENT.md`、`CURRENT_STATUS.json` 为准；下文保留旧快照，不描述当前进展。
+
+## 历史首页快照：v145
+
+当前有官方成绩证据的最佳版本是 **v145：51.166**，目标为 52。最高分版本的 22 项成绩、代码入口、预测来源、校验记录与后续实验结论见 [成果总览](docs/V145_RESULTS_AND_CODE_GUIDE.md)。
+
+- [v145 官方完整成绩单](docs/platform_scorecard_v145_20261027.json)
+- [v145 路由修复说明](docs/ITERATION_V145_20261027.md) · [CSV 交付校验](docs/v145_local_delivery.json)
+- [v145 代码](tools/v145_feedback_repair.py) · [固定基线重建](tools/v146_current_baseline.py) · [冻结验证门槛](tools/v148_experiment_runner.py)
+- [最近已核验结果 v290](docs/v290_final_status.json) · [v294 可行性审查](docs/v294_context_uncertainty_audit.json) · [v295 推理优化实验代码](tools/v295_v145_context_integration.py)
+- [GitHub 内容范围](docs/GITHUB_UPLOAD_CONTENTS.md) · [状态快照](CURRENT_STATUS.json)
+
+v145 是 v130 与 v144 已有输出的整任务路由修复：保留 v144 的 AMES、CYP2C9 抑制和 CYP2D6 抑制，其余 19 项采用 v130。相对 v130 共改变 6,502 条预测。它不是单个新训练模型，完整复现需要历史输出、数据与权重。
+
+此快照没有经核验优于 v145 的新 CSV。v295 代码已整理，但未核验其远端最终结果，不能当作已完成或已提分版本。内部验证不能保证隐藏测试涨分。当前按用户要求只交付通过原固定门槛的 CSV，由用户手动提交并提供成绩单；不自动上传比赛平台或读取新成绩。
+
+此次更新以源码和证据为主：不包含新数据集、模型权重、特征数组、release 归档、运行环境或 SSH 凭据；v145 CSV 由本地路径和 SHA256 标识，未纳入本次上传。历史仓库及旧 Release 的内容保持原样。
+
+[历史 README 快照](docs/HISTORY_THROUGH_V169.md) · [早期恢复说明](docs/REPRODUCE.md) · [早期交接日志](docs/HANDOFF.md)
