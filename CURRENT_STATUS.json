@@ -1,12 +1,12 @@
 {
-  "handoff_date": "2026-11-04",
+  "handoff_date": "2026-11-06",
   "timezone": "Asia/Hong_Kong",
-  "latest_completed_model_branch": "v366",
+  "latest_completed_model_branch": "v389",
   "latest_completed_model_branch_is_proven_best": false,
-  "rollback_baseline": "v364",
-  "latest_aggregate_plan": "v366",
-  "aggregate_status": "V366_EXPERIMENTAL_DELIVERED_AWAITING_OFFICIAL_FEEDBACK",
-  "official_score": 51.269,
+  "rollback_baseline": "v385_local_csv",
+  "latest_aggregate_plan": "v389_restricted_expert_combination",
+  "aggregate_status": "V389_COMPLETE",
+  "official_score": 51.314,
   "last_user_reported_score_upper_bound": null,
   "target_achieved": false,
   "running_admet_v61_v65_processes_at_snapshot": 0,
@@ -742,7 +742,7 @@
     },
     "245": {
       "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-      "checked_at_utc": "2026-10-29T09:10:43.295639+00:00",
+      "checked_at_utc": "2026-10-29T17:10:43.295639+08:00",
       "training_version": "v244",
       "delivery_version": "v245",
       "baseline": "v145",
@@ -876,7 +876,7 @@
     },
     "251": {
       "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-      "checked_at_utc": "2026-10-29T09:38:35.386763+00:00",
+      "checked_at_utc": "2026-10-29T17:38:35.386763+08:00",
       "training_version": "v250",
       "delivery_version": "v251",
       "baseline": "v145",
@@ -1061,7 +1061,7 @@
     },
     "257": {
       "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-      "checked_at_utc": "2026-10-29T10:11:30.231440+00:00",
+      "checked_at_utc": "2026-10-29T18:11:30.23144+08:00",
       "training_version": "v256",
       "delivery_version": "v257",
       "baseline": "v145",
@@ -1281,7 +1281,7 @@
       "delivery_version": "v265",
       "baseline": "v145",
       "official_baseline_score": 51.166,
-      "at_utc": "2026-10-29T10:28:10.570306+00:00",
+      "at_utc": "2026-10-29T18:28:10.570306+08:00",
       "source_sha256": "39fbb337cd04e8368bf4ac6fef715b3255743b225a1995621d5ba4adc4ffd822",
       "signature": "c5433ebd08cb99c70d614369d3f300abbbdf782f0adf64f0c122243c15abcdd1",
       "completed_target_development_tasks": 2,
@@ -1376,6 +1376,2614 @@
         26621
       ],
       "interpretation": "Replicate-calibrated noise mechanism completed normally. PPBR gains negative on both development folds; hepatocyte .0046228/.0054884 positive but below original .008 development minimum. No fold2/valid prediction or candidate. Do not tune variance prior,kernel weights,optimizer initialization or target transform to retry this rejected route."
+    },
+    "382": {
+      "status": "USER_REPORTED_OFFICIAL_BEST",
+      "version": "v382",
+      "assembly_only": true,
+      "new_training": false,
+      "csv": "admet_submissions/v382_regression9_combined_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+      "csv_sha256": "845b65ac25cf81f4752e638b24bc0ad6cfbed99c271a636f87b9e156f8f13b80",
+      "official_best": 51.271,
+      "new_official_score": null,
+      "experimental_only": true,
+      "strict_stability_confirmed": false,
+      "baseline": {
+        "version": "v374_associated",
+        "official_user_reported": 51.271,
+        "exact_task_mean": 51.27077631818182,
+        "csv": "admet_submissions/v374_mae_experts_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+        "csv_sha256": "fa7feb41ba99dda77b88b3be9427c2c434184ab920945ae6dc60569073a805ac",
+        "source": "docs/platform_scorecard_v374_20261105.json",
+        "platform_uploaded_byte_hash_confirmed": false,
+        "association": "Full human scorecard immediately following v374 delivery; version associated, not explicitly named in this feedback."
+      },
+      "sources": [
+        {
+          "version": "v380",
+          "csv": "admet_submissions/v380_regression9_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+          "sha256": "10407697067b7c84d26833d92aaf37bde1daadeda1a0a030724e7d93330fd297",
+          "tasks": [
+            "lipophilicity_astrazeneca"
+          ],
+          "fusion": [
+            {
+              "task": "lipophilicity_astrazeneca",
+              "config": {
+                "name": "sqrt_polynomial_C30_native",
+                "view": "sqrt_polynomial",
+                "C": 30.0,
+                "mode": "native"
+              },
+              "weight": 0.1,
+              "strict_accepted": false,
+              "rows": 840
+            }
+          ]
+        },
+        {
+          "version": "v381",
+          "csv": "admet_submissions/v381_regression9_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+          "sha256": "0e3ba9f3e560d428ffaf47639d22474310121d4b992f43b6aae679fae7d74a6a",
+          "tasks": [
+            "ppbr_az"
+          ],
+          "fusion": [
+            {
+              "task": "ppbr_az",
+              "config": {
+                "name": "simplex_reg01",
+                "penalty": 0.01,
+                "rank_penalty": 0.0
+              },
+              "weight": 0.25,
+              "strict_accepted": false,
+              "rows": 559
+            }
+          ]
+        }
+      ],
+      "changed_rows": {
+        "ppbr_az": 559,
+        "lipophilicity_astrazeneca": 840
+      },
+      "changed_tasks": [
+        "lipophilicity_astrazeneca",
+        "ppbr_az"
+      ],
+      "unchanged_tasks": 20,
+      "format": {
+        "status": "PASS",
+        "sha256": "845b65ac25cf81f4752e638b24bc0ad6cfbed99c271a636f87b9e156f8f13b80",
+        "rows": 16379,
+        "columns": 6,
+        "tasks": 22,
+        "nonprediction_fields_exact": true,
+        "finite_predictions": true,
+        "unique_task_sample_keys": true,
+        "task_counts": {
+          "ames": 1457,
+          "bbb_martins": 406,
+          "bioavailability_ma": 128,
+          "caco2_wang": 182,
+          "clearance_hepatocyte_az": 243,
+          "clearance_microsome_az": 221,
+          "cyp2c9_substrate_carbonmangels": 135,
+          "cyp2c9_veith": 2419,
+          "cyp2d6_substrate_carbonmangels": 135,
+          "cyp2d6_veith": 2626,
+          "cyp3a4_substrate_carbonmangels": 135,
+          "cyp3a4_veith": 2467,
+          "dili": 96,
+          "half_life_obach": 135,
+          "herg": 132,
+          "hia_hou": 117,
+          "ld50_zhu": 1478,
+          "lipophilicity_astrazeneca": 840,
+          "pgp_broccatelli": 245,
+          "ppbr_az": 559,
+          "solubility_aqsoldb": 1997,
+          "vdss_lombardo": 226
+        },
+        "utf8_bom": true,
+        "crlf_only": true,
+        "official_score": null,
+        "automatically_uploaded": false
+      },
+      "nine_task_mean_relative_MAE_gain_by_part": {
+        "fold0": 0.0028775334440890575,
+        "fold1": 0.0004874412225269685,
+        "fold2": 0.000967816175783697,
+        "valid": 0.0011469435041581136
+      },
+      "five_scored_task_mean_relative_MAE_gain_by_part": {
+        "fold0": 0.005179560199360304,
+        "fold1": 0.0008773942005485434,
+        "fold2": 0.0017420691164106547,
+        "valid": 0.0020644983074846043
+      },
+      "goal_mean_5percent_achieved_local": false,
+      "five_scored_goal_achieved_local": false,
+      "all_fitting_remote": true,
+      "automatic_platform_submission": false,
+      "limitation": "Disjoint experimental updates from repeatedly reused public partitions. Local gains are not official score estimates. Rank task calibrated reference MAEs not original physical-scale errors.",
+      "task_evidence": [
+        {
+          "task": "lipophilicity_astrazeneca",
+          "best": {
+            "name": "sqrt_polynomial_C30_native",
+            "view": "sqrt_polynomial",
+            "C": 30.0,
+            "mode": "native"
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "gain": 0.0018385852721190337,
+              "baseline": 0.48016540927868107,
+              "candidate": 0.4792825842290003
+            },
+            {
+              "part": "fold1",
+              "gain": 0.002023788148649006,
+              "baseline": 0.4548081915781444,
+              "candidate": 0.45388775615012006
+            },
+            {
+              "part": "fold2",
+              "gain": 0.0030283217160421995,
+              "baseline": 0.4709833243780318,
+              "candidate": 0.46955703534892407
+            },
+            {
+              "part": "valid",
+              "gain": 0.006345592239706202,
+              "baseline": 0.4665412147268208,
+              "candidate": 0.4635807344151472
+            }
+          ],
+          "accepted": true
+        },
+        {
+          "task": "ppbr_az",
+          "best": {
+            "name": "simplex_reg01",
+            "penalty": 0.01,
+            "rank_penalty": 0.0
+          },
+          "weight": 0.25,
+          "parts": [
+            {
+              "part": "fold0",
+              "gain": 0.024059215724682486,
+              "baseline": 7.95280971526812,
+              "candidate": 7.761471350711133
+            },
+            {
+              "part": "fold1",
+              "gain": 0.0023631828540937104,
+              "baseline": 7.292895667509342,
+              "candidate": 7.275661221511189
+            },
+            {
+              "part": "fold2",
+              "gain": 0.005682023866011074,
+              "baseline": 8.62639236136588,
+              "candidate": 8.577376994091024
+            },
+            {
+              "part": "valid",
+              "gain": 0.003976899297716821,
+              "baseline": 9.36669542965183,
+              "candidate": 9.32944502517572
+            }
+          ],
+          "accepted": true
+        }
+      ],
+      "official_score": 51.299,
+      "official_score_user_reported": 51.299
+    },
+    "383": {
+      "status": "VERIFIED_EXPERIMENTAL_DELIVERY",
+      "version": "v383",
+      "baseline": {
+        "version": "v382",
+        "official_user_reported": 51.299,
+        "exact_task_mean": 51.29890740909091,
+        "csv": "admet_submissions/v382_regression9_combined_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+        "csv_sha256": "845b65ac25cf81f4752e638b24bc0ad6cfbed99c271a636f87b9e156f8f13b80",
+        "source": "docs/platform_scorecard_v382_20261105.json",
+        "platform_uploaded_byte_hash_confirmed": false,
+        "association": "User explicitly identifies v382 and provides complete 22-task official scorecard."
+      },
+      "csv": "admet_submissions/v383_v382_lipophilicity_rollback/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+      "csv_sha256": "0e3ba9f3e560d428ffaf47639d22474310121d4b992f43b6aae679fae7d74a6a",
+      "changed_rows": {
+        "lipophilicity_astrazeneca": 840
+      },
+      "unchanged_tasks": 21,
+      "new_training": false,
+      "official_score": null,
+      "conditional_task_independent_arithmetic": 51.30011190909091,
+      "conditional_arithmetic_is_official_score": false,
+      "format": {
+        "status": "PASS",
+        "sha256": "0e3ba9f3e560d428ffaf47639d22474310121d4b992f43b6aae679fae7d74a6a",
+        "rows": 16379,
+        "columns": 6,
+        "tasks": 22,
+        "nonprediction_fields_exact": true,
+        "finite_predictions": true,
+        "unique_task_sample_keys": true,
+        "task_counts": {
+          "ames": 1457,
+          "bbb_martins": 406,
+          "bioavailability_ma": 128,
+          "caco2_wang": 182,
+          "clearance_hepatocyte_az": 243,
+          "clearance_microsome_az": 221,
+          "cyp2c9_substrate_carbonmangels": 135,
+          "cyp2c9_veith": 2419,
+          "cyp2d6_substrate_carbonmangels": 135,
+          "cyp2d6_veith": 2626,
+          "cyp3a4_substrate_carbonmangels": 135,
+          "cyp3a4_veith": 2467,
+          "dili": 96,
+          "half_life_obach": 135,
+          "herg": 132,
+          "hia_hou": 117,
+          "ld50_zhu": 1478,
+          "lipophilicity_astrazeneca": 840,
+          "pgp_broccatelli": 245,
+          "ppbr_az": 559,
+          "solubility_aqsoldb": 1997,
+          "vdss_lombardo": 226
+        },
+        "utf8_bom": true,
+        "crlf_only": true,
+        "official_score": null,
+        "automatically_uploaded": false
+      },
+      "note": "Restores the previously scored lipophilicity task. No evidence of new training gain. Subsequent experts compare to full v382, not this rollback."
+    },
+    "384": {
+      "version": "v384",
+      "status": "NO_ELIGIBLE_CANDIDATE",
+      "baseline": {
+        "version": "v382",
+        "official_user_reported": 51.299,
+        "exact_task_mean": 51.29890740909091,
+        "csv": "admet_submissions/v382_regression9_combined_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+        "csv_sha256": "845b65ac25cf81f4752e638b24bc0ad6cfbed99c271a636f87b9e156f8f13b80",
+        "source": "docs/platform_scorecard_v382_20261105.json",
+        "platform_uploaded_byte_hash_confirmed": false,
+        "association": "User explicitly identifies v382 and provides complete 22-task official scorecard."
+      },
+      "signature": "d8a83080c4eafc5c8b118f3a1ec8a946b9ccac2df0c5f074188def4b5b0fae6e",
+      "official_best": 51.299,
+      "new_official_score": null,
+      "csv": null,
+      "accepted_tasks": [],
+      "task_evidence": [
+        {
+          "task": "caco2_wang",
+          "best": {
+            "name": "laplace_C3_r8",
+            "base": "laplace_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.38815645870734267,
+              "candidate": 0.3902319453758436,
+              "gain": -0.005347036283803759
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.3348527606452333,
+              "candidate": 0.33534767967150614,
+              "gain": -0.0014780198476464334
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "ld50_zhu",
+          "best": {
+            "name": "laplace_C30_r0",
+            "base": "laplace_C30",
+            "round": 0
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4623870980111785,
+              "candidate": 0.46306185044375503,
+              "gain": -0.0014592804069983333
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.5305508449297317,
+              "candidate": 0.5314029125028903,
+              "gain": -0.001606005496554132
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "best": {
+            "name": "laplace_C30_r8",
+            "base": "laplace_C30",
+            "round": 8
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4792825842290003,
+              "candidate": 0.48454942992538635,
+              "gain": -0.010989019567357348
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.45388775615012006,
+              "candidate": 0.45498845418996264,
+              "gain": -0.0024250445730872212
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "ppbr_az",
+          "best": {
+            "name": "laplace_C3_r5",
+            "base": "laplace_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 7.761471350711133,
+              "candidate": 7.8514609641861455,
+              "gain": -0.011594401294384351
+            },
+            {
+              "part": "fold1",
+              "baseline": 7.275661221511189,
+              "candidate": 7.353462774640274,
+              "gain": -0.010693399645802229
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "best": {
+            "name": "laplace_C3_r2",
+            "base": "laplace_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.7360725561987135,
+              "candidate": 0.7344929091441051,
+              "gain": 0.002146048023806347
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.7161434295213145,
+              "candidate": 0.7214638001207012,
+              "gain": -0.007429196973772383
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "best": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.25,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 31.964365097329107,
+              "candidate": 31.35410413384088,
+              "gain": 0.019091915688925064,
+              "rank_gain": 0.01150614621082513
+            },
+            {
+              "part": "fold1",
+              "baseline": 29.556240307657728,
+              "candidate": 28.316538440751575,
+              "gain": 0.041943828240730535,
+              "rank_gain": 0.005419798864468639
+            },
+            {
+              "part": "fold2",
+              "baseline": 29.302112399955053,
+              "candidate": 28.476923882217445,
+              "gain": 0.028161400327536588,
+              "rank_gain": 0.0025337598082124657
+            },
+            {
+              "part": "valid",
+              "baseline": 34.67105717549046,
+              "candidate": 32.642238511428076,
+              "gain": 0.05851620427359192,
+              "rank_gain": -0.004906295419422779
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "clearance_microsome_az",
+          "best": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 27.116399993896483,
+              "candidate": 26.68678436907578,
+              "gain": 0.015843387209120766,
+              "rank_gain": 0.005275788234849865
+            },
+            {
+              "part": "fold1",
+              "baseline": 26.81884782509955,
+              "candidate": 26.30127107648008,
+              "gain": 0.019298992708220396,
+              "rank_gain": -0.004424826807348681
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "half_life_obach",
+          "best": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 20.806086576482805,
+              "candidate": 19.544648466030875,
+              "gain": 0.060628321708405195,
+              "rank_gain": -0.005257762059631355
+            },
+            {
+              "part": "fold1",
+              "baseline": 22.383562434963547,
+              "candidate": 21.300721478226098,
+              "gain": 0.04837661386044749,
+              "rank_gain": 0.0012253724603719096
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "vdss_lombardo",
+          "best": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 4.419333877893289,
+              "candidate": 4.2408666023554185,
+              "gain": 0.04038329767990876,
+              "rank_gain": -0.004146201345269662
+            },
+            {
+              "part": "fold1",
+              "baseline": 6.180262281910009,
+              "candidate": 6.104782760013748,
+              "gain": 0.012212996545016211,
+              "rank_gain": -0.006925123179456483
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        }
+      ],
+      "nine_task_mean_relative_MAE_gain_by_part": {
+        "fold0": 0.0,
+        "fold1": 0.0,
+        "fold2": 0.0,
+        "valid": 0.0
+      },
+      "five_scored_task_mean_relative_MAE_gain_by_part": {
+        "fold0": 0.0,
+        "fold1": 0.0,
+        "fold2": 0.0,
+        "valid": 0.0
+      },
+      "goal_mean_5percent_achieved_local": false,
+      "five_scored_goal_achieved_local": false,
+      "full_development_solves": 324,
+      "all_solves_verified": 342,
+      "model_replay_max_error": 0.0,
+      "all_fitting_remote": true,
+      "strict_stability_confirmed": false,
+      "automatic_platform_submission": false,
+      "limitation": "Repeatedly used public partitions, historical controls partly proxy. Four ranking MAEs use calibrated references. Positive direction is not proof of hidden-test improvement."
+    },
+    "385": {
+      "version": "v385",
+      "status": "USER_REPORTED_OFFICIAL_BEST_ASSOCIATED",
+      "baseline": {
+        "version": "v382",
+        "official_user_reported": 51.299,
+        "exact_task_mean": 51.29890740909091,
+        "csv": "admet_submissions/v382_regression9_combined_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+        "csv_sha256": "845b65ac25cf81f4752e638b24bc0ad6cfbed99c271a636f87b9e156f8f13b80",
+        "source": "docs/platform_scorecard_v382_20261105.json",
+        "platform_uploaded_byte_hash_confirmed": false,
+        "association": "User explicitly identifies v382 and provides complete 22-task official scorecard."
+      },
+      "signature": "0f34bbdbd62dc6b78911dae4f937f1c011c76f8bf26e3ecfdf4ca7648788539f",
+      "official_best": 51.299,
+      "new_official_score": null,
+      "csv": "admet_submissions/v385_v382_warped_median_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+      "accepted_tasks": [
+        "ppbr_az"
+      ],
+      "task_evidence": [
+        {
+          "task": "caco2_wang",
+          "best": {
+            "name": "sqrt_native_C3",
+            "view": "sqrt",
+            "mode": "native",
+            "C": 3.0
+          },
+          "weight": 0.25,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.38815645870734267,
+              "candidate": 0.3876741548163386,
+              "gain": 0.00124255021444254
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.3348527606452333,
+              "candidate": 0.3338728918522088,
+              "gain": 0.0029262676262138292
+            },
+            {
+              "part": "fold2",
+              "baseline": 0.3570673877285404,
+              "candidate": 0.35608451120161855,
+              "gain": 0.0027526359468848785
+            },
+            {
+              "part": "valid",
+              "baseline": 0.3583998208980098,
+              "candidate": 0.3593313865708368,
+              "gain": -0.002599235877107429
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "ld50_zhu",
+          "best": {
+            "name": "sqrt_gaussian_rank_C30",
+            "view": "sqrt",
+            "mode": "gaussian_rank",
+            "C": 30.0
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4623870980111785,
+              "candidate": 0.46279814905677497,
+              "gain": -0.0008889760275848554
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.5305508449297317,
+              "candidate": 0.5313132660233623,
+              "gain": -0.001437036809792545
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "best": {
+            "name": "sqrt_gaussian_rank_C30",
+            "view": "sqrt",
+            "mode": "gaussian_rank",
+            "C": 30.0
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4792825842290003,
+              "candidate": 0.478610598297217,
+              "gain": 0.0014020662421194386
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.45388775615012006,
+              "candidate": 0.4526379468287356,
+              "gain": 0.002753564740290328
+            },
+            {
+              "part": "fold2",
+              "baseline": 0.46955703534892407,
+              "candidate": 0.4699187817144003,
+              "gain": -0.000770399202319364
+            },
+            {
+              "part": "valid",
+              "baseline": 0.4635807344151472,
+              "candidate": 0.46164389847411247,
+              "gain": 0.00417799057909132
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "ppbr_az",
+          "best": {
+            "name": "sqrt_gaussian_rank_C30",
+            "view": "sqrt",
+            "mode": "gaussian_rank",
+            "C": 30.0
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 7.761471350711133,
+              "candidate": 7.705649013834862,
+              "gain": 0.007192236414189209
+            },
+            {
+              "part": "fold1",
+              "baseline": 7.275661221511189,
+              "candidate": 7.267399449875723,
+              "gain": 0.0011355355044624657
+            },
+            {
+              "part": "fold2",
+              "baseline": 8.577376994091024,
+              "candidate": 8.568203982520565,
+              "gain": 0.0010694425086804767
+            },
+            {
+              "part": "valid",
+              "baseline": 9.32944502517572,
+              "candidate": 9.316143178537498,
+              "gain": 0.0014257918453163647
+            }
+          ],
+          "accepted": true,
+          "strict_accepted": false
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "best": {
+            "name": "sqrt_native_C3",
+            "view": "sqrt",
+            "mode": "native",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.7360725561987135,
+              "candidate": 0.7350390379218948,
+              "gain": 0.001404098370622612
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.7161434295213145,
+              "candidate": 0.7161992813376424,
+              "gain": -7.79897071251186e-05
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "best": {
+            "name": "sqrt_gaussian_rank_C30",
+            "view": "sqrt",
+            "mode": "gaussian_rank",
+            "C": 30.0
+          },
+          "weight": 0.75,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 31.964365097329107,
+              "candidate": 28.319994857317553,
+              "gain": 0.1140135344129226,
+              "rank_gain": 0.003508017137478392
+            },
+            {
+              "part": "fold1",
+              "baseline": 29.556240307657728,
+              "candidate": 26.452941519351196,
+              "gain": 0.10499639859480023,
+              "rank_gain": 0.01962095318395407
+            },
+            {
+              "part": "fold2",
+              "baseline": 29.302112399955053,
+              "candidate": 27.8850737321312,
+              "gain": 0.048359607951883585,
+              "rank_gain": -0.003820693081490134
+            },
+            {
+              "part": "valid",
+              "baseline": 34.67105717549046,
+              "candidate": 33.589543904063284,
+              "gain": 0.031193547573499326,
+              "rank_gain": -0.047511166558604156
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "clearance_microsome_az",
+          "best": {
+            "name": "sqrt_gaussian_rank_C3",
+            "view": "sqrt",
+            "mode": "gaussian_rank",
+            "C": 3.0
+          },
+          "weight": 0.25,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 27.116399993896483,
+              "candidate": 26.123642358321533,
+              "gain": 0.03661096737761671,
+              "rank_gain": 0.00566622534814365
+            },
+            {
+              "part": "fold1",
+              "baseline": 26.81884782509955,
+              "candidate": 25.88829291740882,
+              "gain": 0.03469779588442392,
+              "rank_gain": 0.00010691404204898891
+            },
+            {
+              "part": "fold2",
+              "baseline": 24.008446759224213,
+              "candidate": 22.331416480822394,
+              "gain": 0.0698516774208849,
+              "rank_gain": -0.000845010202218277
+            },
+            {
+              "part": "valid",
+              "baseline": 29.474799529258988,
+              "candidate": 27.473511819679832,
+              "gain": 0.06789826365375348,
+              "rank_gain": -0.011290468320565683
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "half_life_obach",
+          "best": {
+            "name": "tanimoto_gaussian_rank_C30",
+            "view": "tanimoto",
+            "mode": "gaussian_rank",
+            "C": 30.0
+          },
+          "weight": 0.75,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 20.806086576482805,
+              "candidate": 11.534113215402844,
+              "gain": 0.44563754586891446,
+              "rank_gain": 0.001636652772915359
+            },
+            {
+              "part": "fold1",
+              "baseline": 22.383562434963547,
+              "candidate": 14.54516585902859,
+              "gain": 0.35018539156623407,
+              "rank_gain": 0.0018286197535262172
+            },
+            {
+              "part": "fold2",
+              "baseline": 23.89586253902183,
+              "candidate": 22.95526263542787,
+              "gain": 0.03936245875443768,
+              "rank_gain": -0.009064275216201012
+            },
+            {
+              "part": "valid",
+              "baseline": 23.279000891067103,
+              "candidate": 30.778737439985917,
+              "gain": -0.32216745830344906,
+              "rank_gain": 0.01616013832494334
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "vdss_lombardo",
+          "best": {
+            "name": "tanimoto_gaussian_rank_C30",
+            "view": "tanimoto",
+            "mode": "gaussian_rank",
+            "C": 30.0
+          },
+          "weight": 0.5,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 4.419333877893289,
+              "candidate": 3.5765606365050027,
+              "gain": 0.19070141896362872,
+              "rank_gain": 0.0002554803436471964
+            },
+            {
+              "part": "fold1",
+              "baseline": 6.180262281910009,
+              "candidate": 5.693884247628381,
+              "gain": 0.07869860729135808,
+              "rank_gain": 0.0017936487934075984
+            },
+            {
+              "part": "fold2",
+              "baseline": 3.2070862029384677,
+              "candidate": 2.276075516634634,
+              "gain": 0.2902979924427359,
+              "rank_gain": -0.003013039368740089
+            },
+            {
+              "part": "valid",
+              "baseline": 3.0564171039235655,
+              "candidate": 2.4532234930963086,
+              "gain": 0.19735317213508874,
+              "rank_gain": 0.0025834928692256565
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false
+        }
+      ],
+      "nine_task_mean_relative_MAE_gain_by_part": {
+        "fold0": 0.0007991373793543566,
+        "fold1": 0.00012617061160694065,
+        "fold2": 0.00011882694540894186,
+        "valid": 0.00015842131614626274
+      },
+      "five_scored_task_mean_relative_MAE_gain_by_part": {
+        "fold0": 0.001438447282837842,
+        "fold1": 0.00022710710089249314,
+        "fold2": 0.00021388850173609535,
+        "valid": 0.0002851583690632729
+      },
+      "goal_mean_5percent_achieved_local": false,
+      "five_scored_goal_achieved_local": false,
+      "full_development_solves": 296,
+      "all_solves_verified": 311,
+      "model_replay_max_error": 0.0,
+      "confirmation_bootstrap": {
+        "caco2_wang": [
+          {
+            "part": "fold2",
+            "groups": 109,
+            "ci90": [
+              -0.007497574744431524,
+              0.014339168748074168
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 53,
+            "ci90": [
+              -0.018375623767338343,
+              0.014969699237791989
+            ],
+            "lower_positive": false
+          }
+        ],
+        "lipophilicity_astrazeneca": [
+          {
+            "part": "fold2",
+            "groups": 537,
+            "ci90": [
+              -0.005637689449716779,
+              0.004423979355362014
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 239,
+            "ci90": [
+              -0.0009542211844794994,
+              0.010870360025218085
+            ],
+            "lower_positive": false
+          }
+        ],
+        "ppbr_az": [
+          {
+            "part": "fold2",
+            "groups": 259,
+            "ci90": [
+              -0.0033933644504359657,
+              0.006962943952216183
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 134,
+            "ci90": [
+              -0.005120884816173397,
+              0.00808580191950489
+            ],
+            "lower_positive": false
+          }
+        ],
+        "clearance_hepatocyte_az": [
+          {
+            "part": "fold2",
+            "groups": 175,
+            "ci90": [
+              -0.033718133309899305,
+              0.12246853091809369
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 72,
+            "ci90": [
+              -0.10296096240605385,
+              0.1534204401582197
+            ],
+            "lower_positive": false
+          }
+        ],
+        "clearance_microsome_az": [
+          {
+            "part": "fold2",
+            "groups": 170,
+            "ci90": [
+              0.03998489958119627,
+              0.09897218403164536
+            ],
+            "lower_positive": true
+          },
+          {
+            "part": "valid",
+            "groups": 69,
+            "ci90": [
+              0.030941786889121883,
+              0.10195803400792196
+            ],
+            "lower_positive": true
+          }
+        ],
+        "half_life_obach": [
+          {
+            "part": "fold2",
+            "groups": 108,
+            "ci90": [
+              -0.04242709962089678,
+              0.19567367367280256
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 56,
+            "ci90": [
+              -1.4517231408766729,
+              0.05071028644536295
+            ],
+            "lower_positive": false
+          }
+        ],
+        "vdss_lombardo": [
+          {
+            "part": "fold2",
+            "groups": 158,
+            "ci90": [
+              0.18566464693005783,
+              0.4047303090825819
+            ],
+            "lower_positive": true
+          },
+          {
+            "part": "valid",
+            "groups": 84,
+            "ci90": [
+              -0.020650978634532965,
+              0.318128691640304
+            ],
+            "lower_positive": false
+          }
+        ]
+      },
+      "all_fitting_remote": true,
+      "strict_stability_confirmed": false,
+      "automatic_platform_submission": false,
+      "limitation": "Repeatedly used public partitions, historical controls partly proxy. Four ranking MAEs use calibrated references. Positive direction is not proof of hidden-test improvement.",
+      "csv_sha256": "355d8cf8f67bfd1e81b67f99e476a9780f1737d1e598a795d651bc589eeff1d0",
+      "fusion": [
+        {
+          "task": "ppbr_az",
+          "config": {
+            "name": "sqrt_gaussian_rank_C30",
+            "view": "sqrt",
+            "mode": "gaussian_rank",
+            "C": 30.0
+          },
+          "weight": 0.1,
+          "strict_accepted": false,
+          "rows": 559
+        }
+      ],
+      "changed_rows": {
+        "ppbr_az": 559
+      },
+      "unchanged_tasks": 21,
+      "format": {
+        "status": "PASS",
+        "sha256": "355d8cf8f67bfd1e81b67f99e476a9780f1737d1e598a795d651bc589eeff1d0",
+        "rows": 16379,
+        "columns": 6,
+        "tasks": 22,
+        "nonprediction_fields_exact": true,
+        "finite_predictions": true,
+        "unique_task_sample_keys": true,
+        "task_counts": {
+          "ames": 1457,
+          "bbb_martins": 406,
+          "bioavailability_ma": 128,
+          "caco2_wang": 182,
+          "clearance_hepatocyte_az": 243,
+          "clearance_microsome_az": 221,
+          "cyp2c9_substrate_carbonmangels": 135,
+          "cyp2c9_veith": 2419,
+          "cyp2d6_substrate_carbonmangels": 135,
+          "cyp2d6_veith": 2626,
+          "cyp3a4_substrate_carbonmangels": 135,
+          "cyp3a4_veith": 2467,
+          "dili": 96,
+          "half_life_obach": 135,
+          "herg": 132,
+          "hia_hou": 117,
+          "ld50_zhu": 1478,
+          "lipophilicity_astrazeneca": 840,
+          "pgp_broccatelli": 245,
+          "ppbr_az": 559,
+          "solubility_aqsoldb": 1997,
+          "vdss_lombardo": 226
+        },
+        "utf8_bom": true,
+        "crlf_only": true,
+        "official_score": null,
+        "automatically_uploaded": false
+      },
+      "official_score_user_reported": 51.308,
+      "official_score": 51.308
+    },
+    "386": {
+      "version": "v386",
+      "status": "USER_REPORTED_OFFICIAL",
+      "baseline": {
+        "version": "v385_associated",
+        "official_user_reported": 51.308,
+        "exact_task_mean": 51.308044136363634,
+        "csv": "admet_submissions/v385_v382_warped_median_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+        "csv_sha256": "355d8cf8f67bfd1e81b67f99e476a9780f1737d1e598a795d651bc589eeff1d0",
+        "source": "docs/platform_scorecard_v385_20261106.json",
+        "platform_uploaded_byte_hash_confirmed": false,
+        "association": "User full22 scorecard immediately following v385 delivery; only PPBR changed exactly as expected. Version associated, not explicitly named in this feedback."
+      },
+      "signature": "91e843a18e8b19fb95f0b1f04703e0cf611c9f2c14e299fbd733d213606067a0",
+      "official_best": 51.308,
+      "new_official_score": null,
+      "csv": "admet_submissions/v386_v385_oof_monotone_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+      "accepted_tasks": [
+        "lipophilicity_astrazeneca"
+      ],
+      "task_evidence": [
+        {
+          "task": "caco2_wang",
+          "best": {
+            "name": "sqrt_median_mono02",
+            "base": "sqrt_median",
+            "calibration": "mono02",
+            "penalty": 0.02
+          },
+          "weight": 0.5,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.38815645870734267,
+              "candidate": 0.3815709279879447,
+              "gain": 0.016966175807893145
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.3348527606452333,
+              "candidate": 0.3295052561058406,
+              "gain": 0.015969719135922624
+            },
+            {
+              "part": "fold2",
+              "baseline": 0.3570673877285404,
+              "candidate": 0.35357111578261424,
+              "gain": 0.009791630560739414
+            },
+            {
+              "part": "valid",
+              "baseline": 0.3583998208980098,
+              "candidate": 0.35995322609459496,
+              "gain": -0.004334280058212414
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "valid:MAE不改善"
+          ]
+        },
+        {
+          "task": "ld50_zhu",
+          "best": {
+            "name": "tanimoto_median_mono02",
+            "base": "tanimoto_median",
+            "calibration": "mono02",
+            "penalty": 0.02
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4623870980111785,
+              "candidate": 0.4622847620485202,
+              "gain": 0.00022132097348404243
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.5305508449297317,
+              "candidate": 0.5300414548450522,
+              "gain": 0.0009601154904333539
+            },
+            {
+              "part": "fold2",
+              "baseline": 0.4445216135337673,
+              "candidate": 0.44450573573747754,
+              "gain": 3.5718839773687864e-05
+            },
+            {
+              "part": "valid",
+              "baseline": 0.5148793871172143,
+              "candidate": 0.5166661935261968,
+              "gain": -0.003470339760515157
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "valid:MAE不改善"
+          ]
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "best": {
+            "name": "sqrt_gaussian_rank_mono02",
+            "base": "sqrt_gaussian_rank",
+            "calibration": "mono02",
+            "penalty": 0.02
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4792825842290003,
+              "candidate": 0.47830423467832256,
+              "gain": 0.0020412791594577565
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.45388775615012006,
+              "candidate": 0.45244808968897426,
+              "gain": 0.0031718556881927327
+            },
+            {
+              "part": "fold2",
+              "baseline": 0.46955703534892407,
+              "candidate": 0.4692320316296325,
+              "gain": 0.0006921496108562264
+            },
+            {
+              "part": "valid",
+              "baseline": 0.4635807344151472,
+              "candidate": 0.4615251448027317,
+              "gain": 0.004434156684722468
+            }
+          ],
+          "accepted": true,
+          "strict_accepted": false,
+          "rejection_reasons": []
+        },
+        {
+          "task": "ppbr_az",
+          "best": {
+            "name": "sqrt_gaussian_rank_mono02",
+            "base": "sqrt_gaussian_rank",
+            "calibration": "mono02",
+            "penalty": 0.02
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 7.705649013834862,
+              "candidate": 7.669305112100724,
+              "gain": 0.00471652701399791
+            },
+            {
+              "part": "fold1",
+              "baseline": 7.267399449875723,
+              "candidate": 7.272758248437784,
+              "gain": -0.0007373749852366732
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "fold1:MAE不改善",
+            "开发门槛未过，未运行确认"
+          ]
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "best": {
+            "name": "sqrt_median_mono02",
+            "base": "sqrt_median",
+            "calibration": "mono02",
+            "penalty": 0.02
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.7360725561987135,
+              "candidate": 0.7351528904144525,
+              "gain": 0.0012494227321968934
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.7161434295213145,
+              "candidate": 0.7155464671210804,
+              "gain": 0.0008335793859522312
+            },
+            {
+              "part": "fold2",
+              "baseline": 0.5980757752371045,
+              "candidate": 0.6025119094156247,
+              "gain": -0.007417344694761283
+            },
+            {
+              "part": "valid",
+              "baseline": 0.983661760866286,
+              "candidate": 0.9781107119968937,
+              "gain": 0.005643249631360698
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "fold2:MAE不改善"
+          ]
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "best": {
+            "name": "sqrt_gaussian_rank_mono10",
+            "base": "sqrt_gaussian_rank",
+            "calibration": "mono10",
+            "penalty": 0.1
+          },
+          "weight": 0.75,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 31.964365097329107,
+              "candidate": 28.37916160751849,
+              "gain": 0.11216251218799246,
+              "rank_gain": 0.0026469943722055023
+            },
+            {
+              "part": "fold1",
+              "baseline": 29.556240307657728,
+              "candidate": 26.447563858795025,
+              "gain": 0.10517834530047705,
+              "rank_gain": 0.020797345756442764
+            },
+            {
+              "part": "fold2",
+              "baseline": 29.302112399955053,
+              "candidate": 27.900581572945338,
+              "gain": 0.04783036826423016,
+              "rank_gain": -0.0029914028582339602
+            },
+            {
+              "part": "valid",
+              "baseline": 34.67105717549046,
+              "candidate": 33.6398848781266,
+              "gain": 0.029741587980559536,
+              "rank_gain": -0.04820359984033623
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "fold2:Spearman不改善",
+            "valid:Spearman不改善"
+          ]
+        },
+        {
+          "task": "clearance_microsome_az",
+          "best": {
+            "name": "sqrt_median_raw",
+            "base": "sqrt_median",
+            "calibration": "raw",
+            "penalty": 0.0
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 27.116399993896483,
+              "candidate": 26.6994860471182,
+              "gain": 0.015374974070013897,
+              "rank_gain": 0.0035132070976717777
+            },
+            {
+              "part": "fold1",
+              "baseline": 26.81884782509955,
+              "candidate": 26.458592113590846,
+              "gain": 0.013432930223480464,
+              "rank_gain": -0.004369910380044417
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "fold1:Spearman不改善",
+            "开发门槛未过，未运行确认"
+          ]
+        },
+        {
+          "task": "half_life_obach",
+          "best": {
+            "name": "sqrt_gaussian_rank_mono02",
+            "base": "sqrt_gaussian_rank",
+            "calibration": "mono02",
+            "penalty": 0.02
+          },
+          "weight": 0.75,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 20.806086576482805,
+              "candidate": 11.61189159692615,
+              "gain": 0.4418992945049497,
+              "rank_gain": 0.01269083265250237
+            },
+            {
+              "part": "fold1",
+              "baseline": 22.383562434963547,
+              "candidate": 14.532572438533698,
+              "gain": 0.35074801069942535,
+              "rank_gain": 0.005113834855686505
+            },
+            {
+              "part": "fold2",
+              "baseline": 23.89586253902183,
+              "candidate": 22.874196962294118,
+              "gain": 0.04275491521008451,
+              "rank_gain": -0.022966949549173776
+            },
+            {
+              "part": "valid",
+              "baseline": 23.279000891067103,
+              "candidate": 30.81846400377828,
+              "gain": -0.3238739990599988,
+              "rank_gain": 0.0018368905403581826
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "valid:MAE不改善",
+            "fold2:Spearman不改善"
+          ]
+        },
+        {
+          "task": "vdss_lombardo",
+          "best": {
+            "name": "sqrt_median_raw",
+            "base": "sqrt_median",
+            "calibration": "raw",
+            "penalty": 0.0
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 4.419333877893289,
+              "candidate": 4.251904167598572,
+              "gain": 0.037885734574671,
+              "rank_gain": -0.021329248028338355
+            },
+            {
+              "part": "fold1",
+              "baseline": 6.180262281910009,
+              "candidate": 6.169478371829171,
+              "gain": 0.001744895214625983,
+              "rank_gain": -0.03170021327743833
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "fold0:Spearman不改善",
+            "fold1:Spearman不改善",
+            "开发门槛未过，未运行确认"
+          ]
+        }
+      ],
+      "nine_task_mean_relative_MAE_gain_by_part": {
+        "fold0": 0.00022680879549530627,
+        "fold1": 0.0003524284097991925,
+        "fold2": 7.690551231735848e-05,
+        "valid": 0.0004926840760802742
+      },
+      "five_scored_task_mean_relative_MAE_gain_by_part": {
+        "fold0": 0.0004082558318915513,
+        "fold1": 0.0006343711376385465,
+        "fold2": 0.00013842992217124526,
+        "valid": 0.0008868313369444936
+      },
+      "goal_mean_5percent_achieved_local": false,
+      "five_scored_goal_achieved_local": false,
+      "full_development_base_fits": 216,
+      "full_development_calibration_fits": 108,
+      "prediction_packages_verified": 175,
+      "all_base_fits_verified": 372,
+      "all_calibration_fits_verified": 121,
+      "model_replay_max_error": 0.0,
+      "confirmation_bootstrap": {
+        "caco2_wang": [
+          {
+            "part": "fold2",
+            "groups": 109,
+            "ci90": [
+              -0.02750299268301046,
+              0.053146533989993756
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 53,
+            "ci90": [
+              -0.04551192582223459,
+              0.04462584346043378
+            ],
+            "lower_positive": false
+          }
+        ],
+        "ld50_zhu": [
+          {
+            "part": "fold2",
+            "groups": 9,
+            "ci90": [
+              -0.005917503548206287,
+              0.014854863821734794
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 1930,
+            "ci90": [
+              -0.005192581241624013,
+              -0.001927916679880927
+            ],
+            "lower_positive": false
+          }
+        ],
+        "lipophilicity_astrazeneca": [
+          {
+            "part": "fold2",
+            "groups": 537,
+            "ci90": [
+              -0.0036957319775933603,
+              0.005338971592951023
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 239,
+            "ci90": [
+              -0.0016810127749350805,
+              0.01029689867337725
+            ],
+            "lower_positive": false
+          }
+        ],
+        "solubility_aqsoldb": [
+          {
+            "part": "fold2",
+            "groups": 14,
+            "ci90": [
+              -0.015077381348921622,
+              0.009113312329324504
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 2874,
+            "ci90": [
+              0.003881284422554579,
+              0.0076331216373524855
+            ],
+            "lower_positive": true
+          }
+        ],
+        "clearance_hepatocyte_az": [
+          {
+            "part": "fold2",
+            "groups": 175,
+            "ci90": [
+              -0.036323810713894004,
+              0.1280050502038131
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 72,
+            "ci90": [
+              -0.11084961617531262,
+              0.1439923198255915
+            ],
+            "lower_positive": false
+          }
+        ],
+        "half_life_obach": [
+          {
+            "part": "fold2",
+            "groups": 108,
+            "ci90": [
+              -0.03719189797744846,
+              0.17796868246571373
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 56,
+            "ci90": [
+              -1.4527374277296197,
+              0.027850707262433907
+            ],
+            "lower_positive": false
+          }
+        ]
+      },
+      "all_fitting_remote": true,
+      "strict_stability_confirmed": false,
+      "automatic_platform_submission": false,
+      "limitation": "Repeatedly used public partitions, historical controls partly proxy. Four ranking MAEs use calibrated references. Positive direction is not proof of hidden-test improvement.",
+      "csv_sha256": "3d37c20bf74db5304a3a783683b90e8d18984f3237b3c6813f60310c5363447b",
+      "fusion": [
+        {
+          "task": "lipophilicity_astrazeneca",
+          "config": {
+            "name": "sqrt_gaussian_rank_mono02",
+            "base": "sqrt_gaussian_rank",
+            "calibration": "mono02",
+            "penalty": 0.02
+          },
+          "weight": 0.1,
+          "strict_accepted": false,
+          "rows": 840
+        }
+      ],
+      "changed_rows": {
+        "lipophilicity_astrazeneca": 840
+      },
+      "unchanged_tasks": 21,
+      "format": {
+        "status": "PASS",
+        "sha256": "3d37c20bf74db5304a3a783683b90e8d18984f3237b3c6813f60310c5363447b",
+        "rows": 16379,
+        "columns": 6,
+        "tasks": 22,
+        "nonprediction_fields_exact": true,
+        "finite_predictions": true,
+        "unique_task_sample_keys": true,
+        "task_counts": {
+          "ames": 1457,
+          "bbb_martins": 406,
+          "bioavailability_ma": 128,
+          "caco2_wang": 182,
+          "clearance_hepatocyte_az": 243,
+          "clearance_microsome_az": 221,
+          "cyp2c9_substrate_carbonmangels": 135,
+          "cyp2c9_veith": 2419,
+          "cyp2d6_substrate_carbonmangels": 135,
+          "cyp2d6_veith": 2626,
+          "cyp3a4_substrate_carbonmangels": 135,
+          "cyp3a4_veith": 2467,
+          "dili": 96,
+          "half_life_obach": 135,
+          "herg": 132,
+          "hia_hou": 117,
+          "ld50_zhu": 1478,
+          "lipophilicity_astrazeneca": 840,
+          "pgp_broccatelli": 245,
+          "ppbr_az": 559,
+          "solubility_aqsoldb": 1997,
+          "vdss_lombardo": 226
+        },
+        "utf8_bom": true,
+        "crlf_only": true,
+        "official_score": null,
+        "automatically_uploaded": false
+      },
+      "official_score_user_reported": 51.308,
+      "official_score": 51.308
+    },
+    "387": {
+      "version": "v387",
+      "status": "USER_REPORTED_OFFICIAL_BEST",
+      "baseline": {
+        "version": "v385_associated",
+        "official_user_reported": 51.308,
+        "exact_task_mean": 51.308044136363634,
+        "csv": "admet_submissions/v385_v382_warped_median_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+        "csv_sha256": "355d8cf8f67bfd1e81b67f99e476a9780f1737d1e598a795d651bc589eeff1d0",
+        "source": "docs/platform_scorecard_v385_20261106.json",
+        "platform_uploaded_byte_hash_confirmed": false,
+        "association": "User full22 scorecard immediately following v385 delivery; only PPBR changed exactly as expected. Version associated, not explicitly named in this feedback."
+      },
+      "signature": "c476803dd39bc3b695cd1d0594a5fb05a265a85f15946ed3ac7050a6175c5022",
+      "official_best": 51.308,
+      "new_official_score": null,
+      "csv": "admet_submissions/v387_v385_correlated_metric_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+      "accepted_tasks": [
+        "lipophilicity_astrazeneca"
+      ],
+      "task_evidence": [
+        {
+          "task": "caco2_wang",
+          "best": {
+            "name": "gaussian_full_C30_r2",
+            "base": "gaussian_full_C30",
+            "round": 2
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.38815645870734267,
+              "candidate": 0.3877930289094606,
+              "gain": 0.0009362971805039026
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.3348527606452333,
+              "candidate": 0.3335509102222017,
+              "gain": 0.0038878294463603824
+            },
+            {
+              "part": "fold2",
+              "baseline": 0.3570673877285404,
+              "candidate": 0.3587306136508228,
+              "gain": -0.004658016888248755
+            },
+            {
+              "part": "valid",
+              "baseline": 0.3583998208980098,
+              "candidate": 0.35808019283032244,
+              "gain": 0.0008918198309544603
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "fold2:MAE不改善"
+          ]
+        },
+        {
+          "task": "ld50_zhu",
+          "best": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4623870980111785,
+              "candidate": 0.46280954118919304,
+              "gain": -0.0009136136796021269
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.5305508449297317,
+              "candidate": 0.5315550627612647,
+              "gain": -0.0018927833988579194
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "fold0:MAE不改善",
+            "fold1:MAE不改善",
+            "开发门槛未过，未运行确认"
+          ]
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "best": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4792825842290003,
+              "candidate": 0.47731244709964415,
+              "gain": 0.004110596116329552
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.45388775615012006,
+              "candidate": 0.452027640615731,
+              "gain": 0.004098183987527226
+            },
+            {
+              "part": "fold2",
+              "baseline": 0.46955703534892407,
+              "candidate": 0.4685944169937366,
+              "gain": 0.002050056292889206
+            },
+            {
+              "part": "valid",
+              "baseline": 0.4635807344151472,
+              "candidate": 0.4596720546539987,
+              "gain": 0.008431497409139939
+            }
+          ],
+          "accepted": true,
+          "strict_accepted": false,
+          "rejection_reasons": []
+        },
+        {
+          "task": "ppbr_az",
+          "best": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 7.705649013834862,
+              "candidate": 7.6515545707166925,
+              "gain": 0.007020102138190781
+            },
+            {
+              "part": "fold1",
+              "baseline": 7.267399449875723,
+              "candidate": 7.269828157055414,
+              "gain": -0.0003341920581692154
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "fold1:MAE不改善",
+            "开发门槛未过，未运行确认"
+          ]
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "best": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.7360725561987135,
+              "candidate": 0.7347161069162377,
+              "gain": 0.0018428200739895662
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.7161434295213145,
+              "candidate": 0.7193183862450563,
+              "gain": -0.00443340899722281
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "fold1:MAE不改善",
+            "开发门槛未过，未运行确认"
+          ]
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "best": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.5,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 31.964365097329107,
+              "candidate": 30.626077229842377,
+              "gain": 0.04186811980815962,
+              "rank_gain": 0.017771379990481728
+            },
+            {
+              "part": "fold1",
+              "baseline": 29.556240307657728,
+              "candidate": 27.673736149467427,
+              "gain": 0.06369227407122423,
+              "rank_gain": 0.014210181683949497
+            },
+            {
+              "part": "fold2",
+              "baseline": 29.302112399955053,
+              "candidate": 28.345362115036206,
+              "gain": 0.03265123933250337,
+              "rank_gain": -0.0001587153340976144
+            },
+            {
+              "part": "valid",
+              "baseline": 34.67105717549046,
+              "candidate": 32.07560221203459,
+              "gain": 0.07485941228497184,
+              "rank_gain": 0.0009213955443512223
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "fold2:Spearman不改善"
+          ]
+        },
+        {
+          "task": "clearance_microsome_az",
+          "best": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 27.116399993896483,
+              "candidate": 26.603424810553047,
+              "gain": 0.018917525315266737,
+              "rank_gain": 0.0028858476386857124
+            },
+            {
+              "part": "fold1",
+              "baseline": 26.81884782509955,
+              "candidate": 26.36387106889187,
+              "gain": 0.016964813670401938,
+              "rank_gain": -0.010826198431165335
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "fold1:Spearman不改善",
+            "开发门槛未过，未运行确认"
+          ]
+        },
+        {
+          "task": "half_life_obach",
+          "best": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.25,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 20.806086576482805,
+              "candidate": 17.63855979991955,
+              "gain": 0.15224039200834258,
+              "rank_gain": 0.0029288278180903404
+            },
+            {
+              "part": "fold1",
+              "baseline": 22.383562434963547,
+              "candidate": 19.623967702616177,
+              "gain": 0.1232866636115452,
+              "rank_gain": 0.006656445869944627
+            },
+            {
+              "part": "fold2",
+              "baseline": 23.89586253902183,
+              "candidate": 23.0602997914847,
+              "gain": 0.03496683771814732,
+              "rank_gain": -0.019468702491526324
+            },
+            {
+              "part": "valid",
+              "baseline": 23.279000891067103,
+              "candidate": 25.501396810814878,
+              "gain": -0.09546783945528263,
+              "rank_gain": 0.0005340467682086736
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "valid:MAE不改善",
+            "fold2:Spearman不改善"
+          ]
+        },
+        {
+          "task": "vdss_lombardo",
+          "best": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 4.419333877893289,
+              "candidate": 4.243751113798417,
+              "gain": 0.03973059491458296,
+              "rank_gain": -0.0023242350418823943
+            },
+            {
+              "part": "fold1",
+              "baseline": 6.180262281910009,
+              "candidate": 6.096800427280416,
+              "gain": 0.013504581330454277,
+              "rank_gain": -0.00801907123145984
+            }
+          ],
+          "accepted": false,
+          "strict_accepted": false,
+          "rejection_reasons": [
+            "fold0:Spearman不改善",
+            "fold1:Spearman不改善",
+            "开发门槛未过，未运行确认"
+          ]
+        }
+      ],
+      "nine_task_mean_relative_MAE_gain_by_part": {
+        "fold0": 0.0004567329018143947,
+        "fold1": 0.000455353776391914,
+        "fold2": 0.00022778403254324512,
+        "valid": 0.0009368330454599932
+      },
+      "five_scored_task_mean_relative_MAE_gain_by_part": {
+        "fold0": 0.0008221192232659104,
+        "fold1": 0.0008196367975054451,
+        "fold2": 0.0004100112585778412,
+        "valid": 0.0016862994818279877
+      },
+      "goal_mean_5percent_achieved_local": false,
+      "five_scored_goal_achieved_local": false,
+      "full_development_solves": 324,
+      "all_solves_verified": 405,
+      "model_replay_max_error": 0.0,
+      "all_fitting_remote": true,
+      "strict_stability_confirmed": false,
+      "automatic_platform_submission": false,
+      "limitation": "Repeatedly used public partitions, historical controls partly proxy. Four ranking MAEs use calibrated references. Positive direction is not proof of hidden-test improvement.",
+      "csv_sha256": "97cdbd749fde3ea10c2e55cfea143cfc2e0208b18edc09ebd101feb3d72a77a3",
+      "fusion": [
+        {
+          "task": "lipophilicity_astrazeneca",
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "strict_accepted": false,
+          "rows": 840
+        }
+      ],
+      "changed_rows": {
+        "lipophilicity_astrazeneca": 840
+      },
+      "unchanged_tasks": 21,
+      "format": {
+        "status": "PASS",
+        "sha256": "97cdbd749fde3ea10c2e55cfea143cfc2e0208b18edc09ebd101feb3d72a77a3",
+        "rows": 16379,
+        "columns": 6,
+        "tasks": 22,
+        "nonprediction_fields_exact": true,
+        "finite_predictions": true,
+        "unique_task_sample_keys": true,
+        "task_counts": {
+          "ames": 1457,
+          "bbb_martins": 406,
+          "bioavailability_ma": 128,
+          "caco2_wang": 182,
+          "clearance_hepatocyte_az": 243,
+          "clearance_microsome_az": 221,
+          "cyp2c9_substrate_carbonmangels": 135,
+          "cyp2c9_veith": 2419,
+          "cyp2d6_substrate_carbonmangels": 135,
+          "cyp2d6_veith": 2626,
+          "cyp3a4_substrate_carbonmangels": 135,
+          "cyp3a4_veith": 2467,
+          "dili": 96,
+          "half_life_obach": 135,
+          "herg": 132,
+          "hia_hou": 117,
+          "ld50_zhu": 1478,
+          "lipophilicity_astrazeneca": 840,
+          "pgp_broccatelli": 245,
+          "ppbr_az": 559,
+          "solubility_aqsoldb": 1997,
+          "vdss_lombardo": 226
+        },
+        "utf8_bom": true,
+        "crlf_only": true,
+        "official_score": null,
+        "automatically_uploaded": false
+      },
+      "official_score_user_reported": 51.314,
+      "official_score": 51.314
+    },
+    "388": {
+      "version": "v388",
+      "status": "NO_UNION_NEEDED",
+      "protocol": "docs/v388_union_protocol.json",
+      "protocol_sha256": "e638bfb0d69b317b56944fcb4df04d06f8de532a04f6b848e9c0962436072649",
+      "csv": null,
+      "official_best": 51.308,
+      "new_official_score": null,
+      "baseline": {
+        "version": "v385_associated",
+        "official_user_reported": 51.308,
+        "exact_task_mean": 51.308044136363634,
+        "csv": "admet_submissions/v385_v382_warped_median_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+        "csv_sha256": "355d8cf8f67bfd1e81b67f99e476a9780f1737d1e598a795d651bc589eeff1d0",
+        "source": "docs/platform_scorecard_v385_20261106.json",
+        "platform_uploaded_byte_hash_confirmed": false,
+        "association": "User full22 scorecard immediately following v385 delivery; only PPBR changed exactly as expected. Version associated, not explicitly named in this feedback."
+      },
+      "selected_tasks": {
+        "lipophilicity_astrazeneca": {
+          "source": "v386",
+          "evidence": {
+            "task": "lipophilicity_astrazeneca",
+            "best": {
+              "name": "sqrt_gaussian_rank_mono02",
+              "base": "sqrt_gaussian_rank",
+              "calibration": "mono02",
+              "penalty": 0.02
+            },
+            "weight": 0.1,
+            "parts": [
+              {
+                "part": "fold0",
+                "baseline": 0.4792825842290003,
+                "candidate": 0.47830423467832256,
+                "gain": 0.0020412791594577565
+              },
+              {
+                "part": "fold1",
+                "baseline": 0.45388775615012006,
+                "candidate": 0.45244808968897426,
+                "gain": 0.0031718556881927327
+              },
+              {
+                "part": "fold2",
+                "baseline": 0.46955703534892407,
+                "candidate": 0.4692320316296325,
+                "gain": 0.0006921496108562264
+              },
+              {
+                "part": "valid",
+                "baseline": 0.4635807344151472,
+                "candidate": 0.4615251448027317,
+                "gain": 0.004434156684722468
+              }
+            ],
+            "accepted": true,
+            "strict_accepted": false,
+            "rejection_reasons": []
+          }
+        }
+      },
+      "nine_task_mean_relative_MAE_gain_by_part": {
+        "fold0": 0.00022680879549530627,
+        "fold1": 0.0003524284097991925,
+        "fold2": 7.690551231735848e-05,
+        "valid": 0.0004926840760802742
+      },
+      "five_scored_task_mean_relative_MAE_gain_by_part": {
+        "fold0": 0.0004082558318915513,
+        "fold1": 0.0006343711376385465,
+        "fold2": 0.00013842992217124526,
+        "valid": 0.0008868313369444936
+      },
+      "goal_mean_5percent_achieved_local": false,
+      "five_scored_goal_achieved_local": false,
+      "no_fitting_performed": true,
+      "automatic_platform_submission": false,
+      "overlap_rule": "v386 wins any overlap regardless of relative validation gains; calibration route has fixed priority. No averaging, weight search or molecule routing.",
+      "recommended_source": "v386"
+    },
+    "389": {
+      "version": "v389",
+      "status": "VERIFIED_EXPERIMENTAL_DELIVERY",
+      "baseline": {
+        "version": "v387",
+        "official_user_reported": 51.314,
+        "exact_task_mean": 51.31420581818182,
+        "csv": "admet_submissions/v387_v385_correlated_metric_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+        "csv_sha256": "97cdbd749fde3ea10c2e55cfea143cfc2e0208b18edc09ebd101feb3d72a77a3",
+        "source": "docs/platform_scorecard_v387_20261106.json",
+        "platform_uploaded_byte_hash_confirmed": false,
+        "association": "User explicitly confirms v387 version; full task scorecard supplied."
+      },
+      "official_best": 51.314,
+      "new_official_score": null,
+      "csv": "admet_submissions/v389_v387_restricted_expert_fusion_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+      "task_evidence": [
+        {
+          "task": "caco2_wang",
+          "a": 0.5,
+          "b": 0.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.38815645870734267,
+              "candidate": 0.3815709279879447,
+              "gain": 0.016966175807893145
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.3348527606452333,
+              "candidate": 0.3295052561058406,
+              "gain": 0.015969719135922624
+            },
+            {
+              "part": "fold2",
+              "baseline": 0.3570673877285404,
+              "candidate": 0.35357111578261424,
+              "gain": 0.009791630560739414
+            },
+            {
+              "part": "valid",
+              "baseline": 0.3583998208980098,
+              "candidate": 0.35995322609459496,
+              "gain": -0.004334280058212414
+            }
+          ],
+          "eligible": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "ld50_zhu",
+          "a": 0.05,
+          "b": 0.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4623870980111785,
+              "candidate": 0.4622752967479302,
+              "gain": 0.0002417914853791533
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.5305508449297317,
+              "candidate": 0.5302673249936931,
+              "gain": 0.000534387870169428
+            },
+            {
+              "part": "fold2",
+              "baseline": 0.4445216135337673,
+              "candidate": 0.4444678305731615,
+              "gain": 0.00012099065370120252
+            },
+            {
+              "part": "valid",
+              "baseline": 0.5148793871172143,
+              "candidate": 0.5156720947146304,
+              "gain": -0.0015395986268831874
+            }
+          ],
+          "eligible": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "a": 0.1,
+          "b": 0.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.47731244709964415,
+              "candidate": 0.4770478107609086,
+              "gain": 0.0005544299972557267
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.452027640615731,
+              "candidate": 0.45136958929895443,
+              "gain": 0.001455776721707052
+            },
+            {
+              "part": "fold2",
+              "baseline": 0.4685944169937366,
+              "candidate": 0.46883070655287923,
+              "gain": -0.0005042517592474433
+            },
+            {
+              "part": "valid",
+              "baseline": 0.4596720546539987,
+              "candidate": 0.4582208382387554,
+              "gain": 0.0031570690464000723
+            }
+          ],
+          "eligible": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "ppbr_az",
+          "a": 0.0,
+          "b": 0.05,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 7.705649013834862,
+              "candidate": 7.669845929453075,
+              "gain": 0.004646342484261333
+            },
+            {
+              "part": "fold1",
+              "baseline": 7.267399449875723,
+              "candidate": 7.257895434043271,
+              "gain": 0.0013077602102377975
+            },
+            {
+              "part": "fold2",
+              "baseline": 8.568203982520565,
+              "candidate": 8.535091317644454,
+              "gain": 0.0038645981052343797
+            },
+            {
+              "part": "valid",
+              "baseline": 9.316143178537498,
+              "candidate": 9.254380735441629,
+              "gain": 0.006629615057672936
+            }
+          ],
+          "eligible": true,
+          "strict_accepted": false
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "a": 0.05,
+          "b": 0.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.7360725561987135,
+              "candidate": 0.7352625301347052,
+              "gain": 0.0011004704049713057
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.7161434295213145,
+              "candidate": 0.7153739361482966,
+              "gain": 0.0010744961711542198
+            },
+            {
+              "part": "fold2",
+              "baseline": 0.5980757752371045,
+              "candidate": 0.5997930280576881,
+              "gain": -0.0028712964003645702
+            },
+            {
+              "part": "valid",
+              "baseline": 0.983661760866286,
+              "candidate": 0.9805544213744993,
+              "gain": 0.003158951191769515
+            }
+          ],
+          "eligible": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "a": 0.75,
+          "b": 0.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 31.964365097329107,
+              "candidate": 28.37916160751849,
+              "gain": 0.11216251218799246,
+              "rank_gain": 0.0026469943722055023
+            },
+            {
+              "part": "fold1",
+              "baseline": 29.556240307657728,
+              "candidate": 26.447563858795025,
+              "gain": 0.10517834530047705,
+              "rank_gain": 0.020797345756442764
+            },
+            {
+              "part": "fold2",
+              "baseline": 29.302112399955053,
+              "candidate": 27.900581572945338,
+              "gain": 0.04783036826423016,
+              "rank_gain": -0.0029914028582339602
+            },
+            {
+              "part": "valid",
+              "baseline": 34.67105717549046,
+              "candidate": 33.6398848781266,
+              "gain": 0.029741587980559536,
+              "rank_gain": -0.04820359984033623
+            }
+          ],
+          "eligible": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "clearance_microsome_az",
+          "a": 0.0,
+          "b": 0.05,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 27.116399993896483,
+              "candidate": 26.83933720691611,
+              "gain": 0.010217535773286135,
+              "rank_gain": -0.0013457779957432026
+            },
+            {
+              "part": "fold1",
+              "baseline": 26.81884782509955,
+              "candidate": 26.580549880292878,
+              "gain": 0.0088854654145004,
+              "rank_gain": -0.01082265464351756
+            }
+          ],
+          "eligible": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "half_life_obach",
+          "a": 0.75,
+          "b": 0.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 20.806086576482805,
+              "candidate": 11.61189159692615,
+              "gain": 0.4418992945049497,
+              "rank_gain": 0.01269083265250237
+            },
+            {
+              "part": "fold1",
+              "baseline": 22.383562434963547,
+              "candidate": 14.532572438533698,
+              "gain": 0.35074801069942535,
+              "rank_gain": 0.005113834855686505
+            },
+            {
+              "part": "fold2",
+              "baseline": 23.89586253902183,
+              "candidate": 22.874196962294118,
+              "gain": 0.04275491521008451,
+              "rank_gain": -0.022966949549173776
+            },
+            {
+              "part": "valid",
+              "baseline": 23.279000891067103,
+              "candidate": 30.81846400377828,
+              "gain": -0.3238739990599988,
+              "rank_gain": 0.0018368905403581826
+            }
+          ],
+          "eligible": false,
+          "strict_accepted": false
+        },
+        {
+          "task": "vdss_lombardo",
+          "a": 0.0,
+          "b": 0.05,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 4.419333877893289,
+              "candidate": 4.329037295631717,
+              "gain": 0.020432170267392528,
+              "rank_gain": -0.0017344567106789555
+            },
+            {
+              "part": "fold1",
+              "baseline": 6.180262281910009,
+              "candidate": 6.137380747822151,
+              "gain": 0.006938465089641042,
+              "rank_gain": -0.0039370012965666
+            }
+          ],
+          "eligible": false,
+          "strict_accepted": false
+        }
+      ],
+      "accepted_tasks": [
+        "ppbr_az"
+      ],
+      "nine_task_mean_relative_MAE_gain_by_part": {
+        "fold0": 0.000516260276029037,
+        "fold1": 0.00014530669002642195,
+        "fold2": 0.0004293997894704866,
+        "valid": 0.0007366238952969928
+      },
+      "five_scored_task_mean_relative_MAE_gain_by_part": {
+        "fold0": 0.0009292684968522666,
+        "fold1": 0.0002615520420475595,
+        "fold2": 0.000772919621046876,
+        "valid": 0.0013259230115345872
+      },
+      "goal_mean_5percent_achieved_local": false,
+      "strict_stability_confirmed": false,
+      "all_fitting_and_weight_selection_remote": true,
+      "automatic_platform_submission": false,
+      "local_bootstrap_recomputed": true,
+      "plan_sha256": "a9a148f6d01b6871d3c460f65b636c72be068269e7d65f4d4212c5d13fc46fb4",
+      "source_sha256": "62637015c9117aec44e305321f66e0634a5e270f6c4d8b0c3dc7b6a510880352",
+      "limitations": "Repeated public partitions and previously researched fixed experts; historical controls partly proxy; rank MAE calibrated reference. Local gains do not predict official score.",
+      "csv_sha256": "c02dff23296dd35458ac1e4fb1ceb094bfdc686a7bde5c3de6aed81cf76be20c",
+      "changed_rows": {
+        "ppbr_az": 559
+      },
+      "unchanged_tasks": 21,
+      "fusion": [
+        {
+          "task": "ppbr_az",
+          "baseline_weight": 0.95,
+          "v386_expert_weight": 0.0,
+          "v387_expert_weight": 0.05,
+          "configs": {
+            "v386": {
+              "name": "sqrt_gaussian_rank_mono02",
+              "base": "sqrt_gaussian_rank",
+              "calibration": "mono02",
+              "penalty": 0.02
+            },
+            "v387": {
+              "name": "gaussian_full_C3_r8",
+              "base": "gaussian_full_C3",
+              "round": 8
+            }
+          }
+        }
+      ],
+      "format": {
+        "status": "PASS",
+        "sha256": "c02dff23296dd35458ac1e4fb1ceb094bfdc686a7bde5c3de6aed81cf76be20c",
+        "rows": 16379,
+        "columns": 6,
+        "tasks": 22,
+        "nonprediction_fields_exact": true,
+        "finite_predictions": true,
+        "unique_task_sample_keys": true,
+        "task_counts": {
+          "ames": 1457,
+          "bbb_martins": 406,
+          "bioavailability_ma": 128,
+          "caco2_wang": 182,
+          "clearance_hepatocyte_az": 243,
+          "clearance_microsome_az": 221,
+          "cyp2c9_substrate_carbonmangels": 135,
+          "cyp2c9_veith": 2419,
+          "cyp2d6_substrate_carbonmangels": 135,
+          "cyp2d6_veith": 2626,
+          "cyp3a4_substrate_carbonmangels": 135,
+          "cyp3a4_veith": 2467,
+          "dili": 96,
+          "half_life_obach": 135,
+          "herg": 132,
+          "hia_hou": 117,
+          "ld50_zhu": 1478,
+          "lipophilicity_astrazeneca": 840,
+          "pgp_broccatelli": 245,
+          "ppbr_az": 559,
+          "solubility_aqsoldb": 1997,
+          "vdss_lombardo": 226
+        },
+        "utf8_bom": true,
+        "crlf_only": true,
+        "official_score": null,
+        "automatically_uploaded": false
+      }
     }
   },
   "known_issues": [
@@ -1399,8 +4007,8 @@
     "v83 accepted PPBR improves all four historical-proxy diagnostics, but full v82 OOF and fresh independent labels remain unavailable.",
     "v74 previously modified PPBR and scored below v73; v83 is a different residual method and its official gain remains unproven."
   ],
-  "priority_next_step": "Fit-only audit originalv145other-assay replicate uncertainty mechanism; no scores before fixed protocol",
-  "last_updated_hong_kong": "2026-10-29",
+  "priority_next_step": "Improve molecular representations and scaffold generalization; audit real OOF for the historical ensemble.",
+  "last_updated_hong_kong": "2026-11-06",
   "official_feedback_20261020": {
     "version": 63,
     "score_user_reported": 50.603,
@@ -1501,8 +4109,8 @@
     "official_score_availability": "Reported by user 2026-10-21",
     "official_score_user_reported": 49.8
   },
-  "best_official_version_user_reported": "v145",
-  "best_official_score_user_reported": 51.166,
+  "best_official_version_user_reported": "v387",
+  "best_official_score_user_reported": 51.314,
   "active_iteration_20261021": {
     "status": "V73_PLATFORM_FEEDBACK_RECORDED_ROUTE_AUDIT_COMPLETE",
     "baseline": "v72",
@@ -1541,9 +4149,9 @@
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
     "running_training_processes": 0
   },
-  "best_official_version": "v145",
-  "active_experiment": "v289",
-  "active_experiment_status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "best_official_version": "v387",
+  "active_experiment": null,
+  "active_experiment_status": "V389_COMPLETE_EXPERIMENTAL_CSV_DELIVERED",
   "tenth_place_last_user_reported": 52.7,
   "latest_feedback": {
     "reported_date": "2026-10-23",
@@ -1577,13 +4185,13 @@
     "inference_limit": "Aggregate feedback does not identify which task caused a loss.",
     "next_experiment": "v77: direct ranking vs same-row regression, no assay auxiliary features"
   },
-  "recommended_submission_version": null,
+  "recommended_submission_version": "v387",
   "v77_result": {
     "status": "REJECTED_CONFIRMATION",
     "new_csv": false,
     "reason": "half_life official valid failed same-row regression comparison and proxy fusion"
   },
-  "new_submission_created": false,
+  "new_submission_created": true,
   "running_new_training_processes": 0,
   "v78_result": {
     "status": "NO_ELIGIBLE_CANDIDATE",
@@ -2003,8 +4611,8 @@
     "accepted": [],
     "official_score": null
   },
-  "last_user_reported_official_version": "v145",
-  "last_user_reported_official_score": 51.166,
+  "last_user_reported_official_version": "v387",
+  "last_user_reported_official_score": 51.314,
   "v107_feedback": {
     "version": "v107",
     "official_score_user_reported": 50.909,
@@ -2463,7 +5071,7 @@
     "pause_requested": false,
     "pause_tool_error": "Transport closed",
     "prompt_refresh_status": "UPDATED_V256_FEATURE_PREPARATION_MANUAL_QUIET",
-    "updated_at_utc": "2026-10-29T09:43:00+00:00",
+    "updated_at_utc": "2026-10-29T17:43:00+08:00",
     "current_followup": "docs/v256_followup.json"
   },
   "v169_result": {
@@ -2658,11 +5266,11 @@
     "model_selection_changed": false,
     "acceptance_rules_changed": false
   },
-  "iteration_report": "docs/ITERATION_V175_V181_20261027.md",
+  "iteration_report": "docs/V389_RESULTS_AND_HANDOFF.md",
   "completed_trial_diagnostics": "docs/v186_completed_trial_diagnostics.json",
   "last_known_running_new_training_processes": 0,
   "platform_followup_last_check": {
-    "checked_at_utc": "2026-10-28T08:44:55.163078+00:00",
+    "checked_at_utc": "2026-10-28T16:44:55.163078+08:00",
     "automation_id": "admet",
     "remote": "connect.nmb2.seetacloud.com:25870",
     "ssh": "CONNECTED",
@@ -2735,19 +5343,19 @@
     "suspended_pipeline_pids": [],
     "user_pause": {
       "status": "RESUMED_BY_USER",
-      "requested_at_utc": "2026-10-28T05:55:36.582089+00:00",
+      "requested_at_utc": "2026-10-28T13:55:36.582089+08:00",
       "resume_requires_explicit_user_message": false,
       "training_permitted": true,
       "automatic_submission_permitted": true,
       "scheduled_model_actions_permitted": true,
       "reason": "User explicitly requested continue training and target52. Previous pause revoked; unchanged frozen stable-improvement gates still control submission.",
-      "paused_at_utc": "2026-10-28T05:55:35.080804+00:00",
+      "paused_at_utc": "2026-10-28T13:55:35.080804+08:00",
       "process_pause_verified": true,
       "pause_evidence": "docs/v193_pause_state.json",
       "automation_pause_status": "FAILED_APP_TOOL_TRANSPORT_CLOSED",
       "automation_check_may_still_fire": true,
-      "resume_requested_at_utc": "2026-10-28T06:21:52.869790+00:00",
-      "resumed_at_utc": "2026-10-28T06:22:13.248939+00:00",
+      "resume_requested_at_utc": "2026-10-28T14:21:52.86979+08:00",
+      "resumed_at_utc": "2026-10-28T14:22:13.248939+08:00",
       "resume_requested_by_user": true,
       "resume_evidence": "docs/v193_resume_state.json",
       "automation_resume_status": "ALREADY_ACTIVE_PROMPT_REFRESH_FAILED_TRANSPORT_CLOSED"
@@ -2938,7 +5546,7 @@
     "local_finalizer": "tools/finalize_v190_local.py",
     "frozen_sources_archive": "releases/v189_frozen_sources_20261028.tar.gz",
     "lightgbm_version": "4.7.0",
-    "checked_at_utc": "2026-10-28T05:46:03.575947+00:00",
+    "checked_at_utc": "2026-10-28T13:46:03.575947+08:00",
     "completed_development_tasks": [
       "herg",
       "bbb_martins",
@@ -3081,7 +5689,7 @@
   },
   "v190_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-28T05:46:03.575947+00:00",
+    "checked_at_utc": "2026-10-28T13:46:03.575947+08:00",
     "training_version": "v189",
     "delivery_version": "v190",
     "baseline": "v145",
@@ -3219,7 +5827,7 @@
   },
   "v193_training": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-28T07:01:16.840906+00:00",
+    "checked_at_utc": "2026-10-28T15:01:16.840906+08:00",
     "training_version": "v193",
     "delivery_version": "v194",
     "host": "connect.nmb2.seetacloud.com",
@@ -3255,19 +5863,19 @@
     "first_checkpoint_replay": "docs/v193_first_checkpoint_replay.json",
     "user_pause": {
       "status": "RESUMED_BY_USER",
-      "requested_at_utc": "2026-10-28T05:55:36.582089+00:00",
+      "requested_at_utc": "2026-10-28T13:55:36.582089+08:00",
       "resume_requires_explicit_user_message": false,
       "training_permitted": true,
       "automatic_submission_permitted": true,
       "scheduled_model_actions_permitted": true,
       "reason": "User explicitly requested continue training and target52. Previous pause revoked; unchanged frozen stable-improvement gates still control submission.",
-      "paused_at_utc": "2026-10-28T05:55:35.080804+00:00",
+      "paused_at_utc": "2026-10-28T13:55:35.080804+08:00",
       "process_pause_verified": true,
       "pause_evidence": "docs/v193_pause_state.json",
       "automation_pause_status": "FAILED_APP_TOOL_TRANSPORT_CLOSED",
       "automation_check_may_still_fire": true,
-      "resume_requested_at_utc": "2026-10-28T06:21:52.869790+00:00",
-      "resumed_at_utc": "2026-10-28T06:22:13.248939+00:00",
+      "resume_requested_at_utc": "2026-10-28T14:21:52.86979+08:00",
+      "resumed_at_utc": "2026-10-28T14:22:13.248939+08:00",
       "resume_requested_by_user": true,
       "resume_evidence": "docs/v193_resume_state.json",
       "automation_resume_status": "ALREADY_ACTIVE_PROMPT_REFRESH_FAILED_TRANSPORT_CLOSED"
@@ -3304,26 +5912,26 @@
   },
   "user_pause": {
     "status": "RESUMED_BY_USER",
-    "requested_at_utc": "2026-10-28T05:55:36.582089+00:00",
+    "requested_at_utc": "2026-10-28T13:55:36.582089+08:00",
     "resume_requires_explicit_user_message": false,
     "training_permitted": true,
     "automatic_submission_permitted": true,
     "scheduled_model_actions_permitted": true,
     "reason": "User explicitly requested continue training and target52. Previous pause revoked; unchanged frozen stable-improvement gates still control submission.",
-    "paused_at_utc": "2026-10-28T05:55:35.080804+00:00",
+    "paused_at_utc": "2026-10-28T13:55:35.080804+08:00",
     "process_pause_verified": true,
     "pause_evidence": "docs/v193_pause_state.json",
     "automation_pause_status": "FAILED_APP_TOOL_TRANSPORT_CLOSED",
     "automation_check_may_still_fire": true,
-    "resume_requested_at_utc": "2026-10-28T06:21:52.869790+00:00",
-    "resumed_at_utc": "2026-10-28T06:22:13.248939+00:00",
+    "resume_requested_at_utc": "2026-10-28T14:21:52.86979+08:00",
+    "resumed_at_utc": "2026-10-28T14:22:13.248939+08:00",
     "resume_requested_by_user": true,
     "resume_evidence": "docs/v193_resume_state.json",
     "automation_resume_status": "ALREADY_ACTIVE_PROMPT_REFRESH_FAILED_TRANSPORT_CLOSED"
   },
   "v194_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-28T07:01:16.840906+00:00",
+    "checked_at_utc": "2026-10-28T15:01:16.840906+08:00",
     "training_version": "v193",
     "delivery_version": "v194",
     "baseline": "v145",
@@ -3398,7 +6006,7 @@
   },
   "v197_training": {
     "status": "FAILED_OPTIMIZER_NONCONVERGENCE",
-    "checked_at_utc": "2026-10-28T07:12:24.677411+00:00",
+    "checked_at_utc": "2026-10-28T15:12:24.677411+08:00",
     "training_version": "v197",
     "delivery_version": "v198",
     "host": "connect.nmb2.seetacloud.com",
@@ -3436,7 +6044,7 @@
   },
   "v198_result": {
     "status": "FAILED_OPTIMIZER_NONCONVERGENCE",
-    "checked_at_utc": "2026-10-28T07:10:38.625117+00:00",
+    "checked_at_utc": "2026-10-28T15:10:38.625117+08:00",
     "training_version": "v197",
     "delivery_version": "v198",
     "baseline": "v145",
@@ -3465,11 +6073,11 @@
     "new_upload_performed": false,
     "target_score": 52,
     "target_achieved": false,
-    "finalized_at_utc": "2026-10-28T07:12:24.677411+00:00"
+    "finalized_at_utc": "2026-10-28T15:12:24.677411+08:00"
   },
   "v200_training": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-28T07:23:23.410286+00:00",
+    "checked_at_utc": "2026-10-28T15:23:23.410286+08:00",
     "training_version": "v200",
     "delivery_version": "v201",
     "host": "connect.nmb2.seetacloud.com",
@@ -3526,7 +6134,7 @@
   },
   "v201_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-28T07:23:23.410286+00:00",
+    "checked_at_utc": "2026-10-28T15:23:23.410286+08:00",
     "training_version": "v200",
     "delivery_version": "v201",
     "baseline": "v145",
@@ -3695,14 +6303,14 @@
     "original_objective_unchanged": true,
     "five_mae_models_converged": true,
     "development_nominees": 0,
-    "remote_process_exit_checked_at_utc": "2026-10-28T07:24:07.423242+00:00",
+    "remote_process_exit_checked_at_utc": "2026-10-28T15:24:07.423242+08:00",
     "training_pid_exited": 8385,
     "pipeline_pid_exited": 8386,
     "next_method_requirement": "Do not tune or rerun the rejected additive route; investigate a genuinely different model family under original gates."
   },
   "v204_training": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-28T07:44:58.015767+00:00",
+    "checked_at_utc": "2026-10-28T15:44:58.015767+08:00",
     "training_version": "v204",
     "delivery_version": "v205",
     "host": "connect.nmb2.seetacloud.com",
@@ -3770,7 +6378,7 @@
   },
   "v205_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-28T07:44:58.015767+00:00",
+    "checked_at_utc": "2026-10-28T15:44:58.015767+08:00",
     "training_version": "v204",
     "delivery_version": "v205",
     "baseline": "v145",
@@ -3847,7 +6455,7 @@
   },
   "v207_training": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-28T08:44:55.163078+00:00",
+    "checked_at_utc": "2026-10-28T16:44:55.163078+08:00",
     "training_version": "v207",
     "delivery_version": "v208",
     "host": "connect.nmb2.seetacloud.com",
@@ -3921,7 +6529,7 @@
   },
   "v208_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-28T08:44:55.163078+00:00",
+    "checked_at_utc": "2026-10-28T16:44:55.163078+08:00",
     "training_version": "v207",
     "delivery_version": "v208",
     "baseline": "v145",
@@ -4007,11 +6615,11 @@
     "training_pid_exited": 9284,
     "pipeline_pid_exited": 9285
   },
-  "current_followup": "docs/v289_followup.json",
-  "current_state_checked_at_utc": "2026-10-31T06:21:20.118394+00:00",
+  "current_followup": "docs/V389_RESULTS_AND_HANDOFF.md",
+  "current_state_checked_at_utc": "2026-11-06T06:57:33.170604+00:00",
   "v210_followup": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T03:48:06.984493+00:00",
+    "checked_at_utc": "2026-10-29T11:48:06.984493+08:00",
     "training_version": "v210",
     "delivery_version": "v211",
     "baseline": "v145",
@@ -4148,7 +6756,7 @@
   "automation_prompt_refresh": "SUCCESS_ACTIVE_15MIN_V210",
   "automatic_submission_permitted": false,
   "submission_policy": "USER_MANUAL_SUBMISSION_ONLY",
-  "submission_policy_updated_at_utc": "2026-10-29T02:44:24.868614+00:00",
+  "submission_policy_updated_at_utc": "2026-10-29T10:44:24.868614+08:00",
   "submission_policy_reason": "User revoked automatic submission: send genuinely new CSV only after unchanged stable validation; user decides submission. No Edge upload.",
   "v210_recovery_20261029": {
     "status": "RESUMED_FROZEN_UNFINISHED_ROUTE_ON_USER_INSTANCE",
@@ -4160,13 +6768,13 @@
   },
   "progress_notification_policy": "QUIET_UNTIL_ELIGIBLE_CSV_FAILURE_OR_USER_ACTION",
   "live_progress_table": "docs/TRAINING_LIVE_PROGRESS.md",
-  "last_checked_at_utc": "2026-10-29T05:46:32.205517+00:00",
+  "last_checked_at_utc": "2026-10-29T13:46:32.205517+08:00",
   "running_training_processes": 0,
   "active_training_process_count": 0,
-  "latest_training_observation": "Direct existingv145 component jointleaf refit completed. hERG fails positive developmentpoint,CYP3A4 substrate gains.00232558/.00271918 below unchanged.003minimum. No confirmation opened,noCSV,no prior/seed/topology retry.",
+  "latest_training_observation": "v389 completed remotely. PPBR experimental update only; strict confidence interval gate not passed.",
   "v211_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T03:48:06.984493+00:00",
+    "checked_at_utc": "2026-10-29T11:48:06.984493+08:00",
     "training_version": "v210",
     "delivery_version": "v211",
     "baseline": "v145",
@@ -4266,7 +6874,7 @@
   },
   "v216_followup": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T05:46:32.205517+00:00",
+    "checked_at_utc": "2026-10-29T13:46:32.205517+08:00",
     "training_version": "v216",
     "delivery_version": "v217",
     "baseline": "v145",
@@ -4386,7 +6994,7 @@
   },
   "v217_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T05:46:32.205517+00:00",
+    "checked_at_utc": "2026-10-29T13:46:32.205517+08:00",
     "training_version": "v216",
     "delivery_version": "v217",
     "baseline": "v145",
@@ -4466,7 +7074,7 @@
   },
   "v221_followup": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T06:29:01.596763+00:00",
+    "checked_at_utc": "2026-10-29T14:29:01.596763+08:00",
     "training_version": "v221",
     "delivery_version": "v222",
     "baseline": "v145",
@@ -4512,7 +7120,7 @@
     ],
     "automation_prompt_refresh": "SUCCESS_RECREATED_MISSING_ADMET_AUTOMATION",
     "automation_id": "admet",
-    "last_checked_at_utc": "2026-10-29T06:21:12.828187+00:00",
+    "last_checked_at_utc": "2026-10-29T14:21:12.828187+08:00",
     "completed_development_tasks": 21,
     "saved_development_models": 84,
     "process_identity_and_source_verified": true,
@@ -4535,7 +7143,7 @@
   },
   "v222_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T06:29:01.596763+00:00",
+    "checked_at_utc": "2026-10-29T14:29:01.596763+08:00",
     "training_version": "v221",
     "delivery_version": "v222",
     "baseline": "v145",
@@ -4633,7 +7241,7 @@
   },
   "v224_followup": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T07:16:29.337168+00:00",
+    "checked_at_utc": "2026-10-29T15:16:29.337168+08:00",
     "training_version": "v224",
     "delivery_version": "v225",
     "baseline": "v145",
@@ -4683,7 +7291,7 @@
     ],
     "automation_prompt_refresh": "SUCCESS_V224_QUIET_MANUAL_DELIVERY",
     "progress_evidence": "docs/v224_latest_remote_check.json",
-    "last_checked_at_utc": "2026-10-29T06:55:01.006936+00:00",
+    "last_checked_at_utc": "2026-10-29T14:55:01.006936+08:00",
     "saved_development_models": 84,
     "completed_development_partitions": 42,
     "process_identity_and_source_verified": true,
@@ -4705,7 +7313,7 @@
   },
   "v225_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T07:16:29.337168+00:00",
+    "checked_at_utc": "2026-10-29T15:16:29.337168+08:00",
     "training_version": "v224",
     "delivery_version": "v225",
     "baseline": "v145",
@@ -4829,7 +7437,7 @@
   },
   "v228_followup": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T07:40:52.261265+00:00",
+    "checked_at_utc": "2026-10-29T15:40:52.261265+08:00",
     "training_version": "v228",
     "delivery_version": "v229",
     "baseline": "v145",
@@ -4911,7 +7519,7 @@
   },
   "v229_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T07:40:52.261265+00:00",
+    "checked_at_utc": "2026-10-29T15:40:52.261265+08:00",
     "training_version": "v228",
     "delivery_version": "v229",
     "baseline": "v145",
@@ -5155,7 +7763,7 @@
     "notification_policy": "Quiet healthy training/noeligiblefile; notify eligibleCSV/evidence,substantivefailure,useraction only",
     "local_ssh_session": 80684,
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T07:53:13.619716+00:00",
+    "checked_at_utc": "2026-10-29T15:53:13.619716+08:00",
     "training_version": "v233",
     "delivery_version": "v234",
     "driver_pid": null,
@@ -5217,7 +7825,7 @@
   },
   "v234_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T07:53:13.619716+00:00",
+    "checked_at_utc": "2026-10-29T15:53:13.619716+08:00",
     "training_version": "v233",
     "delivery_version": "v234",
     "baseline": "v145",
@@ -5294,7 +7902,7 @@
     "notification_policy": "Quiet healthy training/noeligiblefile; notify eligibleCSV/evidence,substantivefailure,useraction only",
     "local_ssh_session": 80684,
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T08:42:04.031991+00:00",
+    "checked_at_utc": "2026-10-29T16:42:04.031991+08:00",
     "training_version": "v238",
     "delivery_version": "v239",
     "driver_pid": null,
@@ -5353,7 +7961,7 @@
   },
   "v239_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T08:42:04.031991+00:00",
+    "checked_at_utc": "2026-10-29T16:42:04.031991+08:00",
     "training_version": "v238",
     "delivery_version": "v239",
     "baseline": "v145",
@@ -5632,7 +8240,7 @@
     "protected_tasks": 19,
     "completed_target_development_partitions": 6,
     "saved_development_models": 12,
-    "checked_at_utc": "2026-10-29T09:10:43.295639+00:00",
+    "checked_at_utc": "2026-10-29T17:10:43.295639+08:00",
     "local_ssh_session": 80684,
     "log": "v244_conditional_density.log",
     "worker_logs": "v247_worker_*.log",
@@ -5674,7 +8282,7 @@
   },
   "v245_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T09:10:43.295639+00:00",
+    "checked_at_utc": "2026-10-29T17:10:43.295639+08:00",
     "training_version": "v244",
     "delivery_version": "v245",
     "baseline": "v145",
@@ -5808,7 +8416,7 @@
   },
   "v249_review": {
     "status": "REVIEW_COMPLETE_NO_NEW_MODEL_STARTED",
-    "checked_at_utc": "2026-10-29T09:16:55.525692+00:00",
+    "checked_at_utc": "2026-10-29T17:16:55.525692+08:00",
     "diagnostic": "docs/v249_ionization_error_audit.json",
     "historical_sources_reviewed": [
       "admet_v51_run.py",
@@ -5879,7 +8487,7 @@
     },
     "completed_target_development_partitions": 10,
     "saved_development_models": 10,
-    "checked_at_utc": "2026-10-29T09:38:35.386763+00:00",
+    "checked_at_utc": "2026-10-29T17:38:35.386763+08:00",
     "local_ssh_session": 80684,
     "log": "v250_hierarchical_atom_matching.log",
     "worker_logs": "v253_worker_*.log",
@@ -5919,7 +8527,7 @@
   },
   "v251_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T09:38:35.386763+00:00",
+    "checked_at_utc": "2026-10-29T17:38:35.386763+08:00",
     "training_version": "v250",
     "delivery_version": "v251",
     "baseline": "v145",
@@ -6134,7 +8742,7 @@
     "process_evidence": "docs/v256_remote_start.json",
     "future_model_start_evidence": "docs/v256_remote_start.json",
     "progress_evidence": "docs/v256_latest_remote_check.json",
-    "checked_at_utc": "2026-10-29T10:11:30.231440+00:00",
+    "checked_at_utc": "2026-10-29T18:11:30.23144+08:00",
     "source_and_process_identity_verified": true,
     "local_ssh_session": 80684,
     "tasks": [
@@ -6285,7 +8893,7 @@
   },
   "v257_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
-    "checked_at_utc": "2026-10-29T10:11:30.231440+00:00",
+    "checked_at_utc": "2026-10-29T18:11:30.23144+08:00",
     "training_version": "v256",
     "delivery_version": "v257",
     "baseline": "v145",
@@ -6506,7 +9114,7 @@
     "delivery_version": "v265",
     "baseline": "v145",
     "official_baseline_score": 51.166,
-    "at_utc": "2026-10-29T10:28:10.570306+00:00",
+    "at_utc": "2026-10-29T18:28:10.570306+08:00",
     "source_sha256": "39fbb337cd04e8368bf4ac6fef715b3255743b225a1995621d5ba4adc4ffd822",
     "signature": "c5433ebd08cb99c70d614369d3f300abbbdf782f0adf64f0c122243c15abcdd1",
     "completed_target_development_tasks": 2,
@@ -6609,7 +9217,7 @@
     "delivery_version": "v272",
     "baseline": "v145",
     "official_best": 51.166,
-    "at_utc": "2026-10-30T04:33:28.487682+00:00",
+    "at_utc": "2026-10-30T12:33:28.487682+08:00",
     "development_tasks": 2,
     "development_partitions": 4,
     "new_reference_models_development": 32,
@@ -6785,7 +9393,7 @@
     "baseline": "v145",
     "official_best": 51.166,
     "target_score": 52,
-    "at_utc": "2026-10-30T04:40:40.438023+00:00",
+    "at_utc": "2026-10-30T12:40:40.438023+08:00",
     "tasks": [
       "herg",
       "cyp3a4_substrate_carbonmangels"
@@ -6890,7 +9498,7 @@
     "delivery_version": "v285",
     "baseline": "v145",
     "official_best": 51.166,
-    "at_utc": "2026-10-31T06:12:02.228269+00:00",
+    "at_utc": "2026-10-31T14:12:02.228269+08:00",
     "development_best": [
       {
         "task": "herg",
@@ -6977,7 +9585,7 @@
     "delivery_version": "v290",
     "baseline": "v145",
     "official_best": 51.166,
-    "at_utc": "2026-10-31T06:21:20.118394+00:00",
+    "at_utc": "2026-10-31T14:21:20.118394+08:00",
     "development_partitions": 4,
     "development_seed_models": 8,
     "development_best": [
@@ -7064,7 +9672,7 @@
     ],
     "interpretation": "Original540-column protocol now executed correctly. hERGbothnegative;CYP3A4onefoldnegative. No confirmation/CSV. Complete originalarchive restored after redundant package protection;128members/dependencies PASS."
   },
-  "known_best_version": "v364",
+  "known_best_version": "v387",
   "latest_candidate_official_score": null,
   "active_gpu_training_at_snapshot": false,
   "current_handoff": "docs/HANDOFF_CURRENT.md",
@@ -7159,5 +9767,1811 @@
     "no_confirmation_fallback": true,
     "all_full_weights_retained_remote": true
   },
-  "source_of_official_score": "user-reported full scorecard; platform upload hash unavailable"
+  "source_of_official_score": "user-reported full scorecard; platform upload hash unavailable",
+  "current_training_host": "connect.nmb2.seetacloud.com:25870",
+  "remote_training_running": false,
+  "current_experiment_progress": "docs/V389_RESULTS_AND_HANDOFF.md",
+  "latest_completed_new_server_stage": "v369:NO_ELIGIBLE_CANDIDATE",
+  "remote_optimization_current": {
+    "completed_at_hong_kong": "2026-11-05T15:10:48.275679+08:00",
+    "baseline": {
+      "version": "v364",
+      "official_user_reported": 51.269,
+      "exact_task_mean": 51.26918777272727,
+      "recorded_at_hong_kong": "2026-11-04T15:28:56.689382+08:00",
+      "csv": "admet_submissions/v364_graph_transformer_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261104.csv",
+      "csv_sha256": "777eca282b59101463fe02f71802c24502a87ba7352482b24a64943ef81ede79",
+      "source": "docs/platform_scorecard_v364_20261104.json",
+      "previous_best": "v361",
+      "previous_best_official": 51.24,
+      "delta_task_mean": 0.029659363636369562,
+      "platform_uploaded_byte_hash_confirmed": false,
+      "reason": "User-reported full scorecard improves both changed endpoints, other20 match. Original local strict-validation failures are preserved."
+    },
+    "rounds": [
+      {
+        "version": "v368",
+        "stage": 3,
+        "delivery": {
+          "status": "NO_ELIGIBLE_CANDIDATE",
+          "signature": "380893a239a19d6b031114ad3c444beec5b8365669b51fb70bc1437bb0fb5104",
+          "baseline": "v364",
+          "baseline_official_score": 51.269,
+          "official_score": null,
+          "csv": null,
+          "new_submission_created": false,
+          "no_selection_fallback": true,
+          "training_gpu_remote_only": true
+        },
+        "tasks": [
+          "ames",
+          "clearance_microsome_az",
+          "half_life_obach",
+          "vdss_lombardo"
+        ],
+        "development_jobs": 24,
+        "strict_tasks": [],
+        "experimental_tasks": [],
+        "report": "docs/V368_STAGE3_RESULTS.md",
+        "remote_root": "/root/autodl-tmp/transformer_stage3_v368",
+        "independent_replay_max_error": 0.0
+      },
+      {
+        "version": "v369",
+        "stage": 4,
+        "delivery": {
+          "status": "NO_ELIGIBLE_CANDIDATE",
+          "signature": "6890cf358a41873aeaab2cd52d703b6b2ebfca1ad1822afad6f1ba75016cfe38",
+          "baseline": "v364",
+          "baseline_official_score": 51.269,
+          "official_score": null,
+          "csv": null,
+          "new_submission_created": false,
+          "no_selection_fallback": true,
+          "training_gpu_remote_only": true
+        },
+        "tasks": [
+          "bioavailability_ma",
+          "cyp2c9_substrate_carbonmangels",
+          "cyp2d6_substrate_carbonmangels",
+          "cyp3a4_substrate_carbonmangels"
+        ],
+        "development_jobs": 24,
+        "strict_tasks": [],
+        "experimental_tasks": [],
+        "report": "docs/V369_STAGE4_RESULTS.md",
+        "remote_root": "/root/autodl-tmp/transformer_stage4_v369",
+        "independent_replay_max_error": 0.0
+      },
+      {
+        "version": "v370",
+        "stage": 5,
+        "delivery": {
+          "status": "NO_ELIGIBLE_CANDIDATE",
+          "signature": "357a38eec15721049214c76e77c43e805c5a3225da2a86468a0bc225a9d53848",
+          "baseline": "v364",
+          "baseline_official_score": 51.269,
+          "official_score": null,
+          "csv": null,
+          "new_submission_created": false,
+          "no_selection_fallback": true,
+          "training_gpu_remote_only": true
+        },
+        "tasks": [
+          "caco2_wang",
+          "ld50_zhu",
+          "lipophilicity_astrazeneca",
+          "ppbr_az",
+          "solubility_aqsoldb"
+        ],
+        "development_jobs": 20,
+        "strict_tasks": [],
+        "experimental_tasks": [],
+        "report": "docs/V370_STAGE5_RESULTS.md",
+        "remote_root": "/root/autodl-tmp/transformer_stage5_v370",
+        "independent_replay_max_error": 0.0
+      }
+    ],
+    "new_official_score": null,
+    "training_gpu_remote_only": true,
+    "stage5_all_models_audit": {
+      "status": "PASS",
+      "signature": "357a38eec15721049214c76e77c43e805c5a3225da2a86468a0bc225a9d53848",
+      "source_sha256": "9feb80d3acae209122f8ab135f679556f67afc09d9ba3e0d3b971874d36796c9",
+      "expert_jobs": 20,
+      "checkpoints": 40,
+      "records": [
+        {
+          "task": "caco2_wang",
+          "part": "fold0",
+          "mode": "sam",
+          "query_rows": 212,
+          "fit_rows": 425,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "daf42b5134377e909fa61c84dd14c6d155bbc18c6bdde402f687c9efdd6966f0",
+              "manual_attention_error": 2.384185791015625e-07,
+              "cpu_error": 1.1920928955078125e-07,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "eea1f344ec81b11c276b8f6fd3eeee257bad422f709e76ad2c6a83f7b2f297d3",
+              "manual_attention_error": 5.960464477539063e-08,
+              "cpu_error": 1.1920928955078125e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "caco2_wang",
+          "part": "fold0",
+          "mode": "selfsupervised",
+          "query_rows": 212,
+          "fit_rows": 425,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "74669bbea02935b226c663b2d412fb9ba884f37524a9f6eb80a7bfe559fc5f63",
+              "manual_attention_error": 2.980232238769531e-08,
+              "cpu_error": 1.1920928955078125e-07,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "e6e3dcbb109c83debe6b8ff1f621e11f5296fb78eb729161729b2de67e6e4581",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 2.384185791015625e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "caco2_wang",
+          "part": "fold1",
+          "mode": "sam",
+          "query_rows": 212,
+          "fit_rows": 425,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "2e60d0d845b423afa658c47c79047b2fdb1c48f61aadc695d671d1dde214e052",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 5.960464477539063e-08,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "0bc3f0ed0aa150dcb18791652542a7cdbe326994fea5ad497ceba1c77962e495",
+              "manual_attention_error": 5.960464477539063e-08,
+              "cpu_error": 1.1920928955078125e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "caco2_wang",
+          "part": "fold1",
+          "mode": "selfsupervised",
+          "query_rows": 212,
+          "fit_rows": 425,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "ede5381f802b80c4f819157ddb306c25ba3f539d89b7f73bf24d25acce9bd44e",
+              "manual_attention_error": 2.980232238769531e-08,
+              "cpu_error": 5.960464477539063e-08,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "6cb79d83d843878540613c1455f7ca37b1aed61f21cfa05dfc1e9807d49c722d",
+              "manual_attention_error": 5.960464477539063e-08,
+              "cpu_error": 1.1920928955078125e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "ld50_zhu",
+          "part": "fold0",
+          "mode": "sam",
+          "query_rows": 1210,
+          "fit_rows": 2760,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "50bed94665fc250508255e8e905a4435d5f4251151e1b2592ff25b8ec5566f85",
+              "manual_attention_error": 2.384185791015625e-07,
+              "cpu_error": 2.384185791015625e-07,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "d4e34352c5be28a0949e546012d7da65c3c97696a8217435244faeafef57d62a",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 1.043081283569336e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "ld50_zhu",
+          "part": "fold0",
+          "mode": "selfsupervised",
+          "query_rows": 1210,
+          "fit_rows": 2760,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "11d64eef4f7beb8fe45f1b1620aa852c254a0d3fc782006ed6c06acfa82d9f90",
+              "manual_attention_error": 5.960464477539063e-08,
+              "cpu_error": 1.7881393432617188e-07,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "a0947b79ca0248562fef1005494b5f8d392cc65ef96d8a7ec6d1c4ba308f5a5f",
+              "manual_attention_error": 5.960464477539063e-08,
+              "cpu_error": 8.940696716308594e-08,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "ld50_zhu",
+          "part": "fold1",
+          "mode": "sam",
+          "query_rows": 1210,
+          "fit_rows": 2760,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "8fa4f7a1da5b5105c1acd23ad9fdada2cc23ed2b9d48d14b7321a22c47d91431",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 5.960464477539063e-08,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "39407163b31c64efa1fb5287449cf1bcd6ca0239be3c9f92b558315fcc8c30bd",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 1.1920928955078125e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "ld50_zhu",
+          "part": "fold1",
+          "mode": "selfsupervised",
+          "query_rows": 1210,
+          "fit_rows": 2760,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "e9c8ea16f46cc4a8e5e14de0d77db41df88ef8456222f907ebaf9d3d0901df4b",
+              "manual_attention_error": 5.960464477539063e-08,
+              "cpu_error": 2.384185791015625e-07,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "a51ca688c48276026ab99501ea49b1ed9b32159cf8405b51058cb97f666cb0be",
+              "manual_attention_error": 2.384185791015625e-07,
+              "cpu_error": 5.960464477539063e-08,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "part": "fold0",
+          "mode": "sam",
+          "query_rows": 980,
+          "fit_rows": 1960,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "ccf0508869180af735ac58c82088e0ce871c3af70d7144c2e195d0d06c89cb54",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 2.384185791015625e-07,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "3967eba3cf309f845bc820fa09789f5ad1c53e50fd93813e7596caad50332149",
+              "manual_attention_error": 5.960464477539063e-08,
+              "cpu_error": 8.940696716308594e-08,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "part": "fold0",
+          "mode": "selfsupervised",
+          "query_rows": 980,
+          "fit_rows": 1960,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "f003584b8196472e88b279579cfc6850b84b4e8637ed8e96e346fe6e1a9c520c",
+              "manual_attention_error": 2.980232238769531e-08,
+              "cpu_error": 7.450580596923828e-08,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "9640a84045a9feb7d904c851c799190d6b3db19637edf0b999a0f69d16f82c02",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 1.1920928955078125e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "part": "fold1",
+          "mode": "sam",
+          "query_rows": 980,
+          "fit_rows": 1960,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "6c4aa7d57b520ded45be73dd9984d3f21cfa14e27fe63c1907c6ce3d78ac3842",
+              "manual_attention_error": 5.960464477539063e-08,
+              "cpu_error": 8.940696716308594e-08,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "4e7ba02c949a2f1d1e490bb6c21a1aab5287d003ff5baaf05c5b8fa5ca45e1e4",
+              "manual_attention_error": 2.980232238769531e-08,
+              "cpu_error": 1.1920928955078125e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "part": "fold1",
+          "mode": "selfsupervised",
+          "query_rows": 980,
+          "fit_rows": 1960,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "73f292432c732cac7400ebb0779ad475a6f532e0632d9dd8294ae6229d1fae39",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 5.960464477539063e-08,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "c087a04b79dc645b204fef2fe11afa0cfd13d7a83ae22756206794b73af37711",
+              "manual_attention_error": 4.470348358154297e-08,
+              "cpu_error": 1.341104507446289e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "ppbr_az",
+          "part": "fold0",
+          "mode": "sam",
+          "query_rows": 650,
+          "fit_rows": 1302,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "58674ad2eb75c57d39a703402a3b5d84a2604fa8578e508a431ae9c1156245e5",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 8.940696716308594e-08,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "9e5e912a3bbacd15c2d055f768cd2d24abee59f549047c671ebed01540bfbebe",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 1.1920928955078125e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "ppbr_az",
+          "part": "fold0",
+          "mode": "selfsupervised",
+          "query_rows": 650,
+          "fit_rows": 1302,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "269d027e7695a00c251e36938cf6b3e70ee3567e179f29b586caee0f593827de",
+              "manual_attention_error": 5.960464477539063e-08,
+              "cpu_error": 4.470348358154297e-08,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "b6bbd9774eba18dbc62ddc10bad9cfc6e4ee6dfdb67db0db5aee04d7b61853c4",
+              "manual_attention_error": 5.960464477539063e-08,
+              "cpu_error": 1.1920928955078125e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "ppbr_az",
+          "part": "fold1",
+          "mode": "sam",
+          "query_rows": 651,
+          "fit_rows": 1301,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "d0ad34cb720f0c02bdd905a45e3040f72fbea0317c57e29003374d80b3f1ad77",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 2.384185791015625e-07,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "c2e9e1a81c6438fcec232920d2290b5e071564afe4116f012255ad643b9c5ba4",
+              "manual_attention_error": 5.960464477539063e-08,
+              "cpu_error": 1.7881393432617188e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "ppbr_az",
+          "part": "fold1",
+          "mode": "selfsupervised",
+          "query_rows": 651,
+          "fit_rows": 1301,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "fbaabe318cdbfe4fe1cefabbf4885ecc768f0c0273969334316c3ed9d40fd736",
+              "manual_attention_error": 5.960464477539063e-08,
+              "cpu_error": 2.384185791015625e-07,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "5ac4b42452b06a208f390aec230b1aa6e658f3a3bf73f4eacd8ab93598325389",
+              "manual_attention_error": 5.960464477539063e-08,
+              "cpu_error": 2.384185791015625e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "part": "fold0",
+          "mode": "sam",
+          "query_rows": 1635,
+          "fit_rows": 3410,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "61076a22246115395fa21560ea123a2a46fec4fb034e546ed4d5880818d480fa",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 1.7881393432617188e-07,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "c8003f25e11b0126cd45b198a9cdc98f8c7580770709596a7c23c104897bc6fe",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 1.1920928955078125e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "part": "fold0",
+          "mode": "selfsupervised",
+          "query_rows": 1635,
+          "fit_rows": 3410,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "0b7da501c832497a99424a4a6bdec795c21a8be6669448be8d4736afd6b2fdf5",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 1.1920928955078125e-07,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "be42b570f867b403537ebb6165115224b50c4b462b0c37b6f6bb3ef881d9a670",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 1.1920928955078125e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "part": "fold1",
+          "mode": "sam",
+          "query_rows": 1635,
+          "fit_rows": 3410,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "a656a5ac0e097865fae368201eb6633ee37add41e79651ce4d6772cfce0f0e57",
+              "manual_attention_error": 5.960464477539063e-08,
+              "cpu_error": 8.940696716308594e-08,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "360948ad39be5f92a56b54fdaecb06201feb7f7daaec8b9ef2ec195083e30036",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 1.4901161193847656e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "part": "fold1",
+          "mode": "selfsupervised",
+          "query_rows": 1635,
+          "fit_rows": 3410,
+          "checks": [
+            {
+              "seed": 3701105,
+              "checkpoint_sha256": "95546d8aaaa37e452411c8790fb09dd335750f583bf5429ff8599785fc93773b",
+              "manual_attention_error": 5.960464477539063e-08,
+              "cpu_error": 5.960464477539063e-08,
+              "full_replay_error": 0.0
+            },
+            {
+              "seed": 3701106,
+              "checkpoint_sha256": "529aef13d3b30b670380aa6020488f409ff7bf9c45bfe15fdce78f49dd7a9b99",
+              "manual_attention_error": 1.1920928955078125e-07,
+              "cpu_error": 1.1920928955078125e-07,
+              "full_replay_error": 0.0
+            }
+          ],
+          "query_label_perturbation_invariant": true
+        }
+      ],
+      "full_replay_max_error": 0.0,
+      "manual_attention_max_error": 2.384185791015625e-07,
+      "cpu_max_error": 2.384185791015625e-07,
+      "no_training": true,
+      "no_model_selection": true,
+      "test_labels_accessed": false
+    },
+    "training_host": "connect.nmb2.seetacloud.com:25870",
+    "target_52_achieved": false,
+    "no_confirmation_fallback": true,
+    "no_external_data_or_weights": true,
+    "limitations": [
+      "Partial historical proxy OOF",
+      "Public validation labels repeatedly reused",
+      "Experimental local gains do not guarantee hidden-test improvement"
+    ]
+  },
+  "latest_MAE_expert_round": {
+    "status": "COMPLETE",
+    "version": "v375",
+    "completed_at_utc": "2026-11-05T17:36:49.477518+08:00",
+    "official_best": 51.27,
+    "training_host": "connect.nmb2.seetacloud.com:25870",
+    "delivery": {
+      "status": "NO_ELIGIBLE_CANDIDATE",
+      "signature": "dbe671b5b9a4ec5d513e4a661609c43283301ca5aa64fd627c2792b919829449",
+      "baseline": "v371",
+      "baseline_official_score": 51.27,
+      "official_score": null,
+      "csv": null,
+      "target_five_tasks_ten_percent_achieved_local": false,
+      "ten_percent_all_parts_tasks": [],
+      "approved_tasks": [],
+      "training_gpu_remote_only": true,
+      "all_fitting_remote": true,
+      "automatic_platform_submission": false,
+      "model_replay_max_error": 0.0
+    },
+    "verification": "PASS",
+    "models_verified": 40,
+    "remote_idle": {
+      "no_training_processes_running": true,
+      "experiment_pids": [
+        9326,
+        10407
+      ],
+      "scope": "Both v374/v375 runners and verifiers absent; no GPU compute processes.",
+      "at_unix": 1793871375.8239572,
+      "gpu": "NVIDIA GeForce RTX 3090, 0 MiB, 0 %\n",
+      "gpu_compute_processes": "",
+      "statuses": {
+        "mae_experts_v374": "EVIDENCE_READY",
+        "mae_experts_v375": "EVIDENCE_READY"
+      }
+    },
+    "five_task_ten_percent_goal": false,
+    "official_new_score": null
+  },
+  "latest_MAE_experimental_submission": {
+    "version": "v389",
+    "status": "VERIFIED_EXPERIMENTAL_DELIVERY",
+    "baseline": {
+      "version": "v387",
+      "official_user_reported": 51.314,
+      "exact_task_mean": 51.31420581818182,
+      "csv": "admet_submissions/v387_v385_correlated_metric_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+      "csv_sha256": "97cdbd749fde3ea10c2e55cfea143cfc2e0208b18edc09ebd101feb3d72a77a3",
+      "source": "docs/platform_scorecard_v387_20261106.json",
+      "platform_uploaded_byte_hash_confirmed": false,
+      "association": "User explicitly confirms v387 version; full task scorecard supplied."
+    },
+    "official_best": 51.314,
+    "new_official_score": null,
+    "csv": "admet_submissions/v389_v387_restricted_expert_fusion_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+    "task_evidence": [
+      {
+        "task": "caco2_wang",
+        "a": 0.5,
+        "b": 0.0,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 0.38815645870734267,
+            "candidate": 0.3815709279879447,
+            "gain": 0.016966175807893145
+          },
+          {
+            "part": "fold1",
+            "baseline": 0.3348527606452333,
+            "candidate": 0.3295052561058406,
+            "gain": 0.015969719135922624
+          },
+          {
+            "part": "fold2",
+            "baseline": 0.3570673877285404,
+            "candidate": 0.35357111578261424,
+            "gain": 0.009791630560739414
+          },
+          {
+            "part": "valid",
+            "baseline": 0.3583998208980098,
+            "candidate": 0.35995322609459496,
+            "gain": -0.004334280058212414
+          }
+        ],
+        "eligible": false,
+        "strict_accepted": false
+      },
+      {
+        "task": "ld50_zhu",
+        "a": 0.05,
+        "b": 0.0,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 0.4623870980111785,
+            "candidate": 0.4622752967479302,
+            "gain": 0.0002417914853791533
+          },
+          {
+            "part": "fold1",
+            "baseline": 0.5305508449297317,
+            "candidate": 0.5302673249936931,
+            "gain": 0.000534387870169428
+          },
+          {
+            "part": "fold2",
+            "baseline": 0.4445216135337673,
+            "candidate": 0.4444678305731615,
+            "gain": 0.00012099065370120252
+          },
+          {
+            "part": "valid",
+            "baseline": 0.5148793871172143,
+            "candidate": 0.5156720947146304,
+            "gain": -0.0015395986268831874
+          }
+        ],
+        "eligible": false,
+        "strict_accepted": false
+      },
+      {
+        "task": "lipophilicity_astrazeneca",
+        "a": 0.1,
+        "b": 0.0,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 0.47731244709964415,
+            "candidate": 0.4770478107609086,
+            "gain": 0.0005544299972557267
+          },
+          {
+            "part": "fold1",
+            "baseline": 0.452027640615731,
+            "candidate": 0.45136958929895443,
+            "gain": 0.001455776721707052
+          },
+          {
+            "part": "fold2",
+            "baseline": 0.4685944169937366,
+            "candidate": 0.46883070655287923,
+            "gain": -0.0005042517592474433
+          },
+          {
+            "part": "valid",
+            "baseline": 0.4596720546539987,
+            "candidate": 0.4582208382387554,
+            "gain": 0.0031570690464000723
+          }
+        ],
+        "eligible": false,
+        "strict_accepted": false
+      },
+      {
+        "task": "ppbr_az",
+        "a": 0.0,
+        "b": 0.05,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 7.705649013834862,
+            "candidate": 7.669845929453075,
+            "gain": 0.004646342484261333
+          },
+          {
+            "part": "fold1",
+            "baseline": 7.267399449875723,
+            "candidate": 7.257895434043271,
+            "gain": 0.0013077602102377975
+          },
+          {
+            "part": "fold2",
+            "baseline": 8.568203982520565,
+            "candidate": 8.535091317644454,
+            "gain": 0.0038645981052343797
+          },
+          {
+            "part": "valid",
+            "baseline": 9.316143178537498,
+            "candidate": 9.254380735441629,
+            "gain": 0.006629615057672936
+          }
+        ],
+        "eligible": true,
+        "strict_accepted": false
+      },
+      {
+        "task": "solubility_aqsoldb",
+        "a": 0.05,
+        "b": 0.0,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 0.7360725561987135,
+            "candidate": 0.7352625301347052,
+            "gain": 0.0011004704049713057
+          },
+          {
+            "part": "fold1",
+            "baseline": 0.7161434295213145,
+            "candidate": 0.7153739361482966,
+            "gain": 0.0010744961711542198
+          },
+          {
+            "part": "fold2",
+            "baseline": 0.5980757752371045,
+            "candidate": 0.5997930280576881,
+            "gain": -0.0028712964003645702
+          },
+          {
+            "part": "valid",
+            "baseline": 0.983661760866286,
+            "candidate": 0.9805544213744993,
+            "gain": 0.003158951191769515
+          }
+        ],
+        "eligible": false,
+        "strict_accepted": false
+      },
+      {
+        "task": "clearance_hepatocyte_az",
+        "a": 0.75,
+        "b": 0.0,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 31.964365097329107,
+            "candidate": 28.37916160751849,
+            "gain": 0.11216251218799246,
+            "rank_gain": 0.0026469943722055023
+          },
+          {
+            "part": "fold1",
+            "baseline": 29.556240307657728,
+            "candidate": 26.447563858795025,
+            "gain": 0.10517834530047705,
+            "rank_gain": 0.020797345756442764
+          },
+          {
+            "part": "fold2",
+            "baseline": 29.302112399955053,
+            "candidate": 27.900581572945338,
+            "gain": 0.04783036826423016,
+            "rank_gain": -0.0029914028582339602
+          },
+          {
+            "part": "valid",
+            "baseline": 34.67105717549046,
+            "candidate": 33.6398848781266,
+            "gain": 0.029741587980559536,
+            "rank_gain": -0.04820359984033623
+          }
+        ],
+        "eligible": false,
+        "strict_accepted": false
+      },
+      {
+        "task": "clearance_microsome_az",
+        "a": 0.0,
+        "b": 0.05,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 27.116399993896483,
+            "candidate": 26.83933720691611,
+            "gain": 0.010217535773286135,
+            "rank_gain": -0.0013457779957432026
+          },
+          {
+            "part": "fold1",
+            "baseline": 26.81884782509955,
+            "candidate": 26.580549880292878,
+            "gain": 0.0088854654145004,
+            "rank_gain": -0.01082265464351756
+          }
+        ],
+        "eligible": false,
+        "strict_accepted": false
+      },
+      {
+        "task": "half_life_obach",
+        "a": 0.75,
+        "b": 0.0,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 20.806086576482805,
+            "candidate": 11.61189159692615,
+            "gain": 0.4418992945049497,
+            "rank_gain": 0.01269083265250237
+          },
+          {
+            "part": "fold1",
+            "baseline": 22.383562434963547,
+            "candidate": 14.532572438533698,
+            "gain": 0.35074801069942535,
+            "rank_gain": 0.005113834855686505
+          },
+          {
+            "part": "fold2",
+            "baseline": 23.89586253902183,
+            "candidate": 22.874196962294118,
+            "gain": 0.04275491521008451,
+            "rank_gain": -0.022966949549173776
+          },
+          {
+            "part": "valid",
+            "baseline": 23.279000891067103,
+            "candidate": 30.81846400377828,
+            "gain": -0.3238739990599988,
+            "rank_gain": 0.0018368905403581826
+          }
+        ],
+        "eligible": false,
+        "strict_accepted": false
+      },
+      {
+        "task": "vdss_lombardo",
+        "a": 0.0,
+        "b": 0.05,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 4.419333877893289,
+            "candidate": 4.329037295631717,
+            "gain": 0.020432170267392528,
+            "rank_gain": -0.0017344567106789555
+          },
+          {
+            "part": "fold1",
+            "baseline": 6.180262281910009,
+            "candidate": 6.137380747822151,
+            "gain": 0.006938465089641042,
+            "rank_gain": -0.0039370012965666
+          }
+        ],
+        "eligible": false,
+        "strict_accepted": false
+      }
+    ],
+    "accepted_tasks": [
+      "ppbr_az"
+    ],
+    "nine_task_mean_relative_MAE_gain_by_part": {
+      "fold0": 0.000516260276029037,
+      "fold1": 0.00014530669002642195,
+      "fold2": 0.0004293997894704866,
+      "valid": 0.0007366238952969928
+    },
+    "five_scored_task_mean_relative_MAE_gain_by_part": {
+      "fold0": 0.0009292684968522666,
+      "fold1": 0.0002615520420475595,
+      "fold2": 0.000772919621046876,
+      "valid": 0.0013259230115345872
+    },
+    "goal_mean_5percent_achieved_local": false,
+    "strict_stability_confirmed": false,
+    "all_fitting_and_weight_selection_remote": true,
+    "automatic_platform_submission": false,
+    "local_bootstrap_recomputed": true,
+    "plan_sha256": "a9a148f6d01b6871d3c460f65b636c72be068269e7d65f4d4212c5d13fc46fb4",
+    "source_sha256": "62637015c9117aec44e305321f66e0634a5e270f6c4d8b0c3dc7b6a510880352",
+    "limitations": "Repeated public partitions and previously researched fixed experts; historical controls partly proxy; rank MAE calibrated reference. Local gains do not predict official score.",
+    "csv_sha256": "c02dff23296dd35458ac1e4fb1ceb094bfdc686a7bde5c3de6aed81cf76be20c",
+    "changed_rows": {
+      "ppbr_az": 559
+    },
+    "unchanged_tasks": 21,
+    "fusion": [
+      {
+        "task": "ppbr_az",
+        "baseline_weight": 0.95,
+        "v386_expert_weight": 0.0,
+        "v387_expert_weight": 0.05,
+        "configs": {
+          "v386": {
+            "name": "sqrt_gaussian_rank_mono02",
+            "base": "sqrt_gaussian_rank",
+            "calibration": "mono02",
+            "penalty": 0.02
+          },
+          "v387": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          }
+        }
+      }
+    ],
+    "format": {
+      "status": "PASS",
+      "sha256": "c02dff23296dd35458ac1e4fb1ceb094bfdc686a7bde5c3de6aed81cf76be20c",
+      "rows": 16379,
+      "columns": 6,
+      "tasks": 22,
+      "nonprediction_fields_exact": true,
+      "finite_predictions": true,
+      "unique_task_sample_keys": true,
+      "task_counts": {
+        "ames": 1457,
+        "bbb_martins": 406,
+        "bioavailability_ma": 128,
+        "caco2_wang": 182,
+        "clearance_hepatocyte_az": 243,
+        "clearance_microsome_az": 221,
+        "cyp2c9_substrate_carbonmangels": 135,
+        "cyp2c9_veith": 2419,
+        "cyp2d6_substrate_carbonmangels": 135,
+        "cyp2d6_veith": 2626,
+        "cyp3a4_substrate_carbonmangels": 135,
+        "cyp3a4_veith": 2467,
+        "dili": 96,
+        "half_life_obach": 135,
+        "herg": 132,
+        "hia_hou": 117,
+        "ld50_zhu": 1478,
+        "lipophilicity_astrazeneca": 840,
+        "pgp_broccatelli": 245,
+        "ppbr_az": 559,
+        "solubility_aqsoldb": 1997,
+        "vdss_lombardo": 226
+      },
+      "utf8_bom": true,
+      "crlf_only": true,
+      "official_score": null,
+      "automatically_uploaded": false
+    }
+  },
+  "goal_five_MAE_ten_percent_achieved": false,
+  "official_best_version_user_reported": "v387",
+  "official_best_record": "docs/current_best_after_v387_20261106.json",
+  "official_scorecard_provenance_note": "User supplied full v386/v387 scorecards and explicit version association; uploaded byte hash unavailable.",
+  "regression_goal": "nine task mean relative native-unit MAE reduction at least5percent; scored5 reported separately",
+  "regression_task_count": 9,
+  "latest_regression9_remote_progress": {
+    "at_unix": 1793877233.7383957,
+    "experiments": {
+      "377": {
+        "run_status": {
+          "stage": "EVIDENCE_READY",
+          "pid": 17186,
+          "at_unix": 1793876783.6068332,
+          "seconds": 1638.4496771954,
+          "signature": "b44c3d36fbd9187866bd738a367456e4353c9b88c00b5d84230972ee4040212d"
+        },
+        "launch": {
+          "status": "STARTED",
+          "pid": 17186,
+          "root": "/root/autodl-tmp/regression9_v377"
+        },
+        "development_curves": {
+          "stage": "curve_job_done",
+          "completed": 54,
+          "total": 54
+        },
+        "latest_event": {
+          "stage": "EVIDENCE_READY",
+          "seconds": 1638.4496771954
+        },
+        "curve_states_saved": 64,
+        "prediction_packages_saved": 192,
+        "runner_pid_exists": false
+      },
+      "378": {
+        "run_status": {
+          "stage": "DEVELOPMENT",
+          "pid": 18226,
+          "at_unix": 1793876809.295094,
+          "signature": "e9bc3964a7355838f72b0f3ac81e5edf43ec95f68f99fd77e6a3ae2b73222a93"
+        },
+        "launch": {
+          "status": "STARTED",
+          "pid": 18226,
+          "root": "/root/autodl-tmp/regression9_v378"
+        },
+        "queue_status": {
+          "status": "QUEUED_AFTER_V377",
+          "pid": 17368
+        },
+        "development_curves": {
+          "stage": "curve_job_done",
+          "completed": 1,
+          "total": 36
+        },
+        "latest_event": {
+          "stage": "curve_job_done"
+        },
+        "parallel_prefit": {
+          "completed": 3,
+          "total": 34,
+          "failed": 0
+        },
+        "scheduling": "original driver suspended until independent unchanged curve jobs finish",
+        "curve_states_saved": 4,
+        "prediction_packages_saved": 12,
+        "runner_pid_exists": true
+      }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090, 2285 MiB, 94 %"
+  },
+  "latest_regression9_round": {
+    "status": "COMPLETE",
+    "official_best": {
+      "version": "v374_associated",
+      "official_user_reported": 51.271,
+      "exact_task_mean": 51.27077631818182,
+      "csv": "admet_submissions/v374_mae_experts_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+      "csv_sha256": "fa7feb41ba99dda77b88b3be9427c2c434184ab920945ae6dc60569073a805ac",
+      "source": "docs/platform_scorecard_v374_20261105.json",
+      "platform_uploaded_byte_hash_confirmed": false,
+      "association": "Full human scorecard immediately following v374 delivery; version associated, not explicitly named in this feedback."
+    },
+    "experiments": [
+      {
+        "status": "COMPLETE",
+        "version": "v377",
+        "completed_at_utc": "2026-11-05T20:03:37.872356+08:00",
+        "training_host": "connect.nmb2.seetacloud.com:25870",
+        "official_best": 51.271,
+        "official_new_score": null,
+        "delivery": {
+          "status": "NO_ELIGIBLE_CANDIDATE",
+          "version": "v377",
+          "signature": "b44c3d36fbd9187866bd738a367456e4353c9b88c00b5d84230972ee4040212d",
+          "baseline": "v374_associated",
+          "official_best": 51.271,
+          "new_official_score": null,
+          "csv": null,
+          "accepted_tasks": [],
+          "nine_task_mean_relative_MAE_gain_by_part": {
+            "fold0": 0.0,
+            "fold1": 0.0,
+            "fold2": 0.0,
+            "valid": 0.0
+          },
+          "five_scored_task_mean_relative_MAE_gain_by_part": {
+            "fold0": 0.0,
+            "fold1": 0.0,
+            "fold2": 0.0,
+            "valid": 0.0
+          },
+          "goal_mean_5percent_achieved_local": false,
+          "five_scored_goal_achieved_local": false,
+          "all_fitting_remote": true,
+          "models_verified": 192,
+          "model_replay_max_error": 0.0,
+          "final_model_states": [],
+          "automatic_platform_submission": false,
+          "limitation": "Four ranking task MAE references are fit-label empirical-quantile calibrated score ranks, not recovered historical native predictions. Historical control partly proxy; public labels reused.",
+          "task_evidence": [
+            {
+              "task": "caco2_wang",
+              "best": {
+                "name": "asinh_d3_n3840",
+                "base": "asinh_d3",
+                "rounds": 3840
+              },
+              "weight": 0.1,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": 0.0007240918047600511,
+                  "baseline": 0.38815645870734267,
+                  "candidate": 0.387875397796628
+                },
+                {
+                  "part": "fold1",
+                  "gain": -0.004377571349510107,
+                  "baseline": 0.3348527606452333,
+                  "candidate": 0.3363186024965382
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "ld50_zhu",
+              "best": {
+                "name": "asinh_d3_n3840",
+                "base": "asinh_d3",
+                "rounds": 3840
+              },
+              "weight": 0.1,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": -0.0011020377162797514,
+                  "baseline": 0.4623870980111785,
+                  "candidate": 0.46289666603270796
+                },
+                {
+                  "part": "fold1",
+                  "gain": -0.00022592963676758203,
+                  "baseline": 0.5305508449297317,
+                  "candidate": 0.5306707120894134
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "lipophilicity_astrazeneca",
+              "best": {
+                "name": "asinh_d3_n3840",
+                "base": "asinh_d3",
+                "rounds": 3840
+              },
+              "weight": 0.1,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": -0.008232621551487193,
+                  "baseline": 0.48016540927868107,
+                  "candidate": 0.4841184293753874
+                },
+                {
+                  "part": "fold1",
+                  "gain": -0.0035048258353127834,
+                  "baseline": 0.4548081915781444,
+                  "candidate": 0.45640221507809936
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "ppbr_az",
+              "best": {
+                "name": "native_d3_n3840",
+                "base": "native_d3",
+                "rounds": 3840
+              },
+              "weight": 0.1,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": 0.0010672173204087278,
+                  "baseline": 7.95280971526812,
+                  "candidate": 7.944322338994071
+                },
+                {
+                  "part": "fold1",
+                  "gain": 0.0014854927587079371,
+                  "baseline": 7.292895667509342,
+                  "candidate": 7.282062123805244
+                },
+                {
+                  "part": "fold2",
+                  "gain": 0.0012105976646238925,
+                  "baseline": 8.62639236136588,
+                  "candidate": 8.615949270919081
+                },
+                {
+                  "part": "valid",
+                  "gain": -0.013018936780709665,
+                  "baseline": 9.36669542965183,
+                  "candidate": 9.48863984529463
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "solubility_aqsoldb",
+              "best": {
+                "name": "native_d6_n3840",
+                "base": "native_d6",
+                "rounds": 3840
+              },
+              "weight": 0.1,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": -0.00024139909606357314,
+                  "baseline": 0.7360725561987135,
+                  "candidate": 0.736250243448417
+                },
+                {
+                  "part": "fold1",
+                  "gain": -0.0002764575228471281,
+                  "baseline": 0.7161434295213145,
+                  "candidate": 0.7163414127598432
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "clearance_hepatocyte_az",
+              "best": {
+                "name": "native_d3_n3840",
+                "base": "native_d3",
+                "rounds": 3840
+              },
+              "weight": 0.5,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": 0.054799330101672844,
+                  "baseline": 31.964365097329107,
+                  "candidate": 30.21273930287018,
+                  "rank_gain": 0.003494094453298291
+                },
+                {
+                  "part": "fold1",
+                  "gain": 0.05891633849819413,
+                  "baseline": 29.556240307657728,
+                  "candidate": 27.814894848957795,
+                  "rank_gain": 0.00876538044804831
+                },
+                {
+                  "part": "fold2",
+                  "gain": 0.058182357330235475,
+                  "baseline": 29.302112399955053,
+                  "candidate": 27.597246425770145,
+                  "rank_gain": -0.005228697549277128
+                },
+                {
+                  "part": "valid",
+                  "gain": 0.06002940123752732,
+                  "baseline": 34.67105717549046,
+                  "candidate": 32.58977437297369,
+                  "rank_gain": -0.03664284432322634
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "clearance_microsome_az",
+              "best": {
+                "name": "native_d3_n1920",
+                "base": "native_d3",
+                "rounds": 1920
+              },
+              "weight": 0.5,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": 0.0757093912385688,
+                  "baseline": 27.116399993896483,
+                  "candidate": 25.06343385777705,
+                  "rank_gain": 0.0074279598038076156
+                },
+                {
+                  "part": "fold1",
+                  "gain": 0.05911690378300986,
+                  "baseline": 26.81884782509955,
+                  "candidate": 25.233400578651956,
+                  "rank_gain": 0.024298717387439495
+                },
+                {
+                  "part": "fold2",
+                  "gain": 0.09155481643444124,
+                  "baseline": 24.008446759224213,
+                  "candidate": 21.810357823307385,
+                  "rank_gain": -0.03375073143799212
+                },
+                {
+                  "part": "valid",
+                  "gain": 0.1443244696158427,
+                  "baseline": 29.474799529258988,
+                  "candidate": 25.220864720165395,
+                  "rank_gain": -0.038038950852571585
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "half_life_obach",
+              "best": {
+                "name": "native_d6_n640",
+                "base": "native_d6",
+                "rounds": 640
+              },
+              "weight": 0.25,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": 0.15493999230327027,
+                  "baseline": 20.806086576482805,
+                  "candidate": 17.582391682461385,
+                  "rank_gain": 0.006774061266768938
+                },
+                {
+                  "part": "fold1",
+                  "gain": 0.12827239471863455,
+                  "baseline": 22.383562434963547,
+                  "candidate": 19.512369279096703,
+                  "rank_gain": 0.009822661534028887
+                },
+                {
+                  "part": "fold2",
+                  "gain": 0.03813693994986415,
+                  "baseline": 23.89586253902183,
+                  "candidate": 22.984547464320947,
+                  "rank_gain": 0.01777409903756333
+                },
+                {
+                  "part": "valid",
+                  "gain": -0.09234823172690322,
+                  "baseline": 23.279000891067103,
+                  "candidate": 25.428775459726154,
+                  "rank_gain": 0.02979245729264779
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "vdss_lombardo",
+              "best": {
+                "name": "native_d6_n640",
+                "base": "native_d6",
+                "rounds": 640
+              },
+              "weight": 0.25,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": 0.10251531440262632,
+                  "baseline": 4.419333877893289,
+                  "candidate": 3.9662844759508804,
+                  "rank_gain": 0.0002868692668448469
+                },
+                {
+                  "part": "fold1",
+                  "gain": 0.04084105037972855,
+                  "baseline": 6.180262281910009,
+                  "candidate": 5.927853878694586,
+                  "rank_gain": 0.0014520999773751653
+                },
+                {
+                  "part": "fold2",
+                  "gain": 0.1640344391980728,
+                  "baseline": 3.2070862029384677,
+                  "candidate": 2.6810136161795795,
+                  "rank_gain": -0.0016878426938867763
+                },
+                {
+                  "part": "valid",
+                  "gain": 0.10006559992615853,
+                  "baseline": 3.0564171039235655,
+                  "candidate": 2.750574892794882,
+                  "rank_gain": -0.0013903337351509615
+                }
+              ],
+              "accepted": false
+            }
+          ]
+        },
+        "models_verified": 192,
+        "remote_idle": {
+          "status": "PASS",
+          "at_unix": 1793880028.069085,
+          "no_training_processes_running": true,
+          "experiment_pids": [
+            17186,
+            18226
+          ],
+          "gpu": "NVIDIA GeForce RTX 3090, 0 MiB, 0 %\n",
+          "gpu_compute_processes": "",
+          "statuses": {
+            "regression9_v377": "EVIDENCE_READY",
+            "regression9_v378": "EVIDENCE_READY"
+          },
+          "scope": "Both v377/v378 runners and verifiers absent; no GPU compute processes."
+        },
+        "late_better_on_both_parts": 16,
+        "total_task_base_pairs": 27
+      },
+      {
+        "status": "COMPLETE",
+        "version": "v378",
+        "completed_at_utc": "2026-11-05T20:03:37.872356+08:00",
+        "training_host": "connect.nmb2.seetacloud.com:25870",
+        "official_best": 51.271,
+        "official_new_score": null,
+        "delivery": {
+          "status": "NO_ELIGIBLE_CANDIDATE",
+          "version": "v378",
+          "signature": "e9bc3964a7355838f72b0f3ac81e5edf43ec95f68f99fd77e6a3ae2b73222a93",
+          "baseline": "v374_associated",
+          "official_best": 51.271,
+          "new_official_score": null,
+          "csv": null,
+          "accepted_tasks": [],
+          "nine_task_mean_relative_MAE_gain_by_part": {
+            "fold0": 0.0,
+            "fold1": 0.0,
+            "fold2": 0.0,
+            "valid": 0.0
+          },
+          "five_scored_task_mean_relative_MAE_gain_by_part": {
+            "fold0": 0.0,
+            "fold1": 0.0,
+            "fold2": 0.0,
+            "valid": 0.0
+          },
+          "goal_mean_5percent_achieved_local": false,
+          "five_scored_goal_achieved_local": false,
+          "all_fitting_remote": true,
+          "models_verified": 120,
+          "model_replay_max_error": 0.0,
+          "final_model_states": [],
+          "automatic_platform_submission": false,
+          "limitation": "Four ranking task MAE references are fit-label empirical-quantile calibrated score ranks, not recovered historical native predictions. Historical control partly proxy; public labels reused.",
+          "task_evidence": [
+            {
+              "task": "caco2_wang",
+              "best": {
+                "name": "feature_transformer_n800",
+                "base": "feature_transformer",
+                "rounds": 800
+              },
+              "weight": 0.1,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": 0.004356643074881808,
+                  "baseline": 0.38815645870734267,
+                  "candidate": 0.3864653995595447
+                },
+                {
+                  "part": "fold1",
+                  "gain": -0.0025559712574057965,
+                  "baseline": 0.3348527606452333,
+                  "candidate": 0.3357086346769055
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "ld50_zhu",
+              "best": {
+                "name": "retrieval_transformer_n2400",
+                "base": "retrieval_transformer",
+                "rounds": 2400
+              },
+              "weight": 0.1,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": -0.0014772161401759947,
+                  "baseline": 0.4623870980111785,
+                  "candidate": 0.46307014369536975
+                },
+                {
+                  "part": "fold1",
+                  "gain": -0.001278233208052621,
+                  "baseline": 0.5305508449297317,
+                  "candidate": 0.5312290126382813
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "lipophilicity_astrazeneca",
+              "best": {
+                "name": "feature_transformer_n800",
+                "base": "feature_transformer",
+                "rounds": 800
+              },
+              "weight": 0.1,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": -0.004588496107393212,
+                  "baseline": 0.48016540927868107,
+                  "candidate": 0.48236864639006116
+                },
+                {
+                  "part": "fold1",
+                  "gain": -0.0017972758181353085,
+                  "baseline": 0.4548081915781444,
+                  "candidate": 0.45562560734275764
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "ppbr_az",
+              "best": {
+                "name": "retrieval_transformer_n800",
+                "base": "retrieval_transformer",
+                "rounds": 800
+              },
+              "weight": 0.1,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": 0.004073058574623164,
+                  "baseline": 7.95280971526812,
+                  "candidate": 7.920417455465
+                },
+                {
+                  "part": "fold1",
+                  "gain": -0.0026450032132802315,
+                  "baseline": 7.292895667509342,
+                  "candidate": 7.312185399984021
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "solubility_aqsoldb",
+              "best": {
+                "name": "retrieval_transformer_n800",
+                "base": "retrieval_transformer",
+                "rounds": 800
+              },
+              "weight": 0.1,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": 0.002563624461757396,
+                  "baseline": 0.7360725561987135,
+                  "candidate": 0.7341855425880142
+                },
+                {
+                  "part": "fold1",
+                  "gain": -0.0013091749450621726,
+                  "baseline": 0.7161434295213145,
+                  "candidate": 0.7170809865563147
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "clearance_hepatocyte_az",
+              "best": {
+                "name": "retrieval_transformer_n4800",
+                "base": "retrieval_transformer",
+                "rounds": 4800
+              },
+              "weight": 0.25,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": 0.04559316971031933,
+                  "baseline": 31.964365097329107,
+                  "candidate": 30.507008374763974,
+                  "rank_gain": 0.0009381967892438947
+                },
+                {
+                  "part": "fold1",
+                  "gain": 0.03763917467462482,
+                  "baseline": 29.556240307657728,
+                  "candidate": 28.44376781599261,
+                  "rank_gain": 0.006934104770182192
+                },
+                {
+                  "part": "fold2",
+                  "gain": 0.03452989478341202,
+                  "baseline": 29.302112399955053,
+                  "candidate": 28.290313541852893,
+                  "rank_gain": 0.0020769288687807475
+                },
+                {
+                  "part": "valid",
+                  "gain": 0.04345909302690754,
+                  "baseline": 34.67105717549046,
+                  "candidate": 33.16428447635959,
+                  "rank_gain": -0.010591685216453595
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "clearance_microsome_az",
+              "best": {
+                "name": "feature_transformer_n4800",
+                "base": "feature_transformer",
+                "rounds": 4800
+              },
+              "weight": 0.1,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": 0.019159310043156096,
+                  "baseline": 27.116399993896483,
+                  "candidate": 26.596868479159184,
+                  "rank_gain": 7.036848974317778e-05
+                },
+                {
+                  "part": "fold1",
+                  "gain": 0.01632589600791132,
+                  "baseline": 26.81884782509955,
+                  "candidate": 26.381006104454976,
+                  "rank_gain": 0.0030907273488149922
+                },
+                {
+                  "part": "fold2",
+                  "gain": 0.0336732886919378,
+                  "baseline": 24.008446759224213,
+                  "candidate": 23.200003400455838,
+                  "rank_gain": 0.0028503568238857913
+                },
+                {
+                  "part": "valid",
+                  "gain": 0.028755524464981353,
+                  "baseline": 29.474799529258988,
+                  "candidate": 28.62723621029496,
+                  "rank_gain": -0.005375397944747062
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "half_life_obach",
+              "best": {
+                "name": "feature_transformer_n800",
+                "base": "feature_transformer",
+                "rounds": 800
+              },
+              "weight": 0.1,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": 0.055764627640153046,
+                  "baseline": 20.806086576482805,
+                  "candidate": 19.645842905896455,
+                  "rank_gain": -0.007220849270393126
+                },
+                {
+                  "part": "fold1",
+                  "gain": 0.046587876754227334,
+                  "baseline": 22.383562434963547,
+                  "candidate": 21.340759786922913,
+                  "rank_gain": -0.005743327809696885
+                }
+              ],
+              "accepted": false
+            },
+            {
+              "task": "vdss_lombardo",
+              "best": {
+                "name": "feature_transformer_n800",
+                "base": "feature_transformer",
+                "rounds": 800
+              },
+              "weight": 0.1,
+              "parts": [
+                {
+                  "part": "fold0",
+                  "gain": 0.04727074820794731,
+                  "baseline": 4.419333877893289,
+                  "candidate": 4.210428658904544,
+                  "rank_gain": 0.003937848638331354
+                },
+                {
+                  "part": "fold1",
+                  "gain": 0.011831649682637465,
+                  "baseline": 6.180262281910009,
+                  "candidate": 6.107139583643632,
+                  "rank_gain": -0.006253654180384038
+                }
+              ],
+              "accepted": false
+            }
+          ]
+        },
+        "models_verified": 120,
+        "remote_idle": {
+          "status": "PASS",
+          "at_unix": 1793880028.069085,
+          "no_training_processes_running": true,
+          "experiment_pids": [
+            17186,
+            18226
+          ],
+          "gpu": "NVIDIA GeForce RTX 3090, 0 MiB, 0 %\n",
+          "gpu_compute_processes": "",
+          "statuses": {
+            "regression9_v377": "EVIDENCE_READY",
+            "regression9_v378": "EVIDENCE_READY"
+          },
+          "scope": "Both v377/v378 runners and verifiers absent; no GPU compute processes."
+        },
+        "late_better_on_both_parts": 3,
+        "total_task_base_pairs": 18
+      }
+    ],
+    "nine_task_goal_achieved_local": false,
+    "five_scored_task_goal_achieved_local": false,
+    "no_new_official_evaluation": true,
+    "all_fitting_remote": true,
+    "independent_experiments_not_blindly_combined": true
+  },
+  "goal_nine_task_mean_MAE_five_percent_achieved": false,
+  "goal_five_scored_mean_MAE_five_percent_achieved": false,
+  "current_best": "docs/current_best_after_v387_20261106.json",
+  "current_official_feedback": "docs/platform_scorecard_v387_20261106.json",
+  "latest_feedback_version": "v387",
+  "current_training_baseline": "v387:51.314",
+  "latest_completed_experiments": [
+    "v389"
+  ]
 }
