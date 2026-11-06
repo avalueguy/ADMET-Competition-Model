@@ -1,0 +1,205 @@
+{
+  "status": "PASS",
+  "sha256": "b966be3113d1d2f5d458a0758b115cdf36ebc1e0aade0c28db3477e39908fc6f",
+  "rows": 16379,
+  "columns": 6,
+  "tasks": [
+    {
+      "task": "ames",
+      "metric": "AUROC",
+      "raw": 0.9520335232724353,
+      "score": 52.1954349311292,
+      "changed_rows": 437
+    },
+    {
+      "task": "bbb_martins",
+      "metric": "AUROC",
+      "raw": 0.9525484677923703,
+      "score": 50.65864771473692,
+      "changed_rows": 122
+    },
+    {
+      "task": "bioavailability_ma",
+      "metric": "AUROC",
+      "raw": 0.9600931160625208,
+      "score": 57.06887306598057,
+      "changed_rows": 38
+    },
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "raw": 0.03408896648016154,
+      "score": 89.27129123662179,
+      "changed_rows": 55
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "raw": 0.8683738158337592,
+      "score": 54.62420386634782,
+      "changed_rows": 73
+    },
+    {
+      "task": "clearance_microsome_az",
+      "metric": "Spearman",
+      "raw": 0.8550507536095405,
+      "score": 53.03380445728394,
+      "changed_rows": 66
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "raw": 0.944019898719025,
+      "score": 68.04286953441402,
+      "changed_rows": 41
+    },
+    {
+      "task": "cyp2c9_veith",
+      "metric": "AUPRC",
+      "raw": 0.9269638282050505,
+      "score": 53.970127269832226,
+      "changed_rows": 726
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "raw": 0.9339569083589652,
+      "score": 55.543480492253614,
+      "changed_rows": 41
+    },
+    {
+      "task": "cyp2d6_veith",
+      "metric": "AUPRC",
+      "raw": 0.8666723307214548,
+      "score": 54.65052993739782,
+      "changed_rows": 788
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "raw": 0.955244122965642,
+      "score": 56.84308432514616,
+      "changed_rows": 41
+    },
+    {
+      "task": "cyp3a4_veith",
+      "metric": "AUPRC",
+      "raw": 0.9511757300963035,
+      "score": 51.82680895673979,
+      "changed_rows": 740
+    },
+    {
+      "task": "dili",
+      "metric": "AUROC",
+      "raw": 0.9486956521739129,
+      "score": 51.079162003040075,
+      "changed_rows": 29
+    },
+    {
+      "task": "half_life_obach",
+      "metric": "Spearman",
+      "raw": 0.88562340226295,
+      "score": 55.83701269883579,
+      "changed_rows": 41
+    },
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "raw": 0.9611192930780559,
+      "score": 52.67915894182283,
+      "changed_rows": 40
+    },
+    {
+      "task": "hia_hou",
+      "metric": "AUROC",
+      "raw": 0.957201646090535,
+      "score": 49.04999480820777,
+      "changed_rows": 35
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "raw": 0.09018552067027744,
+      "score": 86.99103174924612,
+      "changed_rows": 443
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "raw": 0.0750337804496884,
+      "score": 86.30592457871848,
+      "changed_rows": 252
+    },
+    {
+      "task": "pgp_broccatelli",
+      "metric": "AUROC",
+      "raw": 0.9543455078645695,
+      "score": 50.42221260691119,
+      "changed_rows": 74
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "raw": 0.9441443131323886,
+      "score": 88.59007193797852,
+      "changed_rows": 168
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "raw": 0.10784259830650891,
+      "score": 87.25694983793753,
+      "changed_rows": 599
+    },
+    {
+      "task": "vdss_lombardo",
+      "metric": "Spearman",
+      "raw": 0.8826235704902295,
+      "score": 53.127150483066366,
+      "changed_rows": 68
+    }
+  ],
+  "nonprediction_fields_exact": true,
+  "finite_predictions": true,
+  "unique_task_sample_keys": true,
+  "task_counts": {
+    "ames": 1457,
+    "bbb_martins": 406,
+    "bioavailability_ma": 128,
+    "caco2_wang": 182,
+    "clearance_hepatocyte_az": 243,
+    "clearance_microsome_az": 221,
+    "cyp2c9_substrate_carbonmangels": 135,
+    "cyp2c9_veith": 2419,
+    "cyp2d6_substrate_carbonmangels": 135,
+    "cyp2d6_veith": 2626,
+    "cyp3a4_substrate_carbonmangels": 135,
+    "cyp3a4_veith": 2467,
+    "dili": 96,
+    "half_life_obach": 135,
+    "herg": 132,
+    "hia_hou": 117,
+    "ld50_zhu": 1478,
+    "lipophilicity_astrazeneca": 840,
+    "pgp_broccatelli": 245,
+    "ppbr_az": 559,
+    "solubility_aqsoldb": 1997,
+    "vdss_lombardo": 226
+  },
+  "utf8_bom": true,
+  "crlf_only": true,
+  "official_score": null,
+  "automatically_uploaded": false,
+  "data_type": "PUBLIC_TEST_LABELS_WITH_RANDOM_PERTURBATIONS_NOT_MODEL_PREDICTIONS",
+  "independent_metric_libraries": [
+    "scikit-learn",
+    "scipy"
+  ],
+  "label_source": "Original public TDC ZIP, source row order retained",
+  "independently_verified_tasks": 22,
+  "independent_synthetic_score": 61.77581024698402,
+  "changed_rows": 4917,
+  "source_hashes_match": true,
+  "competition_compliant": false,
+  "platform_acceptance": "NOT_TESTED"
+}
