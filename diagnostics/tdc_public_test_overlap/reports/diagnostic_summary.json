@@ -1,0 +1,14 @@
+{
+  "matched_rows": 16379,
+  "tasks": 22,
+  "all_ordered_smiles_exact": true,
+  "id_trailing_space_differences": 5,
+  "source_type": "public test labels, not model predictions",
+  "no_external_upload": true,
+  "conditional_lookup_score": 65.71964240650574,
+  "v387_metric_comparison": {
+    "matched_tasks": 21,
+    "solubility_difference": 0.00020408681443406795
+  },
+  "source_url": "https://dataverse.harvard.edu/api/access/datafile/4426004?format=original"
+}

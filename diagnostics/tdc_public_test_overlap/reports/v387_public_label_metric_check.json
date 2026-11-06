@@ -1,0 +1,205 @@
+{
+  "status": "DIFFERENCES_FOUND",
+  "tasks": [
+    {
+      "task": "ames",
+      "metric": "AUROC",
+      "rows": 1457,
+      "public_metric_v387": 0.8769096712291213,
+      "user_reported_metric_v387": 0.8769096712291213,
+      "difference": 0.0,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "bbb_martins",
+      "metric": "AUROC",
+      "rows": 406,
+      "public_metric_v387": 0.9289790494058787,
+      "user_reported_metric_v387": 0.9289790494058787,
+      "difference": 0.0,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "bioavailability_ma",
+      "metric": "AUROC",
+      "rows": 128,
+      "public_metric_v387": 0.7948121050881277,
+      "user_reported_metric_v387": 0.7948121050881277,
+      "difference": 0.0,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "rows": 182,
+      "public_metric_v387": 0.27592992051587734,
+      "user_reported_metric_v387": 0.27592992051587734,
+      "difference": 0.0,
+      "label_lookup_metric": 0.0
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "rows": 243,
+      "public_metric_v387": 0.565208996561239,
+      "user_reported_metric_v387": 0.565208996561239,
+      "difference": 0.0,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "clearance_microsome_az",
+      "metric": "Spearman",
+      "rows": 221,
+      "public_metric_v387": 0.6756845436053647,
+      "user_reported_metric_v387": 0.6756845436053647,
+      "difference": 0.0,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "rows": 135,
+      "public_metric_v387": 0.5862085536546348,
+      "user_reported_metric_v387": 0.5862085536546348,
+      "difference": 0.0,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "cyp2c9_veith",
+      "metric": "AUPRC",
+      "rows": 2419,
+      "public_metric_v387": 0.8349408577894757,
+      "user_reported_metric_v387": 0.8349408577894758,
+      "difference": -1.1102230246251565e-16,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "rows": 135,
+      "public_metric_v387": 0.758324469998319,
+      "user_reported_metric_v387": 0.7583244699983189,
+      "difference": 1.1102230246251565e-16,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "cyp2d6_veith",
+      "metric": "AUPRC",
+      "rows": 2626,
+      "public_metric_v387": 0.7439447168745902,
+      "user_reported_metric_v387": 0.7439447168745902,
+      "difference": 0.0,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "rows": 135,
+      "public_metric_v387": 0.7460443037974683,
+      "user_reported_metric_v387": 0.7460443037974683,
+      "difference": 0.0,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "cyp3a4_veith",
+      "metric": "AUPRC",
+      "rows": 2467,
+      "public_metric_v387": 0.8991915344045904,
+      "user_reported_metric_v387": 0.8991915344045904,
+      "difference": 0.0,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "dili",
+      "metric": "AUROC",
+      "rows": 96,
+      "public_metric_v387": 0.935,
+      "user_reported_metric_v387": 0.935,
+      "difference": 0.0,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "half_life_obach",
+      "metric": "Spearman",
+      "rows": 135,
+      "public_metric_v387": 0.6509691357439866,
+      "user_reported_metric_v387": 0.6509691357439866,
+      "difference": 0.0,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "rows": 132,
+      "public_metric_v387": 0.861119293078056,
+      "user_reported_metric_v387": 0.861119293078056,
+      "difference": 0.0,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "hia_hou",
+      "metric": "AUROC",
+      "rows": 117,
+      "public_metric_v387": 1.0,
+      "user_reported_metric_v387": 1,
+      "difference": 0.0,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "rows": 1478,
+      "public_metric_v387": 0.5550199723529466,
+      "user_reported_metric_v387": 0.5550199723529466,
+      "difference": 0.0,
+      "label_lookup_metric": 0.0
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "rows": 840,
+      "public_metric_v387": 0.41505260605543154,
+      "user_reported_metric_v387": 0.41505260605543154,
+      "difference": 0.0,
+      "label_lookup_metric": 0.0
+    },
+    {
+      "task": "pgp_broccatelli",
+      "metric": "AUROC",
+      "rows": 245,
+      "public_metric_v387": 0.9504798720341242,
+      "user_reported_metric_v387": 0.9504798720341242,
+      "difference": 0.0,
+      "label_lookup_metric": 1.0
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "rows": 559,
+      "public_metric_v387": 6.442906324588329,
+      "user_reported_metric_v387": 6.442906324588329,
+      "difference": 0.0,
+      "label_lookup_metric": 0.0
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "rows": 1997,
+      "public_metric_v387": 0.7008209745143054,
+      "user_reported_metric_v387": 0.7006168876998713,
+      "difference": 0.00020408681443406795,
+      "label_lookup_metric": 0.0
+    },
+    {
+      "task": "vdss_lombardo",
+      "metric": "Spearman",
+      "rows": 226,
+      "public_metric_v387": 0.7145137427047057,
+      "user_reported_metric_v387": 0.7145137427047057,
+      "difference": 0.0,
+      "label_lookup_metric": 1.0
+    }
+  ],
+  "max_absolute_difference": 0.00020408681443406795,
+  "source_zip_sha256": "bd0005246cb6f1672333c28ad202112a8bf071ab65d847848715030308faf1f1"
+}

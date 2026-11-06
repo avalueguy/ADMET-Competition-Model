@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "rows": 16379,
+  "tasks": 22,
+  "source_type": "PUBLIC_TEST_OBSERVATION_LOOKUP_NOT_MODEL_PREDICTIONS",
+  "source_zip_sha256": "bd0005246cb6f1672333c28ad202112a8bf071ab65d847848715030308faf1f1",
+  "template_sha256": "8ee41589d2c98e7b93081c058b3f928ac09bea4b3ffc899fa13677051e9baa20",
+  "output": "C:\\Users\\lenovo\\Documents\\ChatGPT\\多媒体\\tdc_overlap_diagnostic\\outputs\\我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+  "output_sha256": "c9f4839000828c35a0456387dc896d8ea4d4583d15cd748f72390adeb410b58f",
+  "bytes": 1523252,
+  "nonprediction_bytes_exact": true,
+  "all_predictions_equal_public_observations": true,
+  "unmatched_rows": 0,
+  "automatic_platform_submission": false
+}

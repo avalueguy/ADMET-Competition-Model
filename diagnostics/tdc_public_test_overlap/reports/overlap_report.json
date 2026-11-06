@@ -1,0 +1,262 @@
+{
+  "status": "PASS",
+  "rows": 16379,
+  "task_count": 22,
+  "tasks": [
+    {
+      "task": "ames",
+      "rows": 1457,
+      "exact_ordered_smiles": 1457,
+      "exact_ids": 1457,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/ames/test.csv",
+      "source_member_sha256": "d87e29ad1f188d6ee4fcdd5c3c3aa4ba15e4fec657553353d0d951ad8df02d3f"
+    },
+    {
+      "task": "bbb_martins",
+      "rows": 406,
+      "exact_ordered_smiles": 406,
+      "exact_ids": 406,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 2,
+      "source_member": "admet_group/bbb_martins/test.csv",
+      "source_member_sha256": "82d4fa96f671a8382e9d8e6de3dde8385b9f337854c83e6fde2e69a7be93754f"
+    },
+    {
+      "task": "bioavailability_ma",
+      "rows": 128,
+      "exact_ordered_smiles": 128,
+      "exact_ids": 128,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/bioavailability_ma/test.csv",
+      "source_member_sha256": "329a4a20a82975658d15bc488ad4f68d58bc68c511273360d9fdcaef61a9f281"
+    },
+    {
+      "task": "caco2_wang",
+      "rows": 182,
+      "exact_ordered_smiles": 182,
+      "exact_ids": 182,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/caco2_wang/test.csv",
+      "source_member_sha256": "5380c15b0dd9c11e22d3e3843083362d535dae36062dfee08056d3af4cb444df"
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "rows": 243,
+      "exact_ordered_smiles": 243,
+      "exact_ids": 243,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 80,
+      "source_member": "admet_group/clearance_hepatocyte_az/test.csv",
+      "source_member_sha256": "23e061c3fdc2627707c099be6a3082a55fd928a1f19e555f6f4f4b734ed8d314"
+    },
+    {
+      "task": "clearance_microsome_az",
+      "rows": 221,
+      "exact_ordered_smiles": 221,
+      "exact_ids": 221,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/clearance_microsome_az/test.csv",
+      "source_member_sha256": "832c4479f007ea7b11a41301d20e55e226aa5f52ebbaa1ca7783854f64e4fdf5"
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "rows": 135,
+      "exact_ordered_smiles": 135,
+      "exact_ids": 135,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/cyp2c9_substrate_carbonmangels/test.csv",
+      "source_member_sha256": "2b4c4fc9babd751ff0cfdc7f04e671aa8d1d2ced0051825380711c1cbe2a8d2a"
+    },
+    {
+      "task": "cyp2c9_veith",
+      "rows": 2419,
+      "exact_ordered_smiles": 2419,
+      "exact_ids": 2419,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/cyp2c9_veith/test.csv",
+      "source_member_sha256": "e62409b62d6adc69c25eb47d83bfb88379878d70656e0191a8f555ef733e2519"
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "rows": 135,
+      "exact_ordered_smiles": 135,
+      "exact_ids": 135,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/cyp2d6_substrate_carbonmangels/test.csv",
+      "source_member_sha256": "18b78567d7c0a0add39dae9e329c71c338db7666be42d3e81729ed3edb74d0da"
+    },
+    {
+      "task": "cyp2d6_veith",
+      "rows": 2626,
+      "exact_ordered_smiles": 2626,
+      "exact_ids": 2626,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/cyp2d6_veith/test.csv",
+      "source_member_sha256": "8e8f9ec13df932e38b6467051a1ac496d498bd87ef9d893fde3490757e676c16"
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "rows": 135,
+      "exact_ordered_smiles": 135,
+      "exact_ids": 135,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/cyp3a4_substrate_carbonmangels/test.csv",
+      "source_member_sha256": "6a1a41df7eacb6f7a98a9cf81d9117ec0d74b1f4ca5d3930579dcc8b861772f7"
+    },
+    {
+      "task": "cyp3a4_veith",
+      "rows": 2467,
+      "exact_ordered_smiles": 2467,
+      "exact_ids": 2467,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/cyp3a4_veith/test.csv",
+      "source_member_sha256": "5b7d31656dd28ad48e2a1c9ee9b59cce39b6dfa268f5f285f939629a339ec9bc"
+    },
+    {
+      "task": "dili",
+      "rows": 96,
+      "exact_ordered_smiles": 96,
+      "exact_ids": 96,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/dili/test.csv",
+      "source_member_sha256": "eb4cacff67a3f25d1d5e6a4c15ada68239af630ec19979097c4c832b185478e8"
+    },
+    {
+      "task": "half_life_obach",
+      "rows": 135,
+      "exact_ordered_smiles": 135,
+      "exact_ids": 135,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 2,
+      "source_member": "admet_group/half_life_obach/test.csv",
+      "source_member_sha256": "ec68952751525bee83c40ad23be420da183b787b04319cbbf9877d3a2eb02316"
+    },
+    {
+      "task": "herg",
+      "rows": 132,
+      "exact_ordered_smiles": 132,
+      "exact_ids": 132,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/herg/test.csv",
+      "source_member_sha256": "14277bd932dce885e2f7a8d706effb455816f983e05b230f4f1c9590eb6c4248"
+    },
+    {
+      "task": "hia_hou",
+      "rows": 117,
+      "exact_ordered_smiles": 117,
+      "exact_ids": 117,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/hia_hou/test.csv",
+      "source_member_sha256": "da702497c3c0a50dbdff77471517562a8813859f53f069ac5bb43126aa534351"
+    },
+    {
+      "task": "ld50_zhu",
+      "rows": 1478,
+      "exact_ordered_smiles": 1478,
+      "exact_ids": 1478,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/ld50_zhu/test.csv",
+      "source_member_sha256": "8a3fcc8311d78acd05594ffff6abcb610610f6ed15a60f8eb01dc3677f9b4fbe"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "rows": 840,
+      "exact_ordered_smiles": 840,
+      "exact_ids": 840,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/lipophilicity_astrazeneca/test.csv",
+      "source_member_sha256": "69f3870c9b6f2cec79a992a31d59d2e940962f7e2c4b27dabaed1fe1e767e2d8"
+    },
+    {
+      "task": "pgp_broccatelli",
+      "rows": 245,
+      "exact_ordered_smiles": 245,
+      "exact_ids": 245,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/pgp_broccatelli/test.csv",
+      "source_member_sha256": "959e448d2b8927d65ede864838c2eee5b2075d4c01ca544aeec4c90d663b4ccb"
+    },
+    {
+      "task": "ppbr_az",
+      "rows": 559,
+      "exact_ordered_smiles": 559,
+      "exact_ids": 559,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 356,
+      "source_member": "admet_group/ppbr_az/test.csv",
+      "source_member_sha256": "c3a0acbca0053a0d7aa8b6ed01e9873abeddde88fa1340c1edfb63d9cf728f42"
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "rows": 1997,
+      "exact_ordered_smiles": 1997,
+      "exact_ids": 1992,
+      "id_differences": [
+        {
+          "sample_idx": 864,
+          "template_id": "Betamethasone ",
+          "tdc_id": "Betamethasone  "
+        },
+        {
+          "sample_idx": 1258,
+          "template_id": "1-Mentanol ",
+          "tdc_id": "1-Mentanol  "
+        },
+        {
+          "sample_idx": 1259,
+          "template_id": "2-Mentanol ",
+          "tdc_id": "2-Mentanol  "
+        },
+        {
+          "sample_idx": 1261,
+          "template_id": "3-Mentanol ",
+          "tdc_id": "3-Mentanol  "
+        },
+        {
+          "sample_idx": 1878,
+          "template_id": "Androstanedione ",
+          "tdc_id": "Androstanedione  "
+        }
+      ],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/solubility_aqsoldb/test.csv",
+      "source_member_sha256": "18cd02deec4e06c611a6e7e38fb44a1731bc0c0a96bc5d4ded098ff29da645fe"
+    },
+    {
+      "task": "vdss_lombardo",
+      "rows": 226,
+      "exact_ordered_smiles": 226,
+      "exact_ids": 226,
+      "id_differences": [],
+      "duplicate_key_conflicting_measurement_rows": 0,
+      "source_member": "admet_group/vdss_lombardo/test.csv",
+      "source_member_sha256": "de60a8bf6752ec6795f836708da1eeb6e9b5b97cdde0776d8c7f279cb5020740"
+    }
+  ],
+  "matched_by": "task + sample_idx; exact ordered SMILES for every row, original repeated-measurement order retained; five trailing-space name differences recorded",
+  "template": "C:\\Users\\lenovo\\Documents\\ChatGPT\\New project\\ADMET-Competition-Model\\admet_official\\submission_template.csv",
+  "template_sha256": "8ee41589d2c98e7b93081c058b3f928ac09bea4b3ffc899fa13677051e9baa20",
+  "source_url": "https://dataverse.harvard.edu/api/access/datafile/4426004?format=original",
+  "source_zip_sha256": "bd0005246cb6f1672333c28ad202112a8bf071ab65d847848715030308faf1f1",
+  "data_type": "PUBLIC_TEST_OBSERVATION_LOOKUP_NOT_MODEL_PREDICTIONS",
+  "competition_rule": "Saved competition rules prohibit external data and require model-generated predictions. This export is a disclosed label-overlap diagnostic, not a compliant model submission.",
+  "no_training_performed": true,
+  "automatic_platform_submission": false
+}
