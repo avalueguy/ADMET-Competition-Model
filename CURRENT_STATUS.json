@@ -1,11 +1,11 @@
 {
   "handoff_date": "2026-11-06",
   "timezone": "Asia/Hong_Kong",
-  "latest_completed_model_branch": "v389",
+  "latest_completed_model_branch": "v390",
   "latest_completed_model_branch_is_proven_best": false,
-  "rollback_baseline": "v385_local_csv",
-  "latest_aggregate_plan": "v389_restricted_expert_combination",
-  "aggregate_status": "V389_COMPLETE",
+  "rollback_baseline": "v387",
+  "latest_aggregate_plan": "v390_auxiliary_residual",
+  "aggregate_status": "V390_COMPLETE_NO_ACCEPTED_CANDIDATE",
   "official_score": 51.314,
   "last_user_reported_score_upper_bound": null,
   "target_achieved": false,
@@ -3596,7 +3596,7 @@
     },
     "389": {
       "version": "v389",
-      "status": "VERIFIED_EXPERIMENTAL_DELIVERY",
+      "status": "OFFICIAL_REGRESSION_REJECTED",
       "baseline": {
         "version": "v387",
         "official_user_reported": 51.314,
@@ -3983,7 +3983,8 @@
         "crlf_only": true,
         "official_score": null,
         "automatically_uploaded": false
-      }
+      },
+      "official_score_user_reported": 51.313
     }
   },
   "known_issues": [
@@ -4151,7 +4152,7 @@
   },
   "best_official_version": "v387",
   "active_experiment": null,
-  "active_experiment_status": "V389_COMPLETE_EXPERIMENTAL_CSV_DELIVERED",
+  "active_experiment_status": "V390_COMPLETE_NO_ACCEPTED_CANDIDATE",
   "tenth_place_last_user_reported": 52.7,
   "latest_feedback": {
     "reported_date": "2026-10-23",
@@ -4191,7 +4192,7 @@
     "new_csv": false,
     "reason": "half_life official valid failed same-row regression comparison and proxy fusion"
   },
-  "new_submission_created": true,
+  "new_submission_created": false,
   "running_new_training_processes": 0,
   "v78_result": {
     "status": "NO_ELIGIBLE_CANDIDATE",
@@ -4611,8 +4612,8 @@
     "accepted": [],
     "official_score": null
   },
-  "last_user_reported_official_version": "v387",
-  "last_user_reported_official_score": 51.314,
+  "last_user_reported_official_version": "v389",
+  "last_user_reported_official_score": 51.313,
   "v107_feedback": {
     "version": "v107",
     "official_score_user_reported": 50.909,
@@ -5266,7 +5267,7 @@
     "model_selection_changed": false,
     "acceptance_rules_changed": false
   },
-  "iteration_report": "docs/V389_RESULTS_AND_HANDOFF.md",
+  "iteration_report": "docs/V390_RESULTS_AND_HANDOFF.md",
   "completed_trial_diagnostics": "docs/v186_completed_trial_diagnostics.json",
   "last_known_running_new_training_processes": 0,
   "platform_followup_last_check": {
@@ -6615,8 +6616,8 @@
     "training_pid_exited": 9284,
     "pipeline_pid_exited": 9285
   },
-  "current_followup": "docs/V389_RESULTS_AND_HANDOFF.md",
-  "current_state_checked_at_utc": "2026-11-06T06:57:33.170604+00:00",
+  "current_followup": "docs/V390_RESULTS_AND_HANDOFF.md",
+  "current_state_checked_at_utc": "2026-11-06T15:16:57.496132+00:00",
   "v210_followup": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
     "checked_at_utc": "2026-10-29T11:48:06.984493+08:00",
@@ -6771,7 +6772,7 @@
   "last_checked_at_utc": "2026-10-29T13:46:32.205517+08:00",
   "running_training_processes": 0,
   "active_training_process_count": 0,
-  "latest_training_observation": "v389 completed remotely. PPBR experimental update only; strict confidence interval gate not passed.",
+  "latest_training_observation": "v390 complete: 64 remote seed fits; no accepted task; v387 remains best user-reported model.",
   "v211_result": {
     "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
     "checked_at_utc": "2026-10-29T11:48:06.984493+08:00",
@@ -9673,9 +9674,9 @@
     "interpretation": "Original540-column protocol now executed correctly. hERGbothnegative;CYP3A4onefoldnegative. No confirmation/CSV. Complete originalarchive restored after redundant package protection;128members/dependencies PASS."
   },
   "known_best_version": "v387",
-  "latest_candidate_official_score": null,
+  "latest_candidate_official_score": 51.313,
   "active_gpu_training_at_snapshot": false,
-  "current_handoff": "docs/HANDOFF_CURRENT.md",
+  "current_handoff": "HANDOFF_CURRENT.md",
   "v364_official_feedback": {
     "version": "v364",
     "official_user_reported": 51.269,
@@ -9770,7 +9771,7 @@
   "source_of_official_score": "user-reported full scorecard; platform upload hash unavailable",
   "current_training_host": "connect.nmb2.seetacloud.com:25870",
   "remote_training_running": false,
-  "current_experiment_progress": "docs/V389_RESULTS_AND_HANDOFF.md",
+  "current_experiment_progress": "docs/V390_RESULTS_AND_HANDOFF.md",
   "latest_completed_new_server_stage": "v369:NO_ELIGIBLE_CANDIDATE",
   "remote_optimization_current": {
     "completed_at_hong_kong": "2026-11-05T15:10:48.275679+08:00",
@@ -11569,9 +11570,43 @@
   "goal_five_scored_mean_MAE_five_percent_achieved": false,
   "current_best": "docs/current_best_after_v387_20261106.json",
   "current_official_feedback": "docs/platform_scorecard_v387_20261106.json",
-  "latest_feedback_version": "v387",
+  "latest_feedback_version": "v389",
   "current_training_baseline": "v387:51.314",
   "latest_completed_experiments": [
     "v389"
-  ]
+  ],
+  "latest_user_feedback": {
+    "version": "v389",
+    "score": 51.313,
+    "adopt": false,
+    "reason": "PPBR MAE increased; other21 unchanged",
+    "scorecard": "docs/platform_scorecard_v389_20261106.json"
+  },
+  "public_test_label_audit": {
+    "matched_rows": 16379,
+    "task_count": 22,
+    "path": "C:\\Users\\lenovo\\Documents\\ChatGPT\\多媒体\\tdc_overlap_diagnostic",
+    "data_type": "disclosed diagnostic, not model predictions",
+    "do_not_merge_into_training": true,
+    "platform_status": "REJECTED_USER_REPORTED",
+    "diagnostic_only": true
+  },
+  "submission_recovery": {
+    "version": "v387",
+    "output": "C:\\Users\\lenovo\\Documents\\ChatGPT\\多媒体\\v387_model_predictions_restored\\我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+    "sha256": "97cdbd749fde3ea10c2e55cfea143cfc2e0208b18edc09ebd101feb3d72a77a3",
+    "predictions_modified": false,
+    "platform_acceptance_confirmed": false
+  },
+  "offline_diagnostics": {
+    "directory": "diagnostics/tdc_public_test_overlap",
+    "synthetic_local_score": 61.77581024698402,
+    "synthetic_is_model_result": false,
+    "synthetic_platform_score": null,
+    "public_label_file_platform_status": "REJECTED_USER_REPORTED",
+    "competition_compliant": false,
+    "source_type": "PUBLIC_TDC_TEST_OBSERVATIONS",
+    "excluded_from_training": true
+  },
+  "public_label_model_comparison_note": "21 tasks reproduce v387; solubility local/file-score association discrepancy remains unresolved."
 }

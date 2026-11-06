@@ -1,65 +1,19 @@
-# ADMET 当前交接：v387 官方 51.314 / v389 实验
+# ADMET 模型研究与交接
 
-截至 2026-11-06，官方最好是 **v387：51.314**。v389 尚未取得官方成绩，仅修改 PPBR，四个本地分区 MAE 降低0.13%–0.66%，确认置信区间跨零。平均 MAE 降低5%的目标尚未达到。
+更新于2026-11-06（香港时间）。模型最佳用户报告成绩为 **v387：51.314**。最新完成v390没有通过采用门槛，52分及平均MAE降低5%的目标尚未达到。
 
-下载 [本轮完整交接 Release](https://github.com/avalueguy/ADMET-Competition-Model/releases/tag/handoff-v389-20261106) 的全部资产，或使用根目录的源码包和两个 CSV。**GitHub 自动生成的 Source code 归档只对应发布时主分支，不能代替本轮手工上传的源码和模型资产。**
-
-1. 安装 Python 3.10+；恢复脚本只用标准库。
-2. 下载 `admet-v389-source.zip`、`handoff-manifest-v389.json`、`restore_v389_handoff.py` 和5份手工上传的 `.tar.gz`，放在同一目录。
-3. 执行 `python restore_v389_handoff.py --bundle-dir . --destination ../ADMET-v389-restored`。
-4. 在恢复目录先读 `docs/V389_RESULTS_AND_HANDOFF.md`、`docs/v389_delivery.json` 和 `docs/v388_dependency_audit.json`，按原脚本与锁定依赖在指定远端继续训练。SSH 密码不在交接内容中。
-
-模型和输入按 v380 → v382 → v385 → v388 → v389 恢复；源码包最后覆盖为当前源码。恢复程序先核验压缩包 SHA256，再检查解包路径，拒绝链接和路径越界。
-
-当前源码、训练脚本、历史书面证据在 `admet-v389-source.zip`；模型、固定输入、预测和分区证据在5份运行归档。历史集成部分 OOF 是代理、早期模型不完整等限制继续保留，不能声称对任意新分子完整重建整个历史集成。
-
-|提交|状态|SHA256|
+|材料|成绩或结论|入口|
 |---|---|---|
-|`v387-official-best.csv`|用户反馈官方51.314|`97cdbd749fde3ea10c2e55cfea143cfc2e0208b18edc09ebd101feb3d72a77a3`|
-|`v389-experimental.csv`|尚无官方成绩|`c02dff23296dd35458ac1e4fb1ceb094bfdc686a7bde5c3de6aed81cf76be20c`|
+|v387模型预测|用户报告51.314，上传字节未由平台核对|[模型CSV](v387-official-best.csv) · [源码快照](archives/research-sync-20261106/) · [完整交接](HANDOFF_CURRENT.md)|
+|v389组合实验|用户报告51.313，已退回v387|[结果说明](docs/V389_OFFICIAL_REGRESSION_AND_V390_PLAN.md)|
+|v390辅助残差实验|64次远端GPU种子拟合，无采用任务|[实验结果](docs/V390_RESULTS_AND_HANDOFF.md) · [训练代码](tools/v390_auxiliary_residual.py)|
+|61分离线合成文件|本地61.775810247；公开标签加随机扰动，非模型成绩|[合成CSV](diagnostics/tdc_public_test_overlap/synthetic_offline/OFFLINE_SYNTHETIC_seed20261106.csv) · [逐项得分](diagnostics/tdc_public_test_overlap/synthetic_offline/synthetic_score_report.json)|
+|公开“标准答案”|TDC公开测试观测查表，纯标签文件已被平台拒绝|[公开标签CSV](diagnostics/tdc_public_test_overlap/public_labels/PUBLIC_TEST_LABELS_NOT_MODEL.csv) · [来源与限制](diagnostics/tdc_public_test_overlap/)|
 
-CSV 在比赛上传时应按平台要求恢复原文件名，见清单中的 `original_path`。不自动提交比赛。
+61.776分是有已知标签参与构造的离线评分测试，不代表模型提升。赛事规则禁止外部数据并要求模型生成预测，这些诊断文件不能作为合规模型提交。模型基线与诊断材料分开保存。
 
-以下为本轮实验结果；更早版本的说明属于历史记录。
+从[当前交接](HANDOFF_CURRENT.md)开始更新模型；查找源码、历史记录和归档请读[仓库目录](docs/REPOSITORY_INDEX.md)。本轮同步范围、校验方式和未打包项见[上传内容说明](docs/GITHUB_UPLOAD_CONTENTS.md)。
 
-# 最新进展：v387官方51.314与v389组合实验
+本轮所有最新源码、书面证据和轻量实验记录另有[完整源码快照](archives/research-sync-20261106/README.md)。v390完整运行产物在[本轮Release](https://github.com/avalueguy/ADMET-Competition-Model/releases/tag/research-sync-20261106-offline-diagnostics)；v380至v389的递归输入与模型包保留在[原交接Release](https://github.com/avalueguy/ADMET-Competition-Model/releases/tag/handoff-v389-20261106)。
 
-用户明确反馈v386=51.308、v387=51.314。两份完整成绩只有脂溶性不同：MAE由0.4173184854676313降至0.41505260605543154，下降0.54296%；分项增加0.135557，总分精确均值增加0.00616168。其余21项相同。
-
-附件第一张表时间为12:15且逐项与上一份v385成绩一致，当前按用户明确版本归属登记v386，平台字节未确认。
-
-直接按任务取优的组合等于原v387，因此不把同一任务收益重复相加。v387仍为官方最好文件。
-
-v389以完整v387为基线，固定两轮各任务此前开发选择的唯一专家，只搜索受限非负两系数，总新增权重≤75%；由fold0/1固定唯一配方，再确认fold2/valid，失败不换后备。全部选择、模型拟合和重放在指定25870远端。
-
-|任务|v386专家权重|v387专家权重|fold0 MAE降幅|fold1|fold2|valid|结果|
-|---|---:|---:|---:|---:|---:|---:|---|
-|caco2_wang|0.5|0.0|+1.697%|+1.597%|+0.979%|-0.433%|未采用|
-|ld50_zhu|0.05|0.0|+0.024%|+0.053%|+0.012%|-0.154%|未采用|
-|lipophilicity_astrazeneca|0.1|0.0|+0.055%|+0.146%|-0.050%|+0.316%|未采用|
-|ppbr_az|0.0|0.05|+0.465%|+0.131%|+0.386%|+0.663%|实验采用|
-|solubility_aqsoldb|0.05|0.0|+0.110%|+0.107%|-0.287%|+0.316%|未采用|
-|clearance_hepatocyte_az|0.75|0.0|+11.216%|+10.518%|+4.783%|+2.974%|未采用|
-|clearance_microsome_az|0.0|0.05|+1.022%|+0.889%|未确认|未确认|未采用|
-|half_life_obach|0.75|0.0|+44.190%|+35.075%|+4.275%|-32.387%|未采用|
-|vdss_lombardo|0.0|0.05|+2.043%|+0.694%|未确认|未确认|未采用|
-
-本轮没有任何两个专家均为正权重的配方成为开发最优，因此未证实v386与v387专家之间存在额外融合收益。
-
-最终文件保留v387脂溶性，仅将PPBR改为95%完整v387基线加5%相关度量专家gaussian_full_C3_r8；共修改559行，其余21项保持不变。
-
-PPBR确认分区的90%分组bootstrap相对MAE降幅区间：fold2 [-0.1153%, +0.8055%]；valid [-0.3023%, +1.4355%]。两个区间均跨零。
-
-新实验提交：`admet_submissions/v389_v387_restricted_expert_fusion_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv`。新官方分数未知。
-
-九项平均相对MAE降幅：{'fold0': 0.000516260276029037, 'fold1': 0.00014530669002642195, 'fold2': 0.0004293997894704866, 'valid': 0.0007366238952969928}，未采用任务计零。平均5%目标达到：False。
-
-严格稳定性确认：False。方向一致门槛通过但置信区间跨零的文件仍为实验候选，不能保证涨分。
-
-局限：旧公开分区和组件配置已被反复研究，确认不等于全新盲测；四个Spearman任务的MAE基线是校准参考；MAE改善同时须有排序改善才采用。
-
-冻结脚本verification中的new_training_fits=False仅指系数组合层，不代表组件生成无新增拟合；完整原模型包盘点和更正见completion_receipt.json。
-
-复现：本轮增量依赖v388交接包及其递归依赖。运行原模型重放需要指定远端Linux CUDA。source_model_snapshot保留本轮采用组件最终完整状态，不覆盖旧冻结实验。
-
-下一步应扩展已出现官方收益的相关度量表示与骨架外泛化，并补齐强历史集成的真实OOF；继续以完整预算和多分区验收，不能由这一轮小幅收益推出几分跃升。
+保留历史源码的原有路径，避免破坏import、相对路径和冻结签名。训练依赖与旧完整模型限制见交接说明。SSH密码、令牌、本地运行环境与node_modules不纳入同步。
