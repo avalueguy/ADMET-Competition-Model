@@ -1,0 +1,565 @@
+{
+  "signature": "c476803dd39bc3b695cd1d0594a5fb05a265a85f15946ed3ac7050a6175c5022",
+  "ablations": [
+    {
+      "task": "caco2_wang",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -0.0010749780782131134,
+          "config": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.0010749780782131134,
+            0.002862090174882904
+          ]
+        },
+        {
+          "round": 2,
+          "objective": 0.0009362971805039026,
+          "config": {
+            "name": "gaussian_full_C30_r2",
+            "base": "gaussian_full_C30",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.0009362971805039026,
+            0.0038878294463603824
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -0.001139297892161618,
+          "config": {
+            "name": "gaussian_full_C30_r5",
+            "base": "gaussian_full_C30",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.0030041499411190458,
+            -0.001139297892161618
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -0.003334195065635684,
+          "config": {
+            "name": "gaussian_full_C30_r8",
+            "base": "gaussian_full_C30",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.005337785382405107,
+            -0.003334195065635684
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "ld50_zhu",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -0.0018927833988579194,
+          "config": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.0009136136796021269,
+            -0.0018927833988579194
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -0.005364753857706471,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.005364753857706471,
+            -0.004224259668326954
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -0.006639114033976328,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.0057760734222975,
+            -0.006639114033976328
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -0.007883383285737726,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.005397069208747174,
+            -0.007883383285737726
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -0.004595583299392438,
+          "config": {
+            "name": "gaussian_full_C30_r0",
+            "base": "gaussian_full_C30",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.004595583299392438,
+            0.0007037341568268047
+          ]
+        },
+        {
+          "round": 2,
+          "objective": 0.004098183987527226,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.004110596116329552,
+            0.004098183987527226
+          ]
+        },
+        {
+          "round": 5,
+          "objective": 0.0025253945427399964,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.007761856343058135,
+            0.0025253945427399964
+          ]
+        },
+        {
+          "round": 8,
+          "objective": 0.0016233017011523104,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.008471373747865765,
+            0.0016233017011523104
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "ppbr_az",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -0.009438259318616794,
+          "config": {
+            "name": "gaussian_full_C30_r0",
+            "base": "gaussian_full_C30",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.008645654932718985,
+            -0.009438259318616794
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -0.0051803549566604825,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.0024738386318440917,
+            -0.0051803549566604825
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -0.0035968120577885045,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.005787466175632623,
+            -0.0035968120577885045
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -0.0003341920581692154,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.007020102138190781,
+            -0.0003341920581692154
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -0.00443340899722281,
+          "config": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            0.0018428200739895662,
+            -0.00443340899722281
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -0.005492432488494739,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.005410282861305606,
+            -0.005492432488494739
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -0.00697689552654005,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.0027559756581867624,
+            -0.00697689552654005
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -0.0071460393751367505,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            -5.488374822431941e-05,
+            -0.0071460393751367505
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": 0.04186811980815962,
+          "config": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.5,
+          "gains": [
+            0.04186811980815962,
+            0.06369227407122423
+          ]
+        },
+        {
+          "round": 2,
+          "objective": 0.01103723637878528,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.01103723637878528,
+            0.028003445277470583
+          ]
+        },
+        {
+          "round": 5,
+          "objective": 0.012476966688361532,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.012476966688361532,
+            0.031480691629894385
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -1.0,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.012912668835984149,
+            0.031967589126893355
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "clearance_microsome_az",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -1.0,
+          "config": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            0.018917525315266737,
+            0.016964813670401938
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -1.0,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.017825402614526257,
+            0.010624468408219182
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -1.0,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.01409863827618451,
+            0.004408521711185819
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -1.0,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.014799315382786933,
+            0.004019640480470258
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "half_life_obach",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": 0.1232866636115452,
+          "config": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.25,
+          "gains": [
+            0.15224039200834258,
+            0.1232866636115452
+          ]
+        },
+        {
+          "round": 2,
+          "objective": 0.11107038459755403,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.25,
+          "gains": [
+            0.1503666463048436,
+            0.11107038459755403
+          ]
+        },
+        {
+          "round": 5,
+          "objective": 0.10628199702359316,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.25,
+          "gains": [
+            0.1453045773522219,
+            0.10628199702359316
+          ]
+        },
+        {
+          "round": 8,
+          "objective": 0.10347934918949539,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.25,
+          "gains": [
+            0.14392547152254445,
+            0.10347934918949539
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "vdss_lombardo",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -1.0,
+          "config": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            0.03973059491458296,
+            0.013504581330454277
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -1.0,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.04293828712779841,
+            0.008817536725006679
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -1.0,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.04091702437837265,
+            0.005012600781717414
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -1.0,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.03948793122521483,
+            0.0030734102558873373
+          ]
+        }
+      ],
+      "no_reselection": true
+    }
+  ],
+  "all_fixed_horizons_completed": true,
+  "no_confirmation_reselection": true
+}

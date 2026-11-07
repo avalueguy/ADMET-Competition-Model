@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE_ARCHIVE_VERIFIED_AFTER_DUPLICATE_PACKAGING_ATTEMPT",
+  "submission_created": false,
+  "official_score": null,
+  "automatically_uploaded": false,
+  "archive_sha256": "53a9b23ab6918b8473b22969675481a3299d71a79b7be81fb3888d236b8e9715",
+  "all_members_verified": true,
+  "incident": "docs/v290_redundant_package_attempt.json"
+}

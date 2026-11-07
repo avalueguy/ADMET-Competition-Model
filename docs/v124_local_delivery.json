@@ -1,0 +1,37 @@
+{
+  "status": "LOCAL_DELIVERY_COMPLETE_AWAITING_PLATFORM",
+  "version": "v124",
+  "baseline": "v114",
+  "baseline_official_score": 51.091,
+  "csv": "admet_submissions/v124_matched_models_history/我从山北来带着兰花草-小分子药物预测技术创新赛-20261027.csv",
+  "upload_copy": "D:\\bili_download\\v124_matched_models_history\\我从山北来带着兰花草-小分子药物预测技术创新赛-20261027.csv",
+  "sha256": "a1e175b53c5d5933fd89923c190e4a16c74c116776f5dc1a0abcca771d106faf",
+  "changed_tasks": {
+    "ames": 1457,
+    "half_life_obach": 134
+  },
+  "changed_predictions": 1591,
+  "unchanged_tasks": 20,
+  "rows": 16379,
+  "columns": 6,
+  "tasks": 22,
+  "nonprediction_bytes_exact": true,
+  "independent_final_fusion_replay": true,
+  "independent_model_reload": "PASS_10_CHECKPOINTS",
+  "archive": {
+    "path": "releases/v124_models_history_20261027.tar.gz",
+    "sha256": "adc79a6ae08c59e56a206aac85e6252500c5944d8794d885b596824a00a6ae87",
+    "bytes": 133128346,
+    "files": 953,
+    "manifest_sha256": "6a70db01a0eac960736266711c84b8b617d26e424b4765606c817842f24332f1",
+    "official_score": null
+  },
+  "all_archive_member_hashes_verified": true,
+  "dependencies_verified": true,
+  "official_score": null,
+  "target_score": 52,
+  "target_achieved": false,
+  "automatically_uploaded": false,
+  "github_push": false,
+  "server_shutdown": false
+}

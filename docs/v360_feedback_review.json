@@ -1,0 +1,53 @@
+{
+  "status": "CONFIRMED_USER_REPORTED_V354_REGRESSION",
+  "source": "docs/platform_scorecard_v354_20261102.json",
+  "recorded_at_hong_kong": "2026-11-02T16:18:27.589615+08:00",
+  "official_best_unchanged": {
+    "version": "v346",
+    "official_user_reported": 51.235,
+    "exact_task_mean": 51.234854454545456,
+    "recorded_at_hong_kong": "2026-11-02T14:24:19.020013+08:00",
+    "csv": "admet_submissions/v346_experimental_solubility/我从山北来带着兰花草-小分子药物预测技术创新赛-20261101.csv",
+    "csv_sha256": "bef15e3a892afddd661173e3496b671078067e03ee2022b2abbfde02da45a906",
+    "source": "docs/platform_scorecard_v346_20261101.json",
+    "previous_best": "v313",
+    "previous_best_official": 51.205,
+    "delta_task_mean": 0.029523227272733266,
+    "platform_uploaded_byte_hash_confirmed": false,
+    "reason": "User-reported official solubility improvement; other21 endpoints match. Historical strict-validation rejection is preserved."
+  },
+  "v354_score": 51.224,
+  "v354_exact_task_mean": 51.224453545454544,
+  "delta_vs_v346": -0.010400909090911625,
+  "changes": [
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "raw_before": 0.7460443037974683,
+      "raw_after": 0.7362115732368897,
+      "raw_delta": -0.00983273056057865,
+      "score_before": 50.706702,
+      "score_after": 50.375055,
+      "task_score_delta": -0.3316469999999967,
+      "total_score_delta": -0.015074863636363485
+    },
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "raw_before": 0.8575846833578792,
+      "raw_after": 0.861119293078056,
+      "raw_delta": 0.003534609720176829,
+      "score_before": 49.832263,
+      "score_after": 49.93509,
+      "task_score_delta": 0.10282700000000489,
+      "total_score_delta": 0.004673954545454767
+    }
+  ],
+  "next_action": "Whole-endpoint reuse only: v346 for21tasks, exact v354 hERG for1task. No retraining, weight sweep or per-sample editing.",
+  "decision_uses_official_feedback": true,
+  "new_candidate_requires_official_confirmation": true,
+  "limitations": "Endpoint selection based on reused public leaderboard feedback can overfit that evaluation. No private-test gain claim.",
+  "platform_submission": false,
+  "hidden_labels_used": false,
+  "prior_artifacts_modified": false
+}

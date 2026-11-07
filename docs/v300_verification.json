@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "signature": "3ddcf51ae7c9c6f53e48f40f116e56ae462df9a1040257b757a050dccd5a631c",
+  "checks": [
+    {
+      "task": "caco2_wang",
+      "part": "fold0",
+      "rows": 212,
+      "feature_rebuild": true,
+      "checkpoint_reload": true,
+      "nonfit_target_label_isolation": true,
+      "independent_scalar_median_reference": true,
+      "reversed_query_invariant": true
+    },
+    {
+      "task": "caco2_wang",
+      "part": "fold1",
+      "rows": 212,
+      "feature_rebuild": true,
+      "checkpoint_reload": true,
+      "nonfit_target_label_isolation": true,
+      "independent_scalar_median_reference": true,
+      "reversed_query_invariant": true
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold0",
+      "rows": 650,
+      "feature_rebuild": true,
+      "checkpoint_reload": true,
+      "nonfit_target_label_isolation": true,
+      "independent_scalar_median_reference": true,
+      "reversed_query_invariant": true
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold1",
+      "rows": 651,
+      "feature_rebuild": true,
+      "checkpoint_reload": true,
+      "nonfit_target_label_isolation": true,
+      "independent_scalar_median_reference": true,
+      "reversed_query_invariant": true
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "fold0",
+      "rows": 980,
+      "feature_rebuild": true,
+      "checkpoint_reload": true,
+      "nonfit_target_label_isolation": true,
+      "independent_scalar_median_reference": true,
+      "reversed_query_invariant": true
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "fold1",
+      "rows": 980,
+      "feature_rebuild": true,
+      "checkpoint_reload": true,
+      "nonfit_target_label_isolation": true,
+      "independent_scalar_median_reference": true,
+      "reversed_query_invariant": true
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "fold0",
+      "rows": 1210,
+      "feature_rebuild": true,
+      "checkpoint_reload": true,
+      "nonfit_target_label_isolation": true,
+      "independent_scalar_median_reference": true,
+      "reversed_query_invariant": true
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "fold1",
+      "rows": 1210,
+      "feature_rebuild": true,
+      "checkpoint_reload": true,
+      "nonfit_target_label_isolation": true,
+      "independent_scalar_median_reference": true,
+      "reversed_query_invariant": true
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "fold0",
+      "rows": 1635,
+      "feature_rebuild": true,
+      "checkpoint_reload": true,
+      "nonfit_target_label_isolation": true,
+      "independent_scalar_median_reference": true,
+      "reversed_query_invariant": true
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "fold1",
+      "rows": 1635,
+      "feature_rebuild": true,
+      "checkpoint_reload": true,
+      "nonfit_target_label_isolation": true,
+      "independent_scalar_median_reference": true,
+      "reversed_query_invariant": true
+    }
+  ],
+  "accepted_tasks": [],
+  "csv_created": false,
+  "platform_submission": false,
+  "official_best": 51.166,
+  "target_score": 52.0,
+  "official_gain_established": false,
+  "outcome": "NO_CONFIRMED_NEW_MODEL",
+  "at_utc": "2026-11-01T09:05:59.715345+00:00"
+}

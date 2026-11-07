@@ -1,0 +1,98 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "checked_at_utc": "2026-10-29T06:29:01.596763+00:00",
+  "training_version": "v221",
+  "delivery_version": "v222",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52,
+  "target_achieved": false,
+  "development_tasks": 21,
+  "saved_development_models": 84,
+  "total_models": 96,
+  "nominated_tasks": [
+    "pgp_broccatelli",
+    "cyp3a4_substrate_carbonmangels",
+    "bioavailability_ma"
+  ],
+  "accepted_tasks": [],
+  "confirmation_results": [
+    {
+      "task": "pgp_broccatelli",
+      "gains": {
+        "fold0": 0.0031422825540471377,
+        "fold1": 0.005211558307533504,
+        "fold2": -0.006248760166633671,
+        "valid": -0.006449879064767572
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.01620786767010684,
+          -0.0003712234325334648
+        ],
+        "valid": [
+          -0.018322652757079037,
+          0.0032498722534489975
+        ]
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "gains": {
+        "fold0": 0.013621262458471617,
+        "fold1": 0.01837508239947272,
+        "fold2": -0.0052631578947369695,
+        "valid": -0.015232974910394215
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.03012685641717892,
+          0.022471901999196273
+        ],
+        "valid": [
+          -0.06483494363929153,
+          0.033517219387755114
+        ]
+      }
+    },
+    {
+      "task": "bioavailability_ma",
+      "gains": {
+        "fold0": 0.006393298059964692,
+        "fold1": 0.008803885853066129,
+        "fold2": -0.04553734061930781,
+        "valid": -0.05094130675526032
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.12854497580686017,
+          -0.0017830891957635363
+        ],
+        "valid": [
+          -0.08436822192645177,
+          -0.017595619483491358
+        ]
+      }
+    }
+  ],
+  "archive": {
+    "status": "PASS",
+    "prefix": "v222_fragment_factorization_20261029",
+    "archive_sha256": "4a8cb879beb5baa3b03eeb2406d6fc1327b48a6333e93674e068037ad0dbbce2",
+    "manifest_files": 307,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 248,
+    "existing_exact": 59,
+    "existing_updated_docs_preserved": []
+  },
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "frozen_gates_unchanged": true,
+  "local_gate_recalculation": true,
+  "no_confirmation_fallback": true,
+  "rejected_route_restarted": false,
+  "training_pid_exited": 12026,
+  "pipeline_pid_exited": 12027
+}

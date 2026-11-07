@@ -1,0 +1,25 @@
+{
+  "baseline": "v130",
+  "baseline_score": 51.146,
+  "tasks": 21,
+  "user_authorized_high_score_task_optimization": true,
+  "fixed_routes": {
+    "v134": "Joint SVR regression kernels",
+    "v135": "GPU XGBoost structural/augmented specialists",
+    "v136": "Direct models with OTHER-task chemical neighbor profiles",
+    "v137": "Endpoint-isolated pairwise neural network",
+    "v139": "Joint SVC classification kernels",
+    "v141": "350 bounded-depth18 ExtraTrees with two fixed views",
+    "v143": "Fixed two-seed CPU CatBoost900 depth4 augmented specialists"
+  },
+  "stopped_routes": {
+    "v132": "CPU/GPU prediction bit differences; restart v135 with CPU inference",
+    "v133": "Excessive random forest runtime; bounded-depth restart v141",
+    "v142": "Concurrent GPU runtime too high; CPU v143 replacement before selection"
+  },
+  "selection": "Per route freeze config and weight using fold0/1. Route winner by maximum minimum DEVELOPMENT gain regardless of confirmation; reject if winner fails. No confirmation-based fallback. All4 gains positive. Labels reused; some history controls approximate.",
+  "target": 52,
+  "official_score": null,
+  "final_version": "v144",
+  "verification": "Independent model reload all five partitions; target-query label perturbation, scaffold bootstrap diagnostics, stdlib final blend replay, exact nonprediction template bytes, archive member/dependency SHA256"
+}

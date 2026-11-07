@@ -1,0 +1,28 @@
+{
+  "status": "FROZEN_BEFORE_DEVELOPMENT_SCORES",
+  "at_hong_kong": "2026-11-01T18:28:03+08:00",
+  "baseline": "v313",
+  "official_best_user_reported": 51.205,
+  "target_score": 52.0,
+  "baseline_csv_sha256": "681e9d23100c7ea39b4e6003dd6de4fac738bc467254782b7b8c4b7bc1d2941b",
+  "source_sha256": "329a2ddc45acaaeabe5558761fc8041bacc879ad4cff13143483ba2e986e4737",
+  "baseline_adapter_sha256": "be19cbdc09034bf1e41548c636246392baa5922d98005d4a4083e429b80db677",
+  "runner_sha256": "b01f7fd2512c88cf9d40fedd9a0b4b764597fc872240c51996fff6d8a8e60dce",
+  "smoke_signature": "153d5746c0bf71a92d1bf1e44275ad3c5e1c3a079981b8dff436e56b2722c48c",
+  "tasks": ["herg", "clearance_hepatocyte_az", "clearance_microsome_az", "half_life_obach", "vdss_lombardo", "cyp2c9_substrate_carbonmangels", "cyp2d6_substrate_carbonmangels", "cyp3a4_substrate_carbonmangels"],
+  "config": {"neighbors": 24, "width": 128, "key_width": 32, "bins": 8, "epochs": 100, "minimum_steps": 1200, "maximum_steps": 2500},
+  "seeds": [3041101, 3041102],
+  "projection_seed": 3040001,
+  "objectives": {
+    "Spearman": "fit-only rank-normal target; 0.5 squared error plus 0.25 pairwise softplus rank loss for target differences greater than 0.1",
+    "binary": "binary cross-entropy with fit-prevalence logit intercept plus 0.25 positive-negative pairwise softplus loss"
+  },
+  "selection": "Original v148 algorithm through v314 baseline adapter: maximize minimum fold0/1 gain over frozen blends 0.20 and 0.45. Freeze before fold2/valid. No failed-confirmation fallback.",
+  "confirmation": "All four gains positive; average exceeds frozen practical threshold; both 500-replicate paired scaffold bootstrap 90% lower bounds positive.",
+  "smoke": "PASS: finite gradients including degenerate losses, nonfit-target-label isolation, scaffold/identity-excluded retrieval, checkpoint reload and reversed queries. No query scores computed.",
+  "protected_tasks": ["ppbr_az", "lipophilicity_astrazeneca"],
+  "test_labels_used": false,
+  "external_data": false,
+  "automatic_platform_submission": false,
+  "limitations": "Public validation labels have been reused across historical experiments; upstream historical OOF is approximate. No claim of reaching 52 without official feedback. Official submission identity inferred from user sequence, not independently authenticated."
+}

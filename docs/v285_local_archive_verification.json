@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v285_stereo_context_repair_20261030",
+  "archive_sha256": "a113aae735a686860ed1cd70f769ce8a27832b9f3bde1b83f6f0976371bad3d6",
+  "manifest_files": 125,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 29,
+  "existing_exact": 96,
+  "existing_updated_docs_preserved": []
+}

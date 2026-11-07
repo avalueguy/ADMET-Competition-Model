@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v96_normalized_assays_20261026",
+  "archive_sha256": "b906d445a0a1a5ff0950c8f29d1973aeb395f6f2285ea998afe5347dbd118982",
+  "manifest_files": 1155,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 1146,
+  "existing_exact": 9,
+  "existing_updated_docs_preserved": []
+}

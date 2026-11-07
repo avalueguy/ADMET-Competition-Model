@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "path": "releases/v334_chemical_domain_dro_20261101.tar.gz",
+  "sha256": "09836f1d20e867c69467a6fcf44979b28213c63c086555c707fe01d31611a061",
+  "files": 60,
+  "all_member_hashes_verified": true
+}

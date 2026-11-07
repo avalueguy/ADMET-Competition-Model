@@ -1,0 +1,138 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "checked_at_utc": "2026-10-28T05:46:03.575947+00:00",
+  "training_version": "v189",
+  "delivery_version": "v190",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52,
+  "target_achieved": false,
+  "development_tasks": 21,
+  "nominated_tasks": [
+    "cyp2d6_substrate_carbonmangels",
+    "cyp3a4_substrate_carbonmangels",
+    "bioavailability_ma",
+    "half_life_obach",
+    "cyp2c9_substrate_carbonmangels"
+  ],
+  "accepted_tasks": [],
+  "confirmation_results": [
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "accepted": false,
+      "gains": {
+        "fold0": 0.03185632009879413,
+        "fold1": 0.008902976259833828,
+        "fold2": -0.0010094117330874397,
+        "valid": -0.16805523271907252
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.05158521641235347,
+          0.04125307233611141
+        ],
+        "valid": [
+          -0.27418870894105624,
+          -0.04812640376545402
+        ]
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "accepted": false,
+      "gains": {
+        "fold0": 0.0255813953488373,
+        "fold1": 0.032959789057350086,
+        "fold2": 0.03314144736842095,
+        "valid": 0.0022401433691756623
+      },
+      "bootstrap90": {
+        "fold2": [
+          0.010464526075209918,
+          0.05713099400599414
+        ],
+        "valid": [
+          -0.04250095907928387,
+          0.04405112044817922
+        ]
+      }
+    },
+    {
+      "task": "bioavailability_ma",
+      "accepted": false,
+      "gains": {
+        "fold0": 0.011684303350970038,
+        "fold1": 0.011839708561020013,
+        "fold2": -0.0261080752884032,
+        "valid": -0.04318936877076418
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.05066035168940863,
+          0.009449035812672231
+        ],
+        "valid": [
+          -0.0735388386123681,
+          -0.01783794162826416
+        ]
+      }
+    },
+    {
+      "task": "half_life_obach",
+      "accepted": false,
+      "gains": {
+        "fold0": 0.013650359797712674,
+        "fold1": 0.03430730929833403,
+        "fold2": -0.023930660525753544,
+        "valid": -0.06498378028257079
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.04755762059862914,
+          0.000979432829768909
+        ],
+        "valid": [
+          -0.11316773970402326,
+          -0.016965235016429724
+        ]
+      }
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "accepted": false,
+      "gains": {
+        "fold0": 0.010356183754722359,
+        "fold1": 0.030490483321351625,
+        "fold2": -0.002578615624754532,
+        "valid": -0.11129910372676022
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.11421767769140102,
+          0.033767969539696505
+        ],
+        "valid": [
+          -0.17456813731107249,
+          -0.0020592575496649725
+        ]
+      }
+    }
+  ],
+  "archive": {
+    "status": "PASS",
+    "prefix": "v190_leafwise_boosting_20261028",
+    "archive_sha256": "2b4029155c8616affbd035724d560390edd612d1eb2f0cb3707b57ef2e48c65e",
+    "manifest_files": 331,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 290,
+    "existing_exact": 41,
+    "existing_updated_docs_preserved": []
+  },
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "frozen_gates_unchanged": true,
+  "rejected_route_restarted": false,
+  "no_confirmation_fallback": true
+}

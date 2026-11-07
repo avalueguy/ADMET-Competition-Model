@@ -1,0 +1,357 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "at_utc": "2026-11-01T09:25:37.390498+00:00",
+  "signature": "863d4d32ea97b610ef0ef62c38c8754ae72dd39ac589579e0852750668e8b707",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52.0,
+  "development_best": [
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "config": {
+        "members": 8,
+        "width": 192,
+        "blocks": 3,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 3000
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 212,
+          "baseline": 0.38815645870734267,
+          "expert": 0.39303373735521807,
+          "candidate": 0.385106218822909,
+          "gain": 0.00785827419848095
+        },
+        {
+          "part": "fold1",
+          "rows": 212,
+          "baseline": 0.3348527606452333,
+          "expert": 0.3583988796622247,
+          "candidate": 0.33156362685555213,
+          "gain": 0.00982262706552954
+        }
+      ],
+      "objective": 0.00785827419848095
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "config": {
+        "members": 8,
+        "width": 192,
+        "blocks": 3,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 3000
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 8.068577292713924,
+          "expert": 8.080962236458463,
+          "candidate": 7.872739100637709,
+          "gain": 0.024271712963952172
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.585961846123768,
+          "expert": 7.29043396308712,
+          "candidate": 7.195691791562864,
+          "gain": 0.051446350835566285
+        }
+      ],
+      "objective": 0.024271712963952172
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "config": {
+        "members": 8,
+        "width": 192,
+        "blocks": 3,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 3000
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 980,
+          "baseline": 0.4900050804950242,
+          "expert": 0.545721750992551,
+          "candidate": 0.4844638141304928,
+          "gain": 0.011308589614894246
+        },
+        {
+          "part": "fold1",
+          "rows": 980,
+          "baseline": 0.47650922350658986,
+          "expert": 0.49019143768304607,
+          "candidate": 0.46018849474687695,
+          "gain": 0.03425060409032608
+        }
+      ],
+      "objective": 0.011308589614894246
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "config": {
+        "members": 8,
+        "width": 192,
+        "blocks": 3,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 3000
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1210,
+          "baseline": 0.4642859078866628,
+          "expert": 0.50921137321562,
+          "candidate": 0.46191263020626827,
+          "gain": 0.005111672872427281
+        },
+        {
+          "part": "fold1",
+          "rows": 1210,
+          "baseline": 0.534364444193799,
+          "expert": 0.5760023125147171,
+          "candidate": 0.5341896331464763,
+          "gain": 0.00032713824660713146
+        }
+      ],
+      "objective": 0.00032713824660713146
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "config": {
+        "members": 8,
+        "width": 192,
+        "blocks": 3,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 3000
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1635,
+          "baseline": 0.7675069205648937,
+          "expert": 0.7976687224188921,
+          "candidate": 0.7448807058713064,
+          "gain": 0.029480144201089586
+        },
+        {
+          "part": "fold1",
+          "rows": 1635,
+          "baseline": 0.7502386159917903,
+          "expert": 0.7626747045153577,
+          "candidate": 0.7202428491065624,
+          "gain": 0.03998163550349174
+        }
+      ],
+      "objective": 0.029480144201089586
+    }
+  ],
+  "accepted_tasks": [],
+  "confirmation": [
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "config": {
+        "members": 8,
+        "width": 192,
+        "blocks": 3,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 3000
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1635,
+          "baseline": 0.7675069205648937,
+          "expert": 0.7976687224188921,
+          "candidate": 0.7448807058713064,
+          "gain": 0.029480144201089586
+        },
+        {
+          "part": "fold1",
+          "rows": 1635,
+          "baseline": 0.7502386159917903,
+          "expert": 0.7626747045153577,
+          "candidate": 0.7202428491065624,
+          "gain": 0.03998163550349174
+        }
+      ],
+      "objective": 0.029480144201089586,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 1635,
+          "baseline": 0.7675069205648937,
+          "expert": 0.7976687224188921,
+          "candidate": 0.7448807058713064,
+          "gain": 0.029480144201089586
+        },
+        {
+          "part": "fold1",
+          "rows": 1635,
+          "baseline": 0.7502386159917903,
+          "expert": 0.7626747045153577,
+          "candidate": 0.7202428491065624,
+          "gain": 0.03998163550349174
+        },
+        {
+          "part": "fold2",
+          "rows": 1775,
+          "baseline": 0.6269016415832172,
+          "expert": 0.656925995277056,
+          "candidate": 0.6028965735666818,
+          "gain": 0.038291601782875266
+        },
+        {
+          "part": "valid",
+          "rows": 2940,
+          "baseline": 1.005001121803155,
+          "expert": 1.098958392056566,
+          "candidate": 1.0068422486163147,
+          "gain": -0.0018319649333887467
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 14,
+          "gain_ci90": [
+            0.037110965720815244,
+            0.15249135298633157
+          ],
+          "lower_positive": true
+        },
+        {
+          "part": "valid",
+          "groups": 2874,
+          "gain_ci90": [
+            -0.01015068235131936,
+            0.007728156003995841
+          ],
+          "lower_positive": false
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "config": {
+        "members": 8,
+        "width": 192,
+        "blocks": 3,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 3000
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 8.068577292713924,
+          "expert": 8.080962236458463,
+          "candidate": 7.872739100637709,
+          "gain": 0.024271712963952172
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.585961846123768,
+          "expert": 7.29043396308712,
+          "candidate": 7.195691791562864,
+          "gain": 0.051446350835566285
+        }
+      ],
+      "objective": 0.024271712963952172,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 8.068577292713924,
+          "expert": 8.080962236458463,
+          "candidate": 7.872739100637709,
+          "gain": 0.024271712963952172
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.585961846123768,
+          "expert": 7.29043396308712,
+          "candidate": 7.195691791562864,
+          "gain": 0.051446350835566285
+        },
+        {
+          "part": "fold2",
+          "rows": 651,
+          "baseline": 8.880378656523767,
+          "expert": 8.786484964883728,
+          "candidate": 8.65154688527485,
+          "gain": 0.02576824481249014
+        },
+        {
+          "part": "valid",
+          "rows": 279,
+          "baseline": 9.65499508270411,
+          "expert": 10.154264806573806,
+          "candidate": 9.516701605413534,
+          "gain": 0.014323516077011154
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 259,
+          "gain_ci90": [
+            -0.007699649219640319,
+            0.0538827500102886
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 134,
+          "gain_ci90": [
+            -0.03636615156760734,
+            0.059303189167531856
+          ],
+          "lower_positive": false
+        }
+      ],
+      "accepted": false
+    }
+  ],
+  "csv_created": false,
+  "platform_submission": false,
+  "official_gain_established": false
+}

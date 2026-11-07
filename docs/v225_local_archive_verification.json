@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v225_rotated_chemistry_forest_20261029",
+  "archive_sha256": "bda7582e432629a62d0a26ba90a8f355972aa4080989a9f4ef47ea3e080ca255",
+  "manifest_files": 267,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 212,
+  "existing_exact": 55,
+  "existing_updated_docs_preserved": []
+}

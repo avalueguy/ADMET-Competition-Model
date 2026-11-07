@@ -1,0 +1,31 @@
+{
+  "description": "Conditional scoring arithmetic, not forecast or promise. Equal relative MAE reduction in five tasks, other seventeen scores fixed.",
+  "baseline": 51.27037540909091,
+  "cases": [
+    {
+      "relative_MAE_reduction_each": 0,
+      "conditional_total": 51.27037541194888
+    },
+    {
+      "relative_MAE_reduction_each": 0.01,
+      "conditional_total": 51.327367445216375
+    },
+    {
+      "relative_MAE_reduction_each": 0.05,
+      "conditional_total": 51.56095126084151
+    },
+    {
+      "relative_MAE_reduction_each": 0.1,
+      "conditional_total": 51.86620476513736
+    },
+    {
+      "relative_MAE_reduction_each": 0.15,
+      "conditional_total": 52.18727725960517
+    },
+    {
+      "relative_MAE_reduction_each": 0.2,
+      "conditional_total": 52.525431608162144
+    }
+  ],
+  "equal_MAE_reduction_needed_for_52": 0.12114721733712636
+}

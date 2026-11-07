@@ -1,0 +1,185 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "checked_at_utc": "2026-10-29T09:38:35.386763+00:00",
+  "training_version": "v250",
+  "delivery_version": "v251",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52,
+  "target_achieved": false,
+  "trained_development_tasks": 5,
+  "protected_tasks": 17,
+  "identity_control_tasks": 16,
+  "development_partitions": 10,
+  "deterministic_models": 10,
+  "model_seeds_used": false,
+  "development_best": [
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "config": {
+        "C": 3.0,
+        "levels": 4
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 152,
+          "baseline": 0.8444511217948719,
+          "expert": 0.8197115384615385,
+          "candidate": 0.8419471153846154,
+          "gain": -0.0025040064102564985
+        },
+        {
+          "part": "fold1",
+          "rows": 152,
+          "baseline": 0.85125,
+          "expert": 0.8667307692307692,
+          "candidate": 0.8586538461538461,
+          "gain": 0.00740384615384615
+        }
+      ],
+      "objective": -0.0025040064102564985
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "config": {
+        "C": 3.0,
+        "levels": 4
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 282,
+          "baseline": 0.5727558332909924,
+          "expert": 0.5396487094180928,
+          "candidate": 0.5801069272532424,
+          "gain": 0.007351093962249977
+        },
+        {
+          "part": "fold1",
+          "rows": 283,
+          "baseline": 0.575230994148768,
+          "expert": 0.5719800774885271,
+          "candidate": 0.5872551638608724,
+          "gain": 0.012024169712104404
+        }
+      ],
+      "objective": 0.007351093962249977
+    },
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "config": {
+        "C": 3.0,
+        "levels": 4
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 212,
+          "baseline": 0.38815645870734267,
+          "expert": 0.4134068407601755,
+          "candidate": 0.38742079936341417,
+          "gain": 0.001895264982523863
+        },
+        {
+          "part": "fold1",
+          "rows": 212,
+          "baseline": 0.3348527606452333,
+          "expert": 0.37064671270168786,
+          "candidate": 0.34029024041533157,
+          "gain": -0.016238420013682184
+        }
+      ],
+      "objective": -0.016238420013682184
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "config": {
+        "C": 3.0,
+        "levels": 4
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 8.068577292713924,
+          "expert": 10.301395880686174,
+          "candidate": 8.255149350053932,
+          "gain": -0.023123290584138832
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.585961846123768,
+          "expert": 9.669778887567851,
+          "candidate": 7.798008412389386,
+          "gain": -0.027952495750287583
+        }
+      ],
+      "objective": -0.027952495750287583
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "config": {
+        "C": 3.0,
+        "levels": 4
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 980,
+          "baseline": 0.4900050804950242,
+          "expert": 0.5356412083052762,
+          "candidate": 0.4869475255148676,
+          "gain": 0.006239843425843191
+        },
+        {
+          "part": "fold1",
+          "rows": 980,
+          "baseline": 0.47650922350658986,
+          "expert": 0.5066354463990836,
+          "candidate": 0.47080249973376975,
+          "gain": 0.011976103486150441
+        }
+      ],
+      "objective": 0.006239843425843191
+    }
+  ],
+  "nominated_tasks": [],
+  "accepted_tasks": [],
+  "archive": {
+    "status": "PASS",
+    "prefix": "v251_hierarchical_atom_matching_20261029",
+    "archive_sha256": "6491ff3da11ade546df4ecc0ceda67be34b340ccde81a3dba4bc1bdf51e65e01",
+    "manifest_files": 92,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 43,
+    "existing_exact": 49,
+    "existing_updated_docs_preserved": []
+  },
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "frozen_gates_unchanged": true,
+  "local_gate_recalculation": true,
+  "no_confirmation_fallback": true,
+  "rejected_route_restarted": false,
+  "exited_pids": [
+    24505,
+    24506,
+    24515,
+    24536
+  ],
+  "interpretation": "Exact hierarchical min-count matching did not pass original development minimum on any task. Hepatocyte gain .007351 is below .008 and lipophilicity .006240 is below .012 despite both-fold gains. No confirmation opened. Preserve results, do not tune C or weights/seeds after failure."
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "archive": "releases/v371_expert_inputs.tar.gz",
+  "sha256": "0b37e23d9ab1e894e0e3c562d08dedeed9af2b599a199bf8419a35a1f9c246e5",
+  "bytes": 414522020,
+  "task_count": 5,
+  "partitions": 25
+}

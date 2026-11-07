@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "path": "releases/v321_experimental_cyp3a4_20261101.tar.gz",
+  "sha256": "fa05874ebdb63baaf1b4f17e34119eef9bd7c1fd86a9a41cc392092d9f5c3348",
+  "files": 22,
+  "all_member_hashes_verified": true,
+  "experimental_only": true
+}

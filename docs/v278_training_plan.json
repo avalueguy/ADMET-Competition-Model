@@ -1,0 +1,46 @@
+{
+  "version": "v278",
+  "delivery_version": "v279",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-30T04:34:22.639893+00:00",
+  "source_sha256": "30743545f399ff86ee8f3c4b4c20db9482329dd842cbe54985f1c9a82bf66760",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "tasks": [
+    "herg",
+    "cyp3a4_substrate_carbonmangels"
+  ],
+  "protected_tasks": 20,
+  "development_partitions": 4,
+  "deterministic_models": 4,
+  "new_tree_splits": 0,
+  "new_random_seeds": [],
+  "original_seeds": [
+    1274026,
+    1274027
+  ],
+  "configs": [
+    {
+      "prior_precision": 1.0,
+      "max_newton": 50,
+      "gradient_tolerance": 1e-08
+    }
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "original_component_weight": 0.5,
+  "hypothesis": "Stagewise carried tree structure may remain useful while joint regularized leaf re-estimation reduces sparse-leaf confidence. Fit-only topology/gradient audit supports feasibility but not gain.",
+  "support": "docs/v277_v145_leaf_audit.json",
+  "mechanism": "Freeze exact v127/physchem two900tree ensembles. Kernel is fraction of1800trees sharing a terminal leaf. Logistic MAP logloss sum plus .5 times squared coefficient norm in normalized indicator space; fixed fit-prevalence logit intercept, prior precision1. Exact eigenspace Newton solve until gradient1e-8/max50, no seed/search. Replaces component inside original .5 rank blend before original v148 .2/.45 incremental choice.",
+  "preconditions": "Actual v145 component query replay, supervised original fit topology never called OOF, explicit onehot kernel reference, target query label perturbation, optimizer stationarity, real save/reload/roworder and105control/dependency/frozenrunner checks.",
+  "selection": "Originalv148 fold0/1 singleconfig maxmingain>.003; .2/.45 thenfreeze;all4pointpositive/mean>.003/bothfold2validbootstrap90lower>0/no fallback.",
+  "accepted_verification": "Independent feature and frozen tree topology rebuild, leafkernel, logisticstationarity/reload, original component and fullv145 replay, originalgates/fusion/models/hash/roworder/Drug_ID/nonpredictionbytes/backupsha; restoreallarchivemembersdependencies.",
+  "scheduling": "OneCPUworker4threads;21runner with19identitycontrols/HIAexcluded. No GPU required.",
+  "manual_submission_only": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "source_immutable_after_start": true,
+  "no_hidden_gain_guarantee": true
+}

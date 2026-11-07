@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE",
+  "baseline": "v364",
+  "baseline_official_score": 51.269,
+  "signature": "a906da1890fc76b4f9b353545f2eb3c18fa5226ac5734267ffebbcd8a8598ac6",
+  "source_sha256": "56ec0b38f54483b43a88d8d21506dfb0ac2fc8a49f479da2bb65b43c76551755",
+  "tasks": [
+    "ppbr_az",
+    "ld50_zhu"
+  ],
+  "training_host": "connect.nmb2.seetacloud.com:24365",
+  "remote_root": "/root/autodl-tmp/transformer_stage2_v366",
+  "gpu": "RTX3090",
+  "development_jobs": 12,
+  "target_seed_fits": 24,
+  "official_score": null,
+  "new_submission_delivered": true,
+  "completed_at_hong_kong": "2026-11-04T17:10:58.693037+08:00",
+  "submission": "admet_submissions/v366_graph_transformer_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261104.csv",
+  "submission_sha256": "45982f798555d88f2c934d187c709091db02841e257c1f2450b470b9a02c04fc",
+  "known_best_unchanged": "v364:51.269",
+  "local_delivery_audit": "PASS"
+}

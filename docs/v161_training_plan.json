@@ -1,0 +1,20 @@
+{
+  "baseline": "v145",
+  "official_score": 51.166,
+  "target": 52,
+  "routes": ["v149", "v150", "v151", "v153", "v157", "v159"],
+  "additional_routes": {
+    "v157": "Local geometry and query-structure importance weighted molecular kernel",
+    "v159": "Pure structure multitask transfer with conflicting gradient projection; float64 descriptor preprocessing"
+  },
+  "supersedes_candidate": "v155",
+  "cross_route_selection": "Highest minimum fold0/1 gain among frozen nominees regardless of confirmation; keep v145 if winner fails, no fallback",
+  "acceptance": "Same unchanged v148 rules: all four positive, both fold2 and valid paired scaffold bootstrap90 lower bounds positive",
+  "disclosure": "v150 confirmation was already observed before extending routes; no fresh independent labels. No acceptance threshold relaxed.",
+  "discarded_route": "v158 single precision descriptor scale overflow; original partial output and log retained",
+  "hia_locked_at_auc_1": true,
+  "final_candidate_version": "v161",
+  "test_labels_used": false,
+  "new_external_data": false,
+  "official_gain_guaranteed": false
+}

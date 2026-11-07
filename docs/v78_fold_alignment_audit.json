@@ -1,0 +1,577 @@
+{
+  "status": "AUDITED",
+  "exact_legacy_sha256": "3a24d8a1359df47c4197bff62a80809bbdc42f53db22c5dd1f478db2a95a4b98",
+  "v67_sha256": "f28f66bc0e223517b6f951ade4e8c0b761b1d7e0e403150d07ccd4ff8331c0c4",
+  "cross_tab_legacy_rows_current_columns": [
+    [
+      7768,
+      3390,
+      6578
+    ],
+    [
+      6692,
+      3297,
+      7752
+    ],
+    [
+      3279,
+      11528,
+      3411
+    ]
+  ],
+  "tasks": [
+    {
+      "task": "ames",
+      "label": "AUROC",
+      "same_numeric_fold_fraction": 0.28245089666951323,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 1561,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 1562,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 1561,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "bbb_martins",
+      "label": "AUROC",
+      "same_numeric_fold_fraction": 0.27375087966220973,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 474,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 474,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 473,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "bioavailability_ma",
+      "label": "AUROC",
+      "same_numeric_fold_fraction": 0.22767857142857142,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 150,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 149,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 149,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "caco2_wang",
+      "label": "MAE",
+      "same_numeric_fold_fraction": 0.24332810047095763,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 212,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 212,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 213,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "label": "Spearman",
+      "same_numeric_fold_fraction": 0.2959905660377358,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 282,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 283,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 283,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "clearance_microsome_az",
+      "label": "Spearman",
+      "same_numeric_fold_fraction": 0.2675324675324675,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 256,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 257,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 257,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "label": "AUPRC",
+      "same_numeric_fold_fraction": 0.25481798715203424,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 156,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 156,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 155,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "cyp2c9_veith",
+      "label": "AUPRC",
+      "same_numeric_fold_fraction": 0.28287841191067,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 2821,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 2821,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 2821,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "label": "AUPRC",
+      "same_numeric_fold_fraction": 0.24731182795698925,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 155,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 155,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 155,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "cyp2d6_veith",
+      "label": "AUPRC",
+      "same_numeric_fold_fraction": 0.294962463279295,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 3064,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 3063,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 3064,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "label": "AUROC",
+      "same_numeric_fold_fraction": 0.25,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 156,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 156,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 156,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "cyp3a4_veith",
+      "label": "AUPRC",
+      "same_numeric_fold_fraction": 0.2865090403337969,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 2876,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 2876,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 2876,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "dili",
+      "label": "AUROC",
+      "same_numeric_fold_fraction": 0.21148036253776434,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 110,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 111,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 110,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "half_life_obach",
+      "label": "Spearman",
+      "same_numeric_fold_fraction": 0.2817204301075269,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 156,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 155,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 154,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "herg",
+      "label": "AUROC",
+      "same_numeric_fold_fraction": 0.2713347921225383,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 152,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 152,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 153,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "hia_hou",
+      "label": "AUROC",
+      "same_numeric_fold_fraction": 0.228287841191067,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 134,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 135,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 134,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "ld50_zhu",
+      "label": "MAE",
+      "same_numeric_fold_fraction": 0.17027707808564232,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 1210,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 1210,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 1550,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "label": "MAE",
+      "same_numeric_fold_fraction": 0.3193877551020408,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 980,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 980,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 980,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "pgp_broccatelli",
+      "label": "AUROC",
+      "same_numeric_fold_fraction": 0.2608695652173913,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 283,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 284,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 284,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "ppbr_az",
+      "label": "MAE",
+      "same_numeric_fold_fraction": 0.336577868852459,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 650,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 651,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 651,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "label": "MAE",
+      "same_numeric_fold_fraction": 0.1958374628344896,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 1635,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 1635,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 1775,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    },
+    {
+      "task": "vdss_lombardo",
+      "label": "Spearman",
+      "same_numeric_fold_fraction": 0.28192161820480405,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 263,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 1,
+          "n": 264,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        },
+        {
+          "fold": 2,
+          "n": 264,
+          "new_scaffold_overlap": 0,
+          "canonical_overlap": 0
+        }
+      ]
+    }
+  ],
+  "proxy_cv_same_fit_rows_as_current_v67": false,
+  "issue": "Historical predictions cannot be treated as same-fold OOF controls under v67 folds.",
+  "test_labels_used": false
+}

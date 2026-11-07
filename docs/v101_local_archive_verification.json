@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v101_multi_route_20261026",
+  "archive_sha256": "8a40f5eb01a1eb579e59a1b80a490b503c9f42090ba3bdd360a09be6978bd73f",
+  "manifest_files": 1372,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 1312,
+  "existing_exact": 60,
+  "existing_updated_docs_preserved": []
+}

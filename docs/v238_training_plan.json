@@ -1,0 +1,49 @@
+{
+  "version": "v238",
+  "delivery_version": "v239",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-29T07:55:40.136818+00:00",
+  "source_sha256": "530a5109eab332f4cd35b1c891be57bf784fd016e683d1b58ac7778c49b459a9",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "model": "Molecular-view self-attention Transformer experts trained from scratch",
+  "tasks": [
+    "herg",
+    "bbb_martins",
+    "ames",
+    "clearance_hepatocyte_az",
+    "solubility_aqsoldb",
+    "pgp_broccatelli"
+  ],
+  "configs": [
+    {
+      "width": 64,
+      "heads": 4,
+      "layers": 2,
+      "epochs": 100,
+      "minimum_steps": 900,
+      "maximum_steps": 3000
+    }
+  ],
+  "seeds": [
+    2381029,
+    2381030
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "distinct_from_completed_routes": "Priorv137concatenatedviewMLP,v159tasktransfer,v175graphattention,andv221lowrankquadraticFMdidnotself-attendbetweensixfingerprintviews,physicalandmeasuredcontextwithreadouttoken. No oldmodels/predictioninputs/pretrainedweights.",
+  "features": "SixL2normalizedsqrtcountfingerprinttokens;fit-onlymedian/mean/std/clippedphysical-shape-pharmacophoreandtarget-excludedcontexttokens. Explicitmissingness.",
+  "training": "Twofour-head64Dpre-normself-attentionblocks,feedforward128,dropout.15,readouthead64dropout.2;AdamWlr.0005wd.03,cosine.00002,clipgrad2,batch128;100epochsclipped900..3000steps,2fixedseeds;classificationBCE+.2pairwise,MAEL1,SpearmanRMSE+.3pairrank. Noquery-basedearlystop.",
+  "prediction": "FixedCPUfloat64inferenceofsavedfloat32weights,disableMHAfastpath;ensemblemeanrawandnativeMAE/rankscoreorlogisticclassification. Independentexactcheckpointreplay.",
+  "scheduling": "Single GPU developmentworker owns6tasks,4CPUthreads;avoidmultipleCUDAtrainingprocesses. Allworkerexit0beforeunchangedoriginalv148selector.",
+  "selection": "Unchangedfold0/1uniqueconfigweightfreeze",
+  "confirmation": "Unchangedall4pointgains>0,originalmeanthreshold,bothscaffoldbootstrap90lower>0,no fallback",
+  "verification": "3metrictypesnonfitlabelperturbation,actualCUDAgradient/update,finitegradients,modelreload,roworder;allacceptedrebuild/reload/gates/fusion/templatebytes/backupSHA.",
+  "source_immutable_after_start": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "official_gain_guaranteed": false,
+  "limitations": "Publiclabelsreused andapproximateupstreamoutercontrols;attentioncanoverfitsmallendpoints. No hidden-scoreguarantee."
+}

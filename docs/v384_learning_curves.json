@@ -1,0 +1,565 @@
+{
+  "signature": "d8a83080c4eafc5c8b118f3a1ec8a946b9ccac2df0c5f074188def4b5b0fae6e",
+  "ablations": [
+    {
+      "task": "caco2_wang",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -0.012035318197092493,
+          "config": {
+            "name": "laplace_C30_r0",
+            "base": "laplace_C30",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.012035318197092493,
+            -0.00791501315305453
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -0.007349553865498185,
+          "config": {
+            "name": "laplace_C3_r2",
+            "base": "laplace_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.007349553865498185,
+            -0.0028818981933610944
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -0.005831402530692806,
+          "config": {
+            "name": "laplace_C3_r5",
+            "base": "laplace_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.005831402530692806,
+            -0.001930816015236245
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -0.005347036283803759,
+          "config": {
+            "name": "laplace_C3_r8",
+            "base": "laplace_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.005347036283803759,
+            -0.0014780198476464334
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "ld50_zhu",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -0.001606005496554132,
+          "config": {
+            "name": "laplace_C30_r0",
+            "base": "laplace_C30",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.0014592804069983333,
+            -0.001606005496554132
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -0.0019591732944507106,
+          "config": {
+            "name": "laplace_C30_r2",
+            "base": "laplace_C30",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.0007521611932755618,
+            -0.0019591732944507106
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -0.002178498777170108,
+          "config": {
+            "name": "laplace_C30_r5",
+            "base": "laplace_C30",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.00036792701437209926,
+            -0.002178498777170108
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -0.0016464894542885377,
+          "config": {
+            "name": "laplace_C30_r8",
+            "base": "laplace_C30",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            -5.3912376158432495e-05,
+            -0.0016464894542885377
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -0.01597433752126088,
+          "config": {
+            "name": "laplace_C30_r0",
+            "base": "laplace_C30",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.01597433752126088,
+            -0.005937561281966265
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -0.012369381507708988,
+          "config": {
+            "name": "laplace_C30_r2",
+            "base": "laplace_C30",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.012369381507708988,
+            -0.002713168660726722
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -0.01162162617862308,
+          "config": {
+            "name": "laplace_C30_r5",
+            "base": "laplace_C30",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.01162162617862308,
+            -0.0021058580161676687
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -0.010989019567357348,
+          "config": {
+            "name": "laplace_C30_r8",
+            "base": "laplace_C30",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.010989019567357348,
+            -0.0024250445730872212
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "ppbr_az",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -0.015892608571278537,
+          "config": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.015892608571278537,
+            -0.013770389013306152
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -0.011929357363453068,
+          "config": {
+            "name": "laplace_C30_r2",
+            "base": "laplace_C30",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.011929357363453068,
+            -0.010475872514008411
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -0.011594401294384351,
+          "config": {
+            "name": "laplace_C3_r5",
+            "base": "laplace_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.011594401294384351,
+            -0.010693399645802229
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -0.01166193186837191,
+          "config": {
+            "name": "laplace_C3_r8",
+            "base": "laplace_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.010470836915268707,
+            -0.01166193186837191
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -0.008811039057867717,
+          "config": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            0.00198899884075879,
+            -0.008811039057867717
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -0.007429196973772383,
+          "config": {
+            "name": "laplace_C3_r2",
+            "base": "laplace_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.002146048023806347,
+            -0.007429196973772383
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -0.009478870513814368,
+          "config": {
+            "name": "laplace_C3_r5",
+            "base": "laplace_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.0015544213127354264,
+            -0.009478870513814368
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -0.010174447650967524,
+          "config": {
+            "name": "laplace_C3_r8",
+            "base": "laplace_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.0011755944136299804,
+            -0.010174447650967524
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": 0.019091915688925064,
+          "config": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.25,
+          "gains": [
+            0.019091915688925064,
+            0.041943828240730535
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r2",
+            "base": "laplace_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.014509538324803261,
+            0.023795448693409174
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r5",
+            "base": "laplace_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.01524394976159717,
+            0.023565501435110898
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r8",
+            "base": "laplace_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.015862281445592544,
+            0.02320034502654245
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "clearance_microsome_az",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            0.015843387209120766,
+            0.019298992708220396
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r2",
+            "base": "laplace_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.019719789588666062,
+            0.020160298715730128
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r5",
+            "base": "laplace_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.019164929932133073,
+            0.019993961467836788
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r8",
+            "base": "laplace_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.01933415701730862,
+            0.021322559315055205
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "half_life_obach",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            0.060628321708405195,
+            0.04837661386044749
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r2",
+            "base": "laplace_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.05964822053747019,
+            0.04749296665602212
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r5",
+            "base": "laplace_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.05879220617341446,
+            0.04695114481757704
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r8",
+            "base": "laplace_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.05894802942665574,
+            0.04670664439246723
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "vdss_lombardo",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            0.04038329767990876,
+            0.012212996545016211
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r2",
+            "base": "laplace_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.03894349532590407,
+            0.012731940891315095
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r5",
+            "base": "laplace_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.038425446849545554,
+            0.012319225037408012
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r8",
+            "base": "laplace_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.03753496447340127,
+            0.012180741998501068
+          ]
+        }
+      ],
+      "no_reselection": true
+    }
+  ],
+  "all_fixed_horizons_completed": true,
+  "no_confirmation_reselection": true
+}

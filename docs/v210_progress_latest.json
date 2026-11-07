@@ -1,0 +1,132 @@
+{
+  "checked_at_utc": "2026-10-29T03:11:05.679323+00:00",
+  "boot_id": "7edb467c-8def-4bf5-b14f-bb31d4469124",
+  "training_version": "v210",
+  "delivery_version": "v211",
+  "processes": {
+    "training": {
+      "pid": 1575,
+      "exists": true,
+      "state": "R",
+      "start_ticks": "1978621015",
+      "cmdline": "/root/miniconda3/bin/python tools/v210_standardized_chemistry.py "
+    },
+    "pipeline": {
+      "pid": 1676,
+      "exists": true,
+      "state": "S",
+      "start_ticks": "1978639024",
+      "cmdline": "/root/miniconda3/bin/python /root/autodl-tmp/v76/tools/v212_package_standardized_batch.py "
+    }
+  },
+  "source_sha256": "a5005887734c4621254c1e9d9ee0670b0ed464059d589cc0cfe9733a9c0389a1",
+  "source_matches_frozen_plan": true,
+  "development_status": "IN_PROGRESS",
+  "completed_development_tasks": 7,
+  "development": [
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "objective": 0.0031049679487177295,
+      "weight": 0.45,
+      "development_threshold": 0.003,
+      "passes_development": true,
+      "gains": {
+        "fold0": 0.0031049679487177295,
+        "fold1": 0.006442307692307692
+      }
+    },
+    {
+      "task": "bbb_martins",
+      "metric": "AUROC",
+      "objective": -0.0012032049003253276,
+      "weight": 0.2,
+      "development_threshold": 0.003,
+      "passes_development": false,
+      "gains": {
+        "fold0": 0.00177450177450178,
+        "fold1": -0.0012032049003253276
+      }
+    },
+    {
+      "task": "ames",
+      "metric": "AUROC",
+      "objective": 0.001491282239945546,
+      "weight": 0.2,
+      "development_threshold": 0.003,
+      "passes_development": false,
+      "gains": {
+        "fold0": 0.0018968839279781546,
+        "fold1": 0.001491282239945546
+      }
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "objective": 0.0049684575838647715,
+      "weight": 0.2,
+      "development_threshold": 0.008,
+      "passes_development": false,
+      "gains": {
+        "fold0": 0.019417480244534935,
+        "fold1": 0.0049684575838647715
+      }
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "objective": 0.00090032980250976,
+      "weight": 0.2,
+      "development_threshold": 0.012,
+      "passes_development": false,
+      "gains": {
+        "fold0": 0.00090032980250976,
+        "fold1": 0.0039741250072315125
+      }
+    },
+    {
+      "task": "pgp_broccatelli",
+      "metric": "AUROC",
+      "objective": -0.0007792860734038287,
+      "weight": 0.2,
+      "development_threshold": 0.003,
+      "passes_development": false,
+      "gains": {
+        "fold0": -0.0007792860734038287,
+        "fold1": -0.000670794633642946
+      }
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "objective": -0.010313302649684886,
+      "weight": 0.2,
+      "development_threshold": 0.003,
+      "passes_development": false,
+      "gains": {
+        "fold0": 0.015075483542704937,
+        "fold1": -0.010313302649684886
+      }
+    }
+  ],
+  "features": {
+    "shape": [
+      46202,
+      6576
+    ],
+    "sha256": "f2928b90a05d396a96adf2b0734631063b9d50c396cf63cca6aafd2659a790cf",
+    "original_graph_exceptions": 2,
+    "bounded_enumeration_rows": 471,
+    "descriptor_exception_rows": 3
+  },
+  "failure": null,
+  "confirmation": null,
+  "pipeline": {
+    "status": "WAITING_TRAINING",
+    "route": "v210"
+  },
+  "no_candidate": null,
+  "evidence_exists": false,
+  "archive_exists": false,
+  "log_tail": "07, \"candidate\": 0.9490278651316689, \"gain\": -0.0012032049003253276}], \"objective\": -0.0012032049003253276}}\n{\"stage\": \"train\", \"task\": \"ames\", \"part\": \"fold0\", \"seconds\": 113}\n{\"stage\": \"train\", \"task\": \"ames\", \"part\": \"fold1\", \"seconds\": 108}\n{\"stage\": \"development\", \"best\": {\"task\": \"ames\", \"metric\": \"AUROC\", \"config\": {\"depth\": 6, \"trees\": 1000}, \"weight\": 0.2, \"parts\": [{\"part\": \"fold0\", \"rows\": 1561, \"baseline\": 0.8673850574712644, \"expert\": 0.857436382964587, \"candidate\": 0.8692819413992425, \"gain\": 0.0018968839279781546}, {\"part\": \"fold1\", \"rows\": 1562, \"baseline\": 0.8612499835761867, \"expert\": 0.8489797527230682, \"candidate\": 0.8627412658161322, \"gain\": 0.001491282239945546}], \"objective\": 0.001491282239945546}}\n{\"stage\": \"train\", \"task\": \"clearance_hepatocyte_az\", \"part\": \"fold0\", \"seconds\": 89}\n{\"stage\": \"train\", \"task\": \"clearance_hepatocyte_az\", \"part\": \"fold1\", \"seconds\": 87}\n{\"stage\": \"development\", \"best\": {\"task\": \"clearance_hepatocyte_az\", \"metric\": \"Spearman\", \"config\": {\"depth\": 6, \"trees\": 1000}, \"weight\": 0.2, \"parts\": [{\"part\": \"fold0\", \"rows\": 282, \"baseline\": 0.5727558332909924, \"expert\": 0.5969040546068257, \"candidate\": 0.5921733135355274, \"gain\": 0.019417480244534935}, {\"part\": \"fold1\", \"rows\": 283, \"baseline\": 0.575230994148768, \"expert\": 0.5410999492288756, \"candidate\": 0.5801994517326328, \"gain\": 0.0049684575838647715}], \"objective\": 0.0049684575838647715}}\n{\"stage\": \"train\", \"task\": \"solubility_aqsoldb\", \"part\": \"fold0\", \"seconds\": 109}\n{\"stage\": \"train\", \"task\": \"solubility_aqsoldb\", \"part\": \"fold1\", \"seconds\": 109}\n{\"stage\": \"development\", \"best\": {\"task\": \"solubility_aqsoldb\", \"metric\": \"MAE\", \"config\": {\"depth\": 6, \"trees\": 1000}, \"weight\": 0.2, \"parts\": [{\"part\": \"fold0\", \"rows\": 1635, \"baseline\": 0.7675069205648937, \"expert\": 0.7995560202794547, \"candidate\": 0.7668159112106766, \"gain\": 0.00090032980250976}, {\"part\": \"fold1\", \"rows\": 1635, \"baseline\": 0.7502386159917903, \"expert\": 0.7817169310708024, \"candidate\": 0.7472570739465866, \"gain\": 0.0039741250072315125}], \"objective\": 0.00090032980250976}}\n{\"stage\": \"train\", \"task\": \"pgp_broccatelli\", \"part\": \"fold0\", \"seconds\": 85}\n{\"stage\": \"train\", \"task\": \"pgp_broccatelli\", \"part\": \"fold1\", \"seconds\": 86}\n{\"stage\": \"development\", \"best\": {\"task\": \"pgp_broccatelli\", \"metric\": \"AUROC\", \"config\": {\"depth\": 6, \"trees\": 1000}, \"weight\": 0.2, \"parts\": [{\"part\": \"fold0\", \"rows\": 283, \"baseline\": 0.9482403217697336, \"expert\": 0.9303670186023127, \"candidate\": 0.9474610356963298, \"gain\": -0.0007792860734038287}, {\"part\": \"fold1\", \"rows\": 284, \"baseline\": 0.9021671826625387, \"expert\": 0.8812177502579979, \"candidate\": 0.9014963880288958, \"gain\": -0.000670794633642946}], \"objective\": -0.0007792860734038287}}\n{\"stage\": \"train\", \"task\": \"cyp2d6_substrate_carbonmangels\", \"part\": \"fold0\", \"seconds\": 85}\n{\"stage\": \"train\", \"task\": \"cyp2d6_substrate_carbonmangels\", \"part\": \"fold1\", \"seconds\": 87}\n{\"stage\": \"development\", \"best\": {\"task\": \"cyp2d6_substrate_carbonmangels\", \"metric\": \"AUPRC\", \"config\": {\"depth\": 6, \"trees\": 1000}, \"weight\": 0.2, \"parts\": [{\"part\": \"fold0\", \"rows\": 155, \"baseline\": 0.5853759302529222, \"expert\": 0.597417931979615, \"candidate\": 0.6004514137956272, \"gain\": 0.015075483542704937}, {\"part\": \"fold1\", \"rows\": 155, \"baseline\": 0.6436233712598691, \"expert\": 0.5868650081314906, \"candidate\": 0.6333100686101842, \"gain\": -0.010313302649684886}], \"objective\": -0.010313302649684886}}\n{\"stage\": \"train\", \"task\": \"cyp3a4_veith\", \"part\": \"fold0\", \"seconds\": 147}\n"
+}

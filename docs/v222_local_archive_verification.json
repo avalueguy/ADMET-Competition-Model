@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v222_fragment_factorization_20261029",
+  "archive_sha256": "4a8cb879beb5baa3b03eeb2406d6fc1327b48a6333e93674e068037ad0dbbce2",
+  "manifest_files": 307,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 248,
+  "existing_exact": 59,
+  "existing_updated_docs_preserved": []
+}

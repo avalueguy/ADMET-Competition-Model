@@ -1,0 +1,686 @@
+{
+  "status": "COMPLETE",
+  "checked_at_utc": "2026-10-29T09:16:55.525692+00:00",
+  "baseline": "v145",
+  "baseline_signature": "5a79bb5fd6cd135690d750fa5beae79f7a5674958ef83b87689f190be5067c91",
+  "source_sha256": "d2569c888b9d669feae831c4f267fc471971dcec0854aefafc44a64ff9862c4e",
+  "parser_sha256": "393f81a939b7d59a39b3b5d974910203f96769a309590828c92dabc083fc7bbb",
+  "rdkit_version": "2026.09.1",
+  "tasks": [
+    "caco2_wang",
+    "ppbr_az",
+    "lipophilicity_astrazeneca"
+  ],
+  "structural_patterns": {
+    "carboxyl": "[CX3](=[OX1])[O;H1,-1]",
+    "phenol": "[c][O;H1,-1]",
+    "sulfonyl_acid": "[SX4](=[OX1])(=[OX1])[O;H1,-1]",
+    "aromatic_base": "[nH0;+0]",
+    "aliphatic_amine": "[N;X3;+0;!$(N-C=O);!$(N-S(=O)=O);!$(N-C=N);!$(N-a)]"
+  },
+  "records": [
+    {
+      "task": "caco2_wang",
+      "parts": [
+        {
+          "part": "fold0",
+          "overall": {
+            "rows": 212,
+            "groups": 118,
+            "mae": 0.38815645870734267,
+            "mean_signed_error": -0.04536467992299276,
+            "median_signed_error": -0.11725381489858533,
+            "mean_signed_scaffold_ci90": [
+              -0.13968242071845768,
+              0.043470824326153956
+            ]
+          },
+          "strata": {
+            "acid_like": {
+              "rows": 53,
+              "groups": 33,
+              "mae": 0.44777360686634304,
+              "mean_signed_error": 0.06250236430093346,
+              "median_signed_error": 0.07751847977803372,
+              "mean_signed_scaffold_ci90": [
+                -0.10490119099591082,
+                0.21592504962702602
+              ]
+            },
+            "base_like": {
+              "rows": 122,
+              "groups": 78,
+              "mae": 0.3599889806880136,
+              "mean_signed_error": -0.0691285545755246,
+              "median_signed_error": -0.1370988768373116,
+              "mean_signed_scaffold_ci90": [
+                -0.15018152745435315,
+                0.01209305174971018
+              ]
+            },
+            "both": {
+              "rows": 23,
+              "groups": 17,
+              "mae": 0.46962010126966935,
+              "mean_signed_error": 0.028313793402920603,
+              "median_signed_error": -0.12011575601572133,
+              "mean_signed_scaffold_ci90": [
+                -0.18999219104044485,
+                0.23004532229654923
+              ]
+            },
+            "neither": {
+              "rows": 60,
+              "groups": 30,
+              "mae": 0.4239962461217532,
+              "mean_signed_error": -0.06408394241904607,
+              "median_signed_error": -0.14648081214887743,
+              "mean_signed_scaffold_ci90": [
+                -0.2480408253825838,
+                0.15913673295476122
+              ]
+            },
+            "carboxyl": {
+              "rows": 39,
+              "groups": 24,
+              "mae": 0.44977682425354854,
+              "mean_signed_error": 0.06021510630403594,
+              "median_signed_error": 0.09971454687697356,
+              "mean_signed_scaffold_ci90": [
+                -0.11951478073775385,
+                0.23610509484427697
+              ]
+            },
+            "phenol": {
+              "rows": 16,
+              "groups": 13,
+              "mae": 0.4866634236029685,
+              "mean_signed_error": 0.16000912010698615,
+              "median_signed_error": 0.12936139046906048,
+              "mean_signed_scaffold_ci90": [
+                -0.10084950585432594,
+                0.4259117180975797
+              ]
+            },
+            "aromatic_base": {
+              "rows": 76,
+              "groups": 42,
+              "mae": 0.3405404637978992,
+              "mean_signed_error": -0.048050169836038735,
+              "median_signed_error": -0.15348102620212933,
+              "mean_signed_scaffold_ci90": [
+                -0.1565583490422731,
+                0.062386253628923256
+              ]
+            },
+            "aliphatic_amine": {
+              "rows": 70,
+              "groups": 50,
+              "mae": 0.36211115337492544,
+              "mean_signed_error": -0.12040676080844577,
+              "median_signed_error": -0.18015608491962753,
+              "mean_signed_scaffold_ci90": [
+                -0.2289700304230809,
+                -0.010423548467618669
+              ]
+            }
+          },
+          "residual_logp_spearman": 0.046981292184024595,
+          "residual_molecular_weight_spearman": 0.31030686979288813
+        },
+        {
+          "part": "fold1",
+          "overall": {
+            "rows": 212,
+            "groups": 121,
+            "mae": 0.3348527606452333,
+            "mean_signed_error": 0.04449084226136762,
+            "median_signed_error": 0.042445990817994605,
+            "mean_signed_scaffold_ci90": [
+              -0.01721043208868897,
+              0.09577631730216563
+            ]
+          },
+          "strata": {
+            "acid_like": {
+              "rows": 39,
+              "groups": 28,
+              "mae": 0.40831886018039415,
+              "mean_signed_error": 0.06642554333867402,
+              "median_signed_error": 0.13110853273482448,
+              "mean_signed_scaffold_ci90": [
+                -0.06263309139722419,
+                0.19254638786926517
+              ]
+            },
+            "base_like": {
+              "rows": 165,
+              "groups": 89,
+              "mae": 0.340471816575244,
+              "mean_signed_error": 0.055441039008128946,
+              "median_signed_error": 0.07402938196795184,
+              "mean_signed_scaffold_ci90": [
+                -0.0040977532515192065,
+                0.11293093693361374
+              ]
+            },
+            "both": {
+              "rows": 26,
+              "groups": 16,
+              "mae": 0.4515958935470531,
+              "mean_signed_error": 0.09372725377290843,
+              "median_signed_error": 0.14480278660088652,
+              "mean_signed_scaffold_ci90": [
+                -0.06227700404977347,
+                0.2594006642362566
+              ]
+            },
+            "neither": {
+              "rows": 34,
+              "groups": 21,
+              "mae": 0.3125880355018293,
+              "mean_signed_error": 0.0038411626751761628,
+              "median_signed_error": -0.07518193876380996,
+              "mean_signed_scaffold_ci90": [
+                -0.13246140522567582,
+                0.14426309578675742
+              ]
+            },
+            "carboxyl": {
+              "rows": 23,
+              "groups": 14,
+              "mae": 0.42323108256553116,
+              "mean_signed_error": 0.1578902115839759,
+              "median_signed_error": 0.15849704046694857,
+              "mean_signed_scaffold_ci90": [
+                0.040269794763024495,
+                0.36436738080962294
+              ]
+            },
+            "phenol": {
+              "rows": 17,
+              "groups": 15,
+              "mae": 0.37136391699524673,
+              "mean_signed_error": -0.06846733041848228,
+              "median_signed_error": -0.11789286644384855,
+              "mean_signed_scaffold_ci90": [
+                -0.23067403882421736,
+                0.08295007393542596
+              ]
+            },
+            "aromatic_base": {
+              "rows": 90,
+              "groups": 50,
+              "mae": 0.31270707843921214,
+              "mean_signed_error": 0.057336487520328855,
+              "median_signed_error": 0.08114489237419686,
+              "mean_signed_scaffold_ci90": [
+                -0.022151827289496513,
+                0.14029160384263803
+              ]
+            },
+            "aliphatic_amine": {
+              "rows": 104,
+              "groups": 56,
+              "mae": 0.3625946045999558,
+              "mean_signed_error": 0.05400236587852211,
+              "median_signed_error": 0.05760099692162379,
+              "mean_signed_scaffold_ci90": [
+                -0.025609492046480775,
+                0.12697135079942326
+              ]
+            }
+          },
+          "residual_logp_spearman": 0.024596074124894316,
+          "residual_molecular_weight_spearman": -0.03012327020333926
+        }
+      ],
+      "same_direction_development_strata_with_ci_support": []
+    },
+    {
+      "task": "ppbr_az",
+      "parts": [
+        {
+          "part": "fold0",
+          "overall": {
+            "rows": 650,
+            "groups": 276,
+            "mae": 8.068577292713924,
+            "mean_signed_error": 1.079362019791397,
+            "median_signed_error": -0.7425767377865711,
+            "mean_signed_scaffold_ci90": [
+              0.05937270263524301,
+              2.1919974264925988
+            ]
+          },
+          "strata": {
+            "acid_like": {
+              "rows": 167,
+              "groups": 54,
+              "mae": 7.649273912228341,
+              "mean_signed_error": 2.497723482825837,
+              "median_signed_error": -0.5723595678512794,
+              "mean_signed_scaffold_ci90": [
+                0.703232347051549,
+                5.219558418676566
+              ]
+            },
+            "base_like": {
+              "rows": 531,
+              "groups": 239,
+              "mae": 8.043331668901159,
+              "mean_signed_error": 1.3496505104574141,
+              "median_signed_error": -0.7724895256082078,
+              "mean_signed_scaffold_ci90": [
+                0.11531230633103473,
+                2.5786603801175345
+              ]
+            },
+            "both": {
+              "rows": 107,
+              "groups": 42,
+              "mae": 7.972878855765857,
+              "mean_signed_error": 3.6200793240839526,
+              "median_signed_error": -1.1915649397778338,
+              "mean_signed_scaffold_ci90": [
+                1.060670455119393,
+                7.043749543969778
+              ]
+            },
+            "neither": {
+              "rows": 59,
+              "groups": 31,
+              "mae": 9.309074886480479,
+              "mean_signed_error": -0.7601769854815393,
+              "median_signed_error": -2.987056776105902,
+              "mean_signed_scaffold_ci90": [
+                -3.902284952057843,
+                3.32633248722351
+              ]
+            },
+            "carboxyl": {
+              "rows": 130,
+              "groups": 35,
+              "mae": 6.078163813584803,
+              "mean_signed_error": 1.4882614648415795,
+              "median_signed_error": -0.6936345289977908,
+              "mean_signed_scaffold_ci90": [
+                -0.33873129343493846,
+                4.442827378073383
+              ]
+            },
+            "phenol": {
+              "rows": 47,
+              "groups": 26,
+              "mae": 13.641983279048144,
+              "mean_signed_error": 4.012591896345832,
+              "median_signed_error": -0.12821919113822844,
+              "mean_signed_scaffold_ci90": [
+                -0.23714684062965993,
+                8.370206811373341
+              ]
+            },
+            "aromatic_base": {
+              "rows": 412,
+              "groups": 183,
+              "mae": 6.894417392840879,
+              "mean_signed_error": 0.7685102481875901,
+              "median_signed_error": -0.7425767377865711,
+              "mean_signed_scaffold_ci90": [
+                -0.4551912084831515,
+                1.9984863828593018
+              ]
+            },
+            "aliphatic_amine": {
+              "rows": 234,
+              "groups": 113,
+              "mae": 9.760941310398088,
+              "mean_signed_error": 1.5434515077098157,
+              "median_signed_error": -0.7525908618488124,
+              "mean_signed_scaffold_ci90": [
+                -0.598290337560391,
+                3.7508288574936373
+              ]
+            }
+          },
+          "residual_logp_spearman": -0.012579376777853039,
+          "residual_molecular_weight_spearman": 0.06198372413470727
+        },
+        {
+          "part": "fold1",
+          "overall": {
+            "rows": 651,
+            "groups": 277,
+            "mae": 7.585961846123768,
+            "mean_signed_error": 3.378055112028391,
+            "median_signed_error": 0.1008623030757434,
+            "mean_signed_scaffold_ci90": [
+              2.4080543390738094,
+              4.517437632539087
+            ]
+          },
+          "strata": {
+            "acid_like": {
+              "rows": 81,
+              "groups": 39,
+              "mae": 9.488778293900047,
+              "mean_signed_error": 6.801359277181827,
+              "median_signed_error": 1.2095401330275166,
+              "mean_signed_scaffold_ci90": [
+                3.400428475670974,
+                10.36731866690024
+              ]
+            },
+            "base_like": {
+              "rows": 576,
+              "groups": 241,
+              "mae": 7.669196402262685,
+              "mean_signed_error": 3.2589102979680384,
+              "median_signed_error": 0.1337104408721359,
+              "mean_signed_scaffold_ci90": [
+                2.237513492244074,
+                4.315348347225789
+              ]
+            },
+            "both": {
+              "rows": 59,
+              "groups": 28,
+              "mae": 11.12078564156913,
+              "mean_signed_error": 8.108226401174845,
+              "median_signed_error": 1.430860565836369,
+              "mean_signed_scaffold_ci90": [
+                3.827390835582053,
+                13.35942514242218
+              ]
+            },
+            "neither": {
+              "rows": 53,
+              "groups": 27,
+              "mae": 7.708289531508332,
+              "mean_signed_error": 4.706732122990188,
+              "median_signed_error": -1.1202236839502433,
+              "mean_signed_scaffold_ci90": [
+                0.8831017775061404,
+                8.982823004220844
+              ]
+            },
+            "carboxyl": {
+              "rows": 47,
+              "groups": 23,
+              "mae": 10.956299571772762,
+              "mean_signed_error": 8.014925648102498,
+              "median_signed_error": 1.3858329464342773,
+              "mean_signed_scaffold_ci90": [
+                3.170217900900944,
+                13.061809750528296
+              ]
+            },
+            "phenol": {
+              "rows": 36,
+              "groups": 18,
+              "mae": 7.5738829570937405,
+              "mean_signed_error": 5.367317236491703,
+              "median_signed_error": 0.5143178079560045,
+              "mean_signed_scaffold_ci90": [
+                1.1271104174087199,
+                9.315486030259516
+              ]
+            },
+            "aromatic_base": {
+              "rows": 455,
+              "groups": 190,
+              "mae": 7.341447639333316,
+              "mean_signed_error": 3.5470477648014502,
+              "median_signed_error": 0.16622929176674006,
+              "mean_signed_scaffold_ci90": [
+                2.417329235589104,
+                4.734871450907046
+              ]
+            },
+            "aliphatic_amine": {
+              "rows": 268,
+              "groups": 105,
+              "mae": 9.423684584693635,
+              "mean_signed_error": 4.481962111394659,
+              "median_signed_error": 1.1813514439567498,
+              "mean_signed_scaffold_ci90": [
+                2.792094097381884,
+                6.185706459330098
+              ]
+            }
+          },
+          "residual_logp_spearman": -0.04362764540412752,
+          "residual_molecular_weight_spearman": -0.024382538074990474
+        }
+      ],
+      "same_direction_development_strata_with_ci_support": [
+        "acid_like",
+        "base_like",
+        "both"
+      ]
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "parts": [
+        {
+          "part": "fold0",
+          "overall": {
+            "rows": 980,
+            "groups": 578,
+            "mae": 0.4900050804950242,
+            "mean_signed_error": 0.09396012549645665,
+            "median_signed_error": 0.03285169402899896,
+            "mean_signed_scaffold_ci90": [
+              0.039285860676294616,
+              0.14651940968998295
+            ]
+          },
+          "strata": {
+            "acid_like": {
+              "rows": 207,
+              "groups": 101,
+              "mae": 0.5593722832142667,
+              "mean_signed_error": 0.22742203324529287,
+              "median_signed_error": 0.16054817603367022,
+              "mean_signed_scaffold_ci90": [
+                0.10593121710705235,
+                0.3433711689799071
+              ]
+            },
+            "base_like": {
+              "rows": 814,
+              "groups": 488,
+              "mae": 0.4650603853375929,
+              "mean_signed_error": 0.09898350388020001,
+              "median_signed_error": 0.030897083651338617,
+              "mean_signed_scaffold_ci90": [
+                0.04830860858496767,
+                0.14456836424199404
+              ]
+            },
+            "both": {
+              "rows": 136,
+              "groups": 77,
+              "mae": 0.5492730979453307,
+              "mean_signed_error": 0.18484460745737963,
+              "median_signed_error": 0.1194264461771517,
+              "mean_signed_scaffold_ci90": [
+                0.06282580833466617,
+                0.31020140136706703
+              ]
+            },
+            "neither": {
+              "rows": 95,
+              "groups": 76,
+              "mae": 0.6374410938477354,
+              "mean_signed_error": -0.10978045725818218,
+              "median_signed_error": -0.10982648700011977,
+              "mean_signed_scaffold_ci90": [
+                -0.30545877881904826,
+                0.09163346085212391
+              ]
+            },
+            "carboxyl": {
+              "rows": 141,
+              "groups": 58,
+              "mae": 0.5453213691538312,
+              "mean_signed_error": 0.24223794955443714,
+              "median_signed_error": 0.18225147902235428,
+              "mean_signed_scaffold_ci90": [
+                0.06363892495154204,
+                0.3970494889574279
+              ]
+            },
+            "phenol": {
+              "rows": 73,
+              "groups": 54,
+              "mae": 0.5784144654897349,
+              "mean_signed_error": 0.1533837059532855,
+              "median_signed_error": 0.04262138589019693,
+              "mean_signed_scaffold_ci90": [
+                0.01759576272638062,
+                0.32600761151059854
+              ]
+            },
+            "aromatic_base": {
+              "rows": 660,
+              "groups": 401,
+              "mae": 0.4541229056060947,
+              "mean_signed_error": 0.10056096449883796,
+              "median_signed_error": 0.031810527173646186,
+              "mean_signed_scaffold_ci90": [
+                0.0549485145680716,
+                0.15420786873355052
+              ]
+            },
+            "aliphatic_amine": {
+              "rows": 341,
+              "groups": 214,
+              "mae": 0.4899101280753034,
+              "mean_signed_error": 0.15251282925169982,
+              "median_signed_error": 0.06204204823015713,
+              "mean_signed_scaffold_ci90": [
+                0.07784802501884092,
+                0.2415482866993695
+              ]
+            }
+          },
+          "residual_logp_spearman": 0.021373176546964974,
+          "residual_molecular_weight_spearman": 0.032909829657883395
+        },
+        {
+          "part": "fold1",
+          "overall": {
+            "rows": 980,
+            "groups": 578,
+            "mae": 0.47650922350658986,
+            "mean_signed_error": -0.03137938227236209,
+            "median_signed_error": -0.04932670569102404,
+            "mean_signed_scaffold_ci90": [
+              -0.0755577315226029,
+              0.011031988767684913
+            ]
+          },
+          "strata": {
+            "acid_like": {
+              "rows": 132,
+              "groups": 93,
+              "mae": 0.5754599291223872,
+              "mean_signed_error": -0.12365745625577326,
+              "median_signed_error": -0.1796895075409649,
+              "mean_signed_scaffold_ci90": [
+                -0.2546984058508025,
+                0.011920689746178107
+              ]
+            },
+            "base_like": {
+              "rows": 852,
+              "groups": 503,
+              "mae": 0.4636220254706621,
+              "mean_signed_error": -0.02264132606891608,
+              "median_signed_error": -0.03290288060003588,
+              "mean_signed_scaffold_ci90": [
+                -0.07249881318722894,
+                0.020268219637533946
+              ]
+            },
+            "both": {
+              "rows": 107,
+              "groups": 71,
+              "mae": 0.5512862272363807,
+              "mean_signed_error": -0.12352382657264521,
+              "median_signed_error": -0.15381741452647857,
+              "mean_signed_scaffold_ci90": [
+                -0.2500131247541088,
+                0.02341511238069734
+              ]
+            },
+            "neither": {
+              "rows": 103,
+              "groups": 60,
+              "mae": 0.5339804757824419,
+              "mean_signed_error": -0.08112281586125547,
+              "median_signed_error": -0.17380923953040406,
+              "mean_signed_scaffold_ci90": [
+                -0.2119994675961328,
+                0.055776181164098174
+              ]
+            },
+            "carboxyl": {
+              "rows": 60,
+              "groups": 42,
+              "mae": 0.6591027728361744,
+              "mean_signed_error": -0.01952899290320955,
+              "median_signed_error": -0.10409141624867034,
+              "mean_signed_scaffold_ci90": [
+                -0.21542613157245627,
+                0.256231288646954
+              ]
+            },
+            "phenol": {
+              "rows": 76,
+              "groups": 56,
+              "mae": 0.5650123034740926,
+              "mean_signed_error": -0.2205373216258549,
+              "median_signed_error": -0.22197606097540512,
+              "mean_signed_scaffold_ci90": [
+                -0.3762278536191004,
+                -0.05604778020082252
+              ]
+            },
+            "aromatic_base": {
+              "rows": 681,
+              "groups": 410,
+              "mae": 0.47152314920559607,
+              "mean_signed_error": -0.020898994198325135,
+              "median_signed_error": -0.03416233522194956,
+              "mean_signed_scaffold_ci90": [
+                -0.076233057197351,
+                0.032349282671066244
+              ]
+            },
+            "aliphatic_amine": {
+              "rows": 352,
+              "groups": 213,
+              "mae": 0.46105716473438624,
+              "mean_signed_error": 0.000641467173896409,
+              "median_signed_error": -0.0075892868540114455,
+              "mean_signed_scaffold_ci90": [
+                -0.07238103175880385,
+                0.0763841686223646
+              ]
+            }
+          },
+          "residual_logp_spearman": 0.0605548873258026,
+          "residual_molecular_weight_spearman": -0.019491645385379126
+        }
+      ],
+      "same_direction_development_strata_with_ci_support": []
+    }
+  ],
+  "model_trained": false,
+  "confirmation_residuals_used": false,
+  "test_labels_used": false,
+  "thresholds_or_frozen_splits_changed": false,
+  "interpretation": "Exploratory diagnostics on repeatedly reused development labels. SMARTS are broad chemistry categories, not measured pKa/pH. Consistent bias is a hypothesis for new fit-only modelling, not permission to edit predictions per stratum or proof of test improvement."
+}

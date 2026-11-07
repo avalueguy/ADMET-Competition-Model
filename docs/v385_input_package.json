@@ -1,0 +1,6 @@
+{
+  "archive": "releases/v385_input_delta.tar.gz",
+  "sha256": "6f77293b9fbb4b8049e917487155ec70dde8c218b92794bda7e4d31d87708952",
+  "bytes": 15784,
+  "inherited_inputs": "regression9_v384, unchanged complete v382 controls"
+}

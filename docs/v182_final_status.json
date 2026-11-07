@@ -1,0 +1,56 @@
+{
+  "status": "COMPLETE_NO_NEW_SUBMISSION",
+  "baseline_version": "v145",
+  "baseline_official_score": 51.166,
+  "target_score": 52,
+  "target_achieved": false,
+  "completed_new_routes": [
+    "v175",
+    "v178",
+    "v181"
+  ],
+  "accepted_tasks": [],
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "archive_verifications": [
+    {
+      "status": "PASS",
+      "prefix": "v176_shared_graph_batch_20261027",
+      "archive_sha256": "021a548b62c47c9a861e3e4d3ca133d1e0d84d68aac8a88ce8c4f77693ea4d21",
+      "manifest_files": 387,
+      "all_member_hashes_verified": true,
+      "dependency_hashes_verified": true,
+      "restored": 343,
+      "existing_exact": 44,
+      "existing_updated_docs_preserved": []
+    },
+    {
+      "status": "PASS",
+      "prefix": "v179_graph_embedding_20261027",
+      "archive_sha256": "e937f389544c5fe3e59982f53dad88bade6bce32d5bcbf7fc7a839205a89a987",
+      "manifest_files": 326,
+      "all_member_hashes_verified": true,
+      "dependency_hashes_verified": true,
+      "restored": 283,
+      "existing_exact": 43,
+      "existing_updated_docs_preserved": []
+    },
+    {
+      "status": "PASS",
+      "prefix": "v182_quantile_forest_20261027",
+      "archive_sha256": "5d707e44cbd83178adec4aa8c396a0cfe337ea8287b209d524d1a6495e367db2",
+      "manifest_files": 94,
+      "all_member_hashes_verified": true,
+      "dependency_hashes_verified": true,
+      "restored": 52,
+      "existing_exact": 42,
+      "existing_updated_docs_preserved": []
+    }
+  ],
+  "objective_audit": "docs/v184_official_objective_audit.json",
+  "no_failed_fallback": true,
+  "frozen_gates_unchanged": true,
+  "source_mapping_correction": "v174 rejected; previous51.188 estimate withdrawn",
+  "running_new_training_processes": 0
+}

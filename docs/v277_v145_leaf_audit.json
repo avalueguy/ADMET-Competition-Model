@@ -1,0 +1,164 @@
+{
+  "status": "FIT_ONLY_COMPONENT_AUDIT_COMPLETE",
+  "at_utc": "2026-10-30T04:25:40.932623+00:00",
+  "baseline": "v145",
+  "source_sha256": "b11115e8e55c67fa8d71ba7c432bb8981434c8a9c11dac341bd5e4335eab337d",
+  "records": [
+    {
+      "task": "herg",
+      "carried_component": "v127/physchem",
+      "carried_weight": 0.5,
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 305,
+          "fit_groups": 195,
+          "other_assay_source_rows": 53238,
+          "seeds": [
+            {
+              "seed": 1274026,
+              "model_sha256": "6382cb996ef8cbcc2deadadbf0a38a5f54fda40e446f613665a0359eae222a34",
+              "trees": 900,
+              "leaves": 14380,
+              "occupied_leaves": 8916,
+              "occupied_leaf_fraction": 0.6200278164116829,
+              "small_leaf_fraction": 0.348138178555406,
+              "gradient_rms": 0.5699285053919231,
+              "maximum_absolute_gradient": 3.917713393898249,
+              "logloss": 0.08496645917191455,
+              "topology_reconstruction": "PASS"
+            },
+            {
+              "seed": 1274027,
+              "model_sha256": "5ba2ce8cfbf7297df889f4a614d3626fdb16b986ffa3b28a64a0853e8c21b15b",
+              "trees": 900,
+              "leaves": 14400,
+              "occupied_leaves": 10925,
+              "occupied_leaf_fraction": 0.7586805555555556,
+              "small_leaf_fraction": 0.2976659038901602,
+              "gradient_rms": 0.44569528600186153,
+              "maximum_absolute_gradient": 2.7483441638992048,
+              "logloss": 0.0579835122543883,
+              "topology_reconstruction": "PASS"
+            }
+          ]
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 305,
+          "fit_groups": 197,
+          "other_assay_source_rows": 53238,
+          "seeds": [
+            {
+              "seed": 1274026,
+              "model_sha256": "a51fabb9bdbcc3a28742ced144990294d11a82b5c8208a8bc32c9c8d67c6c7e0",
+              "trees": 900,
+              "leaves": 14400,
+              "occupied_leaves": 10517,
+              "occupied_leaf_fraction": 0.7303472222222223,
+              "small_leaf_fraction": 0.30360368926499953,
+              "gradient_rms": 0.5330842715977133,
+              "maximum_absolute_gradient": 2.954648263428193,
+              "logloss": 0.06888918115628437,
+              "topology_reconstruction": "PASS"
+            },
+            {
+              "seed": 1274027,
+              "model_sha256": "88d81b2d36fcfdcdde460340300fb01ba3b71984cfed97a06b31d5dd0ebdfdcb",
+              "trees": 900,
+              "leaves": 14372,
+              "occupied_leaves": 9595,
+              "occupied_leaf_fraction": 0.6676175897578626,
+              "small_leaf_fraction": 0.32662845231891613,
+              "gradient_rms": 0.5614388013879783,
+              "maximum_absolute_gradient": 3.8698219161479233,
+              "logloss": 0.08091518787385517,
+              "topology_reconstruction": "PASS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "carried_component": "v127/physchem",
+      "carried_weight": 0.5,
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 312,
+          "fit_groups": 210,
+          "other_assay_source_rows": 53227,
+          "seeds": [
+            {
+              "seed": 1274026,
+              "model_sha256": "85590ffb3a75e6d7a3542dcbfac05350ad286163aecb1ce380887161db87d740",
+              "trees": 900,
+              "leaves": 14400,
+              "occupied_leaves": 10891,
+              "occupied_leaf_fraction": 0.7563194444444444,
+              "small_leaf_fraction": 0.2891378202185291,
+              "gradient_rms": 0.8746370258390358,
+              "maximum_absolute_gradient": 4.628556363897437,
+              "logloss": 0.13324919985809913,
+              "topology_reconstruction": "PASS"
+            },
+            {
+              "seed": 1274027,
+              "model_sha256": "18257fa60cf820e0a4ae91565e9ed1984e020ad51ce59e414286c9ae9e5efe27",
+              "trees": 900,
+              "leaves": 14400,
+              "occupied_leaves": 9838,
+              "occupied_leaf_fraction": 0.6831944444444444,
+              "small_leaf_fraction": 0.3231347834925798,
+              "gradient_rms": 0.9507474222985026,
+              "maximum_absolute_gradient": 5.195185839783356,
+              "logloss": 0.15242758886819957,
+              "topology_reconstruction": "PASS"
+            }
+          ]
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 312,
+          "fit_groups": 230,
+          "other_assay_source_rows": 53227,
+          "seeds": [
+            {
+              "seed": 1274026,
+              "model_sha256": "cfdda00ebc18d652669d4f30a8ae5523fb961521e3a2404206ae98ec5ae03143",
+              "trees": 900,
+              "leaves": 14400,
+              "occupied_leaves": 10281,
+              "occupied_leaf_fraction": 0.7139583333333334,
+              "small_leaf_fraction": 0.3192296469215057,
+              "gradient_rms": 0.9048355239999654,
+              "maximum_absolute_gradient": 4.94554157662613,
+              "logloss": 0.1416712008258226,
+              "topology_reconstruction": "PASS"
+            },
+            {
+              "seed": 1274027,
+              "model_sha256": "f03c56b5b3a4adedab759b830aed4cf7fc6d74e31cf7115417bade6ee3007c87",
+              "trees": 900,
+              "leaves": 14400,
+              "occupied_leaves": 10012,
+              "occupied_leaf_fraction": 0.6952777777777778,
+              "small_leaf_fraction": 0.3225129844186976,
+              "gradient_rms": 0.9138173089015288,
+              "maximum_absolute_gradient": 5.8432186059408515,
+              "logloss": 0.14744141044949927,
+              "topology_reconstruction": "PASS"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "query_labels_used": false,
+  "query_prediction_scores_computed": false,
+  "confirmation_scores_computed": false,
+  "updated_model_trained": false,
+  "qualification": "Training gradients/occupancy are mechanism diagnostics, not evidence of generalization improvement.",
+  "feasibility": "Existing exact v145 component checkpoints expose reconstructible leaf topology and values. Fit-only regularized leaf updates can optimize those components without new splits or arbitrary architecture changes."
+}

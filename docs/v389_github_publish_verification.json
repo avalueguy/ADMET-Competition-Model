@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "published_at_utc": "2026-11-06T07:49:06.305302+00:00",
+  "repository": "avalueguy/ADMET-Competition-Model",
+  "account": "avalueguy",
+  "branch": "main",
+  "commit": "01ee287e52c3d2116c508adba3787744dcaef360",
+  "release_tag": "handoff-v389-20261106",
+  "release_url": "https://github.com/avalueguy/ADMET-Competition-Model/releases/tag/handoff-v389-20261106",
+  "published_manual_assets": [
+    {
+      "name": "v380_complete_handoff.tar.gz",
+      "sha256": "9e794a627d30080cddbe81af0c3ac1467537d6198d81f916c2a810ff704ae3b5",
+      "bytes": 1552688550
+    },
+    {
+      "name": "v382_handoff_delta.tar.gz",
+      "sha256": "5af0f0f03dec3921d54c502039295fbef1220dee21d68ce223cb3c13e2bb73e4",
+      "bytes": 57422503
+    },
+    {
+      "name": "v385_handoff_delta.tar.gz",
+      "sha256": "ae128f29c59714664cb8f051e0521b585ec2bc63668917d1f6af08e84878a548",
+      "bytes": 5263123
+    },
+    {
+      "name": "v388_handoff_delta.tar.gz",
+      "sha256": "de2bf6a6044864e0e8cb28da807f29aab722a47c5fae1ad2227d1c43aaf83cab",
+      "bytes": 55839973
+    },
+    {
+      "name": "v389_handoff_delta.tar.gz",
+      "sha256": "eb833d2b7cdcc23ad9d34f7e0542b330dd83ef80c71a1a2430f45bcdfd52b175",
+      "bytes": 49711829
+    },
+    {
+      "name": "admet-v389-source.zip",
+      "sha256": "ba00bbbc1d102042ee53a5bd82886179da6e1fb351f5a5ffe0a85b0f3a7b3202",
+      "bytes": 4342673
+    },
+    {
+      "name": "handoff-manifest-v389.json",
+      "sha256": "253b68da1bf01ca43ccd710418826b8a06966a9eb2e478995aaa65af181d4853",
+      "bytes": 328028
+    },
+    {
+      "name": "restore_v389_handoff.py",
+      "sha256": "df7f506221304cb32be37e6be9b2fe3dbae6538330954afabdef6f449d1ebece",
+      "bytes": 2777
+    },
+    {
+      "name": "v387-official-best.csv",
+      "sha256": "97cdbd749fde3ea10c2e55cfea143cfc2e0208b18edc09ebd101feb3d72a77a3",
+      "bytes": 1775796
+    },
+    {
+      "name": "v389-experimental.csv",
+      "sha256": "c02dff23296dd35458ac1e4fb1ceb094bfdc686a7bde5c3de6aed81cf76be20c",
+      "bytes": 1775796
+    }
+  ],
+  "github_displayed_asset_sha256_matches_local": true,
+  "git_files_downloaded_hash_verification": {
+    "commit": "01ee287e52c3d2116c508adba3787744dcaef360",
+    "files": [
+      {
+        "name": "README.md",
+        "bytes": 5535,
+        "sha256": "0d3d308336e8484427ade31116bc8240466a09efbfb30d775d9d1a6e3f28b9e8",
+        "status": "PASS"
+      },
+      {
+        "name": "HANDOFF_CURRENT.md",
+        "bytes": 5535,
+        "sha256": "0d3d308336e8484427ade31116bc8240466a09efbfb30d775d9d1a6e3f28b9e8",
+        "status": "PASS"
+      },
+      {
+        "name": "CURRENT_STATUS.json",
+        "bytes": 416299,
+        "sha256": "8aec5eec4808ba070cffd5709d392d113445210b0ff6281414060e14e891c23f",
+        "status": "PASS"
+      },
+      {
+        "name": "admet-v389-source.zip",
+        "bytes": 4342673,
+        "sha256": "ba00bbbc1d102042ee53a5bd82886179da6e1fb351f5a5ffe0a85b0f3a7b3202",
+        "status": "PASS"
+      },
+      {
+        "name": "handoff-manifest-v389.json",
+        "bytes": 328028,
+        "sha256": "253b68da1bf01ca43ccd710418826b8a06966a9eb2e478995aaa65af181d4853",
+        "status": "PASS"
+      },
+      {
+        "name": "restore_v389_handoff.py",
+        "bytes": 2777,
+        "sha256": "df7f506221304cb32be37e6be9b2fe3dbae6538330954afabdef6f449d1ebece",
+        "status": "PASS"
+      },
+      {
+        "name": "v387-official-best.csv",
+        "bytes": 1775796,
+        "sha256": "97cdbd749fde3ea10c2e55cfea143cfc2e0208b18edc09ebd101feb3d72a77a3",
+        "status": "PASS"
+      },
+      {
+        "name": "v389-experimental.csv",
+        "bytes": 1775796,
+        "sha256": "c02dff23296dd35458ac1e4fb1ceb094bfdc686a7bde5c3de6aed81cf76be20c",
+        "status": "PASS"
+      }
+    ],
+    "status": "PASS"
+  },
+  "clean_directory_restore_test": "PASS",
+  "credentials_included": false,
+  "proof_screenshot": "work\\github_handoff_v389_20261106\\github-release-published.png"
+}

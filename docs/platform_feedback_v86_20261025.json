@@ -1,0 +1,12 @@
+{
+  "version": "v86",
+  "score": 50.900,
+  "previous_version": "v85",
+  "previous_score": 50.889,
+  "observed_gain": 0.011,
+  "source": "user report",
+  "reported_date": "2026-10-25",
+  "uploaded_byte_hash_confirmed": false,
+  "target_score": 52.0,
+  "gap_to_target": 1.100
+}

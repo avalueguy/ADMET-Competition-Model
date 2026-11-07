@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "archive": "releases/v374_v375_complete_handoff.tar.gz",
+  "sha256": "48e913db352e0810b73542a3bc8dd972c59d9415e3c1f6ee5c231f4206cbeec7",
+  "bytes": 422039799,
+  "files": 435,
+  "all_member_hashes_verified": true
+}

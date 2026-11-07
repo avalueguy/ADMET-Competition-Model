@@ -1,0 +1,11 @@
+{
+  "status": "RECORDED_TEST_FAILURE",
+  "phase": "Predevelopment smoke",
+  "original_smoke_sha256": "f59598c9399c0766506e727193199fd955d4cf991b4ae1d4933c8eeaac3e349d",
+  "observed_failure": "AssertionError on fixed abs(rankmap_inverse(rankmap(y))-y)<1.5, first sqrt_gaussian_rank_C3 smoke.",
+  "cause": "Finite midranks mapped through the linear empirical quantile function do not round-trip exactly; discrepancy depends on label gaps.",
+  "correction": "Separate smoke amendment checks monotonicity and bounds for empirical rank transform, exact inverse for analytic warps.",
+  "training_source_changed": false,
+  "outer_scores_computed_before_amendment": false,
+  "record_scope": "Compact reconstruction from observed bootstrap error; not a saved verbatim original stderr stream."
+}

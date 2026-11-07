@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "reason": "Before training launch, verifier corrected to represent a one-group bootstrap as unavailable, matching frozen training acceptance logic. Bootstrap added to run graphs, smoke and bounded training. No learner or configuration changed.",
+  "files": [
+    {
+      "name": "v368_verify_remote.py",
+      "sha256": "093d72eec1a6746bea805528fe785deb6bc327634c7907e401547b436753b8e1"
+    },
+    {
+      "name": "v368_bootstrap.py",
+      "sha256": "6352b48eaaeabed82409cf0f43009f16afce318a30f79c9b71eb8634cf657d8e"
+    }
+  ],
+  "confirmed_by": "experiments/transformer_stage3_v368/launch.json"
+}

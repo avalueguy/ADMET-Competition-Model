@@ -1,0 +1,72 @@
+{
+  "status": "FIT_ONLY_REVIEW_COMPLETE_FIXED_PROTOCOL",
+  "at_utc": "2026-10-30T04:55:28.857555+00:00",
+  "baseline": "v145",
+  "diagnostic": "docs/v283_stereochemical_context_audit.json",
+  "decision": "Repair only stereochemical identity pooling in actual carried v127 components for two supported tasks. Preserve model type, seeds, parameters, feature column positions, task fit/query rows, labels and original blend.",
+  "supported_tasks": [
+    {
+      "task": "herg",
+      "parts": [
+        {
+          "part": "fold0",
+          "fitting_rows": 305,
+          "changed_rows": 99,
+          "changed_fraction": 0.32459016393442625,
+          "mixed_other_assay_identity_groups": 306,
+          "mixed_source_rows": 694,
+          "supported": true
+        },
+        {
+          "part": "fold1",
+          "fitting_rows": 305,
+          "changed_rows": 88,
+          "changed_fraction": 0.28852459016393445,
+          "mixed_other_assay_identity_groups": 306,
+          "mixed_source_rows": 694,
+          "supported": true
+        }
+      ],
+      "supported": true
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "parts": [
+        {
+          "part": "fold0",
+          "fitting_rows": 312,
+          "changed_rows": 140,
+          "changed_fraction": 0.44871794871794873,
+          "mixed_other_assay_identity_groups": 308,
+          "mixed_source_rows": 698,
+          "supported": true
+        },
+        {
+          "part": "fold1",
+          "fitting_rows": 312,
+          "changed_rows": 141,
+          "changed_fraction": 0.4519230769230769,
+          "mixed_other_assay_identity_groups": 308,
+          "mixed_source_rows": 698,
+          "supported": true
+        }
+      ],
+      "supported": true
+    }
+  ],
+  "excluded_tasks": [
+    "cyp2d6_veith"
+  ],
+  "historical_overlap": {
+    "v73_v83_v96": "Original exact keys canonicalize without stereochemistry; v96 neutral keys also discard it. These are the actual component input producers.",
+    "v210": "Changes molecular fingerprint/descriptor representation to neutral/tautomer but retains old pooled assay context. Rejected; no model reused.",
+    "v250": "Stereo graph kernel input; does not fix measured context identities. Rejected; no reuse.",
+    "v278": "Joint leaf score refit on original input/topology, rejected. This changes the audited input pooling only and retains original estimator; no prior/seed retuning."
+  },
+  "caveat": "Changes are semantically justified input handling; no claim the old grouping is universally wrong, no claim of gain until original validation.",
+  "query_scores_used": false,
+  "labels_changed": false,
+  "groups_changed": false,
+  "failed_predictions_reused": false,
+  "prohibition": "No switch to nonstereo fallback or parameter/seed changes on failure. Missing stereo-specific measurement stays missing; do not infer assay values."
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "version": "v321",
+  "official_user_reported": 51.198,
+  "prior_best_user_reported": 51.205,
+  "exact_mean": 51.198252181818184,
+  "exact_mean_delta": -0.007079045454538857,
+  "changed_task": "cyp3a4_substrate_carbonmangels",
+  "old_raw": 0.7460443037974683,
+  "new_raw": 0.7414104882459313,
+  "raw_delta": -0.004633815551537079,
+  "old_task_score": 50.706702,
+  "new_task_score": 50.550963,
+  "task_score_delta": -0.15573899999999696,
+  "unchanged_official_tasks": 21,
+  "local_csv_changed_rows": {
+    "cyp3a4_substrate_carbonmangels": 135
+  },
+  "local_byte_identity_verified": true,
+  "format_or_task_mapping_error_found": false,
+  "strict_confirmation_was_rejected": true,
+  "interpretation": "Four local point gains did not transfer to hidden official test. Exact statistical cause is not established by this scorecard. No test labels inferred.",
+  "current_best_version": "v313",
+  "current_best_score": 51.205,
+  "action": "Do not promote or stack v321. Preserve v313 baseline; no feedback-driven blend sweep."
+}

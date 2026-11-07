@@ -1,0 +1,18 @@
+{
+  "status": "MANUAL_SUBMISSION_ONLY",
+  "effective_at_utc": "2026-10-29T02:44:24.868614+00:00",
+  "automatic_submission_permitted": false,
+  "training_permitted": true,
+  "local_candidate_preparation_permitted": true,
+  "send_when": "Truly changed predictions and all original frozen stability checks PASS",
+  "delivery": "CSV path, SHA256, validation evidence; user decides submission",
+  "official_best": 51.166,
+  "official_baseline": "v145",
+  "credentials_stored": false,
+  "progress_notifications": "Quiet while training is healthy or no eligible file. Notify eligible new CSV and evidence, meaningful failure or required user action only.",
+  "notification_interval_minutes": null,
+  "local_progress_sync_seconds": null,
+  "priority": "Fast delivery of a genuinely changed candidate passing original stable gates, manual submission only",
+  "periodic_progress_requested": false,
+  "policy_updated_at_utc": "2026-10-29T05:57:31.599699+00:00"
+}

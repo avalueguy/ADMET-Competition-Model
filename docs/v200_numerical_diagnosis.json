@@ -1,0 +1,20 @@
+{
+  "status": "FIT_ONLY_ANALYTIC_DIAGNOSIS",
+  "task": "solubility_aqsoldb",
+  "part": "fold1",
+  "fit_rows": 3410,
+  "parameters": 450,
+  "initial_gradient_inf": 0.17821346602650484,
+  "majorizer_to_true_curvature_ratio_quantiles": [
+    1.00012152634997,
+    253.09674142802515,
+    2578.7167215574987,
+    13914.297643052638
+  ],
+  "explanation": "Old MAE IRLS majorizer can substantially overestimate smooth-absolute curvature, reducing progress. This is not evidence of statistical improvement.",
+  "actual_old_failure_partition_confirmed_from_log": true,
+  "no_model_fitting_in_diagnosis": true,
+  "no_query_labels_examined": true,
+  "old_source_unchanged": true,
+  "repair": "New immutable v200 exact-Newton solver for identical objective; derivatives/reference/previously failing fit partition must pass before training."
+}

@@ -1,0 +1,251 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "at_utc": "2026-11-01T08:44:19.283827+00:00",
+  "signature": "216d02a7b30353486179b163f186da49a6e3ac534c2d843adf15c18ed2893002",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52.0,
+  "development_best": [
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 8,
+        "fingerprint_columns": 256,
+        "trees": 700,
+        "depth": 5
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 212,
+          "baseline": 0.38815645870734267,
+          "expert": 0.3617624579134099,
+          "candidate": 0.3685944722535556,
+          "gain": 0.050397168499870665
+        },
+        {
+          "part": "fold1",
+          "rows": 212,
+          "baseline": 0.3348527606452333,
+          "expert": 0.3428318771369503,
+          "candidate": 0.32845411471891184,
+          "gain": 0.01910883432465
+        }
+      ],
+      "objective": 0.01910883432465
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 8,
+        "fingerprint_columns": 256,
+        "trees": 700,
+        "depth": 5
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 8.068577292713924,
+          "expert": 8.455339378977076,
+          "candidate": 7.991914980453275,
+          "gain": 0.009501341993696427
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.585961846123768,
+          "expert": 8.671108525175226,
+          "candidate": 7.598181674839458,
+          "gain": -0.001610847637196427
+        }
+      ],
+      "objective": -0.001610847637196427
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 8,
+        "fingerprint_columns": 256,
+        "trees": 700,
+        "depth": 5
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 980,
+          "baseline": 0.4900050804950242,
+          "expert": 0.5569764903278306,
+          "candidate": 0.492096690976586,
+          "gain": -0.0042685485616776086
+        },
+        {
+          "part": "fold1",
+          "rows": 980,
+          "baseline": 0.47650922350658986,
+          "expert": 0.4951539729472669,
+          "candidate": 0.46780086910803015,
+          "gain": 0.018275311303474238
+        }
+      ],
+      "objective": -0.0042685485616776086
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 8,
+        "fingerprint_columns": 256,
+        "trees": 700,
+        "depth": 5
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1210,
+          "baseline": 0.4642859078866628,
+          "expert": 0.5006828891644112,
+          "candidate": 0.4622153510449562,
+          "gain": 0.004459659030211272
+        },
+        {
+          "part": "fold1",
+          "rows": 1210,
+          "baseline": 0.534364444193799,
+          "expert": 0.5616511160440053,
+          "candidate": 0.5327088543914396,
+          "gain": 0.003098240948379854
+        }
+      ],
+      "objective": 0.003098240948379854
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 8,
+        "fingerprint_columns": 256,
+        "trees": 700,
+        "depth": 5
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1635,
+          "baseline": 0.7675069205648937,
+          "expert": 0.8057571607317638,
+          "candidate": 0.7587597848930298,
+          "gain": 0.01139681667681371
+        },
+        {
+          "part": "fold1",
+          "rows": 1635,
+          "baseline": 0.7502386159917903,
+          "expert": 0.8084382300689883,
+          "candidate": 0.741596198216007,
+          "gain": 0.011519558699812263
+        }
+      ],
+      "objective": 0.01139681667681371
+    }
+  ],
+  "accepted_tasks": [],
+  "confirmation": [
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 8,
+        "fingerprint_columns": 256,
+        "trees": 700,
+        "depth": 5
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 212,
+          "baseline": 0.38815645870734267,
+          "expert": 0.3617624579134099,
+          "candidate": 0.3685944722535556,
+          "gain": 0.050397168499870665
+        },
+        {
+          "part": "fold1",
+          "rows": 212,
+          "baseline": 0.3348527606452333,
+          "expert": 0.3428318771369503,
+          "candidate": 0.32845411471891184,
+          "gain": 0.01910883432465
+        }
+      ],
+      "objective": 0.01910883432465,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 212,
+          "baseline": 0.38815645870734267,
+          "expert": 0.3617624579134099,
+          "candidate": 0.3685944722535556,
+          "gain": 0.050397168499870665
+        },
+        {
+          "part": "fold1",
+          "rows": 212,
+          "baseline": 0.3348527606452333,
+          "expert": 0.3428318771369503,
+          "candidate": 0.32845411471891184,
+          "gain": 0.01910883432465
+        },
+        {
+          "part": "fold2",
+          "rows": 213,
+          "baseline": 0.3570673877285404,
+          "expert": 0.37680546565820666,
+          "candidate": 0.3586128200961151,
+          "gain": -0.004328125224221309
+        },
+        {
+          "part": "valid",
+          "rows": 91,
+          "baseline": 0.3583998208980098,
+          "expert": 0.39242601943311306,
+          "candidate": 0.36116475514164487,
+          "gain": -0.007714664133221968
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 109,
+          "gain_ci90": [
+            -0.03517052495749794,
+            0.021737027259406225
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 53,
+          "gain_ci90": [
+            -0.06428590377720546,
+            0.05867544909368804
+          ],
+          "lower_positive": false
+        }
+      ],
+      "accepted": false
+    }
+  ],
+  "csv_created": false,
+  "platform_submission": false,
+  "official_gain_established": false
+}

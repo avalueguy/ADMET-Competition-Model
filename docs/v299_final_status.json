@@ -1,0 +1,165 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "at_utc": "2026-11-01T09:03:53.634539+00:00",
+  "signature": "3ddcf51ae7c9c6f53e48f40f116e56ae462df9a1040257b757a050dccd5a631c",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52.0,
+  "development_best": [
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "config": {
+        "bins": 24,
+        "trees": 700,
+        "depth": 5,
+        "fingerprint_columns": 512
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 212,
+          "baseline": 0.38815645870734267,
+          "expert": 0.5296051080169233,
+          "candidate": 0.4065122948077524,
+          "gain": -0.04728978660187503
+        },
+        {
+          "part": "fold1",
+          "rows": 212,
+          "baseline": 0.3348527606452333,
+          "expert": 0.4894880283027897,
+          "candidate": 0.35602380130875105,
+          "gain": -0.06322492495723477
+        }
+      ],
+      "objective": -0.06322492495723477
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "config": {
+        "bins": 24,
+        "trees": 700,
+        "depth": 5,
+        "fingerprint_columns": 512
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 8.068577292713924,
+          "expert": 9.030790755686679,
+          "candidate": 8.041772785320317,
+          "gain": 0.003322085966482776
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.585961846123768,
+          "expert": 8.816866683445562,
+          "candidate": 7.66277450721589,
+          "gain": -0.010125632404989225
+        }
+      ],
+      "objective": -0.010125632404989225
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "config": {
+        "bins": 24,
+        "trees": 700,
+        "depth": 5,
+        "fingerprint_columns": 512
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 980,
+          "baseline": 0.4900050804950242,
+          "expert": 0.7790502405413127,
+          "candidate": 0.5190806621843531,
+          "gain": -0.05933730658456742
+        },
+        {
+          "part": "fold1",
+          "rows": 980,
+          "baseline": 0.47650922350658986,
+          "expert": 0.6833694209583606,
+          "candidate": 0.4812098204029522,
+          "gain": -0.009864650387606427
+        }
+      ],
+      "objective": -0.05933730658456742
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "config": {
+        "bins": 24,
+        "trees": 700,
+        "depth": 5,
+        "fingerprint_columns": 512
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1210,
+          "baseline": 0.4642859078866628,
+          "expert": 0.5279273425253732,
+          "candidate": 0.4673380020995078,
+          "gain": -0.0065737386403510525
+        },
+        {
+          "part": "fold1",
+          "rows": 1210,
+          "baseline": 0.534364444193799,
+          "expert": 0.6007631729142788,
+          "candidate": 0.5402869605559915,
+          "gain": -0.011083290489373392
+        }
+      ],
+      "objective": -0.011083290489373392
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "config": {
+        "bins": 24,
+        "trees": 700,
+        "depth": 5,
+        "fingerprint_columns": 512
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1635,
+          "baseline": 0.7675069205648937,
+          "expert": 0.9098059265791156,
+          "candidate": 0.7773891320811681,
+          "gain": -0.012875729523065439
+        },
+        {
+          "part": "fold1",
+          "rows": 1635,
+          "baseline": 0.7502386159917903,
+          "expert": 0.8673530472417355,
+          "candidate": 0.756027252787131,
+          "gain": -0.007715727599129661
+        }
+      ],
+      "objective": -0.012875729523065439
+    }
+  ],
+  "accepted_tasks": [],
+  "confirmation": [],
+  "csv_created": false,
+  "platform_submission": false,
+  "official_gain_established": false
+}

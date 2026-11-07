@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v279_v145_leaf_refit_20261030",
+  "archive_sha256": "fba6b901b96f78d3570c8d8a29b2daf907bc5dddd1a6f57f57f1dfa47959e399",
+  "manifest_files": 114,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 28,
+  "existing_exact": 86,
+  "existing_updated_docs_preserved": []
+}

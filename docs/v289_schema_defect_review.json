@@ -1,0 +1,24 @@
+{
+  "status": "CONFIRMED_INPUT_SCHEMA_DEFECT",
+  "at_utc": "2026-10-31T06:12:02.228269+00:00",
+  "source": "tools/v284_stereo_context_repair.py",
+  "source_sha256": "3f7f111a75053710369247e89cf835fa2567fceaf8e54a7c2a3187350582df91",
+  "source_line": "width = 2*len(cols)",
+  "actual_original_context_columns": 105,
+  "original_physchem_columns": 435,
+  "expected_total_columns": 540,
+  "actual_total_columns": 603,
+  "retained_legacy_context_columns": 63,
+  "dependency_evidence": [
+    "tools/v125_low_task_baseline.py: features uses assays.assays",
+    "tools/v96_normalized_assays.py: assays returns exactMedian/exactMask/neutralMedian/neutralMask/neutralRange (5*21 columns)",
+    "Remote original.features and v284.design observed 305x540 versus 305x603 for hERG/fold0"
+  ],
+  "repair": "Replace all 5*n context columns, verify exact original context prefix and physical suffix, preserve total width. Add independent schema regression guards.",
+  "old_source_and_archive_preserved": true,
+  "model_parameters_changed": false,
+  "original_seeds_changed": false,
+  "gates_changed": false,
+  "new_scores_used": false,
+  "original_review_sha_note": "v284_source_review references an earlier prefreeze source SHA; actual freeze/plan/archive agree on 3f7f111a. Preserve mismatch as historical evidence; new source review must exactly match final frozen SHA."
+}

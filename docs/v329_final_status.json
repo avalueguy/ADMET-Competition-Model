@@ -1,0 +1,275 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "at_utc": "2026-11-01T11:55:25.983596+00:00",
+  "signature": "4b2bdd798b4fa94809938f68202474df413f723687aa92b5e86a52531e97a2f0",
+  "baseline": "v313",
+  "official_best": 51.205,
+  "target_score": 52.0,
+  "development_best": [
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500,
+        "sam_radius": 0.05
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 212,
+          "baseline": 0.38815645870734267,
+          "expert": 0.3913185392577975,
+          "candidate": 0.38208293395475024,
+          "gain": 0.015647104708288957
+        },
+        {
+          "part": "fold1",
+          "rows": 212,
+          "baseline": 0.3348527606452333,
+          "expert": 0.37654246860809726,
+          "candidate": 0.33275418685837876,
+          "gain": 0.0062671539061250146
+        }
+      ],
+      "objective": 0.0062671539061250146
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500,
+        "sam_radius": 0.05
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 7.95280971526812,
+          "expert": 8.442301077311782,
+          "candidate": 7.9950923562668885,
+          "gain": -0.005316692151906136
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.292895667509342,
+          "expert": 7.565931806804039,
+          "candidate": 7.283357876316621,
+          "gain": 0.0013078195037415578
+        }
+      ],
+      "objective": -0.005316692151906136
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500,
+        "sam_radius": 0.05
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 980,
+          "baseline": 0.48369211177257504,
+          "expert": 0.5809896227094145,
+          "candidate": 0.4883103233687735,
+          "gain": -0.00954783318519339
+        },
+        {
+          "part": "fold1",
+          "rows": 980,
+          "baseline": 0.46346071333625716,
+          "expert": 0.5571172927391238,
+          "candidate": 0.4638380136448908,
+          "gain": -0.0008140934016124443
+        }
+      ],
+      "objective": -0.00954783318519339
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500,
+        "sam_radius": 0.05
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1210,
+          "baseline": 0.4642859078866628,
+          "expert": 0.5537831136166463,
+          "candidate": 0.46344960385752565,
+          "gain": 0.001801269465497751
+        },
+        {
+          "part": "fold1",
+          "rows": 1210,
+          "baseline": 0.534364444193799,
+          "expert": 0.6116339729088949,
+          "candidate": 0.5353706887901437,
+          "gain": -0.001883068020857594
+        }
+      ],
+      "objective": -0.001883068020857594
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500,
+        "sam_radius": 0.05
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1635,
+          "baseline": 0.7675069205648937,
+          "expert": 0.8366465434272653,
+          "candidate": 0.751548314053181,
+          "gain": 0.020792785164682224
+        },
+        {
+          "part": "fold1",
+          "rows": 1635,
+          "baseline": 0.7502386159917903,
+          "expert": 0.819427834245441,
+          "candidate": 0.7315227051941265,
+          "gain": 0.024946610849832043
+        }
+      ],
+      "objective": 0.020792785164682224
+    }
+  ],
+  "accepted_tasks": [],
+  "confirmation": [
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500,
+        "sam_radius": 0.05
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1635,
+          "baseline": 0.7675069205648937,
+          "expert": 0.8366465434272653,
+          "candidate": 0.751548314053181,
+          "gain": 0.020792785164682224
+        },
+        {
+          "part": "fold1",
+          "rows": 1635,
+          "baseline": 0.7502386159917903,
+          "expert": 0.819427834245441,
+          "candidate": 0.7315227051941265,
+          "gain": 0.024946610849832043
+        }
+      ],
+      "objective": 0.020792785164682224,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 1635,
+          "baseline": 0.7675069205648937,
+          "expert": 0.8366465434272653,
+          "candidate": 0.751548314053181,
+          "gain": 0.020792785164682224
+        },
+        {
+          "part": "fold1",
+          "rows": 1635,
+          "baseline": 0.7502386159917903,
+          "expert": 0.819427834245441,
+          "candidate": 0.7315227051941265,
+          "gain": 0.024946610849832043
+        },
+        {
+          "part": "fold2",
+          "rows": 1775,
+          "baseline": 0.6269016415832172,
+          "expert": 0.7321546809353245,
+          "candidate": 0.6111601967152441,
+          "gain": 0.02510991170515773
+        },
+        {
+          "part": "valid",
+          "rows": 2940,
+          "baseline": 1.005001121803155,
+          "expert": 1.1818071906498961,
+          "candidate": 1.0026509673090696,
+          "gain": 0.0023384595729294033
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 14,
+          "gain_ci90": [
+            0.018522944572066644,
+            0.09434967378013927
+          ],
+          "lower_positive": true
+        },
+        {
+          "part": "valid",
+          "groups": 2874,
+          "gain_ci90": [
+            -0.0025198142017603476,
+            0.007627777682484848
+          ],
+          "lower_positive": false
+        }
+      ],
+      "accepted": false
+    }
+  ],
+  "csv_created": false,
+  "platform_submission": false,
+  "official_gain_established": false
+}

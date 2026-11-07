@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v93_rejected_balanced_multitask_20261025",
+  "archive_sha256": "6869e0794b432227dd929a1530dd5b2ec25a57919a52a261f214a874ddec9709",
+  "manifest_files": 52,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 48,
+  "existing_exact": 4,
+  "existing_updated_docs_preserved": []
+}

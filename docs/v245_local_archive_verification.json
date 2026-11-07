@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v245_conditional_density_20261029",
+  "archive_sha256": "02873f10f067d9fe052670b3baf9d66830ac8166ada1b245a172b8b180498b0b",
+  "manifest_files": 83,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 35,
+  "existing_exact": 48,
+  "existing_updated_docs_preserved": []
+}

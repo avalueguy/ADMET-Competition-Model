@@ -1,0 +1,12 @@
+{
+  "version": "v97",
+  "baseline": "v94",
+  "baseline_official_score_user_reported": 50.916,
+  "components": ["v95 independent graph experts", "v96 neutral-parent assay experts"],
+  "assembly_rule": "Union of independently frozen and confirmed task experts, each applied once to v94. If both branches accept an endpoint, select the branch with greater minimum fold0/fold1 development gain. Do not use confirmation gain to pick the branch, change blend weights, combine same-task experts or rescue rejected tasks.",
+  "frozen_at_state": "Both branch selections already frozen; v95 AMES accepted, v96 bioavailability accepted. Remaining confirmations not complete.",
+  "same_endpoint_blending": false,
+  "additional_tuning": false,
+  "test_labels_used": false,
+  "official_score_estimate": null
+}

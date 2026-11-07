@@ -1,0 +1,51 @@
+{
+  "recorded_at_utc": "2026-11-04T06:48:28.943685+00:00",
+  "host": "connect.nmb2.seetacloud.com:24365",
+  "remote_root": "/root/autodl-tmp/transformer_stage1_v364",
+  "gpu": "RTX 3090 24GB",
+  "signature": "c289b2fc1814c035279448b84726dafed8e6efe53da8f9727bd35f4088d7f2db",
+  "model_source_sha256": "623ad0bbf70d49e161ea6a87b29f46afeb1ee24d16c2e42901b52bf9ca7c97a1",
+  "protocol": "experiments/transformer_stage1_v364/outputs/protocol.json",
+  "smoke": "experiments/transformer_stage1_v364/outputs/smoke.json",
+  "input_audit": "docs/v364_independent_input_audit.json",
+  "training_processes": 3,
+  "baseline": "v361",
+  "baseline_official_score": 51.24,
+  "development_jobs": 36,
+  "development_target_fits": 72,
+  "frozen_candidates": [
+    {
+      "task": "clearance_hepatocyte_az",
+      "mode": "family_transfer",
+      "weight": 0.2,
+      "strict_development": false
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "mode": "family_transfer",
+      "weight": 0.2,
+      "strict_development": false
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "mode": "family_transfer",
+      "weight": 0.2,
+      "strict_development": true
+    }
+  ],
+  "completed_development_jobs": 36,
+  "model_selection": "Frozen; no confirmation fallback",
+  "strict_accepted_tasks": [],
+  "experimental_tasks": [
+    "lipophilicity_astrazeneca",
+    "solubility_aqsoldb"
+  ],
+  "confirmation_rejected_tasks": [
+    "clearance_hepatocyte_az"
+  ],
+  "status": "DELIVERED",
+  "official_score": null,
+  "new_submission_delivered": true,
+  "csv": "admet_submissions/v364_graph_transformer_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261104.csv",
+  "csv_sha256": "777eca282b59101463fe02f71802c24502a87ba7352482b24a64943ef81ede79"
+}

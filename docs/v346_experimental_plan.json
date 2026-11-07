@@ -1,0 +1,155 @@
+{
+  "status": "FROZEN_BEFORE_FINAL_EXPERIMENTAL_TRAINING",
+  "at_hong_kong": "2026-11-01T20:40:54.476207+08:00",
+  "user_authorized_experimental_csv": true,
+  "authorization": "Prior explicit user choice: 另做实验 CSV 手动测试. Latest user steering: 只有有提升就行. Manual experimental delivery remains authorized; no guarantee of gain or automatic submission.",
+  "goal": "Seek any positive official score change over current best v313, rather than52",
+  "baseline": "v313",
+  "official_best": 51.205,
+  "baseline_csv_sha256": "681e9d23100c7ea39b4e6003dd6de4fac738bc467254782b7b8c4b7bc1d2941b",
+  "source_sha256": "783321ab4d5ab6ccdef13b8fbefebbd4bb57789c26663b430e16d7d6a19c7722",
+  "model_source_sha256": "55975e65e18ef4b13cb3c663bef3db664e3e59fb8898efeec086870d2e078cae",
+  "verifier_sha256": "66b63522ceb6a2737e9e54e3543b7096ae97d099c4f551ad1abc4a448106c208",
+  "runner_sha256": "b01f7fd2512c88cf9d40fedd9a0b4b764597fc872240c51996fff6d8a8e60dce",
+  "task": "solubility_aqsoldb",
+  "weight": 0.2,
+  "choice": {
+    "task": "solubility_aqsoldb",
+    "metric": "MAE",
+    "config": {
+      "neighbors": 24,
+      "width": 128,
+      "key_width": 32,
+      "bins": 8,
+      "epochs": 100,
+      "minimum_steps": 1200,
+      "maximum_steps": 2500,
+      "sam_radius": 0.05
+    },
+    "weight": 0.2,
+    "parts": [
+      {
+        "part": "fold0",
+        "rows": 1635,
+        "baseline": 0.7675069205648937,
+        "expert": 0.8366465434272653,
+        "candidate": 0.751548314053181,
+        "gain": 0.020792785164682224
+      },
+      {
+        "part": "fold1",
+        "rows": 1635,
+        "baseline": 0.7502386159917903,
+        "expert": 0.819427834245441,
+        "candidate": 0.7315227051941265,
+        "gain": 0.024946610849832043
+      }
+    ],
+    "objective": 0.020792785164682224
+  },
+  "strict_confirmation": {
+    "task": "solubility_aqsoldb",
+    "metric": "MAE",
+    "config": {
+      "neighbors": 24,
+      "width": 128,
+      "key_width": 32,
+      "bins": 8,
+      "epochs": 100,
+      "minimum_steps": 1200,
+      "maximum_steps": 2500,
+      "sam_radius": 0.05
+    },
+    "weight": 0.2,
+    "parts": [
+      {
+        "part": "fold0",
+        "rows": 1635,
+        "baseline": 0.7675069205648937,
+        "expert": 0.8366465434272653,
+        "candidate": 0.751548314053181,
+        "gain": 0.020792785164682224
+      },
+      {
+        "part": "fold1",
+        "rows": 1635,
+        "baseline": 0.7502386159917903,
+        "expert": 0.819427834245441,
+        "candidate": 0.7315227051941265,
+        "gain": 0.024946610849832043
+      }
+    ],
+    "objective": 0.020792785164682224,
+    "confirmation": [
+      {
+        "part": "fold0",
+        "rows": 1635,
+        "baseline": 0.7675069205648937,
+        "expert": 0.8366465434272653,
+        "candidate": 0.751548314053181,
+        "gain": 0.020792785164682224
+      },
+      {
+        "part": "fold1",
+        "rows": 1635,
+        "baseline": 0.7502386159917903,
+        "expert": 0.819427834245441,
+        "candidate": 0.7315227051941265,
+        "gain": 0.024946610849832043
+      },
+      {
+        "part": "fold2",
+        "rows": 1775,
+        "baseline": 0.6269016415832172,
+        "expert": 0.7321546809353245,
+        "candidate": 0.6111601967152441,
+        "gain": 0.02510991170515773
+      },
+      {
+        "part": "valid",
+        "rows": 2940,
+        "baseline": 1.005001121803155,
+        "expert": 1.1818071906498961,
+        "candidate": 1.0026509673090696,
+        "gain": 0.0023384595729294033
+      }
+    ],
+    "bootstrap": [
+      {
+        "part": "fold2",
+        "groups": 14,
+        "gain_ci90": [
+          0.018522944572066644,
+          0.09434967378013927
+        ],
+        "lower_positive": true
+      },
+      {
+        "part": "valid",
+        "groups": 2874,
+        "gain_ci90": [
+          -0.0025198142017603476,
+          0.007627777682484848
+        ],
+        "lower_positive": false
+      }
+    ],
+    "accepted": false
+  },
+  "strict_gate_pass": false,
+  "strict_rejection_unchanged": true,
+  "no_retuning": true,
+  "frozen_seeds": [
+    3041101,
+    3041102
+  ],
+  "selection": "Retrospective single-task experiment. Both solubility and hERG have four positive points; solubility has supported fold2 CI and substantially narrower valid uncertainty. hERG is not added. No failed v321 predictions, confirmation-driven blend sweep, or sample edits.",
+  "training": "Same immutable v329 SAM architecture, optimizer, seeds and duration; final fit includes permitted official training and validation rows; only final predictions computed. Separate output directory preserves all scored folds.",
+  "unchanged_tasks": 21,
+  "manual_submission_only": true,
+  "platform_submission": false,
+  "test_labels_used": false,
+  "external_data": false,
+  "official_gain_established": false,
+  "limitations": "Public labels reused, approximate historical OOF, valid confidence interval crosses zero. Candidate may regress on official test. File is experimental and does not supersede v313 until positive user feedback."
+}

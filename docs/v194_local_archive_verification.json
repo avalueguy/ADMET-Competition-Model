@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v194_smiles_convolution_20261028",
+  "archive_sha256": "301c364367b3e13e6c0c1a9c441bb9900c10517995afdd6c716d9e5c8ab7a3f4",
+  "manifest_files": 251,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 201,
+  "existing_exact": 50,
+  "existing_updated_docs_preserved": []
+}

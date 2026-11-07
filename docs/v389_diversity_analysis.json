@@ -1,0 +1,232 @@
+{
+  "records": [
+    {
+      "task": "caco2_wang",
+      "frozen_choice": {
+        "a": 0.5,
+        "b": 0.0,
+        "objective": 0.015969719135922624
+      },
+      "best_single_development_objective": 0.015969719135922624,
+      "best_two_positive_development_objective": 0.01501139388716442,
+      "two_positive_over_single_objective_gain": -0.0009583252487582045,
+      "development_error_diversity": [
+        {
+          "part": "fold0",
+          "signed_error_pearson": 0.8444775342877482,
+          "opposite_error_sign_fraction": 0.1509433962264151,
+          "prediction_disagreement_MAE": 0.2372443881313908
+        },
+        {
+          "part": "fold1",
+          "signed_error_pearson": 0.7611776449675298,
+          "opposite_error_sign_fraction": 0.22169811320754718,
+          "prediction_disagreement_MAE": 0.2979689953773652
+        }
+      ]
+    },
+    {
+      "task": "ld50_zhu",
+      "frozen_choice": {
+        "a": 0.05,
+        "b": 0.0,
+        "objective": 0.0002417914853791533
+      },
+      "best_single_development_objective": 0.0002417914853791533,
+      "best_two_positive_development_objective": -0.0003192184795257727,
+      "two_positive_over_single_objective_gain": -0.000561009964904926,
+      "development_error_diversity": [
+        {
+          "part": "fold0",
+          "signed_error_pearson": 0.934175589375256,
+          "opposite_error_sign_fraction": 0.13305785123966943,
+          "prediction_disagreement_MAE": 0.19182250835662087
+        },
+        {
+          "part": "fold1",
+          "signed_error_pearson": 0.9416591712602508,
+          "opposite_error_sign_fraction": 0.13884297520661157,
+          "prediction_disagreement_MAE": 0.20480724431592168
+        }
+      ]
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "frozen_choice": {
+        "a": 0.1,
+        "b": 0.0,
+        "objective": 0.0005544299972557267
+      },
+      "best_single_development_objective": 0.0005544299972557267,
+      "best_two_positive_development_objective": -0.0005488496111215507,
+      "two_positive_over_single_objective_gain": -0.0011032796083772774,
+      "development_error_diversity": [
+        {
+          "part": "fold0",
+          "signed_error_pearson": 0.788440469179462,
+          "opposite_error_sign_fraction": 0.2153061224489796,
+          "prediction_disagreement_MAE": 0.370041385887496
+        },
+        {
+          "part": "fold1",
+          "signed_error_pearson": 0.7963332207423045,
+          "opposite_error_sign_fraction": 0.2173469387755102,
+          "prediction_disagreement_MAE": 0.35431609640943107
+        }
+      ]
+    },
+    {
+      "task": "ppbr_az",
+      "frozen_choice": {
+        "a": 0.0,
+        "b": 0.05,
+        "objective": 0.0013077602102377975
+      },
+      "best_single_development_objective": 0.0013077602102377975,
+      "best_two_positive_development_objective": 0.0011225873728697017,
+      "two_positive_over_single_objective_gain": -0.0001851728373680958,
+      "development_error_diversity": [
+        {
+          "part": "fold0",
+          "signed_error_pearson": 0.799645553032043,
+          "opposite_error_sign_fraction": 0.28,
+          "prediction_disagreement_MAE": 5.777238149498117
+        },
+        {
+          "part": "fold1",
+          "signed_error_pearson": 0.7114609974523454,
+          "opposite_error_sign_fraction": 0.29493087557603687,
+          "prediction_disagreement_MAE": 6.803326093783629
+        }
+      ]
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "frozen_choice": {
+        "a": 0.05,
+        "b": 0.0,
+        "objective": 0.0010744961711542198
+      },
+      "best_single_development_objective": 0.0010744961711542198,
+      "best_two_positive_development_objective": -0.001016989015219992,
+      "two_positive_over_single_objective_gain": -0.0020914851863742118,
+      "development_error_diversity": [
+        {
+          "part": "fold0",
+          "signed_error_pearson": 0.8724698580523859,
+          "opposite_error_sign_fraction": 0.19021406727828746,
+          "prediction_disagreement_MAE": 0.4386045612790672
+        },
+        {
+          "part": "fold1",
+          "signed_error_pearson": 0.8086938729561713,
+          "opposite_error_sign_fraction": 0.21284403669724772,
+          "prediction_disagreement_MAE": 0.5560944753043794
+        }
+      ]
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "frozen_choice": {
+        "a": 0.75,
+        "b": 0.0,
+        "objective": 0.10517834530047705
+      },
+      "best_single_development_objective": 0.10517834530047705,
+      "best_two_positive_development_objective": 0.09829338152755557,
+      "two_positive_over_single_objective_gain": -0.006884963772921485,
+      "development_error_diversity": [
+        {
+          "part": "fold0",
+          "signed_error_pearson": 0.9228696695482724,
+          "opposite_error_sign_fraction": 0.19148936170212766,
+          "prediction_disagreement_MAE": 14.984831226749046
+        },
+        {
+          "part": "fold1",
+          "signed_error_pearson": 0.8977026067317986,
+          "opposite_error_sign_fraction": 0.2226148409893993,
+          "prediction_disagreement_MAE": 15.534851415960295
+        }
+      ]
+    },
+    {
+      "task": "clearance_microsome_az",
+      "frozen_choice": {
+        "a": 0.0,
+        "b": 0.05,
+        "objective": -1.0
+      },
+      "best_single_development_objective": -1.0,
+      "best_two_positive_development_objective": -1.0,
+      "two_positive_over_single_objective_gain": 0.0,
+      "development_error_diversity": [
+        {
+          "part": "fold0",
+          "signed_error_pearson": 0.9600223143619112,
+          "opposite_error_sign_fraction": 0.14453125,
+          "prediction_disagreement_MAE": 8.94858492276478
+        },
+        {
+          "part": "fold1",
+          "signed_error_pearson": 0.9648067433894585,
+          "opposite_error_sign_fraction": 0.08949416342412451,
+          "prediction_disagreement_MAE": 10.729267415451666
+        }
+      ]
+    },
+    {
+      "task": "half_life_obach",
+      "frozen_choice": {
+        "a": 0.75,
+        "b": 0.0,
+        "objective": 0.35074801069942535
+      },
+      "best_single_development_objective": 0.35074801069942535,
+      "best_two_positive_development_objective": 0.3284970688725144,
+      "two_positive_over_single_objective_gain": -0.022250941826910953,
+      "development_error_diversity": [
+        {
+          "part": "fold0",
+          "signed_error_pearson": 0.9960247601755099,
+          "opposite_error_sign_fraction": 0.15483870967741936,
+          "prediction_disagreement_MAE": 2.206484416502806
+        },
+        {
+          "part": "fold1",
+          "signed_error_pearson": 0.9996349098577011,
+          "opposite_error_sign_fraction": 0.23225806451612904,
+          "prediction_disagreement_MAE": 2.4243655380812448
+        }
+      ]
+    },
+    {
+      "task": "vdss_lombardo",
+      "frozen_choice": {
+        "a": 0.0,
+        "b": 0.05,
+        "objective": -1.0
+      },
+      "best_single_development_objective": -1.0,
+      "best_two_positive_development_objective": -1.0,
+      "two_positive_over_single_objective_gain": 0.0,
+      "development_error_diversity": [
+        {
+          "part": "fold0",
+          "signed_error_pearson": 0.9325629967538369,
+          "opposite_error_sign_fraction": 0.1596958174904943,
+          "prediction_disagreement_MAE": 1.7925683230317513
+        },
+        {
+          "part": "fold1",
+          "signed_error_pearson": 0.9951989910948045,
+          "opposite_error_sign_fraction": 0.1856060606060606,
+          "prediction_disagreement_MAE": 2.528632252377327
+        }
+      ]
+    }
+  ],
+  "no_fitting_performed": true,
+  "no_confirmation_reselection": true,
+  "descriptive_only": true
+}

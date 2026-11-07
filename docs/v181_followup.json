@@ -1,0 +1,70 @@
+{
+  "status": "COMPLETE_NO_NEW_SUBMISSION",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "training_version": "v181",
+  "delivery_version": "v182",
+  "training_pid": null,
+  "pipeline_pid": null,
+  "remote_workspace": "/root/autodl-tmp/v76",
+  "python": "/root/miniconda3/bin/python",
+  "log": "v181_quantile_forest.log",
+  "pipeline_status": "admet_model_outputs_v182/pipeline_status.json",
+  "archive_prefix": "v182_quantile_forest_20261027",
+  "failed_routes": [
+    172,
+    173,
+    175,
+    178
+  ],
+  "local_archives_verified": [
+    "v176_shared_graph_batch_20261027",
+    "v179_graph_embedding_20261027"
+  ],
+  "next_steps": [
+    "Only inspect genuinely new verified candidates or pending platform scores",
+    "Do not rerun completed rejected routes or upload the old baseline as a new version"
+  ],
+  "thresholds_unchanged": true,
+  "scheduler_pid": null,
+  "scheduler_log": "v185_schedule.log",
+  "scheduling_status": "admet_model_outputs_v181/scheduling.json",
+  "scheduling_note": "Recovery scheduling complete; all previously listed PIDs are historical.",
+  "scheduling_completed": true,
+  "last_observed": "Frozen v181 completed, all five tasks below development threshold; archive locally verified.",
+  "connection_error": null,
+  "do_not_restart_training": true,
+  "host": "connect.nmb2.seetacloud.com",
+  "port": 25870,
+  "old_training_processes_present": false,
+  "old_training_directory_present": false,
+  "recovery_archive": "releases/v188_v181_recovery_20261028.tar.gz",
+  "submission_policy": {
+    "trigger": "EVENT_DRIVEN_VERIFIED_STABLE_IMPROVEMENT_ONLY",
+    "user_instruction": "Only submit a genuinely new version when there is sufficient stable improvement evidence, then obtain official results. Scheduled checks do not trigger uploads.",
+    "date": "2026-10-28",
+    "frozen_gates_unchanged": true,
+    "official_gain_not_guaranteed": true
+  },
+  "recovery_pid": 2287,
+  "precompute_pids": {
+    "caco2_wang": 2343,
+    "ppbr_az": 2344,
+    "ld50_zhu": 2345,
+    "lipophilicity_astrazeneca": 2346
+  },
+  "baseline_reload": "PASS_25_CACHED_CONTROLS_EXACT_SIGNATURE",
+  "smoke": "PASS",
+  "source_sha256": "b7d1828a0e5802f61edea3e6e23eeb4c8f8cf2bbf3bfc105383a5eba59e4218d",
+  "precompute_exit_codes": {
+    "caco2_wang": 0,
+    "ppbr_az": 0,
+    "ld50_zhu": 0,
+    "lipophilicity_astrazeneca": 0
+  },
+  "checked_at_utc": "2026-10-28T05:11:11.272486+00:00",
+  "accepted_tasks": [],
+  "submission_created": false,
+  "running_training_processes": 0,
+  "final_status": "docs/v182_final_status.json"
+}

@@ -1,0 +1,81 @@
+{
+  "version": "v388",
+  "status": "NO_UNION_NEEDED",
+  "protocol": "docs/v388_union_protocol.json",
+  "protocol_sha256": "e638bfb0d69b317b56944fcb4df04d06f8de532a04f6b848e9c0962436072649",
+  "csv": null,
+  "official_best": 51.308,
+  "new_official_score": null,
+  "baseline": {
+    "version": "v385_associated",
+    "official_user_reported": 51.308,
+    "exact_task_mean": 51.308044136363634,
+    "csv": "admet_submissions/v385_v382_warped_median_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+    "csv_sha256": "355d8cf8f67bfd1e81b67f99e476a9780f1737d1e598a795d651bc589eeff1d0",
+    "source": "docs/platform_scorecard_v385_20261106.json",
+    "platform_uploaded_byte_hash_confirmed": false,
+    "association": "User full22 scorecard immediately following v385 delivery; only PPBR changed exactly as expected. Version associated, not explicitly named in this feedback."
+  },
+  "selected_tasks": {
+    "lipophilicity_astrazeneca": {
+      "source": "v386",
+      "evidence": {
+        "task": "lipophilicity_astrazeneca",
+        "best": {
+          "name": "sqrt_gaussian_rank_mono02",
+          "base": "sqrt_gaussian_rank",
+          "calibration": "mono02",
+          "penalty": 0.02
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 0.4792825842290003,
+            "candidate": 0.47830423467832256,
+            "gain": 0.0020412791594577565
+          },
+          {
+            "part": "fold1",
+            "baseline": 0.45388775615012006,
+            "candidate": 0.45244808968897426,
+            "gain": 0.0031718556881927327
+          },
+          {
+            "part": "fold2",
+            "baseline": 0.46955703534892407,
+            "candidate": 0.4692320316296325,
+            "gain": 0.0006921496108562264
+          },
+          {
+            "part": "valid",
+            "baseline": 0.4635807344151472,
+            "candidate": 0.4615251448027317,
+            "gain": 0.004434156684722468
+          }
+        ],
+        "accepted": true,
+        "strict_accepted": false,
+        "rejection_reasons": []
+      }
+    }
+  },
+  "nine_task_mean_relative_MAE_gain_by_part": {
+    "fold0": 0.00022680879549530627,
+    "fold1": 0.0003524284097991925,
+    "fold2": 7.690551231735848e-05,
+    "valid": 0.0004926840760802742
+  },
+  "five_scored_task_mean_relative_MAE_gain_by_part": {
+    "fold0": 0.0004082558318915513,
+    "fold1": 0.0006343711376385465,
+    "fold2": 0.00013842992217124526,
+    "valid": 0.0008868313369444936
+  },
+  "goal_mean_5percent_achieved_local": false,
+  "five_scored_goal_achieved_local": false,
+  "no_fitting_performed": true,
+  "automatic_platform_submission": false,
+  "overlap_rule": "v386 wins any overlap regardless of relative validation gains; calibration route has fixed priority. No averaging, weight search or molecule routing.",
+  "recommended_source": "v386"
+}

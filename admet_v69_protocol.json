@@ -1,0 +1,33 @@
+{
+  "version": 69,
+  "purpose": "User-authorized aggressive official-data-only optimization after v68",
+  "external_data": false,
+  "pretrained_weights": false,
+  "families": [
+    {"name": "descriptor", "depth": 6, "iterations": 1200, "learning_rate": 0.04, "l2_leaf_reg": 8, "fingerprints": false, "mae_loss": "MAE"},
+    {"name": "hybrid", "depth": 7, "iterations": 1400, "learning_rate": 0.035, "l2_leaf_reg": 12, "fingerprints": true, "mae_loss": "RMSE"}
+  ],
+  "development_seed": 692026,
+  "final_seeds": [692026, 692027],
+  "early_stopping_rounds": 180,
+  "splits": ["fold0", "fold1", "fold2", "valid"],
+  "selection": {
+    "cv_weight": 0.65,
+    "valid_weight": 0.35,
+    "fold_sd_penalty": 0.03,
+    "rounds": 3,
+    "weights": [0.1, 0.25, 0.5, 0.75, 1.0],
+    "minimum_objective_step": 0.00075,
+    "method": "Forward per-task rank/value blends starting from frozen v68; sources shared/gated neural, four kernel variants, descriptor/hybrid CatBoost. Soft objective rather than hard fresh-split veto. Development query labels also choose tree stopping iterations."
+  },
+  "final_iterations": "Median best tree count across 3 scaffold folds and official valid; refit train+valid without test labels using two seeds",
+  "classification_output": "Rank confidence in [0,1]",
+  "limitations": [
+    "Official valid is now explicitly used for tuning, superseding report-only use for v67/v68 in this new version only.",
+    "All development metrics, early stopping and mixture selection are optimistic estimates, not independent generalization measurements.",
+    "A new platform score is needed to establish improvement over v63 or v68.",
+    "Original v67/v68 files and source signatures remain frozen."
+  ],
+  "automatic_upload": false,
+  "official_score": null
+}

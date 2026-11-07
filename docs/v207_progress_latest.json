@@ -1,0 +1,61 @@
+{
+  "checked_at_utc": "2026-10-28T08:28:29.977470+00:00",
+  "processes": {
+    "training": {
+      "pid": 9284,
+      "exists": true,
+      "state": "R",
+      "identity_verified": true
+    },
+    "pipeline": {
+      "pid": 9285,
+      "exists": true,
+      "state": "S",
+      "identity_verified": true
+    }
+  },
+  "failure": null,
+  "pipeline": {
+    "status": "WAITING_TRAINING",
+    "route": "v207"
+  },
+  "development": {
+    "status": "IN_PROGRESS",
+    "completed_tasks": [
+      "herg",
+      "bbb_martins",
+      "ames",
+      "clearance_hepatocyte_az",
+      "solubility_aqsoldb",
+      "pgp_broccatelli",
+      "cyp2d6_substrate_carbonmangels",
+      "cyp3a4_veith",
+      "clearance_microsome_az",
+      "caco2_wang",
+      "cyp3a4_substrate_carbonmangels",
+      "dili",
+      "vdss_lombardo",
+      "cyp2d6_veith",
+      "cyp2c9_veith",
+      "ppbr_az",
+      "ld50_zhu",
+      "lipophilicity_astrazeneca",
+      "bioavailability_ma"
+    ]
+  },
+  "confirmation": null,
+  "pretraining_verification": {
+    "status": "PASS",
+    "signature": "6c98afee5f98b4b08ad610ba3ef3a945d7e271add5bfbc42f1d11cb9b1c7a0b0",
+    "model_hashes": {
+      "model_2071028.pt": "7c77d2969ac16d5471406c51b2093f9b912bdac029b1cedce0a1e6bb9ffe6391",
+      "model_2071029.pt": "bc23b1424d588e0832d79aa92fcfdaf5277594215f04a8a1b2d2e3a7da218f98"
+    },
+    "all_endpoint_label_perturbation_invariant": true,
+    "complete_embedding_reload": true,
+    "fitting_structures": 34610
+  },
+  "source_sha256": "40358539719841bd387a3d82f11486d33488b64dc4db8b73b704f8c060c6f5a0",
+  "boot_id_verified": true,
+  "log_tail": "ility_ma\", \"part\": \"fold0\", \"seconds\": 48}\n{\"stage\": \"train\", \"task\": \"bioavailability_ma\", \"part\": \"fold1\", \"seconds\": 44}\n{\"stage\": \"development\", \"best\": {\"task\": \"bioavailability_ma\", \"metric\": \"AUROC\", \"config\": {\"depth\": 5, \"trees\": 900}, \"weight\": 0.2, \"parts\": [{\"part\": \"fold0\", \"rows\": 150, \"baseline\": 0.7173721340388007, \"expert\": 0.6664462081128747, \"candidate\": 0.7117504409171075, \"gain\": -0.00562169312169325}, {\"part\": \"fold1\", \"rows\": 149, \"baseline\": 0.7583485124468732, \"expert\": 0.7364905889496054, \"candidate\": 0.7654826958105647, \"gain\": 0.0071341833636915375}], \"objective\": -0.00562169312169325}}\n{\"stage\": \"train\", \"task\": \"half_life_obach\", \"part\": \"fold0\", \"seconds\": 45}\n"
+}

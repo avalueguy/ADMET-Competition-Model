@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "archive": "releases/v341_smooth_ap_retrieval_20261101.tar.gz",
+  "sha256": "00a11bca2b222efefeb8980c01058e0b42e2d2726d0ba5a1cafb2a5c7f9a6ef9",
+  "bytes": 180579815,
+  "members": 69,
+  "manifest_files": 68,
+  "all_member_hashes_verified": true,
+  "csv_members": [],
+  "restored_absent": 58,
+  "existing_different_preserved": [],
+  "dependency_contents_reverified": true,
+  "dependency_hashes_checked": 50
+}

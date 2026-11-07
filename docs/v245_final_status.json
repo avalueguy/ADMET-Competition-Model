@@ -1,0 +1,134 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "checked_at_utc": "2026-10-29T09:10:43.295639+00:00",
+  "training_version": "v244",
+  "delivery_version": "v245",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52,
+  "target_achieved": false,
+  "trained_development_tasks": 3,
+  "protected_tasks": 19,
+  "identity_control_tasks": 18,
+  "development_partitions": 6,
+  "seed_models": 12,
+  "development_best": [
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "config": {
+        "components": 3,
+        "epochs": 120,
+        "minimum_steps": 1000,
+        "maximum_steps": 3500
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 212,
+          "baseline": 0.38815645870734267,
+          "expert": 0.40593257636759494,
+          "candidate": 0.38642184936079865,
+          "gain": 0.00446884061216112
+        },
+        {
+          "part": "fold1",
+          "rows": 212,
+          "baseline": 0.3348527606452333,
+          "expert": 0.379437626853494,
+          "candidate": 0.3388428411963485,
+          "gain": -0.011915925505367386
+        }
+      ],
+      "objective": -0.011915925505367386
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "config": {
+        "components": 3,
+        "epochs": 120,
+        "minimum_steps": 1000,
+        "maximum_steps": 3500
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 8.068577292713924,
+          "expert": 8.501973030463992,
+          "candidate": 7.959449218442973,
+          "gain": 0.013525070196637403
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.585961846123768,
+          "expert": 8.94021905814767,
+          "candidate": 7.72187898013162,
+          "gain": -0.01791692823729428
+        }
+      ],
+      "objective": -0.01791692823729428
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "config": {
+        "components": 3,
+        "epochs": 120,
+        "minimum_steps": 1000,
+        "maximum_steps": 3500
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 980,
+          "baseline": 0.4900050804950242,
+          "expert": 0.5725052224035526,
+          "candidate": 0.4919105853578674,
+          "gain": -0.0038887451144754767
+        },
+        {
+          "part": "fold1",
+          "rows": 980,
+          "baseline": 0.47650922350658986,
+          "expert": 0.5299485930545257,
+          "candidate": 0.47366406079017975,
+          "gain": 0.005970845003739499
+        }
+      ],
+      "objective": -0.0038887451144754767
+    }
+  ],
+  "nominated_tasks": [],
+  "accepted_tasks": [],
+  "archive": {
+    "status": "PASS",
+    "prefix": "v245_conditional_density_20261029",
+    "archive_sha256": "02873f10f067d9fe052670b3baf9d66830ac8166ada1b245a172b8b180498b0b",
+    "manifest_files": 83,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 35,
+    "existing_exact": 48,
+    "existing_updated_docs_preserved": []
+  },
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "frozen_gates_unchanged": true,
+  "local_gate_recalculation": true,
+  "no_confirmation_fallback": true,
+  "rejected_route_restarted": false,
+  "exited_pids": [
+    23649,
+    23650,
+    23657,
+    23823
+  ],
+  "interpretation": "Each targeted MAE endpoint has a nonpositive development gain on one fold. Conditional density training likelihood did not yield stable outer-fold MAE improvement. No confirmation was opened. No retry/tuning of this completed rejected route."
+}

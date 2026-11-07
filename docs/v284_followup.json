@@ -1,0 +1,92 @@
+{
+  "status": "COMPLETE_NO_CSV_IMPLEMENTATION_DEFECT_FOUND",
+  "training_version": "v284",
+  "delivery_version": "v285",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "at_utc": "2026-10-31T06:12:02.228269+00:00",
+  "development_best": [
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 152,
+          "baseline": 0.8444511217948719,
+          "expert": 0.8427483974358975,
+          "candidate": 0.8439503205128205,
+          "gain": -0.0005008012820514329
+        },
+        {
+          "part": "fold1",
+          "rows": 152,
+          "baseline": 0.85125,
+          "expert": 0.8500000000000001,
+          "candidate": 0.8506730769230769,
+          "gain": -0.0005769230769230305
+        }
+      ],
+      "objective": -0.0005769230769230305
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 156,
+          "baseline": 0.748671096345515,
+          "expert": 0.7427740863787375,
+          "candidate": 0.7480066445182724,
+          "gain": -0.0006644518272426181
+        },
+        {
+          "part": "fold1",
+          "rows": 156,
+          "baseline": 0.6742748846407383,
+          "expert": 0.6830092287409361,
+          "candidate": 0.6758404746209624,
+          "gain": 0.001565589980224158
+        }
+      ],
+      "objective": -0.0006644518272426181
+    }
+  ],
+  "confirmation": [],
+  "accepted_tasks": [],
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "archive": {
+    "status": "PASS",
+    "prefix": "v285_stereo_context_repair_20261030",
+    "archive_sha256": "a113aae735a686860ed1cd70f769ce8a27832b9f3bde1b83f6f0976371bad3d6",
+    "manifest_files": 125,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 29,
+    "existing_exact": 96,
+    "existing_updated_docs_preserved": []
+  },
+  "exited_pids": [
+    3026,
+    3027,
+    3034,
+    3276
+  ],
+  "source_unchanged": true,
+  "interpretation": "Completed normally but fails intended input-schema contract: replaced 42 of 105 context columns, leaving 63 old columns. Raw scores belong to the defective 603-column implementation; not evidence rejecting the intended 540-column replacement. Preserve immutable source/archive. No score-based parameter change.",
+  "model_training_active": false,
+  "source_sha256": "3f7f111a75053710369247e89cf835fa2567fceaf8e54a7c2a3187350582df91",
+  "signature": "c70dd3ec181a3cb85823f8e76a8e12ebb429d9b23c233e8e41bc3c95a127d00d",
+  "final_status": "docs/v285_final_status.json",
+  "next_action": "New version may repair the proven 63-column retention bug only, keeping originally fixed task/model/seeds/weights/gates. Do not restart old PIDs."
+}

@@ -1,0 +1,12 @@
+{
+  "status": "STATIC_REVIEW_PASS_SMOKE_REQUIRED",
+  "source_sha256": "f874ecb0c2abaae3e65eabd569e6f062d4d68e65a70a96f7cf35056e40a92b00",
+  "checks": [
+    "AllPCA,prevalence,imputation/scale fit-only",
+    "Targettask excluded from auxiliarysource",
+    "No query scores for fitting or earlystopping",
+    "Fullrank rotations preserve structure distances within blocks",
+    "No completed-model reuse;unchangedv148gates/manualdelivery",
+    "Disjointqueueworkers own taskdirectories exclusively; originalselector waitsall0"
+  ]
+}

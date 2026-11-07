@@ -1,0 +1,26 @@
+{
+  "status": "FROZEN_BEFORE_NESTED_CONFIRMATION",
+  "version": 80,
+  "anchor": "v73",
+  "anchor_sha256": "beab85b972b336526a30c8baa6d181552927f0d004ac6360f42ecdbd96399763",
+  "task": "cyp2c9_veith",
+  "method": "CatBoost offset residual on other official assay values/masks plus base rank logit",
+  "trees": 300,
+  "depth": 4,
+  "learning_rate": 0.025,
+  "l2_leaf_reg": 50,
+  "blend_weight": 1.0,
+  "seeds": [
+    802026,
+    802027,
+    802028
+  ],
+  "nested_control": "Same outer-fit base model; residual training base predictions from 3 inner scaffold folds. Exclude target assay value and mask from auxiliaries. Use train labels only for all auxiliary sources.",
+  "nested_outer_parts": [
+    "legacy_fold2",
+    "official_valid"
+  ],
+  "test_labels_used": false,
+  "external_data": false,
+  "meta_cv_limitation": "OOF meta crossfit is not full nested ensemble evaluation. All labels historically reused."
+}

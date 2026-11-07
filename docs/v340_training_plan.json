@@ -1,0 +1,49 @@
+{
+  "status": "FROZEN_BEFORE_DEVELOPMENT_SCORES",
+  "at_hong_kong": "2026-11-01T19:59:24.586348+08:00",
+  "baseline": "v313",
+  "official_best_user_reported": 51.205,
+  "target_score": 52.0,
+  "source_sha256": "f533ab1c9cbb3e461fbf5c650c2ba344b5950792efd7271bb5684f665c523278",
+  "baseline_adapter_sha256": "be19cbdc09034bf1e41548c636246392baa5922d98005d4a4083e429b80db677",
+  "runner_sha256": "b01f7fd2512c88cf9d40fedd9a0b4b764597fc872240c51996fff6d8a8e60dce",
+  "verifier_sha256": "985c594726c79337efadaca41132629ecd4893da44f95948e7cc6696398387e9",
+  "smoke_signature": "297f931d7d5620785913e52ea14935414f8e2f43a2b536f0f9ba7383735a0583",
+  "tasks": [
+    "cyp2c9_substrate_carbonmangels",
+    "cyp2d6_substrate_carbonmangels",
+    "cyp2c9_veith",
+    "cyp2d6_veith",
+    "cyp3a4_veith"
+  ],
+  "config": {
+    "neighbors": 24,
+    "width": 128,
+    "key_width": 32,
+    "bins": 8,
+    "epochs": 100,
+    "minimum_steps": 1200,
+    "maximum_steps": 2500,
+    "ap_temperature": 0.2,
+    "batch_size": 256
+  },
+  "seeds": [
+    3041101,
+    3041102
+  ],
+  "projection_seed": 3040001,
+  "method": "New differentiable listwise AP surrogate .5 BCE+.5(1-softAP). Each positive's precision uses 1+sigmoid-smoothed count of higher-ranked positive/all rows, diagonal excluded, temperature.2. Uniform256 rows retain fit prevalence. Original v315 retrieval architecture, AdamW lr and optimizer update count, larger batch; train from scratch, no query-label stopping. No external data.",
+  "justification": "Five official tasks use AUPRC; direct metric-aligned listwise objective differs from historical BCE/pairwise neural losses and tree LambdaMAP. Temperature/loss weights fixed from definition, not scored search. Does not retry CYP3A4 substrate or tune rejected SAM/DRO weights/seeds.",
+  "selection": "Original v148/v314 max minimum fold0/1 gain, original blends.20/.45; freeze before fold2/valid, threshold>.003, no failed-confirmation fallback.",
+  "confirmation": "All four positive, mean>.003, both500 paired scaffold bootstrap90% lower bounds>0.",
+  "smoke": "PASS independent scalar AP loss, finite-difference gradient and exact hard-ranking AP limit; degenerate classes; finite CUDA gradients; feature label isolation; saved-model replay; reversed-query consistency. No query metric read.",
+  "protected_tasks": [
+    "ppbr_az",
+    "lipophilicity_astrazeneca",
+    "cyp3a4_substrate_carbonmangels"
+  ],
+  "test_labels_used": false,
+  "external_data": false,
+  "automatic_platform_submission": false,
+  "limitations": "Repeated public labels and approximate inherited historical OOF remain. New surrogate may not improve held-out AP. No claim of official score gain or52."
+}

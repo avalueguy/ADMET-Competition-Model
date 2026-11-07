@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "archive": "releases/v313_experimental_ppbr_lipo_20261101.tar.gz",
+  "sha256": "deb2de6c6c9d93599a5f61d04f46ba2d8fdb984009e9f729f21fdb056afdc4fd",
+  "bytes": 35672140,
+  "members": 25,
+  "manifest_files": 24,
+  "all_member_hashes_verified": true,
+  "csv_members": [
+    "admet_submissions/v313_experimental_ppbr_lipo/我从山北来带着兰花草-小分子药物预测技术创新赛-20261101.csv"
+  ],
+  "restored_absent": 1,
+  "existing_different_preserved": [],
+  "dependency_contents_reverified": true,
+  "dependency_hashes_checked": 50
+}

@@ -1,0 +1,33 @@
+{
+  "status": "FAILED_OPTIMIZER_NONCONVERGENCE",
+  "checked_at_utc": "2026-10-28T07:10:38.625117+00:00",
+  "training_version": "v197",
+  "delivery_version": "v198",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "submission_created": false,
+  "automatically_uploaded": false,
+  "official_score": null,
+  "failed_route_restarted": false,
+  "source_unchanged": true,
+  "waiting_pipeline_terminated": true,
+  "error": "Smooth absolute-error IRLS did not converge within the frozen150-iteration limit. Fail-closed eligibility assertion stopped training; no threshold relaxation or retry.",
+  "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/v76/tools/v197_additive_splines.py\", line 249, in <module>\n    main()\n  File \"/root/autodl-tmp/v76/tools/v197_additive_splines.py\", line 245, in main\n    runner.run(sys.modules[__name__], d)\n  File \"/root/autodl-tmp/v76/tools/v148_experiment_runner.py\", line 43, in run\n    parts=[record(d,k,p,module.predict,c,w) for p in ('fold0','fold1')];choices.append(dict(task=task,metric=d['metrics'][k],config=c,weight=w,parts=parts,objective=min(r['gain'] for r in parts)))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/v76/tools/v148_experiment_runner.py\", line 10, in record\n    q=v.split(d,k,part)[1];m=d['metrics'][k];a=v.baseline(d,k,part);z=predict(d,k,part,c);p=v.mix(m,a,z,w)\n                                                                      ^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/v76/tools/v197_additive_splines.py\", line 193, in predict\n    model = fit_model(a['x'], state['target'], a['penalty'], d['metrics'][k], c['strength'])\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/v76/tools/v197_additive_splines.py\", line 160, in fit_model\n    assert converged and np.isfinite(coef).all(), 'Unconverged model is not eligible'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Unconverged model is not eligible\n",
+  "archive_verification": {
+    "status": "PASS",
+    "prefix": "v198_additive_splines_failed_20261028",
+    "archive_sha256": "84ca6ae3df938a529efc95f44f6e7c271e8e778e884396463ca0a3a988c5bcb2",
+    "manifest_files": 64,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 60,
+    "existing_exact": 4,
+    "existing_updated_docs_preserved": []
+  },
+  "archive": "releases/v198_additive_splines_failed_20261028.tar.gz",
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "target_score": 52,
+  "target_achieved": false,
+  "finalized_at_utc": "2026-10-28T07:12:24.677411+00:00"
+}

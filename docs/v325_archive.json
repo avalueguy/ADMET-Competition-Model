@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "path": "releases/v325_manifold_mixup_20261101.tar.gz",
+  "sha256": "5bee817c6b0890ee1dda04d9b04b22c4414a8c8f20a2a35b5a9f1ca295251f78",
+  "files": 60,
+  "all_member_hashes_verified": true
+}

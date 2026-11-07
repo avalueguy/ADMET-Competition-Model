@@ -1,0 +1,34 @@
+{
+  "status": "COMPLETE",
+  "completed_at_hong_kong": "2026-11-05T16:25:24.586541+08:00",
+  "version": "v372",
+  "training_host": "connect.nmb2.seetacloud.com:25870",
+  "official_best": 51.269,
+  "target_five_MAE_reduced_ten_percent": false,
+  "delivery": {
+    "status": "NO_ELIGIBLE_CANDIDATE",
+    "signature": "94840013260f2c50a89d5d463362786d150df56edfdef963af3b0aba43429a34",
+    "baseline": "v364",
+    "baseline_official_score": 51.269,
+    "official_score": null,
+    "csv": null,
+    "target_five_tasks_ten_percent_achieved_local": false,
+    "ten_percent_all_parts_tasks": [],
+    "approved_tasks": [],
+    "training_gpu_remote_only": true,
+    "all_fitting_remote": true,
+    "automatic_platform_submission": false,
+    "model_replay_max_error": 2.7000623958883807e-13
+  },
+  "verification": "PASS",
+  "remote_idle": {
+    "no_training_processes_running": true,
+    "experiment_pids": [
+      6039,
+      6848
+    ],
+    "at_unix": 1793866987.6693017,
+    "gpu": "NVIDIA GeForce RTX 3090, 0 MiB, 0 %\n"
+  },
+  "official_new_score": null
+}

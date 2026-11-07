@@ -1,0 +1,59 @@
+{
+  "status": "FROZEN_BEFORE_DEVELOPMENT",
+  "files": [
+    {
+      "path": "tools/v278_v145_leaf_refit.py",
+      "sha256": "30743545f399ff86ee8f3c4b4c20db9482329dd842cbe54985f1c9a82bf66760"
+    },
+    {
+      "path": "tools/v279_verify_v145_leaf_refit.py",
+      "sha256": "8286b8aea46e3fcb4896b0d97fa48fba240f9842aa40c2acb87571e1739d6965"
+    },
+    {
+      "path": "tools/v280_package_leaf_refit.py",
+      "sha256": "312b2853cf48b39e03e9443057917b0d3f6d1e27b90dcf41d28bbd996ede6edf"
+    },
+    {
+      "path": "tools/v281_leaf_driver.py",
+      "sha256": "64159cc2e36d91bcb6c18cf58b91c992585f8fe1e682a93e3b3c23897fbb311f"
+    },
+    {
+      "path": "tools/v282_start_leaf_refit.py",
+      "sha256": "1dd64a3db4d2718105bbd7d2e88f61e9e67c8764cc1b0d574d22e9a838748913"
+    },
+    {
+      "path": "tools/finalize_v279_local.py",
+      "sha256": "1af3cc101fd5c1aec9868865e8865bcfaeae2e25682b3bf6996ee88cd48b7dff"
+    },
+    {
+      "path": "docs/v278_training_plan.json",
+      "sha256": "35321d788db85718682fcd7d47ed427e3d55d001e5fa45d4eef6dd873d32658a"
+    },
+    {
+      "path": "docs/v278_source_review.json",
+      "sha256": "07e6003dd630afe0ffcca865a8a888b0ab1ef718f3f0f47aac83a9d3b06e0e50"
+    },
+    {
+      "path": "docs/v278_original_models.json",
+      "sha256": "40e2976a8a080a307c25fbbf639537a4099a248b28e60f6c4d103a8973680ea4"
+    },
+    {
+      "path": "tools/v277_v145_leaf_audit.py",
+      "sha256": "b11115e8e55c67fa8d71ba7c432bb8981434c8a9c11dac341bd5e4335eab337d"
+    },
+    {
+      "path": "docs/v277_v145_leaf_audit.json",
+      "sha256": "6a32286d89b682ca8741db2618bacf0285bc1a0fc6e66ea580c27196f44a2dba"
+    },
+    {
+      "path": "docs/v277_review_decision.json",
+      "sha256": "2eb66edf77cbd61aa908805ce8dcf005ca1c17b5606889ee3374de2ec024ce05"
+    },
+    {
+      "path": "tools/v148_experiment_runner.py",
+      "sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871"
+    }
+  ],
+  "credentials_stored": false,
+  "source_immutable_after_start": true
+}

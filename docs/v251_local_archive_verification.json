@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v251_hierarchical_atom_matching_20261029",
+  "archive_sha256": "6491ff3da11ade546df4ecc0ceda67be34b340ccde81a3dba4bc1bdf51e65e01",
+  "manifest_files": 92,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 43,
+  "existing_exact": 49,
+  "existing_updated_docs_preserved": []
+}

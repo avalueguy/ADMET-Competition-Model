@@ -1,0 +1,33 @@
+{
+  "status": "FROZEN_BEFORE_DEVELOPMENT",
+  "files": [
+    {
+      "path": "tools/v224_rotated_chemistry_forest.py",
+      "sha256": "f874ecb0c2abaae3e65eabd569e6f062d4d68e65a70a96f7cf35056e40a92b00"
+    },
+    {
+      "path": "tools/v225_verify_rotated_chemistry_forest.py",
+      "sha256": "d6af1b20bd1b747ca150a5e83d6801f94385899c471220ec4363aacd77ec857e"
+    },
+    {
+      "path": "tools/v226_package_rotation_batch.py",
+      "sha256": "205629b9ef3d02da4e156ee25e3eba7626fd00284065e9a0bf0a7f6d352d2f12"
+    },
+    {
+      "path": "tools/v227_rotation_driver.py",
+      "sha256": "5cdff7f00b792f00dcb84986a77eda4b5cf5d38c3015d028e12151b63368c55e"
+    },
+    {
+      "path": "tools/finalize_v225_local.py",
+      "sha256": "06faca10fe64c4f52467519e8d921c2b5b86097c7023aef4f8065ffacbce3472"
+    },
+    {
+      "path": "docs/v224_training_plan.json",
+      "sha256": "38ca82adb1c6699c07292fb5b6b660ae8d4d33e175115f49f26e8c78f5bb084e"
+    },
+    {
+      "path": "docs/v224_source_review.json",
+      "sha256": "a89a52324e9c49b075d56d8d244b138125d5a4a165545c11d7e2e168bad6c314"
+    }
+  ]
+}

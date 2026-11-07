@@ -1,0 +1,542 @@
+{
+  "status": "FROZEN_BEFORE_COMBINATION_SCORES",
+  "at_hong_kong": "2026-11-02T14:31:59.199502+08:00",
+  "source_sha256": "c4024153f46798fd10c4ab38825cb6a21e16120889b9e43aa97f2be3a2ec1e88",
+  "registry": [
+    {
+      "version": 168,
+      "module": "v168_sparse_linear",
+      "family": "sparse_linear",
+      "available": true,
+      "source_sha256": "b3f5c6aedfaafa5cb6e371dc7ef2ec0d08ac4b6825e765a9135ff028b5bf6917",
+      "signature": "64a6696c92a234481b5dce2f37167e731e1033ff4cde96a22c6c96a9a53308e6",
+      "configs": [
+        {
+          "strength": 1.0
+        },
+        {
+          "strength": 10.0
+        }
+      ]
+    },
+    {
+      "version": 172,
+      "module": "v172_graph_message_passing",
+      "family": "graph",
+      "available": true,
+      "source_sha256": "972812d2d15b57d9ce3d014e7e0d90007a9d561e6da0491cef40b6d7e5c5e41d",
+      "signature": "396835aade7c7fdd2d513b5fac5a0dff89170d8c0a58bc45141e9a089c077c2a",
+      "configs": [
+        {
+          "hidden": 96,
+          "layers": 3,
+          "steps": 700
+        }
+      ]
+    },
+    {
+      "version": 178,
+      "module": "v178_graph_embedding_boosting",
+      "family": "graph_boosting",
+      "available": true,
+      "source_sha256": "24d8fa5854aa26859e6c737a0cda76be5d1d7606ce0431da3df4e0811e7b8777",
+      "signature": "a395ba69325023219c1ad09c733a485f1a563b071f544340646e7c1e4bd87932",
+      "configs": [
+        {
+          "depth": 3,
+          "trees": 800
+        },
+        {
+          "depth": 6,
+          "trees": 1000
+        }
+      ]
+    },
+    {
+      "version": 181,
+      "module": "v181_quantile_forest",
+      "family": "forest",
+      "available": true,
+      "source_sha256": "b7d1828a0e5802f61edea3e6e23eeb4c8f8cf2bbf3bfc105383a5eba59e4218d",
+      "signature": "dc8b4027368ffd411ad8a8c25411f2b58747e95ef78ee25f18dea8d619d7f98e",
+      "configs": [
+        {
+          "leaf": 3,
+          "trees": 400
+        },
+        {
+          "leaf": 12,
+          "trees": 400
+        }
+      ]
+    },
+    {
+      "version": 189,
+      "module": "v189_leafwise_boosting",
+      "family": "leafwise_boosting",
+      "available": false
+    },
+    {
+      "version": 193,
+      "module": "v193_smiles_convolution",
+      "family": "smiles_convolution",
+      "available": false
+    },
+    {
+      "version": 200,
+      "module": "v200_exact_newton_splines",
+      "family": "splines",
+      "available": false
+    },
+    {
+      "version": 204,
+      "module": "v204_clamped_diffusion",
+      "family": "diffusion",
+      "available": false
+    },
+    {
+      "version": 207,
+      "module": "v207_denoising_encoder",
+      "family": "denoising_boosting",
+      "available": false
+    },
+    {
+      "version": 210,
+      "module": "v210_standardized_chemistry",
+      "family": "chemistry_boosting",
+      "available": true,
+      "source_sha256": "a5005887734c4621254c1e9d9ee0670b0ed464059d589cc0cfe9733a9c0389a1",
+      "signature": "7f5ed1c09950e564c65fafd8c8af3ee2d01409129c3c9cf0ad2f62336f162374",
+      "configs": [
+        {
+          "depth": 6,
+          "trees": 1000
+        }
+      ]
+    },
+    {
+      "version": 216,
+      "module": "v216_ordered_scaffold",
+      "family": "ordered_boosting",
+      "available": true,
+      "source_sha256": "58c7d6d51a72493dd29444c271c82b8c121ec5771e0f0023f56eb995e3d71305",
+      "signature": "9925dd5b16b5306492a6f85b869ae05b816f621bcfbab785b80fbac970428f2e",
+      "configs": [
+        {
+          "depth": 5,
+          "trees": 700
+        }
+      ]
+    },
+    {
+      "version": 221,
+      "module": "v221_fragment_factorization",
+      "family": "factorization",
+      "available": true,
+      "source_sha256": "3ea824cf48ea30e3e53fa1c2f272f6981cca1b3aca6d081c974e6b40978e5f98",
+      "signature": "6cc68c8784e35cdd875b739cd4a88c2215b8e098f6d57dbd95fb8cc6474076d5",
+      "configs": [
+        {
+          "rank": 32,
+          "epochs": 100
+        }
+      ]
+    },
+    {
+      "version": 224,
+      "module": "v224_rotated_chemistry_forest",
+      "family": "rotation_forest",
+      "available": true,
+      "source_sha256": "f874ecb0c2abaae3e65eabd569e6f062d4d68e65a70a96f7cf35056e40a92b00",
+      "signature": "ab22b654b18bf843fd77b53ee0d8ba02dff941dc1c611883cc9d9befcf08d7ee",
+      "configs": [
+        {
+          "rotations": 8,
+          "trees": 24,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "version": 233,
+      "module": "v233_supervised_chemical_similarity",
+      "family": "supervised_kernel",
+      "available": true,
+      "source_sha256": "6c7abadc74a3d905c0c5d8e8a7e22f05a25606c9cdbcac21e86c29cddee91402",
+      "signature": "4786090ee874022ab0bf593f84ac58587abc6b5b7028d18101f84b38064bea0f",
+      "configs": [
+        {
+          "C": 3.0,
+          "alignment_ridge": 0.05,
+          "landmarks": 256
+        }
+      ]
+    },
+    {
+      "version": 238,
+      "module": "v238_molecular_view_attention",
+      "family": "view_attention",
+      "available": true,
+      "source_sha256": "530a5109eab332f4cd35b1c891be57bf784fd016e683d1b58ac7778c49b459a9",
+      "signature": "cc7688bf2ea702684882cca80392b941a8689b164c30077a1da0e3c20d7c441d",
+      "configs": [
+        {
+          "width": 64,
+          "heads": 4,
+          "layers": 2,
+          "epochs": 100,
+          "minimum_steps": 900,
+          "maximum_steps": 3000
+        }
+      ]
+    },
+    {
+      "version": 244,
+      "module": "v244_conditional_density",
+      "family": "density_network",
+      "available": true,
+      "source_sha256": "54416a1cea2ebadb1d8a16d2fa34d02db2f653795cd35a6a9e8a93c4616cf52e",
+      "signature": "342f91b6c94e24c0b4f4d240d8cd7e4ea51d26db1566b384eb5facfdbb961091",
+      "configs": [
+        {
+          "components": 3,
+          "epochs": 120,
+          "minimum_steps": 1000,
+          "maximum_steps": 3500
+        }
+      ]
+    },
+    {
+      "version": 250,
+      "module": "v250_hierarchical_atom_matching",
+      "family": "atom_kernel",
+      "available": true,
+      "source_sha256": "b444023116c4fe09b154332fe127447b3e73a87b6250142e0bd7b34843eba15b",
+      "signature": "dc5f2c9c1788175d60964dadf0fd07079e1e0bf5fa6b140139e514741a49ad8d",
+      "configs": [
+        {
+          "C": 3.0,
+          "levels": 4
+        }
+      ]
+    },
+    {
+      "version": 256,
+      "module": "v256_exposed_polarity",
+      "family": "conformer_boosting",
+      "available": true,
+      "source_sha256": "3a494713c4c9438512bcbf1778c756491b83350134d911f1651c51d3052eda11",
+      "signature": "925cc5473a1cacdc5ca9ac872a7da4daa8fa06ae7062f4b005069635bd8781b4",
+      "configs": [
+        {
+          "trees": 700,
+          "depth": 4
+        }
+      ]
+    },
+    {
+      "version": 264,
+      "module": "v264_replicate_noise_gp",
+      "family": "noise_gp",
+      "available": true,
+      "source_sha256": "39fbb337cd04e8368bf4ac6fef715b3255743b225a1995621d5ba4adc4ffd822",
+      "signature": "c5433ebd08cb99c70d614369d3f300abbbdf782f0adf64f0c122243c15abcdd1",
+      "configs": [
+        {
+          "prior_df": 5.0,
+          "max_iterations": 60
+        }
+      ]
+    },
+    {
+      "version": 271,
+      "module": "v271_clearance_innovations",
+      "family": "crossfit_context",
+      "available": true,
+      "source_sha256": "2ccc5e91e9ecb32b0f3ce4082689a702adcf2e8a12478c47dfdbefbaee1bf9a4",
+      "signature": "ef77abd6b22df65697a6e971bd3307fff621eaabad16ab037c3cffb6bb70c1c8",
+      "configs": [
+        {
+          "inner_folds": 3,
+          "ridge": 0.3,
+          "covariance_prior": 20.0
+        }
+      ]
+    },
+    {
+      "version": 278,
+      "module": "v278_v145_leaf_refit",
+      "family": "leaf_refit",
+      "available": true,
+      "source_sha256": "30743545f399ff86ee8f3c4b4c20db9482329dd842cbe54985f1c9a82bf66760",
+      "signature": "43e05447b86bdbc944bd4dc41c0b546e7a37b2a3d365fa6825553c8fb1b9c5bc",
+      "configs": [
+        {
+          "prior_precision": 1.0,
+          "max_newton": 50,
+          "gradient_tolerance": 1e-08
+        }
+      ]
+    },
+    {
+      "version": 289,
+      "module": "v289_stereo_schema_fix",
+      "family": "context_repair",
+      "available": true,
+      "source_sha256": "a3fdc68e3bf83964c9b24f6c717869296a0527fdbdd8be857f2db7a0c75bc37b",
+      "signature": "4fec558952d449d2522dafb1e833263df299a6d4bae13aac4d756e022e463750",
+      "configs": [
+        {
+          "identity": "isomeric_exact_and_neutral"
+        }
+      ]
+    },
+    {
+      "version": 297,
+      "module": "v297_pair_delta_regression",
+      "family": "pair_regression",
+      "available": true,
+      "source_sha256": "a8aac34589f20e2678e2cb7a8faeeefe234c4cfc875c7452b8bb927139a60009",
+      "signature": "216d02a7b30353486179b163f186da49a6e3ac534c2d843adf15c18ed2893002",
+      "configs": [
+        {
+          "neighbors": 8,
+          "fingerprint_columns": 256,
+          "trees": 700,
+          "depth": 5
+        }
+      ]
+    },
+    {
+      "version": 299,
+      "module": "v299_distributional_trees",
+      "family": "distributional_boosting",
+      "available": true,
+      "source_sha256": "c61ea83bf3f97f9fdf65538f8e50846951e9ce6ab72b63fd8609e9cb62503aa6",
+      "signature": "3ddcf51ae7c9c6f53e48f40f116e56ae462df9a1040257b757a050dccd5a631c",
+      "configs": [
+        {
+          "bins": 24,
+          "trees": 700,
+          "depth": 5,
+          "fingerprint_columns": 512
+        }
+      ]
+    },
+    {
+      "version": 301,
+      "module": "v301_piecewise_batch_ensemble",
+      "family": "shared_neural_ensemble",
+      "available": true,
+      "source_sha256": "d162d857415b62f46274c36df3758fb8c64d6ae2f2b614fea1756f616cbe4c0f",
+      "signature": "863d4d32ea97b610ef0ef62c38c8754ae72dd39ac589579e0852750668e8b707",
+      "configs": [
+        {
+          "members": 8,
+          "width": 192,
+          "blocks": 3,
+          "bins": 8,
+          "epochs": 100,
+          "minimum_steps": 1200,
+          "maximum_steps": 3000
+        }
+      ]
+    },
+    {
+      "version": 304,
+      "module": "v304_learned_label_retrieval",
+      "family": "label_retrieval",
+      "available": true,
+      "source_sha256": "76c5b91336521105b62fe2556965f6c4c7d26d85adaec41049ec7902b5dd3bd0",
+      "signature": "2620b10d75e9a9d5997ac8e60f7c98fa6d25cb572cb5a2f7884311fcea115660",
+      "configs": [
+        {
+          "neighbors": 24,
+          "width": 128,
+          "key_width": 32,
+          "bins": 8,
+          "epochs": 100,
+          "minimum_steps": 1200,
+          "maximum_steps": 2500
+        }
+      ]
+    },
+    {
+      "version": 310,
+      "module": "v310_stable_differentiable_trees",
+      "family": "differentiable_trees",
+      "available": true,
+      "source_sha256": "ad03270a63f689c589467315edf8732c5f5760b05684c72d076ea038eb034506",
+      "signature": "3f44a90b327f5104aa0338c7cc2d6d9efca62787208a03c9edd8d089e7b6aa21",
+      "configs": [
+        {
+          "trees": 64,
+          "depth": 5,
+          "fingerprint_columns": 512,
+          "quantiles": 32,
+          "epochs": 100,
+          "minimum_steps": 1200,
+          "maximum_steps": 2500
+        }
+      ]
+    },
+    {
+      "version": 315,
+      "module": "v315_rank_label_retrieval",
+      "family": "label_retrieval",
+      "available": true,
+      "source_sha256": "329a2ddc45acaaeabe5558761fc8041bacc879ad4cff13143483ba2e986e4737",
+      "signature": "153d5746c0bf71a92d1bf1e44275ad3c5e1c3a079981b8dff436e56b2722c48c",
+      "configs": [
+        {
+          "neighbors": 24,
+          "width": 128,
+          "key_width": 32,
+          "bins": 8,
+          "epochs": 100,
+          "minimum_steps": 1200,
+          "maximum_steps": 2500
+        }
+      ]
+    },
+    {
+      "version": 318,
+      "module": "v318_neural_tangent_regression",
+      "family": "neural_kernel",
+      "available": true,
+      "source_sha256": "dd648d2e7eee6ec0cf0cb997a5162fb51a8ebc4a967d81276b76fe714873198a",
+      "signature": "4b09684c3607be5641c19d0c5930d878b3b4ece1a51979b3660fd76923417404",
+      "configs": [
+        {
+          "depth": 3,
+          "C": 10.0,
+          "epsilon": 0.03,
+          "fingerprint_weight": 0.65,
+          "input_bias": 0.1
+        }
+      ]
+    },
+    {
+      "version": 324,
+      "module": "v324_scaffold_manifold_mixup",
+      "family": "mixup_retrieval",
+      "available": true,
+      "source_sha256": "209f1a093815b58116d7523b5ca382177830c146d5b9207287824e7b06cff87c",
+      "signature": "17ffb2a6eadf91b14ae74f9cfad50935ac9fb073b86bd113b4d22dabe54cadcc",
+      "configs": [
+        {
+          "neighbors": 24,
+          "width": 128,
+          "key_width": 32,
+          "bins": 8,
+          "epochs": 100,
+          "minimum_steps": 1200,
+          "maximum_steps": 2500,
+          "mixup_alpha": 0.4
+        }
+      ]
+    },
+    {
+      "version": 329,
+      "module": "v329_sharpness_retrieval",
+      "family": "sam_retrieval",
+      "available": true,
+      "source_sha256": "55975e65e18ef4b13cb3c663bef3db664e3e59fb8898efeec086870d2e078cae",
+      "signature": "4b2bdd798b4fa94809938f68202474df413f723687aa92b5e86a52531e97a2f0",
+      "configs": [
+        {
+          "neighbors": 24,
+          "width": 128,
+          "key_width": 32,
+          "bins": 8,
+          "epochs": 100,
+          "minimum_steps": 1200,
+          "maximum_steps": 2500,
+          "sam_radius": 0.05
+        }
+      ]
+    },
+    {
+      "version": 333,
+      "module": "v333_chemical_domain_dro",
+      "family": "domain_dro",
+      "available": true,
+      "source_sha256": "4105d6243023b1d3c161b01a718e5306f7a20a8c558b55a8ed35438f5cb816b6",
+      "signature": "68f34dcef88b0cb8c2a2e1a9e7bddda4e7af2fd6294a96761132ee7d72da9cd6",
+      "configs": [
+        {
+          "neighbors": 24,
+          "width": 128,
+          "key_width": 32,
+          "bins": 8,
+          "epochs": 100,
+          "minimum_steps": 1200,
+          "maximum_steps": 2500,
+          "domains": 8,
+          "dro_eta": 0.01,
+          "dro_fraction": 0.5
+        }
+      ]
+    },
+    {
+      "version": 340,
+      "module": "v340_smooth_ap_retrieval",
+      "family": "ap_retrieval",
+      "available": true,
+      "source_sha256": "f533ab1c9cbb3e461fbf5c650c2ba344b5950792efd7271bb5684f665c523278",
+      "signature": "297f931d7d5620785913e52ea14935414f8e2f43a2b536f0f9ba7383735a0583",
+      "configs": [
+        {
+          "neighbors": 24,
+          "width": 128,
+          "key_width": 32,
+          "bins": 8,
+          "epochs": 100,
+          "minimum_steps": 1200,
+          "maximum_steps": 2500,
+          "ap_temperature": 0.2,
+          "batch_size": 256
+        }
+      ]
+    }
+  ],
+  "unavailable_prediction_routes": [
+    189,
+    193,
+    200,
+    204,
+    207
+  ],
+  "baseline": {
+    "version": "v346",
+    "official_user_reported": 51.235,
+    "exact_task_mean": 51.234854454545456,
+    "recorded_at_hong_kong": "2026-11-02T14:24:19.020013+08:00",
+    "csv": "admet_submissions/v346_experimental_solubility/我从山北来带着兰花草-小分子药物预测技术创新赛-20261101.csv",
+    "csv_sha256": "bef15e3a892afddd661173e3496b671078067e03ee2022b2abbfde02da45a906",
+    "source": "docs/platform_scorecard_v346_20261101.json",
+    "previous_best": "v313",
+    "previous_best_official": 51.205,
+    "delta_task_mean": 0.029523227272733266,
+    "platform_uploaded_byte_hash_confirmed": false,
+    "reason": "User-reported official solubility improvement; other21 endpoints match. Historical strict-validation rejection is preserved."
+  },
+  "expert_total_weight": 0.4,
+  "baseline_weight": 0.6,
+  "hypotheses": "All pairs and triples with distinct versions and distinct families, equal expert weights; no individual-model weight sweeps.",
+  "developer_selection": "Maximum minimum fold0/1 gain, ties favor fewer members then mean gain then lexicographic ID. Freeze exactly one combination/task before confirmation, no fallback.",
+  "excluded": "HIA already AUROC1; v315 CYP3A4 component failed officially; solubility v329 is already inside the frozen v346 baseline, never increased independently.",
+  "dev_thresholds": {
+    "MAE": 0.012,
+    "Spearman": 0.008,
+    "AUROC": 0.003,
+    "AUPRC": 0.003
+  },
+  "confirmation": "All4 positive points, mean practical threshold, both500 paired scaffold-bootstrap90 lower bounds>0 for strict acceptance. Any experimental alternative must be labeled and preserve rejection.",
+  "external_data": false,
+  "pretrained_weights": false,
+  "test_labels_used": false,
+  "model_training_at_search": false,
+  "manual_official_submission_only": true,
+  "limitations": "Not every model worldwide. Historical public labels repeatedly reused, upstream OOF approximate; confirmation reuses public folds and is not a fresh holdout. Large search raises selection risk. No claim of official improvement."
+}

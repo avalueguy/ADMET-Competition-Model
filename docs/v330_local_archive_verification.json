@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "archive": "releases/v330_sharpness_retrieval_20261101.tar.gz",
+  "sha256": "d7378b39a25c8a084eba5e9c0badd38415d2c4123c66688ad45477e6aebb495a",
+  "bytes": 206611571,
+  "members": 80,
+  "manifest_files": 79,
+  "all_member_hashes_verified": true,
+  "csv_members": [],
+  "restored_absent": 68,
+  "existing_different_preserved": [],
+  "dependency_contents_reverified": true,
+  "dependency_hashes_checked": 50
+}

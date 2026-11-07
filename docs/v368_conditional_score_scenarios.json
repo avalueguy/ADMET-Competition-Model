@@ -1,0 +1,492 @@
+{
+  "description": "Conditional arithmetic only, not predicted performance, confidence intervals, or probabilities.",
+  "baseline": 51.26918777272727,
+  "scenarios": [
+    {
+      "ames_auc_increment": 0.005,
+      "three_spearman_increments": 0.02,
+      "conditional_total": 51.31594703133111,
+      "conditional_total_gain": 0.04675925860384211,
+      "tasks": [
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "baseline_raw": 0.8769096712291213,
+          "hypothetical_raw": 0.8819096712291213,
+          "score": 50.284079159823946
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "baseline_raw": 0.9289790494058787,
+          "hypothetical_raw": 0.9289790494058787,
+          "score": 50.03231571841746
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "baseline_raw": 0.7948121050881277,
+          "hypothetical_raw": 0.7948121050881277,
+          "score": 52.3916028390949
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "baseline_raw": 0.27592992051587734,
+          "hypothetical_raw": 0.27592992051587734,
+          "score": 50.68954590523571
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "baseline_raw": 0.565208996561239,
+          "hypothetical_raw": 0.565208996561239,
+          "score": 50.21122785789275
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "baseline_raw": 0.6756845436053647,
+          "hypothetical_raw": 0.6956845436053647,
+          "score": 50.79183116174536
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "baseline_raw": 0.5862085536546348,
+          "hypothetical_raw": 0.5862085536546348,
+          "score": 56.93674868943264
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "baseline_raw": 0.8349408577894758,
+          "hypothetical_raw": 0.8349408577894758,
+          "score": 51.364322514172216
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "baseline_raw": 0.7583244699983189,
+          "hypothetical_raw": 0.7583244699983189,
+          "score": 50.358383331380765
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "baseline_raw": 0.7439447168745902,
+          "hypothetical_raw": 0.7439447168745902,
+          "score": 50.84657350260846
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "baseline_raw": 0.7460443037974683,
+          "hypothetical_raw": 0.7460443037974683,
+          "score": 50.706701503493385
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "baseline_raw": 0.8991915344045904,
+          "hypothetical_raw": 0.8991915344045904,
+          "score": 50.42254327589365
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "baseline_raw": 0.935,
+          "hypothetical_raw": 0.935,
+          "score": 50.71574287172605
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "baseline_raw": 0.6509691357439866,
+          "hypothetical_raw": 0.6709691357439866,
+          "score": 52.839322291295325
+        },
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "baseline_raw": 0.861119293078056,
+          "hypothetical_raw": 0.861119293078056,
+          "score": 49.935090275443756
+        },
+        {
+          "task": "hia_hou",
+          "metric": "AUROC",
+          "baseline_raw": 1.0,
+          "hypothetical_raw": 1.0,
+          "score": 50.143410153037685
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "baseline_raw": 0.55547536869963,
+          "hypothetical_raw": 0.55547536869963,
+          "score": 52.05410989953696
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "baseline_raw": 0.4168746341957797,
+          "hypothetical_raw": 0.4168746341957797,
+          "score": 53.14802639083399
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "baseline_raw": 0.9504798720341242,
+          "hypothetical_raw": 0.9504798720341242,
+          "score": 50.32074854434756
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "baseline_raw": 6.665484533215087,
+          "hypothetical_raw": 6.665484533215087,
+          "score": 52.37613475869134
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "baseline_raw": 0.7010230434713527,
+          "hypothetical_raw": 0.7010230434713527,
+          "score": 51.2997860108741
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "baseline_raw": 0.7145137427047057,
+          "hypothetical_raw": 0.7345137427047057,
+          "score": 51.082588034306525
+        }
+      ]
+    },
+    {
+      "ames_auc_increment": 0.01,
+      "three_spearman_increments": 0.05,
+      "conditional_total": 51.38190976720712,
+      "conditional_total_gain": 0.11272199447984832,
+      "tasks": [
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "baseline_raw": 0.8769096712291213,
+          "hypothetical_raw": 0.8869096712291213,
+          "score": 50.42540954275272
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "baseline_raw": 0.9289790494058787,
+          "hypothetical_raw": 0.9289790494058787,
+          "score": 50.03231571841746
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "baseline_raw": 0.7948121050881277,
+          "hypothetical_raw": 0.7948121050881277,
+          "score": 52.3916028390949
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "baseline_raw": 0.27592992051587734,
+          "hypothetical_raw": 0.27592992051587734,
+          "score": 50.68954590523571
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "baseline_raw": 0.565208996561239,
+          "hypothetical_raw": 0.565208996561239,
+          "score": 50.21122785789275
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "baseline_raw": 0.6756845436053647,
+          "hypothetical_raw": 0.7256845436053647,
+          "score": 51.23008133345765
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "baseline_raw": 0.5862085536546348,
+          "hypothetical_raw": 0.5862085536546348,
+          "score": 56.93674868943264
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "baseline_raw": 0.8349408577894758,
+          "hypothetical_raw": 0.8349408577894758,
+          "score": 51.364322514172216
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "baseline_raw": 0.7583244699983189,
+          "hypothetical_raw": 0.7583244699983189,
+          "score": 50.358383331380765
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "baseline_raw": 0.7439447168745902,
+          "hypothetical_raw": 0.7439447168745902,
+          "score": 50.84657350260846
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "baseline_raw": 0.7460443037974683,
+          "hypothetical_raw": 0.7460443037974683,
+          "score": 50.706701503493385
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "baseline_raw": 0.8991915344045904,
+          "hypothetical_raw": 0.8991915344045904,
+          "score": 50.42254327589365
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "baseline_raw": 0.935,
+          "hypothetical_raw": 0.935,
+          "score": 50.71574287172605
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "baseline_raw": 0.6509691357439866,
+          "hypothetical_raw": 0.7009691357439867,
+          "score": 53.282511879653285
+        },
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "baseline_raw": 0.861119293078056,
+          "hypothetical_raw": 0.861119293078056,
+          "score": 49.935090275443756
+        },
+        {
+          "task": "hia_hou",
+          "metric": "AUROC",
+          "baseline_raw": 1.0,
+          "hypothetical_raw": 1.0,
+          "score": 50.143410153037685
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "baseline_raw": 0.55547536869963,
+          "hypothetical_raw": 0.55547536869963,
+          "score": 52.05410989953696
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "baseline_raw": 0.4168746341957797,
+          "hypothetical_raw": 0.4168746341957797,
+          "score": 53.14802639083399
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "baseline_raw": 0.9504798720341242,
+          "hypothetical_raw": 0.9504798720341242,
+          "score": 50.32074854434756
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "baseline_raw": 6.665484533215087,
+          "hypothetical_raw": 6.665484533215087,
+          "score": 52.37613475869134
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "baseline_raw": 0.7010230434713527,
+          "hypothetical_raw": 0.7010230434713527,
+          "score": 51.2997860108741
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "baseline_raw": 0.7145137427047057,
+          "hypothetical_raw": 0.7645137427047057,
+          "score": 51.51099808057956
+        }
+      ]
+    },
+    {
+      "ames_auc_increment": 0.02,
+      "three_spearman_increments": 0.1,
+      "conditional_total": 51.491527637218226,
+      "conditional_total_gain": 0.2223398644909551,
+      "tasks": [
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "baseline_raw": 0.8769096712291213,
+          "hypothetical_raw": 0.8969096712291214,
+          "score": 50.70567332735635
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "baseline_raw": 0.9289790494058787,
+          "hypothetical_raw": 0.9289790494058787,
+          "score": 50.03231571841746
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "baseline_raw": 0.7948121050881277,
+          "hypothetical_raw": 0.7948121050881277,
+          "score": 52.3916028390949
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "baseline_raw": 0.27592992051587734,
+          "hypothetical_raw": 0.27592992051587734,
+          "score": 50.68954590523571
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "baseline_raw": 0.565208996561239,
+          "hypothetical_raw": 0.565208996561239,
+          "score": 50.21122785789275
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "baseline_raw": 0.6756845436053647,
+          "hypothetical_raw": 0.7756845436053647,
+          "score": 51.94340500530433
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "baseline_raw": 0.5862085536546348,
+          "hypothetical_raw": 0.5862085536546348,
+          "score": 56.93674868943264
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "baseline_raw": 0.8349408577894758,
+          "hypothetical_raw": 0.8349408577894758,
+          "score": 51.364322514172216
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "baseline_raw": 0.7583244699983189,
+          "hypothetical_raw": 0.7583244699983189,
+          "score": 50.358383331380765
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "baseline_raw": 0.7439447168745902,
+          "hypothetical_raw": 0.7439447168745902,
+          "score": 50.84657350260846
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "baseline_raw": 0.7460443037974683,
+          "hypothetical_raw": 0.7460443037974683,
+          "score": 50.706701503493385
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "baseline_raw": 0.8991915344045904,
+          "hypothetical_raw": 0.8991915344045904,
+          "score": 50.42254327589365
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "baseline_raw": 0.935,
+          "hypothetical_raw": 0.935,
+          "score": 50.71574287172605
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "baseline_raw": 0.6509691357439866,
+          "hypothetical_raw": 0.7509691357439866,
+          "score": 54.002936209045586
+        },
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "baseline_raw": 0.861119293078056,
+          "hypothetical_raw": 0.861119293078056,
+          "score": 49.935090275443756
+        },
+        {
+          "task": "hia_hou",
+          "metric": "AUROC",
+          "baseline_raw": 1.0,
+          "hypothetical_raw": 1.0,
+          "score": 50.143410153037685
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "baseline_raw": 0.55547536869963,
+          "hypothetical_raw": 0.55547536869963,
+          "score": 52.05410989953696
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "baseline_raw": 0.4168746341957797,
+          "hypothetical_raw": 0.4168746341957797,
+          "score": 53.14802639083399
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "baseline_raw": 0.9504798720341242,
+          "hypothetical_raw": 0.9504798720341242,
+          "score": 50.32074854434756
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "baseline_raw": 6.665484533215087,
+          "hypothetical_raw": 6.665484533215087,
+          "score": 52.37613475869134
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "baseline_raw": 0.7010230434713527,
+          "hypothetical_raw": 0.7010230434713527,
+          "score": 51.2997860108741
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "baseline_raw": 0.7145137427047057,
+          "hypothetical_raw": 0.8145137427047057,
+          "score": 52.20857943498129
+        }
+      ]
+    }
+  ]
+}

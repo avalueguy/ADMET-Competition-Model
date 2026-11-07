@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "signature": "216d02a7b30353486179b163f186da49a6e3ac534c2d843adf15c18ed2893002",
+  "checks": [
+    {
+      "task": "caco2_wang",
+      "all_four_metrics_exact": true,
+      "bootstrap_intervals_exact": true,
+      "accepted": false
+    }
+  ],
+  "model_checkpoints_reloaded": false,
+  "saved_prediction_gate_recomputation_only": true,
+  "at_utc": "2026-11-01T09:00:39.779399+00:00",
+  "accepted": []
+}

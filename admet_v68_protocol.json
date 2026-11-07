@@ -1,0 +1,16 @@
+{
+  "version": 68,
+  "purpose": "Official-only structure kernel complement to the from-scratch v67 neural models",
+  "external_data": false,
+  "pretrained_weights": false,
+  "source_data": "Verified v67 official-only molecular features and exact v67 global scaffold folds",
+  "kernel": "Equal chiral Morgan/feature-Morgan binary Tanimoto kernels, with squared Tanimoto component and optional 15% fit-only physicochemical RBF",
+  "families": ["fingerprint_only", "0.85_fingerprint_0.15_descriptor"],
+  "c_values": [3.0, 30.0],
+  "regression_epsilon": 0.04,
+  "blend_weights": [0.15, 0.35, 0.6, 1.0],
+  "selection": "Compare raw kernel variants to frozen v67 shared/gated selections under the same three scaffold folds. Select mean gain minus 0.1 SD, mean >0.002 and >=2 positive folds and leave-fold selection mean >0.001. On a fresh global scaffold split re-fit same kernels and compare to v67 freshly retrained neural control at its frozen selected weight. Positive fresh blend gain required. No official valid selection or veto.",
+  "cv_caveat": "v67 neural weights and v68 kernel weights selected on reused development folds; leave-fold diagnostics are not unbiased nested full-pipeline estimates.",
+  "official_score": null,
+  "automatic_upload": false
+}

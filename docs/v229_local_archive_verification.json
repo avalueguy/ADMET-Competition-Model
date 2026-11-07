@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v229_v145_honest_correction_20261029",
+  "archive_sha256": "bcae36c83508818d9fd86608c3d698e4f8ec2d3f17116d8dc0b992fba5ad2932",
+  "manifest_files": 142,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 96,
+  "existing_exact": 46,
+  "existing_updated_docs_preserved": []
+}

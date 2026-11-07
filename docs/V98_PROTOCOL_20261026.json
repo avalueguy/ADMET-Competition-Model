@@ -1,0 +1,15 @@
+{
+  "version": "v98",
+  "baseline": "v94",
+  "baseline_official_score_user_reported": 50.916,
+  "frozen_before": "All v98 supervised training and confirmation",
+  "representation": "1283 deterministic ETKDGv3 conformer descriptors plus 435 existing 2D descriptors; optional target-excluded exact/neutral-parent other-task assays and baseline rank",
+  "data": "Official training/validation labels only; test structures from the template. No external datasets or new pretrained weights.",
+  "training": {"seeds": [984026, 984027], "depth": 5, "steps": 1200, "learning_rate": 0.025, "l2_leaf_reg": 20, "snapshots": [150, 450, 1200], "modes": ["direct", "residual"], "weights": [0.25, 0.5, 1.0]},
+  "selection": "Choose one configuration per task by maximum minimum gain in fold0/fold1, requiring >1% relative MAE improvement, >0.005 Spearman, or >0.002 AUC/AP in each development fold.",
+  "confirmation": "Freeze before fold2/valid. All four gains must be strictly positive and their mean exceed the metric threshold. No fallback or confirmation-based retuning.",
+  "assembly_with_v97": "Take the union of accepted task experts from v95/v96/v98, each applied once to v94. If several branches accept the same task, choose greater minimum fold0/fold1 development gain; break an exact tie by lower version number. Do not blend multiple experts for the same task or choose by confirmation gain.",
+  "assembled_version": "v99",
+  "score_estimate": null,
+  "limitations": "Historically reused proxy labels and an approximate v94 baseline; synthetic conformers are approximations. Local gains do not estimate platform gains."
+}

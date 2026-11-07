@@ -1,0 +1,53 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "training_version": "v289",
+  "delivery_version": "v290",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "source_sha256": "a3fdc68e3bf83964c9b24f6c717869296a0527fdbdd8be857f2db7a0c75bc37b",
+  "training_plan": "docs/v289_training_plan.json",
+  "defect_review": "docs/v289_schema_defect_review.json",
+  "frozen_sources": "docs/v289_frozen_sources.json",
+  "frozen_archive": "releases/v289_frozen_sources_20261031.tar.gz",
+  "frozen_archive_sha256": "cddd77e6e5637d9594cbe27df194ef762279d5889204d257bf94485e4e366000",
+  "tasks": [
+    "herg",
+    "cyp3a4_substrate_carbonmangels"
+  ],
+  "host": "connect.nmb2.seetacloud.com",
+  "port": 24365,
+  "remote_workspace": "/root/autodl-tmp/v76",
+  "model_training_started": true,
+  "source_immutable_after_start": true,
+  "credentials_stored": false,
+  "automatic_platform_submission": false,
+  "pipeline_status": "admet_model_outputs_v290/pipeline_status.json",
+  "scheduler_status": "admet_model_outputs_v289/parallel_scheduling.json",
+  "remote_start": "docs/v289_remote_start.json",
+  "log": "v289_stereo_schema_fix.log",
+  "worker_logs": "v292_worker_*.log",
+  "archive_prefix": "v290_stereo_schema_fix_20261031",
+  "local_finalizer": "tools/finalize_v290_local.py",
+  "previous_result": "docs/v285_final_status.json",
+  "next_steps": [
+    "No schema route retries or parameter changes",
+    "v294 fit-only context replicate uncertainty audit; no target labels/query predictions/scores, not yet a new model"
+  ],
+  "model_training_active": false,
+  "smoke": "PASS",
+  "signature": "4fec558952d449d2522dafb1e833263df299a6d4bae13aac4d756e022e463750",
+  "baseline_cache_verified": 105,
+  "final_status": "docs/v290_final_status.json",
+  "archive_verification": {
+    "status": "PASS",
+    "prefix": "v290_stereo_schema_fix_20261031",
+    "archive_sha256": "53a9b23ab6918b8473b22969675481a3299d71a79b7be81fb3888d236b8e9715",
+    "manifest_files": 128,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 30,
+    "existing_exact": 98,
+    "existing_updated_docs_preserved": []
+  },
+  "last_observed": "Original540-column protocol now executed correctly. hERGbothnegative;CYP3A4onefoldnegative. No confirmation/CSV. Complete originalarchive restored after redundant package protection;128members/dependencies PASS."
+}

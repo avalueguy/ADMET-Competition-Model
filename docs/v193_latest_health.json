@@ -1,0 +1,48 @@
+{
+  "checked_at_utc": "2026-10-28T06:41:53.794577+00:00",
+  "processes": [
+    {
+      "pid": 5755,
+      "state": "S",
+      "cpu_ticks": 9,
+      "identity_match": true
+    },
+    {
+      "pid": 5754,
+      "state": "R",
+      "cpu_ticks": 152680,
+      "identity_match": true
+    }
+  ],
+  "development_status": "IN_PROGRESS",
+  "completed_development_tasks": [
+    "herg",
+    "bbb_martins",
+    "ames",
+    "clearance_hepatocyte_az",
+    "solubility_aqsoldb",
+    "pgp_broccatelli",
+    "cyp2d6_substrate_carbonmangels",
+    "cyp3a4_veith",
+    "clearance_microsome_az",
+    "caco2_wang",
+    "cyp3a4_substrate_carbonmangels",
+    "dili",
+    "vdss_lombardo",
+    "cyp2d6_veith",
+    "cyp2c9_veith"
+  ],
+  "pipeline": {
+    "status": "WAITING_TRAINING",
+    "route": "v193"
+  },
+  "confirmation": null,
+  "new_candidate": false,
+  "no_candidate": null,
+  "archive": null,
+  "recent_log": [
+    "{\"stage\": \"train\", \"task\": \"cyp2c9_veith\", \"part\": \"fold1\", \"steps\": 2400, \"seconds\": 96}",
+    "{\"stage\": \"development\", \"best\": {\"task\": \"cyp2c9_veith\", \"metric\": \"AUPRC\", \"config\": {\"embedding\": 48, \"channels\": 96, \"epochs\": 40, \"minimum_steps\": 700, \"maximum_steps\": 2400}, \"weight\": 0.2, \"parts\": [{\"part\": \"fold0\", \"rows\": 2821, \"baseline\": 0.8498539291362396, \"expert\": 0.7906765168791753, \"candidate\": 0.8486541462148913, \"gain\": -0.001199782921348258}, {\"part\": \"fold1\", \"rows\": 2821, \"baseline\": 0.8133401115977079, \"expert\": 0.7639176913582267, \"candidate\": 0.8145073127729905, \"gain\": 0.0011672011752825728}], \"objective\": -0.001199782921348258}}",
+    "{\"stage\": \"train\", \"task\": \"ppbr_az\", \"part\": \"fold0\", \"steps\": 840, \"seconds\": 29}"
+  ]
+}

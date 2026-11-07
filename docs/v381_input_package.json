@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "archive": "releases/v381_oof_delta.tar.gz",
+  "sha256": "05b54d4ee4d7375ba0910d10fe1b402ecc44ff30092db1247332aa5c6109e9a8",
+  "bytes": 17287,
+  "source_files": [
+    {
+      "name": "v371_mae_experts.py",
+      "sha256": "64ba5ff605f3a71b0065817e7d99ffb27cdede65baf218296e1bb1159c09020f"
+    },
+    {
+      "name": "v377_regression_experts.py",
+      "sha256": "c0af57f620695bbfc1c25dbe50335b58a53b94ff04f2c50122c7f559687518a1"
+    },
+    {
+      "name": "v380_histogram_median.py",
+      "sha256": "be79212314c874d5d75847d0e067024e0cfc21f612580b069a8f141944073257"
+    },
+    {
+      "name": "v381_oof_pareto.py",
+      "sha256": "c138b6402e94467439cf8f68f44ccc76e7e652e8e08eb9da8109fba75a15bad5"
+    },
+    {
+      "name": "v381_run_experts.py",
+      "sha256": "a8f2910e1bb9f055cc5a42631b1fa729fcbe7baaee48ff5fb75120395a7b3f0e"
+    },
+    {
+      "name": "v381_verify_experts.py",
+      "sha256": "6311418af23a087c8d017f97a32ca38e90f3a8da9c1ba33a52c1640d27db0e94"
+    },
+    {
+      "name": "v381_smoke.py",
+      "sha256": "0cb021c26b09879fad8cbb6654cd4ac7fff37c0b90fefabe2cc3b6a6f910b590"
+    }
+  ],
+  "local_input_files_verified": 96
+}

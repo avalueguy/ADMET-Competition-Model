@@ -1,0 +1,18 @@
+{
+  "status": "STATIC_REVIEW_PASS_SMOKE_REQUIRED",
+  "source_sha256": "b444023116c4fe09b154332fe127447b3e73a87b6250142e0bd7b34843eba15b",
+  "checks": [
+    "No historical prediction training inputs or rejected source/model reuse",
+    "WL labels full original graph; order independent CIP chirality",
+    "Threshold lift learned only on fit molecules,weights and countcaps fit only",
+    "Explicit nonnegative lift establishes PSD;positive RBF mixtures preserve PSD",
+    "Single fixed C and kernel weights before scores,originalv148 unchanged",
+    "Exact accepted atom environment reconstruction from originalSMILES required"
+  ],
+  "smoke_required": [
+    "Analytical histogram intersection and PSD",
+    "Query-only vocabulary/maxcount cannot affect fit geometry",
+    "Atom order and stereochemical SMILES invariance",
+    "Three metrics label isolation,actual model saving/reload and queryorder"
+  ]
+}

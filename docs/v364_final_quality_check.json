@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "csv": "admet_submissions/v364_graph_transformer_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261104.csv",
+  "csv_sha256": "777eca282b59101463fe02f71802c24502a87ba7352482b24a64943ef81ede79",
+  "rows": 16379,
+  "tasks": 22,
+  "changed_rows": {
+    "lipophilicity_astrazeneca": 840,
+    "solubility_aqsoldb": 1997
+  },
+  "artifact_tool_csv_import": true,
+  "template_verification": true,
+  "release_archive_all_member_hashes_verified": true,
+  "full_model_replay_max_error": 0.0,
+  "cpu_reference_max_error": 7.152557373046875e-07,
+  "official_score": null,
+  "all_training_remote_only": true
+}

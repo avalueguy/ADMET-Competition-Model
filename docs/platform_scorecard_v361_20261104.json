@@ -1,0 +1,225 @@
+{
+  "version": "v361",
+  "date": "2026-11-04",
+  "submitted_at": "2026/11/04 13:06",
+  "recorded_at_hong_kong": "2026-11-04T13:28:26.274084+08:00",
+  "timezone": "Asia/Hong_Kong",
+  "score": 51.24,
+  "task_score_mean": 51.2395284090909,
+  "tasks": [
+    {
+      "task": "ames",
+      "metric": "AUROC",
+      "score": 50.141941,
+      "raw": 0.8769096712291213,
+      "reference_score": 0.871945,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "bbb_martins",
+      "metric": "AUROC",
+      "score": 50.032316,
+      "raw": 0.9289790494058787,
+      "reference_score": 0.927779,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "bioavailability_ma",
+      "metric": "AUROC",
+      "score": 52.391603,
+      "raw": 0.7948121050881277,
+      "reference_score": 0.722248,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "score": 50.689546,
+      "raw": 0.27592992051587734,
+      "reference_score": 0.283647,
+      "direction": "lower",
+      "status": "OK"
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "score": 50.211228,
+      "raw": 0.565208996561239,
+      "reference_score": 0.55204,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "clearance_microsome_az",
+      "metric": "Spearman",
+      "score": 50.495262,
+      "raw": 0.6756845436053647,
+      "reference_score": 0.642814,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "score": 56.936749,
+      "raw": 0.5862085536546348,
+      "reference_score": 0.44337,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "cyp2c9_veith",
+      "metric": "AUPRC",
+      "score": 51.364323,
+      "raw": 0.8349408577894758,
+      "reference_score": 0.790586,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "score": 50.358383,
+      "raw": 0.7583244699983189,
+      "reference_score": 0.747531,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "cyp2d6_veith",
+      "metric": "AUPRC",
+      "score": 50.846574,
+      "raw": 0.7439447168745902,
+      "reference_score": 0.719172,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "score": 50.706702,
+      "raw": 0.7460443037974683,
+      "reference_score": 0.725249,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "cyp3a4_veith",
+      "metric": "AUPRC",
+      "score": 50.422543,
+      "raw": 0.8991915344045904,
+      "reference_score": 0.884121,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "dili",
+      "metric": "AUROC",
+      "score": 50.715743,
+      "raw": 0.935,
+      "reference_score": 0.908609,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "half_life_obach",
+      "metric": "Spearman",
+      "score": 52.539161,
+      "raw": 0.6509691357439866,
+      "reference_score": 0.49139,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "score": 49.93509,
+      "raw": 0.861119293078056,
+      "reference_score": 0.863358,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "hia_hou",
+      "metric": "AUROC",
+      "score": 50.14341,
+      "raw": 1.0,
+      "reference_score": 0.99428,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "score": 52.05411,
+      "raw": 0.55547536869963,
+      "reference_score": 0.603071,
+      "direction": "lower",
+      "status": "OK"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "score": 52.909067,
+      "raw": 0.42089320332796315,
+      "reference_score": 0.472895,
+      "direction": "lower",
+      "status": "OK"
+    },
+    {
+      "task": "pgp_broccatelli",
+      "metric": "AUROC",
+      "score": 50.320749,
+      "raw": 0.9504798720341242,
+      "reference_score": 0.938363,
+      "direction": "higher",
+      "status": "OK"
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "score": 52.376135,
+      "raw": 6.665484533215087,
+      "reference_score": 7.330617,
+      "direction": "lower",
+      "status": "OK"
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "score": 50.886239,
+      "raw": 0.7127214187464622,
+      "reference_score": 0.738443,
+      "direction": "lower",
+      "status": "OK"
+    },
+    {
+      "task": "vdss_lombardo",
+      "metric": "Spearman",
+      "score": 50.792751,
+      "raw": 0.7145137427047057,
+      "reference_score": 0.660995,
+      "direction": "higher",
+      "status": "OK"
+    }
+  ],
+  "status": "user_reported_official",
+  "platform_displayed_certification": "未认证",
+  "source": "User-pasted full22-task official scorecard and explicit latest51.240 in this conversation.",
+  "csv": "admet_submissions/v361_herg_feedback_repair/我从山北来带着兰花草-小分子药物预测技术创新赛-20261102.csv",
+  "submission_sha256": "6e480265b09ab45064f1b6cf437bc1cd42bbb450e3b34b111ce252cb942f10b7",
+  "uploaded_byte_hash_confirmed": false,
+  "association": "v361 inferred from recent delivery and exact21 v346 tasks plus v354 hERG. Platform byte hash unavailable.",
+  "baseline": "v346",
+  "baseline_score": 51.235,
+  "changed_tasks": [
+    "herg"
+  ],
+  "unchanged_tasks": 21,
+  "delta_task_mean": 0.004673954545445724,
+  "delta_vs_v354": 0.01507486363635735,
+  "original_local_strict_rejections_preserved": true
+}

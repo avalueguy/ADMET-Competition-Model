@@ -1,0 +1,124 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "checked_at_utc": "2026-10-29T07:16:29.337168+00:00",
+  "training_version": "v224",
+  "delivery_version": "v225",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52,
+  "target_achieved": false,
+  "development_tasks": 21,
+  "saved_development_models": 84,
+  "total_models": 100,
+  "nominated_tasks": [
+    "clearance_hepatocyte_az",
+    "cyp2d6_substrate_carbonmangels",
+    "cyp3a4_substrate_carbonmangels",
+    "dili"
+  ],
+  "accepted_tasks": [],
+  "confirmation_results": [
+    {
+      "task": "clearance_hepatocyte_az",
+      "gains": {
+        "fold0": 0.03933182387528866,
+        "fold1": 0.011001776611747616,
+        "fold2": 0.03125751193882609,
+        "valid": 0.001599384419255001
+      },
+      "bootstrap90": {
+        "fold2": [
+          0.009578368912301944,
+          0.05229738671003083
+        ],
+        "valid": [
+          -0.025369279481147474,
+          0.03971497709433042
+        ]
+      }
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "gains": {
+        "fold0": 0.03320855765313602,
+        "fold1": 0.028152805459077612,
+        "fold2": 0.014787849952938137,
+        "valid": -0.02410036721158193
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.022791590254841586,
+          0.05979468962345647
+        ],
+        "valid": [
+          -0.13011694980970934,
+          0.08054162764272285
+        ]
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "gains": {
+        "fold0": 0.025083056478405252,
+        "fold1": 0.03337178642056682,
+        "fold2": 0.013733552631578938,
+        "valid": 0.0017921146953405742
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.0077147464118471655,
+          0.0391191822883
+        ],
+        "valid": [
+          -0.04353342875887167,
+          0.051815878378378394
+        ]
+      }
+    },
+    {
+      "task": "dili",
+      "gains": {
+        "fold0": 0.004014720642355307,
+        "fold1": 0.0043218085106382365,
+        "fold2": -0.009576612903225756,
+        "valid": -0.01758241758241752
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.021890313390313443,
+          0.009722035267196009
+        ],
+        "valid": [
+          -0.04386446886446889,
+          0.001963551549652212
+        ]
+      }
+    }
+  ],
+  "archive": {
+    "status": "PASS",
+    "prefix": "v225_rotated_chemistry_forest_20261029",
+    "archive_sha256": "bda7582e432629a62d0a26ba90a8f355972aa4080989a9f4ef47ea3e080ca255",
+    "manifest_files": 267,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 212,
+    "existing_exact": 55,
+    "existing_updated_docs_preserved": []
+  },
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "frozen_gates_unchanged": true,
+  "local_gate_recalculation": true,
+  "no_confirmation_fallback": true,
+  "rejected_route_restarted": false,
+  "exited_pids": [
+    12754,
+    12755,
+    12770,
+    12771,
+    12772,
+    18018
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "status": "PASS",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "signature": "5a79bb5fd6cd135690d750fa5beae79f7a5674958ef83b87689f190be5067c91",
+  "cached_controls": [
+    {
+      "task": "solubility_aqsoldb",
+      "part": "fold0",
+      "rows": 1635,
+      "sha256": "dcfcb1e31ad510a6eb8dac67478861fac44ce8d1c7a93820b3f43b46fbca8ab4"
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "fold1",
+      "rows": 1635,
+      "sha256": "2f4e8ae8c2388a90bb9de9c477ccba393c1b813cd1d2f94f4daea114383e330c"
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "fold2",
+      "rows": 1775,
+      "sha256": "c9a8f6f30fc7223c75bffea3b715d465dd93b75b21ccae68d2e88a1fbdd0bf97"
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "valid",
+      "rows": 2940,
+      "sha256": "d020ffecd2c00fe3d3ee59dc44024c05f70da8234985ae81ec1008d1c1441e72"
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "final",
+      "rows": 1997,
+      "sha256": "2476e64434bb40e45fed238c03f59b179f3f00a2dc78d12b09c91b858bfa30e1"
+    },
+    {
+      "task": "caco2_wang",
+      "part": "fold0",
+      "rows": 212,
+      "sha256": "e1cf2edf229e56749669bf1477235d969a231e964a5238a5063e673768160b0d"
+    },
+    {
+      "task": "caco2_wang",
+      "part": "fold1",
+      "rows": 212,
+      "sha256": "31eff2578f63401610bcd6f6debb2c18f1183c99729f238ced5bc5c9986142ef"
+    },
+    {
+      "task": "caco2_wang",
+      "part": "fold2",
+      "rows": 213,
+      "sha256": "8e50fc1e95ea5558824f4da39dba161cbd5145c4c523074fda5e64b1da7f92fc"
+    },
+    {
+      "task": "caco2_wang",
+      "part": "valid",
+      "rows": 91,
+      "sha256": "cd182840b43221b5841777a96376fa1999cb4be0b1ebc6c93e1267eec203dcaf"
+    },
+    {
+      "task": "caco2_wang",
+      "part": "final",
+      "rows": 182,
+      "sha256": "1f9ad487e8c9c848c98262fcf39bf0f1ccde15b4eb00131eca177ae7fcefcad1"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold0",
+      "rows": 650,
+      "sha256": "c5f4dbc1c5bcddf039001539f31f0f7a60906b9c5af6df97f35b7f8762d3e467"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold1",
+      "rows": 651,
+      "sha256": "4f50b31c59099b5f575a32b5827a9939994c810643f83d20b4b096eaada781c7"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold2",
+      "rows": 651,
+      "sha256": "4bcdd1c693bc02734769da44765387bb04f0a6e47fd960542b77d3f053790555"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "valid",
+      "rows": 279,
+      "sha256": "ddf48c12676b6b00a21ea66657ed4c7046033e4789d3b500047fcd6034f20c04"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "final",
+      "rows": 559,
+      "sha256": "31abf9a46516dbcd3016b91e7580bc66b62d6410fbd47728124ce7815ed956cd"
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "fold0",
+      "rows": 1210,
+      "sha256": "ea4a4cfc508ddfaff84dfb8565a53458c03095a08812ac634885f54c697b7e06"
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "fold1",
+      "rows": 1210,
+      "sha256": "0184d2c90c8f18f41c25cdcb7c8bf67d41b07f734969f544e3fbd8d9ececf883"
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "fold2",
+      "rows": 1550,
+      "sha256": "76a93dfe1ab8b05bce6cca86d33e4bfbeb6b420313f41ea8dcda01aa08765fd4"
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "valid",
+      "rows": 1937,
+      "sha256": "f5d1d5a68080a7a54a87dd3a831c22e42ac4d8f90333989a80c43700f1024b29"
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "final",
+      "rows": 1478,
+      "sha256": "78a4d945f306af998b86ba8ff9bd356e4b80988b28c8c05814600fd317ec2203"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "fold0",
+      "rows": 980,
+      "sha256": "8e30369fd55d8e1c3b58baff1899d400b031c814c8a2b96132ee9802a2d493bf"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "fold1",
+      "rows": 980,
+      "sha256": "685f410001c225a24f7fd82f079280a12baa885cae52c65536946ba0bd34b923"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "fold2",
+      "rows": 980,
+      "sha256": "f8501722bc5b33a908a20bc252f4de189141397a59e74fad57a00b5893284356"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "valid",
+      "rows": 420,
+      "sha256": "18bc24e8b8cc57e50da724baeb55f429c9cabefa574bf78db35268ed6634c532"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "final",
+      "rows": 840,
+      "sha256": "45f5b3ada9fcde2355aee8c96655923cbdabd00dc35ad63c2bcb2b3d81983afe"
+    }
+  ],
+  "environment": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.0",
+    "rdkit": "2026.9.1",
+    "joblib": "1.6.0",
+    "catboost": "1.2.10",
+    "xgboost": "3.4.1",
+    "torch": "2.8.0+cu128"
+  },
+  "smoke": "PASS",
+  "frozen_gates_unchanged": true,
+  "previous_unfinished_results_available": false,
+  "rejected_routes_restarted": false
+}

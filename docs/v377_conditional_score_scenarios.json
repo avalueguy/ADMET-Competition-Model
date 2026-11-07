@@ -1,0 +1,37 @@
+{
+  "source": "docs/platform_scorecard_v374_20261105.json",
+  "baseline": 51.27077631818182,
+  "cases": [
+    {
+      "equal_relative_MAE_reduction_in_all_five": 0.0,
+      "conditional_total": 51.27077631385495
+    },
+    {
+      "equal_relative_MAE_reduction_in_all_five": 0.03,
+      "conditional_total": 51.44342026234599
+    },
+    {
+      "equal_relative_MAE_reduction_in_all_five": 0.05,
+      "conditional_total": 51.56135136147768
+    },
+    {
+      "equal_relative_MAE_reduction_in_all_five": 0.08,
+      "conditional_total": 51.74267089170614
+    },
+    {
+      "equal_relative_MAE_reduction_in_all_five": 0.1,
+      "conditional_total": 51.866603456327454
+    },
+    {
+      "equal_relative_MAE_reduction_in_all_five": 0.15,
+      "conditional_total": 52.18767383939464
+    },
+    {
+      "equal_relative_MAE_reduction_in_all_five": 0.2,
+      "conditional_total": 52.525825265619545
+    }
+  ],
+  "equal_reduction_in_all_five_needed_for_52": 0.12108499766407028,
+  "note": "Conditional arithmetic only. Equal reduction in every directly scored MAE task; other17 scores fixed. Nine-task average5percent alone does not imply this total.",
+  "new_official_evaluation": false
+}

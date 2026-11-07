@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "official_best_user_reported": 51.205,
+  "task_score_mean": 51.20533122727272,
+  "prior_best": 51.166,
+  "exact_mean_gain": 0.03920372727272792,
+  "target_score": 52.0,
+  "remaining_mean_gap": 0.7946687727272774,
+  "improvements": [
+    {
+      "task": "lipophilicity_astrazeneca",
+      "old_raw": 0.4299970704970541,
+      "new_raw": 0.42089320332796315,
+      "relative_mae_reduction": 0.021171928354226544,
+      "old_score": 52.375585,
+      "new_score": 52.909067,
+      "task_point_gain": 0.5334819999999993,
+      "total_point_gain": 0.024249181818181788
+    },
+    {
+      "task": "ppbr_az",
+      "old_raw": 6.753956500491535,
+      "new_raw": 6.665484533215087,
+      "relative_mae_reduction": 0.013099279995363977,
+      "old_score": 52.047135,
+      "new_score": 52.376135,
+      "task_point_gain": 0.3290000000000006,
+      "total_point_gain": 0.014954545454545482
+    }
+  ],
+  "unchanged_tasks": 20,
+  "all22_score_formula_rounding_checks": true,
+  "platform_file_hash_confirmed": false,
+  "new_test_labels_inferred": false,
+  "feedback_driven_weight_search": false
+}

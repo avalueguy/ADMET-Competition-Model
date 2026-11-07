@@ -1,0 +1,31 @@
+{
+  "path": "releases/v210_frozen_sources_20261028.tar.gz",
+  "sha256": "19fad7135238be167f6bed2898aa29d8db27f3fe493ebaf5a832b4fda6b2cc27",
+  "files": [
+    {
+      "path": "tools/v210_standardized_chemistry.py",
+      "sha256": "a5005887734c4621254c1e9d9ee0670b0ed464059d589cc0cfe9733a9c0389a1"
+    },
+    {
+      "path": "tools/v211_verify_standardized_chemistry.py",
+      "sha256": "1100d4b3f6715400093069dae356624cd0de205b57f3a2f4211c0f02ff003ed1"
+    },
+    {
+      "path": "tools/v212_package_standardized_batch.py",
+      "sha256": "9564a866446b20ab5bd6db189829749a62d979f13de31f455fd6754a2f0aec8d"
+    },
+    {
+      "path": "tools/finalize_v211_local.py",
+      "sha256": "4dfb140a8255d5986c25b5aa7625e06a7ba6b5a5fbe30cdbc5c941c72e333eb5"
+    },
+    {
+      "path": "docs/v210_training_plan.json",
+      "sha256": "956469c34a109acdf6ee0b9cc28fc4e5f1102743172ad16f1b5a0ae87dc8757f"
+    },
+    {
+      "path": "docs/v210_source_review.json",
+      "sha256": "2d004833fb55a95726d6fa66732486e83d1f38250afaba7fe2fb931d347382e8"
+    }
+  ],
+  "credentials_included": false
+}

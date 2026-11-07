@@ -1,0 +1,36 @@
+{
+  "version": "v216",
+  "delivery_version": "v217",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-29T03:50:40.829926+00:00",
+  "source_sha256": "58c7d6d51a72493dd29444c271c82b8c121ec5771e0f0023f56eb995e3d71305",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "model": "Ordered CatBoost with fit-only scaffold-balanced risk, original full fragments and shape/pharmacophore/context",
+  "distinct_from_completed_routes": "Earlier models used plain boosting/uniform row risk. This route uses ordered target-gradient permutations and inverse-square-root fitting-scaffold weights. No model/predictions from rejectedv210 reused.",
+  "tasks": "All21 original improvable tasks, HIA protected",
+  "configs": [
+    {
+      "depth": 5,
+      "trees": 700
+    }
+  ],
+  "seeds": [
+    2161029,
+    2161030
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "optimizer": "CPU4threads,lr.03,l2=30,Ordered,Bayesianbootstrap1,rsm.5,border32,Logloss/MAE/ranknormalRMSE;noearlystopping",
+  "sample_weights": "Fit-only inverse sqrt scaffold count, normalize,clip[.25,4],renormalize; no query counts or labels",
+  "selection": "Unchangedv148 maxminimumfold0/1;freeze one model and weight beforefold2/valid; nofallback",
+  "confirmation": "All4pointgains>0,original mean practical threshold,both scaffoldbootstrap90lower>0",
+  "verification": "Independent all accepted model replay,features/weights reconstruction,labelperturbation,originalgates/fusion/templatebytes/backupsha",
+  "source_immutable_after_start": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "official_gain_guaranteed": false,
+  "limitations": "Publiclabelsreused;historical upstreamOOFapproximate;scaffoldweightingmayreduceIIDfit;noofficialgainestimate"
+}

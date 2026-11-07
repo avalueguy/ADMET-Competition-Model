@@ -1,0 +1,48 @@
+{
+  "status": "FROZEN_BEFORE_DEVELOPMENT_SCORES",
+  "at_hong_kong": "2026-11-01T19:44:30.456373+08:00",
+  "baseline": "v313",
+  "official_best_user_reported": 51.205,
+  "target_score": 52.0,
+  "source_sha256": "4105d6243023b1d3c161b01a718e5306f7a20a8c558b55a8ed35438f5cb816b6",
+  "original_source_sha256": "329a2ddc45acaaeabe5558761fc8041bacc879ad4cff13143483ba2e986e4737",
+  "baseline_adapter_sha256": "be19cbdc09034bf1e41548c636246392baa5922d98005d4a4083e429b80db677",
+  "runner_sha256": "b01f7fd2512c88cf9d40fedd9a0b4b764597fc872240c51996fff6d8a8e60dce",
+  "verifier_sha256": "4daf88ec0abf67987fbfaa24508965ae1d67bd2a41797fc6d5bc6afc9a10622f",
+  "smoke_signature": "68f34dcef88b0cb8c2a2e1a9e7bddda4e7af2fd6294a96761132ee7d72da9cd6",
+  "tasks": [
+    "herg",
+    "cyp2c9_substrate_carbonmangels",
+    "cyp2d6_substrate_carbonmangels"
+  ],
+  "config": {
+    "neighbors": 24,
+    "width": 128,
+    "key_width": 32,
+    "bins": 8,
+    "epochs": 100,
+    "minimum_steps": 1200,
+    "maximum_steps": 2500,
+    "domains": 8,
+    "dro_eta": 0.01,
+    "dro_fraction": 0.5
+  },
+  "seeds": [
+    3041101,
+    3041102
+  ],
+  "projection_and_cluster_seed": 3040001,
+  "method": "Fit-only scaffold mean normalized4096 count fingerprints clustered8 by KMeans(n_init1,max_iter100). No query structure used for clusters. Balanced batch16 rows/domain. Dynamic exponentiated group-BCE adversary eta.01, half fit-row-prior ERM plus half DRO plus .25 pair loss. Same v315 network, AdamW duration and seeds from scratch.",
+  "selection": "Original v148/v314 max minimum fold0/1 gain; original fixed blends.20/.45. Freeze before fold2/valid. No failed-confirmation fallback.",
+  "confirmation": "All four positive, mean gain>.003, both500 paired scaffold bootstrap90% lower bounds>0.",
+  "smoke": "PASS independent NumPy loss/gradient/adversary references; degenerate classes; scaffold integrity; fit-only grouping; balanced batch; finite CUDA gradients; nonfit-label isolation; saved-model replay. No query metrics.",
+  "protected_tasks": [
+    "ppbr_az",
+    "lipophilicity_astrazeneca",
+    "cyp3a4_substrate_carbonmangels"
+  ],
+  "test_labels_used": false,
+  "external_data": false,
+  "automatic_platform_submission": false,
+  "limitations": "Public labels reused; historical OOF approximate. A distinct training mechanism is not proof of official improvement. Current best51.205, no claim of52."
+}

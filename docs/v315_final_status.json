@@ -1,0 +1,456 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "at_utc": "2026-11-01T10:40:18.538282+00:00",
+  "signature": "153d5746c0bf71a92d1bf1e44275ad3c5e1c3a079981b8dff436e56b2722c48c",
+  "baseline": "v313",
+  "official_best": 51.205,
+  "target_score": 52.0,
+  "development_best": [
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 152,
+          "baseline": 0.8444511217948719,
+          "expert": 0.8217147435897436,
+          "candidate": 0.8460536858974359,
+          "gain": 0.0016025641025639858
+        },
+        {
+          "part": "fold1",
+          "rows": 152,
+          "baseline": 0.85125,
+          "expert": 0.8371153846153846,
+          "candidate": 0.8556730769230769,
+          "gain": 0.004423076923076974
+        }
+      ],
+      "objective": 0.0016025641025639858
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 282,
+          "baseline": 0.5727558332909924,
+          "expert": 0.6018370627613326,
+          "candidate": 0.6242404955080613,
+          "gain": 0.05148466221706882
+        },
+        {
+          "part": "fold1",
+          "rows": 283,
+          "baseline": 0.575230994148768,
+          "expert": 0.532070892173008,
+          "candidate": 0.5911647261492164,
+          "gain": 0.015933732000448453
+        }
+      ],
+      "objective": 0.015933732000448453
+    },
+    {
+      "task": "clearance_microsome_az",
+      "metric": "Spearman",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 256,
+          "baseline": 0.7019076327178516,
+          "expert": 0.5764871432790157,
+          "candidate": 0.7007523022908086,
+          "gain": -0.0011553304270429665
+        },
+        {
+          "part": "fold1",
+          "rows": 257,
+          "baseline": 0.5046604490997971,
+          "expert": 0.42780142934349,
+          "candidate": 0.5079555766880619,
+          "gain": 0.003295127588264779
+        }
+      ],
+      "objective": -0.0011553304270429665
+    },
+    {
+      "task": "half_life_obach",
+      "metric": "Spearman",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 155,
+          "baseline": 0.5749026026062931,
+          "expert": 0.5617048152853361,
+          "candidate": 0.5893211023278168,
+          "gain": 0.014418499721523648
+        },
+        {
+          "part": "fold1",
+          "rows": 155,
+          "baseline": 0.6039670343812906,
+          "expert": 0.40518708505483214,
+          "candidate": 0.5990493190338805,
+          "gain": -0.004917715347410145
+        }
+      ],
+      "objective": -0.004917715347410145
+    },
+    {
+      "task": "vdss_lombardo",
+      "metric": "Spearman",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 263,
+          "baseline": 0.6991369429686888,
+          "expert": 0.6330167314583223,
+          "candidate": 0.6985478558089943,
+          "gain": -0.0005890871596945235
+        },
+        {
+          "part": "fold1",
+          "rows": 264,
+          "baseline": 0.7317602544137639,
+          "expert": 0.6490704406770055,
+          "candidate": 0.7276270614353144,
+          "gain": -0.004133192978449496
+        }
+      ],
+      "objective": -0.004133192978449496
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 156,
+          "baseline": 0.40104854978772664,
+          "expert": 0.4244404349406404,
+          "candidate": 0.39483545446038026,
+          "gain": -0.006213095327346374
+        },
+        {
+          "part": "fold1",
+          "rows": 156,
+          "baseline": 0.49408588616603144,
+          "expert": 0.3048730719759517,
+          "candidate": 0.4652128932914037,
+          "gain": -0.028872992874627745
+        }
+      ],
+      "objective": -0.028872992874627745
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 155,
+          "baseline": 0.5853759302529222,
+          "expert": 0.37901464855810046,
+          "candidate": 0.5516993809473565,
+          "gain": -0.03367654930556574
+        },
+        {
+          "part": "fold1",
+          "rows": 155,
+          "baseline": 0.6436233712598691,
+          "expert": 0.48265802258040413,
+          "candidate": 0.6041872939517763,
+          "gain": -0.03943607730809284
+        }
+      ],
+      "objective": -0.03943607730809284
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 156,
+          "baseline": 0.748671096345515,
+          "expert": 0.6696013289036544,
+          "candidate": 0.7563953488372093,
+          "gain": 0.007724252491694283
+        },
+        {
+          "part": "fold1",
+          "rows": 156,
+          "baseline": 0.6742748846407383,
+          "expert": 0.6506262359920896,
+          "candidate": 0.6821852340145024,
+          "gain": 0.007910349373764114
+        }
+      ],
+      "objective": 0.007724252491694283
+    }
+  ],
+  "accepted_tasks": [],
+  "confirmation": [
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 282,
+          "baseline": 0.5727558332909924,
+          "expert": 0.6018370627613326,
+          "candidate": 0.6242404955080613,
+          "gain": 0.05148466221706882
+        },
+        {
+          "part": "fold1",
+          "rows": 283,
+          "baseline": 0.575230994148768,
+          "expert": 0.532070892173008,
+          "candidate": 0.5911647261492164,
+          "gain": 0.015933732000448453
+        }
+      ],
+      "objective": 0.015933732000448453,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 282,
+          "baseline": 0.5727558332909924,
+          "expert": 0.6018370627613326,
+          "candidate": 0.6242404955080613,
+          "gain": 0.05148466221706882
+        },
+        {
+          "part": "fold1",
+          "rows": 283,
+          "baseline": 0.575230994148768,
+          "expert": 0.532070892173008,
+          "candidate": 0.5911647261492164,
+          "gain": 0.015933732000448453
+        },
+        {
+          "part": "fold2",
+          "rows": 283,
+          "baseline": 0.5979336062289107,
+          "expert": 0.5048205905164264,
+          "candidate": 0.5996918292938018,
+          "gain": 0.0017582230648911512
+        },
+        {
+          "part": "valid",
+          "rows": 122,
+          "baseline": 0.5233668892310847,
+          "expert": 0.3546380314984467,
+          "candidate": 0.4671514308985224,
+          "gain": -0.05621545833256225
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 175,
+          "gain_ci90": [
+            -0.03127786807273194,
+            0.031381765467401526
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 72,
+          "gain_ci90": [
+            -0.10326681830844531,
+            -0.018056602304229907
+          ],
+          "lower_positive": false
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 156,
+          "baseline": 0.748671096345515,
+          "expert": 0.6696013289036544,
+          "candidate": 0.7563953488372093,
+          "gain": 0.007724252491694283
+        },
+        {
+          "part": "fold1",
+          "rows": 156,
+          "baseline": 0.6742748846407383,
+          "expert": 0.6506262359920896,
+          "candidate": 0.6821852340145024,
+          "gain": 0.007910349373764114
+        }
+      ],
+      "objective": 0.007724252491694283,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 156,
+          "baseline": 0.748671096345515,
+          "expert": 0.6696013289036544,
+          "candidate": 0.7563953488372093,
+          "gain": 0.007724252491694283
+        },
+        {
+          "part": "fold1",
+          "rows": 156,
+          "baseline": 0.6742748846407383,
+          "expert": 0.6506262359920896,
+          "candidate": 0.6821852340145024,
+          "gain": 0.007910349373764114
+        },
+        {
+          "part": "fold2",
+          "rows": 156,
+          "baseline": 0.660608552631579,
+          "expert": 0.5794407894736842,
+          "candidate": 0.6628289473684211,
+          "gain": 0.0022203947368421018
+        },
+        {
+          "part": "valid",
+          "rows": 67,
+          "baseline": 0.7051971326164874,
+          "expert": 0.6971326164874552,
+          "candidate": 0.7195340501792115,
+          "gain": 0.014336917562724039
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 115,
+          "gain_ci90": [
+            -0.01429982363315692,
+            0.02177347380120262
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 50,
+          "gain_ci90": [
+            -0.006632207692593849,
+            0.034365786652371985
+          ],
+          "lower_positive": false
+        }
+      ],
+      "accepted": false
+    }
+  ],
+  "csv_created": false,
+  "platform_submission": false,
+  "official_gain_established": false
+}

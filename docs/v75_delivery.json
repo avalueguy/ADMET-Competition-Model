@@ -1,0 +1,41 @@
+{
+  "status": "PASS_LOCAL_DELIVERY_AWAITING_PLATFORM",
+  "candidate": "admet_submissions/v75_v73/我从山北来带着兰花草-小分子药物预测技术创新赛-20261022.csv",
+  "upload_copy": "D:\\bili_download\\v75_v73\\我从山北来带着兰花草-小分子药物预测技术创新赛-20261022.csv",
+  "sha256": "ccab5fd1176180f3ce34410486511a9a1f03f3123b326063a51727a8cbb09af6",
+  "rows": 16379,
+  "columns": 6,
+  "tasks": 22,
+  "format_verification": "PASS",
+  "template_sha256": "8ee41589d2c98e7b93081c058b3f928ac09bea4b3ffc899fa13677051e9baa20",
+  "independent_model_verification": "PASS",
+  "models": 694,
+  "final_models": 18,
+  "independent_local_fusion_replay": "PASS",
+  "nonprediction_bytes_exact": true,
+  "archive": {
+    "status": "PASS",
+    "path": "releases/v75_v73_20261022.tar.gz",
+    "bytes": 105936770,
+    "sha256": "71eea82b82e3fcf8cd6921594aed24904f8b19595ba09137ec0c0ed4e87ec041",
+    "members": 2158,
+    "all_member_hashes_verified": true
+  },
+  "all_archive_member_hashes_verified": true,
+  "changed_tasks": {
+    "ames": 1457,
+    "cyp3a4_substrate_carbonmangels": 135,
+    "cyp3a4_veith": 2467
+  },
+  "unchanged_tasks": 19,
+  "official_score": null,
+  "anchor": "v73",
+  "anchor_official_score_user_reported": 50.64,
+  "exact_full_anchor_oof": false,
+  "conditional_assay_evaluation": true,
+  "test_labels_used": false,
+  "external_data_new_branch": false,
+  "pretrained_new_branch": false,
+  "anchor_contains_historical_pretraining": true,
+  "automatic_upload": false
+}

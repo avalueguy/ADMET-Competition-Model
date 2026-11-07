@@ -1,0 +1,51 @@
+{
+  "date_hong_kong": "2026-11-05",
+  "version": "v368",
+  "status": "INPUTS_PREPARED",
+  "baseline_version": "v364",
+  "baseline_official": 51.269,
+  "latest_untested_candidate": "v366",
+  "training_host": "connect.nmb2.seetacloud.com:25870",
+  "gpu": "RTX 3090 24GB",
+  "tasks": [
+    "ames",
+    "clearance_microsome_az",
+    "half_life_obach",
+    "vdss_lombardo"
+  ],
+  "seeds": [
+    3681105,
+    3681106
+  ],
+  "modes": [
+    "scratch",
+    "selfsupervised",
+    "family_transfer"
+  ],
+  "weights": [
+    0.0,
+    0.2,
+    0.45
+  ],
+  "development_parts": [
+    "fold0",
+    "fold1"
+  ],
+  "confirmation_parts": [
+    "fold2",
+    "valid"
+  ],
+  "max_development_expert_seed_fits": 48,
+  "fresh_pretraining_per_part": true,
+  "no_external_data_or_weights": true,
+  "all_gpu_training_remote_only": true,
+  "experimental_authorization_inherited": true,
+  "official_score": null,
+  "credentials_persisted": false,
+  "limitations": [
+    "Historical baseline OOF partly proxy.",
+    "Public labels repeatedly used in earlier experiments.",
+    "AMES valid has one scaffold group; a scaffold bootstrap interval cannot establish strict acceptance.",
+    "half_life valid fit has 160 group-disjoint rows, rather than all 465 train rows."
+  ]
+}

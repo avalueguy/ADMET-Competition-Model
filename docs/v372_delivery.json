@@ -1,0 +1,15 @@
+{
+  "status": "NO_ELIGIBLE_CANDIDATE",
+  "signature": "94840013260f2c50a89d5d463362786d150df56edfdef963af3b0aba43429a34",
+  "baseline": "v364",
+  "baseline_official_score": 51.269,
+  "official_score": null,
+  "csv": null,
+  "target_five_tasks_ten_percent_achieved_local": false,
+  "ten_percent_all_parts_tasks": [],
+  "approved_tasks": [],
+  "training_gpu_remote_only": true,
+  "all_fitting_remote": true,
+  "automatic_platform_submission": false,
+  "model_replay_max_error": 2.7000623958883807e-13
+}

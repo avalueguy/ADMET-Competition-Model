@@ -1,0 +1,21 @@
+{
+  "status": "RESUMED_BY_USER",
+  "requested_at_utc": "2026-10-28T05:55:36.582089+00:00",
+  "resume_requires_explicit_user_message": false,
+  "training_permitted": true,
+  "automatic_submission_permitted": false,
+  "scheduled_model_actions_permitted": true,
+  "reason": "User permits continued training and monitoring, revokes automatic upload. Stable new validated CSVs are delivered for manual submission.",
+  "paused_at_utc": "2026-10-28T05:55:35.080804+00:00",
+  "process_pause_verified": true,
+  "pause_evidence": "docs/v193_pause_state.json",
+  "automation_pause_status": "FAILED_APP_TOOL_TRANSPORT_CLOSED",
+  "automation_check_may_still_fire": true,
+  "resume_requested_at_utc": "2026-10-28T06:21:52.869790+00:00",
+  "resumed_at_utc": "2026-10-28T06:22:13.248939+00:00",
+  "resume_requested_by_user": true,
+  "resume_evidence": "docs/v193_resume_state.json",
+  "automation_resume_status": "ALREADY_ACTIVE_PROMPT_REFRESH_FAILED_TRANSPORT_CLOSED",
+  "submission_policy": "USER_MANUAL_SUBMISSION_ONLY",
+  "policy_updated_at_utc": "2026-10-29T02:44:24.868614+00:00"
+}

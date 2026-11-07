@@ -1,0 +1,43 @@
+{
+  "status": "LOCAL_DELIVERY_COMPLETE_AWAITING_PLATFORM",
+  "version": "v130",
+  "baseline": "v124",
+  "baseline_official_score": 51.115,
+  "csv": "admet_submissions/v130_low_task_experts/我从山北来带着兰花草-小分子药物预测技术创新赛-20261027.csv",
+  "upload_copy": "D:\\bili_download\\v130_low_task_experts\\我从山北来带着兰花草-小分子药物预测技术创新赛-20261027.csv",
+  "sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb",
+  "changed_tasks": {
+    "cyp3a4_substrate_carbonmangels": 135,
+    "herg": 132
+  },
+  "changed_predictions": 267,
+  "unchanged_tasks": 20,
+  "high_score_tasks_unchanged": [
+    "bioavailability_ma",
+    "cyp2c9_substrate_carbonmangels",
+    "cyp2c9_veith",
+    "half_life_obach",
+    "ld50_zhu",
+    "lipophilicity_astrazeneca",
+    "ppbr_az"
+  ],
+  "independent_model_checkpoints": 20,
+  "independent_final_fusion_replay": true,
+  "nonprediction_bytes_exact": true,
+  "archive": {
+    "path": "releases/v130_low_task_experts_20261027.tar.gz",
+    "sha256": "1838e250dd71d8ded70141a61c08c71192f4ba1fc91a68f2b22fa89ecf1ef429",
+    "bytes": 13394597,
+    "files": 239,
+    "manifest_sha256": "12234d8ce89fa33ad1e9eba940ebc167d798a5b1aa20740e29d6e0704b1eb1cb",
+    "official_score": null
+  },
+  "all_archive_member_hashes_verified": true,
+  "dependencies_verified": true,
+  "official_score": null,
+  "target_achieved": false,
+  "target_score": 52,
+  "automatically_uploaded": false,
+  "github_push": false,
+  "server_shutdown": false
+}

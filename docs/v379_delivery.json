@@ -1,0 +1,256 @@
+{
+  "status": "NO_ELIGIBLE_CANDIDATE",
+  "version": "v379",
+  "signature": "f8c8b90e4a93b1032b13e66c604daeece93892199a28c3761fb9269c119888dd",
+  "baseline": "v374_associated",
+  "official_best": 51.271,
+  "new_official_score": null,
+  "csv": null,
+  "accepted_tasks": [],
+  "nine_task_mean_relative_MAE_gain_by_part": {
+    "fold0": 0.0,
+    "fold1": 0.0,
+    "fold2": 0.0,
+    "valid": 0.0
+  },
+  "five_scored_task_mean_relative_MAE_gain_by_part": {
+    "fold0": 0.0,
+    "fold1": 0.0,
+    "fold2": 0.0,
+    "valid": 0.0
+  },
+  "goal_mean_5percent_achieved_local": false,
+  "five_scored_goal_achieved_local": false,
+  "all_fitting_remote": true,
+  "models_verified": 108,
+  "model_replay_max_error": 0.0,
+  "final_model_states": [],
+  "automatic_platform_submission": false,
+  "limitation": "Four ranking task MAE references are fit-label empirical-quantile calibrated score ranks, not recovered historical native predictions. Historical control partly proxy; public labels reused.",
+  "task_evidence": [
+    {
+      "task": "caco2_wang",
+      "best": {
+        "name": "small_ema_l1_n6000",
+        "base": "small_ema_l1",
+        "rounds": 6000
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.0013115309360544713,
+          "baseline": 0.38815645870734267,
+          "candidate": 0.38764737950371864
+        },
+        {
+          "part": "fold1",
+          "gain": -0.0025960403652889232,
+          "baseline": 0.3348527606452333,
+          "candidate": 0.33572205192829674
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "ld50_zhu",
+      "best": {
+        "name": "small_ema_quantiles_n3000",
+        "base": "small_ema_quantiles",
+        "rounds": 3000
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": -0.002797779916272549,
+          "baseline": 0.4623870980111785,
+          "candidate": 0.4636807553475377
+        },
+        {
+          "part": "fold1",
+          "gain": -0.0025911548771792095,
+          "baseline": 0.5305508449297317,
+          "candidate": 0.5319255843391629
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "best": {
+        "name": "small_ema_quantiles_n3000",
+        "base": "small_ema_quantiles",
+        "rounds": 3000
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": -0.0028433336255629794,
+          "baseline": 0.48016540927868107,
+          "candidate": 0.48153067973271535
+        },
+        {
+          "part": "fold1",
+          "gain": -0.0029829979164175996,
+          "baseline": 0.4548081915781444,
+          "candidate": 0.45616488346599166
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "ppbr_az",
+      "best": {
+        "name": "small_ema_quantiles_n1000",
+        "base": "small_ema_quantiles",
+        "rounds": 1000
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.0058045080945231635,
+          "baseline": 7.95280971526812,
+          "candidate": 7.906647566901643
+        },
+        {
+          "part": "fold1",
+          "gain": -0.002997422181829461,
+          "baseline": 7.292895667509342,
+          "candidate": 7.314755554752902
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "best": {
+        "name": "small_ema_quantiles_n6000",
+        "base": "small_ema_quantiles",
+        "rounds": 6000
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.002667544595700145,
+          "baseline": 0.7360725561987135,
+          "candidate": 0.7341090498293824
+        },
+        {
+          "part": "fold1",
+          "gain": -0.004657237491089794,
+          "baseline": 0.7161434295213145,
+          "candidate": 0.7194786795502788
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "best": {
+        "name": "small_ema_l1_n1000",
+        "base": "small_ema_l1",
+        "rounds": 1000
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.01717741985292619,
+          "baseline": 31.964365097329107,
+          "candidate": 31.415299777720065,
+          "rank_gain": 0.0010285378382451915
+        },
+        {
+          "part": "fold1",
+          "gain": 0.01818313371589275,
+          "baseline": 29.556240307657728,
+          "candidate": 29.018815238004528,
+          "rank_gain": -0.0035911504537875505
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "clearance_microsome_az",
+      "best": {
+        "name": "small_ema_l1_n1000",
+        "base": "small_ema_l1",
+        "rounds": 1000
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.018661960255957177,
+          "baseline": 27.116399993896483,
+          "candidate": 26.61035481492575,
+          "rank_gain": 0.003325241949221014
+        },
+        {
+          "part": "fold1",
+          "gain": 0.013394474275534944,
+          "baseline": 26.81884782509955,
+          "candidate": 26.459623457806767,
+          "rank_gain": -0.018664463267080877
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "half_life_obach",
+      "best": {
+        "name": "small_ema_l1_n1000",
+        "base": "small_ema_l1",
+        "rounds": 1000
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.05694012156060998,
+          "baseline": 20.806086576482805,
+          "candidate": 19.6213854776173,
+          "rank_gain": -0.005715437556732317
+        },
+        {
+          "part": "fold1",
+          "gain": 0.046221410398058695,
+          "baseline": 22.383562434963547,
+          "candidate": 21.348962609486527,
+          "rank_gain": -0.0007794510771677032
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "vdss_lombardo",
+      "best": {
+        "name": "small_ema_l1_n1000",
+        "base": "small_ema_l1",
+        "rounds": 1000
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.049277029482428465,
+          "baseline": 4.419333877893289,
+          "candidate": 4.201562232099646,
+          "rank_gain": 0.004546354152311194
+        },
+        {
+          "part": "fold1",
+          "gain": 0.010197968725253345,
+          "baseline": 6.180262281910009,
+          "candidate": 6.117236160445228,
+          "rank_gain": -0.013277070840058025
+        }
+      ],
+      "accepted": false
+    }
+  ]
+}

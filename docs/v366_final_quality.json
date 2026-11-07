@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "completed_at_hong_kong": "2026-11-04T17:11:37.343322+08:00",
+  "csv_sha256": "45982f798555d88f2c934d187c709091db02841e257c1f2450b470b9a02c04fc",
+  "artifact_csv_import": "PASS",
+  "local_delivery_audit": "PASS",
+  "remote_model_replay": "PASS",
+  "release_archive_and_current_members": "PASS",
+  "known_official_best": "v364:51.269",
+  "new_official_score": null,
+  "experimental_candidate": true,
+  "strict_validation_passed": false,
+  "unchanged_tasks": 21,
+  "changed_task": "ld50_zhu"
+}

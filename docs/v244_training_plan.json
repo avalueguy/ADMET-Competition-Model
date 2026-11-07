@@ -1,0 +1,49 @@
+{
+  "version": "v244",
+  "delivery_version": "v245",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-29T08:59:35.740895+00:00",
+  "source_sha256": "54416a1cea2ebadb1d8a16d2fa34d02db2f653795cd35a6a9e8a93c4616cf52e",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "model": "Heteroscedastic conditional logistic mixture density; ensemble CDF median",
+  "tasks": [
+    "caco2_wang",
+    "ppbr_az",
+    "lipophilicity_astrazeneca"
+  ],
+  "protected_tasks": 19,
+  "seeds": [
+    2441029,
+    2441030
+  ],
+  "configs": [
+    {
+      "components": 3,
+      "epochs": 120,
+      "minimum_steps": 1000,
+      "maximum_steps": 3500
+    }
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "review": "docs/v243_v145_error_review.json",
+  "task_rationale": "All three MAE tasks have meaningful original confirmation scaffold coverage, larger normalized-score sensitivity, and regression-to-center tail errors in both development folds. Excludes single-group AMES and highly concentrated LD50/solubility confirmation. No failed confirmation is used to choose configurations.",
+  "distinct_from_completed_routes": "Learns conditional mixture probabilities/locations/scales via likelihood and reports median of combined CDF. Earlier point MAE/RMSE, scalar splines, quantile forest, factorization and attention did not estimate heteroscedastic mixture density. Not a retry or new seed of a rejected source; no prior model/prediction inputs.",
+  "features": "Six independent L2-normalized logcount fingerprint views, fit-only physical/shape/pharmacophore and target-excluded measured-context scaling/missingness. Medians/centers/scales computed on fit only.",
+  "network": "6x24 fingerprint branches, physical96/context32, concatenated272->128->64->9. SiLU,LayerNorm,dropout.1. Three logits,unbounded standardized locations,softplus scale+.03. Fixed weak scale penalty .0001.",
+  "training": "2 fixed seeds; AdamW .0008/weight_decay.02, cosine .00003, batch128,clip5;120epochs clipped1000..3500steps. Negative logistic-mixture loglikelihood; no query-based early stop.",
+  "inference": "Deterministic CPUfloat64: combine two three-component CDFs with equal seed mass; 64-step bisection median, convert using fit-only native scale. No mean of separate model medians.",
+  "scheduling": "One GPU worker owns3tasks/6development partitions/12seedmodels,4CPUthreads. After exit0 unchanged v148 selection freezes config and weight before confirmation.",
+  "selection": "Unchanged: max minimum fold0/1 gain > .012 for MAE, unique config and .2/.45 blend frozen.",
+  "confirmation": "Unchanged all4points>0,meanMAErelativegain>.012,bothfold2/valid500drawscaffoldbootstrap90lower>0,no fallback.",
+  "verification": "ConditionalCDF against independent scipy root;affine equivariance;3task CUDAfinite gradients/training step,nonfitlabel perturbation,savedmodelCPUreplay,roworder. Accepted tasks independent full feature reconstruction/reload/gates/fusion/bytes/hashes/archive.",
+  "source_immutable_after_start": true,
+  "new_external_data": false,
+  "test_labels_used": false,
+  "automatic_upload": false,
+  "manual_submission_only": true,
+  "limitations": "Repeated public-label reuse and approximate historical upstream controls. Tail errors may be unavoidable or data-limited; conditional density is a hypothesis, not promised improvement. No hidden score guarantee."
+}

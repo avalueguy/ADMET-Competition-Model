@@ -1,0 +1,351 @@
+{
+  "status": "COMPLETE",
+  "version": "v377",
+  "completed_at_utc": "2026-11-05T12:03:37.872356+00:00",
+  "training_host": "connect.nmb2.seetacloud.com:25870",
+  "official_best": 51.271,
+  "official_new_score": null,
+  "delivery": {
+    "status": "NO_ELIGIBLE_CANDIDATE",
+    "version": "v377",
+    "signature": "b44c3d36fbd9187866bd738a367456e4353c9b88c00b5d84230972ee4040212d",
+    "baseline": "v374_associated",
+    "official_best": 51.271,
+    "new_official_score": null,
+    "csv": null,
+    "accepted_tasks": [],
+    "nine_task_mean_relative_MAE_gain_by_part": {
+      "fold0": 0.0,
+      "fold1": 0.0,
+      "fold2": 0.0,
+      "valid": 0.0
+    },
+    "five_scored_task_mean_relative_MAE_gain_by_part": {
+      "fold0": 0.0,
+      "fold1": 0.0,
+      "fold2": 0.0,
+      "valid": 0.0
+    },
+    "goal_mean_5percent_achieved_local": false,
+    "five_scored_goal_achieved_local": false,
+    "all_fitting_remote": true,
+    "models_verified": 192,
+    "model_replay_max_error": 0.0,
+    "final_model_states": [],
+    "automatic_platform_submission": false,
+    "limitation": "Four ranking task MAE references are fit-label empirical-quantile calibrated score ranks, not recovered historical native predictions. Historical control partly proxy; public labels reused.",
+    "task_evidence": [
+      {
+        "task": "caco2_wang",
+        "best": {
+          "name": "asinh_d3_n3840",
+          "base": "asinh_d3",
+          "rounds": 3840
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": 0.0007240918047600511,
+            "baseline": 0.38815645870734267,
+            "candidate": 0.387875397796628
+          },
+          {
+            "part": "fold1",
+            "gain": -0.004377571349510107,
+            "baseline": 0.3348527606452333,
+            "candidate": 0.3363186024965382
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "ld50_zhu",
+        "best": {
+          "name": "asinh_d3_n3840",
+          "base": "asinh_d3",
+          "rounds": 3840
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": -0.0011020377162797514,
+            "baseline": 0.4623870980111785,
+            "candidate": 0.46289666603270796
+          },
+          {
+            "part": "fold1",
+            "gain": -0.00022592963676758203,
+            "baseline": 0.5305508449297317,
+            "candidate": 0.5306707120894134
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "lipophilicity_astrazeneca",
+        "best": {
+          "name": "asinh_d3_n3840",
+          "base": "asinh_d3",
+          "rounds": 3840
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": -0.008232621551487193,
+            "baseline": 0.48016540927868107,
+            "candidate": 0.4841184293753874
+          },
+          {
+            "part": "fold1",
+            "gain": -0.0035048258353127834,
+            "baseline": 0.4548081915781444,
+            "candidate": 0.45640221507809936
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "ppbr_az",
+        "best": {
+          "name": "native_d3_n3840",
+          "base": "native_d3",
+          "rounds": 3840
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": 0.0010672173204087278,
+            "baseline": 7.95280971526812,
+            "candidate": 7.944322338994071
+          },
+          {
+            "part": "fold1",
+            "gain": 0.0014854927587079371,
+            "baseline": 7.292895667509342,
+            "candidate": 7.282062123805244
+          },
+          {
+            "part": "fold2",
+            "gain": 0.0012105976646238925,
+            "baseline": 8.62639236136588,
+            "candidate": 8.615949270919081
+          },
+          {
+            "part": "valid",
+            "gain": -0.013018936780709665,
+            "baseline": 9.36669542965183,
+            "candidate": 9.48863984529463
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "solubility_aqsoldb",
+        "best": {
+          "name": "native_d6_n3840",
+          "base": "native_d6",
+          "rounds": 3840
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": -0.00024139909606357314,
+            "baseline": 0.7360725561987135,
+            "candidate": 0.736250243448417
+          },
+          {
+            "part": "fold1",
+            "gain": -0.0002764575228471281,
+            "baseline": 0.7161434295213145,
+            "candidate": 0.7163414127598432
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "clearance_hepatocyte_az",
+        "best": {
+          "name": "native_d3_n3840",
+          "base": "native_d3",
+          "rounds": 3840
+        },
+        "weight": 0.5,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": 0.054799330101672844,
+            "baseline": 31.964365097329107,
+            "candidate": 30.21273930287018,
+            "rank_gain": 0.003494094453298291
+          },
+          {
+            "part": "fold1",
+            "gain": 0.05891633849819413,
+            "baseline": 29.556240307657728,
+            "candidate": 27.814894848957795,
+            "rank_gain": 0.00876538044804831
+          },
+          {
+            "part": "fold2",
+            "gain": 0.058182357330235475,
+            "baseline": 29.302112399955053,
+            "candidate": 27.597246425770145,
+            "rank_gain": -0.005228697549277128
+          },
+          {
+            "part": "valid",
+            "gain": 0.06002940123752732,
+            "baseline": 34.67105717549046,
+            "candidate": 32.58977437297369,
+            "rank_gain": -0.03664284432322634
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "clearance_microsome_az",
+        "best": {
+          "name": "native_d3_n1920",
+          "base": "native_d3",
+          "rounds": 1920
+        },
+        "weight": 0.5,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": 0.0757093912385688,
+            "baseline": 27.116399993896483,
+            "candidate": 25.06343385777705,
+            "rank_gain": 0.0074279598038076156
+          },
+          {
+            "part": "fold1",
+            "gain": 0.05911690378300986,
+            "baseline": 26.81884782509955,
+            "candidate": 25.233400578651956,
+            "rank_gain": 0.024298717387439495
+          },
+          {
+            "part": "fold2",
+            "gain": 0.09155481643444124,
+            "baseline": 24.008446759224213,
+            "candidate": 21.810357823307385,
+            "rank_gain": -0.03375073143799212
+          },
+          {
+            "part": "valid",
+            "gain": 0.1443244696158427,
+            "baseline": 29.474799529258988,
+            "candidate": 25.220864720165395,
+            "rank_gain": -0.038038950852571585
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "half_life_obach",
+        "best": {
+          "name": "native_d6_n640",
+          "base": "native_d6",
+          "rounds": 640
+        },
+        "weight": 0.25,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": 0.15493999230327027,
+            "baseline": 20.806086576482805,
+            "candidate": 17.582391682461385,
+            "rank_gain": 0.006774061266768938
+          },
+          {
+            "part": "fold1",
+            "gain": 0.12827239471863455,
+            "baseline": 22.383562434963547,
+            "candidate": 19.512369279096703,
+            "rank_gain": 0.009822661534028887
+          },
+          {
+            "part": "fold2",
+            "gain": 0.03813693994986415,
+            "baseline": 23.89586253902183,
+            "candidate": 22.984547464320947,
+            "rank_gain": 0.01777409903756333
+          },
+          {
+            "part": "valid",
+            "gain": -0.09234823172690322,
+            "baseline": 23.279000891067103,
+            "candidate": 25.428775459726154,
+            "rank_gain": 0.02979245729264779
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "vdss_lombardo",
+        "best": {
+          "name": "native_d6_n640",
+          "base": "native_d6",
+          "rounds": 640
+        },
+        "weight": 0.25,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": 0.10251531440262632,
+            "baseline": 4.419333877893289,
+            "candidate": 3.9662844759508804,
+            "rank_gain": 0.0002868692668448469
+          },
+          {
+            "part": "fold1",
+            "gain": 0.04084105037972855,
+            "baseline": 6.180262281910009,
+            "candidate": 5.927853878694586,
+            "rank_gain": 0.0014520999773751653
+          },
+          {
+            "part": "fold2",
+            "gain": 0.1640344391980728,
+            "baseline": 3.2070862029384677,
+            "candidate": 2.6810136161795795,
+            "rank_gain": -0.0016878426938867763
+          },
+          {
+            "part": "valid",
+            "gain": 0.10006559992615853,
+            "baseline": 3.0564171039235655,
+            "candidate": 2.750574892794882,
+            "rank_gain": -0.0013903337351509615
+          }
+        ],
+        "accepted": false
+      }
+    ]
+  },
+  "models_verified": 192,
+  "remote_idle": {
+    "status": "PASS",
+    "at_unix": 1793880028.069085,
+    "no_training_processes_running": true,
+    "experiment_pids": [
+      17186,
+      18226
+    ],
+    "gpu": "NVIDIA GeForce RTX 3090, 0 MiB, 0 %\n",
+    "gpu_compute_processes": "",
+    "statuses": {
+      "regression9_v377": "EVIDENCE_READY",
+      "regression9_v378": "EVIDENCE_READY"
+    },
+    "scope": "Both v377/v378 runners and verifiers absent; no GPU compute processes."
+  },
+  "late_better_on_both_parts": 16,
+  "total_task_base_pairs": 27
+}

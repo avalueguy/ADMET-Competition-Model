@@ -1,0 +1,13 @@
+{
+  "status": "STATIC_REVIEW_PASS_SMOKE_REQUIRED",
+  "source_sha256": "3ea824cf48ea30e3e53fa1c2f272f6981cca1b3aca6d081c974e6b40978e5f98",
+  "checks": [
+    "Only fitting labels affect gradients/targets; query labels excluded from features",
+    "Fit-only document frequencies and descriptor transforms",
+    "Analytical O(numberfeatures squared) pairwise reference checks optimizedFM",
+    "Two fixed seeds one config, no query earlystopping",
+    "Unchanged runner SHA and manual delivery only",
+    "Checkpoint contains tensors only; independent replay reconstructs transform from immutable inputs"
+  ],
+  "pretraining_smoke_note": "First smoke exposed GPU sparse atomic reduction variation5.96e-8 on exact checkpoint replay. Before any development models or scores, inference moved to CPU for exact equality. Original source/log/failure preserved recovered_history/v221_pretraining_smoke_attempt1. No assertions or model/confirmation gates relaxed."
+}

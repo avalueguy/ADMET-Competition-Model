@@ -1,0 +1,8 @@
+{
+  "status": "REPORTING_ONLY_WRAPPER",
+  "reason": "Frozenfinalizerretainedliteralstate.releases[225]fromtemplate. Originalfrozenfileunchanged; wrapperredirectsonlyCURRENT_STATUSreleasekeyto229 andpreservesprevious225entry.",
+  "frozen_sources_unchanged": true,
+  "training_gates_models_predictions_csv_bytes_changed": false,
+  "file": "tools/deliver_v229_local.py",
+  "sha256": "9e39713eb75c54327932d9c740dd6675dfbb9ecbecb2e961d9c2aa1b7569c888"
+}

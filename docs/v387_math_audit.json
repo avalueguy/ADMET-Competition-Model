@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "no_fitting_performed": true,
+  "source_records": [
+    {
+      "version": "v386",
+      "name": "v371_mae_experts.py",
+      "sha256": "64ba5ff605f3a71b0065817e7d99ffb27cdede65baf218296e1bb1159c09020f"
+    },
+    {
+      "version": "v386",
+      "name": "v377_regression_experts.py",
+      "sha256": "c0af57f620695bbfc1c25dbe50335b58a53b94ff04f2c50122c7f559687518a1"
+    },
+    {
+      "version": "v386",
+      "name": "v380_histogram_median.py",
+      "sha256": "be79212314c874d5d75847d0e067024e0cfc21f612580b069a8f141944073257"
+    },
+    {
+      "version": "v386",
+      "name": "v386_calibration_core.py",
+      "sha256": "e3be85288d5d2f5702ac9ee63612432994dc99d01167cd886893ce7ed19f43ac"
+    },
+    {
+      "version": "v386",
+      "name": "v386_oof_calibrated.py",
+      "sha256": "1c3eb53f62b4616c5100d8f27e348f5d41f220e2a813160a9454ea4d39c89281"
+    },
+    {
+      "version": "v386",
+      "name": "v386_run_experts.py",
+      "sha256": "163faf877a393281c1a54cb38eb2476cd0a81d40ce0e54488934d4715f79e6b3"
+    },
+    {
+      "version": "v386",
+      "name": "v386_verify_experts.py",
+      "sha256": "0a24053a957b457f556d067f116cb5c7a62f6570707fcd4c81c6c5a5565fd8c2"
+    },
+    {
+      "version": "v386",
+      "name": "v386_smoke.py",
+      "sha256": "42ae74acbbf62982c163ad026681e9d9632cce195ac15936b516bd402d22325b"
+    },
+    {
+      "version": "v386",
+      "name": "v386_completion.py",
+      "sha256": "fa4019596ab6b55039eb2ee500910985cbb4258e27942a53969fafdaa8f02fbd"
+    },
+    {
+      "version": "v387",
+      "name": "v371_mae_experts.py",
+      "sha256": "64ba5ff605f3a71b0065817e7d99ffb27cdede65baf218296e1bb1159c09020f"
+    },
+    {
+      "version": "v387",
+      "name": "v377_regression_experts.py",
+      "sha256": "c0af57f620695bbfc1c25dbe50335b58a53b94ff04f2c50122c7f559687518a1"
+    },
+    {
+      "version": "v387",
+      "name": "v387_correlated_metric.py",
+      "sha256": "8d997aa3eabf4effa090048c49e37084f1616105a11935a17f08ba19de33dd4e"
+    },
+    {
+      "version": "v387",
+      "name": "v387_run_experts.py",
+      "sha256": "a4d4a7be8c4ad44e9fd35b51093da7f3e57ac372fcd3a16d699014bfe5f99753"
+    },
+    {
+      "version": "v387",
+      "name": "v387_verify_experts.py",
+      "sha256": "0d53cf902fb83b32fcb8c4a26a1c89dd34c96994709b43d9d6f39984863e2783"
+    },
+    {
+      "version": "v387",
+      "name": "v387_smoke.py",
+      "sha256": "965fbe22a1726cb9b00ba5dc0aab1f2da8cde7741a86306019e8b6beef6a3f63"
+    },
+    {
+      "version": "v387",
+      "name": "v387_completion.py",
+      "sha256": "f26208cc5d787949507d6cb161d451a5803ddcef9020038d73cd217eed7c9b8d"
+    }
+  ],
+  "gaussian_full_metric_gradient_finite_difference_max_error": 5.5203897009192815e-11,
+  "calibration_identity_and_knots_and_monotonicity_pass": true,
+  "calibration_outer_fixed_slope_one_pass": true,
+  "MAE_score_formula_max_rounding_error": 3.324675716953607e-07
+}

@@ -1,0 +1,9 @@
+{
+  "status": "REPORT_ONLY",
+  "improved": 11,
+  "worsened": 3,
+  "unchanged": 8,
+  "comparison": "v68 versus v67 on official valid after frozen selection",
+  "official_score_gain": null,
+  "not_an_unbiased_full_pipeline_estimate": true
+}

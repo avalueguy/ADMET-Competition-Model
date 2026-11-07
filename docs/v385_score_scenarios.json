@@ -1,0 +1,8 @@
+{
+  "formula": "MAE task score=100*reference/(reference+MAE), confirmed against supplied task scorecard",
+  "scenario_other17_fixed": true,
+  "uniform_five_task_MAE_reduction5percent": 51.589386852630284,
+  "uniform_five_task_MAE_reduction10percent": 51.89449901717591,
+  "uniform_five_task_MAE_reduction_for52": 0.11672205417367282,
+  "scenario_is_model_prediction": false
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "prefix": "v130_low_task_experts_20261027",
+  "archive_sha256": "1838e250dd71d8ded70141a61c08c71192f4ba1fc91a68f2b22fa89ecf1ef429",
+  "manifest_files": 239,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "existing_exact": 238,
+  "existing_verification_metadata_preserved": [
+    {
+      "path": "admet_submissions/v124_matched_models_history/我从山北来带着兰花草-小分子药物预测技术创新赛-20261027.verification.json",
+      "reason": "Same immutable v124 CSV; local final-fusion check report adds a replay flag and omits earlier summary fields.",
+      "differing_keys": [
+        "changed_tasks",
+        "independent_final_fusion_replay",
+        "model_validation_replay",
+        "unchanged_tasks"
+      ]
+    }
+  ]
+}

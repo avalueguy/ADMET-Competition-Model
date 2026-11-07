@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "local_remote_source_hashes": [
+    {
+      "name": "v364_graph_transformer.py",
+      "sha256": "623ad0bbf70d49e161ea6a87b29f46afeb1ee24d16c2e42901b52bf9ca7c97a1"
+    },
+    {
+      "name": "v368_collect_remote.py",
+      "sha256": "e07d57d2f53db328677a291d87a9dd8ae2b9c2b79c4e4431c3165e46da6b2226"
+    },
+    {
+      "name": "v368_graph_transformer.py",
+      "sha256": "e1c03c45ab33abbe78d7a3863bb6472ad5f701cecd08fe8f90e04a481594d389"
+    },
+    {
+      "name": "v368_run_stage3.py",
+      "sha256": "cfa823fe39aa00fe3d7529386f8ea647328365881052ae4ef64cd7800ad7cba5"
+    },
+    {
+      "name": "v368_verify_remote.py",
+      "sha256": "093d72eec1a6746bea805528fe785deb6bc327634c7907e401547b436753b8e1"
+    },
+    {
+      "name": "v368_bootstrap.py",
+      "sha256": "6352b48eaaeabed82409cf0f43009f16afce318a30f79c9b71eb8634cf657d8e"
+    }
+  ],
+  "gpu_training_only_at_new_port": 25870
+}

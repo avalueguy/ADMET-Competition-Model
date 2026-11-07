@@ -1,0 +1,14 @@
+{
+  "version": "v346",
+  "official_user_reported": 51.235,
+  "exact_task_mean": 51.234854454545456,
+  "recorded_at_hong_kong": "2026-11-02T14:24:19.020013+08:00",
+  "csv": "admet_submissions/v346_experimental_solubility/我从山北来带着兰花草-小分子药物预测技术创新赛-20261101.csv",
+  "csv_sha256": "bef15e3a892afddd661173e3496b671078067e03ee2022b2abbfde02da45a906",
+  "source": "docs/platform_scorecard_v346_20261101.json",
+  "previous_best": "v313",
+  "previous_best_official": 51.205,
+  "delta_task_mean": 0.029523227272733266,
+  "platform_uploaded_byte_hash_confirmed": false,
+  "reason": "User-reported official solubility improvement; other21 endpoints match. Historical strict-validation rejection is preserved."
+}

@@ -1,0 +1,1140 @@
+{
+  "status": "COMPLETE",
+  "signature": "c70dd3ec181a3cb85823f8e76a8e12ebb429d9b23c233e8e41bc3c95a127d00d",
+  "records": [
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 152,
+          "baseline": 0.8444511217948719,
+          "expert": 0.8427483974358975,
+          "candidate": 0.84375,
+          "gain": -0.0007011217948719173
+        },
+        {
+          "part": "fold1",
+          "rows": 152,
+          "baseline": 0.85125,
+          "expert": 0.8500000000000001,
+          "candidate": 0.8509615384615384,
+          "gain": -0.00028846153846151523
+        }
+      ],
+      "objective": -0.0007011217948719173
+    },
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 152,
+          "baseline": 0.8444511217948719,
+          "expert": 0.8427483974358975,
+          "candidate": 0.8439503205128205,
+          "gain": -0.0005008012820514329
+        },
+        {
+          "part": "fold1",
+          "rows": 152,
+          "baseline": 0.85125,
+          "expert": 0.8500000000000001,
+          "candidate": 0.8506730769230769,
+          "gain": -0.0005769230769230305
+        }
+      ],
+      "objective": -0.0005769230769230305
+    },
+    {
+      "task": "bbb_martins",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 474,
+          "baseline": 0.9241183332092423,
+          "expert": 0.9241183332092423,
+          "candidate": 0.9241183332092423,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 474,
+          "baseline": 0.9502310700319943,
+          "expert": 0.9502310700319943,
+          "candidate": 0.9502310700319943,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "bbb_martins",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 474,
+          "baseline": 0.9241183332092423,
+          "expert": 0.9241183332092423,
+          "candidate": 0.9241183332092423,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 474,
+          "baseline": 0.9502310700319943,
+          "expert": 0.9502310700319943,
+          "candidate": 0.9502310700319943,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "ames",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1561,
+          "baseline": 0.8673850574712644,
+          "expert": 0.8673850574712644,
+          "candidate": 0.8673850574712644,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 1562,
+          "baseline": 0.8612499835761867,
+          "expert": 0.8612499835761867,
+          "candidate": 0.8612499835761867,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "ames",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1561,
+          "baseline": 0.8673850574712644,
+          "expert": 0.8673850574712644,
+          "candidate": 0.8673850574712644,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 1562,
+          "baseline": 0.8612499835761867,
+          "expert": 0.8612499835761867,
+          "candidate": 0.8612499835761867,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 282,
+          "baseline": 0.5727558332909924,
+          "expert": 0.5727558332909924,
+          "candidate": 0.5727558332909924,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 283,
+          "baseline": 0.575230994148768,
+          "expert": 0.575230994148768,
+          "candidate": 0.575230994148768,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 282,
+          "baseline": 0.5727558332909924,
+          "expert": 0.5727558332909924,
+          "candidate": 0.5727558332909924,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 283,
+          "baseline": 0.575230994148768,
+          "expert": 0.575230994148768,
+          "candidate": 0.575230994148768,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1635,
+          "baseline": 0.7675069205648937,
+          "expert": 0.7675069205648937,
+          "candidate": 0.7675069205648937,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 1635,
+          "baseline": 0.7502386159917903,
+          "expert": 0.7502386159917903,
+          "candidate": 0.7502386159917903,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1635,
+          "baseline": 0.7675069205648937,
+          "expert": 0.7675069205648937,
+          "candidate": 0.7675069205648937,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 1635,
+          "baseline": 0.7502386159917903,
+          "expert": 0.7502386159917903,
+          "candidate": 0.7502386159917903,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "pgp_broccatelli",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 283,
+          "baseline": 0.9482403217697336,
+          "expert": 0.9482403217697336,
+          "candidate": 0.9482403217697336,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 284,
+          "baseline": 0.9021671826625387,
+          "expert": 0.9021671826625387,
+          "candidate": 0.9021671826625387,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "pgp_broccatelli",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 283,
+          "baseline": 0.9482403217697336,
+          "expert": 0.9482403217697336,
+          "candidate": 0.9482403217697336,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 284,
+          "baseline": 0.9021671826625387,
+          "expert": 0.9021671826625387,
+          "candidate": 0.9021671826625387,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 155,
+          "baseline": 0.5853759302529222,
+          "expert": 0.5853759302529222,
+          "candidate": 0.5853759302529222,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 155,
+          "baseline": 0.6436233712598691,
+          "expert": 0.6436233712598691,
+          "candidate": 0.6436233712598691,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 155,
+          "baseline": 0.5853759302529222,
+          "expert": 0.5853759302529222,
+          "candidate": 0.5853759302529222,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 155,
+          "baseline": 0.6436233712598691,
+          "expert": 0.6436233712598691,
+          "candidate": 0.6436233712598691,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "cyp3a4_veith",
+      "metric": "AUPRC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 2876,
+          "baseline": 0.8711275258382954,
+          "expert": 0.8711275258382954,
+          "candidate": 0.8711275258382954,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 2876,
+          "baseline": 0.879519641716686,
+          "expert": 0.879519641716686,
+          "candidate": 0.879519641716686,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "cyp3a4_veith",
+      "metric": "AUPRC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 2876,
+          "baseline": 0.8711275258382954,
+          "expert": 0.8711275258382954,
+          "candidate": 0.8711275258382954,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 2876,
+          "baseline": 0.879519641716686,
+          "expert": 0.879519641716686,
+          "candidate": 0.879519641716686,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "clearance_microsome_az",
+      "metric": "Spearman",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 256,
+          "baseline": 0.7019076327178516,
+          "expert": 0.7019076327178516,
+          "candidate": 0.7019076327178516,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 257,
+          "baseline": 0.5046604490997971,
+          "expert": 0.5046604490997971,
+          "candidate": 0.5046604490997971,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "clearance_microsome_az",
+      "metric": "Spearman",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 256,
+          "baseline": 0.7019076327178516,
+          "expert": 0.7019076327178516,
+          "candidate": 0.7019076327178516,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 257,
+          "baseline": 0.5046604490997971,
+          "expert": 0.5046604490997971,
+          "candidate": 0.5046604490997971,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 212,
+          "baseline": 0.38815645870734267,
+          "expert": 0.38815645870734267,
+          "candidate": 0.38815645870734267,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 212,
+          "baseline": 0.3348527606452333,
+          "expert": 0.3348527606452333,
+          "candidate": 0.3348527606452332,
+          "gain": 1.6577779178016177e-16
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 212,
+          "baseline": 0.38815645870734267,
+          "expert": 0.38815645870734267,
+          "candidate": 0.38815645870734267,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 212,
+          "baseline": 0.3348527606452333,
+          "expert": 0.3348527606452333,
+          "candidate": 0.3348527606452332,
+          "gain": 1.6577779178016177e-16
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 156,
+          "baseline": 0.748671096345515,
+          "expert": 0.7427740863787375,
+          "candidate": 0.7480066445182724,
+          "gain": -0.0006644518272426181
+        },
+        {
+          "part": "fold1",
+          "rows": 156,
+          "baseline": 0.6742748846407383,
+          "expert": 0.6830092287409361,
+          "candidate": 0.6758404746209624,
+          "gain": 0.001565589980224158
+        }
+      ],
+      "objective": -0.0006644518272426181
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 156,
+          "baseline": 0.748671096345515,
+          "expert": 0.7427740863787375,
+          "candidate": 0.7455149501661129,
+          "gain": -0.003156146179402075
+        },
+        {
+          "part": "fold1",
+          "rows": 156,
+          "baseline": 0.6742748846407383,
+          "expert": 0.6830092287409361,
+          "candidate": 0.6795484508899143,
+          "gain": 0.005273566249176076
+        }
+      ],
+      "objective": -0.003156146179402075
+    },
+    {
+      "task": "dili",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 110,
+          "baseline": 0.8956172632987621,
+          "expert": 0.8956172632987621,
+          "candidate": 0.8956172632987621,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 111,
+          "baseline": 0.8636968085106383,
+          "expert": 0.8636968085106383,
+          "candidate": 0.8636968085106383,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "dili",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 110,
+          "baseline": 0.8956172632987621,
+          "expert": 0.8956172632987621,
+          "candidate": 0.8956172632987621,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 111,
+          "baseline": 0.8636968085106383,
+          "expert": 0.8636968085106383,
+          "candidate": 0.8636968085106383,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "vdss_lombardo",
+      "metric": "Spearman",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 263,
+          "baseline": 0.6991369429686888,
+          "expert": 0.6991369429686888,
+          "candidate": 0.6991369429686888,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 264,
+          "baseline": 0.7317602544137639,
+          "expert": 0.7317602544137639,
+          "candidate": 0.7317602544137639,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "vdss_lombardo",
+      "metric": "Spearman",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 263,
+          "baseline": 0.6991369429686888,
+          "expert": 0.6991369429686888,
+          "candidate": 0.6991369429686888,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 264,
+          "baseline": 0.7317602544137639,
+          "expert": 0.7317602544137639,
+          "candidate": 0.7317602544137639,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "cyp2d6_veith",
+      "metric": "AUPRC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 3064,
+          "baseline": 0.6999346265484578,
+          "expert": 0.6999346265484578,
+          "candidate": 0.6999346265484578,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 3063,
+          "baseline": 0.7222338283602908,
+          "expert": 0.7222338283602908,
+          "candidate": 0.7222338283602908,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "cyp2d6_veith",
+      "metric": "AUPRC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 3064,
+          "baseline": 0.6999346265484578,
+          "expert": 0.6999346265484578,
+          "candidate": 0.6999346265484578,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 3063,
+          "baseline": 0.7222338283602908,
+          "expert": 0.7222338283602908,
+          "candidate": 0.7222338283602908,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "cyp2c9_veith",
+      "metric": "AUPRC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 2821,
+          "baseline": 0.8498539291362396,
+          "expert": 0.8498539291362396,
+          "candidate": 0.8498539291362396,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 2821,
+          "baseline": 0.8133401115977079,
+          "expert": 0.8133401115977079,
+          "candidate": 0.8133401115977079,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "cyp2c9_veith",
+      "metric": "AUPRC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 2821,
+          "baseline": 0.8498539291362396,
+          "expert": 0.8498539291362396,
+          "candidate": 0.8498539291362396,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 2821,
+          "baseline": 0.8133401115977079,
+          "expert": 0.8133401115977079,
+          "candidate": 0.8133401115977079,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 8.068577292713924,
+          "expert": 8.068577292713924,
+          "candidate": 8.06857729271392,
+          "gain": 4.4031476057230905e-16
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.585961846123768,
+          "expert": 7.585961846123768,
+          "candidate": 7.585961846123769,
+          "gain": -1.1708184640474585e-16
+        }
+      ],
+      "objective": -1.1708184640474585e-16
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 8.068577292713924,
+          "expert": 8.068577292713924,
+          "candidate": 8.068577292713924,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.585961846123768,
+          "expert": 7.585961846123768,
+          "candidate": 7.585961846123769,
+          "gain": -1.1708184640474585e-16
+        }
+      ],
+      "objective": -1.1708184640474585e-16
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1210,
+          "baseline": 0.4642859078866628,
+          "expert": 0.4642859078866628,
+          "candidate": 0.4642859078866628,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 1210,
+          "baseline": 0.534364444193799,
+          "expert": 0.534364444193799,
+          "candidate": 0.534364444193799,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1210,
+          "baseline": 0.4642859078866628,
+          "expert": 0.4642859078866628,
+          "candidate": 0.4642859078866629,
+          "gain": -2.3912485943815767e-16
+        },
+        {
+          "part": "fold1",
+          "rows": 1210,
+          "baseline": 0.534364444193799,
+          "expert": 0.534364444193799,
+          "candidate": 0.534364444193799,
+          "gain": 0.0
+        }
+      ],
+      "objective": -2.3912485943815767e-16
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 980,
+          "baseline": 0.4900050804950242,
+          "expert": 0.4900050804950242,
+          "candidate": 0.4900050804950242,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 980,
+          "baseline": 0.47650922350658986,
+          "expert": 0.47650922350658986,
+          "candidate": 0.47650922350658975,
+          "gain": 2.3299087821535165e-16
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 980,
+          "baseline": 0.4900050804950242,
+          "expert": 0.4900050804950242,
+          "candidate": 0.4900050804950242,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 980,
+          "baseline": 0.47650922350658986,
+          "expert": 0.47650922350658986,
+          "candidate": 0.47650922350658975,
+          "gain": 2.3299087821535165e-16
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "bioavailability_ma",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 150,
+          "baseline": 0.7173721340388007,
+          "expert": 0.7173721340388007,
+          "candidate": 0.7173721340388007,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 149,
+          "baseline": 0.7583485124468732,
+          "expert": 0.7583485124468732,
+          "candidate": 0.7583485124468732,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "bioavailability_ma",
+      "metric": "AUROC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 150,
+          "baseline": 0.7173721340388007,
+          "expert": 0.7173721340388007,
+          "candidate": 0.7173721340388007,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 149,
+          "baseline": 0.7583485124468732,
+          "expert": 0.7583485124468732,
+          "candidate": 0.7583485124468732,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "half_life_obach",
+      "metric": "Spearman",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 155,
+          "baseline": 0.5749026026062931,
+          "expert": 0.5749026026062931,
+          "candidate": 0.5749026026062931,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 155,
+          "baseline": 0.6039670343812906,
+          "expert": 0.6039670343812906,
+          "candidate": 0.6039670343812906,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "half_life_obach",
+      "metric": "Spearman",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 155,
+          "baseline": 0.5749026026062931,
+          "expert": 0.5749026026062931,
+          "candidate": 0.5749026026062931,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 155,
+          "baseline": 0.6039670343812906,
+          "expert": 0.6039670343812906,
+          "candidate": 0.6039670343812906,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 156,
+          "baseline": 0.40104854978772664,
+          "expert": 0.40104854978772664,
+          "candidate": 0.40104854978772664,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 156,
+          "baseline": 0.49408588616603144,
+          "expert": 0.49408588616603144,
+          "candidate": 0.49408588616603144,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "config": {
+        "identity": "isomeric_exact_and_neutral"
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 156,
+          "baseline": 0.40104854978772664,
+          "expert": 0.40104854978772664,
+          "candidate": 0.40104854978772664,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 156,
+          "baseline": 0.49408588616603144,
+          "expert": 0.49408588616603144,
+          "candidate": 0.49408588616603144,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    }
+  ]
+}

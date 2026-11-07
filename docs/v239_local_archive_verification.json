@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v239_molecular_view_attention_20261029",
+  "archive_sha256": "6b5d3db1b6b7e72de6aea5f5a86e65f58e26983b26dd295e31d63f0b17907d36",
+  "manifest_files": 104,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 58,
+  "existing_exact": 46,
+  "existing_updated_docs_preserved": []
+}

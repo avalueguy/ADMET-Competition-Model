@@ -1,0 +1,15 @@
+{
+  "status": "PASS_IMMUTABLE_OUTPUTS_WITH_LIVE_LOG_EXCEPTION",
+  "archive": "C:\\Users\\lenovo\\Documents\\ChatGPT\\New project\\ADMET-Competition-Model\\releases\\v390_complete_results.tar.gz",
+  "archive_sha256": "f765c95280a61dc408592860e7ef06b3aa03807cafddff5b5dd0a3ce2e2c1f80",
+  "bytes": 68706342,
+  "immutable_files_passed": 120,
+  "mutable_log_exception": [
+    {
+      "path": "verification.log",
+      "reason": "Verifier appended final PASS to its live log after manifest snapshot. Immutable outputs unaffected.",
+      "snapshot_sha256": "fe32bf1f16ad67686aed7cadaf9b832b8d4072e32325d23fbdab47c8e715e2ea",
+      "final_sha256": "b5b448354df572f5328c2b4db654fee777906f20a1566c12f080c342ffb37829"
+    }
+  ]
+}

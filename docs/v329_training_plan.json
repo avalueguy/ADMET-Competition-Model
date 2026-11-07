@@ -1,0 +1,23 @@
+{
+  "status": "FROZEN_BEFORE_DEVELOPMENT_SCORES",
+  "at_hong_kong": "2026-11-01T19:33:08+08:00",
+  "baseline": "v313",
+  "official_best_user_reported": 51.205,
+  "target_score": 52.0,
+  "source_sha256": "55975e65e18ef4b13cb3c663bef3db664e3e59fb8898efeec086870d2e078cae",
+  "original_source_sha256": "76c5b91336521105b62fe2556965f6c4c7d26d85adaec41049ec7902b5dd3bd0",
+  "baseline_adapter_sha256": "be19cbdc09034bf1e41548c636246392baa5922d98005d4a4083e429b80db677",
+  "runner_sha256": "b01f7fd2512c88cf9d40fedd9a0b4b764597fc872240c51996fff6d8a8e60dce",
+  "smoke_signature": "4b2bdd798b4fa94809938f68202474df413f723687aa92b5e86a52531e97a2f0",
+  "tasks": ["caco2_wang", "ppbr_az", "lipophilicity_astrazeneca", "ld50_zhu", "solubility_aqsoldb"],
+  "config": {"neighbors": 24, "width": 128, "key_width": 32, "bins": 8, "epochs": 100, "minimum_steps": 1200, "maximum_steps": 2500, "sam_radius": 0.05},
+  "seeds": [3041101, 3041102],
+  "method": "New sharpness-aware minimax training. Each update evaluates MAE, adds radius0.05 normalized-gradient perturbation, recomputes MAE with identical dropout/context masks, restores original weights exactly by copy, takes one AdamW step with perturbed gradient. Same architecture, seeds and optimizer-update count as v304, trained from scratch.",
+  "selection": "Original v148 algorithm via v314: maximize minimum fold0/1 gain over frozen blends0.20/0.45; require relative MAE gain>0.012. Freeze before fold2/valid; no fallback.",
+  "confirmation": "All four gains positive; mean>0.012; both 500-replicate paired scaffold bootstrap90% lower bounds positive.",
+  "smoke": "PASS: independent analytic scalar-gradient optimizer reference, exact restore, stochastic-mask equivalence, finite CUDA gradients, query-label isolation, checkpoint reload, reverse order; no query scores read.",
+  "test_labels_used": false,
+  "external_data": false,
+  "automatic_platform_submission": false,
+  "limitations": "Public validation heavily reused; upstream historical OOF approximate. This is a distinct training mechanism, not evidence of official gain. No failed v321 output used."
+}

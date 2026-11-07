@@ -1,0 +1,106 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "training_version": "v278",
+  "delivery_version": "v279",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52,
+  "at_utc": "2026-10-30T04:40:40.438023+00:00",
+  "tasks": [
+    "herg",
+    "cyp3a4_substrate_carbonmangels"
+  ],
+  "development_partitions": 4,
+  "deterministic_models": 4,
+  "new_tree_splits": 0,
+  "new_seeds": [],
+  "original_seeds": [
+    1274026,
+    1274027
+  ],
+  "development_best": [
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "config": {
+        "prior_precision": 1.0,
+        "max_newton": 50,
+        "gradient_tolerance": 1e-08
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 152,
+          "baseline": 0.8444511217948719,
+          "expert": 0.8433493589743589,
+          "candidate": 0.8442508012820512,
+          "gain": -0.0002003205128207064
+        },
+        {
+          "part": "fold1",
+          "rows": 152,
+          "baseline": 0.85125,
+          "expert": 0.8430769230769231,
+          "candidate": 0.8517307692307691,
+          "gain": 0.00048076923076911804
+        }
+      ],
+      "objective": -0.0002003205128207064
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "config": {
+        "prior_precision": 1.0,
+        "max_newton": 50,
+        "gradient_tolerance": 1e-08
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 156,
+          "baseline": 0.748671096345515,
+          "expert": 0.754734219269103,
+          "candidate": 0.7509966777408638,
+          "gain": 0.0023255813953487747
+        },
+        {
+          "part": "fold1",
+          "rows": 156,
+          "baseline": 0.6742748846407383,
+          "expert": 0.6805372445616348,
+          "candidate": 0.6769940672379697,
+          "gain": 0.002719182597231473
+        }
+      ],
+      "objective": 0.0023255813953487747
+    }
+  ],
+  "accepted_tasks": [],
+  "nominated_tasks": [],
+  "archive": {
+    "status": "PASS",
+    "prefix": "v279_v145_leaf_refit_20261030",
+    "archive_sha256": "fba6b901b96f78d3570c8d8a29b2daf907bc5dddd1a6f57f57f1dfa47959e399",
+    "manifest_files": 114,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 28,
+    "existing_exact": 86,
+    "existing_updated_docs_preserved": []
+  },
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "original_gates_unchanged": true,
+  "source_sha256": "30743545f399ff86ee8f3c4b4c20db9482329dd842cbe54985f1c9a82bf66760",
+  "exited_pids": [
+    2179,
+    2257,
+    2258,
+    2267,
+    2308
+  ],
+  "interpretation": "Direct existingv145 component jointleaf refit completed. hERG fails positive developmentpoint,CYP3A4 substrate gains.00232558/.00271918 below unchanged.003minimum. No confirmation opened,noCSV,no prior/seed/topology retry."
+}

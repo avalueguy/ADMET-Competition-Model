@@ -1,0 +1,9 @@
+{
+  "status": "REVIEWED_BEFORE_DEVELOPMENT",
+  "review": "docs/v270_review_decision.json",
+  "novelty": "Measured paired-clearance residual after a newly fit structure-only reference conditions target through honest scaffold-OOF residual covariance. Covariance from actual crossfit innovations rather than raw correlation, raw assay features, neural multitask weights or within-identity variance. Structure-only references are established fixed kernel regressors with no novelty claim.",
+  "label_isolation": "Currenttargetnonfitlabels excluded from all design/fit;freshotherref excludes heldscaffolds;permitted rawothertrainingmeasurements disclosed.",
+  "parameters_fixed": true,
+  "thresholds_unchanged": true,
+  "no_confirmation_fallback": true
+}

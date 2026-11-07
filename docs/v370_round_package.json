@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "archive": "releases/v370_remote_optimization_review.tar.gz",
+  "sha256": "6bb70dfc797a00b18664a76e221749aa5cdf6b8a1d1b411ccdafbae7323d5c76",
+  "bytes": 83130003,
+  "files": 364,
+  "all_member_hashes_verified": true,
+  "adopted_new_models": false
+}

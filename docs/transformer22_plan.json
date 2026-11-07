@@ -1,0 +1,1501 @@
+{
+  "status": "DESIGN_AND_SCORE_ANALYSIS_ONLY",
+  "user_reported_current": 51.24,
+  "current_exact_mean": 51.2395284090909,
+  "formula_reconstructed_mean": 51.239528323765015,
+  "formula_max_residual": 4.973915395112272e-07,
+  "formula_provenance": "Empirical score identity verified against reported official rows; not fetched published full specification.",
+  "no_new_training": true,
+  "no_new_submission": true,
+  "no_new_app_threads": true,
+  "recommendation": "22 independent endpoint experiment projects sharing fold-safe molecular representation and data infrastructure; retain per-task baselines. Do not train22 large encoders independently.",
+  "data": {
+    "train_label_rows": 53695,
+    "train_unique_exact_smiles": 34610,
+    "development_label_rows": 65430,
+    "development_unique_exact_smiles": 40229,
+    "counts_are_exact_smiles_not_canonical_molecule_counts": true,
+    "note": "Every outer fold uses a smaller fitting-only subset; full counts are not allowed in every validation encoder."
+  },
+  "rules_check": {
+    "status": "LIVE_PUBLIC_API_CHECKED",
+    "url": "http://www.aiinnovation.com.cn/api/app/getTrack",
+    "method": "POST form id=159",
+    "title": "小分子药物预测技术创新赛",
+    "external_data_rule": "数据集的赛事使用及解释权归支持单位所有， 【重要更新】本赛题不允许使用其他外部数据 。 4. 赛程赛制 （1）主题赛/专项赛：8月-11月（",
+    "edit_time": 1793368943,
+    "external_pretrained_weights_explicitly_authorized": false,
+    "interpretation": "Do not introduce external pretrained weights into the proposed new route without an explicit organizer clarification. No clarification requested or assumed."
+  },
+  "tasks": [
+    {
+      "task": "ames",
+      "metric": "AUROC",
+      "counts": {
+        "train": 4684,
+        "train_positives": 2625.0,
+        "valid": 1137,
+        "valid_positives": 479.0
+      },
+      "priority": "P2",
+      "current_raw": 0.8769096712291213,
+      "current_task_score": 50.141941,
+      "proposed_model": "原子/键Graph Transformer＋反应性片段残差头",
+      "objective": "BCE＋成对排序；同一分子等价视图一致性",
+      "notes": "中等样本，解冻末2层；与SVC专家比较互补性",
+      "mathematical_total_headroom": 0.1490196330737913,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "bbb_martins",
+      "metric": "AUROC",
+      "counts": {
+        "train": 1421,
+        "train_positives": 1074.0,
+        "valid": 203,
+        "valid_positives": 149.0
+      },
+      "priority": "P3",
+      "current_raw": 0.9289790494058787,
+      "current_task_score": 50.032316,
+      "proposed_model": "冻结Graph Transformer＋脂溶性/极性描述符小头",
+      "objective": "BCE＋排序",
+      "notes": "当前AUROC .929，数学总分空间有限；小适配器",
+      "mathematical_total_headroom": 0.08367499815345654,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "bioavailability_ma",
+      "metric": "AUROC",
+      "counts": {
+        "train": 448,
+        "train_positives": 352.0,
+        "valid": 64,
+        "valid_positives": 43.0
+      },
+      "priority": "P2",
+      "current_raw": 0.7948121050881277,
+      "current_task_score": 52.391603,
+      "proposed_model": "Graph Transformer适配器＋吸收/代谢上下文分支",
+      "objective": "BCE＋排序",
+      "notes": "448条训练；上下文分支独立消融；不将HIA/PPBR测量视为必然可用",
+      "mathematical_total_headroom": 0.2578201839703373,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "counts": {
+        "train": 637,
+        "valid": 91
+      },
+      "priority": "P1",
+      "current_raw": 0.27592992051587734,
+      "current_task_score": 50.689546,
+      "proposed_model": "Graph Transformer＋理化性质残差头",
+      "objective": "原尺度L1/中位数回归；可选成对性质差辅助项",
+      "notes": "637条训练；冻结主干，只训练小适配器和头；成对差路线需单独证明增量",
+      "mathematical_total_headroom": 2.241384272727273,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "counts": {
+        "train": 848,
+        "valid": 122
+      },
+      "priority": "P1",
+      "current_raw": 0.565208996561239,
+      "current_task_score": 50.211228,
+      "proposed_model": "Graph Transformer适配器＋清除率任务专用头",
+      "objective": "Gaussian-rank回归＋成对排序",
+      "notes": "848条训练；同微粒体任务共享只作迁移初始化，独立微调；测量上下文独立消融",
+      "mathematical_total_headroom": 0.2770201924282183,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "clearance_microsome_az",
+      "metric": "Spearman",
+      "counts": {
+        "train": 770,
+        "valid": 111
+      },
+      "priority": "P2",
+      "current_raw": 0.6756845436053647,
+      "current_task_score": 50.495262,
+      "proposed_model": "Graph Transformer适配器＋微粒体清除率专用头",
+      "objective": "Gaussian-rank回归＋成对排序",
+      "notes": "770条训练；不直接强制与肝细胞标签数值相同",
+      "mathematical_total_headroom": 0.2003340456123407,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "counts": {
+        "train": 467,
+        "train_positives": 91.0,
+        "valid": 67,
+        "valid_positives": 12.0
+      },
+      "priority": "P2",
+      "current_raw": 0.5862085536546348,
+      "current_task_score": 56.936749,
+      "proposed_model": "底物家族迁移的Graph Transformer适配器",
+      "objective": "BCE＋可微AP辅助项的单独消融",
+      "notes": "仅91个训练正例；不以重采样后更高AP当原分布收益；保留当前强基线",
+      "mathematical_total_headroom": 0.5611616184809285,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "cyp2c9_veith",
+      "metric": "AUPRC",
+      "counts": {
+        "train": 8463,
+        "train_positives": 2869.0,
+        "valid": 1210,
+        "valid_positives": 406.0
+      },
+      "priority": "P2",
+      "current_raw": 0.8349408577894758,
+      "current_task_score": 51.364323,
+      "proposed_model": "CYP抑制家族Graph Transformer＋任务头",
+      "objective": "BCE为对照，另测AP辅助损失",
+      "notes": "8463条训练；可解冻末2层；比较结构Transformer相对当前核专家的增量",
+      "mathematical_total_headroom": 0.2037870775449032,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "counts": {
+        "train": 465,
+        "train_positives": 134.0,
+        "valid": 67,
+        "valid_positives": 14.0
+      },
+      "priority": "P2",
+      "current_raw": 0.7583244699983189,
+      "current_task_score": 50.358383,
+      "proposed_model": "底物家族迁移适配器＋条件测量小分支",
+      "objective": "BCE＋AP辅助项单独消融",
+      "notes": "465条训练、134正例；小头、双种子；不能照搬大抑制任务全量微调",
+      "mathematical_total_headroom": 0.3120549298001007,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "cyp2d6_veith",
+      "metric": "AUPRC",
+      "counts": {
+        "train": 9191,
+        "train_positives": 1821.0,
+        "valid": 1313,
+        "valid_positives": 250.0
+      },
+      "priority": "P1",
+      "current_raw": 0.7439447168745902,
+      "current_task_score": 50.846574,
+      "proposed_model": "Graph Transformer＋CYP2D6抑制专用头",
+      "objective": "BCE对照＋AP辅助目标消融",
+      "notes": "9191条训练，最适合首批检查Transformer学习能力的任务之一",
+      "mathematical_total_headroom": 0.3327710211467554,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "counts": {
+        "train": 468,
+        "train_positives": 240.0,
+        "valid": 67,
+        "valid_positives": 36.0
+      },
+      "priority": "P2",
+      "current_raw": 0.7460443037974683,
+      "current_task_score": 50.706702,
+      "proposed_model": "底物家族Graph Transformer小适配器",
+      "objective": "BCE＋成对排序",
+      "notes": "468条训练；必须对比当前恢复分支，不能重用已退步v354组合",
+      "mathematical_total_headroom": 0.3298157141164708,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "cyp3a4_veith",
+      "metric": "AUPRC",
+      "counts": {
+        "train": 8628,
+        "train_positives": 3447.0,
+        "valid": 1233,
+        "valid_positives": 581.0
+      },
+      "priority": "P2",
+      "current_raw": 0.8991915344045904,
+      "current_task_score": 50.422543,
+      "proposed_model": "抑制家族Graph Transformer＋CYP3A4头",
+      "objective": "BCE＋AP辅助目标消融",
+      "notes": "8628条训练；现有AUPRC .899，优先级低于CYP2D6抑制",
+      "mathematical_total_headroom": 0.12057293223198716,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "dili",
+      "metric": "AUROC",
+      "counts": {
+        "train": 331,
+        "train_positives": 173.0,
+        "valid": 48,
+        "valid_positives": 13.0
+      },
+      "priority": "P3",
+      "current_raw": 0.935,
+      "current_task_score": 50.715743,
+      "proposed_model": "冻结Graph Transformer＋反应性片段小头",
+      "objective": "BCE＋排序",
+      "notes": "331条训练，官方AUROC .935；谨慎分配预算",
+      "mathematical_total_headroom": 0.07629250765902834,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "half_life_obach",
+      "metric": "Spearman",
+      "counts": {
+        "train": 465,
+        "valid": 67
+      },
+      "priority": "P2",
+      "current_raw": 0.6509691357439866,
+      "current_task_score": 52.539161,
+      "proposed_model": "Graph Transformer适配器＋半衰期专用双目标头",
+      "objective": "log1p与Gaussian-rank双目标＋排序",
+      "notes": "465条训练；当前双目标树已有效，先检查新增表示互补性",
+      "mathematical_total_headroom": 0.21566428317830696,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "counts": {
+        "train": 457,
+        "train_positives": 312.0,
+        "valid": 66,
+        "valid_positives": 42.0
+      },
+      "priority": "P1",
+      "current_raw": 0.861119293078056,
+      "current_task_score": 49.93509,
+      "proposed_model": "Graph Transformer小适配器＋电荷/芳香片段头",
+      "objective": "BCE＋成对排序",
+      "notes": "457条训练；新表示先冻结；旧模型已用理化特征，单加描述符不算新机制",
+      "mathematical_total_headroom": 0.1696119334453763,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "hia_hou",
+      "metric": "AUROC",
+      "counts": {
+        "train": 403,
+        "train_positives": 362.0,
+        "valid": 58,
+        "valid_positives": 48.0
+      },
+      "priority": "KEEP",
+      "current_raw": 1.0,
+      "current_task_score": 50.14341,
+      "proposed_model": "保留v361完整输出；仅建立独立登记",
+      "objective": "不启动新训练",
+      "notes": "官方AUROC已1.0，没有正向分数空间",
+      "mathematical_total_headroom": 6.956258276473322e-09,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "counts": {
+        "train": 3970,
+        "valid": 1937
+      },
+      "priority": "P2",
+      "current_raw": 0.55547536869963,
+      "current_task_score": 52.05411,
+      "proposed_model": "Graph Transformer＋毒性专用回归头",
+      "objective": "原尺度L1为主；稳健尾部处理单独消融",
+      "notes": "3970条训练；先核对单位和标签变换，不能仅追求训练集RMSE",
+      "mathematical_total_headroom": 2.179358636363636,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "counts": {
+        "train": 2940,
+        "valid": 420
+      },
+      "priority": "P1",
+      "current_raw": 0.42089320332796315,
+      "current_task_score": 52.909067,
+      "proposed_model": "Graph Transformer＋残差MAE头",
+      "objective": "原尺度L1；以现有物理/检索专家为对照",
+      "notes": "2940条训练；验证表示互补，校准仅用拟合/内层预测",
+      "mathematical_total_headroom": 2.1404969545454544,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "pgp_broccatelli",
+      "metric": "AUROC",
+      "counts": {
+        "train": 851,
+        "train_positives": 465.0,
+        "valid": 122,
+        "valid_positives": 61.0
+      },
+      "priority": "P3",
+      "current_raw": 0.9504798720341242,
+      "current_task_score": 50.320749,
+      "proposed_model": "冻结Graph Transformer＋P-gp小头",
+      "objective": "BCE＋排序",
+      "notes": "851条训练，官方AUROC .950；极限总分收益仅约.058",
+      "mathematical_total_headroom": 0.057689776141306416,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "counts": {
+        "train": 1952,
+        "valid": 279
+      },
+      "priority": "P2",
+      "current_raw": 6.665484533215087,
+      "current_task_score": 52.376135,
+      "proposed_model": "Graph Transformer＋有界中位数回归头",
+      "objective": "原尺度L1；[0,100]输出或固定边界裁剪",
+      "notes": "1952条训练；直接优化PPBR误差，不能以变换尺度的损失替代最终MAE",
+      "mathematical_total_headroom": 2.1647211363636365,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "counts": {
+        "train": 5045,
+        "valid": 2940
+      },
+      "priority": "P1",
+      "current_raw": 0.7127214187464622,
+      "current_task_score": 50.886239,
+      "proposed_model": "Graph Transformer＋溶解度MAE头",
+      "objective": "原尺度L1；重复测量不确定性作为可选消融",
+      "notes": "5045条训练；不能把结构增强当作新增独立标签；标签检索已试过，必须检验新增结构表示",
+      "mathematical_total_headroom": 2.232443681818181,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    },
+    {
+      "task": "vdss_lombardo",
+      "metric": "Spearman",
+      "counts": {
+        "train": 791,
+        "valid": 113
+      },
+      "priority": "P2",
+      "current_raw": 0.7145137427047057,
+      "current_task_score": 50.792751,
+      "proposed_model": "Graph Transformer适配器＋VDss排序头",
+      "objective": "Gaussian-rank回归＋成对排序",
+      "notes": "791条训练；理化性质/PPBR关系作为辅助，不强加未经证实的确定方程",
+      "mathematical_total_headroom": 0.17441846165709537,
+      "headroom_is_attainable_forecast": false,
+      "trained": false
+    }
+  ],
+  "encoder": {
+    "status": "PROPOSED_NOT_IMPLEMENTED",
+    "type": "atom_bond_graph_transformer",
+    "external_weights": false,
+    "layers": 6,
+    "hidden": 192,
+    "heads": 6,
+    "target_parameter_budget_millions": [
+      2,
+      5
+    ],
+    "parameter_budget_is_estimate": true,
+    "dropout": 0.15,
+    "attention_bias": [
+      "bond_type",
+      "topological_distance",
+      "ring_and_charge_features"
+    ],
+    "pretraining": [
+      "fit-only masked atom/bond reconstruction",
+      "same-molecule graph/SMILES view consistency"
+    ],
+    "training_structures": "Official fit molecules only; no query/test structures for pretraining in the primary experiment.",
+    "small_task_finetuning": "Freeze backbone, train low-rank adapter rank8 and small head; unfreeze only after measured evidence.",
+    "larger_task_finetuning": "Compare frozen encoder to unfreezing final two layers.",
+    "auxiliary_context": "Separate optional branch with current target assay value/mask excluded; report structure-only and conditional modes separately.",
+    "claim": "Candidate engineering combination; global novelty and score gain not established."
+  },
+  "ablations": [
+    "A: current v361 output plus reproducible current structure control; preserve upstream OOF limitations",
+    "B: graph Transformer from scratch, target head only",
+    "C: fit-only self-supervised graph Transformer plus target adapter; compare to B",
+    "D: C plus target-family supervised initialization; compare to C, global query groups excluded",
+    "E: strongest frozen developmental C/D plus optional target-excluded context, separate hypothesis",
+    "F: fixed coarse blend of expert with v361, include zero weight; freeze before confirmation"
+  ],
+  "pilot_tasks": [
+    "caco2_wang",
+    "clearance_hepatocyte_az",
+    "cyp2d6_veith",
+    "herg",
+    "lipophilicity_astrazeneca",
+    "solubility_aqsoldb"
+  ],
+  "prior_transformer_results": [
+    {
+      "route": "v58/v60",
+      "result": "ChemBERTa fine-tuning on12 tasks; selected DILI source was the structure control head, sequence-fusion branch not adopted",
+      "evidence": "docs/history/v60_report.md"
+    },
+    {
+      "route": "v238/v239",
+      "result": "Six endpoint molecular-view Transformers failed original development selection; no confirmed model or CSV",
+      "evidence": "docs/v239_final_status.json"
+    },
+    {
+      "route": "v159/v161",
+      "result": "Target-focused MLP multitask transfer and gradient projection already tried; no strict accepted task",
+      "evidence": "docs/ITERATION_V161_20261027.md"
+    }
+  ],
+  "validation": {
+    "global_identity_scaffold_isolation": true,
+    "pretraining_refit_each_outer_split": true,
+    "query_labels_excluded_from_all_task_encoders": true,
+    "historical_public_labels_reused": true,
+    "new_split_is_independent_new_data": false,
+    "existing_v361_full_OOF_recoverability": "partial; report where only approximate controls available",
+    "developer_selection": "Bounded hypotheses on fold0/1, freeze before fold2/valid; no confirmation-driven retries",
+    "strict_gate": "Retain existing four-point improvement and scaffold-bootstrap gate; label experimental alternatives separately, never rewrite rejected status",
+    "no_claim_per_task_nonregression_on_hidden_test": true
+  },
+  "scenarios": [
+    {
+      "id": "no_new_signal",
+      "description": "未发现可用新信号，保留v361",
+      "MAE_uniform_relative_reduction": 0.0,
+      "classification_uniform_absolute_increase": 0.0,
+      "Spearman_uniform_absolute_increase": 0.0,
+      "scores_capped_at_raw_one": true,
+      "hypothetical_total": 51.239528323765015,
+      "hypothetical_total_gain": -8.532588680054687e-08,
+      "gain_by_metric": {
+        "AUROC": -6.584693969877911e-08,
+        "MAE": 1.0508646074537283e-09,
+        "Spearman": 1.0675284171797597e-08,
+        "AUPRC": -3.120510298644645e-08
+      },
+      "tasks": [
+        {
+          "task": "ames",
+          "raw": 0.8769096712291213,
+          "score": 50.14194064580655
+        },
+        {
+          "task": "bbb_martins",
+          "raw": 0.9289790494058787,
+          "score": 50.03231571841746
+        },
+        {
+          "task": "bioavailability_ma",
+          "raw": 0.7948121050881277,
+          "score": 52.3916028390949
+        },
+        {
+          "task": "caco2_wang",
+          "raw": 0.27592992051587734,
+          "score": 50.68954590523571
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "raw": 0.565208996561239,
+          "score": 50.21122785789275
+        },
+        {
+          "task": "clearance_microsome_az",
+          "raw": 0.6756845436053647,
+          "score": 50.49526228764971
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "raw": 0.5862085536546348,
+          "score": 56.93674868943264
+        },
+        {
+          "task": "cyp2c9_veith",
+          "raw": 0.8349408577894758,
+          "score": 51.364322514172216
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "raw": 0.7583244699983189,
+          "score": 50.358383331380765
+        },
+        {
+          "task": "cyp2d6_veith",
+          "raw": 0.7439447168745902,
+          "score": 50.84657350260846
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "raw": 0.7460443037974683,
+          "score": 50.706701503493385
+        },
+        {
+          "task": "cyp3a4_veith",
+          "raw": 0.8991915344045904,
+          "score": 50.42254327589365
+        },
+        {
+          "task": "dili",
+          "raw": 0.935,
+          "score": 50.71574287172605
+        },
+        {
+          "task": "half_life_obach",
+          "raw": 0.6509691357439866,
+          "score": 52.53916132514568
+        },
+        {
+          "task": "herg",
+          "raw": 0.861119293078056,
+          "score": 49.935090275443756
+        },
+        {
+          "task": "hia_hou",
+          "raw": 1.0,
+          "score": 50.143410153037685
+        },
+        {
+          "task": "ld50_zhu",
+          "raw": 0.55547536869963,
+          "score": 52.05410989953696
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "raw": 0.42089320332796315,
+          "score": 52.90906707419116
+        },
+        {
+          "task": "pgp_broccatelli",
+          "raw": 0.9504798720341242,
+          "score": 50.32074854434756
+        },
+        {
+          "task": "ppbr_az",
+          "raw": 6.665484533215087,
+          "score": 52.37613475869134
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "raw": 0.7127214187464622,
+          "score": 50.88623938546385
+        },
+        {
+          "task": "vdss_lombardo",
+          "raw": 0.7145137427047057,
+          "score": 50.79275076416811
+        }
+      ],
+      "type": "CONDITIONAL_ARITHMETIC_NOT_PREDICTION",
+      "success_probability": null
+    },
+    {
+      "id": "small_joint_gains",
+      "description": "小幅联合改善情景",
+      "MAE_uniform_relative_reduction": 0.03,
+      "classification_uniform_absolute_increase": 0.005,
+      "Spearman_uniform_absolute_increase": 0.02,
+      "scores_capped_at_raw_one": true,
+      "hypothetical_total": 51.55041425010643,
+      "hypothetical_total_gain": 0.3108858410155264,
+      "gain_by_metric": {
+        "AUROC": 0.04585804263690204,
+        "MAE": 0.17268539980221512,
+        "Spearman": 0.054725971141368485,
+        "AUPRC": 0.037616427435036244
+      },
+      "tasks": [
+        {
+          "task": "ames",
+          "raw": 0.8819096712291213,
+          "score": 50.284079159823946
+        },
+        {
+          "task": "bbb_martins",
+          "raw": 0.9339790494058787,
+          "score": 50.16651061097486
+        },
+        {
+          "task": "bioavailability_ma",
+          "raw": 0.7998121050881277,
+          "score": 52.547997442047034
+        },
+        {
+          "task": "caco2_wang",
+          "raw": 0.267652022900401,
+          "score": 51.45066256561176
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "raw": 0.585208996561239,
+          "score": 50.528631877762905
+        },
+        {
+          "task": "clearance_microsome_az",
+          "raw": 0.6956845436053647,
+          "score": 50.79183116174536
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "raw": 0.5912085536546348,
+          "score": 57.1448684651541
+        },
+        {
+          "task": "cyp2c9_veith",
+          "raw": 0.8399408577894758,
+          "score": 51.51346350272288
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "raw": 0.7633244699983189,
+          "score": 50.52266647313183
+        },
+        {
+          "task": "cyp2d6_veith",
+          "raw": 0.7489447168745902,
+          "score": 51.013976495614465
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "raw": 0.7510443037974683,
+          "score": 50.87365104654729
+        },
+        {
+          "task": "cyp3a4_veith",
+          "raw": 0.9041915344045904,
+          "score": 50.561158466947525
+        },
+        {
+          "task": "dili",
+          "raw": 0.9400000000000001,
+          "score": 50.84904379455038
+        },
+        {
+          "task": "half_life_obach",
+          "raw": 0.6709691357439866,
+          "score": 52.839322291295325
+        },
+        {
+          "task": "herg",
+          "raw": 0.866119293078056,
+          "score": 50.07983027846355
+        },
+        {
+          "task": "hia_hou",
+          "raw": 1.0,
+          "score": 50.143410153037685
+        },
+        {
+          "task": "ld50_zhu",
+          "raw": 0.538811107638641,
+          "score": 52.81377087579757
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "raw": 0.40826640722812424,
+          "score": 53.66723918238649
+        },
+        {
+          "task": "pgp_broccatelli",
+          "raw": 0.9554798720341242,
+          "score": 50.45190845256712
+        },
+        {
+          "task": "ppbr_az",
+          "raw": 6.465519997218634,
+          "score": 53.13528708418803
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "raw": 0.6913397761840684,
+          "score": 51.64721608766489
+        },
+        {
+          "task": "vdss_lombardo",
+          "raw": 0.7345137427047057,
+          "score": 51.08258803430652
+        }
+      ],
+      "type": "CONDITIONAL_ARITHMETIC_NOT_PREDICTION",
+      "success_probability": null
+    },
+    {
+      "id": "target_52",
+      "description": "冲52的联合改善情景",
+      "MAE_uniform_relative_reduction": 0.08,
+      "classification_uniform_absolute_increase": 0.015,
+      "Spearman_uniform_absolute_increase": 0.05,
+      "scores_capped_at_raw_one": true,
+      "hypothetical_total": 52.0959505178366,
+      "hypothetical_total_gain": 0.8564221087456971,
+      "gain_by_metric": {
+        "AUROC": 0.13676902162615015,
+        "MAE": 0.4720421055319674,
+        "Spearman": 0.13556414180862641,
+        "AUPRC": 0.11204683977894674
+      },
+      "tasks": [
+        {
+          "task": "ames",
+          "raw": 0.8919096712291213,
+          "score": 50.565938667022074
+        },
+        {
+          "task": "bbb_martins",
+          "raw": 0.9439790494058787,
+          "score": 50.432749558924584
+        },
+        {
+          "task": "bioavailability_ma",
+          "raw": 0.8098121050881277,
+          "score": 52.85772421060109
+        },
+        {
+          "task": "caco2_wang",
+          "raw": 0.25385552687460716,
+          "score": 52.77128679734958
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "raw": 0.6152089965612391,
+          "score": 50.99722182609929
+        },
+        {
+          "task": "clearance_microsome_az",
+          "raw": 0.7256845436053647,
+          "score": 51.23008133345764
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "raw": 0.6012085536546348,
+          "score": 57.555130875624904
+        },
+        {
+          "task": "cyp2c9_veith",
+          "raw": 0.8499408577894758,
+          "score": 51.80901816717141
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "raw": 0.7733244699983189,
+          "score": 50.84799215004787
+        },
+        {
+          "task": "cyp2d6_veith",
+          "raw": 0.7589447168745902,
+          "score": 51.34538485427212
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "raw": 0.7610443037974683,
+          "score": 51.204180349397106
+        },
+        {
+          "task": "cyp3a4_veith",
+          "raw": 0.9141915344045904,
+          "score": 50.83607642802052
+        },
+        {
+          "task": "dili",
+          "raw": 0.9500000000000001,
+          "score": 51.11349401622396
+        },
+        {
+          "task": "half_life_obach",
+          "raw": 0.7009691357439867,
+          "score": 53.282511879653285
+        },
+        {
+          "task": "herg",
+          "raw": 0.876119293078056,
+          "score": 50.366814017315356
+        },
+        {
+          "task": "hia_hou",
+          "raw": 1.0,
+          "score": 50.143410153037685
+        },
+        {
+          "task": "ld50_zhu",
+          "raw": 0.5110373392036596,
+          "score": 54.13037303275748
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "raw": 0.38722174706172613,
+          "score": 54.980326986478595
+        },
+        {
+          "task": "pgp_broccatelli",
+          "raw": 0.9654798720341242,
+          "score": 50.71216150325346
+        },
+        {
+          "task": "ppbr_az",
+          "raw": 6.132245770557881,
+          "score": 54.450655294737366
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "raw": 0.6557037052467453,
+          "score": 52.96738121038026
+        },
+        {
+          "task": "vdss_lombardo",
+          "raw": 0.7645137427047057,
+          "score": 51.51099808057956
+        }
+      ],
+      "type": "CONDITIONAL_ARITHMETIC_NOT_PREDICTION",
+      "success_probability": null
+    },
+    {
+      "id": "stretch_52_6",
+      "description": "进取联合改善情景",
+      "MAE_uniform_relative_reduction": 0.12,
+      "classification_uniform_absolute_increase": 0.025,
+      "Spearman_uniform_absolute_increase": 0.08,
+      "scores_capped_at_raw_one": true,
+      "hypothetical_total": 52.589074080323435,
+      "hypothetical_total_gain": 1.3495456712325336,
+      "gain_by_metric": {
+        "AUROC": 0.22662211074803487,
+        "MAE": 0.7225589316393698,
+        "Spearman": 0.21493768785684286,
+        "AUPRC": 0.18542694098827894
+      },
+      "tasks": [
+        {
+          "task": "ames",
+          "raw": 0.9019096712291214,
+          "score": 50.844620241870174
+        },
+        {
+          "task": "bbb_martins",
+          "raw": 0.9539790494058787,
+          "score": 50.6961588237699
+        },
+        {
+          "task": "bioavailability_ma",
+          "raw": 0.8198121050881277,
+          "score": 53.16343392732257
+        },
+        {
+          "task": "caco2_wang",
+          "raw": 0.24281833005397205,
+          "score": 53.87762190739534
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "raw": 0.645208996561239,
+          "score": 51.45701815312861
+        },
+        {
+          "task": "clearance_microsome_az",
+          "raw": 0.7556845436053646,
+          "score": 51.660594261806324
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "raw": 0.6112085536546348,
+          "score": 57.95761269148663
+        },
+        {
+          "task": "cyp2c9_veith",
+          "raw": 0.8599408577894758,
+          "score": 52.100991494387486
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "raw": 0.783324469998319,
+          "score": 51.169067580179814
+        },
+        {
+          "task": "cyp2d6_veith",
+          "raw": 0.7689447168745902,
+          "score": 51.67233914887822
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "raw": 0.7710443037974684,
+          "score": 51.53029167748207
+        },
+        {
+          "task": "cyp3a4_veith",
+          "raw": 0.9241915344045905,
+          "score": 51.10795378680998
+        },
+        {
+          "task": "dili",
+          "raw": 0.9600000000000001,
+          "score": 51.37511378784968
+        },
+        {
+          "task": "half_life_obach",
+          "raw": 0.7309691357439866,
+          "score": 53.71744932286501
+        },
+        {
+          "task": "herg",
+          "raw": 0.886119293078056,
+          "score": 50.65051696206956
+        },
+        {
+          "task": "hia_hou",
+          "raw": 1.0,
+          "score": 50.143410153037685
+        },
+        {
+          "task": "ld50_zhu",
+          "raw": 0.4888183244556744,
+          "score": 55.23187987030108
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "raw": 0.37038601892860756,
+          "score": 56.0779846083593
+        },
+        {
+          "task": "pgp_broccatelli",
+          "raw": 0.9754798720341242,
+          "score": 50.969694863055146
+        },
+        {
+          "task": "ppbr_az",
+          "raw": 5.865626389229277,
+          "score": 55.55078656690449
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "raw": 0.6271948484968868,
+          "score": 54.07312054310593
+        },
+        {
+          "task": "vdss_lombardo",
+          "raw": 0.7945137427047056,
+          "score": 51.9319693950506
+        }
+      ],
+      "type": "CONDITIONAL_ARITHMETIC_NOT_PREDICTION",
+      "success_probability": null
+    },
+    {
+      "id": "target_53_plus",
+      "description": "53分以上需要的强改善情景",
+      "MAE_uniform_relative_reduction": 0.2,
+      "classification_uniform_absolute_increase": 0.03,
+      "Spearman_uniform_absolute_increase": 0.1,
+      "scores_capped_at_raw_one": true,
+      "hypothetical_total": 53.255155437234755,
+      "hypothetical_total_gain": 2.0156270281438537,
+      "gain_by_metric": {
+        "AUROC": 0.2711577521302763,
+        "MAE": 1.255679670491955,
+        "Spearman": 0.267059264581637,
+        "AUPRC": 0.22173034093997787
+      },
+      "tasks": [
+        {
+          "task": "ames",
+          "raw": 0.9069096712291214,
+          "score": 50.98278605314515
+        },
+        {
+          "task": "bbb_martins",
+          "raw": 0.9589790494058787,
+          "score": 50.8268163852727
+        },
+        {
+          "task": "bioavailability_ma",
+          "raw": 0.8248121050881277,
+          "score": 53.31480673410182
+        },
+        {
+          "task": "caco2_wang",
+          "raw": 0.22074393641270187,
+          "score": 56.23554658165286
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "raw": 0.665208996561239,
+          "score": 51.758785171464815
+        },
+        {
+          "task": "clearance_microsome_az",
+          "raw": 0.7756845436053647,
+          "score": 51.94340500530433
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "raw": 0.6162085536546348,
+          "score": 58.15600471803107
+        },
+        {
+          "task": "cyp2c9_veith",
+          "raw": 0.8649408577894758,
+          "score": 52.24565543710832
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "raw": 0.788324469998319,
+          "score": 51.328037396590574
+        },
+        {
+          "task": "cyp2d6_veith",
+          "raw": 0.7739447168745902,
+          "score": 51.834173988395264
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "raw": 0.7760443037974684,
+          "score": 51.69171818954308
+        },
+        {
+          "task": "cyp3a4_veith",
+          "raw": 0.9291915344045905,
+          "score": 51.24276796055428
+        },
+        {
+          "task": "dili",
+          "raw": 0.9650000000000001,
+          "score": 51.504876417651715
+        },
+        {
+          "task": "half_life_obach",
+          "raw": 0.7509691357439866,
+          "score": 54.002936209045586
+        },
+        {
+          "task": "herg",
+          "raw": 0.891119293078056,
+          "score": 50.791155667490905
+        },
+        {
+          "task": "hia_hou",
+          "raw": 1.0,
+          "score": 50.143410153037685
+        },
+        {
+          "task": "ld50_zhu",
+          "raw": 0.444380294959704,
+          "score": 57.57508753886266
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "raw": 0.33671456266237054,
+          "score": 58.41025375798461
+        },
+        {
+          "task": "pgp_broccatelli",
+          "raw": 0.9804798720341242,
+          "score": 51.09745494662304
+        },
+        {
+          "task": "ppbr_az",
+          "raw": 5.33238762657207,
+          "score": 57.89002860045885
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "raw": 0.5701771349971698,
+          "score": 56.42913327186403
+        },
+        {
+          "task": "vdss_lombardo",
+          "raw": 0.8145137427047057,
+          "score": 52.20857943498128
+        }
+      ],
+      "type": "CONDITIONAL_ARITHMETIC_NOT_PREDICTION",
+      "success_probability": null
+    },
+    {
+      "id": "target_54_plus",
+      "description": "54分以上需要的极强改善情景",
+      "MAE_uniform_relative_reduction": 0.25,
+      "classification_uniform_absolute_increase": 0.05,
+      "Spearman_uniform_absolute_increase": 0.15,
+      "scores_capped_at_raw_one": true,
+      "hypothetical_total": 54.05745995201874,
+      "hypothetical_total_gain": 2.8179315429278375,
+      "gain_by_metric": {
+        "AUROC": 0.44620243489511713,
+        "MAE": 1.6126317109773622,
+        "Spearman": 0.3946660611223985,
+        "AUPRC": 0.36443133593295457
+      },
+      "tasks": [
+        {
+          "task": "ames",
+          "raw": 0.9269096712291214,
+          "score": 51.52776853261762
+        },
+        {
+          "task": "bbb_martins",
+          "raw": 0.9789790494058788,
+          "score": 51.34259429039337
+        },
+        {
+          "task": "bioavailability_ma",
+          "raw": 0.8448121050881278,
+          "score": 53.910638293010315
+        },
+        {
+          "task": "caco2_wang",
+          "raw": 0.206947440386908,
+          "score": 57.817002527852004
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "raw": 0.715208996561239,
+          "score": 52.497039508359684
+        },
+        {
+          "task": "clearance_microsome_az",
+          "raw": 0.8256845436053647,
+          "score": 52.63616290026286
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "raw": 0.6362085536546348,
+          "score": 58.93119602097641
+        },
+        {
+          "task": "cyp2c9_veith",
+          "raw": 0.8849408577894758,
+          "score": 52.81567727043057
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "raw": 0.808324469998319,
+          "score": 51.953699143995195
+        },
+        {
+          "task": "cyp2d6_veith",
+          "raw": 0.7939447168745902,
+          "score": 52.47081788340282
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "raw": 0.7960443037974684,
+          "score": 52.326813101088014
+        },
+        {
+          "task": "cyp3a4_veith",
+          "raw": 0.9491915344045905,
+          "score": 51.77467107172
+        },
+        {
+          "task": "dili",
+          "raw": 0.9850000000000001,
+          "score": 52.017074274573055
+        },
+        {
+          "task": "half_life_obach",
+          "raw": 0.8009691357439866,
+          "score": 54.701478832958934
+        },
+        {
+          "task": "herg",
+          "raw": 0.9111192930780561,
+          "score": 51.34578484786379
+        },
+        {
+          "task": "hia_hou",
+          "raw": 1.0,
+          "score": 50.143410153037685
+        },
+        {
+          "task": "ld50_zhu",
+          "raw": 0.4166065265247225,
+          "score": 59.14330602689597
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "raw": 0.3156699024959724,
+          "score": 59.96906513378781
+        },
+        {
+          "task": "pgp_broccatelli",
+          "raw": 1.0,
+          "score": 51.58992407510874
+        },
+        {
+          "task": "ppbr_az",
+          "raw": 4.999113399911316,
+          "score": 59.45480365128443
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "raw": 0.5345410640598467,
+          "score": 58.00881730168176
+        },
+        {
+          "task": "vdss_lombardo",
+          "raw": 0.8645137427047057,
+          "score": 52.88637410311129
+        }
+      ],
+      "type": "CONDITIONAL_ARITHMETIC_NOT_PREDICTION",
+      "success_probability": null
+    }
+  ],
+  "mae_only_target_requirements": [
+    {
+      "target_total": 52.0,
+      "required_all_five_MAE_relative_reduction": 0.12591410842019418,
+      "other_17_task_scores_held_fixed": true
+    },
+    {
+      "target_total": 53.0,
+      "required_all_five_MAE_relative_reduction": 0.26993568049399996,
+      "other_17_task_scores_held_fixed": true
+    },
+    {
+      "target_total": 54.0,
+      "required_all_five_MAE_relative_reduction": 0.3941246193335378,
+      "other_17_task_scores_held_fixed": true
+    }
+  ],
+  "four_high_AUROC_tasks_perfect_mathematical_total_gain": 0.3872692153991676,
+  "estimate": {
+    "empirical_forecast": null,
+    "numeric_success_probability": null,
+    "reason": "No new Transformer trained or independently validated; prior experiments do not justify a calibrated forecast.",
+    "planned_milestone": 52.0,
+    "stretch_milestone": 53.0,
+    "guaranteed_multi_point_jump": false
+  },
+  "compute": {
+    "available_GPU_this_turn": "not inspected",
+    "wall_time_forecast": null,
+    "pilot_design": "6 tasks, shared fold-specific encoder, bounded ablations; benchmark first",
+    "independent_experts_reference_models": 168,
+    "note": "168 expert fits per hypothesis if21 trainable endpoints,4 development partitions,2seeds; encoders,controls,final fits and ablations add work. HIA is keep-only."
+  },
+  "evidence": [
+    {
+      "path": "docs/platform_scorecard_v361_20261104.json",
+      "sha256": "8a10442e3908946db3ea66babe26a37770474d9b3be3cbaca2a07a5f0c3c36bb"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/ames/train.csv",
+      "sha256": "1f31f914999a8b1281dc9353d6d8a6f9e11cdabf4d9b43cb2984edd1775a771d"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/ames/valid.csv",
+      "sha256": "128351f2830547b4de22a1d8bccff5b2d128f0386bffef74bcb9e5ad437c7d1a"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/bbb_martins/train.csv",
+      "sha256": "b3223c2fa0fff26ab990b4dbafbbe435a8ceb6114d76488bc3be27a68dfe23b9"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/bbb_martins/valid.csv",
+      "sha256": "eaed2376463a79a7783308be4c35f74b7662f66df29811f8462d3ebfda47b58f"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/bioavailability_ma/train.csv",
+      "sha256": "67d201f36ee1eb8b202ea5ac30624045a839747143d45ef11ee91017db82ccca"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/bioavailability_ma/valid.csv",
+      "sha256": "ba5b96027613461c29dade0355eb83bb90ed36e39f5b2889da8e42658e6d5bc1"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/caco2_wang/train.csv",
+      "sha256": "3061c58d3601d081e5459a2de03dc1d189243c4b5683d1b7288577a29fed4d6f"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/caco2_wang/valid.csv",
+      "sha256": "63328bf307b850a4a0986165d0800bae5aa737c41bd63f1026d16114d8560bb4"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/clearance_hepatocyte_az/train.csv",
+      "sha256": "5075b6a07d08d50c22a3a434e4708eb34b2d310b612a0a1c523bd153c11ba1f0"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/clearance_hepatocyte_az/valid.csv",
+      "sha256": "70b8909657f590a92b84ef4d3758e10a7ab688083971b939daf0c5004bbe04e5"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/clearance_microsome_az/train.csv",
+      "sha256": "4a0844973f3b059417c1214becff7ed7be69d457661c3ebb96a26099cc2e0038"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/clearance_microsome_az/valid.csv",
+      "sha256": "b5df9dd9902e743b932811acb330edf1250bca279aa7086a087dd8e58394fbb5"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2c9_substrate_carbonmangels/train.csv",
+      "sha256": "cbd2423a4da38cfadcd266f3287c0894f23577917d5f12144eade9f5c0967009"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2c9_substrate_carbonmangels/valid.csv",
+      "sha256": "020195bff8520972c02dc7bf0739fd7815c548372bd1e6b12eca95619ddcfe0f"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2c9_veith/train.csv",
+      "sha256": "4414aaa7ce7ac6d588c55d09292a47dd74b4c70bb78338affff655fbe715ebf2"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2c9_veith/valid.csv",
+      "sha256": "3eb039546951c292faeac419ed22f0e08e3a38a2b90ef62c76e6db736a89b864"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2d6_substrate_carbonmangels/train.csv",
+      "sha256": "8278fde03c27e594079d600e9565d48c3c97dc6daf51113f3b4ba7023ecd8301"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2d6_substrate_carbonmangels/valid.csv",
+      "sha256": "46d79fa0b3cf13975f97364835e3f4f97c648de7041332101bbb02f1456b1e4c"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2d6_veith/train.csv",
+      "sha256": "f9ddcf3ef3bfda8ec7ccfc3f3882296f3562861df01a28432560781bc9eaa1d6"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2d6_veith/valid.csv",
+      "sha256": "a783012454209e47640cadb83cf5f84408bf375ca13fa0ea3335482e901823e7"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp3a4_substrate_carbonmangels/train.csv",
+      "sha256": "f840554ef680fe42b5334aac398141fb94b510bee7f935549ee2521a47eda55b"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp3a4_substrate_carbonmangels/valid.csv",
+      "sha256": "368546f70970e88249dd0cfa93f943ea97a4363abaf98861cbc701690efaabc6"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp3a4_veith/train.csv",
+      "sha256": "ed009e2d43cbc4278cf7f4c0923b63aa570009f0bfd532a7139ea395cfe5be90"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp3a4_veith/valid.csv",
+      "sha256": "db7aa095189723c24dc30b73caa76c53b381cebe9a5d409ef54da3644313e6a6"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/dili/train.csv",
+      "sha256": "33981936021d3c360fc0e6e92a701fea80705a3915c0cdb49751312dcd2235cd"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/dili/valid.csv",
+      "sha256": "944ca7ad4f4416a43aa5a5d943d0b4fbed3fcf763a63c835b7d3761bcc15c626"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/half_life_obach/train.csv",
+      "sha256": "61774bf5dfc29bee0768038dcbf16319e9fc19e2bee63659f2cfed687477e2f9"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/half_life_obach/valid.csv",
+      "sha256": "34b97b09010371060136b6af941c84ede93be9d563807ac5d35ca6fba618aa9a"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/herg/train.csv",
+      "sha256": "97f2f48846378bc4bb51e9d0a0041ac9e3686423a06f20a5119a842212a5b64e"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/herg/valid.csv",
+      "sha256": "4898ea81ba70fcacc21f733e9e8446bf8001566032902245405978f0d86332a6"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/hia_hou/train.csv",
+      "sha256": "59291200064e1b3be437437208a45d62f8eea6f6c372b4820e11e20fd1ffb2be"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/hia_hou/valid.csv",
+      "sha256": "31990f1c03ca7c4aad2115835a5e0a6f9de2e83609fd855205508513cbfb14bd"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/ld50_zhu/train.csv",
+      "sha256": "749c76c38fdf4fb147f8fa5ae4dfa247cca26b152461a1e52234bca441626daa"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/ld50_zhu/valid.csv",
+      "sha256": "6943341be1314231509651426ea0293e9460bfd80e76f8df8e76485c820e0b05"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/lipophilicity_astrazeneca/train.csv",
+      "sha256": "0049aa6d5b56d2f8c22e475b11b837ebfa86536d0c8ede06d432e854fb9d83d3"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/lipophilicity_astrazeneca/valid.csv",
+      "sha256": "5dd44fdbcefd3dc94de24479f557c3fa6f1e4f69094f2161173b005cb6da5b01"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/pgp_broccatelli/train.csv",
+      "sha256": "6eb86ba5d8cfa87b8d0950d55e8054586994ea21c8b59e461743117ffe8a9a46"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/pgp_broccatelli/valid.csv",
+      "sha256": "9e10c20d5e373547c69ffb5db88c6bece98a6da079f86314147b492fb78b0f57"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/ppbr_az/train.csv",
+      "sha256": "92842d88cc0f9fe41a14d1effcf1f3a23d0a6415df4d6e615af6458dc6de8281"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/ppbr_az/valid.csv",
+      "sha256": "c1effe3ddc607ce177d59c1f5eebb9466a96f714edbf34f6f4f725988640cb36"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/solubility_aqsoldb/train.csv",
+      "sha256": "744ee3d69e3f0d9230894a62a95bc64ea15b2d6d44f1a5fb890c5c3260ce89c2"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/solubility_aqsoldb/valid.csv",
+      "sha256": "576ef180e4c3ab36853708e092bb8a1da7178a0a0456ef7bbfc41e4e9ec97817"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/vdss_lombardo/train.csv",
+      "sha256": "246dd203c300181b1df73c90cb349a0db1a1bd848dfa32895222cd4d4d89bc94"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/vdss_lombardo/valid.csv",
+      "sha256": "572d0d7b72016acc9feefcb0d1652d0c356cf304fb71fd123652cca3fbbe0661"
+    }
+  ]
+}

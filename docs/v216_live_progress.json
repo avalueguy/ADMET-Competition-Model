@@ -1,0 +1,1395 @@
+{
+  "checked_at_utc": "2026-10-29T05:34:08.609654+00:00",
+  "checked_at_hong_kong": "2026-10-29 13:34:08",
+  "training_version": "v216",
+  "delivery_version": "v217",
+  "evaluated_development_tasks": 21,
+  "completed_development_model_tasks": 21,
+  "total_tasks": 21,
+  "saved_development_models": 84,
+  "planned_development_models": 84,
+  "completed_development_partitions": 42,
+  "processes": {
+    "training": {
+      "pid": 5795,
+      "exists": false,
+      "sampled_cpu_percent": null
+    },
+    "pipeline": {
+      "pid": 5796,
+      "exists": false
+    },
+    "coordinator": {
+      "pid": 5827,
+      "exists": false
+    },
+    "workers": [
+      {
+        "pid": 5836,
+        "exists": false,
+        "tasks": [
+          "bbb_martins",
+          "solubility_aqsoldb",
+          "cyp3a4_veith",
+          "cyp3a4_substrate_carbonmangels",
+          "cyp2d6_veith",
+          "ld50_zhu",
+          "half_life_obach"
+        ],
+        "sampled_cpu_percent": null
+      },
+      {
+        "pid": 5837,
+        "exists": false,
+        "tasks": [
+          "ames",
+          "pgp_broccatelli",
+          "clearance_microsome_az",
+          "dili",
+          "cyp2c9_veith",
+          "lipophilicity_astrazeneca",
+          "cyp2c9_substrate_carbonmangels"
+        ],
+        "sampled_cpu_percent": null
+      },
+      {
+        "pid": 5838,
+        "exists": false,
+        "tasks": [
+          "clearance_hepatocyte_az",
+          "cyp2d6_substrate_carbonmangels",
+          "caco2_wang",
+          "vdss_lombardo",
+          "ppbr_az",
+          "bioavailability_ma"
+        ],
+        "sampled_cpu_percent": null
+      }
+    ]
+  },
+  "scheduling": {
+    "status": "PRECOMPUTE_COMPLETE_ORIGINAL_RESUMED",
+    "started_at_utc": "2026-10-29T03:53:51.105625+00:00",
+    "coordinator_pid": 5827,
+    "main_pid": 5795,
+    "main_temporarily_stopped": false,
+    "signature": "9925dd5b16b5306492a6f85b869ae05b816f621bcfbab785b80fbac970428f2e",
+    "source_sha256": "58c7d6d51a72493dd29444c271c82b8c121ec5771e0f0023f56eb995e3d71305",
+    "tasks": [
+      "bbb_martins",
+      "ames",
+      "clearance_hepatocyte_az",
+      "solubility_aqsoldb",
+      "pgp_broccatelli",
+      "cyp2d6_substrate_carbonmangels",
+      "cyp3a4_veith",
+      "clearance_microsome_az",
+      "caco2_wang",
+      "cyp3a4_substrate_carbonmangels",
+      "dili",
+      "vdss_lombardo",
+      "cyp2d6_veith",
+      "cyp2c9_veith",
+      "ppbr_az",
+      "ld50_zhu",
+      "lipophilicity_astrazeneca",
+      "bioavailability_ma",
+      "half_life_obach",
+      "cyp2c9_substrate_carbonmangels"
+    ],
+    "workers": [
+      {
+        "pid": 5836,
+        "tasks": [
+          "bbb_martins",
+          "solubility_aqsoldb",
+          "cyp3a4_veith",
+          "cyp3a4_substrate_carbonmangels",
+          "cyp2d6_veith",
+          "ld50_zhu",
+          "half_life_obach"
+        ],
+        "log": "v219_worker_0.log"
+      },
+      {
+        "pid": 5837,
+        "tasks": [
+          "ames",
+          "pgp_broccatelli",
+          "clearance_microsome_az",
+          "dili",
+          "cyp2c9_veith",
+          "lipophilicity_astrazeneca",
+          "cyp2c9_substrate_carbonmangels"
+        ],
+        "log": "v219_worker_1.log"
+      },
+      {
+        "pid": 5838,
+        "tasks": [
+          "clearance_hepatocyte_az",
+          "cyp2d6_substrate_carbonmangels",
+          "caco2_wang",
+          "vdss_lombardo",
+          "ppbr_az",
+          "bioavailability_ma"
+        ],
+        "log": "v219_worker_2.log"
+      }
+    ],
+    "concurrent_model_fits": 3,
+    "threads_per_model": 4,
+    "max_cpu_threads": 12,
+    "configuration_or_validation_changed": false,
+    "confirmation_observed": false,
+    "finished_at_utc": "2026-10-29T05:05:49.611410+00:00",
+    "worker_exit_codes": {
+      "5836": 0,
+      "5837": 0,
+      "5838": 0
+    }
+  },
+  "cpu_quota": "1400000 100000",
+  "gpu": {
+    "status": "MEASURED",
+    "utilization_percent": 0,
+    "memory_mib": 0
+  },
+  "frozen_selection": {
+    "signature": "9925dd5b16b5306492a6f85b869ae05b816f621bcfbab785b80fbac970428f2e",
+    "selected": [
+      {
+        "task": "cyp3a4_substrate_carbonmangels",
+        "metric": "AUROC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 156,
+            "baseline": 0.748671096345515,
+            "expert": 0.7225913621262459,
+            "candidate": 0.754734219269103,
+            "gain": 0.006063122923588016
+          },
+          {
+            "part": "fold1",
+            "rows": 156,
+            "baseline": 0.6742748846407383,
+            "expert": 0.7099538562953197,
+            "candidate": 0.6905899802241265,
+            "gain": 0.016315095583388284
+          }
+        ],
+        "objective": 0.006063122923588016
+      },
+      {
+        "task": "cyp2c9_substrate_carbonmangels",
+        "metric": "AUPRC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 156,
+            "baseline": 0.40104854978772664,
+            "expert": 0.40762847958100834,
+            "candidate": 0.41796476633249724,
+            "gain": 0.0169162165447706
+          },
+          {
+            "part": "fold1",
+            "rows": 156,
+            "baseline": 0.49408588616603144,
+            "expert": 0.43667631999218764,
+            "candidate": 0.4987069116142101,
+            "gain": 0.004621025448178662
+          }
+        ],
+        "objective": 0.004621025448178662
+      }
+    ]
+  },
+  "sampled_total_training_cpu_percent": 0,
+  "total_memory_gib": 0.7,
+  "completed_partition_seconds": {
+    "median": 290.0,
+    "maximum": 4603
+  },
+  "tasks": [
+    {
+      "task": "herg",
+      "name": "hERG心脏毒性",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "herg",
+        "metric": "AUROC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 152,
+            "baseline": 0.8444511217948719,
+            "expert": 0.8219150641025641,
+            "candidate": 0.8447516025641025,
+            "gain": 0.0003004807692306155
+          },
+          {
+            "part": "fold1",
+            "rows": 152,
+            "baseline": 0.85125,
+            "expert": 0.8288461538461538,
+            "candidate": 0.8514423076923078,
+            "gain": 0.00019230769230782485
+          }
+        ],
+        "objective": 0.00019230769230782485
+      },
+      "confirmation": null,
+      "train_seconds": 4883
+    },
+    {
+      "task": "bbb_martins",
+      "name": "血脑屏障",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "bbb_martins",
+        "metric": "AUROC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.45,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 474,
+            "baseline": 0.9241183332092423,
+            "expert": 0.9210036482763756,
+            "candidate": 0.9251358796813342,
+            "gain": 0.001017546472091846
+          },
+          {
+            "part": "fold1",
+            "rows": 474,
+            "baseline": 0.9502310700319943,
+            "expert": 0.945609669392108,
+            "candidate": 0.9518718039869833,
+            "gain": 0.0016407339549890931
+          }
+        ],
+        "objective": 0.001017546472091846
+      },
+      "confirmation": null,
+      "train_seconds": 454
+    },
+    {
+      "task": "ames",
+      "name": "AMES致突变",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "ames",
+        "metric": "AUROC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 1561,
+            "baseline": 0.8673850574712644,
+            "expert": 0.8508853232343366,
+            "candidate": 0.8682413128695767,
+            "gain": 0.0008562553983123555
+          },
+          {
+            "part": "fold1",
+            "rows": 1562,
+            "baseline": 0.8612499835761867,
+            "expert": 0.84845419070018,
+            "candidate": 0.8630804175590271,
+            "gain": 0.0018304339828404403
+          }
+        ],
+        "objective": 0.0008562553983123555
+      },
+      "confirmation": null,
+      "train_seconds": 531
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "name": "肝细胞清除率",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "clearance_hepatocyte_az",
+        "metric": "Spearman",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 282,
+            "baseline": 0.5727558332909924,
+            "expert": 0.5810034663870223,
+            "candidate": 0.586601687702764,
+            "gain": 0.013845854411771552
+          },
+          {
+            "part": "fold1",
+            "rows": 283,
+            "baseline": 0.575230994148768,
+            "expert": 0.5232881930237693,
+            "candidate": 0.5774030508484711,
+            "gain": 0.0021720566997031066
+          }
+        ],
+        "objective": 0.0021720566997031066
+      },
+      "confirmation": null,
+      "train_seconds": 405
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "name": "溶解度",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "solubility_aqsoldb",
+        "metric": "MAE",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 1635,
+            "baseline": 0.7675069205648937,
+            "expert": 0.8617447262614791,
+            "candidate": 0.7729330135237321,
+            "gain": -0.007069764211174515
+          },
+          {
+            "part": "fold1",
+            "rows": 1635,
+            "baseline": 0.7502386159917903,
+            "expert": 0.8276733703112471,
+            "candidate": 0.7554206664815629,
+            "gain": -0.006907203094207711
+          }
+        ],
+        "objective": -0.007069764211174515
+      },
+      "confirmation": null,
+      "train_seconds": 602
+    },
+    {
+      "task": "pgp_broccatelli",
+      "name": "P-gp抑制",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "pgp_broccatelli",
+        "metric": "AUROC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 283,
+            "baseline": 0.9482403217697336,
+            "expert": 0.9426344896933131,
+            "candidate": 0.9492207139265962,
+            "gain": 0.0009803921568626306
+          },
+          {
+            "part": "fold1",
+            "rows": 284,
+            "baseline": 0.9021671826625387,
+            "expert": 0.9018059855521156,
+            "candidate": 0.9039215686274509,
+            "gain": 0.0017543859649121751
+          }
+        ],
+        "objective": 0.0009803921568626306
+      },
+      "confirmation": null,
+      "train_seconds": 397
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "name": "CYP2D6底物",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "cyp2d6_substrate_carbonmangels",
+        "metric": "AUPRC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.45,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 155,
+            "baseline": 0.5853759302529222,
+            "expert": 0.6099510602435303,
+            "candidate": 0.6234474880404723,
+            "gain": 0.038071557787550114
+          },
+          {
+            "part": "fold1",
+            "rows": 155,
+            "baseline": 0.6436233712598691,
+            "expert": 0.6114656504905522,
+            "candidate": 0.6265729992188602,
+            "gain": -0.0170503720410089
+          }
+        ],
+        "objective": -0.0170503720410089
+      },
+      "confirmation": null,
+      "train_seconds": 592
+    },
+    {
+      "task": "cyp3a4_veith",
+      "name": "CYP3A4抑制",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "cyp3a4_veith",
+        "metric": "AUPRC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 2876,
+            "baseline": 0.8711275258382954,
+            "expert": 0.8529901190383751,
+            "candidate": 0.8730167635147199,
+            "gain": 0.00188923767642446
+          },
+          {
+            "part": "fold1",
+            "rows": 2876,
+            "baseline": 0.879519641716686,
+            "expert": 0.8662228246021784,
+            "candidate": 0.881036858361379,
+            "gain": 0.0015172166446930646
+          }
+        ],
+        "objective": 0.0015172166446930646
+      },
+      "confirmation": null,
+      "train_seconds": 756
+    },
+    {
+      "task": "clearance_microsome_az",
+      "name": "肝微粒体清除率",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "clearance_microsome_az",
+        "metric": "Spearman",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 256,
+            "baseline": 0.7019076327178516,
+            "expert": 0.6765923541585223,
+            "candidate": 0.7082098158874955,
+            "gain": 0.006302183169643927
+          },
+          {
+            "part": "fold1",
+            "rows": 257,
+            "baseline": 0.5046604490997971,
+            "expert": 0.4458093390988821,
+            "candidate": 0.49590194923635134,
+            "gain": -0.00875849986344579
+          }
+        ],
+        "objective": -0.00875849986344579
+      },
+      "confirmation": null,
+      "train_seconds": 384
+    },
+    {
+      "task": "caco2_wang",
+      "name": "Caco-2通透性",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "caco2_wang",
+        "metric": "MAE",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 212,
+            "baseline": 0.38815645870734267,
+            "expert": 0.43312780354097036,
+            "candidate": 0.39573005590073795,
+            "gain": -0.019511712412611258
+          },
+          {
+            "part": "fold1",
+            "rows": 212,
+            "baseline": 0.3348527606452333,
+            "expert": 0.3680469742576551,
+            "candidate": 0.33755202974800175,
+            "gain": -0.008061062711763817
+          }
+        ],
+        "objective": -0.019511712412611258
+      },
+      "confirmation": null,
+      "train_seconds": 608
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "name": "CYP3A4底物",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "完整确认未通过",
+      "saved_confirmation_and_final_models": 4,
+      "development": {
+        "task": "cyp3a4_substrate_carbonmangels",
+        "metric": "AUROC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 156,
+            "baseline": 0.748671096345515,
+            "expert": 0.7225913621262459,
+            "candidate": 0.754734219269103,
+            "gain": 0.006063122923588016
+          },
+          {
+            "part": "fold1",
+            "rows": 156,
+            "baseline": 0.6742748846407383,
+            "expert": 0.7099538562953197,
+            "candidate": 0.6905899802241265,
+            "gain": 0.016315095583388284
+          }
+        ],
+        "objective": 0.006063122923588016
+      },
+      "confirmation": {
+        "task": "cyp3a4_substrate_carbonmangels",
+        "metric": "AUROC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 156,
+            "baseline": 0.748671096345515,
+            "expert": 0.7225913621262459,
+            "candidate": 0.754734219269103,
+            "gain": 0.006063122923588016
+          },
+          {
+            "part": "fold1",
+            "rows": 156,
+            "baseline": 0.6742748846407383,
+            "expert": 0.7099538562953197,
+            "candidate": 0.6905899802241265,
+            "gain": 0.016315095583388284
+          }
+        ],
+        "objective": 0.006063122923588016,
+        "confirmation": [
+          {
+            "part": "fold0",
+            "rows": 156,
+            "baseline": 0.748671096345515,
+            "expert": 0.7225913621262459,
+            "candidate": 0.754734219269103,
+            "gain": 0.006063122923588016
+          },
+          {
+            "part": "fold1",
+            "rows": 156,
+            "baseline": 0.6742748846407383,
+            "expert": 0.7099538562953197,
+            "candidate": 0.6905899802241265,
+            "gain": 0.016315095583388284
+          },
+          {
+            "part": "fold2",
+            "rows": 156,
+            "baseline": 0.660608552631579,
+            "expert": 0.6680921052631579,
+            "candidate": 0.6661184210526315,
+            "gain": 0.0055098684210524995
+          },
+          {
+            "part": "valid",
+            "rows": 67,
+            "baseline": 0.7051971326164874,
+            "expert": 0.7195340501792115,
+            "candidate": 0.7155017921146953,
+            "gain": 0.010304659498207913
+          }
+        ],
+        "bootstrap": [
+          {
+            "part": "fold2",
+            "groups": 115,
+            "gain_ci90": [
+              -0.004697536819088116,
+              0.016361606623718005
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 50,
+            "gain_ci90": [
+              -0.009146825396825368,
+              0.032231132231132255
+            ],
+            "lower_positive": false
+          }
+        ],
+        "accepted": false
+      },
+      "train_seconds": 604
+    },
+    {
+      "task": "dili",
+      "name": "肝损伤DILI",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "dili",
+        "metric": "AUROC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 110,
+            "baseline": 0.8956172632987621,
+            "expert": 0.869187019069923,
+            "candidate": 0.8986283037805286,
+            "gain": 0.0030110404817664804
+          },
+          {
+            "part": "fold1",
+            "rows": 111,
+            "baseline": 0.8636968085106383,
+            "expert": 0.8447473404255319,
+            "candidate": 0.8661901595744681,
+            "gain": 0.002493351063829752
+          }
+        ],
+        "objective": 0.002493351063829752
+      },
+      "confirmation": null,
+      "train_seconds": 489
+    },
+    {
+      "task": "vdss_lombardo",
+      "name": "分布容积VDSS",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "vdss_lombardo",
+        "metric": "Spearman",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 263,
+            "baseline": 0.6991369429686888,
+            "expert": 0.665441541697482,
+            "candidate": 0.6972446512851459,
+            "gain": -0.0018922916835428794
+          },
+          {
+            "part": "fold1",
+            "rows": 264,
+            "baseline": 0.7317602544137639,
+            "expert": 0.7075297305793792,
+            "candidate": 0.7316768385808358,
+            "gain": -8.341583292814647e-05
+          }
+        ],
+        "objective": -0.0018922916835428794
+      },
+      "confirmation": null,
+      "train_seconds": 466
+    },
+    {
+      "task": "cyp2d6_veith",
+      "name": "CYP2D6抑制",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "cyp2d6_veith",
+        "metric": "AUPRC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 3064,
+            "baseline": 0.6999346265484578,
+            "expert": 0.6580476628864289,
+            "candidate": 0.7004772374114223,
+            "gain": 0.0005426108629644766
+          },
+          {
+            "part": "fold1",
+            "rows": 3063,
+            "baseline": 0.7222338283602908,
+            "expert": 0.6823623381139851,
+            "candidate": 0.7221432614821369,
+            "gain": -9.056687815389708e-05
+          }
+        ],
+        "objective": -9.056687815389708e-05
+      },
+      "confirmation": null,
+      "train_seconds": 782
+    },
+    {
+      "task": "cyp2c9_veith",
+      "name": "CYP2C9抑制",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "cyp2c9_veith",
+        "metric": "AUPRC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 2821,
+            "baseline": 0.8498539291362396,
+            "expert": 0.8112251879098371,
+            "candidate": 0.8472249229253173,
+            "gain": -0.0026290062109223244
+          },
+          {
+            "part": "fold1",
+            "rows": 2821,
+            "baseline": 0.8133401115977079,
+            "expert": 0.8100341109432965,
+            "candidate": 0.8179315159864579,
+            "gain": 0.004591404388749942
+          }
+        ],
+        "objective": -0.0026290062109223244
+      },
+      "confirmation": null,
+      "train_seconds": 761
+    },
+    {
+      "task": "ppbr_az",
+      "name": "血浆蛋白结合率",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "ppbr_az",
+        "metric": "MAE",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 650,
+            "baseline": 8.068577292713924,
+            "expert": 9.364821186564773,
+            "candidate": 8.142107304533935,
+            "gain": -0.009113132235395512
+          },
+          {
+            "part": "fold1",
+            "rows": 651,
+            "baseline": 7.585961846123768,
+            "expert": 8.465580405937528,
+            "candidate": 7.598206001145191,
+            "gain": -0.0016140543901732942
+          }
+        ],
+        "objective": -0.009113132235395512
+      },
+      "confirmation": null,
+      "train_seconds": 445
+    },
+    {
+      "task": "ld50_zhu",
+      "name": "急性毒性LD50",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "ld50_zhu",
+        "metric": "MAE",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 1210,
+            "baseline": 0.4642859078866628,
+            "expert": 0.4970782079125378,
+            "candidate": 0.46312026112582017,
+            "gain": 0.00251062274568794
+          },
+          {
+            "part": "fold1",
+            "rows": 1210,
+            "baseline": 0.534364444193799,
+            "expert": 0.5750834447567272,
+            "candidate": 0.5374118001769473,
+            "gain": -0.005702767121315287
+          }
+        ],
+        "objective": -0.005702767121315287
+      },
+      "confirmation": null,
+      "train_seconds": 483
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "name": "脂溶性",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "lipophilicity_astrazeneca",
+        "metric": "MAE",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 980,
+            "baseline": 0.4900050804950242,
+            "expert": 0.6203852068962271,
+            "candidate": 0.5010908443220741,
+            "gain": -0.022623773238943826
+          },
+          {
+            "part": "fold1",
+            "rows": 980,
+            "baseline": 0.47650922350658986,
+            "expert": 0.5655350983605232,
+            "candidate": 0.4755684279759726,
+            "gain": 0.001974349045531657
+          }
+        ],
+        "objective": -0.022623773238943826
+      },
+      "confirmation": null,
+      "train_seconds": 487
+    },
+    {
+      "task": "bioavailability_ma",
+      "name": "生物利用度",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "bioavailability_ma",
+        "metric": "AUROC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 150,
+            "baseline": 0.7173721340388007,
+            "expert": 0.6803350970017636,
+            "candidate": 0.7163800705467372,
+            "gain": -0.0009920634920634885
+          },
+          {
+            "part": "fold1",
+            "rows": 149,
+            "baseline": 0.7583485124468732,
+            "expert": 0.7504553734061931,
+            "candidate": 0.7686703096539163,
+            "gain": 0.01032179720704307
+          }
+        ],
+        "objective": -0.0009920634920634885
+      },
+      "confirmation": null,
+      "train_seconds": 599
+    },
+    {
+      "task": "half_life_obach",
+      "name": "半衰期",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发未通过",
+      "saved_confirmation_and_final_models": 0,
+      "development": {
+        "task": "half_life_obach",
+        "metric": "Spearman",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 155,
+            "baseline": 0.5749026026062931,
+            "expert": 0.5346858456219737,
+            "candidate": 0.5765617222947117,
+            "gain": 0.0016591196884185866
+          },
+          {
+            "part": "fold1",
+            "rows": 155,
+            "baseline": 0.6039670343812906,
+            "expert": 0.5406142042912203,
+            "candidate": 0.6011305498552817,
+            "gain": -0.002836484526008931
+          }
+        ],
+        "objective": -0.002836484526008931
+      },
+      "confirmation": null,
+      "train_seconds": 620
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "name": "CYP2C9底物",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "完整确认未通过",
+      "saved_confirmation_and_final_models": 4,
+      "development": {
+        "task": "cyp2c9_substrate_carbonmangels",
+        "metric": "AUPRC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 156,
+            "baseline": 0.40104854978772664,
+            "expert": 0.40762847958100834,
+            "candidate": 0.41796476633249724,
+            "gain": 0.0169162165447706
+          },
+          {
+            "part": "fold1",
+            "rows": 156,
+            "baseline": 0.49408588616603144,
+            "expert": 0.43667631999218764,
+            "candidate": 0.4987069116142101,
+            "gain": 0.004621025448178662
+          }
+        ],
+        "objective": 0.004621025448178662
+      },
+      "confirmation": {
+        "task": "cyp2c9_substrate_carbonmangels",
+        "metric": "AUPRC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 156,
+            "baseline": 0.40104854978772664,
+            "expert": 0.40762847958100834,
+            "candidate": 0.41796476633249724,
+            "gain": 0.0169162165447706
+          },
+          {
+            "part": "fold1",
+            "rows": 156,
+            "baseline": 0.49408588616603144,
+            "expert": 0.43667631999218764,
+            "candidate": 0.4987069116142101,
+            "gain": 0.004621025448178662
+          }
+        ],
+        "objective": 0.004621025448178662,
+        "confirmation": [
+          {
+            "part": "fold0",
+            "rows": 156,
+            "baseline": 0.40104854978772664,
+            "expert": 0.40762847958100834,
+            "candidate": 0.41796476633249724,
+            "gain": 0.0169162165447706
+          },
+          {
+            "part": "fold1",
+            "rows": 156,
+            "baseline": 0.49408588616603144,
+            "expert": 0.43667631999218764,
+            "candidate": 0.4987069116142101,
+            "gain": 0.004621025448178662
+          },
+          {
+            "part": "fold2",
+            "rows": 155,
+            "baseline": 0.4542813181732907,
+            "expert": 0.36651315934161854,
+            "candidate": 0.4466699019814597,
+            "gain": -0.0076114161918309775
+          },
+          {
+            "part": "valid",
+            "rows": 67,
+            "baseline": 0.6520344239094239,
+            "expert": 0.4566729648610631,
+            "candidate": 0.6394884689065724,
+            "gain": -0.012545955002851494
+          }
+        ],
+        "bootstrap": [
+          {
+            "part": "fold2",
+            "groups": 92,
+            "gain_ci90": [
+              -0.057744040049390155,
+              0.010533213645699202
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 50,
+            "gain_ci90": [
+              -0.06654248366013064,
+              0.013333333333333313
+            ],
+            "lower_positive": false
+          }
+        ],
+        "accepted": false
+      },
+      "train_seconds": 604
+    }
+  ],
+  "failure": null,
+  "scheduler_failure": null,
+  "pipeline": {
+    "status": "COMPLETE",
+    "submission_created": false,
+    "official_score": null,
+    "automatically_uploaded": false
+  },
+  "confirmation": {
+    "status": "COMPLETE",
+    "signature": "9925dd5b16b5306492a6f85b869ae05b816f621bcfbab785b80fbac970428f2e",
+    "records": [
+      {
+        "task": "cyp3a4_substrate_carbonmangels",
+        "metric": "AUROC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 156,
+            "baseline": 0.748671096345515,
+            "expert": 0.7225913621262459,
+            "candidate": 0.754734219269103,
+            "gain": 0.006063122923588016
+          },
+          {
+            "part": "fold1",
+            "rows": 156,
+            "baseline": 0.6742748846407383,
+            "expert": 0.7099538562953197,
+            "candidate": 0.6905899802241265,
+            "gain": 0.016315095583388284
+          }
+        ],
+        "objective": 0.006063122923588016,
+        "confirmation": [
+          {
+            "part": "fold0",
+            "rows": 156,
+            "baseline": 0.748671096345515,
+            "expert": 0.7225913621262459,
+            "candidate": 0.754734219269103,
+            "gain": 0.006063122923588016
+          },
+          {
+            "part": "fold1",
+            "rows": 156,
+            "baseline": 0.6742748846407383,
+            "expert": 0.7099538562953197,
+            "candidate": 0.6905899802241265,
+            "gain": 0.016315095583388284
+          },
+          {
+            "part": "fold2",
+            "rows": 156,
+            "baseline": 0.660608552631579,
+            "expert": 0.6680921052631579,
+            "candidate": 0.6661184210526315,
+            "gain": 0.0055098684210524995
+          },
+          {
+            "part": "valid",
+            "rows": 67,
+            "baseline": 0.7051971326164874,
+            "expert": 0.7195340501792115,
+            "candidate": 0.7155017921146953,
+            "gain": 0.010304659498207913
+          }
+        ],
+        "bootstrap": [
+          {
+            "part": "fold2",
+            "groups": 115,
+            "gain_ci90": [
+              -0.004697536819088116,
+              0.016361606623718005
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 50,
+            "gain_ci90": [
+              -0.009146825396825368,
+              0.032231132231132255
+            ],
+            "lower_positive": false
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "cyp2c9_substrate_carbonmangels",
+        "metric": "AUPRC",
+        "config": {
+          "depth": 5,
+          "trees": 700
+        },
+        "weight": 0.2,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 156,
+            "baseline": 0.40104854978772664,
+            "expert": 0.40762847958100834,
+            "candidate": 0.41796476633249724,
+            "gain": 0.0169162165447706
+          },
+          {
+            "part": "fold1",
+            "rows": 156,
+            "baseline": 0.49408588616603144,
+            "expert": 0.43667631999218764,
+            "candidate": 0.4987069116142101,
+            "gain": 0.004621025448178662
+          }
+        ],
+        "objective": 0.004621025448178662,
+        "confirmation": [
+          {
+            "part": "fold0",
+            "rows": 156,
+            "baseline": 0.40104854978772664,
+            "expert": 0.40762847958100834,
+            "candidate": 0.41796476633249724,
+            "gain": 0.0169162165447706
+          },
+          {
+            "part": "fold1",
+            "rows": 156,
+            "baseline": 0.49408588616603144,
+            "expert": 0.43667631999218764,
+            "candidate": 0.4987069116142101,
+            "gain": 0.004621025448178662
+          },
+          {
+            "part": "fold2",
+            "rows": 155,
+            "baseline": 0.4542813181732907,
+            "expert": 0.36651315934161854,
+            "candidate": 0.4466699019814597,
+            "gain": -0.0076114161918309775
+          },
+          {
+            "part": "valid",
+            "rows": 67,
+            "baseline": 0.6520344239094239,
+            "expert": 0.4566729648610631,
+            "candidate": 0.6394884689065724,
+            "gain": -0.012545955002851494
+          }
+        ],
+        "bootstrap": [
+          {
+            "part": "fold2",
+            "groups": 92,
+            "gain_ci90": [
+              -0.057744040049390155,
+              0.010533213645699202
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 50,
+            "gain_ci90": [
+              -0.06654248366013064,
+              0.013333333333333313
+            ],
+            "lower_positive": false
+          }
+        ],
+        "accepted": false
+      }
+    ],
+    "accepted": []
+  },
+  "csv_created": false,
+  "automatic_submission": false,
+  "official_best": 51.166,
+  "limitation": "Saved models and development gains are local evidence; no official improvement or final eligibility implied."
+}

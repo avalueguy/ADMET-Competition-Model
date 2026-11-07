@@ -1,0 +1,62 @@
+{
+  "status": "FROZEN_BEFORE_SMOKE_AND_TRAINING",
+  "created_at_utc": "2026-10-31T06:12:02.228269+00:00",
+  "files": [
+    {
+      "path": "tools/v289_stereo_schema_fix.py",
+      "sha256": "a3fdc68e3bf83964c9b24f6c717869296a0527fdbdd8be857f2db7a0c75bc37b"
+    },
+    {
+      "path": "tools/v290_verify_stereo_schema_fix.py",
+      "sha256": "acb4219a5603a0b1c55971353bc19fb54cb8c905df895e88aaaccd01ebb46a5b"
+    },
+    {
+      "path": "tools/v291_package_stereo_schema_fix.py",
+      "sha256": "97abd0b6db711c9dadf6b0e78022bcdf78bac169592ad162db2fa3d05c67fa96"
+    },
+    {
+      "path": "tools/v292_stereo_schema_driver.py",
+      "sha256": "21f7f3459f32682eff6381da30160a8196c17c295a4d63b746901e4b8eb7b219"
+    },
+    {
+      "path": "tools/v293_start_stereo_schema_fix.py",
+      "sha256": "893f25463bbd57ca805e3eb77047da44e329beb22c9d891d7e8a59a9cd5356b6"
+    },
+    {
+      "path": "tools/finalize_v290_local.py",
+      "sha256": "25bba3738c547bd17684adff41427ab4740a14c13e534d53196324610f068be7"
+    },
+    {
+      "path": "tools/prepare_v289_schema_fix.py",
+      "sha256": "6e12aa3e36e3dfa754e53774052468b30c32215c5f68bca66c8573d52f4c6ce3"
+    },
+    {
+      "path": "docs/v289_schema_defect_review.json",
+      "sha256": "6476cc2ba2bde5ef1b51ccff13815dd229b0b6921983c556904dc957a9db6bfd"
+    },
+    {
+      "path": "docs/v289_training_plan.json",
+      "sha256": "13e31158c0e1b707e4706738f08033e7f281bd2ca3a9c53211fe51f53f9abffd"
+    },
+    {
+      "path": "docs/v289_source_review.json",
+      "sha256": "78d2f48ae9a6bceb129936223b361028f6821d9935b42a9184cb3ac2e6331589"
+    },
+    {
+      "path": "docs/v289_original_models.json",
+      "sha256": "ee8feae52c4ed6b4b3cf2e8a6f34920a63b16de292d7df925993899dffc39807"
+    },
+    {
+      "path": "tools/v148_experiment_runner.py",
+      "sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871"
+    },
+    {
+      "path": "docs/v283_review_decision.json",
+      "sha256": "f3cee5c4d5f8c10ee9d11ca4c70a2584ea155a5e82d4761048062f77e4cd99e9"
+    },
+    {
+      "path": "docs/v283_stereochemical_context_audit.json",
+      "sha256": "d0825f35c3249996b9168c01979720d1c4753ae056551e33abb8dfed9b0ec747"
+    }
+  ]
+}

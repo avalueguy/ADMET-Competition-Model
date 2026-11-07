@@ -1,0 +1,23 @@
+{
+  "version": "v321",
+  "status": "USER_AUTHORIZED_EXPERIMENTAL_FINAL_TRAINING_PREDECLARED",
+  "date_hong_kong": "2026-11-01",
+  "user_authorized_experimental_csv": true,
+  "user_choice": "另做实验 CSV 手动测试",
+  "purpose": "One experimental manual official test of frozen v315 CYP3A4 substrate which has four positive point gains but failed confidence support. Preserve strict rejection.",
+  "strict_gate_pass": false,
+  "task": "cyp3a4_substrate_carbonmangels",
+  "weight": 0.2,
+  "seeds": [3041101, 3041102],
+  "source_sha256": "d24e4f0eb0cdfea9900e43d53ef9fd478791bbbb2608ecc950ff4691d5088f20",
+  "model_source_sha256": "329a2ddc45acaaeabe5558761fc8041bacc879ad4cff13143483ba2e986e4737",
+  "runner_sha256": "b01f7fd2512c88cf9d40fedd9a0b4b764597fc872240c51996fff6d8a8e60dce",
+  "baseline": "v313",
+  "baseline_sha256": "681e9d23100c7ea39b4e6003dd6de4fac738bc467254782b7b8c4b7bc1d2941b",
+  "official_best_user_reported": 51.205,
+  "no_retuning": true,
+  "strict_confirmation_remains_rejected": true,
+  "manual_submission_only": true,
+  "official_score_unknown": true,
+  "target_score": 52.0
+}

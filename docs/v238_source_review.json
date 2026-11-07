@@ -1,0 +1,18 @@
+{
+  "status": "STATIC_REVIEW_PASS_SMOKE_REQUIRED",
+  "source_sha256": "530a5109eab332f4cd35b1c891be57bf784fd016e683d1b58ac7778c49b459a9",
+  "checks": [
+    "Targetexcludedcontextsourceonlytrain(nonfinal)",
+    "Fit-onlyfeaturescalingandnativeMAE/ranktargets",
+    "No oldpredictionfeaturesorpretrainedweight",
+    "Attentionbetweenviewtokensnotmoleculebatch;queryrowsindependent",
+    "Allparametersseeds/stepcountsdeclaredbeforedevelopment",
+    "No queryearlystop/originalv148gatesunchanged/manualdelivery"
+  ],
+  "smoke_required": [
+    "3metrictypesquery/nonfitlabelperturbation",
+    "ActualCUDAgradient/updatefinite",
+    "CPUfloat64savedmodelreplay",
+    "queryroworder"
+  ]
+}

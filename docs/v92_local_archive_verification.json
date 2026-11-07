@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v92_full_kernel_20261025",
+  "archive_sha256": "c346053b404d5c3b21fdc7121d25a3ee43bf616fb40602ba77339abfe387700f",
+  "manifest_files": 233,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 224,
+  "existing_exact": 9,
+  "existing_updated_docs_preserved": []
+}

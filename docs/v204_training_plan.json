@@ -1,0 +1,48 @@
+{
+  "version": "v204",
+  "delivery_version": "v205",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-28T07:34:27.400455+00:00",
+  "source_sha256": "9219cf7d535cf3cc606c0e557213b5943dd2f149bcbee0ba2e42c377b8c446f9",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "model": "Clamped graph label diffusion with unlabeled query structures",
+  "distinct_from_completed_routes": "Sparse graph boundary-value solution, not boosted neighbor summary features (v149), supervised graph neural networks, SVM geometry (v157), or additive regression.",
+  "tasks": "All21 improvable endpoints, weak official scores first, HIA protected",
+  "configs": [
+    {
+      "alpha": 0.8
+    },
+    {
+      "alpha": 0.95
+    }
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "graph": {
+    "neighbors": 32,
+    "symmetrize": "mean",
+    "affinity": ".75 mean six countTanimoto + .25 augmented descriptorRBF, fourth power",
+    "structure_scope": "Current fit and current query structures only; all query labels absent",
+    "deterministic_ties": "Stable descending sort by row order"
+  },
+  "equation": "f_query = alpha P_QF y_fit + alpha P_QQ f_query + (1-alpha*row_mass) fit_prior",
+  "preprocessing": "Fit-only descriptor median/scaling/active/missing columns; target median/IQR or fit ranknormal",
+  "selection": "Unchanged v148 maxminimum fold0/1, all choices frozen before fold2/valid; no fallback",
+  "confirmation": "All4 point gains>0; metric practical threshold; both paired scaffold bootstrap90 lower bounds>0",
+  "tests_before_training": [
+    "Tiny dense reference solution",
+    "Isolated node prior",
+    "Maximum principle and linear residual",
+    "Query-label perturbation exact invariance on AUROC/MAE/Spearman"
+  ],
+  "verification": "Independent graph reconstruction and serialized state reload; same final gates and fusion/byte-level local finalizer",
+  "max_linear_residual": "1e-10*(1+max(abs(rhs)))",
+  "source_immutable_after_start": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "official_gain_guaranteed": false,
+  "limitations": "Query covariate transduction disclosed; repeated public label use and historical approximate upstream controls; no official improvement estimate."
+}

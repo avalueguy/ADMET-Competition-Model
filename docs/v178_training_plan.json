@@ -1,0 +1,33 @@
+{
+  "version": "v178",
+  "delivery_version": "v179",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "source_sha256": "24d8fa5854aa26859e6c737a0cda76be5d1d7606ce0431da3df4e0811e7b8777",
+  "direction": "Frozen globally query-excluded v175 graph/fingerprint encoder embeddings followed by endpoint-specific gradient boosting",
+  "configs": [
+    {
+      "depth": 3,
+      "trees": 800
+    },
+    {
+      "depth": 6,
+      "trees": 1000
+    }
+  ],
+  "seeds": [
+    1784026,
+    1784027
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "selection": "Unchanged v148 fold0/1 maximum minimum gain; frozen before confirmation; no fallback",
+  "confirmation": "All4 positive, practical mean threshold, both fold2 and valid scaffold-bootstrap90 lower>0",
+  "query_labels_used_for_features": false,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "source_immutable_after_start": true,
+  "official_gain_guaranteed": false
+}

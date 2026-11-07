@@ -1,0 +1,39 @@
+{
+  "version": "v193",
+  "delivery_version": "v194",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "source_sha256": "14d7a8ac838d1fdbd49f6675c671304b7c70527da79daa52438963d27c153ae7",
+  "model": "New randomized isomeric SMILES sequence convolution, trained from scratch per endpoint",
+  "configuration": {
+    "embedding": 48,
+    "channels": 96,
+    "epochs": 40,
+    "minimum_steps": 700,
+    "maximum_steps": 2400
+  },
+  "seeds": [
+    1934026,
+    1934027
+  ],
+  "enumerations_per_molecule": 4,
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "tasks": "All21 improvable endpoints; HIA untouched",
+  "selection": "Unchanged v148: max minimum fold0/1; freeze before confirmation; no fallback",
+  "confirmation": "All4 point gains>0; practical mean threshold; fold2 and valid scaffold bootstrap90 lower bounds>0",
+  "changes_from_prior_routes": "Sequence convolution and random-SMILES augmentation, not graph message passing, SMILES TF-IDF kernels or tree tuning.",
+  "fit_only": [
+    "token vocabulary",
+    "descriptor normalization",
+    "training targets"
+  ],
+  "no_query_labels_in_features": true,
+  "new_external_data": false,
+  "pretrained_weights": false,
+  "source_immutable_after_start": true,
+  "official_gain_guaranteed": false,
+  "limitations": "Public validation reused; historical upstream controls approximate. New method cannot guarantee official improvement."
+}

@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "archive": "releases/v380_histogram_delta.tar.gz",
+  "sha256": "f402b61ebbf65b7c733f0da36870e30713c90b8a290617fdc0fc622ec467dc83",
+  "bytes": 13000,
+  "source_files": [
+    {
+      "name": "v371_mae_experts.py",
+      "sha256": "64ba5ff605f3a71b0065817e7d99ffb27cdede65baf218296e1bb1159c09020f"
+    },
+    {
+      "name": "v377_regression_experts.py",
+      "sha256": "c0af57f620695bbfc1c25dbe50335b58a53b94ff04f2c50122c7f559687518a1"
+    },
+    {
+      "name": "v380_histogram_median.py",
+      "sha256": "be79212314c874d5d75847d0e067024e0cfc21f612580b069a8f141944073257"
+    },
+    {
+      "name": "v380_run_experts.py",
+      "sha256": "e80fdc312ae39eacba52e638065b98830afbd296c8f58e517f99191507d92c40"
+    },
+    {
+      "name": "v380_verify_experts.py",
+      "sha256": "edfaa22b8cb2fa7be22535110cf68b5ed8160a72c4af4580c1a386b625fec0cb"
+    },
+    {
+      "name": "v380_smoke.py",
+      "sha256": "be35e80621db3338d0c5ebaec1cc4ce25eeaff9244ba3ea05c6373226ce2fd59"
+    }
+  ],
+  "local_input_files_verified": 96
+}

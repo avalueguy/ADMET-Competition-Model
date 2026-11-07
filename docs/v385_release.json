@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "archive": "releases/v385_handoff_delta.tar.gz",
+  "sha256": "ae128f29c59714664cb8f051e0521b585ec2bc63668917d1f6af08e84878a548",
+  "bytes": 5263123,
+  "members": 1090,
+  "all_member_hashes_verified": true,
+  "dependencies": {
+    "required_archives": [
+      {
+        "status": "PASS",
+        "archive": "releases/v380_complete_handoff.tar.gz",
+        "sha256": "9e794a627d30080cddbe81af0c3ac1467537d6198d81f916c2a810ff704ae3b5",
+        "bytes": 1552688550,
+        "members": 343,
+        "all_member_hashes_verified": true
+      },
+      {
+        "status": "PASS",
+        "archive": "releases/v382_handoff_delta.tar.gz",
+        "sha256": "5af0f0f03dec3921d54c502039295fbef1220dee21d68ce223cb3c13e2bb73e4",
+        "bytes": 57422503,
+        "members": 337,
+        "all_member_hashes_verified": true,
+        "required_base_archive": "releases/v380_complete_handoff.tar.gz"
+      }
+    ],
+    "delta_alone_is_not_complete": true,
+    "all_fitting_remote": true,
+    "local_assembly_no_fitting": true,
+    "credentials_included": false,
+    "remote_roots": [
+      "/root/autodl-tmp/regression9_v384",
+      "/root/autodl-tmp/regression9_v385"
+    ]
+  },
+  "completed_at_utc": "2026-11-06T04:27:08.949814+00:00"
+}

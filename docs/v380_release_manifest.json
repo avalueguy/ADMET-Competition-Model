@@ -1,0 +1,1717 @@
+{
+  "files": [
+    {
+      "path": "admet_submissions/v380_regression9_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+      "sha256": "10407697067b7c84d26833d92aaf37bde1daadeda1a0a030724e7d93330fd297",
+      "bytes": 1775772
+    },
+    {
+      "path": "admet_submissions/v380_regression9_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.verification.json",
+      "sha256": "732ca58596fd1e48ca68b942c038984aa5632db6792164014e1be51bbfa7701e",
+      "bytes": 11799
+    },
+    {
+      "path": "CURRENT_STATUS.json",
+      "sha256": "76b5237bac53c88ae00adfa864f9bac794a4dbfb6b43723644a6c03cc0d65e26",
+      "bytes": 330160
+    },
+    {
+      "path": "docs/HANDOFF_CURRENT.md",
+      "sha256": "d07507782b6bdd2ec073ff9e32fad9af318564fc034998f1e28b782bded32121",
+      "bytes": 14248
+    },
+    {
+      "path": "docs/V380_COMPLETE_RESULTS_AND_HANDOFF.md",
+      "sha256": "bc80eb5067fc83ca92dd70831abe54ad261bdbbf8859f164d0c73dd7e3904c8c",
+      "bytes": 4423
+    },
+    {
+      "path": "docs/v380_delivery.json",
+      "sha256": "732ca58596fd1e48ca68b942c038984aa5632db6792164014e1be51bbfa7701e",
+      "bytes": 11799
+    },
+    {
+      "path": "docs/v380_geometry_comparison.json",
+      "sha256": "6121dd9c7dcd82c61e7f5d169b8577c17d0356115abb41913952df0ab403080f",
+      "bytes": 18847
+    },
+    {
+      "path": "docs/V380_HISTOGRAM_MEDIAN_PLAN.md",
+      "sha256": "9cda6607942bacf9801e10cdfb9ca7bc8b7ada64ca8245c67b147513ff158247",
+      "bytes": 2057
+    },
+    {
+      "path": "docs/v380_input_package.json",
+      "sha256": "e1acce93def23a2cbc8daf9d7f1e9257798958bc3d3bc66bd82d9d4093508748",
+      "bytes": 1074
+    },
+    {
+      "path": "docs/v380_primary_references.json",
+      "sha256": "42abe7ec61a0243250e1466e082761808fb97eaeb429059114a8c749d15f4a92",
+      "bytes": 30417
+    },
+    {
+      "path": "docs/v380_progress.json",
+      "sha256": "3e55eccddccb826492ad56a23f3052dbe0551daaa832886152671663e4f5266f",
+      "bytes": 13335
+    },
+    {
+      "path": "docs/V380_REGRESSION9_RESULTS.md",
+      "sha256": "eaa24bb4d89b3c97f32717a3cfaa86818e9da6aabdd2c78dac9ffc8f6091c8ff",
+      "bytes": 2108
+    },
+    {
+      "path": "docs/v380_research_vs_deployment.json",
+      "sha256": "c5ad869e24243742b1143d743863cac21c81dc44af9d95bcd26e37278597bd8e",
+      "bytes": 2790
+    },
+    {
+      "path": "experiments/regression9_v380/auxiliary_archive.json",
+      "sha256": "ffc08871a13b8ce07a2f138646616c425597b123e46f21031adf25ac8fbe234a",
+      "bytes": 135
+    },
+    {
+      "path": "experiments/regression9_v380/auxiliary_manifest.json",
+      "sha256": "dd8759cd7c10382e425131519f0919e2b6810d7a7601907fe411aa26b472be77",
+      "bytes": 3712
+    },
+    {
+      "path": "experiments/regression9_v380/completion_receipt.json",
+      "sha256": "c6d92e20f1fa4e3ad28363ab78ff48be559112f3043e55408fc30947d83b59bd",
+      "bytes": 412
+    },
+    {
+      "path": "experiments/regression9_v380/confirmation_snapshot.json",
+      "sha256": "49fe9a277ffdc00312c31948bea74b3061dcb96719a6b229b30662486b24c8b3",
+      "bytes": 16304
+    },
+    {
+      "path": "experiments/regression9_v380/data_manifest.json",
+      "sha256": "2017ad0921a4af770f527d5eaba220cf60fd2b04d3f70718b092b3d467aa196b",
+      "bytes": 20962
+    },
+    {
+      "path": "experiments/regression9_v380/development_snapshot.json",
+      "sha256": "ec2afeffbe98357d9e095bc9dadece16b5c7cc7686372884d349e9edde753f71",
+      "bytes": 271557
+    },
+    {
+      "path": "experiments/regression9_v380/frozen_selection_snapshot.json",
+      "sha256": "9e3f7758024400c1891cdf95fc74ae5939058641169225197603005e85fdd324",
+      "bytes": 5625
+    },
+    {
+      "path": "experiments/regression9_v380/launch.json",
+      "sha256": "d32db7b7acdd1f39c34f13511cd42a3beffa6c7c38c4519c342f359694c22c2c",
+      "bytes": 267
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/confirmation.json",
+      "sha256": "49fe9a277ffdc00312c31948bea74b3061dcb96719a6b229b30662486b24c8b3",
+      "bytes": 16304
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/development.json",
+      "sha256": "ec2afeffbe98357d9e095bc9dadece16b5c7cc7686372884d349e9edde753f71",
+      "bytes": 271557
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/frozen_selection.json",
+      "sha256": "9e3f7758024400c1891cdf95fc74ae5939058641169225197603005e85fdd324",
+      "bytes": 5625
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/independent_verification.json",
+      "sha256": "92efc1520b6aa12b10f28e1efc15a9dbb8fc8736f603e33ec8d5a66a6a849fd3",
+      "bytes": 19019
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/caco2_wang/fold0.npz",
+      "sha256": "3a7935fb8c2190ed0ef6ff2bb0430ba418911347072bc1cb75533aab31998dc3",
+      "bytes": 1856164
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/caco2_wang/fold1.npz",
+      "sha256": "1aaf1407a064fcaf6390456dd5feb87ce97185144f0d2d646f64b365c8d2c8f3",
+      "bytes": 1861671
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/caco2_wang/fold2.npz",
+      "sha256": "c5f784f7869eb3b936717bded9e87dd43a90ed92e311405692c06898a6915c96",
+      "bytes": 1855372
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/caco2_wang/valid.npz",
+      "sha256": "50a3d5b60d40c28f9f8cadd11205a3fb8147924e208478726df3e93a32405132",
+      "bytes": 3197053
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/clearance_hepatocyte_az/fold0.npz",
+      "sha256": "7fea8a1a58db41b88dacec951faf224dda331316e9a36133d5f3ec158b4c5790",
+      "bytes": 2453682
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/clearance_hepatocyte_az/fold1.npz",
+      "sha256": "86c2c5605db563247df27f58388aeeda4b4133b771eb433ee3d3aeba6b09194b",
+      "bytes": 2471069
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/clearance_hepatocyte_az/fold2.npz",
+      "sha256": "fefa7acf71cf8856f826ce334cd115f66d12a9fb53fb21c12b4938efae54af4b",
+      "bytes": 2451642
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/clearance_hepatocyte_az/valid.npz",
+      "sha256": "cefa2db43d647dd17a03cf2e02176da0e96045849d8325a5c53b32f1ddba9877",
+      "bytes": 4232336
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/clearance_microsome_az/fold0.npz",
+      "sha256": "77da42b624e0a2a0267c316caaa2ab5c6e259294521528c2bce104c2ba91c8b1",
+      "bytes": 2730391
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/clearance_microsome_az/fold1.npz",
+      "sha256": "00d745942f3f372028516e64881db677fe128abea5875e4289fa3c97b56edf22",
+      "bytes": 2724076
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/clearance_microsome_az/fold2.npz",
+      "sha256": "a7fbf7f4637fec0ac3b7ded80ff484500a3b42895f627c9067784b01108fb0b6",
+      "bytes": 2723776
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/clearance_microsome_az/valid.npz",
+      "sha256": "2db36ec6ef30a2ab8c54d4d4a92879b253178a629de7d00223834e2564e8cf89",
+      "bytes": 4681054
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/half_life_obach/fold0.npz",
+      "sha256": "9b6524a55f3d2c99ba09c8e60239d9da5cf8aef51f92ecf20a70dfdc8e03a7cc",
+      "bytes": 990268
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/half_life_obach/fold1.npz",
+      "sha256": "b430ae767abec9f90e1e94b2152ef6e0843a7e85e5422c4056097c8439169639",
+      "bytes": 991223
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/half_life_obach/fold2.npz",
+      "sha256": "788f807981038dd4a5267d1a289258f4e7d6d4848779695a1b0b141a75e0faff",
+      "bytes": 992178
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/half_life_obach/valid.npz",
+      "sha256": "3720202f5d09d5877002d8c7eed3af27f81b9f0ea7d1167097a6cdb6ce5ac5db",
+      "bytes": 241884
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/ld50_zhu/fold0.npz",
+      "sha256": "4270b541f36f25dade26cd699c3d40ced36af7a18eacbd547b238d99f39d1342",
+      "bytes": 75922569
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/ld50_zhu/fold1.npz",
+      "sha256": "b9170c9741129b7f7309447f083c87f0990aa3883889f5ad7a6834fcfc1ea90c",
+      "bytes": 75861272
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/lipophilicity_astrazeneca/final.npz",
+      "sha256": "0a34989be419a82b0fa592339eff36f3058aa03c6c7b80174ca543f76ca00585",
+      "bytes": 97211965
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/lipophilicity_astrazeneca/fold0.npz",
+      "sha256": "af3d6d2022b84096cf0811d8ecc9d7756fc45c0af7e8300b9f58993e1623d3f5",
+      "bytes": 39740049
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/lipophilicity_astrazeneca/fold1.npz",
+      "sha256": "ca05921f4389ad0e3cdfa16070f7c0af9fb3f16459a66b987d2ab4d1a466100c",
+      "bytes": 39744326
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/lipophilicity_astrazeneca/fold2.npz",
+      "sha256": "fd8b33364a2ed9f7c44c56e81fc8401bf86507d92226e91f1bdaa432fec8e280",
+      "bytes": 39732788
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/lipophilicity_astrazeneca/valid.npz",
+      "sha256": "ef2cb9faa760195b9aca904c8e5901a94b961d2c0bec3042e16ef6340f3051c9",
+      "bytes": 68082798
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/ppbr_az/fold0.npz",
+      "sha256": "c133992381c373d7f5a38def9253f11a3b363f5b29d31e8ca121b6c9c0e46432",
+      "bytes": 9052177
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/ppbr_az/fold1.npz",
+      "sha256": "5be08de7ccbc9f9005f9543b06582530c48fe4aba4415a9588062b259bdbee95",
+      "bytes": 9050480
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/solubility_aqsoldb/fold0.npz",
+      "sha256": "0406959df931058be7bc3844e71cb38010563e1df5e7244b2726d2dbc84cd188",
+      "bytes": 119884224
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/solubility_aqsoldb/fold1.npz",
+      "sha256": "b7085287914087c1b3d4253fbb4d5f23ec429266f28856cd2235a98ba0879ff2",
+      "bytes": 119792536
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/vdss_lombardo/fold0.npz",
+      "sha256": "1eb9acbd26a8665b934a78b4280f1d9f56c9b9ee9eb560acfffd154604215c21",
+      "bytes": 2850786
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/vdss_lombardo/fold1.npz",
+      "sha256": "cfcd0eff5eeb9d8615782fc6ac275ec86ec72f54952e025aee331bd63c0d068f",
+      "bytes": 2831063
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/vdss_lombardo/fold2.npz",
+      "sha256": "e5c9937937dc4b403fd31eb4f8ca337d3794fbacf1530b065a4bedc9471e3cd0",
+      "bytes": 2831002
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/kernels/vdss_lombardo/valid.npz",
+      "sha256": "99bf137d9d53966b8903dea0d816a953f141e1f2b214b6eaaa9b4d57aea3fa75",
+      "bytes": 4855895
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/protocol.json",
+      "sha256": "45f62c7a78321aa0056200d39c8a5d9c3fa65321cddd55b6244784eac138ea3f",
+      "bytes": 2954
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold0/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "09c25d544ec84652075f0a3c87778592b3bbaad4c5078eee19b0e172a4d63c22",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold0/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "5a26a41c97dac3dacf19f57e2ed76af5b8d1d36c14a734a27b5dd2a6fa0de895",
+      "bytes": 3581
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold0/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "1b24748cb7559ee5ed90707d19219e408427d8124a3bff87cad039c447320cb4",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold0/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "81ecbffbbf14b256171b96d62a3248e6a67bbf7d014d5239b736df8121812ada",
+      "bytes": 3581
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold0/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "85ff3a894f0a7d6869ef6a4a7857931cc4c25da820d841fb685ebb6a1d679204",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold0/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "28177980f89e0c1fcc7d61a2a34036bf446ed2ffa57aeb0389b2e36c6bd75028",
+      "bytes": 3584
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold0/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "c95a0991ced6359fdf401659e0a8a7558dd0f008718def4a54c9d916d7b44ce7",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold0/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "c7207ccb4700155b65bae2b57b08a9075438f15df757a76a255c28fe9150f86f",
+      "bytes": 3582
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold1/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "371f96a1c24d6f44044c91ff69bf7b2d175beba5ccff4dac993296eecf99f39d",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold1/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "08c4d6d60195e7e8b1a991591c1ce2edc4131da444fa2ca5fc43f06b4b6959b9",
+      "bytes": 3568
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold1/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "a046c9aaa1d4b4dd2b562fb169fe2c62caa4074d98daed1f4c54e169c90afb78",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold1/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "838e712e48dfdfa714f9b71625919ad3942a167012f9aa05d5c268625cdb2738",
+      "bytes": 3568
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold1/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "0e97120093202d0ccdd917098433775ee145577c5ae457b5bf4446ef2a36c5cf",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold1/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "0eccba7e4da124051c42e63c59c2e68353649cebb608b03b95ade49f3a054024",
+      "bytes": 3580
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold1/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "496bcf416b50ac3ae5cded5fd7a1c23643ce012fa12bf073c9867cc80ea20587",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold1/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "429a15fdabd7d6d25023b2c8eef5d36c4be1f49e903f0ab1af9a1e92a6fbf893",
+      "bytes": 3575
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold2/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "4be4481004e720ab0aa849bbbb1edcb14d964430e3650e9e9066172f2c688a9d",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/fold2/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "0c05db9fcf18863303873d169c6c51fd50df1884d177045844c66b344c4ef800",
+      "bytes": 3584
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/valid/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "20a7b66df8c03bfe393a4144d69335f1a85f5e7ce47ce69d907e5f45a29d29c3",
+      "bytes": 338
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/caco2_wang/valid/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "e7bb19a2163ae50196622cc66d1772110d19d67290119276f638afbc6d6ee807",
+      "bytes": 2797
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "91b4560482bf4a40cea748103678a735315476d78add0f063479a90886f80af7",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "2056209feaebfa7467631b9d91fdd0c1c8c0ebee105914fb303426d52f22e478",
+      "bytes": 4154
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/hellinger_gaussian_C30_weighted_log/metadata.json",
+      "sha256": "22f56f11c6f5b29dc7691ae276c0a74c5e13ce64f36247f3402296945a7c1d4e",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/hellinger_gaussian_C30_weighted_log/predictions.npz",
+      "sha256": "1d7cc7c1d78a10bc1108983c310cdb05f98897e7bd2e0d8c85f620f875fc96e9",
+      "bytes": 4168
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "0b06970d045c8c2fefb5d360a964f0479783a5a7c6c09d83312ec649f52e2e32",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "f836ed057231d1e8b1cb6a655f657b50016105a943418a8a0a360439cbd4d4ed",
+      "bytes": 4158
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/hellinger_gaussian_C3_weighted_log/metadata.json",
+      "sha256": "c4419429fe6b0ee602d89e798203cfd4895a76c1b18051096250d27390924aac",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/hellinger_gaussian_C3_weighted_log/predictions.npz",
+      "sha256": "9b9422849ebf0e9cbce506f9096fd114e1b55138dd80baa86f46c4f80a20e2cd",
+      "bytes": 4161
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "0411b95a7488ffecaaa3ca260116d9cd9713df44f3f7ec90498f477ec7599d32",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "8499d2c2e0d04b363bfe6e1e61149a64a88f95b8c4ace97f3731484e3f6e87fd",
+      "bytes": 4134
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/sqrt_polynomial_C30_weighted_log/metadata.json",
+      "sha256": "985afa0d57d5a709bd5bce738fd31add4f2656085ec71994f281813b735a23be",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/sqrt_polynomial_C30_weighted_log/predictions.npz",
+      "sha256": "aa173525cd84be7fb4b81b5f6b098e1471b789e8a4b74ce8202019c0f3c48ae6",
+      "bytes": 4169
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "d39885d0184993e2ffe7104e4363cf346ab5d0a08757ee3d609321558ecbf28a",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "96bd75052f47ac91555d5e9cd05129118450e3614bb9080003d04cdf467c2a25",
+      "bytes": 4122
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/sqrt_polynomial_C3_weighted_log/metadata.json",
+      "sha256": "7571d9777461ab0022e2a30442a68d5789648994c944fe2b2650bbd0255673b8",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold0/sqrt_polynomial_C3_weighted_log/predictions.npz",
+      "sha256": "aba5d0b0214210b9bb7ae14bf12c5602bae8bbb79e2afb73167ae03c175e731e",
+      "bytes": 4169
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "4ec460341b5ba8dbdc220fcd28bfb2a87f1003af086c249f277d13efa835a8c8",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "a719b94751107ca3374640c30436c9900327128ad39b629b8b11f44e1826cf69",
+      "bytes": 4117
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/hellinger_gaussian_C30_weighted_log/metadata.json",
+      "sha256": "4187289ebb2c864f8b4df7d0487a18a7f27047280ac6c92a1aaf6f3178d16284",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/hellinger_gaussian_C30_weighted_log/predictions.npz",
+      "sha256": "c18032ad98c228b19f8385987f0787f6063df99046dd3fa7681158615d887aa5",
+      "bytes": 4122
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "9b32c27f2bf212aebfaec01eaa01a4b63306e22887d8048ad1e266e93244d622",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "633557ff82d26574a3486a7d95034a8ddd919128622690cc8e11aacd871a7951",
+      "bytes": 4130
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/hellinger_gaussian_C3_weighted_log/metadata.json",
+      "sha256": "93da275acacaf15971b40585b3ce867835c018db1888a7d3f054056f474945bc",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/hellinger_gaussian_C3_weighted_log/predictions.npz",
+      "sha256": "337b1021cf57ea8bc478dd9dc0372acfe33fd5c38c8e6b215b299d96566d055f",
+      "bytes": 4132
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "8b227fec9eafa136624c1e3d151ec7b11a132b7fa9ab90f01675965b860f4e98",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "a3a2cdac2c99750e1f95de9098467770d79068f95ebe124b568799daf436c39d",
+      "bytes": 4050
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/sqrt_polynomial_C30_weighted_log/metadata.json",
+      "sha256": "ecb00a1ca6614f78d7e7d27d94a29a8049e3da5b23759b3481d5b2d820399d60",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/sqrt_polynomial_C30_weighted_log/predictions.npz",
+      "sha256": "fe9773810c08134ef3a51b5e3e9d6391de2aff11e7533314f18ef4ec473aaba9",
+      "bytes": 4133
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "8584cc9ff32392c83fc7f76c16273d6c03266143839a369d63663b9b5d8cc2dd",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "d29974a2e7852d7fcbf44a4651d74c0192fff9d3188e6f408ada1659e6719333",
+      "bytes": 4065
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/sqrt_polynomial_C3_weighted_log/metadata.json",
+      "sha256": "77a7be3e0562a4f1dbd2730e51ab6eaca2db987f5993e525558b790ae9f216d2",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold1/sqrt_polynomial_C3_weighted_log/predictions.npz",
+      "sha256": "afec53214ec5f6053ca0a5b1a266a213edfcae128e5a6b305b55fb103dfb6404",
+      "bytes": 4131
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold2/sqrt_polynomial_C30_weighted_log/metadata.json",
+      "sha256": "12851b62214572299580bf551691837364b74f6493e2348aee403498a080a511",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/fold2/sqrt_polynomial_C30_weighted_log/predictions.npz",
+      "sha256": "436d5ab0f9f0afc6873492830a8b50cd5d4f7e53c2a0b74a42d3bb8dd4c1b938",
+      "bytes": 4175
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/valid/sqrt_polynomial_C30_weighted_log/metadata.json",
+      "sha256": "205298ca9cf6fa2961f1b67aa0bd1eaa31397e4226f55191b54455f4e5ba0710",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_hepatocyte_az/valid/sqrt_polynomial_C30_weighted_log/predictions.npz",
+      "sha256": "449ae39584e33ca3c1a0b88cf4acd307bc858d239f26f586c0026f7c4422f7f7",
+      "bytes": 3296
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "a74ebb6f0abfaeddcf106f91e8d2f5bfda4da0019e8318712437f021fb0bb23c",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "919b0712c97629227444859e9973306564f90583494fca848d0cceea8edfbbe4",
+      "bytes": 4130
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/hellinger_gaussian_C30_weighted_log/metadata.json",
+      "sha256": "5b0b22580750891bef9fa301276618218ead71cb30de0e8d09fae7ca99b53e96",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/hellinger_gaussian_C30_weighted_log/predictions.npz",
+      "sha256": "38f32205de918b133469ed5685dcd63bf85e2c230652e9a4d70ae2e1f5e7a9d9",
+      "bytes": 4128
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "c7dce4cc44fcd1426fa4526f8e80f5b2507bd504af5f86cfce87fe6c5760bc4f",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "8d002553aa303fa93f240b2230d35855bccf55d5f1b9f5099787d32293528a5c",
+      "bytes": 4121
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/hellinger_gaussian_C3_weighted_log/metadata.json",
+      "sha256": "736de206f9c46e783dbe0b9a4da3fca7150f947ce772ae01be6cb39a63aa97e7",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/hellinger_gaussian_C3_weighted_log/predictions.npz",
+      "sha256": "53ebd0ca5a36cb4c8640ac4cd5fff6169aafe7bb3962cf52a1fc1c78256a6eb8",
+      "bytes": 4128
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "1371e2411cf9f28f22843d5d66edbb474b095988e96401d3323b95e3d80cd5d4",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "9b2ab99202bf620b06b9d674e7ff99657dff30f677989f00f05142204323f701",
+      "bytes": 4010
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/sqrt_polynomial_C30_weighted_log/metadata.json",
+      "sha256": "16068a25934f89bbfd866868965e6e73c1267f14a9df629fc19fd4eedf36f982",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/sqrt_polynomial_C30_weighted_log/predictions.npz",
+      "sha256": "7b7405b788ddc83e7365bc605ca0673b84123b27c56091638f65153990906886",
+      "bytes": 4127
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "459227f118ab4179a5ca039252d109ded380fc4cc11fd584491f9496faadcb46",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "19b6aa3ded56f7521d552eb6cdfd03a892d51b1d180f0b65e1487cb350ae9f74",
+      "bytes": 4055
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/sqrt_polynomial_C3_weighted_log/metadata.json",
+      "sha256": "d80d17a6921f15bf46b848bd23b54be498c15cfcba9f5f0a392de497c9d1610a",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold0/sqrt_polynomial_C3_weighted_log/predictions.npz",
+      "sha256": "5784ad643e45f2275eb887a7e0f9b6fe94c0959e8c9c04fd000a6e1dee4548d9",
+      "bytes": 4124
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "cc94c37a95161296540a9c2ff33bde1204ca0b2fae1796a56cc4fc5d82316faa",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "9516f68dfbf4146010611e779849b39630245503bac61b27f0a9bf349e9cb61b",
+      "bytes": 4126
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/hellinger_gaussian_C30_weighted_log/metadata.json",
+      "sha256": "af8b2aef0f48433dbe25bf0c969654cd101548272224fa32ab4344c8590c8150",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/hellinger_gaussian_C30_weighted_log/predictions.npz",
+      "sha256": "038255ac8e118e9e600e337fea5b852094c69c6981c50a6c442e3c5fcd713cff",
+      "bytes": 4134
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "48adcd8bda0f1ba58aee2b330850391b55b820d499006a664bc3870b74960be8",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "e7adab5ac2712f5d677fb2a343ab2df6b458554b7b7346b79de668be58aba1a2",
+      "bytes": 4138
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/hellinger_gaussian_C3_weighted_log/metadata.json",
+      "sha256": "ac1847051dfac44f73ed33a31cdc55d782ad1ab1d7fcecf75f08afb016a8b812",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/hellinger_gaussian_C3_weighted_log/predictions.npz",
+      "sha256": "68c0f95129cc9ecd0c2d41e6492dd05df6eefcd1391f82f9702c53b63d9f3248",
+      "bytes": 4121
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "acc5ac5d3eafe2f1ff1d44ecca7826edda1e90553be317939c9577d9967c56dd",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "ce060c5c76ccca7d73e031e23d00563cb35f65ebb79bca40982cba1e3d2cfed2",
+      "bytes": 4104
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/sqrt_polynomial_C30_weighted_log/metadata.json",
+      "sha256": "5f364322bf1ceb81fe39c2946ded35816aeba113a1eca69f2cd9151a9839689a",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/sqrt_polynomial_C30_weighted_log/predictions.npz",
+      "sha256": "73ff583563bfa530cf4e4c3382ff7da47c17e8713b3d859d59e7bfa5b1f1a650",
+      "bytes": 4140
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "2b3dd82b6e463520d9440ce7ed70a38359b8e9b7987f496af888fd1920916cba",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "094f36fd7b41605fd1b850bd47b2760dfbc953e5086b1e84e021d5a80d1c67f7",
+      "bytes": 4131
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/sqrt_polynomial_C3_weighted_log/metadata.json",
+      "sha256": "e040a2a69110dd495e85fe04df412e2d0503f5f6259cd7e1be13a878ff1b316b",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold1/sqrt_polynomial_C3_weighted_log/predictions.npz",
+      "sha256": "e1e7c70c5a2d2a6b705bcf1323ad9874d83defc68acdb88bb605dbecb182224e",
+      "bytes": 4132
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold2/sqrt_polynomial_C3_weighted_log/metadata.json",
+      "sha256": "4862a2d66c6dfe5d5f3a64d9948edaefbe92a630c4f39f8f4a00910427675e9a",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/fold2/sqrt_polynomial_C3_weighted_log/predictions.npz",
+      "sha256": "e278430670b8600239789e284947c08ecb370530a392df69229b364f7e2812bd",
+      "bytes": 4137
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/valid/sqrt_polynomial_C3_weighted_log/metadata.json",
+      "sha256": "6194a767bc1ef1ac3924e589ce8f06fa134c9262e0ddf6f0ae45dfe3d0280f11",
+      "bytes": 338
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/clearance_microsome_az/valid/sqrt_polynomial_C3_weighted_log/predictions.npz",
+      "sha256": "00cf92dc5cc101da6269e20ce26147e6ab8d698b53764da96412dbb2f3b32b5c",
+      "bytes": 3163
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "d6cf125948df0fc2aa12b7197dc5bed46c4f42235836056f6de63bb58123810e",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "2865148d1bef492305a1d558607fb6bdbc6719d6ed5b510b558f09f7c26916bf",
+      "bytes": 2915
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/hellinger_gaussian_C30_weighted_log/metadata.json",
+      "sha256": "48ad5ba9e2b52f3759542f0ff3730d62ea3a0319c92feef9c78f55777be4a3fb",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/hellinger_gaussian_C30_weighted_log/predictions.npz",
+      "sha256": "4262133487203535f042e4c5e608bdb07e55918a081b8b861b220a077d36fdb7",
+      "bytes": 2914
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "ccce20463a0b8550715984c60fd3fed063f7d6134fddd7de1f4ca03ddb5558da",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "6715cfce7c6c5df86b32a607b96d567b1730ce6b1d1e6967182faebc6ac27000",
+      "bytes": 2908
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/hellinger_gaussian_C3_weighted_log/metadata.json",
+      "sha256": "6390b46ac99c9cf9d1d0ea1b8c070c7723c112f236c7f170aa4cbc23f8edf843",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/hellinger_gaussian_C3_weighted_log/predictions.npz",
+      "sha256": "94a67ae5ca84a1749ea1aa279f2fb4d4515a407ee60d2e4fe5f4f5121da63203",
+      "bytes": 2917
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "1dcf514155efd5986400de88c8d490fc0151a8ed2bb9d42322d852fdcd993bdb",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "053e5ea62d40a89a69f4f9d26082503b016f2656bcd667d5e46a29b8e6214ca8",
+      "bytes": 2859
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/sqrt_polynomial_C30_weighted_log/metadata.json",
+      "sha256": "e60883361ec50e8798d47b10afc9658b36f1294b0119296cd1c554ea18a03ae7",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/sqrt_polynomial_C30_weighted_log/predictions.npz",
+      "sha256": "7f87188d4aa1c2594974c709e8e934c1ed98a41ded0dc663b9b25c18c95cae72",
+      "bytes": 2918
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "3319cf262f3b416aa33c9bc7fc0a8f9d066bfcaf2ca9b3711bec7eb8e476177a",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "659b0c4374e58d790b97f40b90b9ae3866dbf5d3c32090007f368552f5fa873f",
+      "bytes": 2901
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/sqrt_polynomial_C3_weighted_log/metadata.json",
+      "sha256": "7b0ac5b2b412fc76506d9b06ad7aa5d777a030d5631e74b0509fc0847dacfc3c",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold0/sqrt_polynomial_C3_weighted_log/predictions.npz",
+      "sha256": "9ffa36b6bc88d9d55336b5a7d5da67140f09a7835ddb0dec2a34873d53693747",
+      "bytes": 2920
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "6adc836a6512c0f9e2db446762303011ee7c55d3aabd9d0e2eda165815a81868",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "903afa208a85560c678dbad2abf38570a62c8487bde90589c0b85e84597fd8e1",
+      "bytes": 2913
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/hellinger_gaussian_C30_weighted_log/metadata.json",
+      "sha256": "a5e11f0c17a4fc4714d4f41200b91f627de36fb1c139b1e651133498504b1813",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/hellinger_gaussian_C30_weighted_log/predictions.npz",
+      "sha256": "63b37622d1e4151294bcecb5c962890945f268738b98aece8431a106f5bf2f6c",
+      "bytes": 2917
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "1ba86c202a672b4c73f8594a1d061321ee4a2138d622af6338b8f8b89e9b83c1",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "71322e12285a39a2f112630d499d8fa5f31413c04f4d117f838b6839e4cf0d6f",
+      "bytes": 2911
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/hellinger_gaussian_C3_weighted_log/metadata.json",
+      "sha256": "4426406268b3dcd4b6e6ea54827d5b74db18ca46e109182b3f2f4778fc20be36",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/hellinger_gaussian_C3_weighted_log/predictions.npz",
+      "sha256": "5e320319c61394e9ca444c4d1e9f0a34a412048a293178fe01863f7c42987100",
+      "bytes": 2916
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "5fe7104f21878dc80ef02070ef36fab0e2b3851713c068549cbaa55a5e117c91",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "ec4b9f92cb22406115b0cfea4cf57dfa19f4eaeb2d35c9f63e0b9166e380abdd",
+      "bytes": 2876
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/sqrt_polynomial_C30_weighted_log/metadata.json",
+      "sha256": "4be4bf93076ac9f1b8fe280da7a6bfc210d0b085ab6ba4f56e57acaa5e79000d",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/sqrt_polynomial_C30_weighted_log/predictions.npz",
+      "sha256": "2914910b4546b4b3d08b29e20b35b7a0ebee259f8458108c7d7b698e46c6b9b7",
+      "bytes": 2921
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "30c4e467284d379759010b784a870734ae53e09fcfa37f6f2f5f4662658d05a0",
+      "bytes": 338
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "2ae4b259ff188ec45614f4609ea6f6a155ce41764c04461508c2c685473e335f",
+      "bytes": 2906
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/sqrt_polynomial_C3_weighted_log/metadata.json",
+      "sha256": "8141a609a6212878b79271277919c690d83e8b8b15f34194b677768ecaeb27e5",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold1/sqrt_polynomial_C3_weighted_log/predictions.npz",
+      "sha256": "501c72811e2e30d12eebefa0cc202379f50c5199b9154b076d10a76f2cf481c6",
+      "bytes": 2920
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold2/sqrt_polynomial_C30_weighted_log/metadata.json",
+      "sha256": "abc5dd9e84d22964b4ea17375a1cf241d937b2d5ece8cfcc854fb1e9f9804bea",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/fold2/sqrt_polynomial_C30_weighted_log/predictions.npz",
+      "sha256": "f9615a1a1a91d5205c2646d52b28b7d990bda38faf30e125e04f981be809c507",
+      "bytes": 2900
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/valid/sqrt_polynomial_C30_weighted_log/metadata.json",
+      "sha256": "54abedb7c2f508f586f168c8c835a33ff7ac4aa58da4796aadcf9726b371d98a",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/half_life_obach/valid/sqrt_polynomial_C30_weighted_log/predictions.npz",
+      "sha256": "168d17aba0bc9e5b3fec6a7cd22279754e19ce0a9f76997a3e14283bd59df196",
+      "bytes": 1865
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold0/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "2e57deed62c773dd82db5e4f75e94f3235e290f479850bc6e9859d5453a1c491",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold0/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "3e7ef5daa8ac0282725e433eeed5716c16381949d082a3db91084db9ce08d3ff",
+      "bytes": 16003
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold0/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "eea145b02e2af9451f9f086aa214d643209f05fb3555f9d26f81a91ff8f042b9",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold0/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "ca90cd14af2c4173d4970e971f7ae93b01b0927e4c68e3fcff7c6a8076930000",
+      "bytes": 16003
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold0/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "0014184c219a410221618f0c11717f3c5212be7e942b087b31993dc751ef77eb",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold0/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "26e65938828bc5b00e14f03c9422d5e88be855f66ca9aa29e833d4e9d3960d00",
+      "bytes": 16060
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold0/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "8d6bd1982cfeadb92cc8b634f667018d226c1f2050c5a234b30dad4383347adc",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold0/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "83fa9d6287e3dc79cc18ca6a504b111ec1cda6a3107b00ec691e508a3b1cf338",
+      "bytes": 16065
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold1/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "a0ad6f8419e4970e4841ff848d1501ffc7c49bb120f7e2c39a342aa5417cbdff",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold1/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "ffa82730788d5261725e2c65063138d88e02422261d119e752e3b2a1e47f339a",
+      "bytes": 16029
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold1/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "317cf35b2329edafcb26efe7df1f7ffb93697bea095e6af95a6f6b062770b0d5",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold1/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "d6f4b56983eab97784944fe2ed14806b2840ad274b3dbc7c02fcf09e8333be0c",
+      "bytes": 16031
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold1/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "02403c525dfe724634ea7da5b13325b5866bba1200bad10ae6ee162ba74c2f82",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold1/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "fcf0829e9a4090a3372885697d910b282585c50d03b941c5270a07cdc9c5d166",
+      "bytes": 16096
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold1/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "a1ce2d8f67e0289a636b5989885e642061340d8b4cb629f776f921eb85e5704c",
+      "bytes": 338
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ld50_zhu/fold1/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "f1fb2d6ae2b0063afe7eb251655fa25ab4231f4e649107928e6e9bac04e9681f",
+      "bytes": 16104
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/final/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "90e46a27506c17258942756bec42a499eaa5850584cc19d1954298b9a5ed92b0",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/final/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "7b9ba73fc097df671382d7d04d20aaf5676896d1dc554f1b87dde43ca3ac280b",
+      "bytes": 13746
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/final/sqrt_polynomial_C30_native/state.joblib",
+      "sha256": "52789f3e64b96ce9ba7d6f6613b4d7dedb30c84b8089e566b4ddaa93cd276543",
+      "bytes": 40442
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold0/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "4bce0b8b8302fcb2ae229facb1712861895c57d8c2b08c21beaf65093aa65456",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold0/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "287b678320f5a249487d41b7b37a173a4664b1a49fd887d1c802b3ffed8fb9e7",
+      "bytes": 12928
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold0/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "a61a35ee17f62462cb8037e7ec3d890c8f064396a0378fa555cd1585f049071b",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold0/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "3651346dbe6d33c3cd1e3b467e772bb977a7b1aedaeb068ff20ffdcfb8456b90",
+      "bytes": 12945
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold0/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "f096595f64feb54b32bf3fb942fec88310d0f2ff58df1cb967d134766f1b71f5",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold0/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "6e1460d463179ec9253a3ca8d405f97db8d1c0bf27162382fc3298242318010f",
+      "bytes": 12962
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold0/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "f5063b9f0efd60a210d62679ba68ab3e36f7f0148dc0832d1a534242f1e11840",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold0/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "9849194af4625abf84f6ff3361726fa08662f1b7977996475d4dcac73a726cbf",
+      "bytes": 12954
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold1/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "f79575f1b16f151119401ea73c60a38b09e2ae1743ea596203e553a061f0b787",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold1/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "09ac2c4e349fbadc00201a7721480a6cc1ac3963bc5ffa1ea471f7a580373a65",
+      "bytes": 12940
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold1/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "5165dbc9eda993eb4865582271ae81559b6d23d4eadfee96da63d5890f392da1",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold1/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "673006ffc7abe77c4422b46098256e5d3553ff1de5c6ffae5a63dffe798e6e4f",
+      "bytes": 12944
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold1/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "1a2a50c5e3964cc6c73aa17d4207c905485c9b8fb224e37e885c28db20795c7d",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold1/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "9063a76b43cd24a3a620b192348ed581d8d609d6b9fbd8b2ce961a2b4a10bf33",
+      "bytes": 12954
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold1/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "fefc5032bcd8eb7c314fcf17668a798e339b4c0826e5580844c959cb82579985",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold1/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "027e23b13a5feccdfcc1466f8fb0ccaca353cc54bf3aaea6cfa6d38c5535f4fa",
+      "bytes": 12962
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold2/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "baca0997f1647f5aa38a16a052ca83f2ac22a5c5f15d8c14cb9b3edac957ff3b",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold2/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "e63ea3757411fcab3d39cc0b77494be46ca9bd7d32cd66bcceafb2aac063a030",
+      "bytes": 12971
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/valid/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "2dc884da5639ac9bcb343b8e75350a69f89306527248d93a1c05ce1101a17f11",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/valid/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "145a4f4e1ea133068dde063dac6c29a92ea445ed332f14528d953f2d9a73fb0f",
+      "bytes": 9295
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold0/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "fb6b9e4d38780f25798a03827a11959a501604130c50c55ba1a37ba12ff2dcc9",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold0/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "cbea859989b361906270d58b99fc9967267465f9af28a22a36f8e2a8772002f7",
+      "bytes": 7286
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold0/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "bcc7094a25596e154eb5096f6b33af1582dd2758e26751794c0e8adafe9d223d",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold0/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "2e62794cb5f93777f76ba0e11c4e6cff5cfa1ebe92e3b3bdfd1d12f5a8d68c97",
+      "bytes": 7280
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold0/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "f41583e52abbe7ca10eedda1ae051813812374a78a7b0817f19cbec8f88895fa",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold0/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "67009df47fc4eaeda88f40b5bd17357bab2b1b321f0e944c9c6392693c66f5d8",
+      "bytes": 7153
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold0/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "6e508d784843acafc15da095e24289d94360a4697a57bf9cb5fa42acd0c3751b",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold0/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "2dc98a5281685ad875a0b2f3fc8c60b71b0bcae41632ef770e96d382eb509e1c",
+      "bytes": 7179
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold1/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "ab1b673081cf7f13dc128dc9b1f6e54c4ebda4456ddce3e1e90c985789cf01be",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold1/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "409a9bf2171e68000d9da8a3f4d49fedf6ce34562de64fd742ddf6026b66f2c0",
+      "bytes": 7270
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold1/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "db6de35428e81c70c4e6e905c00e1c80b533b0b89a03990a287b8007cf8d87ce",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold1/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "1e9ec79dd2b68183d19fa0582170e98210484eaae332f8c58b6f214523154594",
+      "bytes": 7278
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold1/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "99aeafaa9bd1f740c393313820136e412ab5b0b2f3a3f040b1c1e4a2019c261e",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold1/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "346ad54337bfe9b632f7ac7ef25d5196a202a686dda4e12454a159aa50061f7b",
+      "bytes": 6987
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold1/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "4eb31813a065a36b44367b88c14e8d349673299d1860812b6746ed9e572401e7",
+      "bytes": 338
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/ppbr_az/fold1/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "7c1c51ce9f0af1245c606b16714478df672ac3ef7fc461eeb8782c601a3f450b",
+      "bytes": 7061
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold0/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "020628111213612beade995078e97a6b5c90cace6abacb05cce18506942cb8ba",
+      "bytes": 338
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold0/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "3b7a312ec08f0d4a008536108e9b0b99609ee1f4e9113b8640ff24bbd395d27e",
+      "bytes": 21106
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold0/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "54f20645fa2e1ba36b7c953703cf21ffe22452c2e2ab4af306182b67173923c9",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold0/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "fa66e8d2b7ce61d185f8e967af63d1355da83f862ad799bcfba82fc4f583db26",
+      "bytes": 21112
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold0/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "6ec6e1bc3f384eb774204c013153c00f8c00e921181a522b3bd4bd6485414462",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold0/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "718e600689be353b38a79f8d8530606b3dd15993644716b4b7c19babecd24325",
+      "bytes": 21127
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold0/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "2f5c0ad582eed08b4cefe4174e50b67382154f72b3109a7d142d046b599e4414",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold0/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "1dce921446956abc0366b9f0b8f056fd74cacb7019ab8d55b9c2d5ebd5de0041",
+      "bytes": 21124
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold1/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "5be224883a191fbc6a5ebe64016afaacd5fff80206436c8bf4701362d254e7d8",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold1/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "4e70710f62a384cc5be9834a50b4e7fd1530723bc6b9053b236ea3cecb3e19ab",
+      "bytes": 21098
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold1/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "66ab8b3a65757724c6c71d654985307a219a4d40fe33ac8081a855942217c14e",
+      "bytes": 338
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold1/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "d2172473d1c1e2452edcb6316bb59e2c31c1b659276c8eb03a098070ae906193",
+      "bytes": 21114
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold1/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "332c213f25b2cb1ca203fa2dcf43fbf3671ea9d74c6bf019ff443b5cdfabd311",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold1/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "e7f7695eef47895390dd7e6e5f17babc24c4f64ee449aef55e0b9d4baabd1ce7",
+      "bytes": 21135
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold1/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "3dc96f5f57928135e8bba2ed3025458dabdeb838b3060c34b92afe54877f3261",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/solubility_aqsoldb/fold1/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "05e4e5f211bde268bff21b6e7f68ba5285215200b0b6788206fe0a87f7976a8b",
+      "bytes": 21122
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "ed80a58c305119ee60e1fe9c123336a112c644736a8cb05c29c1697106033897",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "7524b12b08164e6b3594f7a3ebd0cb5267106d55b247a1a2e5214d5ac1d210b0",
+      "bytes": 4138
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/hellinger_gaussian_C30_weighted_log/metadata.json",
+      "sha256": "6d42fe3fa4e92e32b21b251af3f0eb1fe7f0278982214819737df8ad1bc9bb5a",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/hellinger_gaussian_C30_weighted_log/predictions.npz",
+      "sha256": "46cf47d92788158650ce1d6fbb20ea8e3aba56b1b597b5abbac701d9c25fa855",
+      "bytes": 4216
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "41b94fd0ba9da5ce39c2f6d09c3b94cbea87f886db28f9fe7aaf7994874456e2",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "fd89dd4ade06881269e1f86d6751ed74f3b7101dfa07b45b2ac90450c8a54325",
+      "bytes": 4207
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/hellinger_gaussian_C3_weighted_log/metadata.json",
+      "sha256": "7ff827a9036ada1c02c97a5fb606a8c837546a5ad1ca4a906fcdb9de8fd72092",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/hellinger_gaussian_C3_weighted_log/predictions.npz",
+      "sha256": "b55e1d861f1345ce97ad293edc903c4669850ba2212daa9be9fe3ec1448e41fc",
+      "bytes": 4215
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "e7afeca19864eb40a22aed3dc0acff451e9f7a9326d51c4736a668a195daeddd",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "4adbba9b259a7874a17bbc15e6fdbdd127f60160f5102540c92d47cfa529441d",
+      "bytes": 3966
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/sqrt_polynomial_C30_weighted_log/metadata.json",
+      "sha256": "6487be22a9dc2a47c782119bc8060185096d78fc3b461d9d94abdab88b1ee215",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/sqrt_polynomial_C30_weighted_log/predictions.npz",
+      "sha256": "94bf672e02f7c08f3c31f833755c8743a5c3f8f31eb35e2c5b4281e15634e6c5",
+      "bytes": 4190
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "3fb4c6c34d9127f9bfd47f8713ea50271690def8a5bdcb8b71c9097ef3451caf",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "0f831c11b6e95072282b5ef2c3bce4d8365cb5958ca194f8d9699794456da543",
+      "bytes": 4074
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/sqrt_polynomial_C3_weighted_log/metadata.json",
+      "sha256": "d50ac21b7faf3da939f08c3f40df8db28e09ea5a9682958921d22346a8ec28ea",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold0/sqrt_polynomial_C3_weighted_log/predictions.npz",
+      "sha256": "0d2d4d34c645e9677923cb0002135ff91d598a5ba492b757d6457e2f049a7c73",
+      "bytes": 4201
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/hellinger_gaussian_C30_native/metadata.json",
+      "sha256": "d68158c3aa15b6aa62a77d335746e3543c2baf2bde919d6ec7bd7550e49544b5",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/hellinger_gaussian_C30_native/predictions.npz",
+      "sha256": "d58e4534ddf3cf311693ed89ed80c16a8d1e5effa6372f06f4c906da43bc89c1",
+      "bytes": 4194
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/hellinger_gaussian_C30_weighted_log/metadata.json",
+      "sha256": "90f34d7b18b4e2b8f372b6b98eeeae502d64d6d09f4391f8d84dd8e63dcb074d",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/hellinger_gaussian_C30_weighted_log/predictions.npz",
+      "sha256": "1bdfc38bb357eae05cfc308f3f6efd6e9af79a4f706e4118d265e574205de3df",
+      "bytes": 4238
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/hellinger_gaussian_C3_native/metadata.json",
+      "sha256": "f63633c9c9907caf7bc17e85902c989895f6f39a6a159bc681dfc5824cd93dd7",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/hellinger_gaussian_C3_native/predictions.npz",
+      "sha256": "66e49fcb71c38780790a72958d0db6a23a7f3f93bb21889ddd63d50a64c03bb8",
+      "bytes": 4220
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/hellinger_gaussian_C3_weighted_log/metadata.json",
+      "sha256": "1b67f6034e30badc1bf6093a6ca9120dd2cc1ceb16c850a11ee9b301d87bfe67",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/hellinger_gaussian_C3_weighted_log/predictions.npz",
+      "sha256": "cc6a2bf62883d035efd5e8df36216b8e54e35d177c78010bc71de1a5d0b34740",
+      "bytes": 4244
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/sqrt_polynomial_C30_native/metadata.json",
+      "sha256": "ae99553c8e8910bc5ce57cdf9ca6fd3f115efbd5230362ed82704ca5b7f1eede",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/sqrt_polynomial_C30_native/predictions.npz",
+      "sha256": "7f606bf1177a8ae6c9f627749885fa8ae0cef90c14cb553f2ab2ae78aa362596",
+      "bytes": 4034
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/sqrt_polynomial_C30_weighted_log/metadata.json",
+      "sha256": "136702e640d001e679ab93089a4a47ea10430a9d827b0db5984edb19f6bf8a23",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/sqrt_polynomial_C30_weighted_log/predictions.npz",
+      "sha256": "a8542ad173b203304a5e9045e6f2da12f482af2434da0191dcecd6d943b26d05",
+      "bytes": 4218
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/sqrt_polynomial_C3_native/metadata.json",
+      "sha256": "5769becc53ad676757c62471d524f2599542da21d14c4b86004885fc59c8f053",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/sqrt_polynomial_C3_native/predictions.npz",
+      "sha256": "bd99ee73df0122ca60edaa3f95153ee64d80244101bf0cb23a1ab62fad225fdd",
+      "bytes": 4154
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/sqrt_polynomial_C3_weighted_log/metadata.json",
+      "sha256": "c96268eff6bf5f6edc9696abbc731011708eb6864839a28ffe55916df279ba09",
+      "bytes": 340
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold1/sqrt_polynomial_C3_weighted_log/predictions.npz",
+      "sha256": "39ce377fb9855712771b9f173e18dbadff5108c3408bfb48e79e2fac475dbdbd",
+      "bytes": 4213
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold2/hellinger_gaussian_C3_weighted_log/metadata.json",
+      "sha256": "c5c207f8d1e6b4917a59489f406429424ea90311273b287c0fa388fe6fd2e801",
+      "bytes": 339
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/fold2/hellinger_gaussian_C3_weighted_log/predictions.npz",
+      "sha256": "55e923f2f675042b82f1f5b6da8ec1caf8ea354277798c7d04fdae8283a5235e",
+      "bytes": 4254
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/valid/hellinger_gaussian_C3_weighted_log/metadata.json",
+      "sha256": "6f2f40c5e1f131754d74600f2c010d400671af49213d6969eb5afb914974cc5c",
+      "bytes": 338
+    },
+    {
+      "path": "experiments/regression9_v380/outputs/tasks/vdss_lombardo/valid/hellinger_gaussian_C3_weighted_log/predictions.npz",
+      "sha256": "b9fc5fdd873a20ccdecdf12a2476605178e8dd27dcc4afbd95dfe23a7d3bc1c1",
+      "bytes": 3223
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold0_caco2_wang.log",
+      "sha256": "f7c8dedf96d7bb01929680873cd51f6b911d5055c97d437e264474d02d4203af",
+      "bytes": 624
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold0_clearance_hepatocyte_az.log",
+      "sha256": "e75a82d6d19218c4484716df767f28887996368d7924461d7ea4069449a65e34",
+      "bytes": 1382
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold0_clearance_microsome_az.log",
+      "sha256": "3dbc8ab113da91509d201617ca8d407bbbcec0d7f230fc2046e3e1a2b616b470",
+      "bytes": 1374
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold0_half_life_obach.log",
+      "sha256": "cdf83ffa6fec3bfec9dbcd310fa0a30cc57140f8677ef90d9a25a39d7ef5915f",
+      "bytes": 1314
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold0_ld50_zhu.log",
+      "sha256": "226f587dbd5f62718e38aa52238529394fcadfb9108fec59f41cc178789a0390",
+      "bytes": 617
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold0_lipophilicity_astrazeneca.log",
+      "sha256": "dfa6b80eaf06d2bb8f17a68d9a6d1b138eaf9323746bcf4106d686ec45c5c294",
+      "bytes": 684
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold0_ppbr_az.log",
+      "sha256": "893ed01de3315773b5a030f663bae8c6de748195e9ba722c3002c0d1ccef7508",
+      "bytes": 612
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold0_solubility_aqsoldb.log",
+      "sha256": "6e1568e8450687eeabc1f215cfcd4f78aee79315a18460112701fa4cdbac389c",
+      "bytes": 658
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold0_vdss_lombardo.log",
+      "sha256": "a9fa05ed6a192ac0f697d30105fa444d311471ee74f15290187a6ad9264884c3",
+      "bytes": 1301
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold1_caco2_wang.log",
+      "sha256": "e2f02977b3e435a75035934361280eafff891d675b3289d2bca0211144122714",
+      "bytes": 627
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold1_clearance_hepatocyte_az.log",
+      "sha256": "0c811a1279cf7adf88dbce1148b743dc15cb8a79e3a58dbfaa81bab2e407367b",
+      "bytes": 1381
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold1_clearance_microsome_az.log",
+      "sha256": "86e371212cd8b9555704f5b40fe61216a79fece442708655a6fec126934bac01",
+      "bytes": 1373
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold1_half_life_obach.log",
+      "sha256": "8c5b5002d52d1db594a9d4cd08e387f30a2fac027ca1e904ab3b696f4701c304",
+      "bytes": 1314
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold1_ld50_zhu.log",
+      "sha256": "9c05b3eafd0fcdd731c35b41704b02f204847b01903a531e7c1ea7b1cad878b9",
+      "bytes": 615
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold1_lipophilicity_astrazeneca.log",
+      "sha256": "8037ac417b8a7bd344e20158f1c9dfac3c76425cc30202814be619c3e3c71287",
+      "bytes": 685
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold1_ppbr_az.log",
+      "sha256": "1ff7291da0d09647b335e3e43e659090d1e418da9d1cf23ffc01cf83044520f0",
+      "bytes": 612
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold1_solubility_aqsoldb.log",
+      "sha256": "3344a2602c1641fa04f9a03789f6d37cf33e5f7bb6480cfd9267dfb980ba62a8",
+      "bytes": 656
+    },
+    {
+      "path": "experiments/regression9_v380/prefit_logs/fold1_vdss_lombardo.log",
+      "sha256": "86ff7faec6e7881bbaf34472e4eb0c6608981361b85878407e334d664e34dc59",
+      "bytes": 1301
+    },
+    {
+      "path": "experiments/regression9_v380/progress.json",
+      "sha256": "7ee9557a40299b9156711d87852f82cd4642242036c356d32378ae49245caad1",
+      "bytes": 1260
+    },
+    {
+      "path": "experiments/regression9_v380/result_archive.json",
+      "sha256": "6b509ebcaa6ccd8ef32f01c6ab81ca0ade30ab611899e39c3abf28a0336fcc78",
+      "bytes": 208
+    },
+    {
+      "path": "experiments/regression9_v380/result_manifest.json",
+      "sha256": "8ec4a02e69444205ec382b8c3ed6622dd664744ba7de1395447ad6ab54272d8c",
+      "bytes": 58205
+    },
+    {
+      "path": "experiments/regression9_v380/run_status.json",
+      "sha256": "9dc70a3d46ae2ef3a1d354b464807765192735c1794f94fa9b9dd64c17bfbf25",
+      "bytes": 197
+    },
+    {
+      "path": "experiments/regression9_v380/smoke_receipt.json",
+      "sha256": "20edb183c1a304f155151a3f0f647997214c553c59b1ee55615da8dffd632c22",
+      "bytes": 440
+    },
+    {
+      "path": "experiments/regression9_v380/source_freeze.json",
+      "sha256": "d20846d4451f0067f15a78ca256270a86bf42c0c582d425c06459c643946a3a9",
+      "bytes": 1013
+    },
+    {
+      "path": "experiments/regression9_v380/training.log",
+      "sha256": "f15233d7b3542dd85f0a81d3a5d7a1f95c560b0b0647533af8907bec9ee02593",
+      "bytes": 36331
+    },
+    {
+      "path": "experiments/regression9_v380/v371_mae_experts.py",
+      "sha256": "64ba5ff605f3a71b0065817e7d99ffb27cdede65baf218296e1bb1159c09020f",
+      "bytes": 12464
+    },
+    {
+      "path": "experiments/regression9_v380/v377_regression_experts.py",
+      "sha256": "c0af57f620695bbfc1c25dbe50335b58a53b94ff04f2c50122c7f559687518a1",
+      "bytes": 5824
+    },
+    {
+      "path": "experiments/regression9_v380/v380_histogram_median.py",
+      "sha256": "be79212314c874d5d75847d0e067024e0cfc21f612580b069a8f141944073257",
+      "bytes": 7538
+    },
+    {
+      "path": "experiments/regression9_v380/v380_run_experts.py",
+      "sha256": "e80fdc312ae39eacba52e638065b98830afbd296c8f58e517f99191507d92c40",
+      "bytes": 4536
+    },
+    {
+      "path": "experiments/regression9_v380/v380_smoke.py",
+      "sha256": "be35e80621db3338d0c5ebaec1cc4ce25eeaff9244ba3ea05c6373226ce2fd59",
+      "bytes": 1412
+    },
+    {
+      "path": "experiments/regression9_v380/v380_verify_experts.py",
+      "sha256": "edfaa22b8cb2fa7be22535110cf68b5ed8160a72c4af4580c1a386b625fec0cb",
+      "bytes": 4746
+    },
+    {
+      "path": "HANDOFF_CURRENT.md",
+      "sha256": "d07507782b6bdd2ec073ff9e32fad9af318564fc034998f1e28b782bded32121",
+      "bytes": 14248
+    },
+    {
+      "path": "releases/v379_complete_handoff.tar.gz",
+      "sha256": "621af27851b7d9f505b2e8f31cc93ad32024041f8b830fa52c9f3e8edc6569b1",
+      "bytes": 807437905
+    },
+    {
+      "path": "releases/v380_histogram_delta.tar.gz",
+      "sha256": "f402b61ebbf65b7c733f0da36870e30713c90b8a290617fdc0fc622ec467dc83",
+      "bytes": 13000
+    },
+    {
+      "path": "tools/v377_deliver_regression.py",
+      "sha256": "1f06678b840eae5f82df05a14fabfe462eb9749218162530ea38befbee8511e0",
+      "bytes": 10199
+    },
+    {
+      "path": "tools/v378_research_vs_deployment.py",
+      "sha256": "b318a0ed56becbda3c6440089ef106f7f9fc87bc56a3d1f2273aad3ce8f84aa7",
+      "bytes": 2079
+    },
+    {
+      "path": "tools/v379_collect_auxiliary.py",
+      "sha256": "971b3035829cce96960693d582098a114e4e381924dfc5f476860b2385e70141",
+      "bytes": 1425
+    },
+    {
+      "path": "tools/v379_unpack_auxiliary.py",
+      "sha256": "32de65f1a4fc062436c02cf66c6d7ba69a8eaa875ac3e8fdbd83e5bcde171b0e",
+      "bytes": 1444
+    },
+    {
+      "path": "tools/v380_analyze.py",
+      "sha256": "bb086448cb25679428f2bbca1222025b73ad3c7f1286ac191354944d64a5fb46",
+      "bytes": 1328
+    },
+    {
+      "path": "tools/v380_bootstrap.py",
+      "sha256": "25ab701565719ab12122298acd13d6d708a500e7196f0628b1d603a779734192",
+      "bytes": 2357
+    },
+    {
+      "path": "tools/v380_completion.py",
+      "sha256": "d86e57816ac229aed3731e2ae40a57a7510fc82c0be8d59533ecb75bee38da27",
+      "bytes": 2454
+    },
+    {
+      "path": "tools/v380_finalize.py",
+      "sha256": "9559ea90591f72b3697065beefc0cb07ffbd11ac4f474750d172b1e30f2d2a62",
+      "bytes": 10355
+    },
+    {
+      "path": "tools/v380_histogram_median.py",
+      "sha256": "be79212314c874d5d75847d0e067024e0cfc21f612580b069a8f141944073257",
+      "bytes": 7538
+    },
+    {
+      "path": "tools/v380_monitor.py",
+      "sha256": "943f0bb8c232bfee8dd13f6d9d2bff6cfecdaf9b1745033e83a08986747d0c22",
+      "bytes": 1317
+    },
+    {
+      "path": "tools/v380_prepare.py",
+      "sha256": "a70fb8820d7ad31b9b22944bc66a9afa378f379d7d22eff231912b8d9618cc6c",
+      "bytes": 5264
+    },
+    {
+      "path": "tools/v380_progress_local.py",
+      "sha256": "b51ffcbbee4231ea82d9567427a8f955facec10fb6d4e5e3e392edfa6aa1c9b8",
+      "bytes": 1381
+    },
+    {
+      "path": "tools/v380_reference_review.py",
+      "sha256": "dc3642bd68fb1c9820497384dd0c1ac4a42547815439b3856804a92c5266ec4b",
+      "bytes": 1619
+    },
+    {
+      "path": "tools/v380_run_experts.py",
+      "sha256": "e80fdc312ae39eacba52e638065b98830afbd296c8f58e517f99191507d92c40",
+      "bytes": 4536
+    },
+    {
+      "path": "tools/v380_smoke.py",
+      "sha256": "be35e80621db3338d0c5ebaec1cc4ce25eeaff9244ba3ea05c6373226ce2fd59",
+      "bytes": 1412
+    },
+    {
+      "path": "tools/v380_verify_experts.py",
+      "sha256": "edfaa22b8cb2fa7be22535110cf68b5ed8160a72c4af4580c1a386b625fec0cb",
+      "bytes": 4746
+    }
+  ],
+  "credentials_included": false,
+  "inherited_inputs": "Prior verified complete handoff nested.",
+  "nonselected_checkpoints_remain_remote": true
+}

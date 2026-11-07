@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "archive": "releases/v374_delta_inputs.tar.gz",
+  "sha256": "9bc47e0b01b41339bbc17781eb9e25212de6558560bbb8378fd1589e1ad34157",
+  "bytes": 1910171,
+  "reused_immutable_input": "v371_expert_inputs.tar.gz",
+  "stereo_parse_fallback": 2
+}

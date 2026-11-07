@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "archive": "releases/v379_distribution_delta.tar.gz",
+  "sha256": "52069a8f5457908f42c63609ddb1c53056ede0f278ae9506e00618de71843bc9",
+  "bytes": 13881,
+  "local_input_files_verified": 96,
+  "source_files": [
+    {
+      "name": "v371_mae_experts.py",
+      "sha256": "64ba5ff605f3a71b0065817e7d99ffb27cdede65baf218296e1bb1159c09020f"
+    },
+    {
+      "name": "v377_regression_experts.py",
+      "sha256": "c0af57f620695bbfc1c25dbe50335b58a53b94ff04f2c50122c7f559687518a1"
+    },
+    {
+      "name": "v379_distribution_transformer.py",
+      "sha256": "f4ebf87be6a1722ef376f96b9d8344014dc19160cf8a5acb19dd9b83dda070bf"
+    },
+    {
+      "name": "v379_run_experts.py",
+      "sha256": "3bba975909abc466a2474f4c4a0d4999ef6c611c298e7d387a8f38356b7ab600"
+    },
+    {
+      "name": "v379_verify_experts.py",
+      "sha256": "3a4e9c6ab892e73b141de93ffa9fdf4057ffa284e2d565fcf8530e8e74fe765c"
+    },
+    {
+      "name": "v379_smoke.py",
+      "sha256": "9bda282315256f7cf8e575e2963bc4c6548a016eae6d38c5a00b6b05158a77f9"
+    }
+  ],
+  "all_fitting_remote": true,
+  "source_amendment": {
+    "reason": "Align ranking-task MAE and Spearman verification with exactly the same native-unit prediction that will be submitted.",
+    "before_any_model_fit": true,
+    "old_archive_sha256": "38f6c19babd3667afd09e5ab78a4e42464e4856ef937647d4fcb7339c4e26740",
+    "old_sources": "prelaunch_source_v1",
+    "no_scores_seen_for_v379": true
+  }
+}

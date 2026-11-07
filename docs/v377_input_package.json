@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "archive": "releases/v377_regression9_delta.tar.gz",
+  "sha256": "20fad5266e55597f7e29e4a9c320651e4090e5f5aa430b9e21b3fe917fbd4ab7",
+  "bytes": 381913067,
+  "large_arrays_inherited_from": "mae_experts_v374",
+  "partitions": 45
+}

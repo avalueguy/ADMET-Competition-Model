@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE",
+  "driver_pid": 3026,
+  "source_signature": "c70dd3ec181a3cb85823f8e76a8e12ebb429d9b23c233e8e41bc3c95a127d00d",
+  "workers": [
+    {
+      "pid": 3034,
+      "tasks": [
+        "herg",
+        "cyp3a4_substrate_carbonmangels"
+      ],
+      "start_ticks": "1988094026"
+    }
+  ],
+  "threads_per_worker": 4,
+  "max_cpu_threads": 4,
+  "selection_performed": false,
+  "confirmation_observed": false,
+  "worker_exit_codes": [
+    0
+  ],
+  "selector_pid": 3276,
+  "selector_start_ticks": "1988105499",
+  "selector_exit_code": 0
+}

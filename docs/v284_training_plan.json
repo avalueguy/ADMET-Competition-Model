@@ -1,0 +1,45 @@
+{
+  "version": "v284",
+  "delivery_version": "v285",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-30T04:55:28.857555+00:00",
+  "source_sha256": "3f7f111a75053710369247e89cf835fa2567fceaf8e54a7c2a3187350582df91",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "tasks": [
+    "herg",
+    "cyp3a4_substrate_carbonmangels"
+  ],
+  "protected_tasks": 20,
+  "development_partitions": 4,
+  "development_seed_models": 8,
+  "original_seeds": [
+    1274026,
+    1274027
+  ],
+  "new_seeds": [],
+  "configs": [
+    {
+      "identity": "isomeric_exact_and_neutral"
+    }
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "original_component_weight": 0.5,
+  "hypothesis": "Measured assay aggregation discards stereochemistry, pooling different isomers and introducing measurements/masks inappropriate to the exact isomer. Fit-only changed row fractions29-45percent support testing specific identities rather than a new architecture.",
+  "mechanism": "Original full graph RDKit isomeric canonical identity and original largest-parent/uncharger with isomeric output, unusual-valence graph preserved. Same five blocks exactMedian/exactMask/neutralMedian/neutralMask/neutralRange; no nonstereo fallback. Rest of original physchem input unchanged.",
+  "estimator": "Original GPU CatBoost Logloss900depth4 lr.025 l2=30 Bernoulli.85 border64 seeds1274026/1274027 CPUthreads3. Sigmoid mean logits, replace original component in original.5 rank blend, then unchangedv148incremental .2/.45.",
+  "support": "docs/v283_stereochemical_context_audit.json",
+  "preconditions": "Enantiomer distinction, equivalent-SMILES identity, target-nonfit-label isolation, actualCUDA update/checkpointreload/roworder; original component replay all5partitions,105cache and dependencySHA.",
+  "selection": "Unchangedv148fold0/1 unique max-min config/weight>.003 frozen before confirmation.",
+  "confirmation": "All4pointgains>0, mean>.003, bothfold2/valid500drawscaffoldbootstrap90lower>0; no fallback.",
+  "accepted_verification": "Independently regenerate all molecular identities, context/features/modelreload/gates/fusion/modelhashes/order/Drug_ID/nonpredictionbytes/backupSHA; full archive dependency restore before manualCSVdelivery.",
+  "source_immutable_after_start": true,
+  "manual_submission_only": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "official_improvement_guaranteed": false,
+  "limitations": "Prior publiclabel reuse and upstream proxy controls remain; structureidentity correction may reduce coverage and worsen generalization."
+}

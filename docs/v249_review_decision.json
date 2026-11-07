@@ -1,0 +1,27 @@
+{
+  "status": "REVIEW_COMPLETE_NO_NEW_MODEL_STARTED",
+  "checked_at_utc": "2026-10-29T09:16:55.525692+00:00",
+  "diagnostic": "docs/v249_ionization_error_audit.json",
+  "historical_sources_reviewed": [
+    "admet_v51_run.py",
+    "admet_v52_neural.py",
+    "admet_v73_experts.py",
+    "tools/v210_standardized_chemistry.py",
+    "tools/v244_conditional_density.py"
+  ],
+  "findings": [
+    "Earlier physical-prior models already contain MolLogP/ESOL residuals and bounded PPBR neural outputs; simply adding these again would duplicate prior methods.",
+    "No chemistry stratum in Caco2 or lipophilicity has supported same-direction mean bias in both development folds.",
+    "PPBR acid/base/both strata have positive mean residuals on both folds, but median residuals reverse sign. A blanket downward adjustment would not have evidence for MAE improvement.",
+    "SMARTS identify broad categories, not measured pKa or assay pH; no permission to infer missing labels or claim mechanistic validity."
+  ],
+  "next_model_preconditions": [
+    "A distinct input/likelihood/training mechanism with a plausible fit-only advantage beyond completed routes",
+    "Fix task/model/parameters/seeds/source before scoring and retain original v148 confirmation",
+    "Do not restart v244, try new seeds of rejected routes, or adjust outputs directly using these exploratory strata"
+  ],
+  "new_training_started": false,
+  "new_csv_created": false,
+  "original_gates_unchanged": true,
+  "manual_submission_only": true
+}

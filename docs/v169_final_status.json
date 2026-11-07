@@ -1,0 +1,45 @@
+{
+  "status": "COMPLETE_NO_NEW_SUBMISSION",
+  "baseline_official_score": 51.166,
+  "baseline_version": "v145",
+  "routes_completed": [
+    149,
+    150,
+    151,
+    153,
+    157,
+    159,
+    168
+  ],
+  "accepted_tasks": [],
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "archives_verified": [
+    {
+      "status": "PASS",
+      "prefix": "v161_new_structure_models_20261027_repaired",
+      "archive_sha256": "5a238fde4afe3dfbf90d75ccdce387fc3621ae405a4becd650df725957b0a375",
+      "manifest_files": 2187,
+      "all_member_hashes_verified": true,
+      "dependency_hashes_verified": true,
+      "restored": 0,
+      "existing_exact": 2187,
+      "existing_updated_docs_preserved": []
+    },
+    {
+      "status": "PASS",
+      "prefix": "v169_sparse_linear_20261027",
+      "archive_sha256": "8c31f26dfb1ca9c043c97a8ca74477d95139c09ce283676f45cb5e5583b414c0",
+      "manifest_files": 339,
+      "all_member_hashes_verified": true,
+      "dependency_hashes_verified": true,
+      "restored": 290,
+      "existing_exact": 49,
+      "existing_updated_docs_preserved": []
+    }
+  ],
+  "browser": "Edge",
+  "automatic_submission_authorized": true,
+  "automation_id": "admet",
+  "running_training_processes": 0
+}

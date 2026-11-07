@@ -1,0 +1,49 @@
+{
+  "status": "HASH_VERIFIED_RECOVERY_ONLY",
+  "files": [
+    {
+      "path": "experiments/v381_legacy_checkpoint_recovery/admet_model_outputs_v67/final/gated/672031/checkpoint_5500.pt",
+      "sha256": "b138ced289022535599efb55fcffbcecf49c2b2725453351fbbfe0dc15914adc",
+      "bytes": 9130183
+    },
+    {
+      "path": "experiments/v381_legacy_checkpoint_recovery/admet_model_outputs_v67/final/gated/672031/checkpoint_7000.pt",
+      "sha256": "2047d75068202bb24aa1af25d0ff064abc4ad471ceb6e4b9a2335b904b974e3d",
+      "bytes": 9130183
+    },
+    {
+      "path": "experiments/v381_legacy_checkpoint_recovery/admet_model_outputs_v67/final/gated/672032/checkpoint_5500.pt",
+      "sha256": "bc162373582b54c7da9dc9ecd7bdd202cd6d93fdbe131fc13856415aaf34de3c",
+      "bytes": 9130183
+    },
+    {
+      "path": "experiments/v381_legacy_checkpoint_recovery/admet_model_outputs_v67/final/gated/672032/checkpoint_7000.pt",
+      "sha256": "6d122ab16f2baafaaf7dcf4f4f8c2e4bf81f76c364f48c36ce7436c18bc2ac20",
+      "bytes": 9130183
+    },
+    {
+      "path": "experiments/v381_legacy_checkpoint_recovery/admet_model_outputs_v67/final/shared/672031/checkpoint_5500.pt",
+      "sha256": "9f46449ddfd889e03c8afda3151c14ddff0bdd07412af7efb65be2fb1977e7ed",
+      "bytes": 7512089
+    },
+    {
+      "path": "experiments/v381_legacy_checkpoint_recovery/admet_model_outputs_v67/final/shared/672031/checkpoint_7000.pt",
+      "sha256": "b2294f9ea8633f41ae6734e3180b6345bfc46f30baa51f8e066ea43416751cba",
+      "bytes": 7512089
+    },
+    {
+      "path": "experiments/v381_legacy_checkpoint_recovery/admet_model_outputs_v67/final/shared/672032/checkpoint_5500.pt",
+      "sha256": "d921f415c4442d0e30d860edb81c02f849f8ca19798983e26f6710223d97760c",
+      "bytes": 7512089
+    },
+    {
+      "path": "experiments/v381_legacy_checkpoint_recovery/admet_model_outputs_v67/final/shared/672032/checkpoint_7000.pt",
+      "sha256": "3aee4db0d8ec5ee9cb8e1162ce5092f7fd41fcbffcc7417eef08759b859e583d",
+      "bytes": 7512089
+    }
+  ],
+  "no_model_execution": true,
+  "no_fitting": true,
+  "source_manifest_sha256": "55cc3fd4e623904aa495ed30b7ccd376f5469694064fa7adadc35e48d27f6ccc",
+  "limitation": "Eight v67 final shared/gated checkpoints only. Not complete historic ensemble OOF or recovered continuous-task upstream weights. No gain inferred."
+}

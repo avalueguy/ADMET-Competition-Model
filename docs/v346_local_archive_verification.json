@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "archive": "releases/v346_experimental_solubility_20261101.tar.gz",
+  "sha256": "05cebd3d81089099cc88930b2d0db70591cd8053c740074df7b769622da85d78",
+  "bytes": 16533687,
+  "members": 25,
+  "manifest_files": 24,
+  "all_member_hashes_verified": true,
+  "csv_members": [
+    "admet_submissions/v346_experimental_solubility/我从山北来带着兰花草-小分子药物预测技术创新赛-20261101.csv"
+  ],
+  "restored_absent": 1,
+  "existing_different_preserved": [],
+  "dependency_contents_reverified": true,
+  "dependency_hashes_checked": 50
+}

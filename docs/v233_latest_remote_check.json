@@ -1,0 +1,90 @@
+{
+  "at_utc": "2026-10-29T07:48:30.520839+00:00",
+  "process_identity_and_source_verified": true,
+  "processes": [
+    {
+      "pid": 21544,
+      "stat": "S",
+      "cmdline": "/root/miniconda3/bin/python /root/autodl-tmp/v76/tools/v236_similarity_driver.py "
+    },
+    {
+      "pid": 21545,
+      "stat": "S",
+      "cmdline": "/root/miniconda3/bin/python /root/autodl-tmp/v76/tools/v235_package_similarity_batch.py "
+    },
+    {
+      "pid": 21552,
+      "stat": "EXITED"
+    },
+    {
+      "pid": 21553,
+      "stat": "EXITED"
+    },
+    {
+      "pid": 21554,
+      "stat": "EXITED"
+    },
+    {
+      "pid": 21598,
+      "stat": "R",
+      "cmdline": "/root/miniconda3/bin/python /root/autodl-tmp/v76/tools/v233_supervised_chemical_similarity.py "
+    }
+  ],
+  "scheduler": {
+    "status": "PRECOMPUTE_COMPLETE_SELECTOR_RUNNING",
+    "driver_pid": 21544,
+    "source_signature": "4786090ee874022ab0bf593f84ac58587abc6b5b7028d18101f84b38064bea0f",
+    "workers": [
+      {
+        "pid": 21552,
+        "tasks": [
+          "herg",
+          "clearance_hepatocyte_az"
+        ],
+        "start_ticks": "1980456827"
+      },
+      {
+        "pid": 21553,
+        "tasks": [
+          "bbb_martins",
+          "solubility_aqsoldb"
+        ],
+        "start_ticks": "1980456827"
+      },
+      {
+        "pid": 21554,
+        "tasks": [
+          "ames",
+          "pgp_broccatelli"
+        ],
+        "start_ticks": "1980456827"
+      }
+    ],
+    "threads_per_worker": 4,
+    "max_cpu_threads": 12,
+    "selection_performed": false,
+    "confirmation_observed": false,
+    "worker_exit_codes": [
+      0,
+      0,
+      0
+    ],
+    "selector_pid": 21598,
+    "selector_start_ticks": "1980462522"
+  },
+  "trained_models": 12,
+  "completed_partitions": 12,
+  "development": null,
+  "frozen_selection": null,
+  "confirmation": null,
+  "failure": null,
+  "pipeline": {
+    "status": "WAITING_TRAINING",
+    "route": "v233"
+  },
+  "latest_worker_logs": {
+    "v236_worker_0.log": "267292394936014, 0.0, 0.0, 0.1818149886158873, 0.0, 0.0, 0.0, 0.0, 0.04005081253516649]}\n{\"stage\": \"train\", \"task\": \"herg\", \"part\": \"fold1\", \"seconds\": 1, \"weights\": [0.003057576892121908, 0.0, 0.0, 0.0, 0.18584673027296633, 0.0, 0.6410884399540692, 0.03156500507464178, 0.0, 0.12190767508552147, 0.0, 0.008120169296414443, 0.0, 0.0, 0.008414403424264943]}\n{\"stage\": \"train\", \"task\": \"clearance_hepatocyte_az\", \"part\": \"fold0\", \"seconds\": 2, \"weights\": [0.2914974786514842, 0.09599960320273507, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1024138388814112, 0.316279550812403, 0.012860440353442611, 0.07151624510855024, 0.0, 0.0, 0.07151624510855, 0.03791659788142377]}\n{\"stage\": \"train\", \"task\": \"clearance_hepatocyte_az\", \"part\": \"fold1\", \"seconds\": 1, \"weights\": [0.015368661651869692, 0.20979893229186233, 0.0, 0.0, 0.0, 0.0, 0.0, 0.30481316553111665, 0.04840587211342731, 0.260807491833055, 0.0, 0.0, 0.0, 0.0, 0.16080587657866893]}\n{\"status\": \"PRECOMPUTE_COMPLETE\", \"tasks\": [\"herg\", \"clearance_hepatocyte_az\"]}\n",
+    "v236_worker_1.log": "ns\", \"part\": \"fold0\", \"seconds\": 3, \"weights\": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3373227621399121, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6626772378600879]}\n{\"stage\": \"train\", \"task\": \"bbb_martins\", \"part\": \"fold1\", \"seconds\": 3, \"weights\": [0.32241686020595417, 0.0, 0.0, 0.017795322886140788, 0.10490877048372281, 0.09283862110013848, 0.0652166069792273, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3968238183448165]}\n{\"stage\": \"train\", \"task\": \"solubility_aqsoldb\", \"part\": \"fold0\", \"seconds\": 17, \"weights\": [0.0, 0.0, 0.0, 0.06346730507336837, 0.06904642923913683, 0.0, 0.5575969469803911, 0.02590316714059558, 0.0, 0.0, 0.0, 0.0, 0.1296615735831897, 0.0, 0.15432457798331836]}\n{\"stage\": \"train\", \"task\": \"solubility_aqsoldb\", \"part\": \"fold1\", \"seconds\": 15, \"weights\": [0.0, 0.0, 0.0, 0.1577184258259573, 0.1358515632020574, 0.0, 0.2006226134008964, 0.0, 0.0, 0.0, 0.0, 0.11985915642261544, 0.3859482411484735, 0.0, 0.0]}\n{\"status\": \"PRECOMPUTE_COMPLETE\", \"tasks\": [\"bbb_martins\", \"solubility_aqsoldb\"]}\n",
+    "v236_worker_2.log": "{\"stage\": \"train\", \"task\": \"ames\", \"part\": \"fold0\", \"seconds\": 14, \"weights\": [0.0, 0.0, 0.0, 0.07568877993244007, 0.0, 0.0, 0.0, 0.23179406255627977, 0.10777457938745008, 0.0, 0.0, 0.10399521134113048, 0.36660098449850526, 0.0, 0.11414638228419438]}\n{\"stage\": \"train\", \"task\": \"ames\", \"part\": \"fold1\", \"seconds\": 13, \"weights\": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5423344349460785, 0.0, 0.0, 0.0, 0.2409356964045444, 0.21549623978699145, 0.0, 0.0012336288623854962]}\n{\"stage\": \"train\", \"task\": \"pgp_broccatelli\", \"part\": \"fold0\", \"seconds\": 2, \"weights\": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4811655512635896, 0.19182101634694532, 0.15274515994914586, 0.0, 0.0, 0.0, 0.17426827244031926, 0.0, 0.0]}\n{\"stage\": \"train\", \"task\": \"pgp_broccatelli\", \"part\": \"fold1\", \"seconds\": 1, \"weights\": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5629093571824848, 0.103801515178992, 0.0, 0.0, 0.0, 0.0, 0.3314024371095545, 0.0, 0.0018866905289685826]}\n{\"status\": \"PRECOMPUTE_COMPLETE\", \"tasks\": [\"ames\", \"pgp_broccatelli\"]}\n"
+  }
+}

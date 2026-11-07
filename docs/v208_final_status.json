@@ -1,0 +1,88 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "checked_at_utc": "2026-10-28T08:44:55.163078+00:00",
+  "training_version": "v207",
+  "delivery_version": "v208",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52,
+  "target_achieved": false,
+  "development_tasks": 21,
+  "nominated_tasks": [
+    "cyp3a4_substrate_carbonmangels",
+    "cyp2c9_substrate_carbonmangels"
+  ],
+  "accepted_tasks": [],
+  "confirmation_results": [
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "gains": {
+        "fold0": 0.027491694352159368,
+        "fold1": 0.017056690837178645,
+        "fold2": -0.00879934210526323,
+        "valid": 0.014336917562724039
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.02899470068526858,
+          0.013554296826768796
+        ],
+        "valid": [
+          -0.02900927078148323,
+          0.057898929773929624
+        ]
+      }
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "gains": {
+        "fold0": 0.00855329765740137,
+        "fold1": 0.006342514452842951,
+        "fold2": -0.006938518622790324,
+        "valid": 0.011215804582032751
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.05644368196179672,
+          0.011348984347408707
+        ],
+        "valid": [
+          -0.005268614718614733,
+          0.03799407366252288
+        ]
+      }
+    }
+  ],
+  "pretraining_independent_reload": {
+    "status": "PASS",
+    "signature": "6c98afee5f98b4b08ad610ba3ef3a945d7e271add5bfbc42f1d11cb9b1c7a0b0",
+    "model_hashes": {
+      "model_2071028.pt": "7c77d2969ac16d5471406c51b2093f9b912bdac029b1cedce0a1e6bb9ffe6391",
+      "model_2071029.pt": "bc23b1424d588e0832d79aa92fcfdaf5277594215f04a8a1b2d2e3a7da218f98"
+    },
+    "all_endpoint_label_perturbation_invariant": true,
+    "complete_embedding_reload": true,
+    "fitting_structures": 34610
+  },
+  "archive": {
+    "status": "PASS",
+    "prefix": "v208_denoising_encoder_20261028",
+    "archive_sha256": "87f5e5396350eba98804e2a756d873605171a920573376d08563e7ced030a4e6",
+    "manifest_files": 252,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 199,
+    "existing_exact": 53,
+    "existing_updated_docs_preserved": []
+  },
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "frozen_gates_unchanged": true,
+  "no_confirmation_fallback": true,
+  "rejected_route_restarted": false,
+  "training_pid_exited": 9284,
+  "pipeline_pid_exited": 9285
+}

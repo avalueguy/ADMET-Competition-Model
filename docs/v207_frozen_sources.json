@@ -1,0 +1,31 @@
+{
+  "path": "releases/v207_frozen_sources_20261028.tar.gz",
+  "sha256": "a07f8fd918bba97b19e3ec6844958849b5fb9b8b4cea417069984819a4349628",
+  "files": [
+    {
+      "path": "tools/v207_denoising_encoder.py",
+      "sha256": "40358539719841bd387a3d82f11486d33488b64dc4db8b73b704f8c060c6f5a0"
+    },
+    {
+      "path": "tools/v208_verify_denoising_encoder.py",
+      "sha256": "02b5503f526a2dffada49417cd6ba8239bb3f4c2060586a2a50704e6e610bcd0"
+    },
+    {
+      "path": "tools/v209_package_denoising_batch.py",
+      "sha256": "900ba732064490386e9f55a92aa3ff57494a6c52480df4091f7d064df9f1ff34"
+    },
+    {
+      "path": "tools/finalize_v208_local.py",
+      "sha256": "4e2d1b7bbd3a404910b78be9fa85438c9b6a0d07dc95aff48bcb8483caf7c0a7"
+    },
+    {
+      "path": "docs/v207_training_plan.json",
+      "sha256": "e9c37df3243ea66995be5df36d7ccdc4289e16e46bdaf1be3389e1becd4ee0d6"
+    },
+    {
+      "path": "docs/v207_source_review.json",
+      "sha256": "9dcd0749028ddeaa08fd1d1a9eac671911a8819fe2075329512ee793f7fcfc6b"
+    }
+  ],
+  "credentials_included": false
+}

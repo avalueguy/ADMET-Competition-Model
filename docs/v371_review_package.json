@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "archive": "releases/v371_mae_expert_review.tar.gz",
+  "sha256": "318d1f0baed1ef2335d103d8469a01cbe47276d12f8b7e4f828fed0f89bd96ec",
+  "bytes": 415668668,
+  "files": 240,
+  "all_member_hashes_verified": true
+}

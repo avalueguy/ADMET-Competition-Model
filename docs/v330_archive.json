@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "path": "releases/v330_sharpness_retrieval_20261101.tar.gz",
+  "sha256": "d7378b39a25c8a084eba5e9c0badd38415d2c4123c66688ad45477e6aebb495a",
+  "files": 80,
+  "all_member_hashes_verified": true
+}

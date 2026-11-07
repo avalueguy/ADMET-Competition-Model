@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "archive": "releases/v382_handoff_delta.tar.gz",
+  "sha256": "5af0f0f03dec3921d54c502039295fbef1220dee21d68ce223cb3c13e2bb73e4",
+  "bytes": 57422503,
+  "members": 337,
+  "all_member_hashes_verified": true,
+  "required_base_archive": "releases/v380_complete_handoff.tar.gz"
+}

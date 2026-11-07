@@ -1,0 +1,706 @@
+{
+  "status": "VERIFIED_EXPERIMENTAL_COMBINATION_DELIVERY",
+  "at_hong_kong": "2026-11-02T15:31:12.840800+08:00",
+  "baseline": {
+    "version": "v346",
+    "official_user_reported": 51.235,
+    "exact_task_mean": 51.234854454545456,
+    "recorded_at_hong_kong": "2026-11-02T14:24:19.020013+08:00",
+    "csv": "admet_submissions/v346_experimental_solubility/我从山北来带着兰花草-小分子药物预测技术创新赛-20261101.csv",
+    "csv_sha256": "bef15e3a892afddd661173e3496b671078067e03ee2022b2abbfde02da45a906",
+    "source": "docs/platform_scorecard_v346_20261101.json",
+    "previous_best": "v313",
+    "previous_best_official": 51.205,
+    "delta_task_mean": 0.029523227272733266,
+    "platform_uploaded_byte_hash_confirmed": false,
+    "reason": "User-reported official solubility improvement; other21 endpoints match. Historical strict-validation rejection is preserved."
+  },
+  "csv": "admet_submissions/v354_experimental_model_combinations/我从山北来带着兰花草-小分子药物预测技术创新赛-20261102.csv",
+  "csv_sha256": "96807c67421481871f6772dfe06ee37ba2ffcf9e0203fa576b08a10d4b87fedd",
+  "changed_rows": {
+    "cyp3a4_substrate_carbonmangels": 135,
+    "herg": 132
+  },
+  "unchanged_tasks": 20,
+  "selected_tasks": [
+    "cyp3a4_substrate_carbonmangels",
+    "herg"
+  ],
+  "strict_accepted_tasks": [],
+  "experimental_tasks": [
+    "cyp3a4_substrate_carbonmangels",
+    "herg"
+  ],
+  "checks": [
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "fold0",
+      "version": 168,
+      "rows": 156,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold0/strength1.0/predictions.npz",
+        "sha256": "bec590273210b09dd9b8fde1262150878a1af34f028fe6bb346f4bc853f73178"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold0/strength1.0/model.joblib": "321348225cacac5394a0e45e7cbb814da84e9adfbde2d1e506487993b6ee457d",
+        "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold0/strength1.0/transform.joblib": "1e0f30f4b5e2abca304acfcac3cdf076bc7d6d7f3de7ef06cc60c7094a79521b",
+        "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold0/strength1.0/predictions.npz": "bec590273210b09dd9b8fde1262150878a1af34f028fe6bb346f4bc853f73178"
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "fold0",
+      "version": 210,
+      "rows": 156,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold0/depth6/predictions.npz",
+        "sha256": "40bf40cfeb05d99cc8b4c9119c420dc8f841ac0e2b4e501a2627a1ebca997c32"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold0/depth6/transform.joblib": "895bdc0f3f1075ebd35d3f35cadb29290dd2237f18fd19b442e7f9a6a5f0d7f7",
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold0/depth6/model_2101028.cbm": "2d991ac1f9ee766462e7aef20bab6024cdbc9bd5e757e9be689b517c272f85bd",
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold0/depth6/model_2101029.cbm": "4f80c5651893be302fb5a0172a890751f28c61927e0bd5e54b1abf2aea4e224b",
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold0/depth6/predictions.npz": "40bf40cfeb05d99cc8b4c9119c420dc8f841ac0e2b4e501a2627a1ebca997c32"
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "fold0",
+      "version": 224,
+      "rows": 156,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold0/rot8_trees24/predictions.npz",
+        "sha256": "5767528aeb9e8f608513b0840e73d697facc0c9ca8402cc73520f921273b413a"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold0/rot8_trees24/transform.joblib": "81a1e452d390ab506e50c8feb09df416d449c60c28e3915b285dc086e6273888",
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold0/rot8_trees24/model_2241029.joblib": "7e0e15159fbe3128015a61b7f94f17b764e4e2f582744276f938ca596db97e9b",
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold0/rot8_trees24/model_2241030.joblib": "c24986c6a4d55e701ea6efac0995dcdfd485d0c0efbcfcc276e3af96f6d01c14",
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold0/rot8_trees24/predictions.npz": "5767528aeb9e8f608513b0840e73d697facc0c9ca8402cc73520f921273b413a"
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "fold1",
+      "version": 168,
+      "rows": 156,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold1/strength1.0/predictions.npz",
+        "sha256": "2e3ca189193d98fc798d3cfced01bb769cd3e28c8e1e0f6bcca5f58a81113eaa"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold1/strength1.0/model.joblib": "d03464e12398c998841d8c087471c03dc486d42bed55a6160adbf844d2c9b951",
+        "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold1/strength1.0/transform.joblib": "19a2bab348b18c700209e52a16db7bc9542eb68cb406a2b331b3e42cd7a6bd93",
+        "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold1/strength1.0/predictions.npz": "2e3ca189193d98fc798d3cfced01bb769cd3e28c8e1e0f6bcca5f58a81113eaa"
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "fold1",
+      "version": 210,
+      "rows": 156,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold1/depth6/predictions.npz",
+        "sha256": "badc116272d4171b103a26df5d7d76ab71446895b22ea8be767f082ef37946a8"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold1/depth6/transform.joblib": "f5385dce277a4630f680fc76226c7fdb9914c57951b1d698b607ed12b5f1f3a9",
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold1/depth6/model_2101028.cbm": "d723f911e1e5dd914a672e4ae52e08aee4ccd6971ba278abcf8f7fdc5db4de0d",
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold1/depth6/model_2101029.cbm": "49fe4dc6339d992b5a7ffff991f98fa3aef65ab28d60f2fa6cb85b37c6e28e7a",
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold1/depth6/predictions.npz": "badc116272d4171b103a26df5d7d76ab71446895b22ea8be767f082ef37946a8"
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "fold1",
+      "version": 224,
+      "rows": 156,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold1/rot8_trees24/predictions.npz",
+        "sha256": "755a2443d933d8418b3a201ab627c0a494d7cc28abbb0da7d26dcee66783378d"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold1/rot8_trees24/transform.joblib": "74e1d684ba5e62deba517bb73f25d2d309943d6343e98cb8f8160815ec566690",
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold1/rot8_trees24/model_2241029.joblib": "6ae875ea0badf9e6db23b812b6b3b13f88ddaabed4b35d6623c23386c8052bd8",
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold1/rot8_trees24/model_2241030.joblib": "7fdd82fce481db066cfd32705b969685845696c9e1c67cfafaec95105c4f4a03",
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold1/rot8_trees24/predictions.npz": "755a2443d933d8418b3a201ab627c0a494d7cc28abbb0da7d26dcee66783378d"
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "fold2",
+      "version": 168,
+      "rows": 156,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold2/strength1.0/predictions.npz",
+        "sha256": "606dd848c71518107bff4bd5f34f86a7fc0cc79ff18186b41024f8a40420d39d"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold2/strength1.0/model.joblib": "ce637a5bceeffce75e8aae91073423cf7cefe824adaaac500124f32ef3c86cee",
+        "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold2/strength1.0/transform.joblib": "37f6d1881610397d66b1b78e5e30f80f7c0ac561e1358e8354c054a12d2a1108",
+        "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold2/strength1.0/predictions.npz": "606dd848c71518107bff4bd5f34f86a7fc0cc79ff18186b41024f8a40420d39d"
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "fold2",
+      "version": 210,
+      "rows": 156,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold2/depth6/predictions.npz",
+        "sha256": "8f9c26e535eae4962991ef7d619b5a03431f166de5e08f1afd275de734eb1a3f"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold2/depth6/transform.joblib": "541cd1ed47689b326384856166f4ef1ccb122bf891a682a2ec7b22bce882e7bf",
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold2/depth6/model_2101028.cbm": "f1cff1de7ecd64265070e6af49e886b59d87d2fa853459b4719f253146758fa8",
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold2/depth6/model_2101029.cbm": "85ce7c6be32b777d07bcff86b8db529783fe19282b46eab5a0519e5ef3ad44a3",
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold2/depth6/predictions.npz": "8f9c26e535eae4962991ef7d619b5a03431f166de5e08f1afd275de734eb1a3f"
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "fold2",
+      "version": 224,
+      "rows": 156,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold2/rot8_trees24/predictions.npz",
+        "sha256": "7c86d3fe64ac48b576cfb86008b2441b8b4c68837842dc1ee7569de03da40fe9"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold2/rot8_trees24/transform.joblib": "4382cfd361b797cacee1c22929af2a90fdcd8ed233dd316c29b8a5fa9487bf61",
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold2/rot8_trees24/model_2241029.joblib": "06b0dd92eb6b4a5a6c6fabffe1926501d181c7c6fe0e168e515222ddb96af065",
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold2/rot8_trees24/model_2241030.joblib": "8ddc489d4bb3772c53c2f1a5aa1d451f738019cfae5114458e9fc0e17418b618",
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold2/rot8_trees24/predictions.npz": "7c86d3fe64ac48b576cfb86008b2441b8b4c68837842dc1ee7569de03da40fe9"
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "valid",
+      "version": 168,
+      "rows": 67,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/valid/strength1.0/predictions.npz",
+        "sha256": "b2708ce0da8adbd2d6f89806ced6b171232ef96fc2ac05da69ebdfeac989c07c"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/valid/strength1.0/model.joblib": "5b934d9ccf186624205399b9cd4311bb140ed7b19bf57590b6a9376846a32647",
+        "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/valid/strength1.0/transform.joblib": "29fb8dcc237efa5596f3b76b25fa39a515b0e07905089c637174eb84b3f69ec9",
+        "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/valid/strength1.0/predictions.npz": "b2708ce0da8adbd2d6f89806ced6b171232ef96fc2ac05da69ebdfeac989c07c"
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "valid",
+      "version": 210,
+      "rows": 67,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/valid/depth6/predictions.npz",
+        "sha256": "1be815babc5e4a4212f130eadf50f8479c9a1f989bfe80781fcf1932e182a9c6"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/valid/depth6/transform.joblib": "7dee8fb3157f1aa3435b44ad5772842f50b495ffab20b4f54c782a647b736781",
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/valid/depth6/model_2101028.cbm": "9b84e827e922d70bb525736521a952ca0890880a8ca603c2144c637498697ab1",
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/valid/depth6/model_2101029.cbm": "712ab8447bf90ee2e92eaa28b0ed8cf9ce82630d2f29b4310bdee06ef1edc5d8",
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/valid/depth6/predictions.npz": "1be815babc5e4a4212f130eadf50f8479c9a1f989bfe80781fcf1932e182a9c6"
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "valid",
+      "version": 224,
+      "rows": 67,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/valid/rot8_trees24/predictions.npz",
+        "sha256": "711c5d87069f0a9f8a216bb14a1de34faa862bee9d55ef75c0716665da712de7"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/valid/rot8_trees24/transform.joblib": "a8eb6e6355a26883f7296f701a84c4e54f693b7315ebb9d195bb203daae94052",
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/valid/rot8_trees24/model_2241029.joblib": "80c22b242d659d00273aa92a030e9c8f6019f518387afa86b9abde44821a538a",
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/valid/rot8_trees24/model_2241030.joblib": "7a61b8299bbf4dbdc44a2c4100bdf34edb8f192b7abf9d54c86a887502d3631c",
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/valid/rot8_trees24/predictions.npz": "711c5d87069f0a9f8a216bb14a1de34faa862bee9d55ef75c0716665da712de7"
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "final",
+      "version": 168,
+      "rows": 135,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/final/strength1.0/predictions.npz",
+        "sha256": "014c92a684436de3dc623a1f98cbf1398cbfa543197ede3182ef9be83ea063bb"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/final/strength1.0/model.joblib": "878e754178a7c1098074ae62856f5e6cd0ae6d32f00fbbfd9df5fce645e0f7c0",
+        "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/final/strength1.0/transform.joblib": "6fdba546ff242cb57081f25349033cb27a8157290d4c9fa0575e25b58937054e",
+        "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/final/strength1.0/predictions.npz": "014c92a684436de3dc623a1f98cbf1398cbfa543197ede3182ef9be83ea063bb"
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "final",
+      "version": 210,
+      "rows": 135,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/final/depth6/predictions.npz",
+        "sha256": "bfa97a8046db697392f6f640e2191a016ee0421a6f209f4ca5d4da5af8d1741b"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/final/depth6/transform.joblib": "adfd015e1d91433b167028d1c41954437b48461feaec6c71fdf442c20480b66c",
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/final/depth6/model_2101028.cbm": "53ce4efe5d90ad1881854c3d50cc3f40f9c25378cc0b541c8fb6d88ac5c7818c",
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/final/depth6/model_2101029.cbm": "36b414ab37e03fe9d9eb3cf55aa2ec8351993da12a3691c886a4bfda70ef8b4e",
+        "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/final/depth6/predictions.npz": "bfa97a8046db697392f6f640e2191a016ee0421a6f209f4ca5d4da5af8d1741b"
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "final",
+      "version": 224,
+      "rows": 135,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/final/rot8_trees24/predictions.npz",
+        "sha256": "4d9b603a5c4bf871fce6fa466cae3dd6ab88938b06a7d96a328cb3a8ad86e053"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/final/rot8_trees24/transform.joblib": "2daaecbea9d2d8caf938cfc3a4b0e6190e7efcc015634c69266f986f785b309c",
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/final/rot8_trees24/model_2241029.joblib": "3d67178038c6748a7c271009be3b3a7d79bd2ef380235927dcb6402578f1f84c",
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/final/rot8_trees24/model_2241030.joblib": "72ccd0d0a439be164c5d49e90e677466494e01e21a5e15a92dbf798da8341add",
+        "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/final/rot8_trees24/predictions.npz": "4d9b603a5c4bf871fce6fa466cae3dd6ab88938b06a7d96a328cb3a8ad86e053"
+      }
+    },
+    {
+      "task": "herg",
+      "part": "fold0",
+      "version": 168,
+      "rows": 152,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v168/models/herg/fold0/strength1.0/predictions.npz",
+        "sha256": "d11199e2d30cfa4a4027a843a1058d11de674339ae68a78cd29c851629e7f367"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v168/models/herg/fold0/strength1.0/model.joblib": "eef8a7e81394e06e654f55ef36d2ed5033057f09799600d2b2dc6d223f714d31",
+        "admet_model_outputs_v168/models/herg/fold0/strength1.0/transform.joblib": "9d412ad72e62d6d86ac3f95c7a1dc062404ad9eef71ec1d06c6fe92e4e904e3b",
+        "admet_model_outputs_v168/models/herg/fold0/strength1.0/predictions.npz": "d11199e2d30cfa4a4027a843a1058d11de674339ae68a78cd29c851629e7f367"
+      }
+    },
+    {
+      "task": "herg",
+      "part": "fold0",
+      "version": 233,
+      "rows": 152,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v233/models/herg/fold0/cross_scaffold_alignment/predictions.npz",
+        "sha256": "1e8b6bf8ebd3ea91e360548429330e39c04b2311fdc075278c6a66331e33a291"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v233/models/herg/fold0/cross_scaffold_alignment/transform.joblib": "b93855eb202038272b86861fce5b6b2ed9ebbe5e16103cd5d44401cb963d9f14",
+        "admet_model_outputs_v233/models/herg/fold0/cross_scaffold_alignment/model.joblib": "5664852a20c284dc42a53b048ab3a0591afa76b918dbe53cbf827fd5bf2e06f7",
+        "admet_model_outputs_v233/models/herg/fold0/cross_scaffold_alignment/predictions.npz": "1e8b6bf8ebd3ea91e360548429330e39c04b2311fdc075278c6a66331e33a291"
+      },
+      "replay_adapter": "tools/v358_kernel_replay_adapter.py",
+      "transform_float_rtol": 2e-13,
+      "transform_float_atol": 2e-14,
+      "all_integer_string_and_split_fields_exact": true,
+      "prediction_atol": 1e-12,
+      "prediction_max_abs_error": 7.105427357601002e-15,
+      "all_prediction_ranks_exact": true,
+      "numerical_differences": [
+        {
+          "field": "saved_transform.coefficient",
+          "max_absolute_error": 8.673617379884035e-19
+        },
+        {
+          "field": "saved_transform.weights",
+          "max_absolute_error": 3.469446951953614e-18
+        },
+        {
+          "field": "saved_transform.kkt_gradient",
+          "max_absolute_error": 3.469446951953614e-18
+        }
+      ]
+    },
+    {
+      "task": "herg",
+      "part": "fold0",
+      "version": 333,
+      "rows": 152,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v333/models/herg/fold0/chemical_domains8_groupdro/predictions.npz",
+        "sha256": "9147bf86f8784cf1249799c0e168b19e3f33db97c7a65edb92a6aa703c8f1d93"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v333/models/herg/fold0/chemical_domains8_groupdro/transform.joblib": "3365542a86141e46cd5306070eb733e9fdce7a360bb56a373213edcf3863ea01",
+        "admet_model_outputs_v333/models/herg/fold0/chemical_domains8_groupdro/model_3041101.pt": "da68b52019e3be6f9410fa1bb06ecd4d0a64315bb4debaa0565bc39b575f9168",
+        "admet_model_outputs_v333/models/herg/fold0/chemical_domains8_groupdro/model_3041102.pt": "30f346f8d0727741d6c890fbc65f69bb17edcca6c7fb3c99d2b4cec07e904711",
+        "admet_model_outputs_v333/models/herg/fold0/chemical_domains8_groupdro/predictions.npz": "9147bf86f8784cf1249799c0e168b19e3f33db97c7a65edb92a6aa703c8f1d93",
+        "admet_model_outputs_v333/models/herg/fold0/chemical_domains8_groupdro/metadata.json": "319571d24cc56dc4f3bf86dfb8fabdd38560f1c36c6692cdb93c70deff9a4db7"
+      }
+    },
+    {
+      "task": "herg",
+      "part": "fold1",
+      "version": 168,
+      "rows": 152,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v168/models/herg/fold1/strength1.0/predictions.npz",
+        "sha256": "9e426bec9d6b4c8714dc93197561ebf625fb281fa3ef2f7e1353de5123ada3ef"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v168/models/herg/fold1/strength1.0/model.joblib": "270edfcb67721f24a4d32e4ec19feae434643beed4bbd69bde55f488a354cdde",
+        "admet_model_outputs_v168/models/herg/fold1/strength1.0/transform.joblib": "4194abe14a7db7cd3070e98565c70ba37ad85c262be472c30b9a56a93170dc4e",
+        "admet_model_outputs_v168/models/herg/fold1/strength1.0/predictions.npz": "9e426bec9d6b4c8714dc93197561ebf625fb281fa3ef2f7e1353de5123ada3ef"
+      }
+    },
+    {
+      "task": "herg",
+      "part": "fold1",
+      "version": 233,
+      "rows": 152,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v233/models/herg/fold1/cross_scaffold_alignment/predictions.npz",
+        "sha256": "1e98da2f41e8e419e69735c4a0e48462362c9c979e112a8c5a1b7ab88c8933ef"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v233/models/herg/fold1/cross_scaffold_alignment/transform.joblib": "db39150fb63d2c2308a33f9f8d3cc83d71b1ca191da60a7d85a9d32bda714358",
+        "admet_model_outputs_v233/models/herg/fold1/cross_scaffold_alignment/model.joblib": "86e614e5701eb57fbdcf37dc47f0ab07f025f1c0239ed13ec0fcea5f9ecf10e0",
+        "admet_model_outputs_v233/models/herg/fold1/cross_scaffold_alignment/predictions.npz": "1e98da2f41e8e419e69735c4a0e48462362c9c979e112a8c5a1b7ab88c8933ef"
+      },
+      "replay_adapter": "tools/v358_kernel_replay_adapter.py",
+      "transform_float_rtol": 2e-13,
+      "transform_float_atol": 2e-14,
+      "all_integer_string_and_split_fields_exact": true,
+      "prediction_atol": 1e-12,
+      "prediction_max_abs_error": 2.220446049250313e-16,
+      "all_prediction_ranks_exact": true,
+      "numerical_differences": [
+        {
+          "field": "saved_transform.kkt_gradient",
+          "max_absolute_error": 4.336808689942018e-19
+        }
+      ]
+    },
+    {
+      "task": "herg",
+      "part": "fold1",
+      "version": 333,
+      "rows": 152,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v333/models/herg/fold1/chemical_domains8_groupdro/predictions.npz",
+        "sha256": "33037d3b9b58822b185d429f1b206cbf017f0135915df2538cdc049caf059d77"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v333/models/herg/fold1/chemical_domains8_groupdro/transform.joblib": "eaf76b7cb1690ba727e6eebe90814ef470da9aa736b8d4ae2fa4edb608e9ef8d",
+        "admet_model_outputs_v333/models/herg/fold1/chemical_domains8_groupdro/model_3041101.pt": "0b16fbe4a3a293c280e1ef1d9bc8260e27bd383f862d8f65e0442f49c278aa64",
+        "admet_model_outputs_v333/models/herg/fold1/chemical_domains8_groupdro/model_3041102.pt": "7694d5a4fefa41b6849a845c16f966c4f6e614771e89e69d1927aff2e7b0d426",
+        "admet_model_outputs_v333/models/herg/fold1/chemical_domains8_groupdro/predictions.npz": "33037d3b9b58822b185d429f1b206cbf017f0135915df2538cdc049caf059d77",
+        "admet_model_outputs_v333/models/herg/fold1/chemical_domains8_groupdro/metadata.json": "9715541c7092862e99911b45b9bbeeb2a2af9553cc751eac4f30bd04d9f85953"
+      }
+    },
+    {
+      "task": "herg",
+      "part": "fold2",
+      "version": 168,
+      "rows": 153,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v168/models/herg/fold2/strength1.0/predictions.npz",
+        "sha256": "e9f2d36b87a7c4de993aeeabb9affa13d6a4da43bc32ab059c1d7f7269fca3f8"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v168/models/herg/fold2/strength1.0/model.joblib": "d362250fba799dc575bf19ea1656f166f9bbfbeb72468d105780524227933259",
+        "admet_model_outputs_v168/models/herg/fold2/strength1.0/transform.joblib": "ded6327761cfa1e3845a3f6182a6ec9ac988602a6fa6be30e2b37d177548fc6d",
+        "admet_model_outputs_v168/models/herg/fold2/strength1.0/predictions.npz": "e9f2d36b87a7c4de993aeeabb9affa13d6a4da43bc32ab059c1d7f7269fca3f8"
+      }
+    },
+    {
+      "task": "herg",
+      "part": "fold2",
+      "version": 233,
+      "rows": 153,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v233/models/herg/fold2/cross_scaffold_alignment/predictions.npz",
+        "sha256": "cfa0fa767c99566400a1fb5c4e9bb60ec43ce074667f5ef779f1b9db9130e47d"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v233/models/herg/fold2/cross_scaffold_alignment/transform.joblib": "7359945bc2c722072761257576fbc79518c4654c99288ee240a5b2808f170862",
+        "admet_model_outputs_v233/models/herg/fold2/cross_scaffold_alignment/model.joblib": "e9429bc7069f3fdc1ec3ba5bb26d3a51395ee318289833cd8a23596b6c0ae147",
+        "admet_model_outputs_v233/models/herg/fold2/cross_scaffold_alignment/predictions.npz": "cfa0fa767c99566400a1fb5c4e9bb60ec43ce074667f5ef779f1b9db9130e47d"
+      },
+      "replay_adapter": "tools/v358_kernel_replay_adapter.py",
+      "transform_float_rtol": 2e-13,
+      "transform_float_atol": 2e-14,
+      "all_integer_string_and_split_fields_exact": true,
+      "prediction_atol": 1e-12,
+      "prediction_max_abs_error": 0.0,
+      "all_prediction_ranks_exact": true,
+      "numerical_differences": []
+    },
+    {
+      "task": "herg",
+      "part": "fold2",
+      "version": 333,
+      "rows": 153,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v333/models/herg/fold2/chemical_domains8_groupdro/predictions.npz",
+        "sha256": "2fa3934656c51128df5261f916faf018bc3ece81c3ab722a4ff44f9b4442bcb8"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v333/models/herg/fold2/chemical_domains8_groupdro/transform.joblib": "d66253055b1bfffdf5fbde14c05fbbec76ac4086d83dd7ba6ece560d16f63a8d",
+        "admet_model_outputs_v333/models/herg/fold2/chemical_domains8_groupdro/model_3041101.pt": "f8fa1bab9318150c5c608bcab1cdb30f3daadac5be46c417b127a3330622866e",
+        "admet_model_outputs_v333/models/herg/fold2/chemical_domains8_groupdro/model_3041102.pt": "0992692a97e2e56e744e5067488f8e717c8f162c701916d53b835eb5f19764a1",
+        "admet_model_outputs_v333/models/herg/fold2/chemical_domains8_groupdro/predictions.npz": "2fa3934656c51128df5261f916faf018bc3ece81c3ab722a4ff44f9b4442bcb8",
+        "admet_model_outputs_v333/models/herg/fold2/chemical_domains8_groupdro/metadata.json": "e691571c289b107d2e773d94564a3fb19b191e256dc947b874e492d92bd5dc31"
+      }
+    },
+    {
+      "task": "herg",
+      "part": "valid",
+      "version": 168,
+      "rows": 66,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v168/models/herg/valid/strength1.0/predictions.npz",
+        "sha256": "c532dada7e017999fd382d9282e62564ea6db57f03f35cf9fc81e03d58a3b114"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v168/models/herg/valid/strength1.0/model.joblib": "0cc3b4559466c1a4132063ad8c67352df11b02d1234205637e6c617c9a587825",
+        "admet_model_outputs_v168/models/herg/valid/strength1.0/transform.joblib": "39fdd0ec9bc1c9868273baac9603d7f7fc37b189b65c516c7395ca98ff117f5c",
+        "admet_model_outputs_v168/models/herg/valid/strength1.0/predictions.npz": "c532dada7e017999fd382d9282e62564ea6db57f03f35cf9fc81e03d58a3b114"
+      }
+    },
+    {
+      "task": "herg",
+      "part": "valid",
+      "version": 233,
+      "rows": 66,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v233/models/herg/valid/cross_scaffold_alignment/predictions.npz",
+        "sha256": "08dd5e031eca61624b0f9e1f93c38efb4f917417a9cb6277d2da5d0a514b8133"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v233/models/herg/valid/cross_scaffold_alignment/transform.joblib": "230e8f80134fd012ed3f42f6da8b9ba1cde5263dd69672a860667c77bca24752",
+        "admet_model_outputs_v233/models/herg/valid/cross_scaffold_alignment/model.joblib": "3ad265df67492388fc621434387d77d6b4268f1dc7147e751ffffb427f300606",
+        "admet_model_outputs_v233/models/herg/valid/cross_scaffold_alignment/predictions.npz": "08dd5e031eca61624b0f9e1f93c38efb4f917417a9cb6277d2da5d0a514b8133"
+      },
+      "replay_adapter": "tools/v358_kernel_replay_adapter.py",
+      "transform_float_rtol": 2e-13,
+      "transform_float_atol": 2e-14,
+      "all_integer_string_and_split_fields_exact": true,
+      "prediction_atol": 1e-12,
+      "prediction_max_abs_error": 4.440892098500626e-16,
+      "all_prediction_ranks_exact": true,
+      "numerical_differences": []
+    },
+    {
+      "task": "herg",
+      "part": "valid",
+      "version": 333,
+      "rows": 66,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v333/models/herg/valid/chemical_domains8_groupdro/predictions.npz",
+        "sha256": "002517c64e315955f6b6d9419c5ec1beef717f8ca375322ca13ed2c7fb1dcd67"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v333/models/herg/valid/chemical_domains8_groupdro/transform.joblib": "5fbe05e230ae8bcaefbee0e543302ad87b5265cf445de7a3c65ac71e8506527a",
+        "admet_model_outputs_v333/models/herg/valid/chemical_domains8_groupdro/model_3041101.pt": "094224aa20395509fd8236310fe15e05e00af4a26d75af4403ca6d3765c83a46",
+        "admet_model_outputs_v333/models/herg/valid/chemical_domains8_groupdro/model_3041102.pt": "95edfbd87e2ed7e255f7529dff747c01c466cc0f2a18cc716eda579ee02e5be4",
+        "admet_model_outputs_v333/models/herg/valid/chemical_domains8_groupdro/predictions.npz": "002517c64e315955f6b6d9419c5ec1beef717f8ca375322ca13ed2c7fb1dcd67",
+        "admet_model_outputs_v333/models/herg/valid/chemical_domains8_groupdro/metadata.json": "f67fb08b8aeb6405895e6515c54756bab9f89c60354c432fa522347f77b4b6d3"
+      }
+    },
+    {
+      "task": "herg",
+      "part": "final",
+      "version": 168,
+      "rows": 132,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v168/models/herg/final/strength1.0/predictions.npz",
+        "sha256": "9eeaef55a46175d3eec5f5f12136724a37332b9af94c57a5dbc56065325552b2"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v168/models/herg/final/strength1.0/model.joblib": "379560beb0761f99eaa4bf5de7c617445c811ad50da0421be4a40cdf3ccba887",
+        "admet_model_outputs_v168/models/herg/final/strength1.0/transform.joblib": "7768e5ede18251528a6d3a61df18b8da8c2ba16129b57a000fe11278071860aa",
+        "admet_model_outputs_v168/models/herg/final/strength1.0/predictions.npz": "9eeaef55a46175d3eec5f5f12136724a37332b9af94c57a5dbc56065325552b2"
+      }
+    },
+    {
+      "task": "herg",
+      "part": "final",
+      "version": 233,
+      "rows": 132,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v233/models/herg/final/cross_scaffold_alignment/predictions.npz",
+        "sha256": "f73ea2eb16be239f6455d5aee139d04a57674433ef9c35a06ec8f770d255807b"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v233/models/herg/final/cross_scaffold_alignment/transform.joblib": "859cb96acc1965f82944235bfdb8e5739ad5311bead7567e9e95c64bb53453de",
+        "admet_model_outputs_v233/models/herg/final/cross_scaffold_alignment/model.joblib": "9ee8da868999d0641b10c69e9d1d67f40cd86b2e8b3db2ca81655a6556c6e452",
+        "admet_model_outputs_v233/models/herg/final/cross_scaffold_alignment/predictions.npz": "f73ea2eb16be239f6455d5aee139d04a57674433ef9c35a06ec8f770d255807b"
+      },
+      "replay_adapter": "tools/v358_kernel_replay_adapter.py",
+      "transform_float_rtol": 2e-13,
+      "transform_float_atol": 2e-14,
+      "all_integer_string_and_split_fields_exact": true,
+      "prediction_atol": 1e-12,
+      "prediction_max_abs_error": 0.0,
+      "all_prediction_ranks_exact": true,
+      "numerical_differences": []
+    },
+    {
+      "task": "herg",
+      "part": "final",
+      "version": 333,
+      "rows": 132,
+      "saved_prediction": {
+        "path": "admet_model_outputs_v333/models/herg/final/chemical_domains8_groupdro/predictions.npz",
+        "sha256": "aa856a9738654ba36cc644ccde9856b168c0d9b195d178243487914ea1802f5a"
+      },
+      "saved_model_reload": true,
+      "nonfit_target_label_isolation": true,
+      "exact_split_alignment": true,
+      "model_files": {
+        "admet_model_outputs_v333/models/herg/final/chemical_domains8_groupdro/transform.joblib": "5ed1dc585494504d8814976d3287477c550a3f7aa770f763625be2fb819fe26e",
+        "admet_model_outputs_v333/models/herg/final/chemical_domains8_groupdro/model_3041101.pt": "579f91dd9aea73ddb19240a687ec663b252c4d0294e572a96ad04fe693f9cd84",
+        "admet_model_outputs_v333/models/herg/final/chemical_domains8_groupdro/model_3041102.pt": "398742f7c5b38d4218e92db18fcf61410d071864fc0fc91d9792043eb96ddbfb",
+        "admet_model_outputs_v333/models/herg/final/chemical_domains8_groupdro/predictions.npz": "aa856a9738654ba36cc644ccde9856b168c0d9b195d178243487914ea1802f5a",
+        "admet_model_outputs_v333/models/herg/final/chemical_domains8_groupdro/metadata.json": "16770cde203a528f5f8fe254d86997ea3bfc14b1d992383853c0cd2430cfec9e"
+      }
+    }
+  ],
+  "format_verification": {
+    "status": "PASS",
+    "sha256": "96807c67421481871f6772dfe06ee37ba2ffcf9e0203fa576b08a10d4b87fedd",
+    "rows": 16379,
+    "columns": 6,
+    "tasks": 22,
+    "nonprediction_fields_exact": true,
+    "finite_predictions": true,
+    "unique_task_sample_keys": true,
+    "task_counts": {
+      "ames": 1457,
+      "bbb_martins": 406,
+      "bioavailability_ma": 128,
+      "caco2_wang": 182,
+      "clearance_hepatocyte_az": 243,
+      "clearance_microsome_az": 221,
+      "cyp2c9_substrate_carbonmangels": 135,
+      "cyp2c9_veith": 2419,
+      "cyp2d6_substrate_carbonmangels": 135,
+      "cyp2d6_veith": 2626,
+      "cyp3a4_substrate_carbonmangels": 135,
+      "cyp3a4_veith": 2467,
+      "dili": 96,
+      "half_life_obach": 135,
+      "herg": 132,
+      "hia_hou": 117,
+      "ld50_zhu": 1478,
+      "lipophilicity_astrazeneca": 840,
+      "pgp_broccatelli": 245,
+      "ppbr_az": 559,
+      "solubility_aqsoldb": 1997,
+      "vdss_lombardo": 226
+    },
+    "utf8_bom": true,
+    "crlf_only": true,
+    "official_score": null,
+    "automatically_uploaded": false
+  },
+  "csv_created": true,
+  "all_nonprediction_bytes_exact": true,
+  "unchanged_task_prediction_bytes_exact": true,
+  "policy_sha256": "191088f88ea46d67a5d481e5a236d5f771504253d5f77708a21f7d63d40188cf",
+  "official_score": null,
+  "official_gain_established": false,
+  "platform_submission": false,
+  "retrospective_public_label_reuse": true,
+  "limitations": "Experimental. Many combinations searched, public labels reused, inherited OOF approximate. Positive local points do not establish hidden-test gain. Strict rejections preserved; no official score estimate.",
+  "numerical_replay_resume": {
+    "audit": "admet_model_outputs_v354/resume_audit.json",
+    "adapter": "tools/v358_kernel_replay_adapter.py",
+    "original_strict_rejections_preserved": true
+  }
+}

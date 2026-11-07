@@ -1,0 +1,51 @@
+{
+  "version": "v228",
+  "delivery_version": "v229",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-29T07:21:16.874711+00:00",
+  "source_sha256": "bc21df8518459fc9b71aa57aad3ac04b3e4567ffff767ec55feb2ab8ba97b8f2",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "model": "Honest inner-scaffold-crossfit residual correction anchored to immutable v145 query controls",
+  "tasks": [
+    "herg",
+    "bbb_martins",
+    "ames",
+    "clearance_hepatocyte_az",
+    "solubility_aqsoldb",
+    "pgp_broccatelli"
+  ],
+  "task_selection": "Six lowest official v145 endpoints, fixed before new development. Other16 tasks protected; same21-task originalrunner logs identity controls for remaining15improvable tasks.",
+  "configs": [
+    {
+      "inner_folds": 3,
+      "reference_trees": 450,
+      "correction_trees": 250,
+      "depth": 3
+    }
+  ],
+  "seeds": [
+    2281029,
+    2281030
+  ],
+  "reference_seeds": [
+    2281000,
+    2281001,
+    2281002
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "reference": "New CatBoost450depth5 fullfingerprint/chemistry/context surrogate fitted in3 scaffold-disjoint inner folds of actual outerfit only. Each fitrow receives exactlyone holdoutprediction. No historyproxy/in-samplebaseline/previousrejectedmodels.",
+  "correction": "250treesdepth3 L2=40 lr=.03,2seeds on augmented chemistry/context plus innerOOFbasecoordinate; classifierPoolbaseline fittedtrain-only calibration, MAE median/IQR residual, Spearman ranknormal residual. Boundupdates +/-.75classificationlogit or +/-.5normalizedregression; queryoffset fromv145.",
+  "scheduling": "3disjointdevelopmentqueues each2tasks,4threadsworker,12maxcores. Allworkers0 before originalv148selection andconfirmation.",
+  "selection": "Unchanged originalv148 fold0/1uniqueconfigweight freeze; nofallback",
+  "confirmation": "Unchanged all4pointgains>0, originalmeanpracticalthreshold, bothscaffoldbootstrap90lower>0",
+  "verification": "Actual3metrictypes query/nonfitlabelperturbation, innerfit/holdgroupdisjoint/exactlyonce, actualcheckpointreload, roworder, correctionboundreference. Allacceptedcheckpointreplay/outergates/templatebytes/backupSHA.",
+  "source_immutable_after_start": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "official_gain_guaranteed": false,
+  "limitations": "Innerreference is a surrogate, not exactv145OOF. Offsetdistribution may differ. Historical outer baseline remainsapproximate; publiclabelsreused; no hiddenimprovement guarantee."
+}

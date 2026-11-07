@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v161_new_structure_models_20261027_repaired",
+  "archive_sha256": "5a238fde4afe3dfbf90d75ccdce387fc3621ae405a4becd650df725957b0a375",
+  "manifest_files": 2187,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 0,
+  "existing_exact": 2187,
+  "existing_updated_docs_preserved": []
+}

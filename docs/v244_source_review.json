@@ -1,0 +1,18 @@
+{
+  "status": "STATIC_REVIEW_PASS_SMOKE_REQUIRED",
+  "source_sha256": "54416a1cea2ebadb1d8a16d2fa34d02db2f653795cd35a6a9e8a93c4616cf52e",
+  "checks": [
+    "Fit-only target standardization and features;target-excluded context sources",
+    "No historical predictions or pretrained weights enter network",
+    "Mixture likelihood log-sum-exp numerically stable;positive scales and softmax weights",
+    "Median of full ensemble CDF via deterministic CPUfloat64 bisection",
+    "Task screen based on pre-existing structural feasibility/scoring sensitivity, no confirmation tuning",
+    "Original v148 source and thresholds unchanged;19protected tasks"
+  ],
+  "smoke_required": [
+    "IndependentCDF median reference and affine equivariance",
+    "3task querylabel perturbation and actual CUDA update",
+    "Finite gradients/parameters and CPU savedmodel replay",
+    "Prediction permutation equivalence"
+  ]
+}

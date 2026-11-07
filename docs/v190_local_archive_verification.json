@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v190_leafwise_boosting_20261028",
+  "archive_sha256": "2b4029155c8616affbd035724d560390edd612d1eb2f0cb3707b57ef2e48c65e",
+  "manifest_files": 331,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 290,
+  "existing_exact": 41,
+  "existing_updated_docs_preserved": []
+}

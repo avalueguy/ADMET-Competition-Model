@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "check": {
+    "task": "caco2_wang",
+    "part": "fold0",
+    "rows": 212,
+    "feature_rebuild": true,
+    "checkpoint_reload": true,
+    "nonfit_target_label_isolation": true,
+    "independent_member_aggregation": true,
+    "shared_layer_reference": true,
+    "reversed_query_tolerance": 1e-12
+  }
+}

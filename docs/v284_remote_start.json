@@ -1,0 +1,29 @@
+{
+  "status": "STARTED",
+  "at_utc": "2026-10-30T05:00:12.126510+00:00",
+  "host": "connect.nmb2.seetacloud.com",
+  "port": 24365,
+  "boot_id": "7edb467c-8def-4bf5-b14f-bb31d4469124",
+  "source_sha256": "3f7f111a75053710369247e89cf835fa2567fceaf8e54a7c2a3187350582df91",
+  "signature": "c70dd3ec181a3cb85823f8e76a8e12ebb429d9b23c233e8e41bc3c95a127d00d",
+  "baseline_cache_verified": 105,
+  "smoke": "PASS",
+  "frozen_sources_verified": true,
+  "dependency_sha256_verified": true,
+  "processes": {
+    "driver": {
+      "pid": 3026,
+      "script": "tools/v287_stereo_driver.py",
+      "start_ticks": "1988093760",
+      "log": "v284_stereo_context_repair.log"
+    },
+    "pipeline": {
+      "pid": 3027,
+      "script": "tools/v286_package_stereo_repair.py",
+      "start_ticks": "1988093760",
+      "log": "v286_pipeline.log"
+    }
+  },
+  "credentials_stored": false,
+  "original_v145_component_and_all_partitions_replay": "PASS"
+}

@@ -1,0 +1,63 @@
+{
+  "status": "RECOVERY_COMPLETE_V181_AND_V189_ARCHIVED",
+  "checked_at_utc": "2026-10-28T05:46:03.575947+00:00",
+  "host": "connect.nmb2.seetacloud.com",
+  "port": 25870,
+  "credentials_stored": false,
+  "original_host_access": false,
+  "old_directory_present": false,
+  "old_processes_present": false,
+  "unfinished_v181_results_unavailable": true,
+  "frozen_training_source_sha256": "b7d1828a0e5802f61edea3e6e23eeb4c8f8cf2bbf3bfc105383a5eba59e4218d",
+  "recovery_archive": {
+    "path": "releases/v188_v181_recovery_20261028.tar.gz",
+    "sha256": "029b761a90e5b9d12ddec268133f3177e85a9df759fc8a860c1ec25e84f1060d",
+    "bytes": 276562811,
+    "files": 1458,
+    "manifest_sha256": "7e95b84a964557dc42ec0efda005eb59b396d7d6a39df9df1c1c34a4caed8fa8"
+  },
+  "failed_routes_restarted": false,
+  "new_upload_performed": false,
+  "all_member_hashes_verified": true,
+  "files_verified": 1458,
+  "dependency_restore_pid": 1951,
+  "baseline_signature": "5a79bb5fd6cd135690d750fa5beae79f7a5674958ef83b87689f190be5067c91",
+  "training_signature": "dc8b4027368ffd411ad8a8c25411f2b58747e95ef78ee25f18dea8d619d7f98e",
+  "dependency_imports": "PASS",
+  "dependency_archive_v176_sha256": "021a548b62c47c9a861e3e4d3ca133d1e0d84d68aac8a88ce8c4f77693ea4d21",
+  "historical_anchor_restore": {
+    "status": "PASS",
+    "source_archive": "releases/v101_multi_route_20261026.tar.gz",
+    "source_archive_sha256": "8a40f5eb01a1eb579e59a1b80a490b503c9f42090ba3bdd360a09be6978bd73f",
+    "member": {
+      "path": "admet_submissions/v101_graph_assay_shape/我从山北来带着兰花草-小分子药物预测技术创新赛-20261026.csv",
+      "sha256": "e94961c81deedf98bcb69e04d621a54ae9319aab47bb1ced9d97890f13c8f086",
+      "bytes": 1774515
+    }
+  },
+  "initial_recovery_attempt": "Stopped during data load before any training: archived v101 CSV absent from expanded local tree; recovered exact member from verified archive",
+  "recovery_pid": 2287,
+  "precompute_pids": {
+    "caco2_wang": 2343,
+    "ppbr_az": 2344,
+    "ld50_zhu": 2345,
+    "lipophilicity_astrazeneca": 2346
+  },
+  "baseline_verification": "docs/v188_remote_baseline_verification.json",
+  "training_pid": null,
+  "pipeline_pid": null,
+  "scheduling_completed": true,
+  "precompute_exit_codes": {
+    "caco2_wang": 0,
+    "ppbr_az": 0,
+    "ld50_zhu": 0,
+    "lipophilicity_astrazeneca": 0
+  },
+  "scheduling_note": "Recovered frozen v181 completed and archived; original and replacement training PIDs are historical.",
+  "running_model_training_pids": [],
+  "running_validation_pipeline_pids": [],
+  "new_csv_created": false,
+  "official_best": 51.166,
+  "v181_result": "docs/v182_final_status.json",
+  "v189_result": "docs/v190_final_status.json"
+}

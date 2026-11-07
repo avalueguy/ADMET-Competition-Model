@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE_REJECTED_INDEPENDENT_REPLAY_AND_LOCAL_ARCHIVE_PASS",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52.0,
+  "target_achieved": false,
+  "training_version": "v297",
+  "verification_version": "v298",
+  "independent_development_partitions_verified": 10,
+  "local_archive_sha256": "4ce6c4d85cee0d1179fad5e5d3cf9ecbed4b4041c27a94da5590b9d1358670f7",
+  "local_archive_members": 64,
+  "manifest_member_hashes_verified": 63,
+  "all_development_tasks_complete": true,
+  "selected": [
+    "caco2_wang"
+  ],
+  "accepted": [],
+  "csv_created": false,
+  "official_submission": false,
+  "confirmation_caco2_relative_gains": {
+    "fold0": 0.050397168499870665,
+    "fold1": 0.01910883432465,
+    "fold2": -0.004328125224221309,
+    "valid": -0.007714664133221968
+  },
+  "remote_path": "/root/autodl-tmp/v76",
+  "credentials_stored": false
+}

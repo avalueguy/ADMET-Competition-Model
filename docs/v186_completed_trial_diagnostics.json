@@ -1,0 +1,4116 @@
+{
+  "status": "COMPLETE_REPORT_ONLY",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "completed_routes": [
+    {
+      "route": "v149",
+      "tasks": 21,
+      "development_nominees": [
+        "clearance_hepatocyte_az",
+        "cyp2d6_substrate_carbonmangels",
+        "cyp3a4_substrate_carbonmangels"
+      ],
+      "accepted": [],
+      "comparisons": [
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "official_baseline_task_score": 49.832263,
+          "max_minimum_development_gain": -0.0019030448717951565,
+          "config": {
+            "depth": 3,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.032316,
+          "max_minimum_development_gain": -0.00037227309954568355,
+          "config": {
+            "depth": 5,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.141941,
+          "max_minimum_development_gain": 0.001085614053528583,
+          "config": {
+            "depth": 5,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.211228,
+          "max_minimum_development_gain": 0.02646292347509227,
+          "config": {
+            "depth": 3,
+            "trees": 1200
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.03405306393230001,
+            "fold1": 0.02646292347509227,
+            "fold2": 0.014186203562727484,
+            "valid": -0.03533710937471113
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.236728,
+          "max_minimum_development_gain": 0.0064263791156637514,
+          "config": {
+            "depth": 5,
+            "trees": 1200
+          },
+          "weight": 0.45,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.320749,
+          "max_minimum_development_gain": -0.00203818369453046,
+          "config": {
+            "depth": 3,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.358383,
+          "max_minimum_development_gain": 0.0047163326207191325,
+          "config": {
+            "depth": 5,
+            "trees": 1200
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.02318104154358791,
+            "fold1": 0.0047163326207191325,
+            "fold2": -0.006763569982457529,
+            "valid": -0.16077345504255802
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.422543,
+          "max_minimum_development_gain": 0.0015633451502343743,
+          "config": {
+            "depth": 5,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.495262,
+          "max_minimum_development_gain": -0.0028694349762150573,
+          "config": {
+            "depth": 5,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.689546,
+          "max_minimum_development_gain": -0.009844020908218683,
+          "config": {
+            "depth": 3,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.706702,
+          "max_minimum_development_gain": 0.006727574750830412,
+          "config": {
+            "depth": 5,
+            "trees": 1200
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.006727574750830412,
+            "fold1": 0.009146341463414753,
+            "fold2": -0.007565789473684359,
+            "valid": 0.005376344086021501
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.715743,
+          "max_minimum_development_gain": -0.0019946808510639125,
+          "config": {
+            "depth": 3,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.792751,
+          "max_minimum_development_gain": 0.002727542693233387,
+          "config": {
+            "depth": 3,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.846574,
+          "max_minimum_development_gain": -0.0004895193820588783,
+          "config": {
+            "depth": 5,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 51.364323,
+          "max_minimum_development_gain": -0.0029251283909877968,
+          "config": {
+            "depth": 3,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.047135,
+          "max_minimum_development_gain": 0.003250210778720563,
+          "config": {
+            "depth": 3,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.05411,
+          "max_minimum_development_gain": 0.0038804652870297264,
+          "config": {
+            "depth": 3,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.375585,
+          "max_minimum_development_gain": -0.015639619994302707,
+          "config": {
+            "depth": 5,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "official_baseline_task_score": 52.391603,
+          "max_minimum_development_gain": 0.0028659611992943868,
+          "config": {
+            "depth": 3,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "official_baseline_task_score": 52.539161,
+          "max_minimum_development_gain": -0.0003849308486679748,
+          "config": {
+            "depth": 3,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 56.936749,
+          "max_minimum_development_gain": -0.011577340846436024,
+          "config": {
+            "depth": 5,
+            "trees": 1200
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "v150",
+      "tasks": 21,
+      "development_nominees": [
+        "bbb_martins",
+        "clearance_hepatocyte_az",
+        "pgp_broccatelli",
+        "cyp2d6_substrate_carbonmangels",
+        "cyp3a4_substrate_carbonmangels",
+        "dili",
+        "cyp2c9_substrate_carbonmangels"
+      ],
+      "accepted": [],
+      "comparisons": [
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "official_baseline_task_score": 49.832263,
+          "max_minimum_development_gain": -0.0012019230769231282,
+          "config": {
+            "view": "sum",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.032316,
+          "max_minimum_development_gain": 0.0034000943091851976,
+          "config": {
+            "view": "sum",
+            "C": 10.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.0034000943091851976,
+            "fold1": 0.008887308922858161,
+            "fold2": 0.005277215353465814,
+            "valid": -0.0024235645041014164
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.141941,
+          "max_minimum_development_gain": 0.001064263096348772,
+          "config": {
+            "view": "product",
+            "C": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.211228,
+          "max_minimum_development_gain": 0.015555804308557852,
+          "config": {
+            "view": "product",
+            "C": 10.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.022477296114506773,
+            "fold1": 0.015555804308557852,
+            "fold2": -0.0022782884514401802,
+            "valid": -0.0349644582344632
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.236728,
+          "max_minimum_development_gain": 0.0030647801020905075,
+          "config": {
+            "view": "sum",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.320749,
+          "max_minimum_development_gain": 0.00475113122171944,
+          "config": {
+            "view": "product",
+            "C": 10.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.00475113122171944,
+            "fold1": 0.008230134158926705,
+            "fold2": -0.002405276730807371,
+            "valid": -0.00819672131147553
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.358383,
+          "max_minimum_development_gain": 0.021532655259223432,
+          "config": {
+            "view": "sum",
+            "C": 1.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.044267360044800586,
+            "fold1": 0.021532655259223432,
+            "fold2": 0.016362022872897453,
+            "valid": -0.06952719906712435
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.422543,
+          "max_minimum_development_gain": 0.002157272067355387,
+          "config": {
+            "view": "sum",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.495262,
+          "max_minimum_development_gain": 0.001337622244536929,
+          "config": {
+            "view": "sum",
+            "C": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.689546,
+          "max_minimum_development_gain": -0.02453119812066135,
+          "config": {
+            "view": "sum",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.706702,
+          "max_minimum_development_gain": 0.021926910299003288,
+          "config": {
+            "view": "sum",
+            "C": 1.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.021926910299003288,
+            "fold1": 0.03230059327620305,
+            "fold2": 0.01850328947368407,
+            "valid": 0.025985663082437327
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.715743,
+          "max_minimum_development_gain": 0.006189360990297765,
+          "config": {
+            "view": "product",
+            "C": 1.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.006189360990297765,
+            "fold1": 0.011635638297872286,
+            "fold2": -0.015456989247311759,
+            "valid": -0.02637362637362628
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.792751,
+          "max_minimum_development_gain": -0.0003712508656102953,
+          "config": {
+            "view": "product",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.846574,
+          "max_minimum_development_gain": 0.001965127122701249,
+          "config": {
+            "view": "product",
+            "C": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 51.364323,
+          "max_minimum_development_gain": 0.0002738900205192518,
+          "config": {
+            "view": "sum",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.047135,
+          "max_minimum_development_gain": -0.017022353505559404,
+          "config": {
+            "view": "sum",
+            "C": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.05411,
+          "max_minimum_development_gain": 0.0012092211316286304,
+          "config": {
+            "view": "sum",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.375585,
+          "max_minimum_development_gain": -0.020359371087711554,
+          "config": {
+            "view": "sum",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "official_baseline_task_score": 52.391603,
+          "max_minimum_development_gain": -0.00022045855379193569,
+          "config": {
+            "view": "product",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "official_baseline_task_score": 52.539161,
+          "max_minimum_development_gain": -0.007695230667921993,
+          "config": {
+            "view": "product",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 56.936749,
+          "max_minimum_development_gain": 0.015217204067129009,
+          "config": {
+            "view": "product",
+            "C": 1.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.015217204067129009,
+            "fold1": 0.023554273572180873,
+            "fold2": 0.009372648631918001,
+            "valid": -0.12714446172107474
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "v151",
+      "tasks": 21,
+      "development_nominees": [
+        "clearance_hepatocyte_az",
+        "cyp2d6_substrate_carbonmangels",
+        "cyp3a4_substrate_carbonmangels",
+        "half_life_obach",
+        "cyp2c9_substrate_carbonmangels"
+      ],
+      "accepted": [],
+      "comparisons": [
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "official_baseline_task_score": 49.832263,
+          "max_minimum_development_gain": -0.00040064102564107973,
+          "config": {
+            "depth": 3,
+            "trees": 1500
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.032316,
+          "max_minimum_development_gain": 0.0004375290546638766,
+          "config": {
+            "depth": 3,
+            "trees": 1500
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.141941,
+          "max_minimum_development_gain": 0.0007768463650816848,
+          "config": {
+            "depth": 6,
+            "trees": 1100
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.211228,
+          "max_minimum_development_gain": 0.00964349329877301,
+          "config": {
+            "depth": 3,
+            "trees": 1500
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.009848721141718864,
+            "fold1": 0.00964349329877301,
+            "fold2": 0.005610384082774922,
+            "valid": -0.043027916875321204
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.236728,
+          "max_minimum_development_gain": 0.002053377715710899,
+          "config": {
+            "depth": 6,
+            "trees": 1100
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.320749,
+          "max_minimum_development_gain": -0.0009803921568627416,
+          "config": {
+            "depth": 3,
+            "trees": 1500
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.358383,
+          "max_minimum_development_gain": 0.02014806332948893,
+          "config": {
+            "depth": 6,
+            "trees": 1100
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.02933434347977426,
+            "fold1": 0.02014806332948893,
+            "fold2": 0.01398465941634286,
+            "valid": -0.14295113380637126
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.422543,
+          "max_minimum_development_gain": 0.0023941085078332813,
+          "config": {
+            "depth": 6,
+            "trees": 1100
+          },
+          "weight": 0.45,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.495262,
+          "max_minimum_development_gain": 0.0009651019280932926,
+          "config": {
+            "depth": 6,
+            "trees": 1100
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.689546,
+          "max_minimum_development_gain": -0.017720819214656677,
+          "config": {
+            "depth": 3,
+            "trees": 1500
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.706702,
+          "max_minimum_development_gain": 0.008651944627554475,
+          "config": {
+            "depth": 6,
+            "trees": 1100
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.01644518272425255,
+            "fold1": 0.008651944627554475,
+            "fold2": 0.0052631578947367474,
+            "valid": 0.03405017921146958
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.715743,
+          "max_minimum_development_gain": -0.0016728002676480447,
+          "config": {
+            "depth": 6,
+            "trees": 1100
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.792751,
+          "max_minimum_development_gain": -0.0010112805010777937,
+          "config": {
+            "depth": 3,
+            "trees": 1500
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.846574,
+          "max_minimum_development_gain": 0.001392985722666995,
+          "config": {
+            "depth": 6,
+            "trees": 1100
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 51.364323,
+          "max_minimum_development_gain": -0.001661728525384265,
+          "config": {
+            "depth": 6,
+            "trees": 1100
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.047135,
+          "max_minimum_development_gain": 0.0015216731136111778,
+          "config": {
+            "depth": 3,
+            "trees": 1500
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.05411,
+          "max_minimum_development_gain": -0.00039004701191053785,
+          "config": {
+            "depth": 6,
+            "trees": 1100
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.375585,
+          "max_minimum_development_gain": -0.008508249296750453,
+          "config": {
+            "depth": 6,
+            "trees": 1100
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "official_baseline_task_score": 52.391603,
+          "max_minimum_development_gain": 0.001322751322751281,
+          "config": {
+            "depth": 3,
+            "trees": 1500
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "official_baseline_task_score": 52.539161,
+          "max_minimum_development_gain": 0.018254510837210858,
+          "config": {
+            "depth": 3,
+            "trees": 1500
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.018254510837210858,
+            "fold1": 0.02133585597245835,
+            "fold2": -0.03638074271566605,
+            "valid": 0.0017314484200656732
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 56.936749,
+          "max_minimum_development_gain": 0.01200198087211124,
+          "config": {
+            "depth": 3,
+            "trees": 1500
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.01200198087211124,
+            "fold1": 0.02243405878671534,
+            "fold2": -0.01789347340140296,
+            "valid": -0.12804764971256566
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "v153",
+      "tasks": 21,
+      "development_nominees": [
+        "clearance_hepatocyte_az",
+        "cyp3a4_substrate_carbonmangels"
+      ],
+      "accepted": [],
+      "comparisons": [
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "official_baseline_task_score": 49.832263,
+          "max_minimum_development_gain": -0.00210336538461553,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.032316,
+          "max_minimum_development_gain": 8.203669774953237e-05,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.141941,
+          "max_minimum_development_gain": 0.0014198386524590934,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.211228,
+          "max_minimum_development_gain": 0.008353174878930614,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.029242960373230376,
+            "fold1": 0.008353174878930614,
+            "fold2": 0.007346444058961121,
+            "valid": -0.02321628514470908
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.236728,
+          "max_minimum_development_gain": -0.003078808740686786,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.320749,
+          "max_minimum_development_gain": -0.00025799793601655185,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.358383,
+          "max_minimum_development_gain": -0.006290852005308989,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.422543,
+          "max_minimum_development_gain": 0.0019223318161143421,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.495262,
+          "max_minimum_development_gain": -0.005044163589028039,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.689546,
+          "max_minimum_development_gain": -0.02319116485519819,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.706702,
+          "max_minimum_development_gain": 0.01573829927488468,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.025166112956810593,
+            "fold1": 0.01573829927488468,
+            "fold2": -0.0004111842105263275,
+            "valid": 0.015232974910394326
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.715743,
+          "max_minimum_development_gain": 0.0026764804282368715,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.792751,
+          "max_minimum_development_gain": 0.00016744841692717394,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.846574,
+          "max_minimum_development_gain": 0.0008661247480820089,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 51.364323,
+          "max_minimum_development_gain": -0.0028368379133596466,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.047135,
+          "max_minimum_development_gain": -0.010966580176839023,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.05411,
+          "max_minimum_development_gain": -0.005068071601665361,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.375585,
+          "max_minimum_development_gain": -0.02273437575994881,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "official_baseline_task_score": 52.391603,
+          "max_minimum_development_gain": -0.005952380952381042,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "official_baseline_task_score": 52.539161,
+          "max_minimum_development_gain": 0.0007686141646778832,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 56.936749,
+          "max_minimum_development_gain": -0.003573396555063113,
+          "config": {
+            "depth": 5,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "v157",
+      "tasks": 21,
+      "development_nominees": [
+        "bbb_martins",
+        "pgp_broccatelli",
+        "cyp2d6_substrate_carbonmangels",
+        "cyp3a4_substrate_carbonmangels",
+        "cyp2c9_substrate_carbonmangels"
+      ],
+      "accepted": [],
+      "comparisons": [
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "official_baseline_task_score": 49.832263,
+          "max_minimum_development_gain": -0.002103365384615641,
+          "config": {
+            "view": "shift",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.032316,
+          "max_minimum_development_gain": 0.0032387759660487125,
+          "config": {
+            "view": "shift",
+            "C": 10.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.0032387759660487125,
+            "fold1": 0.008818945008067125,
+            "fold2": 0.004081764528496956,
+            "valid": -0.0049092716877952025
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.141941,
+          "max_minimum_development_gain": 0.0002660657740873873,
+          "config": {
+            "view": "shift",
+            "C": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.211228,
+          "max_minimum_development_gain": 0.0053591885371979675,
+          "config": {
+            "view": "local",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.236728,
+          "max_minimum_development_gain": -0.006716785562757235,
+          "config": {
+            "view": "shift",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.320749,
+          "max_minimum_development_gain": 0.005077928607340354,
+          "config": {
+            "view": "local",
+            "C": 10.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.005077928607340354,
+            "fold1": 0.01044891640866863,
+            "fold2": -0.0017605633802816323,
+            "valid": -0.0037624294544479353
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.358383,
+          "max_minimum_development_gain": 0.010933913398328832,
+          "config": {
+            "view": "shift",
+            "C": 1.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.039104343235397354,
+            "fold1": 0.010933913398328832,
+            "fold2": 0.02388197466981712,
+            "valid": -0.08960034052266941
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.422543,
+          "max_minimum_development_gain": 0.0018527844804744342,
+          "config": {
+            "view": "local",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.495262,
+          "max_minimum_development_gain": 0.002214842405502626,
+          "config": {
+            "view": "local",
+            "C": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.689546,
+          "max_minimum_development_gain": -0.03464257930829651,
+          "config": {
+            "view": "shift",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.706702,
+          "max_minimum_development_gain": 0.029235880398670977,
+          "config": {
+            "view": "local",
+            "C": 10.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.029235880398670977,
+            "fold1": 0.029416611733684928,
+            "fold2": 0.02376644736842104,
+            "valid": 0.028673835125448077
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.715743,
+          "max_minimum_development_gain": 0.002174640347942458,
+          "config": {
+            "view": "shift",
+            "C": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.792751,
+          "max_minimum_development_gain": -0.001753798679002938,
+          "config": {
+            "view": "local",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.846574,
+          "max_minimum_development_gain": 0.0014021771925288862,
+          "config": {
+            "view": "shift",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 51.364323,
+          "max_minimum_development_gain": -0.0003961017689504409,
+          "config": {
+            "view": "shift",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.047135,
+          "max_minimum_development_gain": -0.018458641210959522,
+          "config": {
+            "view": "shift",
+            "C": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.05411,
+          "max_minimum_development_gain": -0.0012281172590351782,
+          "config": {
+            "view": "local",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.375585,
+          "max_minimum_development_gain": -0.029998606690823305,
+          "config": {
+            "view": "local",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "official_baseline_task_score": 52.391603,
+          "max_minimum_development_gain": -0.0007716049382715529,
+          "config": {
+            "view": "local",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "official_baseline_task_score": 52.539161,
+          "max_minimum_development_gain": -0.012436036170387132,
+          "config": {
+            "view": "local",
+            "C": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 56.936749,
+          "max_minimum_development_gain": 0.0181527070121954,
+          "config": {
+            "view": "shift",
+            "C": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": {
+            "fold0": 0.0181527070121954,
+            "fold1": 0.03066374699711194,
+            "fold2": 0.0009105012227788589,
+            "valid": -0.07165467321717323
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "v159",
+      "tasks": 21,
+      "development_nominees": [
+        "pgp_broccatelli",
+        "bioavailability_ma"
+      ],
+      "accepted": [],
+      "comparisons": [
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "official_baseline_task_score": 49.832263,
+          "max_minimum_development_gain": -0.00560897435897445,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.032316,
+          "max_minimum_development_gain": 0.0003965107057891659,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.141941,
+          "max_minimum_development_gain": -0.004454959334638353,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.211228,
+          "max_minimum_development_gain": -0.011079411977923836,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.236728,
+          "max_minimum_development_gain": 0.002645124406518454,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.320749,
+          "max_minimum_development_gain": 0.0063599798893915205,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.0063599798893915205,
+            "fold1": 0.01199690402476783,
+            "fold2": -0.006893473517159188,
+            "valid": -0.013034130610051098
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.358383,
+          "max_minimum_development_gain": -0.020279893376091374,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.422543,
+          "max_minimum_development_gain": -0.00031883266256482745,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.495262,
+          "max_minimum_development_gain": 0.0027281603576811975,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.689546,
+          "max_minimum_development_gain": -0.000753161030908508,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.706702,
+          "max_minimum_development_gain": 0.0016611295681062677,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.715743,
+          "max_minimum_development_gain": -0.006022080963532961,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.792751,
+          "max_minimum_development_gain": -0.0020769290528136475,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.846574,
+          "max_minimum_development_gain": -0.003825921528039955,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 51.364323,
+          "max_minimum_development_gain": -0.00697162161759024,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.047135,
+          "max_minimum_development_gain": -0.010388276500831541,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.05411,
+          "max_minimum_development_gain": -0.0051932281923963985,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.375585,
+          "max_minimum_development_gain": -0.007320635900102342,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "official_baseline_task_score": 52.391603,
+          "max_minimum_development_gain": 0.004553734061930714,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": {
+            "fold0": 0.00925925925925919,
+            "fold1": 0.004553734061930714,
+            "fold2": 0.004098360655737765,
+            "valid": 0.00830564784053156
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "official_baseline_task_score": 52.539161,
+          "max_minimum_development_gain": -0.015577380650926287,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 56.936749,
+          "max_minimum_development_gain": -0.051548944716732936,
+          "config": {
+            "auxiliary": 0.3
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "v168",
+      "tasks": 21,
+      "development_nominees": [
+        "clearance_hepatocyte_az",
+        "cyp2d6_substrate_carbonmangels",
+        "cyp3a4_substrate_carbonmangels",
+        "cyp2d6_veith",
+        "bioavailability_ma"
+      ],
+      "accepted": [],
+      "comparisons": [
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "official_baseline_task_score": 49.832263,
+          "max_minimum_development_gain": 0.0010576923076923705,
+          "config": {
+            "strength": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.032316,
+          "max_minimum_development_gain": 0.0022956841138659367,
+          "config": {
+            "strength": 10.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.141941,
+          "max_minimum_development_gain": 0.0008548594778543528,
+          "config": {
+            "strength": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.211228,
+          "max_minimum_development_gain": 0.021193561413992867,
+          "config": {
+            "strength": 1.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.026998913802866453,
+            "fold1": 0.021193561413992867,
+            "fold2": -0.0054195213394159225,
+            "valid": -0.0383360233582441
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.236728,
+          "max_minimum_development_gain": 0.006437685338304308,
+          "config": {
+            "strength": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.320749,
+          "max_minimum_development_gain": -0.0003016591251886469,
+          "config": {
+            "strength": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.358383,
+          "max_minimum_development_gain": 0.008883811103728934,
+          "config": {
+            "strength": 1.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.014354938153964714,
+            "fold1": 0.008883811103728934,
+            "fold2": 0.0011343549695687072,
+            "valid": -0.06712074444692917
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.422543,
+          "max_minimum_development_gain": 0.002456569175861234,
+          "config": {
+            "strength": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.495262,
+          "max_minimum_development_gain": 0.0011703829933135124,
+          "config": {
+            "strength": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.689546,
+          "max_minimum_development_gain": -0.0037793147239991707,
+          "config": {
+            "strength": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.706702,
+          "max_minimum_development_gain": 0.009800664451827146,
+          "config": {
+            "strength": 1.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.009800664451827146,
+            "fold1": 0.028180619644034288,
+            "fold2": -0.00328947368421062,
+            "valid": -0.012544802867383464
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.715743,
+          "max_minimum_development_gain": 0.00016728002676480447,
+          "config": {
+            "strength": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.792751,
+          "max_minimum_development_gain": -0.01330915914846087,
+          "config": {
+            "strength": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.846574,
+          "max_minimum_development_gain": 0.003733482974089597,
+          "config": {
+            "strength": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": {
+            "fold0": 0.005948231863039277,
+            "fold1": 0.003733482974089597,
+            "fold2": -0.001155169254544619,
+            "valid": 0.005341809912050799
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 51.364323,
+          "max_minimum_development_gain": 0.0011567223717698916,
+          "config": {
+            "strength": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.047135,
+          "max_minimum_development_gain": -0.02002447876493952,
+          "config": {
+            "strength": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.05411,
+          "max_minimum_development_gain": -0.0002987917841722553,
+          "config": {
+            "strength": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.375585,
+          "max_minimum_development_gain": -0.0013921525759804404,
+          "config": {
+            "strength": 1.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "official_baseline_task_score": 52.391603,
+          "max_minimum_development_gain": 0.008487654320987637,
+          "config": {
+            "strength": 10.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.008487654320987637,
+            "fold1": 0.014875531268973896,
+            "fold2": -0.011536126290224602,
+            "valid": -0.031561461794019974
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "official_baseline_task_score": 52.539161,
+          "max_minimum_development_gain": -0.011969041454435336,
+          "config": {
+            "strength": 10.0
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 56.936749,
+          "max_minimum_development_gain": -0.02050036072691863,
+          "config": {
+            "strength": 1.0
+          },
+          "weight": 0.45,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "v172",
+      "tasks": 21,
+      "development_nominees": [
+        "ppbr_az",
+        "bioavailability_ma"
+      ],
+      "accepted": [],
+      "comparisons": [
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "official_baseline_task_score": 49.832263,
+          "max_minimum_development_gain": -0.0025040064102564985,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.032316,
+          "max_minimum_development_gain": -0.0025686843868661935,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.141941,
+          "max_minimum_development_gain": 0.001999036608863247,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.211228,
+          "max_minimum_development_gain": -0.0069938425179548735,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.236728,
+          "max_minimum_development_gain": 0.006670613548152378,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.320749,
+          "max_minimum_development_gain": -0.00515995872033026,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.358383,
+          "max_minimum_development_gain": -0.03747778248978384,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.422543,
+          "max_minimum_development_gain": -0.003402823604409022,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.495262,
+          "max_minimum_development_gain": -0.015131839937719271,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.689546,
+          "max_minimum_development_gain": 0.0065930353798454855,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.706702,
+          "max_minimum_development_gain": -0.003707976268951807,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.715743,
+          "max_minimum_development_gain": -0.02174640347942458,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.792751,
+          "max_minimum_development_gain": -0.001349425730037379,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.846574,
+          "max_minimum_development_gain": -0.0030168856335401895,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 51.364323,
+          "max_minimum_development_gain": -0.004350905672604322,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.047135,
+          "max_minimum_development_gain": 0.023397692959315382,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.031070092822387235,
+            "fold1": 0.023397692959315382,
+            "fold2": 0.024998310639189468,
+            "valid": -0.036078562893263603
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.05411,
+          "max_minimum_development_gain": -0.009123080699007746,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.375585,
+          "max_minimum_development_gain": 0.0008859002309048196,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "official_baseline_task_score": 52.391603,
+          "max_minimum_development_gain": 0.004188712522045668,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": {
+            "fold0": 0.004188712522045668,
+            "fold1": 0.0057680631451122455,
+            "fold2": -0.007893139040680008,
+            "valid": -0.013289036544850474
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "official_baseline_task_score": 52.539161,
+          "max_minimum_development_gain": -0.0008423032620262783,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 56.936749,
+          "max_minimum_development_gain": -0.06130970129565372,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "v173",
+      "tasks": 21,
+      "development_nominees": [],
+      "accepted": [],
+      "comparisons": [
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "official_baseline_task_score": 49.832263,
+          "max_minimum_development_gain": -0.007788461538461577,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.032316,
+          "max_minimum_development_gain": 0.00017774617845722762,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.141941,
+          "max_minimum_development_gain": 0.0016719441853132455,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.211228,
+          "max_minimum_development_gain": -0.017895394442281276,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.236728,
+          "max_minimum_development_gain": -0.0034450058227513854,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.320749,
+          "max_minimum_development_gain": -0.00025799793601644083,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.358383,
+          "max_minimum_development_gain": -0.025431492854055993,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.422543,
+          "max_minimum_development_gain": 0.0009104802921843236,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.495262,
+          "max_minimum_development_gain": -0.00947145181918374,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.689546,
+          "max_minimum_development_gain": -0.01760632062174026,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.706702,
+          "max_minimum_development_gain": -8.305647840523012e-05,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.715743,
+          "max_minimum_development_gain": -0.0043218085106383475,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.792751,
+          "max_minimum_development_gain": -0.0026039740612314732,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.846574,
+          "max_minimum_development_gain": 0.001558402053547292,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 51.364323,
+          "max_minimum_development_gain": -0.001518198862465292,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.047135,
+          "max_minimum_development_gain": -0.0055370851730810015,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.05411,
+          "max_minimum_development_gain": -0.003848949751784686,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.375585,
+          "max_minimum_development_gain": -0.02956858990129924,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "official_baseline_task_score": 52.391603,
+          "max_minimum_development_gain": 0.001984126984126866,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "official_baseline_task_score": 52.539161,
+          "max_minimum_development_gain": -0.006448726508827551,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 56.936749,
+          "max_minimum_development_gain": -0.01818511247583643,
+          "config": {
+            "depth": 5,
+            "trees": 1100,
+            "auxiliary": 0.5
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "v175",
+      "tasks": 21,
+      "development_nominees": [
+        "pgp_broccatelli",
+        "cyp2d6_substrate_carbonmangels",
+        "bioavailability_ma"
+      ],
+      "accepted": [],
+      "comparisons": [
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "official_baseline_task_score": 49.832263,
+          "max_minimum_development_gain": -0.003806089743589869,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.032316,
+          "max_minimum_development_gain": -0.00027300027300025675,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.141941,
+          "max_minimum_development_gain": -0.0027904058652720165,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.211228,
+          "max_minimum_development_gain": -0.007488696037871612,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.236728,
+          "max_minimum_development_gain": -0.005203825003711276,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.320749,
+          "max_minimum_development_gain": 0.007591754650578153,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.007591754650578153,
+            "fold1": 0.01403508771929829,
+            "fold2": -0.006992660186470823,
+            "valid": -0.01975275463585069
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.358383,
+          "max_minimum_development_gain": 0.005393239260972127,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": {
+            "fold0": 0.007063512140679351,
+            "fold1": 0.005393239260972127,
+            "fold2": -0.026095583888330776,
+            "valid": -0.05887021597103059
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.422543,
+          "max_minimum_development_gain": -0.0007034779488505061,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.495262,
+          "max_minimum_development_gain": -0.01123302822156691,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.689546,
+          "max_minimum_development_gain": -0.017356628994805237,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.706702,
+          "max_minimum_development_gain": -0.004817275747508454,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.715743,
+          "max_minimum_development_gain": -0.002174640347942458,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.792751,
+          "max_minimum_development_gain": -0.004784948783045251,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.846574,
+          "max_minimum_development_gain": -0.0013102282714644309,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 51.364323,
+          "max_minimum_development_gain": -0.001261481502348727,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.047135,
+          "max_minimum_development_gain": -0.005632882525334613,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.05411,
+          "max_minimum_development_gain": -0.003939509150563852,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.375585,
+          "max_minimum_development_gain": -0.01536194695363679,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "official_baseline_task_score": 52.391603,
+          "max_minimum_development_gain": 0.011687917425622363,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": {
+            "fold0": 0.017857142857142683,
+            "fold1": 0.011687917425622363,
+            "fold2": -0.008196721311475419,
+            "valid": 0.00830564784053145
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "official_baseline_task_score": 52.539161,
+          "max_minimum_development_gain": -0.009574989880260731,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 56.936749,
+          "max_minimum_development_gain": -0.023874667063929045,
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 5000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "v178",
+      "tasks": 21,
+      "development_nominees": [
+        "pgp_broccatelli",
+        "cyp2d6_substrate_carbonmangels",
+        "bioavailability_ma"
+      ],
+      "accepted": [],
+      "comparisons": [
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "official_baseline_task_score": 49.832263,
+          "max_minimum_development_gain": -0.003906250000000111,
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.032316,
+          "max_minimum_development_gain": -0.0017869108778200138,
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.141941,
+          "max_minimum_development_gain": -0.0024085522080173893,
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.211228,
+          "max_minimum_development_gain": -0.0122400576324464,
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.236728,
+          "max_minimum_development_gain": -0.005136006468588712,
+          "config": {
+            "depth": 3,
+            "trees": 800
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.320749,
+          "max_minimum_development_gain": 0.008270487682252359,
+          "config": {
+            "depth": 3,
+            "trees": 800
+          },
+          "weight": 0.45,
+          "confirmation_gains": {
+            "fold0": 0.008270487682252359,
+            "fold1": 0.013132094943240413,
+            "fold2": -0.007240626859750243,
+            "valid": -0.017737167428110823
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.358383,
+          "max_minimum_development_gain": 0.004303303606544739,
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": {
+            "fold0": 0.004303303606544739,
+            "fold1": 0.013452679577187321,
+            "fold2": -0.013355896653463595,
+            "valid": -0.06774617526877846
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.422543,
+          "max_minimum_development_gain": -0.001473564269228289,
+          "config": {
+            "depth": 3,
+            "trees": 800
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.495262,
+          "max_minimum_development_gain": -0.011768889031923746,
+          "config": {
+            "depth": 3,
+            "trees": 800
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "official_baseline_task_score": 50.689546,
+          "max_minimum_development_gain": -0.02695342267556005,
+          "config": {
+            "depth": 3,
+            "trees": 800
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.706702,
+          "max_minimum_development_gain": -0.004734219269103113,
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "official_baseline_task_score": 50.715743,
+          "max_minimum_development_gain": -0.007360321177651397,
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "official_baseline_task_score": 50.792751,
+          "max_minimum_development_gain": 0.0008562799151912159,
+          "config": {
+            "depth": 3,
+            "trees": 800
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 50.846574,
+          "max_minimum_development_gain": -0.0014519801456425174,
+          "config": {
+            "depth": 3,
+            "trees": 800
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 51.364323,
+          "max_minimum_development_gain": -0.0005374005058979003,
+          "config": {
+            "depth": 3,
+            "trees": 800
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.047135,
+          "max_minimum_development_gain": -0.009555339870115382,
+          "config": {
+            "depth": 3,
+            "trees": 800
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.05411,
+          "max_minimum_development_gain": -0.005258048065343934,
+          "config": {
+            "depth": 3,
+            "trees": 800
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "official_baseline_task_score": 52.375585,
+          "max_minimum_development_gain": -0.01681976717759919,
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "official_baseline_task_score": 52.391603,
+          "max_minimum_development_gain": 0.01001821493624766,
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": {
+            "fold0": 0.012566137566137447,
+            "fold1": 0.01001821493624766,
+            "fold2": -0.002580449301760712,
+            "valid": -0.011074197120708895
+          },
+          "accepted": false,
+          "failure_reasons": [
+            "nonpositive_confirmation_point",
+            "bootstrap_uncertain_fold2",
+            "bootstrap_uncertain_valid"
+          ]
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "official_baseline_task_score": 52.539161,
+          "max_minimum_development_gain": -0.019105219970182885,
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "official_baseline_task_score": 56.936749,
+          "max_minimum_development_gain": -0.01618937032684231,
+          "config": {
+            "depth": 3,
+            "trees": 800
+          },
+          "weight": 0.2,
+          "confirmation_gains": null,
+          "accepted": false,
+          "failure_reasons": [
+            "no_development_nomination"
+          ]
+        }
+      ]
+    }
+  ],
+  "submission_decisions_changed": false,
+  "model_selection_changed": false,
+  "source_data_changed": false,
+  "limitations": "Describes previously observed evidence. Failed configurations are not retuned or promoted using this report."
+}

@@ -1,0 +1,31 @@
+{
+  "path": "releases/v204_frozen_sources_20261028.tar.gz",
+  "sha256": "027bfc532f2bf3691f33bcbbc8d34e62de1dbfae2ab6946b6938f3a0f496f043",
+  "files": [
+    {
+      "path": "tools/v204_clamped_diffusion.py",
+      "sha256": "9219cf7d535cf3cc606c0e557213b5943dd2f149bcbee0ba2e42c377b8c446f9"
+    },
+    {
+      "path": "tools/v205_verify_clamped_diffusion.py",
+      "sha256": "5fa94956965f545fdd1b827d5f42afcf689cc50aec947432314d111b5d7e96de"
+    },
+    {
+      "path": "tools/v206_package_diffusion_batch.py",
+      "sha256": "99bbca90959f3ccf3736ba5f6e05d01fca08694f995871bb441989e0aea61018"
+    },
+    {
+      "path": "tools/finalize_v205_local.py",
+      "sha256": "17b423905545846f7699aa41c0ca8f4e9a3529949b5ac8e946d91c4e01e543d2"
+    },
+    {
+      "path": "docs/v204_training_plan.json",
+      "sha256": "c21d1899b15519fd55cb5270dadb45b093385c402c2ca6a019b87efd5005f368"
+    },
+    {
+      "path": "docs/v204_source_review.json",
+      "sha256": "94308a2f0d9f794ca3a12e633ca135534cfd2de1aecb9ef9983ef032a96c38a8"
+    }
+  ],
+  "credentials_included": false
+}

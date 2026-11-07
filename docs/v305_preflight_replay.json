@@ -1,0 +1,13 @@
+{
+  "task": "solubility_aqsoldb",
+  "part": "fold0",
+  "rows": 1635,
+  "feature_rebuild": true,
+  "checkpoint_reload": true,
+  "nonfit_target_label_isolation": true,
+  "independent_attention_reference": true,
+  "reference_labels_fit_only": true,
+  "reference_identity_and_scaffold_disjoint": true,
+  "neighbor_reconstruction": true,
+  "reversed_query_tolerance": 1e-12
+}

@@ -1,0 +1,55 @@
+{
+  "version": "v210",
+  "delivery_version": "v211",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-28T08:57:09.013490+00:00",
+  "source_sha256": "a5005887734c4621254c1e9d9ee0670b0ed464059d589cc0cfe9733a9c0389a1",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "model": "Neutral organic-parent and bounded canonical-tautomer representations plus original augmented chemistry, two-seed CatBoost",
+  "distinct_from_completed_routes": "v95/auditv101 identities and v96 neutral assay matching did not train these two normalized molecular fingerprint/descriptor representations. No prior route or model rerun.",
+  "representations": {
+    "normalization": "Largest organic fragment, uncharge; then RDKit bounded canonical tautomer",
+    "enumeration": {
+      "max_tautomers": 256,
+      "max_transforms": 1024,
+      "status_flag": true
+    },
+    "per_representation": "2048 radius2 chiral countMorgan +1024 radius3 featureMorgan +214 descriptors",
+    "original_valence_exceptions": "Retain original graph in both views and explicit flag, no silent repair",
+    "unanticipated_normalization_error": "Fail closed; no silent zero/fallback",
+    "source": "Official SMILES only, per-molecule transform; no labels, query/fit adaptation or learned preprocessing"
+  },
+  "tasks": "All21 improvable endpoints ordered by original official score; HIA protected",
+  "configs": [
+    {
+      "depth": 6,
+      "trees": 1000
+    }
+  ],
+  "seeds": [
+    2101028,
+    2101029
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "optimizer": "CatBoost CPU4threads,lr.03,l2=30,subsample.85,border64. Logloss/MAE/ranknormalRMSE; no early stopping",
+  "selection": "Unchangedv148 maxminimumfold0/1; freeze single choice beforefold2/valid; no fallback",
+  "confirmation": "All4 point gains>0, original practical mean threshold, both scaffold-bootstrap90 lower bounds>0",
+  "tests_before_training": [
+    "Source row mapping and all-label perturbation",
+    "Known salt and keto/enol invariance",
+    "Per-molecule deterministic order",
+    "Actual classification/MAE/Spearman estimator independent save/reload",
+    "Query label isolation"
+  ],
+  "verification": "Regenerate every normalized structure/feature; independently reload all accepted models; original gates/fusion/template bytes/backup hashes",
+  "source_immutable_after_start": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "pretrained_weights_downloaded": false,
+  "official_gain_guaranteed": false,
+  "limitations": "Normalized representations may omit meaningful salt/charge/tautomer information; originals remain available. Public labels reused and historical upstream OOF approximate; no official gain estimate."
+}

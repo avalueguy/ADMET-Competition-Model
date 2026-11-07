@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "prefix": "v91_rejected_local_residual_20261025",
+  "archive_sha256": "e193e0ad5f361299b7d47cfa8408ae339579704cdd86fe95144455515016c823",
+  "manifest_files": 188,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 183,
+  "existing_exact": 4,
+  "existing_updated_docs_preserved": [
+    "docs/ITERATION_V91_20261025.md"
+  ]
+}

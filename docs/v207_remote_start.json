@@ -1,0 +1,28 @@
+{
+  "status": "STARTED",
+  "boot_id": "0147efe4-5fc2-4881-9c47-fcd4cd66909e",
+  "processes": {
+    "training": {
+      "pid": 9284,
+      "start_ticks": "2023689180",
+      "script": "v207_denoising_encoder.py",
+      "log": "v207_denoising_encoder.log"
+    },
+    "pipeline": {
+      "pid": 9285,
+      "start_ticks": "2023689180",
+      "script": "v209_package_denoising_batch.py",
+      "log": "v209_pipeline.log"
+    }
+  },
+  "smoke": {
+    "status": "PASS",
+    "signature": "6c98afee5f98b4b08ad610ba3ef3a945d7e271add5bfbc42f1d11cb9b1c7a0b0",
+    "all_endpoint_label_perturbation_invariant": true,
+    "finite_reconstruction_gradient": true,
+    "encoder_row_order_invariant": true,
+    "pretraining_unique_structures": 34610,
+    "official_training_structures_only": true,
+    "no_endpoint_labels_used": true
+  }
+}

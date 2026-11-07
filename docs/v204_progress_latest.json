@@ -1,0 +1,32 @@
+{
+  "checked_at_utc": "2026-10-28T07:38:09.178133+00:00",
+  "development_status": "IN_PROGRESS",
+  "completed_development_tasks": [
+    "herg",
+    "bbb_martins",
+    "ames",
+    "clearance_hepatocyte_az",
+    "solubility_aqsoldb",
+    "pgp_broccatelli",
+    "cyp2d6_substrate_carbonmangels",
+    "cyp3a4_veith",
+    "clearance_microsome_az"
+  ],
+  "processes": {
+    "8852": {
+      "exists": true,
+      "state": "R"
+    },
+    "8853": {
+      "exists": true,
+      "state": "S"
+    }
+  },
+  "pipeline": {
+    "status": "WAITING_TRAINING",
+    "route": "v204"
+  },
+  "confirmation": null,
+  "failure": null,
+  "source_sha256": "9219cf7d535cf3cc606c0e557213b5943dd2f149bcbee0ba2e42c377b8c446f9"
+}

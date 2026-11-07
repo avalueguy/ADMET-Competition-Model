@@ -1,0 +1,22 @@
+{
+  "reported_date_hong_kong": "2026-10-20",
+  "source": "User's direct message in this session",
+  "version": "v63",
+  "official_score_user_reported": 50.603,
+  "platform_displays": "Current submission score, not historical best",
+  "rank": "Outside top 10",
+  "tenth_place_user_reported": 51.265,
+  "gap_to_tenth": 0.662,
+  "repository_v63_csv_sha256": "d3ba7a517f75390c70be547d0b39ae195d3e460750f2360c92a5273990155550",
+  "uploaded_byte_hash_independently_confirmed": false,
+  "per_task_platform_scores": null,
+  "new_model_official_score": null,
+  "latest_update": {
+    "version_inferred_from_delivered_file": "v68",
+    "format_accepted_user_confirmed": true,
+    "rank_user_reported": "Outside top ten",
+    "official_score": null,
+    "score_available": "Tomorrow per user",
+    "version_explicitly_confirmed": false
+  }
+}

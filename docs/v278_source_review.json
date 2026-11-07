@@ -1,0 +1,12 @@
+{
+  "status": "PREDECLARED_PROTOCOL_FROZEN_BEFORE_DEVELOPMENT",
+  "source_sha256": "30743545f399ff86ee8f3c4b4c20db9482329dd842cbe54985f1c9a82bf66760",
+  "fit_only_review": "docs/v277_review_decision.json",
+  "unchanged_topology": true,
+  "prior_rationale": "Normalizedkernel diagonal1; unit Gaussian prior is standard fixedscale. Not selected using query scores.",
+  "original_model_routing": "v145 carries v130 for herg/CYP3A4 substrate; v130 uses.5 ofv127physchem and.5 precedingcontrol. Must replay exact v145 every partition.",
+  "optimizer": "Convex fixedintercept logistic + L2 in eigenbasis; exact Hessian/backtracking/gradienttol. No stopping based query.",
+  "gates_changed": false,
+  "prior_rejected_route_reused": false,
+  "in_sample_predictions_called_oof": false
+}

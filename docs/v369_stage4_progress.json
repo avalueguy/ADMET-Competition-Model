@@ -1,0 +1,40 @@
+{
+  "date_hong_kong": "2026-11-05",
+  "status": "COMPLETE_NO_ELIGIBLE_CANDIDATE",
+  "version": "v369",
+  "baseline": "v364:51.269",
+  "tasks": [
+    "bioavailability_ma",
+    "cyp2c9_substrate_carbonmangels",
+    "cyp2d6_substrate_carbonmangels",
+    "cyp3a4_substrate_carbonmangels"
+  ],
+  "seeds": [
+    3691105,
+    3691106
+  ],
+  "modes": [
+    "scratch",
+    "selfsupervised",
+    "family_transfer"
+  ],
+  "weights": [
+    0.0,
+    0.2,
+    0.45
+  ],
+  "training_host": "connect.nmb2.seetacloud.com:25870",
+  "external_data": false,
+  "external_weights": false,
+  "independent_fold_encoders": true,
+  "confirmation_fallback": false,
+  "experimental_requires": "four positive gains",
+  "previous_stage": "v368 no eligible candidate; all four predictions preserved",
+  "known_limitation": "CYP3A4-substrate valid fitting set reduced to155 by scaffold isolation. Public labels reused; upstream OOF partly proxy.",
+  "official_score": null,
+  "remote_pid": 2824,
+  "source_hashes_verified": true,
+  "new_submission_delivered": false,
+  "confirmed_failed_task": "bioavailability_ma",
+  "known_best_unchanged": "v364:51.269"
+}

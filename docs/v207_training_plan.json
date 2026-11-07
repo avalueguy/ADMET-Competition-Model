@@ -1,0 +1,59 @@
+{
+  "version": "v207",
+  "delivery_version": "v208",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-28T07:48:28.094615+00:00",
+  "source_sha256": "40358539719841bd387a3d82f11486d33488b64dc4db8b73b704f8c060c6f5a0",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "model": "Label-free denoising molecular encoder from scratch, frozen representation plus supervised endpoint CatBoost",
+  "distinct_from_completed_routes": "Unsupervised masked reconstruction objective learns a reusable representation before endpoint fitting; prior neural/graph routes trained with endpoint labels. No failed route rerun or existing model reuse.",
+  "pretraining": {
+    "source": "Unique official training-split structures only, all endpoints; no y array access",
+    "validation_test": "Inference only unless same original structure also occurs in official training data; overlap disclosed and no endpoint labels used",
+    "unique_smiles_index": "np.unique(mi[split==0])",
+    "inputs": "six2048 logcount fingerprint blocks and fit-preprocessed physchem descriptors",
+    "target": "masked clean original fingerprints/descriptors, no assay labels or historical predictions",
+    "architecture": "6x64 fingerprint projections,64descriptor,128bottleneck,256decoder",
+    "steps": 6000,
+    "batch": 256,
+    "mask": 0.25,
+    "seeds": [
+      2071028,
+      2071029
+    ],
+    "optimization": "AdamW.0008 cosine to.00003 weightdecay.01",
+    "output": "two128D frozen embeddings, independent encoder reload all molecules",
+    "stop": "fail closed on nonfinite loss/gradient or reconstruction loss not decreasing"
+  },
+  "tasks": "All21 improvable endpoints, original official low scores first; HIA protected",
+  "configs": [
+    {
+      "depth": 5,
+      "trees": 900
+    }
+  ],
+  "seeds": [
+    2071028,
+    2071029
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "experts": "CPU CatBoost900depth5 l2=25. MAE native standardized target, rank-normal Spearman, logistic classification",
+  "selection": "Unchanged v148 maxminimum fold0/1, all choices frozen before fold2/valid; no fallback",
+  "confirmation": "All4 point gains>0; practical metric threshold; both paired scaffold bootstrap90 lower bounds>0",
+  "tests_before_training": [
+    "All endpoint label perturbation leaves pretraining exactly unchanged",
+    "Finite masked reconstruction gradient",
+    "Encoder row permutation equivariance"
+  ],
+  "verification": "All embeddings independently regenerated from serialized two encoders; per endpoint design/labels perturb/reload and final fusion/template bytes checked",
+  "source_immutable_after_start": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "pretrained_weights_downloaded": false,
+  "official_gain_guaranteed": false,
+  "limitations": "Unsupervised original train structures may overlap held-out rows of other endpoints; label-free overlap disclosed. Public labels reused and historical upstream controls approximate; no official score estimate."
+}

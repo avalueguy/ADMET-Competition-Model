@@ -1,0 +1,954 @@
+{
+  "status": "PASS",
+  "archive_order": [
+    "releases/v380_complete_handoff.tar.gz",
+    "releases/v382_handoff_delta.tar.gz",
+    "releases/v385_handoff_delta.tar.gz",
+    "releases/v388_handoff_delta.tar.gz"
+  ],
+  "input_hashes_checked": 188,
+  "selected_final_states_included": true,
+  "records": [
+    {
+      "destination": "experiments/regression9_v386/official_rows.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::official_rows.npz",
+      "sha256": "fab716190f822a331bdaf7395ed4da5029f5a5388819db8e3e35c0d2f57a5712"
+    },
+    {
+      "destination": "experiments/regression9_v386/expert_features.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::expert_features.npz",
+      "sha256": "17850a1c6143b04077b3b9a41df84b9f702153e30ce7945f275141be47455c4b"
+    },
+    {
+      "destination": "experiments/regression9_v386/stereo_keys.npz",
+      "source_member": "releases/v374_delta_inputs.tar.gz::stereo_keys.npz",
+      "sha256": "9b5b4ac376469195188a0737325be23c6d1755b568f380b8ca498e0088a5412c"
+    },
+    {
+      "destination": "experiments/regression9_v386/v385_baseline.csv",
+      "source_member": "experiments/regression9_v386/v385_baseline.csv",
+      "sha256": "355d8cf8f67bfd1e81b67f99e476a9780f1737d1e598a795d651bc589eeff1d0"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/caco2_wang/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/caco2_wang/fold0.npz",
+      "sha256": "4615a1983b86fee46bf104cea095b28e9937cc53163ac3194ab5448b08ff4878"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/caco2_wang/fold0.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/caco2_wang/fold0.npz",
+      "sha256": "1b59a90507176e7bf8d556cab9f395e71bd3064d668e6ab9627eb082e38d3dca"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/caco2_wang/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/caco2_wang/fold1.npz",
+      "sha256": "62ae014cc102695d943c109a1ab028e59a7caa0dfd609649a0974b9431aa75e0"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/caco2_wang/fold1.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/caco2_wang/fold1.npz",
+      "sha256": "d2c237a329cd64f4289580e1d3d260cbbdc7bc570a50071ff7795da45bdc4116"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/caco2_wang/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/caco2_wang/fold2.npz",
+      "sha256": "f37c2aa959f862997522955b27ba126792e1f5d962abaaeb2a3f85eb960bd4cc"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/caco2_wang/fold2.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/caco2_wang/fold2.npz",
+      "sha256": "ed99ba0af606306f0a384c10b8e4301cc90de35d6373c50f2c804aaca3d72906"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/caco2_wang/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/caco2_wang/valid.npz",
+      "sha256": "b13db09df655976ac8a75cea8f4787b1753c1302cb1be39c1aaeae5c5e99e33c"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/caco2_wang/valid.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/caco2_wang/valid.npz",
+      "sha256": "04e090b0183e24e5659993d2d6a81f0b9cc49476319d452238cb5bcb29a6800f"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/caco2_wang/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/caco2_wang/final.npz",
+      "sha256": "5ef81fa5a544dcf767959661e0fbf85390d9699c63bae45bf6a6973bb98a9a91"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/caco2_wang/final.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/caco2_wang/final.npz",
+      "sha256": "d85a610ad6932981d2df386d28f0611533b99cf20e7fc206bafda6b920e970a9"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/ld50_zhu/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/ld50_zhu/fold0.npz",
+      "sha256": "13c596186b9d3c087ac0c54c2a7e920c86c4b3d5009a906f8e1e788a267cc51d"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/ld50_zhu/fold0.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ld50_zhu/fold0.npz",
+      "sha256": "ad0c90c365390376882b1cee7ffc9776282e7778a84b0ee6984fd2dd244312eb"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/ld50_zhu/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/ld50_zhu/fold1.npz",
+      "sha256": "ca9e370754525dc6de21fc1c1842ea122a15445ad27840cb04dd0ac813f2a605"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/ld50_zhu/fold1.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ld50_zhu/fold1.npz",
+      "sha256": "b3e8b9bd993f42d28626c4aaac532a25957a034d50c299989f41307405e241e6"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/ld50_zhu/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/ld50_zhu/fold2.npz",
+      "sha256": "eac0c39506ddf2c6f627baff75bdfba99fa1be7d616eea8007b573be0e089d6e"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/ld50_zhu/fold2.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ld50_zhu/fold2.npz",
+      "sha256": "f49c39cf36354bba21bec4c234c8092680228bc32d8093121e65b9f19e33941c"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/ld50_zhu/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/ld50_zhu/valid.npz",
+      "sha256": "cdffd44449afa0e9f6a2551739992ca44b6ef9a00c626c7c951a4630df1572b1"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/ld50_zhu/valid.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ld50_zhu/valid.npz",
+      "sha256": "e59f268ae2d245f78addad9289b9897e9af2661240013963f6c7d6d6aed560d1"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/ld50_zhu/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/ld50_zhu/final.npz",
+      "sha256": "230b51ff11a4e42ccd447b9261faff0f6073355eb3cc72dd1bf7f16a73ecddb2"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/ld50_zhu/final.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ld50_zhu/final.npz",
+      "sha256": "4bca536d82ae3d628fd2c07b3796f6278ddefbd0342c2eedb068d9541600a700"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/lipophilicity_astrazeneca/fold0.npz",
+      "source_member": "experiments/regression9_v385/controls/lipophilicity_astrazeneca/fold0.npz",
+      "sha256": "6a1bc6cb8b4c75cc31d3a2a6a8bae984ff34534bf2d59ca535a4a96172f69fdb"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/lipophilicity_astrazeneca/fold0.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/lipophilicity_astrazeneca/fold0.npz",
+      "sha256": "d1fc49e32d8e11fa3255570aa6afb502512e8655264c789eab27b90c2e0b266f"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/lipophilicity_astrazeneca/fold1.npz",
+      "source_member": "experiments/regression9_v385/controls/lipophilicity_astrazeneca/fold1.npz",
+      "sha256": "6a86fb56f52c7f7f518170af968d468f9a1fc238add24637f6d139d5e8dd0a05"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/lipophilicity_astrazeneca/fold1.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/lipophilicity_astrazeneca/fold1.npz",
+      "sha256": "b06e1998b92dd47d3630b9305fe2ac109fe7b433fc222650cf2c86da8e25af3e"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/lipophilicity_astrazeneca/fold2.npz",
+      "source_member": "experiments/regression9_v385/controls/lipophilicity_astrazeneca/fold2.npz",
+      "sha256": "4885c18fdd85d74634e99b8618448c91769c7129ddd9f5be6abd8a78fb8e8a8e"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/lipophilicity_astrazeneca/fold2.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/lipophilicity_astrazeneca/fold2.npz",
+      "sha256": "0bedf22083d10029d523b1cddc5508011bd070eac4f22b549d290d0a73f6ae3e"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/lipophilicity_astrazeneca/valid.npz",
+      "source_member": "experiments/regression9_v385/controls/lipophilicity_astrazeneca/valid.npz",
+      "sha256": "76cf0ef198d6e3de53405fcc470adb69f4161c0678839e2bf041b513a71d6ade"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/lipophilicity_astrazeneca/valid.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/lipophilicity_astrazeneca/valid.npz",
+      "sha256": "db98655f9e99b81780033648491c9a47d4baabdf3ed8fdf204882889658cc4c1"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/lipophilicity_astrazeneca/final.npz",
+      "source_member": "experiments/regression9_v385/controls/lipophilicity_astrazeneca/final.npz",
+      "sha256": "91a0bfc78e364f416e222e082059dbba5f4fb9270ce8b945e8cc5cb9949e8813"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/lipophilicity_astrazeneca/final.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/lipophilicity_astrazeneca/final.npz",
+      "sha256": "6599f5723aae74566cf1903e5419c7aa6893bf8fd5a4cc19bbf766e6a5167be6"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/ppbr_az/fold0.npz",
+      "source_member": "experiments/regression9_v386/controls/ppbr_az/fold0.npz",
+      "sha256": "8b538f3c902b7765785deafe5202afe92f8518448b00706d8f7b1c5c7d2416c3"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/ppbr_az/fold0.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ppbr_az/fold0.npz",
+      "sha256": "38d46ad44e1b1d149805d6801da0ec1fc3c68cf1b932d93fb4030a78f05bb94d"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/ppbr_az/fold1.npz",
+      "source_member": "experiments/regression9_v386/controls/ppbr_az/fold1.npz",
+      "sha256": "28e81e683154c78c1d904b8b6d41551b27fa158f7733418199da91471fe5de3a"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/ppbr_az/fold1.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ppbr_az/fold1.npz",
+      "sha256": "ad8102be8aaa84e20b0b535ae756936b86e09619885c13960c9dc52760575e83"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/ppbr_az/fold2.npz",
+      "source_member": "experiments/regression9_v386/controls/ppbr_az/fold2.npz",
+      "sha256": "58bced1a502bce485581282beb7eece969e6be2ad599763ba42c47bde6a59b59"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/ppbr_az/fold2.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ppbr_az/fold2.npz",
+      "sha256": "23770b1c2bb9081153880da482a54e8ffbb34221ed7481596fe17f013c3abd3e"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/ppbr_az/valid.npz",
+      "source_member": "experiments/regression9_v386/controls/ppbr_az/valid.npz",
+      "sha256": "2703fe467cffbce90cd48838852d7f0ab0588a062919e2bfc34ec137295f0805"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/ppbr_az/valid.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ppbr_az/valid.npz",
+      "sha256": "ac8c9d628e5856e8a093e82c3b1fdc2816418614a8446e54e56d92d0a9b20c72"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/ppbr_az/final.npz",
+      "source_member": "experiments/regression9_v386/controls/ppbr_az/final.npz",
+      "sha256": "86966dc67c34c99df7f998fb23f6ed2076806cc403996e6d19f0a897a83bb0d9"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/ppbr_az/final.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ppbr_az/final.npz",
+      "sha256": "cde425e80fe00ed428e7d0e571b651713ecc77abb354edbf1ff5f9f5572ae84f"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/solubility_aqsoldb/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/solubility_aqsoldb/fold0.npz",
+      "sha256": "2c05b5f2b300fb742f68d6203c30ab787159f57d076724e3a27b6fbc9d6eea04"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/solubility_aqsoldb/fold0.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/solubility_aqsoldb/fold0.npz",
+      "sha256": "23dab33b7892e2245f7ce4dfe884c300d640159180d4cf08c41a4c862b53accc"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/solubility_aqsoldb/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/solubility_aqsoldb/fold1.npz",
+      "sha256": "97fc818f4c80a0afaacdf1fa3da480927080db547d184ea90c4bdcf853ea1c9c"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/solubility_aqsoldb/fold1.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/solubility_aqsoldb/fold1.npz",
+      "sha256": "45a6fa6854ab04c2a9621c4cdd9c2093c1c519a1aae6fc2d6663265118dd767b"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/solubility_aqsoldb/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/solubility_aqsoldb/fold2.npz",
+      "sha256": "9099adeda08197682a8db6575900ae252ea73e7087187e6d40a12bbb0bcfeb2d"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/solubility_aqsoldb/fold2.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/solubility_aqsoldb/fold2.npz",
+      "sha256": "ef0d4cba681820dc5e1d1233654546401717d06a61e75534b204329c52e4162f"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/solubility_aqsoldb/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/solubility_aqsoldb/valid.npz",
+      "sha256": "f75f80e768d932ce293e9e214a20b796ad849bf5862d8273b3ee42923aee1677"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/solubility_aqsoldb/valid.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/solubility_aqsoldb/valid.npz",
+      "sha256": "c28dd1aa79cdd7ce3f464ce3685e4e57f511ed94d6271fd9c116155e0bcd85be"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/solubility_aqsoldb/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/solubility_aqsoldb/final.npz",
+      "sha256": "655e4e7b156eb3f4c5dc2d1e334b355d63a6b1fd788031e2f31e186df4e2ff2d"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/solubility_aqsoldb/final.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/solubility_aqsoldb/final.npz",
+      "sha256": "c6038177df1ab152ea0016ddc3118aa2335aa160d02b62130931de5676043f32"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/clearance_hepatocyte_az/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_hepatocyte_az/fold0.npz",
+      "sha256": "10acd4de7cb61996d2b3c03d0ee7dc5cf98c267749416751e34d6261cab4155d"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/clearance_hepatocyte_az/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_hepatocyte_az/fold0.npz",
+      "sha256": "98c6b13a30e5181ac69ec41bef13d351e2dac01f48e877bfb9dee31c348f4fa3"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/clearance_hepatocyte_az/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_hepatocyte_az/fold1.npz",
+      "sha256": "e1a856aafd17b55d61a428ba4d2683dad3dd75466e53b1df7fd261d301725c4d"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/clearance_hepatocyte_az/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_hepatocyte_az/fold1.npz",
+      "sha256": "7956c109c548571d27ba67b429dff6c42b345c767af70f901b5e703c9b1a951c"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/clearance_hepatocyte_az/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_hepatocyte_az/fold2.npz",
+      "sha256": "af9a07764438e029f41367739687d6e67e761b37f7c19935f9239c002ba2c2cd"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/clearance_hepatocyte_az/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_hepatocyte_az/fold2.npz",
+      "sha256": "7c1aeacbd3277ad41d075b010c66b42625ddb61201548c75c637eb23cfc63c89"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/clearance_hepatocyte_az/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_hepatocyte_az/valid.npz",
+      "sha256": "c563c8a6efe2133d51806b1f9620d1465f54a37b84298fd8a98eea8d4d7aa645"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/clearance_hepatocyte_az/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_hepatocyte_az/valid.npz",
+      "sha256": "3854c6869c80b22b008b2d8250e7871b6049a8375e5a0ad64e118739e80e3d1a"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/clearance_hepatocyte_az/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_hepatocyte_az/final.npz",
+      "sha256": "b7450d7ad66531816f442b3d8b6b55d03f51176ec61cbac4ab1a947c41222118"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/clearance_hepatocyte_az/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_hepatocyte_az/final.npz",
+      "sha256": "c9dfea60fb4eff03e5a8cb5aacc9a07820540669a334021627c2d879b21899a2"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/clearance_microsome_az/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_microsome_az/fold0.npz",
+      "sha256": "a84d173af29da0597a7caf66dc1c5d288b59f10a9f8d2b8ef28e383306c41e44"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/clearance_microsome_az/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_microsome_az/fold0.npz",
+      "sha256": "9361c8568772148b7393c170ab837f299a7efca7f36ef79093644dfe2d26e002"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/clearance_microsome_az/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_microsome_az/fold1.npz",
+      "sha256": "16b626f5164e7019a16dd53282ed0ef2af39d11c0be2761896aac82c9f43469b"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/clearance_microsome_az/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_microsome_az/fold1.npz",
+      "sha256": "ae1b42df3503ae53ae1ff80f5553a040861ffb35c0216a9251fb451dfbaee7f3"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/clearance_microsome_az/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_microsome_az/fold2.npz",
+      "sha256": "21791cd0fa29fc9107539b86aa97523cc644fbb1f2ba1403fe3af601d06574b8"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/clearance_microsome_az/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_microsome_az/fold2.npz",
+      "sha256": "c38d5ec7e86996c020734a20325126dc04820bb7cfeb9fe4d1957501c43aa500"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/clearance_microsome_az/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_microsome_az/valid.npz",
+      "sha256": "4df85215f3357fee177901acf5df60da0d661b363df9e819787a33c1ce269111"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/clearance_microsome_az/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_microsome_az/valid.npz",
+      "sha256": "ea17354af8044da770e18707597f27577a907f607111245a4f206f1a635bd9d4"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/clearance_microsome_az/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_microsome_az/final.npz",
+      "sha256": "92f95216d5a49968444cf3fb3b5be1ea519d2c732778a06741f814ce87fae2a6"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/clearance_microsome_az/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_microsome_az/final.npz",
+      "sha256": "c8fd7a5a7c2e17048ef889bc1d5cc54276976de26ac884673135bff31ab6a685"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/half_life_obach/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/half_life_obach/fold0.npz",
+      "sha256": "62348b29c203d5a88e0f79893cb00c544c00f1493cd48b87de3a4a3ccddd5b0b"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/half_life_obach/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/half_life_obach/fold0.npz",
+      "sha256": "ceca7d8b01b33a5280ecacb883a9f91111fe3a3b44d1580ae09b02795fe924d2"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/half_life_obach/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/half_life_obach/fold1.npz",
+      "sha256": "d62f0de6ebe208add924b3b57f200de17f266f34d2fcda3bf1cd5241739914e9"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/half_life_obach/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/half_life_obach/fold1.npz",
+      "sha256": "b26b547c1315370c842061b5e37ee2b73acce89ff464793014deb377f60e4ad0"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/half_life_obach/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/half_life_obach/fold2.npz",
+      "sha256": "a8bd805f811a84411e4a245d31ec557178715c4da38b4bf12d99d2eaa7132d71"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/half_life_obach/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/half_life_obach/fold2.npz",
+      "sha256": "3c36af69cf333674489a7d403b594b7aaceab7402f56c3cf1ea22933714437e2"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/half_life_obach/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/half_life_obach/valid.npz",
+      "sha256": "da2c491c72f5de8947c0de603ac3207810828d849d54fd831dec2fe363a010eb"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/half_life_obach/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/half_life_obach/valid.npz",
+      "sha256": "43a5674c2b1477fce55b40fee615536923889f4e4633a9c9712e35ad37e3dc12"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/half_life_obach/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/half_life_obach/final.npz",
+      "sha256": "a76a50fb77e3953e40ae5398bdbecfd1e81ccfd245282637805f89c40bb69630"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/half_life_obach/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/half_life_obach/final.npz",
+      "sha256": "4970a5999e6531d1a4eaaa399565e1f74ae2fb806782b37a009c91fc5cb48a28"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/vdss_lombardo/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/vdss_lombardo/fold0.npz",
+      "sha256": "16e4061523073119134b6489f7a75cdaa941ba2150900dd409b9890d24776301"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/vdss_lombardo/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/vdss_lombardo/fold0.npz",
+      "sha256": "e5c40026a01d38f0199570f682e3381616e4fbfb7c08a05d75ec80d8e753f719"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/vdss_lombardo/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/vdss_lombardo/fold1.npz",
+      "sha256": "8c0bbd26a4b9c651cf21e1950e9bb4582b1fa9055aa27347dc0f98eb31fd6fdf"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/vdss_lombardo/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/vdss_lombardo/fold1.npz",
+      "sha256": "a1ba11072aa86436e393c28e1d7d992bd337e71044f5c3044c52eeaf85e65aa4"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/vdss_lombardo/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/vdss_lombardo/fold2.npz",
+      "sha256": "79436e34945bb42fa78ce78fe31159c07c952e7c60b8bbcfa7e483cd0868fb69"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/vdss_lombardo/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/vdss_lombardo/fold2.npz",
+      "sha256": "f24bf3d6cfcd4555a32913a5741155928824faa556f5281cf92a63968837028a"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/vdss_lombardo/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/vdss_lombardo/valid.npz",
+      "sha256": "4e7f0d9701e00233691cbf1f8f364a611f167e8261e6e0daaedf233d5e061f7b"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/vdss_lombardo/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/vdss_lombardo/valid.npz",
+      "sha256": "4531f5bd47e9545581111f9ecb90fd228f4c71cad7577f61ada9bc6a1d6fc27c"
+    },
+    {
+      "destination": "experiments/regression9_v386/controls/vdss_lombardo/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/vdss_lombardo/final.npz",
+      "sha256": "37ebc116a49748d5ae68dadb697659ed1992d05b832102b04544a8f854751fce"
+    },
+    {
+      "destination": "experiments/regression9_v386/design/vdss_lombardo/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/vdss_lombardo/final.npz",
+      "sha256": "9fc38121db7ddf6f02440c12d4f8eac7fb93134051d88b782489b4ba5d997e6d"
+    },
+    {
+      "destination": "experiments/regression9_v387/official_rows.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::official_rows.npz",
+      "sha256": "fab716190f822a331bdaf7395ed4da5029f5a5388819db8e3e35c0d2f57a5712"
+    },
+    {
+      "destination": "experiments/regression9_v387/expert_features.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::expert_features.npz",
+      "sha256": "17850a1c6143b04077b3b9a41df84b9f702153e30ce7945f275141be47455c4b"
+    },
+    {
+      "destination": "experiments/regression9_v387/stereo_keys.npz",
+      "source_member": "releases/v374_delta_inputs.tar.gz::stereo_keys.npz",
+      "sha256": "9b5b4ac376469195188a0737325be23c6d1755b568f380b8ca498e0088a5412c"
+    },
+    {
+      "destination": "experiments/regression9_v387/v385_baseline.csv",
+      "source_member": "experiments/regression9_v387/v385_baseline.csv",
+      "sha256": "355d8cf8f67bfd1e81b67f99e476a9780f1737d1e598a795d651bc589eeff1d0"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/caco2_wang/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/caco2_wang/fold0.npz",
+      "sha256": "4615a1983b86fee46bf104cea095b28e9937cc53163ac3194ab5448b08ff4878"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/caco2_wang/fold0.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/caco2_wang/fold0.npz",
+      "sha256": "1b59a90507176e7bf8d556cab9f395e71bd3064d668e6ab9627eb082e38d3dca"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/caco2_wang/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/caco2_wang/fold1.npz",
+      "sha256": "62ae014cc102695d943c109a1ab028e59a7caa0dfd609649a0974b9431aa75e0"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/caco2_wang/fold1.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/caco2_wang/fold1.npz",
+      "sha256": "d2c237a329cd64f4289580e1d3d260cbbdc7bc570a50071ff7795da45bdc4116"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/caco2_wang/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/caco2_wang/fold2.npz",
+      "sha256": "f37c2aa959f862997522955b27ba126792e1f5d962abaaeb2a3f85eb960bd4cc"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/caco2_wang/fold2.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/caco2_wang/fold2.npz",
+      "sha256": "ed99ba0af606306f0a384c10b8e4301cc90de35d6373c50f2c804aaca3d72906"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/caco2_wang/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/caco2_wang/valid.npz",
+      "sha256": "b13db09df655976ac8a75cea8f4787b1753c1302cb1be39c1aaeae5c5e99e33c"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/caco2_wang/valid.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/caco2_wang/valid.npz",
+      "sha256": "04e090b0183e24e5659993d2d6a81f0b9cc49476319d452238cb5bcb29a6800f"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/caco2_wang/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/caco2_wang/final.npz",
+      "sha256": "5ef81fa5a544dcf767959661e0fbf85390d9699c63bae45bf6a6973bb98a9a91"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/caco2_wang/final.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/caco2_wang/final.npz",
+      "sha256": "d85a610ad6932981d2df386d28f0611533b99cf20e7fc206bafda6b920e970a9"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/ld50_zhu/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/ld50_zhu/fold0.npz",
+      "sha256": "13c596186b9d3c087ac0c54c2a7e920c86c4b3d5009a906f8e1e788a267cc51d"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/ld50_zhu/fold0.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ld50_zhu/fold0.npz",
+      "sha256": "ad0c90c365390376882b1cee7ffc9776282e7778a84b0ee6984fd2dd244312eb"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/ld50_zhu/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/ld50_zhu/fold1.npz",
+      "sha256": "ca9e370754525dc6de21fc1c1842ea122a15445ad27840cb04dd0ac813f2a605"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/ld50_zhu/fold1.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ld50_zhu/fold1.npz",
+      "sha256": "b3e8b9bd993f42d28626c4aaac532a25957a034d50c299989f41307405e241e6"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/ld50_zhu/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/ld50_zhu/fold2.npz",
+      "sha256": "eac0c39506ddf2c6f627baff75bdfba99fa1be7d616eea8007b573be0e089d6e"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/ld50_zhu/fold2.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ld50_zhu/fold2.npz",
+      "sha256": "f49c39cf36354bba21bec4c234c8092680228bc32d8093121e65b9f19e33941c"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/ld50_zhu/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/ld50_zhu/valid.npz",
+      "sha256": "cdffd44449afa0e9f6a2551739992ca44b6ef9a00c626c7c951a4630df1572b1"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/ld50_zhu/valid.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ld50_zhu/valid.npz",
+      "sha256": "e59f268ae2d245f78addad9289b9897e9af2661240013963f6c7d6d6aed560d1"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/ld50_zhu/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/ld50_zhu/final.npz",
+      "sha256": "230b51ff11a4e42ccd447b9261faff0f6073355eb3cc72dd1bf7f16a73ecddb2"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/ld50_zhu/final.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ld50_zhu/final.npz",
+      "sha256": "4bca536d82ae3d628fd2c07b3796f6278ddefbd0342c2eedb068d9541600a700"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/lipophilicity_astrazeneca/fold0.npz",
+      "source_member": "experiments/regression9_v385/controls/lipophilicity_astrazeneca/fold0.npz",
+      "sha256": "6a1bc6cb8b4c75cc31d3a2a6a8bae984ff34534bf2d59ca535a4a96172f69fdb"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/lipophilicity_astrazeneca/fold0.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/lipophilicity_astrazeneca/fold0.npz",
+      "sha256": "d1fc49e32d8e11fa3255570aa6afb502512e8655264c789eab27b90c2e0b266f"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/lipophilicity_astrazeneca/fold1.npz",
+      "source_member": "experiments/regression9_v385/controls/lipophilicity_astrazeneca/fold1.npz",
+      "sha256": "6a86fb56f52c7f7f518170af968d468f9a1fc238add24637f6d139d5e8dd0a05"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/lipophilicity_astrazeneca/fold1.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/lipophilicity_astrazeneca/fold1.npz",
+      "sha256": "b06e1998b92dd47d3630b9305fe2ac109fe7b433fc222650cf2c86da8e25af3e"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/lipophilicity_astrazeneca/fold2.npz",
+      "source_member": "experiments/regression9_v385/controls/lipophilicity_astrazeneca/fold2.npz",
+      "sha256": "4885c18fdd85d74634e99b8618448c91769c7129ddd9f5be6abd8a78fb8e8a8e"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/lipophilicity_astrazeneca/fold2.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/lipophilicity_astrazeneca/fold2.npz",
+      "sha256": "0bedf22083d10029d523b1cddc5508011bd070eac4f22b549d290d0a73f6ae3e"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/lipophilicity_astrazeneca/valid.npz",
+      "source_member": "experiments/regression9_v385/controls/lipophilicity_astrazeneca/valid.npz",
+      "sha256": "76cf0ef198d6e3de53405fcc470adb69f4161c0678839e2bf041b513a71d6ade"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/lipophilicity_astrazeneca/valid.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/lipophilicity_astrazeneca/valid.npz",
+      "sha256": "db98655f9e99b81780033648491c9a47d4baabdf3ed8fdf204882889658cc4c1"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/lipophilicity_astrazeneca/final.npz",
+      "source_member": "experiments/regression9_v385/controls/lipophilicity_astrazeneca/final.npz",
+      "sha256": "91a0bfc78e364f416e222e082059dbba5f4fb9270ce8b945e8cc5cb9949e8813"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/lipophilicity_astrazeneca/final.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/lipophilicity_astrazeneca/final.npz",
+      "sha256": "6599f5723aae74566cf1903e5419c7aa6893bf8fd5a4cc19bbf766e6a5167be6"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/ppbr_az/fold0.npz",
+      "source_member": "experiments/regression9_v387/controls/ppbr_az/fold0.npz",
+      "sha256": "8b538f3c902b7765785deafe5202afe92f8518448b00706d8f7b1c5c7d2416c3"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/ppbr_az/fold0.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ppbr_az/fold0.npz",
+      "sha256": "38d46ad44e1b1d149805d6801da0ec1fc3c68cf1b932d93fb4030a78f05bb94d"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/ppbr_az/fold1.npz",
+      "source_member": "experiments/regression9_v387/controls/ppbr_az/fold1.npz",
+      "sha256": "28e81e683154c78c1d904b8b6d41551b27fa158f7733418199da91471fe5de3a"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/ppbr_az/fold1.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ppbr_az/fold1.npz",
+      "sha256": "ad8102be8aaa84e20b0b535ae756936b86e09619885c13960c9dc52760575e83"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/ppbr_az/fold2.npz",
+      "source_member": "experiments/regression9_v387/controls/ppbr_az/fold2.npz",
+      "sha256": "58bced1a502bce485581282beb7eece969e6be2ad599763ba42c47bde6a59b59"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/ppbr_az/fold2.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ppbr_az/fold2.npz",
+      "sha256": "23770b1c2bb9081153880da482a54e8ffbb34221ed7481596fe17f013c3abd3e"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/ppbr_az/valid.npz",
+      "source_member": "experiments/regression9_v387/controls/ppbr_az/valid.npz",
+      "sha256": "2703fe467cffbce90cd48838852d7f0ab0588a062919e2bfc34ec137295f0805"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/ppbr_az/valid.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ppbr_az/valid.npz",
+      "sha256": "ac8c9d628e5856e8a093e82c3b1fdc2816418614a8446e54e56d92d0a9b20c72"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/ppbr_az/final.npz",
+      "source_member": "experiments/regression9_v387/controls/ppbr_az/final.npz",
+      "sha256": "86966dc67c34c99df7f998fb23f6ed2076806cc403996e6d19f0a897a83bb0d9"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/ppbr_az/final.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/ppbr_az/final.npz",
+      "sha256": "cde425e80fe00ed428e7d0e571b651713ecc77abb354edbf1ff5f9f5572ae84f"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/solubility_aqsoldb/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/solubility_aqsoldb/fold0.npz",
+      "sha256": "2c05b5f2b300fb742f68d6203c30ab787159f57d076724e3a27b6fbc9d6eea04"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/solubility_aqsoldb/fold0.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/solubility_aqsoldb/fold0.npz",
+      "sha256": "23dab33b7892e2245f7ce4dfe884c300d640159180d4cf08c41a4c862b53accc"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/solubility_aqsoldb/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/solubility_aqsoldb/fold1.npz",
+      "sha256": "97fc818f4c80a0afaacdf1fa3da480927080db547d184ea90c4bdcf853ea1c9c"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/solubility_aqsoldb/fold1.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/solubility_aqsoldb/fold1.npz",
+      "sha256": "45a6fa6854ab04c2a9621c4cdd9c2093c1c519a1aae6fc2d6663265118dd767b"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/solubility_aqsoldb/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/solubility_aqsoldb/fold2.npz",
+      "sha256": "9099adeda08197682a8db6575900ae252ea73e7087187e6d40a12bbb0bcfeb2d"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/solubility_aqsoldb/fold2.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/solubility_aqsoldb/fold2.npz",
+      "sha256": "ef0d4cba681820dc5e1d1233654546401717d06a61e75534b204329c52e4162f"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/solubility_aqsoldb/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/solubility_aqsoldb/valid.npz",
+      "sha256": "f75f80e768d932ce293e9e214a20b796ad849bf5862d8273b3ee42923aee1677"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/solubility_aqsoldb/valid.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/solubility_aqsoldb/valid.npz",
+      "sha256": "c28dd1aa79cdd7ce3f464ce3685e4e57f511ed94d6271fd9c116155e0bcd85be"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/solubility_aqsoldb/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/solubility_aqsoldb/final.npz",
+      "sha256": "655e4e7b156eb3f4c5dc2d1e334b355d63a6b1fd788031e2f31e186df4e2ff2d"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/solubility_aqsoldb/final.npz",
+      "source_member": "releases/v371_expert_inputs.tar.gz::design/solubility_aqsoldb/final.npz",
+      "sha256": "c6038177df1ab152ea0016ddc3118aa2335aa160d02b62130931de5676043f32"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/clearance_hepatocyte_az/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_hepatocyte_az/fold0.npz",
+      "sha256": "10acd4de7cb61996d2b3c03d0ee7dc5cf98c267749416751e34d6261cab4155d"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/clearance_hepatocyte_az/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_hepatocyte_az/fold0.npz",
+      "sha256": "98c6b13a30e5181ac69ec41bef13d351e2dac01f48e877bfb9dee31c348f4fa3"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/clearance_hepatocyte_az/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_hepatocyte_az/fold1.npz",
+      "sha256": "e1a856aafd17b55d61a428ba4d2683dad3dd75466e53b1df7fd261d301725c4d"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/clearance_hepatocyte_az/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_hepatocyte_az/fold1.npz",
+      "sha256": "7956c109c548571d27ba67b429dff6c42b345c767af70f901b5e703c9b1a951c"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/clearance_hepatocyte_az/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_hepatocyte_az/fold2.npz",
+      "sha256": "af9a07764438e029f41367739687d6e67e761b37f7c19935f9239c002ba2c2cd"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/clearance_hepatocyte_az/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_hepatocyte_az/fold2.npz",
+      "sha256": "7c1aeacbd3277ad41d075b010c66b42625ddb61201548c75c637eb23cfc63c89"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/clearance_hepatocyte_az/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_hepatocyte_az/valid.npz",
+      "sha256": "c563c8a6efe2133d51806b1f9620d1465f54a37b84298fd8a98eea8d4d7aa645"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/clearance_hepatocyte_az/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_hepatocyte_az/valid.npz",
+      "sha256": "3854c6869c80b22b008b2d8250e7871b6049a8375e5a0ad64e118739e80e3d1a"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/clearance_hepatocyte_az/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_hepatocyte_az/final.npz",
+      "sha256": "b7450d7ad66531816f442b3d8b6b55d03f51176ec61cbac4ab1a947c41222118"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/clearance_hepatocyte_az/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_hepatocyte_az/final.npz",
+      "sha256": "c9dfea60fb4eff03e5a8cb5aacc9a07820540669a334021627c2d879b21899a2"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/clearance_microsome_az/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_microsome_az/fold0.npz",
+      "sha256": "a84d173af29da0597a7caf66dc1c5d288b59f10a9f8d2b8ef28e383306c41e44"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/clearance_microsome_az/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_microsome_az/fold0.npz",
+      "sha256": "9361c8568772148b7393c170ab837f299a7efca7f36ef79093644dfe2d26e002"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/clearance_microsome_az/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_microsome_az/fold1.npz",
+      "sha256": "16b626f5164e7019a16dd53282ed0ef2af39d11c0be2761896aac82c9f43469b"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/clearance_microsome_az/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_microsome_az/fold1.npz",
+      "sha256": "ae1b42df3503ae53ae1ff80f5553a040861ffb35c0216a9251fb451dfbaee7f3"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/clearance_microsome_az/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_microsome_az/fold2.npz",
+      "sha256": "21791cd0fa29fc9107539b86aa97523cc644fbb1f2ba1403fe3af601d06574b8"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/clearance_microsome_az/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_microsome_az/fold2.npz",
+      "sha256": "c38d5ec7e86996c020734a20325126dc04820bb7cfeb9fe4d1957501c43aa500"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/clearance_microsome_az/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_microsome_az/valid.npz",
+      "sha256": "4df85215f3357fee177901acf5df60da0d661b363df9e819787a33c1ce269111"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/clearance_microsome_az/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_microsome_az/valid.npz",
+      "sha256": "ea17354af8044da770e18707597f27577a907f607111245a4f206f1a635bd9d4"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/clearance_microsome_az/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/clearance_microsome_az/final.npz",
+      "sha256": "92f95216d5a49968444cf3fb3b5be1ea519d2c732778a06741f814ce87fae2a6"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/clearance_microsome_az/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/clearance_microsome_az/final.npz",
+      "sha256": "c8fd7a5a7c2e17048ef889bc1d5cc54276976de26ac884673135bff31ab6a685"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/half_life_obach/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/half_life_obach/fold0.npz",
+      "sha256": "62348b29c203d5a88e0f79893cb00c544c00f1493cd48b87de3a4a3ccddd5b0b"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/half_life_obach/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/half_life_obach/fold0.npz",
+      "sha256": "ceca7d8b01b33a5280ecacb883a9f91111fe3a3b44d1580ae09b02795fe924d2"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/half_life_obach/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/half_life_obach/fold1.npz",
+      "sha256": "d62f0de6ebe208add924b3b57f200de17f266f34d2fcda3bf1cd5241739914e9"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/half_life_obach/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/half_life_obach/fold1.npz",
+      "sha256": "b26b547c1315370c842061b5e37ee2b73acce89ff464793014deb377f60e4ad0"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/half_life_obach/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/half_life_obach/fold2.npz",
+      "sha256": "a8bd805f811a84411e4a245d31ec557178715c4da38b4bf12d99d2eaa7132d71"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/half_life_obach/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/half_life_obach/fold2.npz",
+      "sha256": "3c36af69cf333674489a7d403b594b7aaceab7402f56c3cf1ea22933714437e2"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/half_life_obach/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/half_life_obach/valid.npz",
+      "sha256": "da2c491c72f5de8947c0de603ac3207810828d849d54fd831dec2fe363a010eb"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/half_life_obach/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/half_life_obach/valid.npz",
+      "sha256": "43a5674c2b1477fce55b40fee615536923889f4e4633a9c9712e35ad37e3dc12"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/half_life_obach/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/half_life_obach/final.npz",
+      "sha256": "a76a50fb77e3953e40ae5398bdbecfd1e81ccfd245282637805f89c40bb69630"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/half_life_obach/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/half_life_obach/final.npz",
+      "sha256": "4970a5999e6531d1a4eaaa399565e1f74ae2fb806782b37a009c91fc5cb48a28"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/vdss_lombardo/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/vdss_lombardo/fold0.npz",
+      "sha256": "16e4061523073119134b6489f7a75cdaa941ba2150900dd409b9890d24776301"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/vdss_lombardo/fold0.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/vdss_lombardo/fold0.npz",
+      "sha256": "e5c40026a01d38f0199570f682e3381616e4fbfb7c08a05d75ec80d8e753f719"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/vdss_lombardo/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/vdss_lombardo/fold1.npz",
+      "sha256": "8c0bbd26a4b9c651cf21e1950e9bb4582b1fa9055aa27347dc0f98eb31fd6fdf"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/vdss_lombardo/fold1.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/vdss_lombardo/fold1.npz",
+      "sha256": "a1ba11072aa86436e393c28e1d7d992bd337e71044f5c3044c52eeaf85e65aa4"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/vdss_lombardo/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/vdss_lombardo/fold2.npz",
+      "sha256": "79436e34945bb42fa78ce78fe31159c07c952e7c60b8bbcfa7e483cd0868fb69"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/vdss_lombardo/fold2.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/vdss_lombardo/fold2.npz",
+      "sha256": "f24bf3d6cfcd4555a32913a5741155928824faa556f5281cf92a63968837028a"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/vdss_lombardo/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/vdss_lombardo/valid.npz",
+      "sha256": "4e7f0d9701e00233691cbf1f8f364a611f167e8261e6e0daaedf233d5e061f7b"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/vdss_lombardo/valid.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/vdss_lombardo/valid.npz",
+      "sha256": "4531f5bd47e9545581111f9ecb90fd228f4c71cad7577f61ada9bc6a1d6fc27c"
+    },
+    {
+      "destination": "experiments/regression9_v387/controls/vdss_lombardo/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::controls/vdss_lombardo/final.npz",
+      "sha256": "37ebc116a49748d5ae68dadb697659ed1992d05b832102b04544a8f854751fce"
+    },
+    {
+      "destination": "experiments/regression9_v387/design/vdss_lombardo/final.npz",
+      "source_member": "releases/v377_regression9_delta.tar.gz::design/vdss_lombardo/final.npz",
+      "sha256": "9fc38121db7ddf6f02440c12d4f8eac7fb93134051d88b782489b4ba5d997e6d"
+    }
+  ],
+  "no_fitting_performed": true
+}

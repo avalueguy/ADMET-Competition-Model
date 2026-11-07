@@ -1,0 +1,102 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "training_version": "v264",
+  "delivery_version": "v265",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "at_utc": "2026-10-29T10:28:10.570306+00:00",
+  "source_sha256": "39fbb337cd04e8368bf4ac6fef715b3255743b225a1995621d5ba4adc4ffd822",
+  "signature": "c5433ebd08cb99c70d614369d3f300abbbdf782f0adf64f0c122243c15abcdd1",
+  "completed_target_development_tasks": 2,
+  "completed_target_development_partitions": 4,
+  "saved_deterministic_models": 4,
+  "development_best": [
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "config": {
+        "prior_df": 5.0,
+        "max_iterations": 60
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 8.068577292713924,
+          "expert": 10.212033791553564,
+          "candidate": 8.248515106261637,
+          "gain": -0.022301058417101692
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.585961846123768,
+          "expert": 9.312382713541563,
+          "candidate": 7.7101785412471155,
+          "gain": -0.01637454783493532
+        }
+      ],
+      "objective": -0.022301058417101692
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "config": {
+        "prior_df": 5.0,
+        "max_iterations": 60
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 282,
+          "baseline": 0.5727558332909924,
+          "expert": 0.541747471321847,
+          "candidate": 0.5773786192612876,
+          "gain": 0.004622785970295196
+        },
+        {
+          "part": "fold1",
+          "rows": 283,
+          "baseline": 0.575230994148768,
+          "expert": 0.5448629402892246,
+          "candidate": 0.5807194052623682,
+          "gain": 0.005488411113600211
+        }
+      ],
+      "objective": 0.004622785970295196
+    }
+  ],
+  "nominated_tasks": [],
+  "accepted_tasks": [],
+  "smoke": "PASS",
+  "baseline_cache_verified": 105,
+  "archive": {
+    "status": "PASS",
+    "prefix": "v265_replicate_noise_gp_20261029",
+    "archive_sha256": "33131f5eba6d5f52e26820cc4dcf77fdce8f7cab8196fe16334c5e32e0b7e1ef",
+    "manifest_files": 79,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 27,
+    "existing_exact": 52,
+    "existing_updated_docs_preserved": []
+  },
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "frozen_gates_unchanged": true,
+  "local_gate_recalculation": true,
+  "control_blend_roundoff_max": 2.4e-16,
+  "no_confirmation_fallback": true,
+  "rejected_route_restarted": false,
+  "exited_pids": [
+    26573,
+    26592,
+    26593,
+    26600,
+    26621
+  ],
+  "interpretation": "Replicate-calibrated noise mechanism completed normally. PPBR gains negative on both development folds; hepatocyte .0046228/.0054884 positive but below original .008 development minimum. No fold2/valid prediction or candidate. Do not tune variance prior,kernel weights,optimizer initialization or target transform to retry this rejected route."
+}

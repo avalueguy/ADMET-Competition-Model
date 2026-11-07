@@ -1,0 +1,136 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "checked_at_utc": "2026-10-29T03:48:06.984493+00:00",
+  "training_version": "v210",
+  "delivery_version": "v211",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52,
+  "target_achieved": false,
+  "host": "connect.nmb2.seetacloud.com",
+  "port": 24365,
+  "remote_workspace": "/root/autodl-tmp/v76",
+  "python": "/root/miniconda3/bin/python",
+  "training_pid": null,
+  "pipeline_pid": null,
+  "process_evidence": "docs/v210_remote_start.json",
+  "log": "v210_standardized_chemistry.log",
+  "pipeline_log": "v212_pipeline.log",
+  "pipeline_status": "admet_model_outputs_v211/pipeline_status.json",
+  "archive_prefix": "v211_standardized_chemistry_20261028",
+  "source_sha256": "a5005887734c4621254c1e9d9ee0670b0ed464059d589cc0cfe9733a9c0389a1",
+  "signature": "7f5ed1c09950e564c65fafd8c8af3ee2d01409129c3c9cf0ad2f62336f162374",
+  "smoke": "PASS",
+  "tasks": "All21 improvable endpoints; HIA protected",
+  "training_plan": "docs/v210_training_plan.json",
+  "frozen_sources_archive": "releases/v210_frozen_sources_20261028.tar.gz",
+  "verification_source": "tools/v211_verify_standardized_chemistry.py",
+  "local_finalizer": "tools/finalize_v211_local.py",
+  "credentials_stored": false,
+  "source_immutable_after_start": true,
+  "thresholds_unchanged": true,
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "running_training_processes": 0,
+  "last_observed": "All21 development tasks84models and3confirmations completed,all rejected. Archive266members and dependency verified locally; noCSV/upload. Processes1575/1676exited.",
+  "obsolete_automation_prompt": "Earlier v181/v189 routes completed. Defer stale heartbeat PIDs to CURRENT_STATUS and this followup. App prompt refresh previously blocked by Transport closed.",
+  "next_steps": [
+    "Do not restart rejectedv210 or deliver oldpredictions as new.",
+    "Continue only a genuinely different modeling objective with unchanged original confirmation gates."
+  ],
+  "completed_development_tasks": 21,
+  "progress_evidence": "docs/v210_live_progress_snapshot_20261029_1138.json",
+  "automation_prompt_refresh": "SUCCESS_CONFIRMATION_MANUAL_DELIVERY",
+  "automatic_submission_permitted": false,
+  "automatic_platform_submission": false,
+  "submission_policy": "USER_MANUAL_SUBMISSION_ONLY",
+  "input_verification": "docs/v210_instance_input_verification_20261029.json",
+  "previous_instance": {
+    "port": 25870,
+    "boot_id": "0147efe4-5fc2-4881-9c47-fcd4cd66909e",
+    "last_verified_development_tasks": 12,
+    "final_outcome": "UNKNOWN_UNREACHABLE",
+    "recovery": "Original frozen unfinished route on explicitly user-provided replacement, no model choices changed"
+  },
+  "development_model_tasks_complete": 21,
+  "saved_development_models": 84,
+  "live_progress": "docs/v210_live_progress.json",
+  "live_progress_table": "docs/TRAINING_LIVE_PROGRESS.md",
+  "live_progress_sync_seconds": 30,
+  "progress_notification_minutes": 5,
+  "scheduler": "tools/v214_parallel_development.py",
+  "scheduler_status": "admet_model_outputs_v210/parallel_scheduling.json",
+  "scheduler_pid": 3469,
+  "worker_pids": [
+    3494,
+    3495,
+    3496
+  ],
+  "model_parameters_unchanged": true,
+  "scheduler_completed": true,
+  "scheduler_worker_exit_codes": {
+    "3494": 0,
+    "3495": 0,
+    "3496": 0
+  },
+  "frozen_development_nominees": [
+    "herg",
+    "cyp3a4_substrate_carbonmangels",
+    "cyp2c9_substrate_carbonmangels"
+  ],
+  "active_partitions": [],
+  "last_sampled_cpu_percent": null,
+  "gpu": {
+    "status": "MEASURED",
+    "utilization_percent": 0,
+    "memory_mib": 0
+  },
+  "elapsed_seconds": 3453,
+  "estimated_remaining_minutes": [
+    5,
+    10
+  ],
+  "estimate_limitation": "Estimate for confirmation; eligible delivery additionally depends on full verification, packaging and local transfer. No eligibility or hidden score guarantee.",
+  "confirmation_evaluated": 3,
+  "confirmation_accepted": [],
+  "confirmation_rejected": [
+    {
+      "task": "herg",
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 96,
+          "gain_ci90": [
+            -0.011912787631602799,
+            0.026180543103619978
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 45,
+          "gain_ci90": [
+            -0.009384203608359926,
+            0.0218233204134366
+          ],
+          "lower_positive": false
+        }
+      ]
+    }
+  ],
+  "process_identity_and_source_verified": true,
+  "accepted_tasks": [],
+  "final_status": "docs/v211_final_status.json",
+  "archive_verification": {
+    "status": "PASS",
+    "prefix": "v211_standardized_chemistry_20261028",
+    "archive_sha256": "03fe0731348857e5b6e54b7399e3d5de01ded4186f8c06f6bc0e2513b4b797f6",
+    "manifest_files": 266,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 213,
+    "existing_exact": 53,
+    "existing_updated_docs_preserved": []
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "status": "VERIFIED_EXPERIMENTAL_DELIVERY",
+  "signature": "c289b2fc1814c035279448b84726dafed8e6efe53da8f9727bd35f4088d7f2db",
+  "created_at_utc": "2026-11-04T07:22:44.273421+00:00",
+  "csv": "admet_submissions/v364_graph_transformer_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261104.csv",
+  "csv_sha256": "777eca282b59101463fe02f71802c24502a87ba7352482b24a64943ef81ede79",
+  "baseline_version": "v361",
+  "baseline_official_score": 51.24,
+  "baseline_sha256": "6e480265b09ab45064f1b6cf437bc1cd42bbb450e3b34b111ce252cb942f10b7",
+  "official_score": null,
+  "official_gain_established": false,
+  "automatically_uploaded": false,
+  "all_training_gpu_remote_only": true,
+  "training_host": "connect.nmb2.seetacloud.com:24365",
+  "strict_tasks": [],
+  "experimental_tasks": [
+    "lipophilicity_astrazeneca",
+    "solubility_aqsoldb"
+  ],
+  "changed_rows": {
+    "lipophilicity_astrazeneca": 840,
+    "solubility_aqsoldb": 1997
+  },
+  "unchanged_tasks": 20,
+  "all_nonprediction_bytes_exact": true,
+  "all_unchanged_prediction_bytes_exact": true,
+  "fusion": [
+    {
+      "task": "lipophilicity_astrazeneca",
+      "mode": "family_transfer",
+      "weight": 0.2,
+      "metric": "MAE",
+      "rows": 840,
+      "strict_accepted": false,
+      "experimental_only": true,
+      "prediction_sha256": "5692748031beccf17fddad0d14e85fc6e0766b393ef96826f542de28aa4507b9"
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "mode": "family_transfer",
+      "weight": 0.2,
+      "metric": "MAE",
+      "rows": 1997,
+      "strict_accepted": false,
+      "experimental_only": true,
+      "prediction_sha256": "886b6e827066dbf3a2b7c9aeefc347601a39f565f18b0df15e2a371e6db36f0c"
+    }
+  ],
+  "format": {
+    "status": "PASS",
+    "sha256": "777eca282b59101463fe02f71802c24502a87ba7352482b24a64943ef81ede79",
+    "rows": 16379,
+    "columns": 6,
+    "tasks": 22,
+    "nonprediction_fields_exact": true,
+    "finite_predictions": true,
+    "unique_task_sample_keys": true,
+    "task_counts": {
+      "ames": 1457,
+      "bbb_martins": 406,
+      "bioavailability_ma": 128,
+      "caco2_wang": 182,
+      "clearance_hepatocyte_az": 243,
+      "clearance_microsome_az": 221,
+      "cyp2c9_substrate_carbonmangels": 135,
+      "cyp2c9_veith": 2419,
+      "cyp2d6_substrate_carbonmangels": 135,
+      "cyp2d6_veith": 2626,
+      "cyp3a4_substrate_carbonmangels": 135,
+      "cyp3a4_veith": 2467,
+      "dili": 96,
+      "half_life_obach": 135,
+      "herg": 132,
+      "hia_hou": 117,
+      "ld50_zhu": 1478,
+      "lipophilicity_astrazeneca": 840,
+      "pgp_broccatelli": 245,
+      "ppbr_az": 559,
+      "solubility_aqsoldb": 1997,
+      "vdss_lombardo": 226
+    },
+    "utf8_bom": true,
+    "crlf_only": true,
+    "official_score": null,
+    "automatically_uploaded": false
+  },
+  "development_selection_frozen_before_confirmation": true,
+  "confirmation_fallback": false,
+  "baseline_oof_limitation": "Partial historical proxy; current adopted incremental layers exact",
+  "new_external_weights": false,
+  "new_external_data": false,
+  "user_authorized_experimental_csv": true
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v234_supervised_chemical_similarity_20261029",
+  "archive_sha256": "bd899cbcd17e391aa91fe35eac0e8db0b7492ab13b94e5bd7e7c1f983140a602",
+  "manifest_files": 100,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 55,
+  "existing_exact": 45,
+  "existing_updated_docs_preserved": []
+}

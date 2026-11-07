@@ -1,0 +1,36 @@
+{
+  "scope": "Three selected primary library pages, supplements earlier17; not exhaustive literature search.",
+  "https_certificate_verification": true,
+  "records": [
+    {
+      "key": "grouped_stacking",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingRegressor.html",
+      "status": "READ",
+      "title": "StackingRegressor — scikit-learn 1.9.1 documentation",
+      "sha256": "e1c2f0871e1ead520a871eb5d7d77d84bc7ad02e70bf653830fcccedc53232ea",
+      "bytes": 163500,
+      "excerpt": "an be used here. If “prefit” is passed, it is assumed that all estimators have been fitted already. The final_estimator_ is trained on the estimators predictions on the full training set and are not cross validated predictions. Please note that if the models have been trained on the same data to train the stacking model, there is a very high risk of overfitting. Added in version 1.1: The ‘prefit’ option was added in 1.1 Note A larger number of split will provide no benefits if the number of training samples is large enough. Indeed, the training time will increase. cv is not used for model evaluation but for prediction. n_jobs int, default=None The number of jobs to run in parallel for fit of all estimators . None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details. passthrough bool, default=False When False, only the predictions of estimators will be used as training data for final_estimator . When True, the final_estimator is trained on the predictions as well as the original training data. verbose int, default=0 Verbosity level. Attributes : estimators_ list of estimators The elements of the estimators parameter, having been fitted on the training data. If an estimator has been set to 'drop' , it will not appear in estimators_ . When cv=\"prefit\" , estimators_ is set to estimators and is not fitted again. named_estimators_ Bunch Attribute to access any fitted sub-estimators by name. n_features_in_ int Number of fe",
+      "application": "Stacking fits final estimator from cross-validated base predictions. Our implementation uses explicit scaffold groups and native MAE/joint LP, not default KFold or default ridge."
+    },
+    {
+      "key": "lp_certificates",
+      "url": "https://docs.scipy.org/doc/scipy/reference/optimize.linprog-highs.html",
+      "status": "READ",
+      "title": "linprog(method=’highs’) — SciPy v1.18.0 Manual",
+      "sha256": "5f34c9d2523e25fa72c3f4fa00c50e75866cf8ef05ac6823c14f1aae0de155fc",
+      "bytes": 47235,
+      "excerpt": "es of the slack variables, b_ub - A_ub @ x . This quantity is also commonly referred to as “slack”. marginals np.ndarray The sensitivity (partial derivative) of the objective function with respect to the right-hand side of the inequality constraints, b_ub . eqlin OptimizeResult Solution and sensitivity information corresponding to the equality constraints, b_eq . A dictionary consisting of the fields: residual np.ndarray The (nominally zero) residuals of the equality constraints, b_eq - A_eq @ x . marginals np.ndarray The sensitivity (partial derivative) of the objective function with respect to the right-hand side of the equality constraints, b_eq . lower, upper OptimizeResult Solution and sensitivity information corresponding to the lower and upper bounds on decision variables, bounds . residual np.ndarray The (nominally positive) values of the quantity x - lb (lower) or ub - x (upper). marginals np.ndarray The sensitivity (partial derivative) of the objective function with respect to the lower and upper bounds . See also For documentation for the rest of the parameters, see scipy.optimize.linprog Options : ——- maxiter int The maximum number of iterations to perform in either phase. For ‘highs-ipm’ , this does not include the number of crossover iterations. Default is the largest possible value for an int on the platform. disp bool (default: False ) Set to True if indicators of optimization status are to be printed to the console during optimization. presolve bool (default:",
+      "application": "HiGHS exposes primal residuals and marginal dual sensitivities. Retain and independently verify stationarity/complementarity without another fitting run."
+    },
+    {
+      "key": "quantile_map",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.QuantileTransformer.html",
+      "status": "READ",
+      "title": "QuantileTransformer — scikit-learn 1.9.1 documentation",
+      "sha256": "1b94c036531e367c5d077979312485ba2850cdf0458fd697a7af873b952bff05",
+      "bytes": 147013,
+      "excerpt": "e fitted range will be mapped to the bounds of the output distribution. Note that this transform is non-linear. It may distort linear correlations between variables measured at the same scale but renders variables measured at different scales more directly comparable. For example visualizations, refer to Compare QuantileTransformer with other scalers . Read more in the User Guide . Added in version 0.19. Parameters : n_quantiles int, default=1000 or n_samples Number of quantiles to be computed. It corresponds to the number of landmarks used to discretize the cumulative distribution function. If n_quantiles is larger than the number of samples, n_quantiles is set to the number of samples as a larger number of quantiles does not give a better approximation of the cumulative distribution function estimator. output_distribution {‘uniform’, ‘normal’}, default=’uniform’ Marginal distribution for the transformed data. The choices are ‘uniform’ (default) or ‘normal’. ignore_implicit_zeros bool, default=False Only applies to sparse matrices. If True, the sparse entries of the matrix are discarded to compute the quantile statistics, including when subsampling. If False, these entries are treated as zeros. subsample int or None, default=10_000 Maximum number of samples used to estimate the quantiles for computational efficiency. Note that the subsampling procedure may differ for value-identical sparse and dense matrices. Disable subsampling by setting subsample=None . Added in version 1",
+      "application": "Quantile transformations can reduce outlier effects and distort linear correlations. Our explicit fit-label inverse empirical CDF is nondecreasing, may introduce ties, and offers no Spearman/MAE guarantee."
+    }
+  ]
+}

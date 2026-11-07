@@ -1,0 +1,37 @@
+{
+  "goal": "fiveMAEeachminus10percent",
+  "official_best": 51.27,
+  "source": "user scorecard attributed to v371; local solubility provenance mismatch retained",
+  "targets": [
+    {
+      "task": "caco2_wang",
+      "reported_official": 0.27592992051587734,
+      "target": 0.24833692846428962,
+      "reference": 0.283647
+    },
+    {
+      "task": "ld50_zhu",
+      "reported_official": 0.5550199723529466,
+      "target": 0.499517975117652,
+      "reference": 0.603071
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "reported_official": 0.4168746341957797,
+      "target": 0.37518717077620173,
+      "reference": 0.472895
+    },
+    {
+      "task": "ppbr_az",
+      "reported_official": 6.665484533215087,
+      "target": 5.9989360798935785,
+      "reference": 7.330617
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "reported_official": 0.7008642743228115,
+      "target": 0.6307778468905304,
+      "reference": 0.738443
+    }
+  ]
+}

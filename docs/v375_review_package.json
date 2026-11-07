@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "archive": "releases/v375_specialist_review.tar.gz",
+  "sha256": "63599167440365ec9a5e082ab1437001b3b1efbbcf67c16b74ec850b7726ba4e",
+  "bytes": 452577,
+  "files": 128,
+  "all_member_hashes_verified": true
+}

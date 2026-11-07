@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v169_sparse_linear_20261027",
+  "archive_sha256": "8c31f26dfb1ca9c043c97a8ca74477d95139c09ce283676f45cb5e5583b414c0",
+  "manifest_files": 339,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 290,
+  "existing_exact": 49,
+  "existing_updated_docs_preserved": []
+}

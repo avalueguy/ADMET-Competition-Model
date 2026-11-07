@@ -1,0 +1,36 @@
+{
+  "status": "STARTED",
+  "boot_id": "0147efe4-5fc2-4881-9c47-fcd4cd66909e",
+  "processes": {
+    "training": {
+      "pid": 13106,
+      "start_ticks": "2024102047",
+      "script": "v210_standardized_chemistry.py",
+      "log": "v210_train.log",
+      "cmdline": "/root/miniconda3/bin/python tools/v210_standardized_chemistry.py "
+    },
+    "pipeline": {
+      "pid": 13163,
+      "start_ticks": "2024110253",
+      "script": "v212_package_standardized_batch.py",
+      "log": "v212_pipeline.log",
+      "cmdline": "/root/miniconda3/bin/python tools/v212_package_standardized_batch.py "
+    }
+  },
+  "smoke": {
+    "status": "PASS",
+    "signature": "7f5ed1c09950e564c65fafd8c8af3ee2d01409129c3c9cf0ad2f62336f162374",
+    "all_endpoint_label_perturbation_invariant": true,
+    "query_label_isolation": true,
+    "counterion_neutral_equivalence": true,
+    "keto_enol_tautomer_equivalence": true,
+    "deterministic_per_molecule_row_order": true,
+    "independent_reload_tasks": [
+      "herg",
+      "solubility_aqsoldb",
+      "half_life_obach"
+    ],
+    "no_query_scores_used": true,
+    "source_smiles_sha256": "14e1fa04138f1931cf569e9fdd736da656eeeadb6d977234fa06b3c8a5e9a3a0"
+  }
+}

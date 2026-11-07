@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "archive": "releases/v361_herg_feedback_repair_20261102.tar.gz",
+  "sha256": "f7c186bbdf984d1bfc268c17e0632e3b73251e2ec4d76096d6f979a63dbd824a",
+  "bytes": 1410932,
+  "members": 14,
+  "manifest_files": 13,
+  "all_member_hashes_verified": true,
+  "csv_members": [
+    "admet_submissions/v361_herg_feedback_repair/我从山北来带着兰花草-小分子药物预测技术创新赛-20261102.csv",
+    "admet_submissions/v346_experimental_solubility/我从山北来带着兰花草-小分子药物预测技术创新赛-20261101.csv",
+    "admet_submissions/v354_experimental_model_combinations/我从山北来带着兰花草-小分子药物预测技术创新赛-20261102.csv"
+  ],
+  "restored_absent": 1,
+  "existing_different_preserved": [],
+  "dependency_contents_reverified": true,
+  "dependency_hashes_checked": 5
+}

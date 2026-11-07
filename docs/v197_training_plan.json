@@ -1,0 +1,52 @@
+{
+  "version": "v197",
+  "delivery_version": "v198",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "source_sha256": "ea76946c3287379cd6040de76de0e9ea2fcf066fb53bbfb015432b29fadc146b",
+  "model": "New generalized additive quadratic B-splines with second-difference smoothness penalty",
+  "configs": [
+    {
+      "strength": 0.003
+    },
+    {
+      "strength": 0.03
+    }
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "tasks": "All21 improvable tasks, HIA untouched",
+  "selection": "Unchanged v148 max minimum fold0/1; freeze before confirmation, no fallback",
+  "confirmation": "All4 positive; practical mean threshold; both fold2 and valid scaffold-bootstrap90 lower bounds>0",
+  "fit_only": [
+    "feature correlation screening",
+    "correlation pruning",
+    "quantile knots",
+    "median/imputation/scales",
+    "target transforms"
+  ],
+  "maximum_features": 96,
+  "knots": [
+    0.05,
+    0.35,
+    0.65,
+    0.95
+  ],
+  "degree": 2,
+  "smoothness_multiplier": 10,
+  "objectives": {
+    "classification": "penalized logistic IRLS",
+    "Spearman": "rank-normal least squares",
+    "MAE": "smooth absolute IRLS epsilon.03"
+  },
+  "changes_from_previous": "Additive smooth response curves, not another tree, graph/SMILES network, or TFIDF linear-fragment route.",
+  "source_immutable_after_start": true,
+  "query_label_perturbation_required": true,
+  "independent_reload_required": true,
+  "new_external_data": false,
+  "test_labels_used": false,
+  "official_gain_guaranteed": false,
+  "limitations": "Public labels repeatedly reused; upstream historical controls approximate. Validation evidence cannot guarantee official gain."
+}

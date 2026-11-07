@@ -1,0 +1,105 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "at_hong_kong": "2026-11-01T20:27:51.088553+08:00",
+  "best": {
+    "version": "v313",
+    "official_user_reported": 51.205,
+    "exact_task_mean": 51.20533122727272,
+    "csv": "admet_submissions/v313_experimental_ppbr_lipo/我从山北来带着兰花草-小分子药物预测技术创新赛-20261101.csv",
+    "csv_sha256": "681e9d23100c7ea39b4e6003dd6de4fac738bc467254782b7b8c4b7bc1d2941b",
+    "source": "docs/platform_scorecard_v313_20261101.json",
+    "rejected_later_version": "v321",
+    "reason": "v321 user-reported score51.198 is lower. Historical delivery records preserved.",
+    "platform_uploaded_byte_hash_confirmed": false
+  },
+  "target": 52.0,
+  "gap_to52": 0.7946687727272774,
+  "experiments": [
+    {
+      "training": "v329",
+      "verification": "v330",
+      "method": "SAM 抑制过拟合",
+      "accepted_tasks": [],
+      "csv_created": false,
+      "replay_partitions": 12,
+      "archive_sha256": "d7378b39a25c8a084eba5e9c0badd38415d2c4123c66688ad45477e6aebb495a",
+      "archive_members": 80,
+      "dependency_hashes_checked": 50
+    },
+    {
+      "training": "v333",
+      "verification": "v334",
+      "method": "化学结构域稳健训练",
+      "accepted_tasks": [],
+      "csv_created": false,
+      "replay_partitions": 8,
+      "archive_sha256": "09836f1d20e867c69467a6fcf44979b28213c63c086555c707fe01d31611a061",
+      "archive_members": 60,
+      "dependency_hashes_checked": 50
+    },
+    {
+      "training": "v340",
+      "verification": "v341",
+      "method": "直接优化 AUPRC",
+      "accepted_tasks": [],
+      "csv_created": false,
+      "replay_partitions": 10,
+      "archive_sha256": "00a11bca2b222efefeb8980c01058e0b42e2d2726d0ba5a1cafb2a5c7f9a6ef9",
+      "archive_members": 69,
+      "dependency_hashes_checked": 50
+    }
+  ],
+  "confirmations": [
+    {
+      "version": "v329",
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "fixed_weight": 0.2,
+      "gains": [
+        0.020792785164682224,
+        0.024946610849832043,
+        0.02510991170515773,
+        0.0023384595729294033
+      ],
+      "scaffold_bootstrap_ci90": [
+        [
+          0.018522944572066644,
+          0.09434967378013927
+        ],
+        [
+          -0.0025198142017603476,
+          0.007627777682484848
+        ]
+      ],
+      "accepted": false
+    },
+    {
+      "version": "v333",
+      "task": "herg",
+      "metric": "AUROC",
+      "fixed_weight": 0.2,
+      "gains": [
+        0.004407051282051211,
+        0.005096153846153806,
+        0.004320987654320874,
+        0.0029761904761904656
+      ],
+      "scaffold_bootstrap_ci90": [
+        [
+          -0.008342198581560361,
+          0.013250231468874222
+        ],
+        [
+          -0.01607430875576042,
+          0.023543417366946692
+        ]
+      ],
+      "accepted": false
+    }
+  ],
+  "accepted_tasks": [],
+  "official_score_changed": false,
+  "platform_submission": false,
+  "next_direction": "If no candidate survives, any next mechanism must be justified by a new fit-only diagnostic or genuinely distinct modeling objective; do not sweep weights/seeds of these rejected mechanisms.",
+  "limitations": "Repeated public-label reuse and approximate inherited historical OOF remain. Numerical replay verifies implementation, not hidden-test improvement. 52 is not achieved."
+}

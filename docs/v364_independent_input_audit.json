@@ -1,0 +1,247 @@
+{
+  "status": "PASS",
+  "test_labels_all_nan": true,
+  "fit_labels_finite": true,
+  "controls": [
+    {
+      "task": "caco2_wang",
+      "part": "fold0",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "caco2_wang",
+      "part": "fold1",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "caco2_wang",
+      "part": "fold2",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "caco2_wang",
+      "part": "valid",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "caco2_wang",
+      "part": "final",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "part": "fold0",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "part": "fold1",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "part": "fold2",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "part": "valid",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "part": "final",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "cyp2d6_veith",
+      "part": "fold0",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "cyp2d6_veith",
+      "part": "fold1",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "cyp2d6_veith",
+      "part": "fold2",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "cyp2d6_veith",
+      "part": "valid",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "cyp2d6_veith",
+      "part": "final",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "herg",
+      "part": "fold0",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "herg",
+      "part": "fold1",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "herg",
+      "part": "fold2",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "herg",
+      "part": "valid",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "herg",
+      "part": "final",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "fold0",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "fold1",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "fold2",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "valid",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "final",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "fold0",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "fold1",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "fold2",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "valid",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "final",
+      "query_sorted": true,
+      "file_hash_ok": true,
+      "task_match": true,
+      "identity_overlap": 0
+    }
+  ]
+}

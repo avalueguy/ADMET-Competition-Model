@@ -1,0 +1,42 @@
+{
+  "version": "v264",
+  "delivery_version": "v265",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-29T10:23:16.706153+00:00",
+  "source_sha256": "39fbb337cd04e8368bf4ac6fef715b3255743b225a1995621d5ba4adc4ffd822",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "tasks": [
+    "ppbr_az",
+    "clearance_hepatocyte_az"
+  ],
+  "protected_tasks": 20,
+  "development_partitions": 4,
+  "deterministic_models": 4,
+  "seeds": [],
+  "configs": [
+    {
+      "prior_df": 5.0,
+      "max_iterations": 60
+    }
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "hypothesis": "Conflicting exact-original-structure observations are abundant in both training folds for these two endpoints. A Gaussian observation model can separate replicate scatter from molecular signal instead of giving every aggregated mean the same certainty or using inverse-count risk weights.",
+  "mechanism": "Exact original-SMILES identities within current fit rows only. PPBR raw target and log1p clearance; median/IQR fit standardization. Group sample mean and within-group scatter are Gaussian sufficient statistics. Variance shrinks toward pooled within-group variance with 5 prior degrees, then divides by count. A bounded fit marginal-likelihood optimizer calibrates signal amplitude and additional group-level variance. Gaussian posterior median; raw PPBR clipped 0..100, clearance expm1. No raw label edited or deleted.",
+  "inputs": "Existing equal six-view Tanimoto .75 plus fit-only physical RBF .15 and target-excluded other-assay context RBF .10. Kernels deliberately reuse established features; observation covariance is the proposed distinction.",
+  "historical_review": "docs/v263_review_decision.json",
+  "optimization": "One deterministic start log([1,.05]); L-BFGS-B log signal[-5,3], log extra group variance[-9,2], max60, ftol1e-10, gtol1e-5. Optimizer failure is a failure, never a candidate or alternate initialization retry.",
+  "scheduling": "One CPU4thread worker, two tasks and four development partitions; no GPU. All worker exit0 before unchanged selector. 19 identity controls within runner21; HIA excluded.",
+  "preconditions": "Analytic replicate variance reference, marginal likelihood reference and finite-difference gradient, PSD, query label perturbation, actual optimizer save/reload and query order smoke; original frozen runner/baseline sig/105 caches/dependencies before launch.",
+  "selection": "Original v148 one config and .2/.45 blend max-min on fold0/1, frozen before fold2/valid. All4 gains>0, original mean thresholds, two scaffold-bootstrap90 lower bounds>0, no failure fallback.",
+  "accepted_verification": "Independent full feature/variance reconstruction, model reload, original gate/fusion/hash/query order, original Drug_ID strings and nonprediction bytes, full archive and dependency restore verification before manual delivery.",
+  "source_immutable_after_start": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "manual_submission_only": true,
+  "official_gain_guaranteed": false,
+  "limitations": "Gaussian latent response, variance shrinkage and reused kernels may be misspecified. Conflicts can reflect unrecorded assay conditions. Historical proxy controls are not complete exact v145 OOF. Public labels reused."
+}

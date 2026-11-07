@@ -1,0 +1,38 @@
+{
+  "at_utc": "2026-10-29T10:28:10.570306+00:00",
+  "boot_id": "7edb467c-8def-4bf5-b14f-bb31d4469124",
+  "source_sha256": "39fbb337cd04e8368bf4ac6fef715b3255743b225a1995621d5ba4adc4ffd822",
+  "processes": {
+    "26573": {
+      "pid": 26573,
+      "expected_start_ticks": "1981403061",
+      "exists": false
+    },
+    "26592": {
+      "pid": 26592,
+      "expected_start_ticks": "1981405444",
+      "exists": false
+    },
+    "26593": {
+      "pid": 26593,
+      "expected_start_ticks": "1981405444",
+      "exists": false
+    },
+    "26600": {
+      "pid": 26600,
+      "expected_start_ticks": "1981405750",
+      "exists": false
+    },
+    "26621": {
+      "pid": 26621,
+      "expected_start_ticks": "1981408590",
+      "exists": false
+    }
+  },
+  "pipeline_status": {
+    "status": "COMPLETE",
+    "submission_created": false,
+    "official_score": null,
+    "automatically_uploaded": false
+  }
+}

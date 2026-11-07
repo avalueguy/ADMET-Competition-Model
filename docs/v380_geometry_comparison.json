@@ -1,0 +1,661 @@
+{
+  "signature": "1fad079687840ca420ee8663000c3bffedd29e2c82857acbee9c662deaab8452",
+  "development_fits": 104,
+  "analysis": "Descriptive geometry comparison, not confirmation retuning.",
+  "records": [
+    {
+      "task": "caco2_wang",
+      "frozen_best": {
+        "task": "caco2_wang",
+        "config": {
+          "name": "sqrt_polynomial_C3_native",
+          "view": "sqrt_polynomial",
+          "C": 3.0,
+          "mode": "native"
+        },
+        "weight": 0.25,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 0.38815645870734267,
+            "candidate": 0.3876741548163386,
+            "expert": 0.396842278795312,
+            "gain": 0.00124255021444254
+          },
+          {
+            "part": "fold1",
+            "baseline": 0.3348527606452333,
+            "candidate": 0.3338728918522088,
+            "expert": 0.34219194266097713,
+            "gain": 0.0029262676262138292
+          }
+        ],
+        "objective": 0.00124255021444254
+      },
+      "geometry_comparison": [
+        {
+          "view": "sqrt_polynomial",
+          "config": {
+            "name": "sqrt_polynomial_C3_native",
+            "view": "sqrt_polynomial",
+            "C": 3.0,
+            "mode": "native"
+          },
+          "weight": 0.25,
+          "gains": [
+            0.00124255021444254,
+            0.0029262676262138292
+          ],
+          "rank_gains": [
+            null,
+            null
+          ],
+          "objective": 0.00124255021444254
+        },
+        {
+          "view": "hellinger_gaussian",
+          "config": {
+            "name": "hellinger_gaussian_C30_native",
+            "view": "hellinger_gaussian",
+            "C": 30.0,
+            "mode": "native"
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.011280851562319689,
+            -0.007535049128257073
+          ],
+          "rank_gains": [
+            null,
+            null
+          ],
+          "objective": -0.011280851562319689
+        }
+      ]
+    },
+    {
+      "task": "ld50_zhu",
+      "frozen_best": {
+        "task": "ld50_zhu",
+        "config": {
+          "name": "sqrt_polynomial_C3_native",
+          "view": "sqrt_polynomial",
+          "C": 3.0,
+          "mode": "native"
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 0.4623870980111785,
+            "candidate": 0.46314298567962414,
+            "expert": 0.4954962189196442,
+            "gain": -0.0016347507785075975
+          },
+          {
+            "part": "fold1",
+            "baseline": 0.5305508449297317,
+            "candidate": 0.5306255524238095,
+            "expert": 0.550690169297538,
+            "gain": -0.0001408111866972532
+          }
+        ],
+        "objective": -0.0016347507785075975
+      },
+      "geometry_comparison": [
+        {
+          "view": "sqrt_polynomial",
+          "config": {
+            "name": "sqrt_polynomial_C3_native",
+            "view": "sqrt_polynomial",
+            "C": 3.0,
+            "mode": "native"
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.0016347507785075975,
+            -0.0001408111866972532
+          ],
+          "rank_gains": [
+            null,
+            null
+          ],
+          "objective": -0.0016347507785075975
+        },
+        {
+          "view": "hellinger_gaussian",
+          "config": {
+            "name": "hellinger_gaussian_C3_native",
+            "view": "hellinger_gaussian",
+            "C": 3.0,
+            "mode": "native"
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.0021049077751051424,
+            -0.002553511069293567
+          ],
+          "rank_gains": [
+            null,
+            null
+          ],
+          "objective": -0.002553511069293567
+        }
+      ]
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "frozen_best": {
+        "task": "lipophilicity_astrazeneca",
+        "config": {
+          "name": "sqrt_polynomial_C30_native",
+          "view": "sqrt_polynomial",
+          "C": 30.0,
+          "mode": "native"
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 0.48016540927868107,
+            "candidate": 0.4792825842290003,
+            "expert": 0.5222293432728454,
+            "gain": 0.0018385852721190337
+          },
+          {
+            "part": "fold1",
+            "baseline": 0.4548081915781444,
+            "candidate": 0.45388775615012006,
+            "expert": 0.5004054980778264,
+            "gain": 0.002023788148649006
+          }
+        ],
+        "objective": 0.0018385852721190337
+      },
+      "geometry_comparison": [
+        {
+          "view": "sqrt_polynomial",
+          "config": {
+            "name": "sqrt_polynomial_C30_native",
+            "view": "sqrt_polynomial",
+            "C": 30.0,
+            "mode": "native"
+          },
+          "weight": 0.1,
+          "gains": [
+            0.0018385852721190337,
+            0.002023788148649006
+          ],
+          "rank_gains": [
+            null,
+            null
+          ],
+          "objective": 0.0018385852721190337
+        },
+        {
+          "view": "hellinger_gaussian",
+          "config": {
+            "name": "hellinger_gaussian_C3_native",
+            "view": "hellinger_gaussian",
+            "C": 3.0,
+            "mode": "native"
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.010603181998900531,
+            -0.004776656167143546
+          ],
+          "rank_gains": [
+            null,
+            null
+          ],
+          "objective": -0.010603181998900531
+        }
+      ]
+    },
+    {
+      "task": "ppbr_az",
+      "frozen_best": {
+        "task": "ppbr_az",
+        "config": {
+          "name": "sqrt_polynomial_C30_native",
+          "view": "sqrt_polynomial",
+          "C": 30.0,
+          "mode": "native"
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 7.95280971526812,
+            "candidate": 8.000606049243444,
+            "expert": 9.721803676124853,
+            "gain": -0.006009993409444134
+          },
+          {
+            "part": "fold1",
+            "baseline": 7.292895667509342,
+            "candidate": 7.35163684376467,
+            "expert": 9.0446953607112,
+            "gain": -0.008054575155521077
+          }
+        ],
+        "objective": -0.008054575155521077
+      },
+      "geometry_comparison": [
+        {
+          "view": "sqrt_polynomial",
+          "config": {
+            "name": "sqrt_polynomial_C30_native",
+            "view": "sqrt_polynomial",
+            "C": 30.0,
+            "mode": "native"
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.006009993409444134,
+            -0.008054575155521077
+          ],
+          "rank_gains": [
+            null,
+            null
+          ],
+          "objective": -0.008054575155521077
+        },
+        {
+          "view": "hellinger_gaussian",
+          "config": {
+            "name": "hellinger_gaussian_C3_native",
+            "view": "hellinger_gaussian",
+            "C": 3.0,
+            "mode": "native"
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.012744061356580905,
+            -0.010894132950290947
+          ],
+          "rank_gains": [
+            null,
+            null
+          ],
+          "objective": -0.012744061356580905
+        }
+      ]
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "frozen_best": {
+        "task": "solubility_aqsoldb",
+        "config": {
+          "name": "sqrt_polynomial_C3_native",
+          "view": "sqrt_polynomial",
+          "C": 3.0,
+          "mode": "native"
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 0.7360725561987135,
+            "candidate": 0.7350390379218948,
+            "expert": 0.8057614260689544,
+            "gain": 0.001404098370622612
+          },
+          {
+            "part": "fold1",
+            "baseline": 0.7161434295213145,
+            "candidate": 0.7161992813376424,
+            "expert": 0.8004760668276084,
+            "gain": -7.79897071251186e-05
+          }
+        ],
+        "objective": -7.79897071251186e-05
+      },
+      "geometry_comparison": [
+        {
+          "view": "sqrt_polynomial",
+          "config": {
+            "name": "sqrt_polynomial_C3_native",
+            "view": "sqrt_polynomial",
+            "C": 3.0,
+            "mode": "native"
+          },
+          "weight": 0.1,
+          "gains": [
+            0.001404098370622612,
+            -7.79897071251186e-05
+          ],
+          "rank_gains": [
+            null,
+            null
+          ],
+          "objective": -7.79897071251186e-05
+        },
+        {
+          "view": "hellinger_gaussian",
+          "config": {
+            "name": "hellinger_gaussian_C3_native",
+            "view": "hellinger_gaussian",
+            "C": 3.0,
+            "mode": "native"
+          },
+          "weight": 0.1,
+          "gains": [
+            0.00211152548294696,
+            -0.0058283512699769885
+          ],
+          "rank_gains": [
+            null,
+            null
+          ],
+          "objective": -0.0058283512699769885
+        }
+      ]
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "frozen_best": {
+        "task": "clearance_hepatocyte_az",
+        "config": {
+          "name": "sqrt_polynomial_C30_weighted_log",
+          "view": "sqrt_polynomial",
+          "C": 30.0,
+          "mode": "weighted_log"
+        },
+        "weight": 0.5,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 31.964365097329107,
+            "candidate": 29.94616847290643,
+            "expert": 30.273749732116496,
+            "gain": 0.06313895546735937,
+            "baseline_spearman": 0.5727558332909924,
+            "candidate_spearman": 0.5734922674570866,
+            "rank_gain": 0.0007364341660941465
+          },
+          {
+            "part": "fold1",
+            "baseline": 29.556240307657728,
+            "candidate": 26.922159571824782,
+            "expert": 26.80277268356827,
+            "gain": 0.0891209676337109,
+            "baseline_spearman": 0.575230994148768,
+            "candidate_spearman": 0.5870357543356203,
+            "rank_gain": 0.011804760186852281
+          }
+        ],
+        "objective": 0.06313895546735937
+      },
+      "geometry_comparison": [
+        {
+          "view": "sqrt_polynomial",
+          "config": {
+            "name": "sqrt_polynomial_C30_weighted_log",
+            "view": "sqrt_polynomial",
+            "C": 30.0,
+            "mode": "weighted_log"
+          },
+          "weight": 0.5,
+          "gains": [
+            0.06313895546735937,
+            0.0891209676337109
+          ],
+          "rank_gains": [
+            0.0007364341660941465,
+            0.011804760186852281
+          ],
+          "objective": 0.06313895546735937
+        },
+        {
+          "view": "hellinger_gaussian",
+          "config": {
+            "name": "hellinger_gaussian_C3_weighted_log",
+            "view": "hellinger_gaussian",
+            "C": 3.0,
+            "mode": "weighted_log"
+          },
+          "weight": 0.1,
+          "gains": [
+            0.021490705668859415,
+            0.021390124308075603
+          ],
+          "rank_gains": [
+            0.0004341283436289922,
+            0.0012206517160525676
+          ],
+          "objective": 0.021390124308075603
+        }
+      ]
+    },
+    {
+      "task": "clearance_microsome_az",
+      "frozen_best": {
+        "task": "clearance_microsome_az",
+        "config": {
+          "name": "sqrt_polynomial_C3_weighted_log",
+          "view": "sqrt_polynomial",
+          "C": 3.0,
+          "mode": "weighted_log"
+        },
+        "weight": 0.25,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 27.116399993896483,
+            "candidate": 25.945157328584855,
+            "expert": 25.2504369773162,
+            "gain": 0.0431931475260454,
+            "baseline_spearman": 0.7019076327178516,
+            "candidate_spearman": 0.7126272336824147,
+            "rank_gain": 0.010719600964563036
+          },
+          {
+            "part": "fold1",
+            "baseline": 26.81884782509955,
+            "candidate": 25.805373242168884,
+            "expert": 28.671827661443952,
+            "gain": 0.03778963919479654,
+            "baseline_spearman": 0.5046604490997971,
+            "candidate_spearman": 0.5082944967789911,
+            "rank_gain": 0.0036340476791939524
+          }
+        ],
+        "objective": 0.03778963919479654
+      },
+      "geometry_comparison": [
+        {
+          "view": "sqrt_polynomial",
+          "config": {
+            "name": "sqrt_polynomial_C3_weighted_log",
+            "view": "sqrt_polynomial",
+            "C": 3.0,
+            "mode": "weighted_log"
+          },
+          "weight": 0.25,
+          "gains": [
+            0.0431931475260454,
+            0.03778963919479654
+          ],
+          "rank_gains": [
+            0.010719600964563036,
+            0.0036340476791939524
+          ],
+          "objective": 0.03778963919479654
+        },
+        {
+          "view": "hellinger_gaussian",
+          "config": {
+            "name": "hellinger_gaussian_C3_native",
+            "view": "hellinger_gaussian",
+            "C": 3.0,
+            "mode": "native"
+          },
+          "weight": 0.1,
+          "gains": [
+            0.01086748436611961,
+            0.019396351132428567
+          ],
+          "rank_gains": [
+            0.004076511430738616,
+            -0.003964157700299786
+          ],
+          "objective": -1.0
+        }
+      ]
+    },
+    {
+      "task": "half_life_obach",
+      "frozen_best": {
+        "task": "half_life_obach",
+        "config": {
+          "name": "sqrt_polynomial_C30_weighted_log",
+          "view": "sqrt_polynomial",
+          "C": 30.0,
+          "mode": "weighted_log"
+        },
+        "weight": 0.25,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 20.806086576482805,
+            "candidate": 17.697963455276078,
+            "expert": 10.039818132207273,
+            "gain": 0.1493852825124668,
+            "baseline_spearman": 0.5749026026062931,
+            "candidate_spearman": 0.5751820694482074,
+            "rank_gain": 0.0002794668419142665
+          },
+          {
+            "part": "fold1",
+            "baseline": 22.383562434963547,
+            "candidate": 19.65267964321891,
+            "expert": 13.07394794438902,
+            "gain": 0.12200393926030946,
+            "baseline_spearman": 0.6039670343812906,
+            "candidate_spearman": 0.6089103553152188,
+            "rank_gain": 0.00494332093392813
+          }
+        ],
+        "objective": 0.12200393926030946
+      },
+      "geometry_comparison": [
+        {
+          "view": "sqrt_polynomial",
+          "config": {
+            "name": "sqrt_polynomial_C30_weighted_log",
+            "view": "sqrt_polynomial",
+            "C": 30.0,
+            "mode": "weighted_log"
+          },
+          "weight": 0.25,
+          "gains": [
+            0.1493852825124668,
+            0.12200393926030946
+          ],
+          "rank_gains": [
+            0.0002794668419142665,
+            0.00494332093392813
+          ],
+          "objective": 0.12200393926030946
+        },
+        {
+          "view": "hellinger_gaussian",
+          "config": {
+            "name": "hellinger_gaussian_C3_native",
+            "view": "hellinger_gaussian",
+            "C": 3.0,
+            "mode": "native"
+          },
+          "weight": 0.1,
+          "gains": [
+            0.05950792404661072,
+            0.04818586667694458
+          ],
+          "rank_gains": [
+            -0.006975656707200462,
+            0.0016492218095462974
+          ],
+          "objective": -1.0
+        }
+      ]
+    },
+    {
+      "task": "vdss_lombardo",
+      "frozen_best": {
+        "task": "vdss_lombardo",
+        "config": {
+          "name": "hellinger_gaussian_C3_weighted_log",
+          "view": "hellinger_gaussian",
+          "C": 3.0,
+          "mode": "weighted_log"
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "baseline": 4.419333877893289,
+            "candidate": 4.220907346978836,
+            "expert": 3.3723489488363483,
+            "gain": 0.044899646959700404,
+            "baseline_spearman": 0.6991369429686888,
+            "candidate_spearman": 0.6998339208634746,
+            "rank_gain": 0.000696977894785844
+          },
+          {
+            "part": "fold1",
+            "baseline": 6.180262281910009,
+            "candidate": 6.083491891510805,
+            "expert": 5.830054415001131,
+            "gain": 0.015657974691860005,
+            "baseline_spearman": 0.7317602544137639,
+            "candidate_spearman": 0.7321959531424513,
+            "rank_gain": 0.0004356987286874281
+          }
+        ],
+        "objective": 0.015657974691860005
+      },
+      "geometry_comparison": [
+        {
+          "view": "sqrt_polynomial",
+          "config": {
+            "name": "sqrt_polynomial_C3_native",
+            "view": "sqrt_polynomial",
+            "C": 3.0,
+            "mode": "native"
+          },
+          "weight": 0.1,
+          "gains": [
+            0.039737142564566785,
+            0.011164553609180509
+          ],
+          "rank_gains": [
+            -0.0063397720650539835,
+            -0.009161785051620241
+          ],
+          "objective": -1.0
+        },
+        {
+          "view": "hellinger_gaussian",
+          "config": {
+            "name": "hellinger_gaussian_C3_weighted_log",
+            "view": "hellinger_gaussian",
+            "C": 3.0,
+            "mode": "weighted_log"
+          },
+          "weight": 0.1,
+          "gains": [
+            0.044899646959700404,
+            0.015657974691860005
+          ],
+          "rank_gains": [
+            0.000696977894785844,
+            0.0004356987286874281
+          ],
+          "objective": 0.015657974691860005
+        }
+      ]
+    }
+  ]
+}

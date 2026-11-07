@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v201_exact_newton_splines_20261028",
+  "archive_sha256": "b89817c8b0cf6b7c9736f5a0b387415d6ffe7b539a884dae39c9a23ef47efe75",
+  "manifest_files": 121,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 69,
+  "existing_exact": 52,
+  "existing_updated_docs_preserved": []
+}

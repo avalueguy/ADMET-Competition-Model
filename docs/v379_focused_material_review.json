@@ -1,0 +1,81 @@
+{
+  "files": [
+    {
+      "path": "docs/V145_RESULTS_AND_CODE_GUIDE.md",
+      "sha256": "3ca41bf4acb24c7136022b3fc3e48cdcc885091bc70a9e32267493a9e46d9960"
+    },
+    {
+      "path": "admet_v23_remote_mtl.py",
+      "sha256": "b95e193c73bd2f9c6d3128573c5d5a964964549f74c6d0ebc940a90906b13b49"
+    },
+    {
+      "path": "admet_v24_protocol.json",
+      "sha256": "ee12fbdbad0ba21f49c4f4a18d8da2f445ff877928a1f7e1526e04ea129b89f4"
+    },
+    {
+      "path": "admet_v44_protocol.json",
+      "sha256": "447928296bb934ae095666738ff07fd3e0dd1dfaceb5e3ff2ae4e2a185249935"
+    },
+    {
+      "path": "admet_v52_neural.py",
+      "sha256": "d01aaa41c0250c5c0b3de46f2c337b47ce18572d3b94d5b083ff8c42ca25eb59"
+    },
+    {
+      "path": "admet_v56_remote_verify.py",
+      "sha256": "365342c2d5e9a9ea1c7deeaf8b42f58e9b1744c28881d678f5d28810399af67e"
+    },
+    {
+      "path": "docs/history/v56_report.md",
+      "sha256": "39b72fc22c00e3f580b90f662d1de8d0873dc9260078b73b5f124f9640df5c0f"
+    },
+    {
+      "path": "tools/v95_graph_specialists.py",
+      "sha256": "b3efe4b6fab79f88dc4004a522944491d45467fba4146321f7765096ea19c069"
+    },
+    {
+      "path": "tools/v263_fit_label_reliability.py",
+      "sha256": "994bc76ddc9469461d7ef5cf360d044de3d9a790e2f411345eb3096133d63d28"
+    },
+    {
+      "path": "tools/v264_replicate_noise_gp.py",
+      "sha256": "39fbb337cd04e8368bf4ac6fef715b3255743b225a1995621d5ba4adc4ffd822"
+    },
+    {
+      "path": "tools/v297_pair_delta_regression.py",
+      "sha256": "a8aac34589f20e2678e2cb7a8faeeefe234c4cfc875c7452b8bb927139a60009"
+    },
+    {
+      "path": "tools/v372_crossfit_experts.py",
+      "sha256": "c99f7a36c3a755079e5300bbe2c3b243a43d3d9e41c5befd5b7002eb2a9ac583"
+    },
+    {
+      "path": "tools/v374_specialists.py",
+      "sha256": "b44558fd23681954ed4832d812174b192f2a130dfa1de7babc109180e55a5fae"
+    },
+    {
+      "path": "tools/v131_current_controls.py",
+      "sha256": "78b9cf39ab4fab35554bd57756b34fa23d72b2e957c83eeffcfab898b7af8309"
+    },
+    {
+      "path": "tools/v125_low_task_baseline.py",
+      "sha256": "6879cda4ca27d332673338b94d805da637f52315ea0f85fcaf58d5aea87447d2"
+    },
+    {
+      "path": "tools/v364_graph_transformer.py",
+      "sha256": "623ad0bbf70d49e161ea6a87b29f46afeb1ee24d16c2e42901b52bf9ca7c97a1"
+    },
+    {
+      "path": "tools/v368_graph_transformer.py",
+      "sha256": "e1c03c45ab33abbe78d7a3863bb6472ad5f701cecd08fe8f90e04a481594d389"
+    },
+    {
+      "path": "tools/v370_graph_transformer.py",
+      "sha256": "268ce6494d27805399dee20aacfaa9af327aff265985fcb526cb7507a3fc1366"
+    }
+  ],
+  "findings": [
+    "Directed bond networks, pair differences, duplicate weighting, physical priors, graph transfer, local residuals and nested stacks already have local implementations; do not rename them as unseen innovations.",
+    "Several carried legacy regression branches have incomplete checkpoints and complete-ensemble OOF. New honest experts cannot fix missing historical provenance.",
+    "v379 tests a narrower capacity/EMA/quantile package plus native-rank objective; no universal improvement or several-point score promise."
+  ]
+}

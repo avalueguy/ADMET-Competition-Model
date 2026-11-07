@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "archive": "D:\\Projects\\ADMET-Competition-Model\\releases\\v364_stage1_inputs.tar.gz",
+  "sha256": "45926916a8c07d6879817b67cdced23913934c615a2bc43bd93dbd988e1a97fd",
+  "bytes": 27543291,
+  "tasks": [
+    "caco2_wang",
+    "clearance_hepatocyte_az",
+    "cyp2d6_veith",
+    "herg",
+    "lipophilicity_astrazeneca",
+    "solubility_aqsoldb"
+  ],
+  "controls": 30
+}

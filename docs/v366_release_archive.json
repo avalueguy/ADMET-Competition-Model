@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "path": "releases/v366_stage2_20261104.tar.gz",
+  "sha256": "86a43b2ed2b962e02122de3f81fcdc3613923cc42fbb6ac0cf199859634db10c",
+  "files": 67,
+  "bytes": 800439,
+  "all_member_hashes_verified": true
+}

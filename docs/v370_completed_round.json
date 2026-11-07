@@ -1,0 +1,607 @@
+{
+  "completed_at_hong_kong": "2026-11-05T15:10:48.275679+08:00",
+  "baseline": {
+    "version": "v364",
+    "official_user_reported": 51.269,
+    "exact_task_mean": 51.26918777272727,
+    "recorded_at_hong_kong": "2026-11-04T15:28:56.689382+08:00",
+    "csv": "admet_submissions/v364_graph_transformer_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261104.csv",
+    "csv_sha256": "777eca282b59101463fe02f71802c24502a87ba7352482b24a64943ef81ede79",
+    "source": "docs/platform_scorecard_v364_20261104.json",
+    "previous_best": "v361",
+    "previous_best_official": 51.24,
+    "delta_task_mean": 0.029659363636369562,
+    "platform_uploaded_byte_hash_confirmed": false,
+    "reason": "User-reported full scorecard improves both changed endpoints, other20 match. Original local strict-validation failures are preserved."
+  },
+  "rounds": [
+    {
+      "version": "v368",
+      "stage": 3,
+      "delivery": {
+        "status": "NO_ELIGIBLE_CANDIDATE",
+        "signature": "380893a239a19d6b031114ad3c444beec5b8365669b51fb70bc1437bb0fb5104",
+        "baseline": "v364",
+        "baseline_official_score": 51.269,
+        "official_score": null,
+        "csv": null,
+        "new_submission_created": false,
+        "no_selection_fallback": true,
+        "training_gpu_remote_only": true
+      },
+      "tasks": [
+        "ames",
+        "clearance_microsome_az",
+        "half_life_obach",
+        "vdss_lombardo"
+      ],
+      "development_jobs": 24,
+      "strict_tasks": [],
+      "experimental_tasks": [],
+      "report": "docs/V368_STAGE3_RESULTS.md",
+      "remote_root": "/root/autodl-tmp/transformer_stage3_v368",
+      "independent_replay_max_error": 0.0
+    },
+    {
+      "version": "v369",
+      "stage": 4,
+      "delivery": {
+        "status": "NO_ELIGIBLE_CANDIDATE",
+        "signature": "6890cf358a41873aeaab2cd52d703b6b2ebfca1ad1822afad6f1ba75016cfe38",
+        "baseline": "v364",
+        "baseline_official_score": 51.269,
+        "official_score": null,
+        "csv": null,
+        "new_submission_created": false,
+        "no_selection_fallback": true,
+        "training_gpu_remote_only": true
+      },
+      "tasks": [
+        "bioavailability_ma",
+        "cyp2c9_substrate_carbonmangels",
+        "cyp2d6_substrate_carbonmangels",
+        "cyp3a4_substrate_carbonmangels"
+      ],
+      "development_jobs": 24,
+      "strict_tasks": [],
+      "experimental_tasks": [],
+      "report": "docs/V369_STAGE4_RESULTS.md",
+      "remote_root": "/root/autodl-tmp/transformer_stage4_v369",
+      "independent_replay_max_error": 0.0
+    },
+    {
+      "version": "v370",
+      "stage": 5,
+      "delivery": {
+        "status": "NO_ELIGIBLE_CANDIDATE",
+        "signature": "357a38eec15721049214c76e77c43e805c5a3225da2a86468a0bc225a9d53848",
+        "baseline": "v364",
+        "baseline_official_score": 51.269,
+        "official_score": null,
+        "csv": null,
+        "new_submission_created": false,
+        "no_selection_fallback": true,
+        "training_gpu_remote_only": true
+      },
+      "tasks": [
+        "caco2_wang",
+        "ld50_zhu",
+        "lipophilicity_astrazeneca",
+        "ppbr_az",
+        "solubility_aqsoldb"
+      ],
+      "development_jobs": 20,
+      "strict_tasks": [],
+      "experimental_tasks": [],
+      "report": "docs/V370_STAGE5_RESULTS.md",
+      "remote_root": "/root/autodl-tmp/transformer_stage5_v370",
+      "independent_replay_max_error": 0.0
+    }
+  ],
+  "new_official_score": null,
+  "training_gpu_remote_only": true,
+  "stage5_all_models_audit": {
+    "status": "PASS",
+    "signature": "357a38eec15721049214c76e77c43e805c5a3225da2a86468a0bc225a9d53848",
+    "source_sha256": "9feb80d3acae209122f8ab135f679556f67afc09d9ba3e0d3b971874d36796c9",
+    "expert_jobs": 20,
+    "checkpoints": 40,
+    "records": [
+      {
+        "task": "caco2_wang",
+        "part": "fold0",
+        "mode": "sam",
+        "query_rows": 212,
+        "fit_rows": 425,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "daf42b5134377e909fa61c84dd14c6d155bbc18c6bdde402f687c9efdd6966f0",
+            "manual_attention_error": 2.384185791015625e-07,
+            "cpu_error": 1.1920928955078125e-07,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "eea1f344ec81b11c276b8f6fd3eeee257bad422f709e76ad2c6a83f7b2f297d3",
+            "manual_attention_error": 5.960464477539063e-08,
+            "cpu_error": 1.1920928955078125e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "caco2_wang",
+        "part": "fold0",
+        "mode": "selfsupervised",
+        "query_rows": 212,
+        "fit_rows": 425,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "74669bbea02935b226c663b2d412fb9ba884f37524a9f6eb80a7bfe559fc5f63",
+            "manual_attention_error": 2.9802322387695312e-08,
+            "cpu_error": 1.1920928955078125e-07,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "e6e3dcbb109c83debe6b8ff1f621e11f5296fb78eb729161729b2de67e6e4581",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 2.384185791015625e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "caco2_wang",
+        "part": "fold1",
+        "mode": "sam",
+        "query_rows": 212,
+        "fit_rows": 425,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "2e60d0d845b423afa658c47c79047b2fdb1c48f61aadc695d671d1dde214e052",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 5.960464477539063e-08,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "0bc3f0ed0aa150dcb18791652542a7cdbe326994fea5ad497ceba1c77962e495",
+            "manual_attention_error": 5.960464477539063e-08,
+            "cpu_error": 1.1920928955078125e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "caco2_wang",
+        "part": "fold1",
+        "mode": "selfsupervised",
+        "query_rows": 212,
+        "fit_rows": 425,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "ede5381f802b80c4f819157ddb306c25ba3f539d89b7f73bf24d25acce9bd44e",
+            "manual_attention_error": 2.9802322387695312e-08,
+            "cpu_error": 5.960464477539063e-08,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "6cb79d83d843878540613c1455f7ca37b1aed61f21cfa05dfc1e9807d49c722d",
+            "manual_attention_error": 5.960464477539063e-08,
+            "cpu_error": 1.1920928955078125e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "ld50_zhu",
+        "part": "fold0",
+        "mode": "sam",
+        "query_rows": 1210,
+        "fit_rows": 2760,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "50bed94665fc250508255e8e905a4435d5f4251151e1b2592ff25b8ec5566f85",
+            "manual_attention_error": 2.384185791015625e-07,
+            "cpu_error": 2.384185791015625e-07,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "d4e34352c5be28a0949e546012d7da65c3c97696a8217435244faeafef57d62a",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 1.043081283569336e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "ld50_zhu",
+        "part": "fold0",
+        "mode": "selfsupervised",
+        "query_rows": 1210,
+        "fit_rows": 2760,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "11d64eef4f7beb8fe45f1b1620aa852c254a0d3fc782006ed6c06acfa82d9f90",
+            "manual_attention_error": 5.960464477539063e-08,
+            "cpu_error": 1.7881393432617188e-07,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "a0947b79ca0248562fef1005494b5f8d392cc65ef96d8a7ec6d1c4ba308f5a5f",
+            "manual_attention_error": 5.960464477539063e-08,
+            "cpu_error": 8.940696716308594e-08,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "ld50_zhu",
+        "part": "fold1",
+        "mode": "sam",
+        "query_rows": 1210,
+        "fit_rows": 2760,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "8fa4f7a1da5b5105c1acd23ad9fdada2cc23ed2b9d48d14b7321a22c47d91431",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 5.960464477539063e-08,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "39407163b31c64efa1fb5287449cf1bcd6ca0239be3c9f92b558315fcc8c30bd",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 1.1920928955078125e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "ld50_zhu",
+        "part": "fold1",
+        "mode": "selfsupervised",
+        "query_rows": 1210,
+        "fit_rows": 2760,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "e9c8ea16f46cc4a8e5e14de0d77db41df88ef8456222f907ebaf9d3d0901df4b",
+            "manual_attention_error": 5.960464477539063e-08,
+            "cpu_error": 2.384185791015625e-07,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "a51ca688c48276026ab99501ea49b1ed9b32159cf8405b51058cb97f666cb0be",
+            "manual_attention_error": 2.384185791015625e-07,
+            "cpu_error": 5.960464477539063e-08,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "lipophilicity_astrazeneca",
+        "part": "fold0",
+        "mode": "sam",
+        "query_rows": 980,
+        "fit_rows": 1960,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "ccf0508869180af735ac58c82088e0ce871c3af70d7144c2e195d0d06c89cb54",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 2.384185791015625e-07,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "3967eba3cf309f845bc820fa09789f5ad1c53e50fd93813e7596caad50332149",
+            "manual_attention_error": 5.960464477539063e-08,
+            "cpu_error": 8.940696716308594e-08,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "lipophilicity_astrazeneca",
+        "part": "fold0",
+        "mode": "selfsupervised",
+        "query_rows": 980,
+        "fit_rows": 1960,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "f003584b8196472e88b279579cfc6850b84b4e8637ed8e96e346fe6e1a9c520c",
+            "manual_attention_error": 2.9802322387695312e-08,
+            "cpu_error": 7.450580596923828e-08,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "9640a84045a9feb7d904c851c799190d6b3db19637edf0b999a0f69d16f82c02",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 1.1920928955078125e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "lipophilicity_astrazeneca",
+        "part": "fold1",
+        "mode": "sam",
+        "query_rows": 980,
+        "fit_rows": 1960,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "6c4aa7d57b520ded45be73dd9984d3f21cfa14e27fe63c1907c6ce3d78ac3842",
+            "manual_attention_error": 5.960464477539063e-08,
+            "cpu_error": 8.940696716308594e-08,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "4e7ba02c949a2f1d1e490bb6c21a1aab5287d003ff5baaf05c5b8fa5ca45e1e4",
+            "manual_attention_error": 2.9802322387695312e-08,
+            "cpu_error": 1.1920928955078125e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "lipophilicity_astrazeneca",
+        "part": "fold1",
+        "mode": "selfsupervised",
+        "query_rows": 980,
+        "fit_rows": 1960,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "73f292432c732cac7400ebb0779ad475a6f532e0632d9dd8294ae6229d1fae39",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 5.960464477539063e-08,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "c087a04b79dc645b204fef2fe11afa0cfd13d7a83ae22756206794b73af37711",
+            "manual_attention_error": 4.470348358154297e-08,
+            "cpu_error": 1.341104507446289e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "ppbr_az",
+        "part": "fold0",
+        "mode": "sam",
+        "query_rows": 650,
+        "fit_rows": 1302,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "58674ad2eb75c57d39a703402a3b5d84a2604fa8578e508a431ae9c1156245e5",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 8.940696716308594e-08,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "9e5e912a3bbacd15c2d055f768cd2d24abee59f549047c671ebed01540bfbebe",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 1.1920928955078125e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "ppbr_az",
+        "part": "fold0",
+        "mode": "selfsupervised",
+        "query_rows": 650,
+        "fit_rows": 1302,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "269d027e7695a00c251e36938cf6b3e70ee3567e179f29b586caee0f593827de",
+            "manual_attention_error": 5.960464477539063e-08,
+            "cpu_error": 4.470348358154297e-08,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "b6bbd9774eba18dbc62ddc10bad9cfc6e4ee6dfdb67db0db5aee04d7b61853c4",
+            "manual_attention_error": 5.960464477539063e-08,
+            "cpu_error": 1.1920928955078125e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "ppbr_az",
+        "part": "fold1",
+        "mode": "sam",
+        "query_rows": 651,
+        "fit_rows": 1301,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "d0ad34cb720f0c02bdd905a45e3040f72fbea0317c57e29003374d80b3f1ad77",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 2.384185791015625e-07,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "c2e9e1a81c6438fcec232920d2290b5e071564afe4116f012255ad643b9c5ba4",
+            "manual_attention_error": 5.960464477539063e-08,
+            "cpu_error": 1.7881393432617188e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "ppbr_az",
+        "part": "fold1",
+        "mode": "selfsupervised",
+        "query_rows": 651,
+        "fit_rows": 1301,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "fbaabe318cdbfe4fe1cefabbf4885ecc768f0c0273969334316c3ed9d40fd736",
+            "manual_attention_error": 5.960464477539063e-08,
+            "cpu_error": 2.384185791015625e-07,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "5ac4b42452b06a208f390aec230b1aa6e658f3a3bf73f4eacd8ab93598325389",
+            "manual_attention_error": 5.960464477539063e-08,
+            "cpu_error": 2.384185791015625e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "solubility_aqsoldb",
+        "part": "fold0",
+        "mode": "sam",
+        "query_rows": 1635,
+        "fit_rows": 3410,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "61076a22246115395fa21560ea123a2a46fec4fb034e546ed4d5880818d480fa",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 1.7881393432617188e-07,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "c8003f25e11b0126cd45b198a9cdc98f8c7580770709596a7c23c104897bc6fe",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 1.1920928955078125e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "solubility_aqsoldb",
+        "part": "fold0",
+        "mode": "selfsupervised",
+        "query_rows": 1635,
+        "fit_rows": 3410,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "0b7da501c832497a99424a4a6bdec795c21a8be6669448be8d4736afd6b2fdf5",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 1.1920928955078125e-07,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "be42b570f867b403537ebb6165115224b50c4b462b0c37b6f6bb3ef881d9a670",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 1.1920928955078125e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "solubility_aqsoldb",
+        "part": "fold1",
+        "mode": "sam",
+        "query_rows": 1635,
+        "fit_rows": 3410,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "a656a5ac0e097865fae368201eb6633ee37add41e79651ce4d6772cfce0f0e57",
+            "manual_attention_error": 5.960464477539063e-08,
+            "cpu_error": 8.940696716308594e-08,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "360948ad39be5f92a56b54fdaecb06201feb7f7daaec8b9ef2ec195083e30036",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 1.4901161193847656e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      },
+      {
+        "task": "solubility_aqsoldb",
+        "part": "fold1",
+        "mode": "selfsupervised",
+        "query_rows": 1635,
+        "fit_rows": 3410,
+        "checks": [
+          {
+            "seed": 3701105,
+            "checkpoint_sha256": "95546d8aaaa37e452411c8790fb09dd335750f583bf5429ff8599785fc93773b",
+            "manual_attention_error": 5.960464477539063e-08,
+            "cpu_error": 5.960464477539063e-08,
+            "full_replay_error": 0.0
+          },
+          {
+            "seed": 3701106,
+            "checkpoint_sha256": "529aef13d3b30b670380aa6020488f409ff7bf9c45bfe15fdce78f49dd7a9b99",
+            "manual_attention_error": 1.1920928955078125e-07,
+            "cpu_error": 1.1920928955078125e-07,
+            "full_replay_error": 0.0
+          }
+        ],
+        "query_label_perturbation_invariant": true
+      }
+    ],
+    "full_replay_max_error": 0.0,
+    "manual_attention_max_error": 2.384185791015625e-07,
+    "cpu_max_error": 2.384185791015625e-07,
+    "no_training": true,
+    "no_model_selection": true,
+    "test_labels_accessed": false
+  },
+  "training_host": "connect.nmb2.seetacloud.com:25870",
+  "target_52_achieved": false,
+  "no_confirmation_fallback": true,
+  "no_external_data_or_weights": true,
+  "limitations": [
+    "Partial historical proxy OOF",
+    "Public validation labels repeatedly reused",
+    "Experimental local gains do not guarantee hidden-test improvement"
+  ]
+}

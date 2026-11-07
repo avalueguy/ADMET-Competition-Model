@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-28T07:21:33.151362+00:00",
+  "source_frozen": "docs/v200_frozen_sources.json",
+  "review": [
+    "Exact smooth-absolute derivative verified with finite differences and independent BFGS reference.",
+    "Same fit-only design, two original strengths and original blends; no confirmation tuning.",
+    "Only five originally unfinished MAE tasks; no completed failed classification route rerun.",
+    "Originalv148.record/confirm and thresholds unchanged, all choices frozen before confirmation.",
+    "Gradient stationarity1e-7 retained,150 iterations retained, old false objective-change stop removed.",
+    "Originalv197 failure source/archive untouched; v200 has distinct model/cache/signature.",
+    "Verifier rebuilds designs, perturbation checks, independent model/transform reload; local finalizer checks all bytes and fusion."
+  ],
+  "smoke": "PASS",
+  "new_csv_created": false,
+  "new_upload_performed": false
+}

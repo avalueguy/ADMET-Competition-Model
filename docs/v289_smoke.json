@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "signature": "4fec558952d449d2522dafb1e833263df299a6d4bae13aac4d756e022e463750",
+  "scores_computed": false,
+  "target_nonfit_label_isolation": true,
+  "enantiomer_separation": true,
+  "complete_context_replacement": true,
+  "original_physical_suffix_exact": true,
+  "identity_replacement_reference": true,
+  "atom_order_invariance": true,
+  "original_component_replay": true,
+  "checks": [
+    {
+      "task": "herg",
+      "actual_cuda_training": true,
+      "save_reload": true,
+      "row_order": true,
+      "original_input_width": 540,
+      "replacement_input_width": 540,
+      "context_blocks": 5,
+      "legacy_columns_retained": 0
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "actual_cuda_training": true,
+      "save_reload": true,
+      "row_order": true,
+      "original_input_width": 540,
+      "replacement_input_width": 540,
+      "context_blocks": 5,
+      "legacy_columns_retained": 0
+    }
+  ]
+}

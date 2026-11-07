@@ -1,0 +1,834 @@
+{
+  "status": "COMPLETE_SOURCE_INDEX",
+  "files": 97,
+  "records": [
+    {
+      "path": "admet_competition_train.py",
+      "sha256": "f42c5f4a487e8bc89235d4b8a616a70a402533fe117c1d75611fb773daabfec8",
+      "doc": "Train strong SMILES based ADMET models on the supplied TDC-style archive.\n\nThe archive contains one independent train/valid/test triplet per ADMET task.\nThis script deliberately keeps the feature engineering shared across tasks and\nthe target heads task-specific: the supplied files do not form a rectangular\nmulti-label matrix, so a conventional dense multi-task loss would discard most\nof the available labels.\n\nOutputs are written below ``admet_model_outputs`` by default:\n  * validation_metrics.csv: AUROC/AUPRC for classification and MAE/Spearman\n    for regression, together with duplicate-lookup coverage;\n  * one submission_<task>.csv for every task (Drug_ID,Y);\n  * model bundles and feature caches for reproducible inference.",
+      "declarations": []
+    },
+    {
+      "path": "admet_v10_guard.py",
+      "sha256": "ba33f2e13ac4f7d09802feefbb68a4ab7d2c5d9091c17f7af251109d0590d717",
+      "doc": "Apply cumulative regression guard to the delivered v10; immutable input files.\n\nThis is a safety correction, not a newly trained model or evidence of score gain.\nAny task that fails an observed cumulative gate returns wholly to scored v7.",
+      "declarations": []
+    },
+    {
+      "path": "admet_v14_combine.py",
+      "sha256": "4065cf180e2d478b735624ee93667066c03f5097bce13ffba0b466a7b2b2a98f",
+      "doc": "Combine verified v12/v13 task routes; no fitting or weight search.\n\nBoth independent experiments use the same scored v11. Use disjoint promotions.\nOn overlaps, v13 replaces v12 only if it passes the original nonregression gates\nagainst v12 itself. Otherwise v12 is retained. No individual molecule routing.",
+      "declarations": []
+    },
+    {
+      "path": "admet_v15_delivery.py",
+      "sha256": "5d2611c8c8617b2e593f6970c2eb4808d634b3563df9a62f5cc47dfba2fc4f00",
+      "doc": "Record verified unscored v15 and explain gains and regressions without forecasting points.",
+      "declarations": []
+    },
+    {
+      "path": "admet_v15_ensemble.py",
+      "sha256": "c13b4c8d73a644c2174d6c05b734cc1762e41e81c04c17acd3f82362b3eb10bb",
+      "doc": "Primary-metric convex stacking; no per-metric non-regression vetoes.",
+      "declarations": []
+    },
+    {
+      "path": "admet_v15_release.py",
+      "sha256": "0047cad76683c0b794645e084fd5b6576263b53e7735e3f87a12dcfd6f9649c2",
+      "doc": "Publish v15, replay trained bases independently, and report all regressions.",
+      "declarations": []
+    },
+    {
+      "path": "admet_v16_ensemble.py",
+      "sha256": "3016adb7fb70cc6320b355e6556ebcefa42bd0526970a0b314cc827d5fba66e1",
+      "doc": "Primary-metric convex stacking; no per-metric non-regression vetoes.",
+      "declarations": []
+    },
+    {
+      "path": "admet_v16_release.py",
+      "sha256": "f80947dc21e39502b593ac5db0a87c5f18ca00e75bc8ec49a8a53985657efa2e",
+      "doc": "Publish v16, replay trained bases independently, and report all regressions.",
+      "declarations": []
+    },
+    {
+      "path": "admet_v23_remote_mtl.py",
+      "sha256": "b95e193c73bd2f9c6d3128573c5d5a964964549f74c6d0ebc940a90906b13b49",
+      "doc": "Remote v23 multi-task feature model.\n\nThis script is intentionally self-contained: it uses RDKit Morgan fingerprints,\nrobust scalar descriptors and a shared PyTorch trunk with task-specific heads.\nIt never touches v20/v21/v22 outputs and writes only admet_model_outputs_v23 and\nadmet_submissions/v23 on the authorized remote host.",
+      "declarations": [
+        "TASKS=['ames','bbb_martins','bioavailability_ma','caco2_wang','clearance_hepatocyte_az','clearance_microsome_az','cyp2c9_substrate_carbonmangels','cyp2c9_veith','cyp2d6_substrate_carbonmangels','cyp2d6_veith','cyp3a4_substrate_carbonmangels','cyp3a4_veith','dili','half_life_obach','herg','hia_hou','ld50_zhu','lipophilicity_astrazeneca','pgp_broccatelli','ppbr_az','solubility_aqsoldb','vdss_lombardo']"
+      ]
+    },
+    {
+      "path": "admet_v28_run.py",
+      "sha256": "c087d3f778d831d1ead7bfb4f3255ee632e2481d6d2c85e68ea4e0d5663066d1",
+      "doc": "Independent MAE specialist models on the authorized remote host.",
+      "declarations": [
+        "P=json.loads((ROOT/'admet_v28_protocol.json').read_text())"
+      ]
+    },
+    {
+      "path": "admet_v29_run.py",
+      "sha256": "44d989550fe2c3f9b2a57d3a2f349fdca7800838a180d6ca14dec676b320c320",
+      "doc": "Combine trained graph and MAE specialists with exact score-oriented replay.",
+      "declarations": [
+        "P=json.loads((ROOT/'admet_v29_protocol.json').read_text())"
+      ]
+    },
+    {
+      "path": "admet_v52_calibration.py",
+      "sha256": "f9e955a93093e4aaf57b8c11b8e45e607df805c03699b2374700a369c50e6fc4",
+      "doc": "Low-dimensional, cross-fitted MAE calibration with held-scaffold selection.",
+      "declarations": []
+    },
+    {
+      "path": "admet_v59_kernel.py",
+      "sha256": "4b28878461d8151dd378d5dd3ff74c00cc8a2f606ca4635e2cc37b785c88e053",
+      "doc": "Partition-isolated supervised-graph Gaussian/Tanimoto support-vector experts.",
+      "declarations": [
+        "TASKS=['cyp2c9_substrate_carbonmangels','cyp2d6_substrate_carbonmangels','cyp3a4_substrate_carbonmangels','bioavailability_ma','herg','bbb_martins','caco2_wang','half_life_obach','clearance_hepatocyte_az','clearance_microsome_az','vdss_lombardo','dili','ppbr_az','lipophilicity_astrazeneca']",
+        "CONFIGS=[(0,.3),(0,3.),(0,30.),(1,.3),(1,3.),(1,30.)]"
+      ]
+    },
+    {
+      "path": "admet_v6_domain_guard.py",
+      "sha256": "71239a6e425351969b9e7e2e582fb911ce4be793d451f1110eb897af00cbd925",
+      "doc": "Post-selection safety overlay for observed low-similarity subgroup regressions.\n\nThis is a disclosed additional reused-validation check, not an independent test.\nThe rule is locked: fallback to baseline below Morgan similarity 0.3, and retain\nthe overlay only if it also passes the original observed primary/secondary gates.",
+      "declarations": []
+    },
+    {
+      "path": "admet_v73_conditional.py",
+      "sha256": "07fe914c5f152af1bddc8ffc7997c2b36ed0b5b8bb1c7c93a663673287d8b7d3",
+      "doc": "Conditional endpoint experts using only official OTHER-assay train labels.\n\nDevelopment auxiliaries use train only, including for official-valid queries.\nFinal auxiliaries use train+valid. The target assay is absent from the design.\nThis measures prediction conditional on available public assays, not pure\nstructure-only scaffold generalization. No hidden test labels are parsed.",
+      "declarations": [
+        "TASKS=('clearance_hepatocyte_az','clearance_microsome_az','half_life_obach',\n       'vdss_lombardo','ppbr_az','bbb_martins','bioavailability_ma',\n       'cyp2d6_substrate_carbonmangels','cyp2c9_substrate_carbonmangels',\n       'cyp3a4_substrate_carbonmangels','pgp_broccatelli')"
+      ]
+    },
+    {
+      "path": "admet_v74_specialists.py",
+      "sha256": "95bc01f17252554f75de738c5dc8d801f23292a650236cda32242a709ad9bac1",
+      "doc": "CUDA task-specific MAE experts with nested stopping and frozen confirmation.\n\nOriginal official graphs are preserved, including the documented valence exception.\nNo historical model is presented as exact v73 OOF; the new tree comparator is\nrefitted on precisely the same outer rows as the neural experts.",
+      "declarations": [
+        "P=json.loads((ROOT/'admet_v74_protocol.json').read_text(encoding='utf-8'))"
+      ]
+    },
+    {
+      "path": "admet_v74_specialists_attempt1.py",
+      "sha256": "4ba2235f59a952284caf372fc237cdfcf232a209bebb15378b9d5baa8304861b",
+      "doc": "CUDA task-specific MAE experts with nested stopping and frozen confirmation.\n\nOriginal official graphs are preserved, including the documented valence exception.\nNo historical model is presented as exact v73 OOF; the new tree comparator is\nrefitted on precisely the same outer rows as the neural experts.",
+      "declarations": [
+        "P=json.loads((ROOT/'admet_v74_protocol.json').read_text(encoding='utf-8'))"
+      ]
+    },
+    {
+      "path": "admet_v77_ranking.py",
+      "sha256": "bf133e43eb5c9074dea2993c4ce2cb1e73518d196a4da43e75a614fdcfa9253e",
+      "doc": "Compare direct ranking and regression on identical official scaffold splits.\n\nOnly train/valid Y are read. Test structures come from the upload template.\nExisting chemistry is loaded as a versioned artifact, without impersonating its\nRDKit version or regenerating features. Historical predictions remain proxies.",
+      "declarations": [
+        "TASKS = ('clearance_hepatocyte_az', 'clearance_microsome_az',\n         'half_life_obach', 'vdss_lombardo')",
+        "SEEDS = (772026, 772027)"
+      ]
+    },
+    {
+      "path": "admet_v78_median.py",
+      "sha256": "7e4e16806eda11fcba6e570514728682010713bb43d30a6efb2107636303ecfd",
+      "doc": "Matched-row XGBoost MAE/Huber versus RMSE, with frozen confirmation.\n\nThis experiment uses the v77 audited data loader, with all its limitations.\nNo inherited baseline is represented as exact v73 OOF. No test Y are opened.",
+      "declarations": [
+        "TASKS = ('caco2_wang', 'ld50_zhu', 'lipophilicity_astrazeneca', 'ppbr_az', 'solubility_aqsoldb')",
+        "SEEDS = (782026, 782027)"
+      ]
+    },
+    {
+      "path": "tools/audit_v107_regression.py",
+      "sha256": "72fa19984734afc94e83c47dfec713d3ba6a51873ed4d30f3b842ade66f3c9d3",
+      "doc": "Audit a reported regression using frozen predictions; never open test labels.",
+      "declarations": []
+    },
+    {
+      "path": "tools/finalize_v272_local.py",
+      "sha256": "44fd3267139d221d1a8f6eb797bc0ce5358431b96440728b31ead4e3c2c0ac86",
+      "doc": "Independently recompute frozen v271 clearance innovations fusion before exposing v272.",
+      "declarations": []
+    },
+    {
+      "path": "tools/finalize_v279_local.py",
+      "sha256": "1af3cc101fd5c1aec9868865e8865bcfaeae2e25682b3bf6996ee88cd48b7dff",
+      "doc": "Independently recompute frozen v278 clearance innovations fusion before exposing v279.",
+      "declarations": []
+    },
+    {
+      "path": "tools/finalize_v74.py",
+      "sha256": "6ee45a72c500d6cb0cbae167978b636d748d0399f2e3b50adfd6191b4505203a",
+      "doc": "Refit only frozen accepted MAE tasks, reload, and write exact-template CSV.",
+      "declarations": []
+    },
+    {
+      "path": "tools/prepare_v182_finalizer.py",
+      "sha256": "9067982f1f9459a14904ef606747d5f70c7df77ccfd8e2ab39a6a737b7e22ce7",
+      "doc": "Adapt the independent local-only fusion verifier to quantile forests.",
+      "declarations": []
+    },
+    {
+      "path": "tools/test_v69_serialization.py",
+      "sha256": "f7c32e9d6415ec0a464787630f27d6507359c4e25a190b5d02869ca0520f2628",
+      "doc": "GPU regression: persist and replay a Spearman target with array metadata.",
+      "declarations": []
+    },
+    {
+      "path": "tools/v103_pair_differences.py",
+      "sha256": "48f3c68c37c82985ae0fee6ee1ec0ed74a66404ffc8fd791061c668f12818b2c",
+      "doc": "Fit-only neighbor-referenced property differences for regression endpoints.\n\nLearn antisymmetrized changes between labeled fit molecules, then estimate a\nquery by adding predicted changes to fit references. No query labels in pairs.",
+      "declarations": [
+        "STEPS=700"
+      ]
+    },
+    {
+      "path": "tools/v109_pharmacophore.py",
+      "sha256": "63d202972cf2461a0ab629c017f1516af4922412b368b9c57ff364eba4d646b5",
+      "doc": "Pharmacophore topology rather than another circular-fragment model.\n\nFixed two-seed boosted specialists versus identical physicochemical controls.\nAll features use official structures; no test-label files are opened.",
+      "declarations": [
+        "TASKS=('bioavailability_ma','caco2_wang','clearance_hepatocyte_az','clearance_microsome_az',\n       'cyp2c9_substrate_carbonmangels','cyp2d6_substrate_carbonmangels','cyp3a4_substrate_carbonmangels',\n       'half_life_obach','ppbr_az','vdss_lombardo')",
+        "SEEDS=(1094026,1094027)"
+      ]
+    },
+    {
+      "path": "tools/v115_diverse_specialists.py",
+      "sha256": "8834ed432fa61690a5675facd91773e1de9543a016a05521ca52377ae8976e3c",
+      "doc": "Task-specific SMILES sequence kernels and censored ordinal specialists.\n\nOfficial training labels only; train-only preprocessing; query labels are used\nonly after predictions are saved. Selection and confirmation are separate.",
+      "declarations": [
+        "TASKS = ('herg', 'ames', 'bbb_martins', 'caco2_wang',\n         'clearance_hepatocyte_az', 'clearance_microsome_az',\n         'cyp3a4_substrate_carbonmangels', 'solubility_aqsoldb',\n         'half_life_obach', 'vdss_lombardo')",
+        "SEEDS = (1154026, 1154027)"
+      ]
+    },
+    {
+      "path": "tools/v116_shift_weighting.py",
+      "sha256": "339690dff0639e7b47915275a0053458b4ad1c2ac4ed37a16af28405801bda98",
+      "doc": "Unlabeled query distribution adaptation, with identical unweighted control.\n\nCross-fitted domain classifiers estimate covariate weights. Query structures,\nnever query labels, define the target domain. Official data only.",
+      "declarations": [
+        "TASKS=('solubility_aqsoldb','caco2_wang','ames','bbb_martins','herg',\n       'clearance_hepatocyte_az','clearance_microsome_az','ppbr_az')",
+        "SEEDS=(1164026,1164027)"
+      ]
+    },
+    {
+      "path": "tools/v117_conditional_structure.py",
+      "sha256": "5cd58337011ae0ac5ebf56b247203a21c7e50d3d989702e3cf922ef42700bced",
+      "doc": "Official measured-assay context with full molecular features.\n\nTargets and target masks are absent from every auxiliary feature. Same-row\ndescriptor+assay controls measure whether full structural fragments help.",
+      "declarations": [
+        "TASKS=('caco2_wang','clearance_hepatocyte_az','clearance_microsome_az',\n    'half_life_obach','vdss_lombardo','herg','bbb_martins',\n    'cyp3a4_substrate_carbonmangels','solubility_aqsoldb')",
+        "SEEDS=(1174026,1174027)"
+      ]
+    },
+    {
+      "path": "tools/v121_conditional_ranking.py",
+      "sha256": "0d66cff9f98f7ddaeca6974892d803e9d5fd82b5eb700fe4c1b0fed56704679c",
+      "doc": "Full structural conditional LambdaRank specialists with fixed blending.",
+      "declarations": [
+        "SEEDS=(1214026,1214027)",
+        "TASKS=('cyp2d6_substrate_carbonmangels','cyp3a4_substrate_carbonmangels',\n       'clearance_hepatocyte_az','clearance_microsome_az','herg','ames','pgp_broccatelli')"
+      ]
+    },
+    {
+      "path": "tools/v123_normalized_rankmap.py",
+      "sha256": "4293e97e5333b3cdc259c68fa997710507b2d487c44e7c87af146d390a62e9d7",
+      "doc": "Correct regularization scale for XGBoost normalized ranking gradients.\n\nv121 rank:map grew zero splits with regression-scale minimum Hessian. This\nbranch uses small Hessian regularization and rejects constant predictions.",
+      "declarations": [
+        "SEEDS=(1234026,1234027)",
+        "TASKS=('cyp2d6_substrate_carbonmangels','cyp3a4_substrate_carbonmangels','herg',\n       'clearance_hepatocyte_az','clearance_microsome_az','pgp_broccatelli')"
+      ]
+    },
+    {
+      "path": "tools/v125_low_task_baseline.py",
+      "sha256": "6879cda4ca27d332673338b94d805da637f52315ea0f85fcaf58d5aea87447d2",
+      "doc": "Task-specific controls for low-scoring tasks carried into v124.",
+      "declarations": [
+        "TASKS=('herg','clearance_hepatocyte_az','cyp3a4_substrate_carbonmangels',\n       'cyp2d6_substrate_carbonmangels','pgp_broccatelli','solubility_aqsoldb')"
+      ]
+    },
+    {
+      "path": "tools/v126_dual_target_clearance.py",
+      "sha256": "aac6f29ee8d406840944cbba456e3c0f9466c0880c646b3cf51b34c778eecee4",
+      "doc": "Low-score hepatocyte and solubility experts, immutable protected tasks.",
+      "declarations": [
+        "SEEDS=(1264026,1264027)",
+        "TASKS=('clearance_hepatocyte_az','solubility_aqsoldb')"
+      ]
+    },
+    {
+      "path": "tools/v134_regression_kernels.py",
+      "sha256": "7676c01c74c1796dfe983f483de06969954de6d2fce3e556114451b64f8053f9",
+      "doc": "Joint molecular and assay kernels for every regression endpoint.",
+      "declarations": [
+        "CONFIGS=tuple(dict(view=view,C=c) for view in ('sum','product') for c in (1.,10.))"
+      ]
+    },
+    {
+      "path": "tools/v149_target_neighbor.py",
+      "sha256": "5695caccd1ee71301cf2e3c731d68b56215956cef003c1fe0cc47923fd8171f0",
+      "doc": "Target assay neighbor and structural experts with honest out-of-fit profiles.",
+      "declarations": [
+        "SEEDS=(1494026,1494027)",
+        "CONFIGS=(dict(depth=3,trees=1200),dict(depth=5,trees=1200))",
+        "METHOD='XGBoost plus target-task neighbor labels from actual fit rows only. Training summaries exclude same molecular identity and scaffold; query uses all fit rows. Two targets/log-rank for Spearman. Official structure/context only.'"
+      ]
+    },
+    {
+      "path": "tools/v153_path_latent_trees.py",
+      "sha256": "f11fd33877e1301d29fbfc402624aeaa0b59f141daed1ac1eb50d5fe132ac3fe",
+      "doc": "Fit-only latent path representations and native multitarget boosted trees.",
+      "declarations": [
+        "SEEDS=(1534026,1534027)",
+        "CONFIGS=(dict(depth=5,trees=1000),)",
+        "METHOD='Fit-only logcount atom-pair/torsion/path SVD96 per view plus supervised prevalent fragments and augmented chemistry/context; CPU CatBoost. Spearman jointly log, rank and ordinal target regression.'"
+      ]
+    },
+    {
+      "path": "tools/v158_multitask_transfer.py",
+      "sha256": "ff7eeb37f121984fc9ec043c200c355229d51a925f14696f16d9d55152bf972f",
+      "doc": "Endpoint-focused pure-structure multitask encoders with no assay covariates.",
+      "declarations": [
+        "SEEDS=(1584026,1584027)",
+        "STEPS=1800",
+        "CONFIGS=(dict(auxiliary=.3),)",
+        "METHOD='Target-focused structure-only shared multitask encoder, auxiliary task-specific heads, balanced sampling and gradient projection to reduce negative transfer. No assay values or historical predictions as inputs. Query scaffolds excluded from all auxiliary task fitting labels. Rank+pairwise Spearman, L1 MAE, BCE+ranking classification. Two seeds, fixed duration.'"
+      ]
+    },
+    {
+      "path": "tools/v159_multitask_transfer.py",
+      "sha256": "e021809dca716be4853bc2fc9a5c4b4a72fbdc5958ec38a10cb493df32e3f6d0",
+      "doc": "Endpoint-focused pure-structure multitask encoders with no assay covariates.",
+      "declarations": [
+        "SEEDS=(1594026,1594027)",
+        "STEPS=1800",
+        "CONFIGS=(dict(auxiliary=.3),)",
+        "METHOD='Target-focused structure-only shared multitask encoder, auxiliary task-specific heads, balanced sampling and gradient projection to reduce negative transfer. No assay values or historical predictions as inputs. Query scaffolds excluded from all auxiliary task fitting labels. Rank+pairwise Spearman, L1 MAE, BCE+ranking classification. Two seeds, fixed duration.'"
+      ]
+    },
+    {
+      "path": "tools/v168_sparse_linear.py",
+      "sha256": "b3f5c6aedfaafa5cb6e371dc7ef2ec0d08ac4b6825e765a9135ff028b5bf6917",
+      "doc": "Fit-only TF-IDF molecular fragments and regularized linear task experts.",
+      "declarations": [
+        "CONFIGS=(dict(strength=1.),dict(strength=10.))",
+        "METHOD='Independent sparse TF-IDF linear fragment experts, five unfolded circular/atom-pair/torsion/path views with equal block normalization; augmented chemistry and target-excluded official context. Fit-only prevalence, IDF and descriptor scaling. Classification uses fit-label NB log-ratios and L2 logistic regression; continuous outcomes use ridge on native MAE or rank target. No historical predictions as features.'"
+      ]
+    },
+    {
+      "path": "tools/v181_quantile_forest.py",
+      "sha256": "b7d1828a0e5802f61edea3e6e23eeb4c8f8cf2bbf3bfc105383a5eba59e4218d",
+      "doc": "Conditional weighted-median forests for MAE endpoints, with fixed gates.",
+      "declarations": [
+        "CONFIGS = (dict(leaf=3, trees=400), dict(leaf=12, trees=400))",
+        "METHOD = ('Quantile ExtraTrees: fit target-specific partitions on allowed augmented chemistry '\n          'and target-excluded official assay context, then predict the weighted median of '\n          'training outcomes under leaf cooccurrence weights. Unlike an average of tree means, '\n          'this explicitly targets MAE. Fit-only imputation; fixed two leaf sizes and baseline blends.')"
+      ]
+    },
+    {
+      "path": "tools/v182_verify_quantile_forest.py",
+      "sha256": "961acc7dfb4822846faaa447d85a609eca8fe714fc4c586e0d75722136791fab",
+      "doc": "Independent weighted-median forest replay and accepted-task assembly.",
+      "declarations": []
+    },
+    {
+      "path": "tools/v183_package_quantile_batch.py",
+      "sha256": "5eca56fc30c4665faec8cc89d5cc4a4ed836861630be58b1554021237b5a72fe",
+      "doc": "Verify and preserve the v181 conditional weighted-median forest route.",
+      "declarations": []
+    },
+    {
+      "path": "tools/v189_leafwise_boosting.py",
+      "sha256": "5639e63484938a8f14e8c23d3dcdd84dd5ebe6dd3f7e58923e4ff7e69e849835",
+      "doc": "New leaf-wise LightGBM experts, selected before fixed confirmation gates.",
+      "declarations": [
+        "SEEDS = (1894026, 1894027)",
+        "CONFIGS = (dict(view='augmented', leaves=7, trees=900, extra=False),\n           dict(view='full', leaves=15, trees=900, extra=True))",
+        "METHOD = ('Deterministic leaf-wise LightGBM, two-seed ensembles. Seven-leaf shape/'\n          'pharmacophore/assay expert and fifteen-leaf randomized-threshold full '\n          'fragment expert. Fit-only constant/duplicate-column pruning, native '\n          'missing values, L1 regression for MAE and rank-normal regression for '\n          'Spearman. All21 improvable endpoints, original v148 gates and blends.')"
+      ]
+    },
+    {
+      "path": "tools/v197_additive_splines.py",
+      "sha256": "ea76946c3287379cd6040de76de0e9ea2fcf066fb53bbfb015432b29fadc146b",
+      "doc": "Smooth additive molecular-response models, fit before frozen confirmation.",
+      "declarations": [
+        "CONFIGS = (dict(strength=.003), dict(strength=.03))",
+        "METHOD = ('New penalized generalized additive B-spline model: fit-only target '\n          'feature screening and correlation pruning, quadratic smooth responses '\n          'at four fit quantiles, missingness indicators, second-difference '\n          'smoothness penalties. Logistic IRLS for classification, rank-normal '\n          'squared regression for Spearman, smooth absolute-error IRLS for MAE. '\n          'Augmented molecular/shape/pharmacophore and target-excluded assay '\n          'features. Two fixed penalties; original v148 gates/blends, all21 '\n          'improvable tasks, no confirmation fallback or historical-prediction inputs.')"
+      ]
+    },
+    {
+      "path": "tools/v200_exact_newton_splines.py",
+      "sha256": "c0f74916220bc00131dc008165e115b85a8d9610433950397bc266af618b8690",
+      "doc": "Exact-Newton numerical repair of the unfinished additive MAE models.",
+      "declarations": [
+        "CONFIGS = (dict(strength=.003), dict(strength=.03))",
+        "TASKS = ('solubility_aqsoldb', 'caco2_wang', 'ppbr_az', 'ld50_zhu',\r\n         'lipophilicity_astrazeneca')",
+        "METHOD = ('Numerical repair of unfinished v197 MAE additive splines: exact '\r\n          'smooth-absolute Hessian instead of the slowly converging IRLS '\r\n          'majorizer. Identical fit-only design, objectives, penalties, blends '\r\n          'and v148 selection/confirmation gates. Only five MAE endpoints; '\r\n          'no hyperparameter search from confirmation or failed task fallback.')"
+      ]
+    },
+    {
+      "path": "tools/v228_v145_honest_correction.py",
+      "sha256": "bc21df8518459fc9b71aa57aad3ac04b3e4567ffff767ec55feb2ab8ba97b8f2",
+      "doc": "Small corrections to exact v145 queries, learned from honest inner scaffold OOF.\n\nThe inner reference is explicitly a surrogate, not reconstructed v145 OOF.\nNo historical proxy, in-sample prediction or previous rejected model is used\nas a correction-training baseline. Query offsets use immutable v145 controls.",
+      "declarations": [
+        "TASKS = ('herg', 'bbb_martins', 'ames', 'clearance_hepatocyte_az',\n         'solubility_aqsoldb', 'pgp_broccatelli')",
+        "SEEDS = (2281029, 2281030)",
+        "CONFIGS = (dict(inner_folds=3, reference_trees=450, correction_trees=250, depth=3),)",
+        "METHOD = ('Targeted incremental correction anchored to exact v145 query predictions. '\n          'Only the six predeclared lowest official endpoints train corrections; '\n          'remaining tasks return identity controls through the original v148 runner. '\n          'Correction fitting offsets come from three newly trained, scaffold-disjoint '\n          'inner OOF reference models, never historical proxies or in-sample fits. '\n          'The reference is a surrogate, not exact v145 OOF. Small bounded residual '\n          'CatBoost updates use base-coordinate, chemistry and target-excluded assays. '\n          'One fixed configuration, two correction seeds; original blends/gates unchanged.')"
+      ]
+    },
+    {
+      "path": "tools/v233_supervised_chemical_similarity.py",
+      "sha256": "6c7abadc74a3d905c0c5d8e8a7e22f05a25606c9cdbcac21e86c29cddee91402",
+      "doc": "Fit-only cross-scaffold supervised multiple-kernel molecular specialists.\n\nUnlike historical fixed sums/products, the similarity geometry is learned\nfrom target covariance between different fitting scaffolds, under nonnegative\nweights. No old model or prediction is used to learn that geometry.",
+      "declarations": [
+        "TASKS = ('herg', 'bbb_martins', 'ames', 'clearance_hepatocyte_az',\n         'solubility_aqsoldb', 'pgp_broccatelli')",
+        "CONFIGS = (dict(C=3., alignment_ridge=.05, landmarks=256),)",
+        "METHOD = ('Cross-scaffold supervised multiple-kernel learning anchored on v145. '\n          'Fifteen PSD channels: six fingerprint generalized Tanimoto mixtures, '\n          'fit-scaled physical and target-excluded assay RBFs, and seven '\n          'chemistry/physical-by-assay Schur products. Nonnegative regularized '\n          'alignment weights fit target covariance only between different '\n          'training scaffolds; then exact SVC/SVR learns the endpoint. '\n          'Six predeclared lowest official v145 endpoints; remaining controls '\n          'identity. No old predictions, fixed original v148 blends/gates.')"
+      ]
+    },
+    {
+      "path": "tools/v238_molecular_view_attention.py",
+      "sha256": "530a5109eab332f4cd35b1c891be57bf784fd016e683d1b58ac7778c49b459a9",
+      "doc": "Endpoint-specific attention between chemical views, an incremental v145 expert.",
+      "declarations": [
+        "TASKS = ('herg', 'bbb_martins', 'ames', 'clearance_hepatocyte_az',\n         'solubility_aqsoldb', 'pgp_broccatelli')",
+        "SEEDS = (2381029, 2381030)",
+        "CONFIGS = (dict(width=64, heads=4, layers=2, epochs=100, minimum_steps=900, maximum_steps=3000),)",
+        "METHOD = ('Endpoint-isolated molecular-view Transformer from scratch. Six count '\n          'fingerprint tokens, physical/shape/pharmacophore token and target-excluded '\n          'measured-assay token interact through two four-head attention layers '\n          'and a learned readout token. Fixed two seeds and step count, no early '\n          'stopping/query scoring, no old models or prediction inputs. Six lowest '\n          'official v145 endpoints only, other controls identity. Final blend with '\n          'v145 and original v148 frozen selection/confirmation unchanged.')"
+      ]
+    },
+    {
+      "path": "tools/v244_conditional_density.py",
+      "sha256": "54416a1cea2ebadb1d8a16d2fa34d02db2f653795cd35a6a9e8a93c4616cf52e",
+      "doc": "Fit-only conditional logistic densities; median of the ensemble for MAE.",
+      "declarations": [
+        "TASKS = ('caco2_wang', 'ppbr_az', 'lipophilicity_astrazeneca')",
+        "SEEDS = (2441029, 2441030)",
+        "CONFIGS = (dict(components=3, epochs=120, minimum_steps=1000, maximum_steps=3500),)",
+        "METHOD = ('Conditional heteroscedastic three-logistic mixture density experts for '\n          'three MAE tasks with viable original scaffold confirmation. Each of two '\n          'fixed-seed networks learns probabilities, locations and scales by '\n          'negative log likelihood. The delivered expert is the median of the '\n          'six-component ensemble CDF, the MAE decision rule; individual medians '\n          'are never averaged. No historical predictions enter training. Fit-only '\n          'chemistry/context transforms, from-scratch models, original v148 '\n          'development/confirmation/blend gates unchanged; other19 tasks protected.')"
+      ]
+    },
+    {
+      "path": "tools/v249_ionization_error_audit.py",
+      "sha256": "d2569c888b9d669feae831c4f267fc471971dcec0854aefafc44a64ff9862c4e",
+      "doc": "Read-only, development-only chemical strata of v145 MAE errors.\n\nSMARTS are broad structural annotations, not measured pKa or assay pH.\nNo model is fitted and no confirmation residual is inspected.",
+      "declarations": [
+        "TASKS = ('caco2_wang', 'ppbr_az', 'lipophilicity_astrazeneca')"
+      ]
+    },
+    {
+      "path": "tools/v250_hierarchical_atom_matching.py",
+      "sha256": "b444023116c4fe09b154332fe127447b3e73a87b6250142e0bd7b34843eba15b",
+      "doc": "Fit-only hierarchical atom-environment histogram-intersection kernels.\n\nThe threshold lift gives exact multiset intersections (minimum counts), not\ncount dot products/Tanimoto. No historical predictions enter the new model.",
+      "declarations": [
+        "TASKS = ('herg', 'clearance_hepatocyte_az', 'caco2_wang', 'ppbr_az',\n         'lipophilicity_astrazeneca')",
+        "CONFIGS = (dict(C=3., levels=4),)",
+        "METHOD = ('Hierarchical atom-environment multiset matching: exact SHA256 WL '\n          'refinement levels0..3, with atom chemistry and edge labels. Fitting-only '\n          'environment vocabulary, count thresholds and document-frequency weights '\n          'define an explicit nonnegative threshold lift. Its inner product is '\n          'rarity-weighted histogram intersection, hence a PSD optimal-assignment '\n          'style matching kernel, rather than count Tanimoto. Equal normalized '\n          'depth kernels plus fixed physical/target-excluded context RBF channels. '\n          'Exact SVC/SVR, one declared C, no prior models/prediction inputs, five '\n          'eligible v145 endpoints. Original v148 selection/blends/gates unchanged.')"
+      ]
+    },
+    {
+      "path": "tools/v256_exposed_polarity.py",
+      "sha256": "3a494713c4c9438512bcbf1778c756491b83350134d911f1651c51d3052eda11",
+      "doc": "Conformer-resolved solvent exposure experts for three v145 MAE endpoints.\n\nNew geometry is separate from earlier global shape descriptors: exposed polar\nand charged surface, distant donor/acceptor contacts and conformer variability.\nNo historical predictor is a training input. Original v148 gates are unchanged.",
+      "declarations": [
+        "TASKS = ('caco2_wang', 'ppbr_az', 'lipophilicity_astrazeneca')",
+        "SEEDS = (2561029, 2561030)",
+        "CONFIGS = (dict(trees=700, depth=4),)",
+        "METHOD = ('Conformer-resolved solvent exposure: original full graph, canonical structure-derived '\n          'ETKDG seed,6conformers/MMFF94-or-UFF150steps. Atom solvent-accessible surface with '\n          'RDKit FreeSASA and van der Waals radii; polar/donor/acceptor/charged exposed areas, '\n          'long-range donor/acceptor distance contacts and centroid-relative charge moment. '\n          'Energy-weighted mean/sd and min/max, explicit missingness for unsupported structures. '\n          'Small plain CatBoost MAE expert on new exposure plus original physicochemistry and '\n          'target-excluded measured context; no old predictions or global-shape input. '\n          'Only Caco2/PPBR/lipophilicity,19protected tasks. One fixed config,2seeds, '\n          'unchanged original v148 development/blends/confirmation.')"
+      ]
+    },
+    {
+      "path": "tools/v264_replicate_noise_gp.py",
+      "sha256": "39fbb337cd04e8368bf4ac6fef715b3255743b225a1995621d5ba4adc4ffd822",
+      "doc": "Replicate-calibrated observation noise for two v145 endpoints.\n\nFit-only exact original-SMILES replicates define a variance model, rather than\ninverse identity-count risk weights. Raw labels are preserved. Gaussian group\nmeans have their own uncertainty; fit marginal likelihood calibrates the signal\nand extra noise. Existing structure/context kernels are deliberately reused.",
+      "declarations": [
+        "TASKS = ('ppbr_az', 'clearance_hepatocyte_az')",
+        "CONFIGS = (dict(prior_df=5., max_iterations=60),)",
+        "METHOD = ('Exact-original-structure replicate-calibrated Gaussian process for PPBR '\n          'and hepatocyte clearance. Fit-only replicate within-group scatter is '\n          'shrunk with five pooled-variance degrees of freedom. Group means enter '\n          'with estimated observation variance divided by count, not equal '\n          'certainty or inverse-count risk weights. Signal amplitude and extra '\n          'observation variance are calibrated by bounded marginal likelihood '\n          'from a single deterministic initialization. Existing six Tanimoto '\n          'views plus fit-transformed physical/context PSD kernels; no new '\n          'feature novelty claim, historical predictions or query-label inputs. '\n          'Raw PPBR and log1p clearance; posterior median, PPBR legal clipping. '\n          'Original v148 choice, blends and all confirmation gates unchanged.')"
+      ]
+    },
+    {
+      "path": "tools/v271_clearance_innovations.py",
+      "sha256": "2ccc5e91e9ecb32b0f3ce4082689a702adcf2e8a12478c47dfdbefbaee1bf9a4",
+      "doc": "Cross-fitted conditional innovations between two clearance measurements.\n\nThis tests a conditional observation mechanism, not another architecture or\nparameter retry. Molecular reference models deliberately use existing kernels.\nThe observed other-assay residual conditions the target through a covariance\nestimated from scaffold OOF residuals inside the outer fitting partition.",
+      "declarations": [
+        "TASKS = ('clearance_hepatocyte_az', 'clearance_microsome_az')",
+        "CONFIGS = (dict(inner_folds=3, ridge=.3, covariance_prior=20.),)",
+        "METHOD = ('Two-clearance conditional innovation transfer. Existing structure-only '\n          'six fingerprint Tanimoto/physical RBF reference regressors fit log1p '\n          'clearance. Three inner scaffold OOF partitions produce target and '\n          'other-assay residuals; a shrunk covariance conditions target prediction '\n          'on measured other-clearance innovation. Missing other measurements '\n          'give zero innovation. Raw observed other assays follow the original '\n          'target-excluded permitted context; other-reference labels also exclude '\n          'query scaffolds, and all inner held-out scaffolds. No old model, old '\n          'prediction or supposed exact v145 training OOF. Deterministic fixed '\n          'ridge and covariance prior, no alternate fit after confirmation. '\n          'Original v148 choice, blends and confirmation gates unchanged.')"
+      ]
+    },
+    {
+      "path": "tools/v272_verify_clearance_innovations.py",
+      "sha256": "6de1789cb55a03c9983d1d18a2d010d69adc83c3d46a845affe3e562e53e3565",
+      "doc": "Independent clearance innovations weight and model reload and accepted-task assembly.",
+      "declarations": []
+    },
+    {
+      "path": "tools/v273_package_innovations.py",
+      "sha256": "1678713939e7c43cdf073138286df6d0bc349a1428734198bd40cf6ffde54d1c",
+      "doc": "Verify and preserve the distinct v271 clearance innovations route.",
+      "declarations": []
+    },
+    {
+      "path": "tools/v279_verify_v145_leaf_refit.py",
+      "sha256": "8286b8aea46e3fcb4896b0d97fa48fba240f9842aa40c2acb87571e1739d6965",
+      "doc": "Independent clearance innovations weight and model reload and accepted-task assembly.",
+      "declarations": []
+    },
+    {
+      "path": "tools/v280_package_leaf_refit.py",
+      "sha256": "312b2853cf48b39e03e9443057917b0d3f6d1e27b90dcf41d28bbd996ede6edf",
+      "doc": "Verify and preserve the distinct v278 clearance innovations route.",
+      "declarations": []
+    },
+    {
+      "path": "tools/v284_stereo_context_repair.py",
+      "sha256": "3f7f111a75053710369247e89cf835fa2567fceaf8e54a7c2a3187350582df91",
+      "doc": "Repair stereochemical assay pooling in the actual v145 v127 components.\n\nKeep the original estimator, seeds, training rows, physical features and blend.\nOnly other-assay identity keys retain stereochemistry. No target label or mask\nis an input, and historical proxy predictions are never fitting offsets.",
+      "declarations": [
+        "TASKS = ('herg', 'cyp3a4_substrate_carbonmangels')",
+        "CONFIGS = (dict(identity='isomeric_exact_and_neutral'),)",
+        "SEEDS = original.SEEDS",
+        "METHOD = ('Direct input-identity repair of the actual v145 v127/physchem components. '\n    'Other-assay exact and neutral-parent identities now retain stereochemistry; '\n    'separate medians, masks and neutral ranges, unchanged column order. Original '\n    '900depth4 CatBoost Logloss, seeds1274026/1274027, lr.025,l2=30, Bernoulli.85, '\n    'border64,GPU, physical features and .5 component rank blend preserved. '\n    'Fit-only audit supports hERG/CYP3A4 substrate; CYP2D6 excluded by declared '\n    'coverage rule. No new architecture, sweep, proxy fitting offsets, failed '\n    'expert predictions, or altered labels/splits. Other20endpoints protected; '\n    '19runner identity controls/HIA excluded. Unchanged v148 gates and weights.')"
+      ]
+    },
+    {
+      "path": "tools/v289_stereo_schema_fix.py",
+      "sha256": "a3fdc68e3bf83964c9b24f6c717869296a0527fdbdd8be857f2db7a0c75bc37b",
+      "doc": "Repair stereochemical assay pooling in the actual v145 v127 components.\n\nKeep the original estimator, seeds, training rows, physical features and blend.\nOnly other-assay identity keys retain stereochemistry. No target label or mask\nis an input, and historical proxy predictions are never fitting offsets.",
+      "declarations": [
+        "TASKS = ('herg', 'cyp3a4_substrate_carbonmangels')",
+        "CONFIGS = (dict(identity='isomeric_exact_and_neutral'),)",
+        "SEEDS = original.SEEDS",
+        "METHOD = ('Direct input-identity repair of the actual v145 v127/physchem components. '\r\n    'Other-assay exact and neutral-parent identities now retain stereochemistry; '\r\n    'separate medians, masks and neutral ranges, unchanged column order. Original '\r\n    '900depth4 CatBoost Logloss, seeds1274026/1274027, lr.025,l2=30, Bernoulli.85, '\r\n    'border64,GPU, physical features and .5 component rank blend preserved. '\r\n    'Corrects proven v284 63-column legacy-context retention defect only; original 540-column layout enforced. '\r\n    'coverage rule. No new architecture, sweep, proxy fitting offsets, failed '\r\n    'expert predictions, or altered labels/splits. Other20endpoints protected; '\r\n    '19runner identity controls/HIA excluded. Unchanged v148 gates and weights.')"
+      ]
+    },
+    {
+      "path": "tools/v295_v145_context_integration.py",
+      "sha256": "ad85ba0a40593fadc81350b081a9c8a0511e734c849b74a564badb1d66397fbc",
+      "doc": "Empirical-context integration in immutable v145 component checkpoints.\n\nThis optimizes inference of actual v145 models, without fitting a new model,\nchanging trees, seeds, identities, labels, or using rejected expert outputs.",
+      "declarations": [
+        "TASKS=('herg','cyp3a4_substrate_carbonmangels')",
+        "CONFIGS=(dict(integration_points=16,rule='unscrambled_sobol_empirical_marginals'),)",
+        "SEEDS=original.SEEDS",
+        "METHOD=('Integrate existing actualv145v127physchem checkpoints over empirical permitted '\n 'other-assay replicate measurements instead of a single median.16 deterministic Sobol '\n 'product-marginal inputstates; original identities, masks, neutral spreads and physical '\n 'descriptors unchanged. Mean rawlogits over16states and2originalmodels then sigmoid. '\n 'Original.5 component rankblend, originalv148.2/.45 taskblend and gates. '\n 'No newmodels/trees/seeds/training, no label/prediction offsets, no failedexpert reuse. '\n 'Fit-only contextreplicate audit supports2tasks;20protected endpoints,19runnercontrols/HIAexcluded.')"
+      ]
+    },
+    {
+      "path": "tools/v297_pair_delta_regression.py",
+      "sha256": "a8aac34589f20e2678e2cb7a8faeeefe234c4cfc875c7452b8bb927139a60009",
+      "doc": "Scaffold-excluded molecular difference learning for the five MAE endpoints.\n\nOnly official fit labels train pair differences. Query prediction is a weighted\nmedian of fit anchors plus antisymmetric learned molecular differences. This\nis a new expert blended with immutable v145 controls by the unchanged runner.",
+      "declarations": [
+        "TASKS = (\"caco2_wang\", \"ppbr_az\", \"lipophilicity_astrazeneca\", \"ld50_zhu\", \"solubility_aqsoldb\")",
+        "SEEDS = (2971101, 2971102)",
+        "CONFIGS = (dict(neighbors=8, fingerprint_columns=256, trees=700, depth=5),)",
+        "METHOD = (\n    \"Official-only pair-difference regression for all five MAE endpoints. \"\n    \"Eight nearest fit molecular anchors by count Tanimoto; fit pairs exclude \"\n    \"same canonical identity and scaffold. Original physchem and target-excluded \"\n    \"other-assay inputs plus 256 fit-variance-selected count columns. Fit-only \"\n    \"median/IQR transforms; directed difference and midpoint features, symmetric \"\n    \"pair targets, two fixed CatBoost MAE seeds. Antisymmetric pair predictions \"\n    \"plus observed fit anchor labels, similarity^4 weighted median aggregation. \"\n    \"No query target labels, historical prediction fitting offsets, external \"\n    \"data, or previous rejected experts. Single configuration; original v148 \"\n    \"weights, splits, selection and scaffold confirmation unchanged.\"\n)"
+      ]
+    },
+    {
+      "path": "tools/v299_distributional_trees.py",
+      "sha256": "c61ea83bf3f97f9fdf65538f8e50846951e9ce6ab72b63fd8609e9cb62503aa6",
+      "doc": "Fit-only adaptive histogram trees; ensemble-distribution medians for MAE.",
+      "declarations": [
+        "TASKS = (\"caco2_wang\", \"ppbr_az\", \"lipophilicity_astrazeneca\", \"ld50_zhu\", \"solubility_aqsoldb\")",
+        "CONFIGS = (dict(bins=24, trees=700, depth=5, fingerprint_columns=512),)",
+        "SEEDS = (2991101, 2991102)",
+        "METHOD = (\n    \"Official-only adaptive histogram conditional-distribution trees for five MAE tasks. \"\n    \"24 fit-quantile target cells with duplicate/empty cells removed. CatBoost MultiClass \"\n    \"proper log-loss learns categorical conditional probabilities using augmented chemistry, \"\n    \"target-excluded other assays, and 512 fit-variance-selected count features. Feature \"\n    \"winsorization at fit-only .005/.995 quantiles; native missingness. Average two fixed-seed \"\n    \"probability distributions and invert their CDF using the empirical fit outcome quantile \"\n    \"inside the selected cell. No query labels define bins or transformations. Unlike v115 \"\n    \"ordinal clearance ranking or v181 squared-loss forest leaf neighborhoods, this fits a \"\n    \"categorical conditional density and targets its ensemble median for raw MAE. No neural \"\n    \"location-scale mixture, molecular pair differences, historical prediction training inputs, \"\n    \"external training data, or changes to v145/v148 splits, weights or confirmation gates.\"\n)"
+      ]
+    },
+    {
+      "path": "tools/v301_piecewise_batch_ensemble.preflight1.py",
+      "sha256": "8b478919629e5642baa41f17072e228fce72671d881ecb1e5508ea2db7fe1cfe",
+      "doc": "From-scratch piecewise numeric embeddings with shared-weight neural ensembles.",
+      "declarations": [
+        "TASKS = (\"caco2_wang\", \"ppbr_az\", \"lipophilicity_astrazeneca\", \"ld50_zhu\", \"solubility_aqsoldb\")",
+        "CONFIGS = (dict(members=8, width=192, blocks=3, bins=8, epochs=100, minimum_steps=1200, maximum_steps=3000),)",
+        "SEEDS = (3011101, 3011102)",
+        "METHOD = (\n    \"From-scratch shared-weight eight-member neural ensembles for five MAE tasks. \"\n    \"Fit-quantile piecewise linear numeric embedding (8 cells), missing indicators \"\n    \"and clipped fit-IQR scalars encode augmented physicochemistry/shape and target-excluded \"\n    \"official context. Six archived count fingerprint blocks are independently L2-normalized. \"\n    \"Each linear layer has a shared matrix and member-specific learned input/output scalings \"\n    \"initialized by random signs; independent per-member biases and dropout, residual blocks. \"\n    \"Each member is trained on raw MAE; average eight members and two fixed seeds at inference. \"\n    \"No pretrained parameters, external observations, previous predictions as inputs, model \"\n    \"selection on query labels or variable training duration. Original v148 gates unchanged.\"\n)"
+      ]
+    },
+    {
+      "path": "tools/v301_piecewise_batch_ensemble.py",
+      "sha256": "d162d857415b62f46274c36df3758fb8c64d6ae2f2b614fea1756f616cbe4c0f",
+      "doc": "From-scratch piecewise numeric embeddings with shared-weight neural ensembles.",
+      "declarations": [
+        "TASKS = (\"caco2_wang\", \"ppbr_az\", \"lipophilicity_astrazeneca\", \"ld50_zhu\", \"solubility_aqsoldb\")",
+        "CONFIGS = (dict(members=8, width=192, blocks=3, bins=8, epochs=100, minimum_steps=1200, maximum_steps=3000),)",
+        "SEEDS = (3011101, 3011102)",
+        "METHOD = (\n    \"From-scratch shared-weight eight-member neural ensembles for five MAE tasks. \"\n    \"Fit-quantile piecewise linear numeric embedding (8 cells), missing indicators \"\n    \"and clipped fit-IQR scalars encode augmented physicochemistry/shape and target-excluded \"\n    \"official context. Six archived count fingerprint blocks are independently L2-normalized. \"\n    \"Each linear layer has a shared matrix and member-specific learned input/output scalings \"\n    \"initialized by random signs; independent per-member biases and dropout, residual blocks. \"\n    \"Each member is trained on raw MAE; average eight members and two fixed seeds at inference. \"\n    \"No pretrained parameters, external observations, previous predictions as inputs, model \"\n    \"selection on query labels or variable training duration. Original v148 gates unchanged.\"\n)"
+      ]
+    },
+    {
+      "path": "tools/v304_learned_label_retrieval.preflight1.py",
+      "sha256": "df05f498485b0810d4c6dd72efd4ec682ef3bbe6d65e2eb5f09e8f43064ddd89",
+      "doc": "Learned molecular retrieval over scaffold-disjoint official fitting labels.",
+      "declarations": [
+        "TASKS = (\"caco2_wang\", \"ppbr_az\", \"lipophilicity_astrazeneca\", \"ld50_zhu\", \"solubility_aqsoldb\")",
+        "CONFIGS = (dict(neighbors=24, width=128, key_width=32, bins=8, epochs=100, minimum_steps=1200, maximum_steps=2500),)",
+        "SEEDS = (3041101, 3041102)",
+        "METHOD = (\n    \"Train-from-scratch label-context retrieval for five MAE tasks. Candidate pools of 24 \"\n    \"nearest count-Tanimoto fit molecules always exclude identical canonical identities and \"\n    \"scaffolds, for both fit and query. Numeric piecewise fit-quantile embeddings plus six \"\n    \"fixed structure-only random fingerprint projections encode each molecule. Learned \"\n    \"key-distance attention with a fixed count-similarity prior selects context observations. \"\n    \"Context values contain a learned embedding of actual current fit labels plus a learned \"\n    \"key-difference representation. Their weighted representation and an explicit weighted \"\n    \"fit-label mean feed a residual property head. Context label dropout regularizes reliance \"\n    \"on sparse support; two fixed seeds, direct MAE training. No pair-difference targets, \"\n    \"precomputed label summaries, shared-layer ensemble, old predictions, external or \"\n    \"pretrained data. All retrieval labels originate in the current fit rows. Original \"\n    \"v148 splits, selection, blends and confirmation unchanged.\"\n)"
+      ]
+    },
+    {
+      "path": "tools/v304_learned_label_retrieval.py",
+      "sha256": "76c5b91336521105b62fe2556965f6c4c7d26d85adaec41049ec7902b5dd3bd0",
+      "doc": "Learned molecular retrieval over scaffold-disjoint official fitting labels.",
+      "declarations": [
+        "TASKS = (\"caco2_wang\", \"ppbr_az\", \"lipophilicity_astrazeneca\", \"ld50_zhu\", \"solubility_aqsoldb\")",
+        "CONFIGS = (dict(neighbors=24, width=128, key_width=32, bins=8, epochs=100, minimum_steps=1200, maximum_steps=2500),)",
+        "SEEDS = (3041101, 3041102)",
+        "METHOD = (\n    \"Train-from-scratch label-context retrieval for five MAE tasks. Candidate pools of 24 \"\n    \"nearest count-Tanimoto fit molecules always exclude identical canonical identities and \"\n    \"scaffolds, for both fit and query. Numeric piecewise fit-quantile embeddings plus six \"\n    \"fixed structure-only random fingerprint projections encode each molecule. Learned \"\n    \"key-distance attention with a fixed count-similarity prior selects context observations. \"\n    \"Context values contain a learned embedding of actual current fit labels plus a learned \"\n    \"key-difference representation. Their weighted representation and an explicit weighted \"\n    \"fit-label mean feed a residual property head. Context label dropout regularizes reliance \"\n    \"on sparse support; two fixed seeds, direct MAE training. No pair-difference targets, \"\n    \"precomputed label summaries, shared-layer ensemble, old predictions, external or \"\n    \"pretrained data. All retrieval labels originate in the current fit rows. Original \"\n    \"v148 splits, selection, blends and confirmation unchanged.\"\n)"
+      ]
+    },
+    {
+      "path": "tools/v307_differentiable_trees.py",
+      "sha256": "8ef672e43b667b5aae6adea5156351a8b1f62976489ed43dbaddee25dfede273",
+      "doc": "Jointly optimized sparse feature selectors, soft thresholds and tree leaves.",
+      "declarations": [
+        "TASKS = (\"caco2_wang\", \"ppbr_az\", \"lipophilicity_astrazeneca\", \"ld50_zhu\", \"solubility_aqsoldb\")",
+        "CONFIGS = (dict(trees=64, depth=5, fingerprint_columns=512, quantiles=32,\n                epochs=100, minimum_steps=1200, maximum_steps=2500),)",
+        "SEEDS = (3071101, 3071102)",
+        "METHOD = (\n    \"Jointly differentiable oblivious-tree ensemble for five MAE endpoints. \"\n    \"Each of 64 depth5 trees learns sparse entmax1.5 feature selectors at each \"\n    \"level, sigmoid thresholds/temperatures and 32 leaf values jointly with raw \"\n    \"MAE, rather than greedy gradient boosting or a frozen topology refit. \"\n    \"Inputs are 512 fit-variance-selected archived count fingerprint columns, \"\n    \"official physicochemical/shape descriptors and target-excluded measured \"\n    \"context, transformed by fit-only empirical quantiles and missing indicators. \"\n    \"Fit-only projected-feature quantiles initialize thresholds/scales. Two fixed \"\n    \"seeds, fixed training duration, tree dropout; no old predictions, retrieved \"\n    \"target labels, external data or pretrained weights. Original v148 unchanged.\"\n)"
+      ]
+    },
+    {
+      "path": "tools/v310_stable_differentiable_trees.py",
+      "sha256": "ad03270a63f689c589467315edf8732c5f5760b05684c72d076ea038eb034506",
+      "doc": "Jointly optimized sparse feature selectors, soft thresholds and tree leaves.",
+      "declarations": [
+        "TASKS = (\"caco2_wang\", \"ppbr_az\", \"lipophilicity_astrazeneca\", \"ld50_zhu\", \"solubility_aqsoldb\")",
+        "CONFIGS = (dict(trees=64, depth=5, fingerprint_columns=512, quantiles=32,\n                epochs=100, minimum_steps=1200, maximum_steps=2500),)",
+        "SEEDS = (3071101, 3071102)",
+        "METHOD = (\n    \"Jointly differentiable oblivious-tree ensemble for five MAE endpoints. \"\n    \"Each of 64 depth5 trees learns sparse entmax1.5 feature selectors at each \"\n    \"level, sigmoid thresholds/temperatures and 32 leaf values jointly with raw \"\n    \"MAE, rather than greedy gradient boosting or a frozen topology refit. \"\n    \"Inputs are 512 fit-variance-selected archived count fingerprint columns, \"\n    \"official physicochemical/shape descriptors and target-excluded measured \"\n    \"context, transformed by fit-only empirical quantiles and missing indicators. \"\n    \"Fit-only projected-feature quantiles initialize thresholds/scales. Two fixed \"\n    \"seeds, fixed training duration, tree dropout; no old predictions, retrieved \"\n    \"target labels, external data or pretrained weights. Original v148 unchanged.\"\n)"
+      ]
+    },
+    {
+      "path": "tools/v315_rank_label_retrieval.py",
+      "sha256": "329a2ddc45acaaeabe5558761fc8041bacc879ad4cff13143483ba2e986e4737",
+      "doc": "Scaffold-disjoint label-context attention for rank and classification endpoints.",
+      "declarations": [
+        "TASKS = (\"herg\", \"clearance_hepatocyte_az\", \"clearance_microsome_az\", \"half_life_obach\",\n         \"vdss_lombardo\", \"cyp2c9_substrate_carbonmangels\", \"cyp2d6_substrate_carbonmangels\",\n         \"cyp3a4_substrate_carbonmangels\")",
+        "CONFIGS = (dict(neighbors=24, width=128, key_width=32, bins=8, epochs=100, minimum_steps=1200, maximum_steps=2500),)",
+        "SEEDS = (3041101, 3041102)",
+        "METHOD = (\n    \"Train-from-scratch label-context retrieval for four Spearman endpoints and hERG/three CYP substrate \"\n    \"classification endpoints, incremental to exact v313 two-task update. Spearman uses fit-only \"\n    \"rank-normal targets with squared loss plus .25 pairwise rank loss; classification uses \"\n    \"binary fit-label context, fit-prevalence intercept and BCE plus .25 positive-negative pair loss. \"\n    \"Candidate pools of 24 \"\n    \"nearest count-Tanimoto fit molecules always exclude identical canonical identities and \"\n    \"scaffolds, for both fit and query. Numeric piecewise fit-quantile embeddings plus six \"\n    \"fixed structure-only random fingerprint projections encode each molecule. Learned \"\n    \"key-distance attention with a fixed count-similarity prior selects context observations. \"\n    \"Context values contain a learned embedding of actual current fit labels plus a learned \"\n    \"key-difference representation. Their weighted representation and an explicit weighted \"\n    \"fit-label mean feed a residual property head. Context label dropout regularizes reliance \"\n    \"on sparse support; same two predetermined v304 seeds and architecture. No pair-difference targets, \"\n    \"precomputed label summaries, shared-layer ensemble, old predictions, external or \"\n    \"pretrained data. All retrieval labels originate in the current fit rows. Original \"\n    \"v148 splits, selection, blends and confirmation algorithm unchanged; its separate adapter uses v313 baseline.\"\n)"
+      ]
+    },
+    {
+      "path": "tools/v318_neural_tangent_regression.py",
+      "sha256": "dd648d2e7eee6ec0cf0cb997a5162fb51a8ebc4a967d81276b76fe714873198a",
+      "doc": "Analytic infinite-width ReLU neural tangent kernel for official MAE tasks.",
+      "declarations": [
+        "TASKS = (\"caco2_wang\", \"ppbr_az\", \"lipophilicity_astrazeneca\", \"ld50_zhu\", \"solubility_aqsoldb\")",
+        "CONFIGS = (dict(depth=3, C=10., epsilon=.03, fingerprint_weight=.65, input_bias=.1),)",
+        "METHOD = (\n    \"Analytic infinite-width depth-three ReLU neural tangent kernel with epsilon-insensitive \"\n    \"SVR for the five official MAE tasks, incremental to v313. Six archived count-fingerprint \"\n    \"cosine blocks receive total covariance weight .65; robust fit-only median/IQR numeric \"\n    \"and target-excluded other-assay inputs receive .35, with explicit missingness. \"\n    \"Normalize each modality by row, add fixed .1 input bias, use exact normalized ReLU \"\n    \"covariance and tangent recursion. Fixed C10 and epsilon .03 on fit median/IQR targets. \"\n    \"No finite neural training, Tanimoto/RBF kernel tuning, stochastic seeds, external \"\n    \"data, pretrained models or old predictions as fitted features. Original v148 splits, \"\n    \"blends, development selection and scaffold confirmation via unchanged v314 adapter.\"\n)"
+      ]
+    },
+    {
+      "path": "tools/v324_scaffold_manifold_mixup.py",
+      "sha256": "209f1a093815b58116d7523b5ca382177830c146d5b9207287824e7b06cff87c",
+      "doc": "Cross-scaffold hidden-representation mixup for overfitting classifiers.",
+      "declarations": [
+        "TASKS = (\"herg\", \"cyp2c9_substrate_carbonmangels\", \"cyp2d6_substrate_carbonmangels\")",
+        "CONFIGS = (dict(neighbors=24, width=128, key_width=32, bins=8, epochs=100,\n                minimum_steps=1200, maximum_steps=2500, mixup_alpha=.4),)",
+        "SEEDS = original.SEEDS",
+        "METHOD = (\n    \"Cross-scaffold manifold mixup on label-context retrieval representations for three \"\n    \"classification tasks with observed interpolation overfit. Identical v315 encoder, \"\n    \"attention, fit-label retrieval, seeds and duration; a new training mechanism mixes \"\n    \"the query/context hidden vector and weighted label mean with a different-scaffold \"\n    \"fit batch partner, Beta(.4,.4) coefficients and convex soft binary targets. Equal \"\n    \"ordinary/mixed BCE plus .25 original positive-negative rank loss. No mixing of \"\n    \"validation/query labels or query-fitted transforms. No cyp3a4 retrial or changes to \"\n    \"the existing two MAE improvements. Original v148/v314 selection and confirmation.\"\n)"
+      ]
+    },
+    {
+      "path": "tools/v328_record_v321_feedback.py",
+      "sha256": "87ce5fb4ce158909d4dc1bf0796158f9a7822d0abbb69379be79be87e1338d1d",
+      "doc": "Record user-reported v321 regression and independently audit changed CSV bytes.",
+      "declarations": []
+    },
+    {
+      "path": "tools/v329_sharpness_retrieval.py",
+      "sha256": "55975e65e18ef4b13cb3c663bef3db664e3e59fb8898efeec086870d2e078cae",
+      "doc": "Sharpness-aware optimization of scaffold-excluded label retrieval for MAE.",
+      "declarations": [
+        "TASKS = original.TASKS",
+        "CONFIGS = (dict(**original.CONFIGS[0], sam_radius=.05),)",
+        "SEEDS = original.SEEDS",
+        "METHOD = (\n    \"Sharpness-aware minimization (SAM) for five MAE endpoints, incremental to exact v313. \"\n    \"Same original v304 retrieval architecture, scaffold/identity-excluded fit label context, \"\n    \"data transforms, seeds, learning rate and optimizer update count. A new two-evaluation \"\n    \"minimax training objective: compute fit MAE gradient, add radius0.05 L2-normalized \"\n    \"weight perturbation, recompute MAE with identical dropout/context masks, restore \"\n    \"the exact original weights and take one AdamW step with the perturbed gradient. \"\n    \"Weights restored by copy, never subtractive rounding. Same two fixed seeds, no \"\n    \"old-model initialization, final checkpoint and no query-label stopping. Original \"\n    \"v148/v314 selection, splits, blends and scaffold bootstrap unchanged.\"\n)"
+      ]
+    },
+    {
+      "path": "tools/v364_graph_transformer.py",
+      "sha256": "623ad0bbf70d49e161ea6a87b29f46afeb1ee24d16c2e42901b52bf9ca7c97a1",
+      "doc": "Stage1: fold-safe atom/bond Transformer, remote CUDA training only.\n\nThe learner sees only official fitting rows. Existing controls remain proxies\nwhere original complete historical OOF is unavailable. No external weights.",
+      "declarations": [
+        "TASKS=('caco2_wang','clearance_hepatocyte_az','cyp2d6_veith','herg','lipophilicity_astrazeneca','solubility_aqsoldb')",
+        "SEEDS=(3641105,3641106)",
+        "CONFIG=dict(layers=6,width=192,heads=6,dropout=.15,adapter_rank=8,pretrain_steps=1600,\n            pretrain_batch=64,finetune_min_steps=700,finetune_max_steps=1600,\n            finetune_epochs=65,finetune_batch=64,lr=.0004,weight_decay=.02)"
+      ]
+    },
+    {
+      "path": "tools/v364_prepare_stage1.py",
+      "sha256": "4ab7cbec8ca77bc1dcd86a40a2406adbb89dbd196e98b83837467906979d634c",
+      "doc": "Package current v361 controls and official data for remote Transformer work.",
+      "declarations": [
+        "TASKS=('caco2_wang','clearance_hepatocyte_az','cyp2d6_veith','herg','lipophilicity_astrazeneca','solubility_aqsoldb')"
+      ]
+    },
+    {
+      "path": "tools/v368_graph_transformer.py",
+      "sha256": "e1c03c45ab33abbe78d7a3863bb6472ad5f701cecd08fe8f90e04a481594d389",
+      "doc": "Stage three: four new endpoint experts on the user-designated CUDA server.",
+      "declarations": [
+        "TASKS = ('ames', 'clearance_microsome_az', 'half_life_obach', 'vdss_lombardo')"
+      ]
+    },
+    {
+      "path": "tools/v368_prepare_stage3.py",
+      "sha256": "227252f8627ec3f232f71e653b1310e16bd5d4148358efa050ad09bd8f9bb6ef",
+      "doc": "Prepare immutable official-only inputs; no training on the local computer.",
+      "declarations": [
+        "TASKS = ('ames', 'clearance_microsome_az', 'half_life_obach', 'vdss_lombardo')"
+      ]
+    },
+    {
+      "path": "tools/v370_score_scenarios.py",
+      "sha256": "88f57df770c3aff03d502af335fbe18eacf36469451b171a54971c5c8d7dc8b3",
+      "doc": "Conditional MAE scoring arithmetic, explicitly not a performance forecast.",
+      "declarations": []
+    },
+    {
+      "path": "tools/v371_mae_experts.py",
+      "sha256": "64ba5ff605f3a71b0065817e7d99ffb27cdede65baf218296e1bb1159c09020f",
+      "doc": "Five independent MAE specialists: median kernels, quantile trees, honest local corrections.",
+      "declarations": [
+        "TASKS=('caco2_wang','ld50_zhu','lipophilicity_astrazeneca','ppbr_az','solubility_aqsoldb')",
+        "SEEDS=(3711106,3711107)",
+        "CONFIGS=(\n dict(name='median_kernel_C3',family='kernel',C=3.,epsilon=.03),\n dict(name='median_kernel_C30',family='kernel',C=30.,epsilon=.03),\n dict(name='quantile_d3',family='tree',depth=3,prior=False),\n dict(name='quantile_d6',family='tree',depth=6,prior=False),\n dict(name='physical_quantile_d3',family='tree',depth=3,prior=True),\n dict(name='physical_quantile_d6',family='tree',depth=6,prior=True),\n dict(name='crossfit_local_median',family='local',ridge=.3,neighbors=32,shrink=.5))"
+      ]
+    },
+    {
+      "path": "tools/v371_prepare_experts.py",
+      "sha256": "38465c67859f183090def2c78ddd9ebcfae79c6ed586ec20662ac52c78489934",
+      "doc": "Prepare task-specific MAE experts; local CPU packaging only, no fitting.",
+      "declarations": [
+        "TASKS=('caco2_wang','ld50_zhu','lipophilicity_astrazeneca','ppbr_az','solubility_aqsoldb')"
+      ]
+    },
+    {
+      "path": "tools/v372_crossfit_experts.py",
+      "sha256": "c99f7a36c3a755079e5300bbe2c3b243a43d3d9e41c5befd5b7002eb2a9ac583",
+      "doc": "Remote-only fit-nested MAE experts and convex/global-property stackers.",
+      "declarations": [
+        "TASKS=shared.TASKS",
+        "CONFIGS=(dict(name='convex_mae_stack',family='stack',gate=False),\n         dict(name='property_gated_mae_stack',family='stack',gate=True))",
+        "BUDGET={'caco2_wang':650,'ld50_zhu':900,'lipophilicity_astrazeneca':900,'ppbr_az':800,'solubility_aqsoldb':1100}"
+      ]
+    },
+    {
+      "path": "tools/v374_specialists.py",
+      "sha256": "b44558fd23681954ed4832d812174b192f2a130dfa1de7babc109180e55a5fae",
+      "doc": "Remote-only MAE experts: alternative similarity, replicate weighting, honest residuals.",
+      "declarations": [
+        "TASKS=shared.TASKS",
+        "CONFIGS=tuple([dict(name=f'{v}_C{int(c)}',family='kernel',view=v,C=c,weighted=False) for v in ('raw_count','raw_circular','binary_circular') for c in (3.,30.)]\n    +[dict(name=f'replicate_weighted_C{int(c)}',family='kernel',view='raw_count',C=c,weighted=True) for c in (3.,30.)]\n    +[dict(name=f'honest_local_k{k}',family='residual',neighbors=k,tree=False) for k in (16,64)]\n    +[dict(name=f'honest_residual_tree_d{k}',family='residual',depth=k,tree=True) for k in (2,4)])"
+      ]
+    },
+    {
+      "path": "tools/v375_fit_noise_diagnostic.py",
+      "sha256": "c7fdd005e8874f282ee1fbe5f10fe13b6b30320c4368f27f7e8c4ead95d355be",
+      "doc": "Training-only descriptive limits of structure-only deterministic predictions.\n\nAn empirical within-identity MAE floor is not a generalization bound or a score\nforecast. Other available assay context can distinguish rows with the same graph.",
+      "declarations": []
+    },
+    {
+      "path": "tools/v375_stereo_context.py",
+      "sha256": "07e2e46a616f6d9cc0ae217f6594ea1aa4e8ebe746bef5f466a90418e86c0b25",
+      "doc": "Stereochemistry-preserving conditional MAE experts with replicate integration.",
+      "declarations": [
+        "TASKS=shared.TASKS",
+        "CONFIGS=tuple(dict(name=f'{identity}_{mode}_d{depth}',family='context',identity=identity,mode=mode,depth=depth)\n    for identity,mode,depth in (('stereo','median',4),('stereo','median',6),('stereo','integrated',4),('stereo','integrated',6)))",
+        "SEEDS=(3751106,3751107)"
+      ]
+    },
+    {
+      "path": "tools/v377_deliver_regression.py",
+      "sha256": "ed43c705ac36839ef388438ea12291c3e0a7d9fb5dba39287dfeb4d15df9746a",
+      "doc": "Receive either nine-task experiment and construct an explicit experimental CSV.",
+      "declarations": [
+        "TASKS=('caco2_wang','ld50_zhu','lipophilicity_astrazeneca','ppbr_az','solubility_aqsoldb',\n       'clearance_hepatocyte_az','clearance_microsome_az','half_life_obach','vdss_lombardo')"
+      ]
+    },
+    {
+      "path": "tools/v377_prepare_regression.py",
+      "sha256": "e80d30e05e6d93dadac551ba66cce0cd3256adb7102eb11f527a85c7f91b1b1c",
+      "doc": "Expand frozen inputs to nine continuous outcomes; local packaging only.",
+      "declarations": [
+        "TASKS=('caco2_wang','ld50_zhu','lipophilicity_astrazeneca','ppbr_az','solubility_aqsoldb',\n       'clearance_hepatocyte_az','clearance_microsome_az','half_life_obach','vdss_lombardo')"
+      ]
+    },
+    {
+      "path": "tools/v377_regression_experts.py",
+      "sha256": "c0af57f620695bbfc1c25dbe50335b58a53b94ff04f2c50122c7f559687518a1",
+      "doc": "Nine task experts with complete, fixed learning curves; remote CUDA only.",
+      "declarations": [
+        "TASKS=('caco2_wang','ld50_zhu','lipophilicity_astrazeneca','ppbr_az','solubility_aqsoldb',\n       'clearance_hepatocyte_az','clearance_microsome_az','half_life_obach','vdss_lombardo')",
+        "SEEDS=(3771105,3771106)",
+        "HORIZONS=(640,1920,3840)",
+        "BASES=(dict(name='native_d3',depth=3,warp=False,reg=6.),dict(name='native_d6',depth=6,warp=False,reg=18.),\n       dict(name='asinh_d3',depth=3,warp=True,reg=6.))",
+        "CONFIGS=tuple(dict(name=b['name']+'_n'+str(n),base=b['name'],rounds=n) for b in BASES for n in HORIZONS)"
+      ]
+    },
+    {
+      "path": "tools/v378_research_vs_deployment.py",
+      "sha256": "8652ad87e57b63e4519adfb622f151d3bd200296c2b6406f1c566fad5921c3bc",
+      "doc": "Separate MAE-only research signals from deployable official-metric updates.",
+      "declarations": []
+    },
+    {
+      "path": "tools/v379_amend_before_training.py",
+      "sha256": "7d3665d7c7e528c5e9fef49a373f30598e3ab2bf9957c03c74c6295a6736da79",
+      "doc": "Preserve prelaunch source, align MAE and rank to the same submitted output.",
+      "declarations": []
+    },
+    {
+      "path": "tools/v379_distribution_transformer.py",
+      "sha256": "f4ebf87be6a1722ef376f96b9d8344014dc19160cf8a5acb19dd9b83dda070bf",
+      "doc": "Remote-only small Transformer: native L1, ordered quantiles, ranking, EMA.\n\nThis is a new bounded comparison, not a retuning of v378 confirmation results.\nBoth complete schedules and both seeds run before development selection.",
+      "declarations": [
+        "TASKS=base.TASKS",
+        "SEEDS=(3791105,3791106)",
+        "HORIZONS=(1000,3000,6000)",
+        "BASES=(dict(name='small_ema_l1',quantiles=False),\n       dict(name='small_ema_quantiles',quantiles=True))",
+        "CONFIGS=tuple(dict(name=b['name']+'_n'+str(n),base=b['name'],rounds=n) for b in BASES for n in HORIZONS)"
+      ]
+    },
+    {
+      "path": "tools/v379_expand_material_index.py",
+      "sha256": "dc289a3264ff6ef820fdd3b48c28fc06569e0f1b4d1d3367793cd5f2ae625f19",
+      "doc": "Index earlier local regression recipes too; inspect source, never import it.",
+      "declarations": []
+    },
+    {
+      "path": "tools/v379_history_availability.py",
+      "sha256": "2aa541580a79ffa6a5bae19b58e940f2dfafd3e2af156f13c1c5933d67667100",
+      "doc": "Read-only inventory for reconstructing complete historical regression OOF.",
+      "declarations": []
+    },
+    {
+      "path": "tools/v379_reference_review.py",
+      "sha256": "7f883b9d2deced00c74cf7b800afbe94211df5516f03c3419bc1ffc843eca38c",
+      "doc": "Selected primary sources for averaging and quantile objectives; no fitting.",
+      "declarations": []
+    },
+    {
+      "path": "tools/v83_residual.py",
+      "sha256": "de9c80558727cf69788a30c395652119b734188d8b772556d9dc07288afd8bfa",
+      "doc": "Matched residual screening with frozen task-level confirmation.\n\nReads only official train/valid labels through the audited loader. Test\nstructures come from the upload template. Every classification ensemble\naverages raw logits, and regression ensembles average predictions, at all\nstages. Known baseline residual endpoints are replayed on the same folds.",
+      "declarations": [
+        "SEEDS=(834026,834027,834028)",
+        "CONFIGS=[dict(name=f'{view}_d{depth}_t{trees}',view=view,depth=depth,trees=trees)\n         for view,depth,trees in [('aux',1,100),('aux',2,50),('aux',2,100),\n                                 ('aux',2,250),('aux',3,100),('aux',3,250),\n                                 ('family',2,100),('family',3,250)]]"
+      ]
+    },
+    {
+      "path": "tools/v91_local_residual.py",
+      "sha256": "69fdab805787cf021368877f67180d0f06aa1208d7a5e4e8e79d787799e6c3b1",
+      "doc": "Fit-only local chemical residual interpolation against fixed v88.\n\nNo task auxiliary labels: neighbors are target-task fit rows only. Exact\ncanonical matches are excluded. Local Newton residuals for classification,\nweighted median residuals for MAE, local rank residuals for Spearman.",
+      "declarations": [
+        "CONFIGS=[dict(name=f'{v}_k{k}_p{p}_a{a}',view=v,neighbors=k,power=p,alpha=a)\n    for v in ('morgan','multi') for k in (16,64) for p in (4,16) for a in (1.,10.)]"
+      ]
+    }
+  ],
+  "source_scope": "Root and tools Python declarations; earlier version recipes included. Not every file is a distinct trained algorithm.",
+  "no_import_or_fitting": true,
+  "limitations": "Indexing declarations is not an independent scientific evaluation. Follow result records for completed runs and provenance."
+}

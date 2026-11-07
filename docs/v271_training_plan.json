@@ -1,0 +1,44 @@
+{
+  "version": "v271",
+  "delivery_version": "v272",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-29T10:37:19.466390+00:00",
+  "source_sha256": "2ccc5e91e9ecb32b0f3ce4082689a702adcf2e8a12478c47dfdbefbaee1bf9a4",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "tasks": [
+    "clearance_hepatocyte_az",
+    "clearance_microsome_az"
+  ],
+  "protected_tasks": 20,
+  "development_partitions": 4,
+  "deterministic_models": 4,
+  "reference_models_per_partition": 8,
+  "seeds": [],
+  "configs": [
+    {
+      "inner_folds": 3,
+      "ridge": 0.3,
+      "covariance_prior": 20.0
+    }
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "hypothesis": "Clearance in microsomes and hepatocytes shares an observed metabolic component but different molecular contributions. Conditioning target on the residual of actual other-clearance measurement after a structural reference may transfer information without confusing raw scale, missingness and structure effects.",
+  "support": "docs/v270_review_decision.json",
+  "mechanism": "Fresh structure-only kernel ridge on target and paired endpoint log1p labels. Three inner GroupKFold models per endpoint generate scaffold-OOF innovations; exclude outer query and inner hold groups from both reference label sources. Existing same-molecule target-excluded other endpoint measurements remain permitted context. beta=Cov(targetOOFresidual,otherOOFinnovation)/Var(otherOOFinnovation)*n/(n+20); centered other innovation;missing measurement gives zero innovation. No fit target labels in held prediction reference.",
+  "inputs": "Existing six binaryTanimoto average of tan/tan^2 weight.85 plus fit-only physical/shape/pharmacophore RBF .15; no historical predictions, new external weights or raw measured context in structural reference.",
+  "optimization": "Exact deterministic linear solve kernel+.3I;no optimizer/seed/config sweep. Covariance estimated only from current fit OOF.",
+  "scheduling": "CPU4threads,1worker two tasks4development partitions;8fresh references per partition. Original v148 selector only after workerexit0;19identitycontrols/HIAexcluded.",
+  "preconditions": "Conditional analytic reference,missing-zero behavior,querylabel isolation,actual3foldmodels/scaffoldexclusion/save-reload/roworder smoke;105cache/dependency/frozenrunnerPASS.",
+  "selection": "Originalv148 fold0/1 unique config/.2or.45 blend beforefold2/valid;all4pointpositive/originalactualmeanthreshold/two scaffoldbootstrap90lowerpositive/no fallback.",
+  "accepted_verification": "Rebuild every full/inner structural kernel and solve,reference model reload,reconstruct honestOOF/covariance;originalgates/finalfusion/models/hash/queryorder/Drug_IDoriginalstrings/nonpredictionbytes/backuphash and restoreallmembersdependencies before manualCSV.",
+  "source_immutable_after_start": true,
+  "manual_submission_only": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "official_gain_guaranteed": false,
+  "limitations": "Kernel references can be poor and both assays can have unrecorded conditions. Correlations do not establish causal transport. Historicalv145controls approximateOOF/publiclabelsreused."
+}

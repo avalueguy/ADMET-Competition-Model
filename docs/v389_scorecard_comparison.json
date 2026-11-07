@@ -1,0 +1,22 @@
+{
+  "v386_score": 51.308,
+  "v387_score": 51.314,
+  "task_differences": [
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "old_raw": 0.4173184854676313,
+      "new_raw": 0.41505260605543154,
+      "relative_MAE_reduction": 0.005429616686307788,
+      "task_score_gain": 0.1355569999999986
+    }
+  ],
+  "csv_changed_rows": {
+    "lipophilicity_astrazeneca": 840
+  },
+  "exact_mean_gain": 0.006161681818184661,
+  "whole_task_best_merge_equals": "v387",
+  "cannot_add_gains_on_same_task": true,
+  "v386_card_identical_to_previous_v385": true,
+  "no_test_labels_available": true
+}

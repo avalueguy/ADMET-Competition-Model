@@ -1,0 +1,336 @@
+{
+  "status": "PASS",
+  "source": "Verified project handoff archive; only official data extracted",
+  "files": [
+    {
+      "path": "admet_competition_data/data_benchmark/ames/test.csv",
+      "bytes": 73818,
+      "sha256": "490271384316e8f4bd414346ef74105057383682389006f2e24a77a87891ae1a"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/ames/train.csv",
+      "bytes": 203518,
+      "sha256": "1f31f914999a8b1281dc9353d6d8a6f9e11cdabf4d9b43cb2984edd1775a771d"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/ames/valid.csv",
+      "bytes": 42087,
+      "sha256": "128351f2830547b4de22a1d8bccff5b2d128f0386bffef74bcb9e5ad437c7d1a"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/bbb_martins/test.csv",
+      "bytes": 23573,
+      "sha256": "19deb430b339574eec9f0b9e04acca64adc2c3979bf200634bb03cbbeda99ef5"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/bbb_martins/train.csv",
+      "bytes": 93999,
+      "sha256": "b3223c2fa0fff26ab990b4dbafbbe435a8ceb6114d76488bc3be27a68dfe23b9"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/bbb_martins/valid.csv",
+      "bytes": 13032,
+      "sha256": "eaed2376463a79a7783308be4c35f74b7662f66df29811f8462d3ebfda47b58f"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/bioavailability_ma/test.csv",
+      "bytes": 8905,
+      "sha256": "4f8eb0694b2f72d83e9131667980bd0ba54ba2ecdb5a8ef2fce0f36a5f73e786"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/bioavailability_ma/train.csv",
+      "bytes": 28421,
+      "sha256": "67d201f36ee1eb8b202ea5ac30624045a839747143d45ef11ee91017db82ccca"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/bioavailability_ma/valid.csv",
+      "bytes": 4190,
+      "sha256": "ba5b96027613461c29dade0355eb83bb90ed36e39f5b2889da8e42658e6d5bc1"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/caco2_wang/test.csv",
+      "bytes": 16063,
+      "sha256": "d87dac944bedcefb216bce57ba5a8de93d3781172c66653b937e5065b9c2579c"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/caco2_wang/train.csv",
+      "bytes": 53598,
+      "sha256": "3061c58d3601d081e5459a2de03dc1d189243c4b5683d1b7288577a29fed4d6f"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/caco2_wang/valid.csv",
+      "bytes": 8098,
+      "sha256": "63328bf307b850a4a0986165d0800bae5aa737c41bd63f1026d16114d8560bb4"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/clearance_hepatocyte_az/test.csv",
+      "bytes": 17001,
+      "sha256": "104ed6e16c206737f97c2e814ae36aa8acce459d94d39df78bbc07eb0ac2ef90"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/clearance_hepatocyte_az/train.csv",
+      "bytes": 61158,
+      "sha256": "5075b6a07d08d50c22a3a434e4708eb34b2d310b612a0a1c523bd153c11ba1f0"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/clearance_hepatocyte_az/valid.csv",
+      "bytes": 8539,
+      "sha256": "70b8909657f590a92b84ef4d3758e10a7ab688083971b939daf0c5004bbe04e5"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/clearance_microsome_az/test.csv",
+      "bytes": 15575,
+      "sha256": "fbd5934690e000e1fba8ea5aa0fdf5cd8977fdff91a0abbd06f78c62085fb39a"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/clearance_microsome_az/train.csv",
+      "bytes": 53776,
+      "sha256": "4a0844973f3b059417c1214becff7ed7be69d457661c3ebb96a26099cc2e0038"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/clearance_microsome_az/valid.csv",
+      "bytes": 8000,
+      "sha256": "b5df9dd9902e743b932811acb330edf1250bca279aa7086a087dd8e58394fbb5"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2c9_substrate_carbonmangels/test.csv",
+      "bytes": 9762,
+      "sha256": "a14381ca18fb91af76b336917a42bdec7dd71ffc745230684bfe674c96488a44"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2c9_substrate_carbonmangels/train.csv",
+      "bytes": 29773,
+      "sha256": "cbd2423a4da38cfadcd266f3287c0894f23577917d5f12144eade9f5c0967009"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2c9_substrate_carbonmangels/valid.csv",
+      "bytes": 3832,
+      "sha256": "020195bff8520972c02dc7bf0739fd7815c548372bd1e6b12eca95619ddcfe0f"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2c9_veith/test.csv",
+      "bytes": 146639,
+      "sha256": "10a2feb061bf63c48da7ad74b94991693e382d7fa0d56acb37fc4a306ae727d2"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2c9_veith/train.csv",
+      "bytes": 504822,
+      "sha256": "4414aaa7ce7ac6d588c55d09292a47dd74b4c70bb78338affff655fbe715ebf2"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2c9_veith/valid.csv",
+      "bytes": 71369,
+      "sha256": "3eb039546951c292faeac419ed22f0e08e3a38a2b90ef62c76e6db736a89b864"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2d6_substrate_carbonmangels/test.csv",
+      "bytes": 9838,
+      "sha256": "e0ccecf7b99a3b0629cfe8a0423b65e48e1f4a6049c4d4b8e69926b8de0783ca"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2d6_substrate_carbonmangels/train.csv",
+      "bytes": 28444,
+      "sha256": "8278fde03c27e594079d600e9565d48c3c97dc6daf51113f3b4ba7023ecd8301"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2d6_substrate_carbonmangels/valid.csv",
+      "bytes": 4881,
+      "sha256": "46d79fa0b3cf13975f97364835e3f4f97c648de7041332101bbb02f1456b1e4c"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2d6_veith/test.csv",
+      "bytes": 151028,
+      "sha256": "45e6e276b45169003f4e73c795fa4ea059780cfce04c1d06fdb1852b8849dccc"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2d6_veith/train.csv",
+      "bytes": 549852,
+      "sha256": "f9ddcf3ef3bfda8ec7ccfc3f3882296f3562861df01a28432560781bc9eaa1d6"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp2d6_veith/valid.csv",
+      "bytes": 80283,
+      "sha256": "a783012454209e47640cadb83cf5f84408bf375ca13fa0ea3335482e901823e7"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp3a4_substrate_carbonmangels/test.csv",
+      "bytes": 9700,
+      "sha256": "909ac1d0820299fe87037bf2b375f7316f37ba13b3b110c7a0d83a45a67ece6f"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp3a4_substrate_carbonmangels/train.csv",
+      "bytes": 29459,
+      "sha256": "f840554ef680fe42b5334aac398141fb94b510bee7f935549ee2521a47eda55b"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp3a4_substrate_carbonmangels/valid.csv",
+      "bytes": 4649,
+      "sha256": "368546f70970e88249dd0cfa93f943ea97a4363abaf98861cbc701690efaabc6"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp3a4_veith/test.csv",
+      "bytes": 155537,
+      "sha256": "340a65aa43306ab010fb20607938ea37d5c45a03be7152081b9949520ab03228"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp3a4_veith/train.csv",
+      "bytes": 499184,
+      "sha256": "ed009e2d43cbc4278cf7f4c0923b63aa570009f0bfd532a7139ea395cfe5be90"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/cyp3a4_veith/valid.csv",
+      "bytes": 74243,
+      "sha256": "db7aa095189723c24dc30b73caa76c53b381cebe9a5d409ef54da3644313e6a6"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/dili/test.csv",
+      "bytes": 5828,
+      "sha256": "9b4c5f90f78005a305e425076ef2adf59404152134786991db3e13acdaa7f847"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/dili/train.csv",
+      "bytes": 17948,
+      "sha256": "33981936021d3c360fc0e6e92a701fea80705a3915c0cdb49751312dcd2235cd"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/dili/valid.csv",
+      "bytes": 2083,
+      "sha256": "944ca7ad4f4416a43aa5a5d943d0b4fbed3fcf763a63c835b7d3761bcc15c626"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/half_life_obach/test.csv",
+      "bytes": 10625,
+      "sha256": "c6fbbab02b52618c35661a350d3c3aec700b835ad0bdc9f820fc6b3145ff985d"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/half_life_obach/train.csv",
+      "bytes": 35187,
+      "sha256": "61774bf5dfc29bee0768038dcbf16319e9fc19e2bee63659f2cfed687477e2f9"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/half_life_obach/valid.csv",
+      "bytes": 5237,
+      "sha256": "34b97b09010371060136b6af941c84ede93be9d563807ac5d35ca6fba618aa9a"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/herg/test.csv",
+      "bytes": 9283,
+      "sha256": "df63e59212e9667145c4c9b371cd32207e7339b360ce0469b23287766b973cc8"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/herg/train.csv",
+      "bytes": 32629,
+      "sha256": "97f2f48846378bc4bb51e9d0a0041ac9e3686423a06f20a5119a842212a5b64e"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/herg/valid.csv",
+      "bytes": 5844,
+      "sha256": "4898ea81ba70fcacc21f733e9e8446bf8001566032902245405978f0d86332a6"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/hia_hou/test.csv",
+      "bytes": 8506,
+      "sha256": "acd125be19a4b7b361152e331c80dc3124f1eda36fe7a112cbbc6e921fbdf137"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/hia_hou/train.csv",
+      "bytes": 25761,
+      "sha256": "59291200064e1b3be437437208a45d62f8eea6f6c372b4820e11e20fd1ffb2be"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/hia_hou/valid.csv",
+      "bytes": 3948,
+      "sha256": "31990f1c03ca7c4aad2115835a5e0a6f9de2e83609fd855205508513cbfb14bd"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/ld50_zhu/test.csv",
+      "bytes": 148614,
+      "sha256": "ddf437d076faebad8fb5e74a85379643f3e05824fa5a8aeaf37f725edf8cad5d"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/ld50_zhu/train.csv",
+      "bytes": 390707,
+      "sha256": "749c76c38fdf4fb147f8fa5ae4dfa247cca26b152461a1e52234bca441626daa"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/ld50_zhu/valid.csv",
+      "bytes": 131765,
+      "sha256": "6943341be1314231509651426ea0293e9460bfd80e76f8df8e76485c820e0b05"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/lipophilicity_astrazeneca/test.csv",
+      "bytes": 57704,
+      "sha256": "d768c259d5e8222b5a9dd29bcfccb5cc46560b190a4ec66b1ca4bf1a4ff59568"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/lipophilicity_astrazeneca/train.csv",
+      "bytes": 196225,
+      "sha256": "0049aa6d5b56d2f8c22e475b11b837ebfa86536d0c8ede06d432e854fb9d83d3"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/lipophilicity_astrazeneca/valid.csv",
+      "bytes": 27420,
+      "sha256": "5dd44fdbcefd3dc94de24479f557c3fa6f1e4f69094f2161173b005cb6da5b01"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/pgp_broccatelli/test.csv",
+      "bytes": 23538,
+      "sha256": "4c831f1af48c75b931954ef2c1462e48000c53dcba9e501edf58856a50bd67fe"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/pgp_broccatelli/train.csv",
+      "bytes": 87006,
+      "sha256": "6eb86ba5d8cfa87b8d0950d55e8054586994ea21c8b59e461743117ffe8a9a46"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/pgp_broccatelli/valid.csv",
+      "bytes": 11243,
+      "sha256": "9e10c20d5e373547c69ffb5db88c6bece98a6da079f86314147b492fb78b0f57"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/ppbr_az/test.csv",
+      "bytes": 40577,
+      "sha256": "d1512eb4a58d434663cd3edfc7b0d5c80a376445e1d00cb0c6e65100b4a81be4"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/ppbr_az/train.csv",
+      "bytes": 142030,
+      "sha256": "92842d88cc0f9fe41a14d1effcf1f3a23d0a6415df4d6e615af6458dc6de8281"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/ppbr_az/valid.csv",
+      "bytes": 19434,
+      "sha256": "c1effe3ddc607ce177d59c1f5eebb9466a96f714edbf34f6f4f725988640cb36"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/solubility_aqsoldb/test.csv",
+      "bytes": 177443,
+      "sha256": "ad5814c7b77ff79de9c99b97d667ab8762e78933a4f0147030c6615d3111ce90"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/solubility_aqsoldb/train.csv",
+      "bytes": 438986,
+      "sha256": "744ee3d69e3f0d9230894a62a95bc64ea15b2d6d44f1a5fb890c5c3260ce89c2"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/solubility_aqsoldb/valid.csv",
+      "bytes": 191046,
+      "sha256": "576ef180e4c3ab36853708e092bb8a1da7178a0a0456ef7bbfc41e4e9ec97817"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/vdss_lombardo/test.csv",
+      "bytes": 16250,
+      "sha256": "e59e7ba03645b2086bb67a8a8e063c1959f5ef93e592dc5efcdc0e39a65479e8"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/vdss_lombardo/train.csv",
+      "bytes": 60375,
+      "sha256": "246dd203c300181b1df73c90cb349a0db1a1bd848dfa32895222cd4d4d89bc94"
+    },
+    {
+      "path": "admet_competition_data/data_benchmark/vdss_lombardo/valid.csv",
+      "bytes": 8928,
+      "sha256": "572d0d7b72016acc9feefcb0d1652d0c356cf304fb71fd123652cca3fbbe0661"
+    }
+  ]
+}

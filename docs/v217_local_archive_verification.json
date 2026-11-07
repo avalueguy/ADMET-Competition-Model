@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v217_ordered_scaffold_20261029",
+  "archive_sha256": "636778ab3083c45f9055f24ad469ea74c176dd6b84b4f939a88a623b2cb65d0c",
+  "manifest_files": 266,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 214,
+  "existing_exact": 52,
+  "existing_updated_docs_preserved": []
+}

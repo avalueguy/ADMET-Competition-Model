@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "archive": "releases/v375_delta_inputs.tar.gz",
+  "sha256": "cb164b355df02d7e55bdc8a740b25d0c0435848a861fd1060fc3f2e0ec7537d8",
+  "bytes": 2272969,
+  "reused_inputs": "v374 inputs without stereo_keys/data_manifest",
+  "stereo_parse_fallback": 2
+}

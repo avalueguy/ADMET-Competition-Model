@@ -1,0 +1,17 @@
+{
+  "status": "FAILED_NONFINITE_ENTMAX_AUTOGRAD",
+  "date_hong_kong": "2026-11-01",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52.0,
+  "failure": "Formal solubility fold0 first seed non-finite gradients; direct differentiation through unused sqrt(clamp(0)) entmax threshold terms is unstable.",
+  "target_partition_predictions_completed": 0,
+  "new_model_checkpoints": 0,
+  "confirmation_opened": false,
+  "csv_created": false,
+  "official_submission": false,
+  "original_source_preserved": true,
+  "training_log_sha256": "80a5fc92690e0e9dca0539ad2c1e49cd5c3be3209d75ecfb7bf043bddb663da0",
+  "correction_version": "v310",
+  "correction": "Exact entmax analytical Jacobian with same forward function, same seeds/config/optimizer/gates. Extended preflight before scores."
+}

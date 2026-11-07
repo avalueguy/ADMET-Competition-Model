@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "candidate": "C:\\Users\\lenovo\\Documents\\ChatGPT\\New project\\ADMET-Competition-Model\\admet_submissions\\v72_v56\\我从山北来带着兰花草-小分子药物预测技术创新赛-20261021.csv",
+  "upload_copy": "D:\\bili_download\\v72_v56\\我从山北来带着兰花草-小分子药物预测技术创新赛-20261021.csv",
+  "rollback_copy": "D:\\bili_download\\v56_rollback\\我从山北来带着兰花草-小分子药物预测技术创新赛-20261016.csv",
+  "sha256": "9ac57cda636ea4cd7e8909e97ecde4ec656e51f024a73cd0fb6eaa29dd55f8b2",
+  "archive": "C:\\Users\\lenovo\\Documents\\ChatGPT\\New project\\ADMET-Competition-Model\\releases\\v72_v56_20261021.tar.gz",
+  "archive_sha256": "8bca2751c294b591771547fef18f88e8f2362a4b44fd3a5cfca6ffb44f1a894e",
+  "archive_members_verified": true,
+  "changed_tasks": {
+    "herg": 132,
+    "hia_hou": 117
+  },
+  "unchanged_tasks": 20,
+  "official_score": null
+}

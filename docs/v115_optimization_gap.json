@@ -1,0 +1,9 @@
+{
+  "baseline": "v114",
+  "official_score": 51.091,
+  "target": 52,
+  "mean": 51.09101840909091,
+  "summed_task_points_required": 19.997595000000047,
+  "history_scorecard_upper_bound": 51.127685681818186,
+  "status": "REPORT_ONLY_RETROSPECTIVE_UPPER_BOUND_NOT_REPRODUCIBLE_SCORE"
+}

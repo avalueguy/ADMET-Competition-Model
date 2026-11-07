@@ -1,0 +1,39 @@
+{
+  "baseline": "v364:51.269",
+  "goal_relative_reduction": 0.1,
+  "task_count": 5,
+  "tasks": [
+    {
+      "task": "caco2_wang",
+      "baseline_raw": 0.27592992051587734,
+      "ten_percent_goal": 0.24833692846428962,
+      "reference": 0.283647
+    },
+    {
+      "task": "ld50_zhu",
+      "baseline_raw": 0.55547536869963,
+      "ten_percent_goal": 0.499927831829667,
+      "reference": 0.603071
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "baseline_raw": 0.4168746341957797,
+      "ten_percent_goal": 0.37518717077620173,
+      "reference": 0.472895
+    },
+    {
+      "task": "ppbr_az",
+      "baseline_raw": 6.665484533215087,
+      "ten_percent_goal": 5.9989360798935785,
+      "reference": 7.330617
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "baseline_raw": 0.7010230434713527,
+      "ten_percent_goal": 0.6309207391242174,
+      "reference": 0.738443
+    }
+  ],
+  "official_current_known": true,
+  "official_goal_reached": false
+}

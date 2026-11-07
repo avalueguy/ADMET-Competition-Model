@@ -1,0 +1,76 @@
+{
+  "status": "COMPLETE",
+  "at_utc": "2026-10-30T04:28:30.960298+00:00",
+  "boot_id": "7edb467c-8def-4bf5-b14f-bb31d4469124",
+  "container_pid1_start_ticks": "1987806099",
+  "prior_selector_pid": 27224,
+  "prior_selector_start_ticks": "1981495784",
+  "source_sha256": "2ccc5e91e9ecb32b0f3ce4082689a702adcf2e8a12478c47dfdbefbaee1bf9a4",
+  "signature": "ef77abd6b22df65697a6e971bd3307fff621eaabad16ab037c3cffb6bb70c1c8",
+  "model_training_repeated": false,
+  "gates_changed": false,
+  "credentials_stored": false,
+  "baseline_cache_verified": 105,
+  "dependency_verified": true,
+  "checks": [
+    {
+      "task": "clearance_hepatocyte_az",
+      "part": "fold0",
+      "independent_replay": "PASS",
+      "hashes": {
+        "model.joblib": "0f5d2790adb251640cdd3a652a89b1566eb5acd8a61b603608e203442ebfb2d5",
+        "transform.joblib": "709e62d9ba5cba1f31799362491271b4c0a8b7dc1ea67de9f4cc52f1b60d124f"
+      },
+      "predictions_sha256": "133aade066bd8cfe1bf683d13acd13ee93dc3023a0b74069dd9991adb3c37dea"
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "part": "fold1",
+      "independent_replay": "PASS",
+      "hashes": {
+        "model.joblib": "d0a135d013711a64e1b96aeb2e901cba0ac7dd20909e49a4abbb069366d3049b",
+        "transform.joblib": "c5480f531d67e5b5c92c06e8714ca4929b59595ec1e8788962c79c89db98756d"
+      },
+      "predictions_sha256": "c9503c9dcd1ddbf228d4ade5cc875d88f0f6b1a7edeae1209bf36b1a572d558a"
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "fold0",
+      "independent_replay": "PASS",
+      "hashes": {
+        "model.joblib": "1d09744a244daae7fc92bc7f88bea3e293c4f6082da9107ea6ac6486f60e5962",
+        "transform.joblib": "7f3b673a749b615d8c623f5453123187026aa1c61173feeba7023456f2a1b57f"
+      },
+      "predictions_sha256": "a578ff5165fbb5f39eed7067c15743adc0802604d19c6a235f38161f0d71995f"
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "fold1",
+      "independent_replay": "PASS",
+      "hashes": {
+        "model.joblib": "af31f4f68fab52fa80d473418b4bded1331153e457cba67cfb7e7b1705bda8ca",
+        "transform.joblib": "e1c55cfd41e09a5dfa79639d40e7c331b9ff5f6593c45c2705a450d9620d52b5"
+      },
+      "predictions_sha256": "6e03628ac77f15e72c8eae26f7f97ccccd98a49c226241c0c06158ad6995f02f"
+    }
+  ],
+  "processes": {
+    "selector": {
+      "pid": 1870,
+      "script": "v271_clearance_innovations.py",
+      "start_ticks": "1987903639",
+      "log": "v276_recovery_selector.log"
+    },
+    "pipeline": {
+      "pid": 1871,
+      "script": "v273_package_innovations.py",
+      "start_ticks": "1987903639",
+      "log": "v276_recovery_pipeline.log"
+    }
+  },
+  "exit_codes": [
+    0,
+    0
+  ],
+  "completed_at_utc": "2026-10-30T04:29:34.558221+00:00"
+}

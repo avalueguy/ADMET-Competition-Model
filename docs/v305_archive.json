@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "path": "releases/v305_learned_retrieval_20261101.tar.gz",
+  "sha256": "576abd9f6ee2350fef1fb01af1999eadb7e0ec0c8066c8b798616df493c7bd37",
+  "files": 98,
+  "all_member_hashes_verified": true
+}

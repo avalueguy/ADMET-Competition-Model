@@ -1,0 +1,39 @@
+{
+  "version": "v224",
+  "delivery_version": "v225",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-29T06:32:33.754062+00:00",
+  "source_sha256": "f874ecb0c2abaae3e65eabd569e6f062d4d68e65a70a96f7cf35056e40a92b00",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "model": "Full-rank grouped PCA rotation forest with nonlinear randomized trees",
+  "distinct_from_completed_routes": "Previous axis-aligned ExtraTrees and quantile forests did not train member-specific orthogonal chemically oblique splits. This method learns distinct grouped PCA rotations only on fitting structures. No rejected models/predictions reused.",
+  "tasks": "All21 original improvable tasks,HIA protected",
+  "configs": [
+    {
+      "rotations": 8,
+      "trees": 24,
+      "group": 8
+    }
+  ],
+  "seeds": [
+    2241029,
+    2241030
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "preprocessing": "Full original fingerprints, descriptor/shape/pharmacophore/context. Fit-onlydf>=3,top1024fragmentcounts byprevalence plusallnonfragments. Fitmedian/mean/std,clip5,explicitmissingness,constantdrop.",
+  "rotations": "Each member group8 random permutation,75%fitstructure subbag,full eigenbasis retained,signcanonicalized. Trees split rotated directions; no query labels or statistics.",
+  "estimator": "8rotations*24ExtraTrees perseed;2seeds;maxdepth20,leaf3,maxfeatures.5;gini classification/squared regression,fitmedianIQR forMAE andranknormalforSpearman;4fitthreads,1predictionthread for exactreplay",
+  "scheduling": "3disjointdevtaskqueues,12maxCPUthreads,allworkersmustexit0 before originalrunner selects/confirm;no result-based taskordering",
+  "selection": "Originalv148 fold0/1freeze uniqueconfigweight,no fallback",
+  "confirmation": "All4pointgains>0,originalmeanpracticalthreshold,bothscaffoldbootstrap90lower>0",
+  "verification": "Fit-onlyrotations,orthogonality/distance analytical reference,querylabelperturbation,actual3metrictypemodelsave/reload,roworder; independentallacceptedreplay andtemplatebytes/backupSHA",
+  "source_immutable_after_start": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "official_gain_guaranteed": false,
+  "limitations": "Publiclabelsreused;upstreamhistoricalOOFapproximate;randomrotations can obscure rarefragment effects. No scoreguarantee."
+}

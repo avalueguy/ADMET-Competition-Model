@@ -1,0 +1,47 @@
+{
+  "version": "v250",
+  "delivery_version": "v251",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-29T09:27:00.365101+00:00",
+  "source_sha256": "b444023116c4fe09b154332fe127447b3e73a87b6250142e0bd7b34843eba15b",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "tasks": [
+    "herg",
+    "clearance_hepatocyte_az",
+    "caco2_wang",
+    "ppbr_az",
+    "lipophilicity_astrazeneca"
+  ],
+  "protected_tasks": 17,
+  "development_partitions": 10,
+  "development_models": 10,
+  "configs": [
+    {
+      "C": 3.0,
+      "levels": 4
+    }
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "model": "Hierarchical atom-environment minimum-count histogram-intersection kernel SVC/SVR",
+  "hypothesis": "Count-dot-product similarities allow repeated common motifs to dominate and hash collisions merge environments. Exact hierarchical atom labels and minimum-count matching preserve atom multiplicities and shared shallow chemistry across new scaffolds. This geometric hypothesis is separate from point-network capacity or a downward residual correction.",
+  "distinct_from_completed_routes": "v104/v150 sparse circular/path kernels used dot-based generalized Tanimoto. v139/v233 used Tanimoto and RBF sum/product or supervised alignment. v172/v175 optimized learned GNN states. This route computes exact discrete WL labels levels0..3 and explicit threshold-lift intersections with fit-only vocabulary/rarity weights; no existing models/prediction reuse.",
+  "task_rationale": "Three MAE tasks with viable nonconcentrated original confirmation scaffold groups; hERG and hepatocyte are low raw-score endpoints with adequate original scaffold coverage. Excludes structurally infeasible AMES, concentrated LD50/solubility, and near-ceiling BBB/PGP. v249 review forbids simple mean-bias or repeated physical-prior corrections.",
+  "atom_labels": "Atomic number,isotope,formal charge,aromaticity,degree,totalH,CIP R/S if available,ring flag. Edge bondtype/aromaticity/conjugation/EZ. SHA256 recursively refines label plus sorted neighbour pairs. Full input graph preserved, unusual valence parsed by original parser.",
+  "kernel": "Each of4depths: fit-only WL label vocabulary and count maxima; indicator levels1..count with sqrt(min(4,1+log((n+1)/(df+1)))) coefficients. Inner product=sum rarity*min(countA,countB),normalized by explicit feature norm. Average depths .75; augmented fit-scaled physicalRBF .15 and target-excluded assayRBF .10. No supervised kernel tuning.",
+  "training": "Deterministic sklearn SVC(C3,tol1e-5) for hERG, SVR(C3,epsilon.04,tol1e-5) for regressions. Fit-only median/IQR MAE transform or rank-normalized Spearman. No random model seeds/earlystopping/query label access.",
+  "scheduling": "Single CPU worker,4thread env,5tasks10developmentmodels. Worker exit0 before original v148 selector, then only frozen nominees get confirmation. No GPU training required.",
+  "selection": "Original v148 max-min fold0/1,unique config/.2or.45 weight frozen before confirmation.",
+  "confirmation": "Original all4 pointgains>0,original mean practical threshold,bothfold2/valid500drawscaffoldbootstrap90lower>0,no fallback.",
+  "verification": "Independent manual minimum-count kernel reference/PSD;query-only count and vocabulary invariance;atom-order and stereochemical notation invariance;3metric query-label perturbation/actualsave-reload/roworder. Accepted independent atom environment derivation from original SMILES plus full feature/model/gate/fusion/byte/hash/archive checks.",
+  "source_immutable_after_start": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "pretrained_weights": false,
+  "manual_submission_only": true,
+  "official_improvement_guaranteed": false,
+  "limitations": "Repeated public labels and approximate upstream historical controls remain. Exact atom matching is a distinct hypothesis, not proof of better hidden-test performance."
+}

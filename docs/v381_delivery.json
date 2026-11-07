@@ -1,0 +1,396 @@
+{
+  "status": "VERIFIED_EXPERIMENTAL_DELIVERY",
+  "version": "v381",
+  "signature": "6d69d42a1795b6086f426b887d088ad06df48f959c835a9fd21d731bd667cc40",
+  "baseline": "v374_associated",
+  "official_best": 51.271,
+  "new_official_score": null,
+  "csv": "admet_submissions/v381_regression9_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+  "accepted_tasks": [
+    "ppbr_az"
+  ],
+  "nine_task_mean_relative_MAE_gain_by_part": {
+    "fold0": 0.002673246191631387,
+    "fold1": 0.00026257587267707896,
+    "fold2": 0.0006313359851123415,
+    "valid": 0.00044187769974631344
+  },
+  "five_scored_task_mean_relative_MAE_gain_by_part": {
+    "fold0": 0.004811843144936497,
+    "fold1": 0.00047263657081874207,
+    "fold2": 0.0011364047732022149,
+    "valid": 0.0007953798595433641
+  },
+  "goal_mean_5percent_achieved_local": false,
+  "five_scored_goal_achieved_local": false,
+  "all_fitting_remote": true,
+  "models_verified": 61,
+  "model_replay_max_error": 0.0,
+  "final_model_states": [
+    {
+      "path": "experiments/regression9_v381/outputs/tasks/ppbr_az/final/simplex_reg01/state.joblib",
+      "sha256": "c8f2bca181e8ff870abe9c63aba553bf64df9fbfa768ca09352f2b9fd42d6aea",
+      "bytes": 25016
+    },
+    {
+      "path": "experiments/regression9_v381/outputs/oof/ppbr_az/final/state.joblib",
+      "sha256": "414800c6ee9711e7559e8224fbcf2ed32146a9d18fc834a4d22c428f7a2a15f0",
+      "bytes": 46527
+    },
+    {
+      "path": "experiments/regression9_v381/outputs/base/ppbr_az/final/inner0/state.joblib",
+      "sha256": "4a041790d505bb281e99d808a5a64fc853a13ccb1a91079038c559741699a3ca",
+      "bytes": 46391
+    },
+    {
+      "path": "experiments/regression9_v381/outputs/base/ppbr_az/final/inner1/state.joblib",
+      "sha256": "68fa279c8f2ce4cc1ef892fc9654fd1fce601ca075f540a280a022c95a84d581",
+      "bytes": 46587
+    },
+    {
+      "path": "experiments/regression9_v381/outputs/base/ppbr_az/final/inner2/state.joblib",
+      "sha256": "c81df9403113d0c0a6a09a249b06b10c70400bf9044db0cb6b2745d1255cfcdb",
+      "bytes": 46520
+    },
+    {
+      "path": "experiments/regression9_v381/outputs/base/ppbr_az/final/full/state.joblib",
+      "sha256": "88062600047ca294f0a203771388a2b62cd40b75da067c9a8d694ccd49c09722",
+      "bytes": 67001
+    }
+  ],
+  "automatic_platform_submission": false,
+  "limitation": "Four ranking task MAE references are fit-label empirical-quantile calibrated score ranks, not recovered historical native predictions. Historical control partly proxy; public labels reused.",
+  "task_evidence": [
+    {
+      "task": "caco2_wang",
+      "best": {
+        "name": "simplex_reg01",
+        "penalty": 0.01,
+        "rank_penalty": 0.0
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.0005300221286535773,
+          "baseline": 0.38815645870734267,
+          "candidate": 0.38795072719484797
+        },
+        {
+          "part": "fold1",
+          "gain": -0.0010481445187713503,
+          "baseline": 0.3348527606452333,
+          "candidate": 0.33520373473089904
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "ld50_zhu",
+      "best": {
+        "name": "simplex_reg01",
+        "penalty": 0.01,
+        "rank_penalty": 0.0
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": -0.0013800783737754503,
+          "baseline": 0.4623870980111785,
+          "candidate": 0.4630252284454565
+        },
+        {
+          "part": "fold1",
+          "gain": -0.0004546310333351703,
+          "baseline": 0.5305508449297317,
+          "candidate": 0.530792049808599
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "best": {
+        "name": "simplex_reg01",
+        "penalty": 0.01,
+        "rank_penalty": 0.0
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": -0.00028640779212998836,
+          "baseline": 0.48016540927868107,
+          "candidate": 0.48030293239340976
+        },
+        {
+          "part": "fold1",
+          "gain": 0.0015676850370817978,
+          "baseline": 0.4548081915781444,
+          "candidate": 0.4540951955814651
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "ppbr_az",
+      "best": {
+        "name": "simplex_reg01",
+        "penalty": 0.01,
+        "rank_penalty": 0.0
+      },
+      "weight": 0.25,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.024059215724682486,
+          "baseline": 7.95280971526812,
+          "candidate": 7.761471350711133
+        },
+        {
+          "part": "fold1",
+          "gain": 0.0023631828540937104,
+          "baseline": 7.292895667509342,
+          "candidate": 7.275661221511189
+        },
+        {
+          "part": "fold2",
+          "gain": 0.005682023866011074,
+          "baseline": 8.62639236136588,
+          "candidate": 8.577376994091024
+        },
+        {
+          "part": "valid",
+          "gain": 0.003976899297716821,
+          "baseline": 9.36669542965183,
+          "candidate": 9.32944502517572
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "best": {
+        "name": "simplex_reg05",
+        "penalty": 0.05,
+        "rank_penalty": 0.0
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.0011227222737540561,
+          "baseline": 0.7360725561987135,
+          "candidate": 0.7352461511447701
+        },
+        {
+          "part": "fold1",
+          "gain": -0.0015447342628467473,
+          "baseline": 0.7161434295213145,
+          "candidate": 0.7172496808140086
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "best": {
+        "name": "simplex_reg01",
+        "penalty": 0.01,
+        "rank_penalty": 0.0
+      },
+      "weight": 0.75,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.09346478199513589,
+          "baseline": 31.964365097329107,
+          "candidate": 28.976822681894312,
+          "rank_gain": 0.008412252401574727
+        },
+        {
+          "part": "fold1",
+          "gain": 0.09900883717138755,
+          "baseline": 29.556240307657728,
+          "candidate": 26.629911323638442,
+          "rank_gain": 0.016659757545151144
+        },
+        {
+          "part": "fold2",
+          "gain": 0.05256095520506498,
+          "baseline": 29.302112399955053,
+          "candidate": 27.761965382687237,
+          "rank_gain": -0.0031163861495375755
+        },
+        {
+          "part": "valid",
+          "gain": 0.04127695240108568,
+          "baseline": 34.67105717549046,
+          "candidate": 33.23994159876242,
+          "rank_gain": -0.046284361233214166
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "clearance_microsome_az",
+      "best": {
+        "name": "simplex_reg01",
+        "penalty": 0.01,
+        "rank_penalty": 0.0
+      },
+      "weight": 0.25,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.03696992041712444,
+          "baseline": 27.116399993896483,
+          "candidate": 26.113908844123216,
+          "rank_gain": 0.007046862386432595
+        },
+        {
+          "part": "fold1",
+          "gain": 0.032591300515742,
+          "baseline": 26.81884782509955,
+          "candidate": 25.944786696145776,
+          "rank_gain": 0.00023147478236074104
+        },
+        {
+          "part": "fold2",
+          "gain": 0.06209893715369993,
+          "baseline": 24.008446759224213,
+          "candidate": 22.5175477327652,
+          "rank_gain": -0.0055187756358323625
+        },
+        {
+          "part": "valid",
+          "gain": 0.07264248710358163,
+          "baseline": 29.474799529258988,
+          "candidate": 27.333676784574138,
+          "rank_gain": -0.006152149657084438
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "half_life_obach",
+      "best": {
+        "name": "simplex_pair10",
+        "penalty": 0.01,
+        "rank_penalty": 1.0
+      },
+      "weight": 0.75,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.43982947661529176,
+          "baseline": 20.806086576482805,
+          "candidate": 11.654956407135925,
+          "rank_gain": 0.01346512850715853
+        },
+        {
+          "part": "fold1",
+          "gain": 0.3451934659847965,
+          "baseline": 22.383562434963547,
+          "candidate": 14.65690293695139,
+          "rank_gain": 0.0004804969826407435
+        },
+        {
+          "part": "fold2",
+          "gain": 0.04318787220161208,
+          "baseline": 23.89586253902183,
+          "candidate": 22.863851081539266,
+          "rank_gain": -0.013668805032290954
+        },
+        {
+          "part": "valid",
+          "gain": -0.3233413305196898,
+          "baseline": 23.279000891067103,
+          "candidate": 30.806064012353783,
+          "rank_gain": 0.001357925101023394
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "task": "vdss_lombardo",
+      "best": {
+        "name": "simplex_reg01",
+        "penalty": 0.01,
+        "rank_penalty": 0.0
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.040951240334147876,
+          "baseline": 4.419333877893289,
+          "candidate": 4.238356674142839,
+          "rank_gain": 0.00173304394661844
+        },
+        {
+          "part": "fold1",
+          "gain": 0.014386326073451782,
+          "baseline": 6.180262281910009,
+          "candidate": 6.0913510135029965,
+          "rank_gain": -0.0032846987989061383
+        }
+      ],
+      "accepted": false
+    }
+  ],
+  "csv_sha256": "0e3ba9f3e560d428ffaf47639d22474310121d4b992f43b6aae679fae7d74a6a",
+  "fusion": [
+    {
+      "task": "ppbr_az",
+      "config": {
+        "name": "simplex_reg01",
+        "penalty": 0.01,
+        "rank_penalty": 0.0
+      },
+      "weight": 0.25,
+      "strict_accepted": false,
+      "rows": 559
+    }
+  ],
+  "format": {
+    "status": "PASS",
+    "sha256": "0e3ba9f3e560d428ffaf47639d22474310121d4b992f43b6aae679fae7d74a6a",
+    "rows": 16379,
+    "columns": 6,
+    "tasks": 22,
+    "nonprediction_fields_exact": true,
+    "finite_predictions": true,
+    "unique_task_sample_keys": true,
+    "task_counts": {
+      "ames": 1457,
+      "bbb_martins": 406,
+      "bioavailability_ma": 128,
+      "caco2_wang": 182,
+      "clearance_hepatocyte_az": 243,
+      "clearance_microsome_az": 221,
+      "cyp2c9_substrate_carbonmangels": 135,
+      "cyp2c9_veith": 2419,
+      "cyp2d6_substrate_carbonmangels": 135,
+      "cyp2d6_veith": 2626,
+      "cyp3a4_substrate_carbonmangels": 135,
+      "cyp3a4_veith": 2467,
+      "dili": 96,
+      "half_life_obach": 135,
+      "herg": 132,
+      "hia_hou": 117,
+      "ld50_zhu": 1478,
+      "lipophilicity_astrazeneca": 840,
+      "pgp_broccatelli": 245,
+      "ppbr_az": 559,
+      "solubility_aqsoldb": 1997,
+      "vdss_lombardo": 226
+    },
+    "utf8_bom": true,
+    "crlf_only": true,
+    "official_score": null,
+    "automatically_uploaded": false
+  },
+  "unchanged_tasks": 21
+}

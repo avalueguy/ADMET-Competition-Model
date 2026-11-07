@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v211_standardized_chemistry_20261028",
+  "archive_sha256": "03fe0731348857e5b6e54b7399e3d5de01ded4186f8c06f6bc0e2513b4b797f6",
+  "manifest_files": 266,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 213,
+  "existing_exact": 53,
+  "existing_updated_docs_preserved": []
+}

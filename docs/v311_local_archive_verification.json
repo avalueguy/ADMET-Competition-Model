@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "archive": "releases/v311_differentiable_trees_20261101.tar.gz",
+  "sha256": "0fab0104123c48137f2d6638310839d058bc2004a0c0bcec42d5269a4ef02cdd",
+  "bytes": 143529730,
+  "members": 71,
+  "manifest_files": 70,
+  "all_member_hashes_verified": true,
+  "csv_members": [],
+  "restored_absent": 55,
+  "existing_different_preserved": [],
+  "dependency_contents_reverified": true,
+  "dependency_hashes_checked": 50
+}

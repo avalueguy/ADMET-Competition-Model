@@ -1,0 +1,170 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "at_utc": "2026-11-01T10:36:19.310032+00:00",
+  "signature": "4b09684c3607be5641c19d0c5930d878b3b4ece1a51979b3660fd76923417404",
+  "baseline": "v313",
+  "official_best": 51.205,
+  "target_score": 52.0,
+  "development_best": [
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "config": {
+        "depth": 3,
+        "C": 10.0,
+        "epsilon": 0.03,
+        "fingerprint_weight": 0.65,
+        "input_bias": 0.1
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 212,
+          "baseline": 0.38815645870734267,
+          "expert": 0.42823708321803367,
+          "candidate": 0.39315797435390265,
+          "gain": -0.012885308319269689
+        },
+        {
+          "part": "fold1",
+          "rows": 212,
+          "baseline": 0.3348527606452333,
+          "expert": 0.36386019102733325,
+          "candidate": 0.3383407227583858,
+          "gain": -0.010416405426765743
+        }
+      ],
+      "objective": -0.012885308319269689
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "config": {
+        "depth": 3,
+        "C": 10.0,
+        "epsilon": 0.03,
+        "fingerprint_weight": 0.65,
+        "input_bias": 0.1
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 7.95280971526812,
+          "expert": 10.014570890407303,
+          "candidate": 8.170658375357418,
+          "gain": -0.027392665974525134
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.292895667509342,
+          "expert": 9.080289516541004,
+          "candidate": 7.482373378629506,
+          "gain": -0.025981135581619363
+        }
+      ],
+      "objective": -0.027392665974525134
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "config": {
+        "depth": 3,
+        "C": 10.0,
+        "epsilon": 0.03,
+        "fingerprint_weight": 0.65,
+        "input_bias": 0.1
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 980,
+          "baseline": 0.48369211177257504,
+          "expert": 0.5646818807402708,
+          "candidate": 0.4901816481659587,
+          "gain": -0.013416667825327203
+        },
+        {
+          "part": "fold1",
+          "rows": 980,
+          "baseline": 0.46346071333625716,
+          "expert": 0.511610529993431,
+          "candidate": 0.46226789034355814,
+          "gain": 0.002573730541500248
+        }
+      ],
+      "objective": -0.013416667825327203
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "config": {
+        "depth": 3,
+        "C": 10.0,
+        "epsilon": 0.03,
+        "fingerprint_weight": 0.65,
+        "input_bias": 0.1
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1210,
+          "baseline": 0.4642859078866628,
+          "expert": 0.4906342806433826,
+          "candidate": 0.46370882961092263,
+          "gain": 0.0012429373063828433
+        },
+        {
+          "part": "fold1",
+          "rows": 1210,
+          "baseline": 0.534364444193799,
+          "expert": 0.5532034143490302,
+          "candidate": 0.5346296490152362,
+          "gain": -0.0004962995280072051
+        }
+      ],
+      "objective": -0.0004962995280072051
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "config": {
+        "depth": 3,
+        "C": 10.0,
+        "epsilon": 0.03,
+        "fingerprint_weight": 0.65,
+        "input_bias": 0.1
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1635,
+          "baseline": 0.7675069205648937,
+          "expert": 0.825947638615881,
+          "candidate": 0.7585096061385554,
+          "gain": 0.01172277954147449
+        },
+        {
+          "part": "fold1",
+          "rows": 1635,
+          "baseline": 0.7502386159917903,
+          "expert": 0.8234687665256879,
+          "candidate": 0.7468815669774119,
+          "gain": 0.004474641724407216
+        }
+      ],
+      "objective": 0.004474641724407216
+    }
+  ],
+  "accepted_tasks": [],
+  "confirmation": [],
+  "csv_created": false,
+  "platform_submission": false,
+  "official_gain_established": false
+}

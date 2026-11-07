@@ -1,0 +1,100 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "checked_at_utc": "2026-10-29T03:48:06.984493+00:00",
+  "training_version": "v210",
+  "delivery_version": "v211",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52,
+  "target_achieved": false,
+  "development_tasks": 21,
+  "saved_development_models": 84,
+  "nominated_tasks": [
+    "herg",
+    "cyp3a4_substrate_carbonmangels",
+    "cyp2c9_substrate_carbonmangels"
+  ],
+  "accepted_tasks": [],
+  "confirmation_results": [
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "gains": {
+        "fold0": 0.0031049679487177295,
+        "fold1": 0.006442307692307692,
+        "fold2": 0.011316872427983515,
+        "valid": 0.003472222222222099
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.011912787631602799,
+          0.026180543103619978
+        ],
+        "valid": [
+          -0.009384203608359926,
+          0.0218233204134366
+        ]
+      }
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "gains": {
+        "fold0": 0.023504983388704215,
+        "fold1": 0.02447264337508237,
+        "fold2": -0.0055098684210527216,
+        "valid": 0.0031362007168459494
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.028342866491521682,
+          0.0185011071590472
+        ],
+        "valid": [
+          -0.038106852497096375,
+          0.046994940029984916
+        ]
+      }
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "gains": {
+        "fold0": 0.014090510171104409,
+        "fold1": 0.03987998343331245,
+        "fold2": -0.033352449171153264,
+        "valid": -0.07087328914921787
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.12160626429569313,
+          0.028312064385987663
+        ],
+        "valid": [
+          -0.163831925235019,
+          -7.43330710331871e-05
+        ]
+      }
+    }
+  ],
+  "archive": {
+    "status": "PASS",
+    "prefix": "v211_standardized_chemistry_20261028",
+    "archive_sha256": "03fe0731348857e5b6e54b7399e3d5de01ded4186f8c06f6bc0e2513b4b797f6",
+    "manifest_files": 266,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 213,
+    "existing_exact": 53,
+    "existing_updated_docs_preserved": []
+  },
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "frozen_gates_unchanged": true,
+  "no_confirmation_fallback": true,
+  "rejected_route_restarted": false,
+  "training_pid_exited": 1575,
+  "pipeline_pid_exited": 1676,
+  "live_watcher_stopped_on_completion": true
+}

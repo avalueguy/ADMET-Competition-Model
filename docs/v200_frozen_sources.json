@@ -1,0 +1,31 @@
+{
+  "path": "releases/v200_frozen_sources_20261028.tar.gz",
+  "sha256": "8dae9755dd5ad11430a05a477bf12df998af066f55db703b0031152928ff17f0",
+  "files": [
+    {
+      "path": "tools/v200_exact_newton_splines.py",
+      "sha256": "c0f74916220bc00131dc008165e115b85a8d9610433950397bc266af618b8690"
+    },
+    {
+      "path": "tools/v201_verify_exact_newton_splines.py",
+      "sha256": "48427791ecdfed03486ed6c1e6442b60b8a90ca0ddcaa2ef12affbd1abe07907"
+    },
+    {
+      "path": "tools/v202_package_exact_newton_batch.py",
+      "sha256": "97e73a5cf1b548947d41ed83ff60d3f44b479553eb6cb873cebb13646339c1f3"
+    },
+    {
+      "path": "tools/finalize_v201_local.py",
+      "sha256": "4ce797da03717b5ec33ad878cb0efdf03eb49f516765f9f06a0cb9f7c19f7dbc"
+    },
+    {
+      "path": "docs/v200_training_plan.json",
+      "sha256": "b7905a16079bd3ff7a47645054f5c7bb8d5c8d556fe2ff31ed909ef42c8f4205"
+    },
+    {
+      "path": "docs/v200_numerical_diagnosis.json",
+      "sha256": "205faf288ab64cb5d250d8ea6ee40fc5f5cebfb625e900bcc1620a3494460186"
+    }
+  ],
+  "credentials_included": false
+}

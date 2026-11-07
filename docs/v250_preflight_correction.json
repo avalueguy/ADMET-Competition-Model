@@ -1,0 +1,14 @@
+{
+  "status": "PRETRAINING_METADATA_CORRECTION",
+  "at_utc": "2026-10-29T09:32:10.408160+00:00",
+  "affected_path": "tools/finalize_v251_local.py",
+  "old_sha256": "004ea2a025166917fe4b6299588dccb4abddc51b15320766e029a6ac6954509b",
+  "new_sha256": "fd5249c6cc95276bc3b3d4de9e79d0cf29b31fc09e5354fcad26191f2deb99a1",
+  "old_frozen_sha256": "bce2712cae3d8869ce92ec507c8b56baf5b3fac5d02bdf82da20e1ca7c0ab259",
+  "new_frozen_sha256": "c5222cbf320fd80c8c82ebf066731f886e3def1d57967d0f9926de0212ab1aac",
+  "archive": "releases/v250_frozen_sources_20261029_preflight2.tar.gz",
+  "archive_sha256": "b0be1081872682db61346caf714ee62ecdeb9501facd1cd42048cfaefe360c33",
+  "model_unchanged": true,
+  "smoke_unchanged": true,
+  "training_started": false
+}

@@ -1,0 +1,11 @@
+{
+  "status": "NO_ELIGIBLE_CANDIDATE",
+  "signature": "380893a239a19d6b031114ad3c444beec5b8365669b51fb70bc1437bb0fb5104",
+  "baseline": "v364",
+  "baseline_official_score": 51.269,
+  "official_score": null,
+  "csv": null,
+  "new_submission_created": false,
+  "no_selection_fallback": true,
+  "training_gpu_remote_only": true
+}

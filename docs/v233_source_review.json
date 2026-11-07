@@ -1,0 +1,18 @@
+{
+  "status": "STATIC_REVIEW_PASS_SMOKE_REQUIRED",
+  "source_sha256": "6c7abadc74a3d905c0c5d8e8a7e22f05a25606c9cdbcac21e86c29cddee91402",
+  "checks": [
+    "Alltargetalignmentobservationsactualouterfit",
+    "Crossscaffoldpairmask excludesdiagonal/withinscaffold",
+    "NNLSnonnegativeweights/Schurproducts preservePSD",
+    "No oldproxy/models/predictionsingometry",
+    "Allnormalizationfitonly;targetassaysourceexcluded",
+    "Originalv148runnerhashunchanged/manualdeliveryonly"
+  ],
+  "smoke_required": [
+    "NNLSclosedform/KKT",
+    "PSDeigenreference",
+    "query/nonfitlabelperturbation",
+    "actual3metrictypesmodelreload androworder"
+  ]
+}

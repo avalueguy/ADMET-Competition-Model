@@ -1,0 +1,92 @@
+{
+  "status": "FIT_ONLY_MECHANISM_REVIEW_COMPLETE",
+  "at_utc": "2026-10-29T10:37:19.466390+00:00",
+  "diagnostic": "docs/v270_assay_dependence_audit.json",
+  "source_sha256": "a8c1df4e9eb2a458ce3b44ab29f5397853c92d2067a82785f4faa0aa278e85f3",
+  "decision": "Test reciprocal hepatocyte/microsome innovations only. Both predeclared directions meet fit-only support. Solubility/lipo also meets descriptive support but not selected for this clearance mechanism; no new model on unsupported pairs.",
+  "fit_only_support": [
+    {
+      "task": "clearance_hepatocyte_az",
+      "other": "clearance_microsome_az",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 566,
+          "paired_rows": 295,
+          "unique_paired_identities": 234,
+          "distinct_other_values": 131,
+          "rho": 0.5557957617899643,
+          "target_binary": false
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 565,
+          "paired_rows": 278,
+          "unique_paired_identities": 228,
+          "distinct_other_values": 117,
+          "rho": 0.6221691358516391,
+          "target_binary": false
+        }
+      ],
+      "supported": true
+    },
+    {
+      "task": "clearance_microsome_az",
+      "other": "clearance_hepatocyte_az",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 514,
+          "paired_rows": 237,
+          "unique_paired_identities": 234,
+          "distinct_other_values": 154,
+          "rho": 0.5557957617899643,
+          "target_binary": false
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 513,
+          "paired_rows": 230,
+          "unique_paired_identities": 228,
+          "distinct_other_values": 148,
+          "rho": 0.6221691358516391,
+          "target_binary": false
+        }
+      ],
+      "supported": true
+    }
+  ],
+  "historical_overlap": [
+    {
+      "path": "tools/v96_normalized_assays.py",
+      "mechanism": "Raw measured target-excluded assay/context tree models"
+    },
+    {
+      "path": "tools/v88_context_kernel.py",
+      "mechanism": "RBF/product on raw measured assay inputs"
+    },
+    {
+      "path": "tools/v126_dual_target_clearance.py",
+      "mechanism": "Two objectives of one target, raw measured covariates"
+    },
+    {
+      "path": "tools/v173_related_task_boosting.py",
+      "mechanism": "Pooled source endpoint supervision with endpoint ID"
+    },
+    {
+      "path": "tools/v228_v145_honest_correction.py",
+      "mechanism": "Surrogate own-target crossfit residual tree correction"
+    },
+    {
+      "path": "tools/v264_replicate_noise_gp.py",
+      "mechanism": "Within-identity observation variance;no cross-assay conditional innovations"
+    }
+  ],
+  "novelty": "Measured paired-clearance residual after a newly fit structure-only reference conditions target through honest scaffold-OOF residual covariance. Covariance from actual crossfit innovations rather than raw correlation, raw assay features, neural multitask weights or within-identity variance. Structure-only references are established fixed kernel regressors with no novelty claim.",
+  "not_evidence_of_gain": true,
+  "no_query_scores_used": true,
+  "labels_changed": false,
+  "prior_rejected_model_prediction_reused": false,
+  "forbidden_fallback": "Do not change ridge,covariance prior,kernel weights,sign,innerfold count or task on failed confirmation.",
+  "limitations": "Fit-only raw correlations may be selection/confounding. Residual covariance may vanish;no assertion until original validation."
+}

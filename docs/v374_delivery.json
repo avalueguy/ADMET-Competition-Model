@@ -1,0 +1,74 @@
+{
+  "status": "VERIFIED_EXPERIMENTAL_DELIVERY",
+  "signature": "bb5c40e0f962e72fc25d7d967f5707c3b4486e16c2c65d469ee2fc7a7f203ac0",
+  "baseline": "v371",
+  "baseline_official_score": 51.27,
+  "official_score": null,
+  "csv": "admet_submissions/v374_mae_experts_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+  "target_five_tasks_ten_percent_achieved_local": false,
+  "ten_percent_all_parts_tasks": [],
+  "approved_tasks": [
+    "solubility_aqsoldb"
+  ],
+  "training_gpu_remote_only": true,
+  "all_fitting_remote": true,
+  "automatic_platform_submission": false,
+  "model_replay_max_error": 4.405364961712621e-13,
+  "csv_sha256": "fa7feb41ba99dda77b88b3be9427c2c434184ab920945ae6dc60569073a805ac",
+  "fusion": [
+    {
+      "task": "solubility_aqsoldb",
+      "config": {
+        "name": "honest_local_k16",
+        "family": "residual",
+        "neighbors": 16,
+        "tree": false
+      },
+      "weight": 0.2,
+      "strict_accepted": false,
+      "experimental_only": true,
+      "rows": 1997
+    }
+  ],
+  "format": {
+    "status": "PASS",
+    "sha256": "fa7feb41ba99dda77b88b3be9427c2c434184ab920945ae6dc60569073a805ac",
+    "rows": 16379,
+    "columns": 6,
+    "tasks": 22,
+    "nonprediction_fields_exact": true,
+    "finite_predictions": true,
+    "unique_task_sample_keys": true,
+    "task_counts": {
+      "ames": 1457,
+      "bbb_martins": 406,
+      "bioavailability_ma": 128,
+      "caco2_wang": 182,
+      "clearance_hepatocyte_az": 243,
+      "clearance_microsome_az": 221,
+      "cyp2c9_substrate_carbonmangels": 135,
+      "cyp2c9_veith": 2419,
+      "cyp2d6_substrate_carbonmangels": 135,
+      "cyp2d6_veith": 2626,
+      "cyp3a4_substrate_carbonmangels": 135,
+      "cyp3a4_veith": 2467,
+      "dili": 96,
+      "half_life_obach": 135,
+      "herg": 132,
+      "hia_hou": 117,
+      "ld50_zhu": 1478,
+      "lipophilicity_astrazeneca": 840,
+      "pgp_broccatelli": 245,
+      "ppbr_az": 559,
+      "solubility_aqsoldb": 1997,
+      "vdss_lombardo": 226
+    },
+    "utf8_bom": true,
+    "crlf_only": true,
+    "official_score": null,
+    "automatically_uploaded": false
+  },
+  "unchanged_tasks": 21,
+  "all_nonprediction_bytes_exact": true,
+  "all_unchanged_predictions_exact": true
+}

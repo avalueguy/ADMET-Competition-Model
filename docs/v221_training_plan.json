@@ -1,0 +1,38 @@
+{
+  "version": "v221",
+  "delivery_version": "v222",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-29T06:04:18.798835+00:00",
+  "source_sha256": "3ea824cf48ea30e3e53fa1c2f272f6981cca1b3aca6d081c974e6b40978e5f98",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "model": "Supervised rank32 factorization machine of unfolded Morgan and feature-Morgan fragments with chemistry/context",
+  "distinct_from_completed_routes": "Explicit learned low-rank pairwise interactions among sparse chemical fragments and context; not linearTFIDF, tree, fixed similarity kernel, graph network or pretrained embedding. No failed-route models/predictions.",
+  "tasks": "All21 original improvable endpoints, HIA protected",
+  "configs": [
+    {
+      "rank": 32,
+      "epochs": 100
+    }
+  ],
+  "seeds": [
+    2211029,
+    2211030
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "optimizer": "AdamW lr.005 cosine to.0005,weightdecay.05,batch256,featuredropout.1,gradientclip5,100 fixedepochs,no query earlystop",
+  "targets": "BCE logits for classification, smoothL1 beta.1 on fit median/IQR for MAE, ranknormalMSE for Spearman",
+  "features": "Unfolded circular r2/r3 features; fit-onlydf>=3,cap30000/view,logcount*idf,perrowL2 blocks; fit-only median/mean/std augmented descriptors and target-excluded measured context; explicitmissingness",
+  "selection": "Unchanged v148 fold0/1 best minimum gain, freeze unique configuration/weight before fold2/valid,no fallback",
+  "confirmation": "All4 point gains>0, mean original practical threshold, both paired scaffoldbootstrap90 lower>0",
+  "verification": "Query-label perturbation, independent all accepted models/featuretransform reload, analytical FM reference, finitegradients, finalfusion/templatebytes/backupSHA",
+  "source_immutable_after_start": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "official_gain_guaranteed": false,
+  "limitations": "Public labels reused, upstream historical controls approximate; rare-fragment interaction overfitting possible. No official score estimate.",
+  "inference": "GPU fitting; CPU sparse summation for exactly reproducible independent replay from saved tensors"
+}

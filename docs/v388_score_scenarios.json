@@ -1,0 +1,8 @@
+{
+  "formula": "100*reference/(reference+MAE)",
+  "other17_fixed": true,
+  "uniform_five_task_MAE_reduction5percent": 51.59848838934527,
+  "uniform_five_task_MAE_reduction10percent": 51.903550826299536,
+  "uniform_five_task_MAE_reduction_for52": 0.11530128911487808,
+  "scenario_is_model_prediction": false
+}

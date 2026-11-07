@@ -1,0 +1,216 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "checked_at_utc": "2026-10-29T10:11:30.231440+00:00",
+  "training_version": "v256",
+  "delivery_version": "v257",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52,
+  "target_achieved": false,
+  "trained_development_tasks": 3,
+  "protected_tasks": 19,
+  "identity_control_tasks": 18,
+  "development_partitions": 6,
+  "seed_models": 12,
+  "development_best": [
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "config": {
+        "trees": 700,
+        "depth": 4
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 212,
+          "baseline": 0.38815645870734267,
+          "expert": 0.4115528701973106,
+          "candidate": 0.3910958341935071,
+          "gain": -0.007572656386945764
+        },
+        {
+          "part": "fold1",
+          "rows": 212,
+          "baseline": 0.3348527606452333,
+          "expert": 0.351313588423728,
+          "candidate": 0.33483739923381195,
+          "gain": 4.5875122521710155e-05
+        }
+      ],
+      "objective": -0.007572656386945764
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "config": {
+        "trees": 700,
+        "depth": 4
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 8.068577292713924,
+          "expert": 8.855397082006885,
+          "candidate": 8.078536898557513,
+          "gain": -0.0012343695155009066
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.585961846123768,
+          "expert": 8.274843310658525,
+          "candidate": 7.5867825886059395,
+          "gain": -0.00010819227657876585
+        }
+      ],
+      "objective": -0.0012343695155009066
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "config": {
+        "trees": 700,
+        "depth": 4
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 980,
+          "baseline": 0.4900050804950242,
+          "expert": 0.6530244476841338,
+          "candidate": 0.5046552056056627,
+          "gain": -0.029897904519353695
+        },
+        {
+          "part": "fold1",
+          "rows": 980,
+          "baseline": 0.47650922350658986,
+          "expert": 0.6065498459929878,
+          "candidate": 0.47800691382651506,
+          "gain": -0.003143045813266364
+        }
+      ],
+      "objective": -0.029897904519353695
+    }
+  ],
+  "nominated_tasks": [],
+  "accepted_tasks": [],
+  "feature_audit": {
+    "status": "PASS",
+    "signature": "925cc5473a1cacdc5ca9ac872a7da4daa8fa06ae7062f4b005069635bd8781b4",
+    "smiles_sha256": "69976b897e139d05c0017ba760e1a39920525ad3a7e884a07d3cc2a7d6029a7b",
+    "features_sha256": "2a29562ee63e0bf62682b08d654d46342bf333ce4c7c1292a2e922a97e6eb060",
+    "records_sha256": "40f57a9a6800219b67046038048cae2d2ac23936e7266f30b21f7f8e4aef532c",
+    "molecules": 5742,
+    "dimensions": 59,
+    "feature_names": [
+      "mean_sasa",
+      "mean_polar_sasa",
+      "mean_apolar_sasa",
+      "mean_donor_sasa",
+      "mean_acceptor_sasa",
+      "mean_positive_charge_sasa",
+      "mean_negative_charge_sasa",
+      "mean_polar_fraction",
+      "mean_polar_burial_fraction",
+      "mean_donor_acceptor_contact_fraction",
+      "mean_minimum_donor_acceptor_distance",
+      "mean_centroid_charge_moment",
+      "mean_absolute_charge_sasa",
+      "sd_sasa",
+      "sd_polar_sasa",
+      "sd_apolar_sasa",
+      "sd_donor_sasa",
+      "sd_acceptor_sasa",
+      "sd_positive_charge_sasa",
+      "sd_negative_charge_sasa",
+      "sd_polar_fraction",
+      "sd_polar_burial_fraction",
+      "sd_donor_acceptor_contact_fraction",
+      "sd_minimum_donor_acceptor_distance",
+      "sd_centroid_charge_moment",
+      "sd_absolute_charge_sasa",
+      "minimum_sasa",
+      "minimum_polar_sasa",
+      "minimum_apolar_sasa",
+      "minimum_donor_sasa",
+      "minimum_acceptor_sasa",
+      "minimum_positive_charge_sasa",
+      "minimum_negative_charge_sasa",
+      "minimum_polar_fraction",
+      "minimum_polar_burial_fraction",
+      "minimum_donor_acceptor_contact_fraction",
+      "minimum_minimum_donor_acceptor_distance",
+      "minimum_centroid_charge_moment",
+      "minimum_absolute_charge_sasa",
+      "maximum_sasa",
+      "maximum_polar_sasa",
+      "maximum_apolar_sasa",
+      "maximum_donor_sasa",
+      "maximum_acceptor_sasa",
+      "maximum_positive_charge_sasa",
+      "maximum_negative_charge_sasa",
+      "maximum_polar_fraction",
+      "maximum_polar_burial_fraction",
+      "maximum_donor_acceptor_contact_fraction",
+      "maximum_minimum_donor_acceptor_distance",
+      "maximum_centroid_charge_moment",
+      "maximum_absolute_charge_sasa",
+      "valid",
+      "conformers",
+      "convergence_fraction",
+      "energy_range",
+      "heavy",
+      "MMFF94",
+      "UFF"
+    ],
+    "outcomes": {
+      "PASS": 5723,
+      "FAILED_FEATURE": 9,
+      "NO_CONFORMER": 2,
+      "OVER80HEAVY": 7,
+      "NO_FORCEFIELD_PARAMETERS": 1
+    },
+    "train_structure_coverage": {
+      "caco2_wang": 0.989010989010989,
+      "ppbr_az": 0.9974385245901639,
+      "lipophilicity_astrazeneca": 0.9993197278911564
+    },
+    "assay_labels_used": false,
+    "seconds": 591.7901363223791,
+    "workers": 6
+  },
+  "smoke": "PASS",
+  "baseline_cache_verified": 105,
+  "archive": {
+    "status": "PASS",
+    "prefix": "v257_exposed_polarity_20261029",
+    "archive_sha256": "7f1d94baf6dbcc2bf33948e5970c4bc582104896fdb15494c3617cb20175623f",
+    "manifest_files": 153,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 101,
+    "existing_exact": 52,
+    "existing_updated_docs_preserved": []
+  },
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "frozen_gates_unchanged": true,
+  "local_gate_recalculation": true,
+  "no_confirmation_fallback": true,
+  "rejected_route_restarted": false,
+  "exited_pids": [
+    25411,
+    25781,
+    25782,
+    25789,
+    26025
+  ],
+  "interpretation": "Exposure features were computationally viable but did not produce original-gate supported MAE improvement. Caco2 had one nonpositive development fold,PPBR and lipophilicity both folds negative. No confirmation opened. This completed route will not be retried with new seeds or feature/parameter edits based on these scores."
+}

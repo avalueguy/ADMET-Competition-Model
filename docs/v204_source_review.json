@@ -1,0 +1,13 @@
+{
+  "status": "STATIC_REVIEW_PASS_SMOKE_REQUIRED",
+  "checks": [
+    "Only d[y][fit] supplies graph boundary labels/prior/target transforms.",
+    "Query structures allowed as unlabeled nodes; descriptors fitted solely on actual fit rows.",
+    "Target-excluded assay source and v148 gates unchanged; HIA protected.",
+    "No old predictions as graph input; existing rejected routes neither rerun nor modified.",
+    "Saved models contain graph/fit boundaries; independent reconstruction required before CSV.",
+    "Only two strengths and original blend weights; no postconfirmation fallback."
+  ],
+  "frozen_source_sha256": "9219cf7d535cf3cc606c0e557213b5943dd2f149bcbee0ba2e42c377b8c446f9",
+  "smoke_required": true
+}

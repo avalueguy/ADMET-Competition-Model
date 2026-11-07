@@ -1,0 +1,69 @@
+{
+  "version": "v200",
+  "delivery_version": "v201",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "source_sha256": "c0f74916220bc00131dc008165e115b85a8d9610433950397bc266af618b8690",
+  "model": "Exact-Newton numerical repair of the unfinished v197 smooth-absolute additive MAE models",
+  "configs": [
+    {
+      "strength": 0.003
+    },
+    {
+      "strength": 0.03
+    }
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "tasks": [
+    "solubility_aqsoldb",
+    "caco2_wang",
+    "ppbr_az",
+    "ld50_zhu",
+    "lipophilicity_astrazeneca"
+  ],
+  "selection": "Unchanged v148 max minimum fold0/1; freeze before confirmation, no fallback",
+  "confirmation": "All4 positive; practical mean threshold; both fold2 and valid scaffold-bootstrap90 lower bounds>0",
+  "fit_only": [
+    "feature correlation screening",
+    "correlation pruning",
+    "quantile knots",
+    "median/imputation/scales",
+    "target transforms"
+  ],
+  "maximum_features": 96,
+  "knots": [
+    0.05,
+    0.35,
+    0.65,
+    0.95
+  ],
+  "degree": 2,
+  "smoothness_multiplier": 10,
+  "objectives": {
+    "MAE": "Same sqrt(residual^2+0.03^2) mean plus unchanged quadratic penalty"
+  },
+  "changes_from_previous": "Only solver curvature; same designs/objective/configuration/blends. Five original MAE endpoints, not rerunning completed rejected classifications.",
+  "source_immutable_after_start": true,
+  "query_label_perturbation_required": true,
+  "independent_reload_required": true,
+  "new_external_data": false,
+  "test_labels_used": false,
+  "official_gain_guaranteed": false,
+  "limitations": "Public labels repeatedly reused; upstream historical controls approximate. Validation evidence cannot guarantee official gain.",
+  "created_at_utc": "2026-10-28T07:19:07.186071+00:00",
+  "numerical_repair": {
+    "old": "IRLS uses curvature1/sqrt(r^2+epsilon^2), a majorizer, may converge slowly",
+    "new": "Exact curvature epsilon^2/(r^2+epsilon^2)^(3/2), damped Newton with same Armijo search",
+    "gradient_inf_tolerance": 1e-07,
+    "iteration_limit": 150,
+    "objective_change_alone_no_longer_accepts": true
+  },
+  "original_failure_archive": "releases/v198_additive_splines_failed_20261028.tar.gz",
+  "diagnosis": "docs/v200_numerical_diagnosis.json",
+  "original_source_sha256": "ea76946c3287379cd6040de76de0e9ea2fcf066fb53bbfb015432b29fadc146b",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "confirmations_examined_for_repair": false
+}

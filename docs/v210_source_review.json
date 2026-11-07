@@ -1,0 +1,12 @@
+{
+  "status": "STATIC_REVIEW_PASS_SMOKE_REQUIRED",
+  "frozen_source_sha256": "a5005887734c4621254c1e9d9ee0670b0ed464059d589cc0cfe9733a9c0389a1",
+  "smoke_required": true,
+  "checks": [
+    "Per-molecule originalSMILES matched to official structure signature; no labels consulted",
+    "Original valence exceptions explicit; unexpected normalization failures stop experiment",
+    "Two seeds one fixed configuration, no expanding search using confirmation labels",
+    "Originalv148 unchanged; independent all-feature regeneration and model reload required",
+    "New local finalizer checks correctv211 release key and normalized feature hashes"
+  ]
+}

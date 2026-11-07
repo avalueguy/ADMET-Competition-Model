@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "signature": "0950e0ad7c06607fa1de921016c4aa958039d0b82f13672b921f877c0334827c",
+  "checks": [
+    {
+      "task": "herg",
+      "query_label_perturbation_invariant": true,
+      "converged": true,
+      "objective_monotonic": true,
+      "iterations": 5
+    },
+    {
+      "task": "caco2_wang",
+      "query_label_perturbation_invariant": true,
+      "converged": true,
+      "objective_monotonic": true,
+      "iterations": 42
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "query_label_perturbation_invariant": true,
+      "converged": true,
+      "objective_monotonic": true,
+      "iterations": 2
+    }
+  ],
+  "squared_solver_reference_match": true
+}

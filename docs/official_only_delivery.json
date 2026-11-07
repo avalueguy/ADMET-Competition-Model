@@ -1,0 +1,68 @@
+{
+  "status": "COMPLETE_LOCALLY_VERIFIED",
+  "candidate": {
+    "csv": "admet_submissions/v68_official_only/我从山北来带着兰花草-小分子药物预测技术创新赛-20261020.csv",
+    "sha256": "0aa975b4e2dfce0890296854fbe621de0beb4955bfd5ed0a0131e88cd4625ccf",
+    "rows": 16379,
+    "columns": 6,
+    "tasks": 22,
+    "official_score": null,
+    "status": "PLATFORM_FORMAT_ACCEPTED_SCORE_OUTSIDE_TOP_TEN_EXACT_SCORE_PENDING",
+    "independent_model_replay": "PASS",
+    "external_data": false,
+    "pretrained_weights": false
+  },
+  "comparator": {
+    "csv": "admet_submissions/v67_official_only/我从山北来带着兰花草-小分子药物预测技术创新赛-20261020.csv",
+    "sha256": "1c8cdd14cc23ca54b583baf0243f5f80ed58ac8b6d8e5ccd003dbb7305f0dac3",
+    "rows": 16379,
+    "columns": 6,
+    "tasks": 22,
+    "official_score": null,
+    "status": "LOCALLY_VERIFIED_AWAITING_PLATFORM_EVALUATION",
+    "independent_model_replay": "PASS",
+    "external_data": false,
+    "pretrained_weights": false
+  },
+  "archive": {
+    "file": "official_only_v67_v68_20261020.tar.gz",
+    "sha256": "ae4dac28be3a399410cae70c1ab7421aceadaaf03eba9b5d6300eda063244e0b",
+    "bytes": 97859750,
+    "manifest_sha256": "55cc3fd4e623904aa495ed30b7ccd376f5469694064fa7adadc35e48d27f6ccc",
+    "files": 459
+  },
+  "platform_baseline": {
+    "version": "v63",
+    "score": 50.603,
+    "uploaded_byte_hash_confirmed": false
+  },
+  "tenth_place": 51.265,
+  "automatic_platform_submission": false,
+  "automatic_github_push": false,
+  "valid": {
+    "status": "REPORT_ONLY",
+    "improved": 11,
+    "worsened": 3,
+    "unchanged": 8,
+    "comparison": "v68 versus v67 on official valid after frozen selection",
+    "official_score_gain": null,
+    "not_an_unbiased_full_pipeline_estimate": true
+  },
+  "upload_format_correction": {
+    "status": "CORRECTED_TO_ACTUAL_PLATFORM_EXPECTED_IDS",
+    "platform_error": "cyp2c9_veith: Drug_ID mismatch at sample_idx 0: expected '5348064.0', received '5348064'",
+    "template": "admet_official/submission_template.csv",
+    "template_sha256": "8ee41589d2c98e7b93081c058b3f928ac09bea4b3ffc899fa13677051e9baa20",
+    "preferred_v68_csv": "admet_submissions/v68_official_only/我从山北来带着兰花草-小分子药物预测技术创新赛-20261020.csv",
+    "local_upload_file": "D:/bili_download/v68_平台要求保留小数ID/我从山北来带着兰花草-小分子药物预测技术创新赛-20261020.csv",
+    "sha256": "0aa975b4e2dfce0890296854fbe621de0beb4955bfd5ed0a0131e88cd4625ccf",
+    "user_template_sha256": "9604b78fd59cb2e7a803df4ed731e054f152af401c4ec6ec79d11af70cfd292b",
+    "user_template_drug_id_mismatch_rows": 7611,
+    "revoked_integer_csv_sha256": "bc7575519ff011dc0a69cfe31af9e84c5d1bcd23376a4f94bb9fe39f133ef26c",
+    "predictions_unchanged": true,
+    "nonprediction_bytes_exact": true,
+    "upload_success_confirmed": true,
+    "official_score": null,
+    "platform_feedback": "User confirms format accepted, score still outside top ten; exact score pending"
+  }
+}

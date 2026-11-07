@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "global_pretraining_isolation": [
+    {
+      "part": "fold0",
+      "pretrain_fit_rows": 48512,
+      "pretrain_fit_molecules": 31822,
+      "target_query_rows": 617
+    },
+    {
+      "part": "fold1",
+      "pretrain_fit_rows": 43685,
+      "pretrain_fit_molecules": 28375,
+      "target_query_rows": 616
+    },
+    {
+      "part": "fold2",
+      "pretrain_fit_rows": 44899,
+      "pretrain_fit_molecules": 29110,
+      "target_query_rows": 615
+    },
+    {
+      "part": "valid",
+      "pretrain_fit_rows": 50526,
+      "pretrain_fit_molecules": 32864,
+      "target_query_rows": 265
+    },
+    {
+      "part": "final",
+      "pretrain_fit_rows": 65430,
+      "pretrain_fit_molecules": 40229,
+      "target_query_rows": 533
+    }
+  ],
+  "all20_controls_group_and_canonical_disjoint": true,
+  "test_labels_nan": true,
+  "no_local_training": true
+}

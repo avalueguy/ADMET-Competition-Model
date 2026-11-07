@@ -1,0 +1,7 @@
+{
+  "archive": "releases/v384_input_delta.tar.gz",
+  "sha256": "ed97f8ca887755d3b821082a3d46404034d5b11a1badd977e49a069145442b63",
+  "bytes": 561401,
+  "updated_controls": 10,
+  "baseline_csv_matches": true
+}

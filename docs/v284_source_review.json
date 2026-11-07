@@ -1,0 +1,12 @@
+{
+  "status": "PREDECLARED_BEFORE_DEVELOPMENT",
+  "source_sha256": "7b39c5bbb700f6ca63ec779df69f5fa149613efb9b8e767df434bdac5e5c7387",
+  "fit_only_review": "docs/v283_review_decision.json",
+  "labels_changed": false,
+  "groups_changed": false,
+  "original_model_parameters_unchanged": true,
+  "original_seeds_unchanged": true,
+  "original_v148_gates_unchanged": true,
+  "old_frozen_sources_modified": false,
+  "fit_predictions_called_oof": false
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "at_unix": 1793940811.4732172,
+  "launch_mtime_unix": 1793940732.9004593,
+  "remote_protocol_mtime_unix": 1793940313.4602993,
+  "protocol_sha256": "e638bfb0d69b317b56944fcb4df04d06f8de532a04f6b848e9c0962436072649",
+  "scope": "Remote transferred protocol predates remote launch file; no claim of tamperproof registry."
+}

@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-10-31T06:19:20.465781+00:00",
+  "event": "Assistant mistakenly invoked packager after original pipeline COMPLETE. Duplicate attempt was blocked by existing-archive assertion.",
+  "training_repeated": false,
+  "original_archive_sha256": "53a9b23ab6918b8473b22969675481a3299d71a79b7be81fb3888d236b8e9715",
+  "duplicate_pipeline_status": {
+    "status": "FAILED",
+    "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/v76/tools/v291_package_stereo_schema_fix.py\", line 114, in <module>\n    main()\n  File \"/root/autodl-tmp/v76/tools/v291_package_stereo_schema_fix.py\", line 107, in main\n    package()\n  File \"/root/autodl-tmp/v76/tools/v291_package_stereo_schema_fix.py\", line 75, in package\n    assert not archive.exists()\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+  },
+  "external_manifest_after_duplicate_sha256": "279ec4ac627ba8cd2944e1789cd806e58baa947245a7fb23ee3e2b6d786fb090"
+}

@@ -1,0 +1,41 @@
+{
+  "status": "COMPLETE",
+  "version": "v375",
+  "completed_at_utc": "2026-11-05T09:36:49.477518+00:00",
+  "official_best": 51.27,
+  "training_host": "connect.nmb2.seetacloud.com:25870",
+  "delivery": {
+    "status": "NO_ELIGIBLE_CANDIDATE",
+    "signature": "dbe671b5b9a4ec5d513e4a661609c43283301ca5aa64fd627c2792b919829449",
+    "baseline": "v371",
+    "baseline_official_score": 51.27,
+    "official_score": null,
+    "csv": null,
+    "target_five_tasks_ten_percent_achieved_local": false,
+    "ten_percent_all_parts_tasks": [],
+    "approved_tasks": [],
+    "training_gpu_remote_only": true,
+    "all_fitting_remote": true,
+    "automatic_platform_submission": false,
+    "model_replay_max_error": 0.0
+  },
+  "verification": "PASS",
+  "models_verified": 40,
+  "remote_idle": {
+    "no_training_processes_running": true,
+    "experiment_pids": [
+      9326,
+      10407
+    ],
+    "scope": "Both v374/v375 runners and verifiers absent; no GPU compute processes.",
+    "at_unix": 1793871375.8239572,
+    "gpu": "NVIDIA GeForce RTX 3090, 0 MiB, 0 %\n",
+    "gpu_compute_processes": "",
+    "statuses": {
+      "mae_experts_v374": "EVIDENCE_READY",
+      "mae_experts_v375": "EVIDENCE_READY"
+    }
+  },
+  "five_task_ten_percent_goal": false,
+  "official_new_score": null
+}

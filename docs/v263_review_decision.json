@@ -1,0 +1,115 @@
+{
+  "status": "FIT_ONLY_MECHANISM_REVIEW_COMPLETE",
+  "at_utc": "2026-10-29T10:23:16.705402+00:00",
+  "diagnostic": "docs/v263_fit_label_reliability.json",
+  "diagnostic_sha256": "d857fce19ff76984d356fd4e0520d7c4e48141eaf3f7f0476972750e9cd28ade",
+  "focus": [
+    {
+      "task": "clearance_hepatocyte_az",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 566,
+          "exact_structure": {
+            "unique_identities": 474,
+            "repeated_identities": 92,
+            "repeated_rows": 184,
+            "conflicting_identities": 92,
+            "conflicting_rows": 184,
+            "conflicting_row_fraction": 0.3250883392226148,
+            "median_disagreement_iqr": 0.3302447552447552,
+            "binary_conflicting_identities": null
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 565,
+          "exact_structure": {
+            "unique_identities": 478,
+            "repeated_identities": 87,
+            "repeated_rows": 174,
+            "conflicting_identities": 87,
+            "conflicting_rows": 174,
+            "conflicting_row_fraction": 0.30796460176991153,
+            "median_disagreement_iqr": 0.33661075766338927,
+            "binary_conflicting_identities": null
+          }
+        }
+      ]
+    },
+    {
+      "task": "ppbr_az",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 1302,
+          "exact_structure": {
+            "unique_identities": 868,
+            "repeated_identities": 310,
+            "repeated_rows": 744,
+            "conflicting_identities": 310,
+            "conflicting_rows": 744,
+            "conflicting_row_fraction": 0.5714285714285714,
+            "median_disagreement_iqr": 0.20068863748155447,
+            "binary_conflicting_identities": null
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 1301,
+          "exact_structure": {
+            "unique_identities": 862,
+            "repeated_identities": 323,
+            "repeated_rows": 762,
+            "conflicting_identities": 323,
+            "conflicting_rows": 762,
+            "conflicting_row_fraction": 0.5857033051498847,
+            "median_disagreement_iqr": 0.15912208504801054,
+            "binary_conflicting_identities": null
+          }
+        }
+      ]
+    }
+  ],
+  "labels_changed": false,
+  "confirmation_scores_used": false,
+  "new_predictions": false,
+  "historical_overlap": [
+    {
+      "path": "admet_v61_run.py",
+      "mechanism": "inverse identity count sample weighting"
+    },
+    {
+      "path": "admet_v68_kernel.py",
+      "mechanism": "Tanimoto SVR with inverse identity count risk weighting"
+    },
+    {
+      "path": "admet_v71_v56_catboost.py",
+      "mechanism": "CatBoost inverse identity count risk weighting"
+    },
+    {
+      "path": "admet_v78_median.py",
+      "mechanism": "XGBoost MAE/Huber with inverse canonical count risk weighting"
+    },
+    {
+      "path": "admet_multitask.py",
+      "mechanism": "canonical mean aggregation, with equal certainty"
+    },
+    {
+      "path": "tools/v92_full_kernel.py",
+      "mechanism": "homoscedastic fixed-ridge Tanimoto models"
+    },
+    {
+      "path": "tools/v244_conditional_density.py",
+      "mechanism": "per-row neural logistic mixture, no replicate-calibrated observation covariance"
+    }
+  ],
+  "rejected_interpretations": [
+    "Do not treat rounded clearance boundaries as established censoring",
+    "Do not merge salts/stereochemistry or alter labels",
+    "Do not claim conflicts prove measurement error; unrecorded assay conditions can differ",
+    "Inverse-frequency weighting and simple mean aggregation alone repeat prior work"
+  ],
+  "decision": "Test one bounded fit-only replicate-variance observation model on PPBR and hepatocyte, with existing kernels. No query-based variance tuning, no sweep or failed-confirmation fallback.",
+  "limitation": "All public labels have historical reuse; neither diagnostic nor a fitted model proves hidden-test gain."
+}

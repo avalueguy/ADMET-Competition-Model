@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "files": 96,
+  "all_fitting_remote": true,
+  "note": "Local byte copy and hash checks only; no fitting."
+}

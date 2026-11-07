@@ -1,0 +1,30 @@
+{
+  "status": "PAUSED_BY_USER",
+  "paused_at_utc": "2026-10-28T05:55:35.080804+00:00",
+  "resume_requires_user_message": true,
+  "processes": [
+    {
+      "pid": 5755,
+      "script": "tools/v195_package_smiles_batch.py",
+      "command": "/root/miniconda3/bin/python tools/v195_package_smiles_batch.py",
+      "pgid": 5755,
+      "start_ticks": "2022968113",
+      "before_state": "S",
+      "after_state": "T"
+    },
+    {
+      "pid": 5754,
+      "script": "tools/v193_smiles_convolution.py",
+      "command": "/root/miniconda3/bin/python tools/v193_smiles_convolution.py",
+      "pgid": 5754,
+      "start_ticks": "2022968113",
+      "before_state": "R",
+      "after_state": "T"
+    }
+  ],
+  "boot_id": "0147efe4-5fc2-4881-9c47-fcd4cd66909e",
+  "method": "SIGSTOP_PROCESS_GROUPS",
+  "process_memory_preserved": true,
+  "server_shutdown": false,
+  "credentials_stored": false
+}

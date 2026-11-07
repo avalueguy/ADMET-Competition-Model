@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "new_csv_created": false,
+  "files": [
+    {
+      "path": "admet_model_outputs_v296/confirmation.json",
+      "sha256": "4aa5b79805ac207bafae007b784f74b2e955254719f41903b2035262bc777393",
+      "bytes": 151
+    },
+    {
+      "path": "admet_model_outputs_v296/development.json",
+      "sha256": "155b442eb122356deff172b632665c93256d1239e93898ec1c39547561c03d9a",
+      "bytes": 30732
+    },
+    {
+      "path": "admet_model_outputs_v296/final_status.json",
+      "sha256": "178cbe4fee98d9b2a0d5617f668909ce3027e446905b282fd6c46b66c185a125",
+      "bytes": 2099
+    },
+    {
+      "path": "admet_model_outputs_v296/frozen_local_run.json",
+      "sha256": "c0b5cd097daa44c4410e03b0c376da25c326e159fc34ceb5511edd76482da213",
+      "bytes": 5430
+    },
+    {
+      "path": "admet_model_outputs_v296/frozen_local_run.preflight_attempt1.json",
+      "sha256": "aab50064be957615aaf2a3a805fd2141edea53f1a8dcabcf23057d5445386562",
+      "bytes": 5430
+    },
+    {
+      "path": "admet_model_outputs_v296/frozen_selection.json",
+      "sha256": "c2bbf0113a99df3272e094e560065f27d1f3668733c8597d4301edef9290f8cd",
+      "bytes": 108
+    },
+    {
+      "path": "admet_model_outputs_v296/preflight.json",
+      "sha256": "9bc95d0444528b1bd935771610733159593c7f4660aa08f169b731df6d230204",
+      "bytes": 2759
+    },
+    {
+      "path": "admet_model_outputs_v296/preflight_attempt1.json",
+      "sha256": "959bd0ac0ceec3ea22d82919d027abdb505460c6134d75b22d0e1c9ad0cf12fc",
+      "bytes": 347
+    },
+    {
+      "path": "admet_model_outputs_v296/protocol.json",
+      "sha256": "2e9293f645a54f325a7d9f1feae82cb1fb6f605e3057b244365a837f3c476f34",
+      "bytes": 1897
+    },
+    {
+      "path": "admet_model_outputs_v296/smoke.json",
+      "sha256": "04f9e4baca410a316a745149ceaa086fb9d43056b46d62cb48603699c3f4cf77",
+      "bytes": 880
+    },
+    {
+      "path": "admet_model_outputs_v296/models/cyp3a4_substrate_carbonmangels/fold0/v145_context_integral16/metadata.json",
+      "sha256": "428e6318f31855499e7540129aff169ca49c0f543ab9a4672c3b5ebd86a5fe20",
+      "bytes": 663
+    },
+    {
+      "path": "admet_model_outputs_v296/models/cyp3a4_substrate_carbonmangels/fold0/v145_context_integral16/predictions.npz",
+      "sha256": "1998ba2051efffd265bc5face1bb77777a44b28fc1c47c5a9acb62eeb3573719",
+      "bytes": 1227459
+    },
+    {
+      "path": "admet_model_outputs_v296/models/cyp3a4_substrate_carbonmangels/fold1/v145_context_integral16/metadata.json",
+      "sha256": "8305e55bc726fd7d319f347179fc24384b1468979997ba47ed380cc6704467fb",
+      "bytes": 678
+    },
+    {
+      "path": "admet_model_outputs_v296/models/cyp3a4_substrate_carbonmangels/fold1/v145_context_integral16/predictions.npz",
+      "sha256": "0e56177ff0ca1c473a4ee30a9cd312fc2fc15eb5c179aa95dfd7a38c3b787b9a",
+      "bytes": 1218976
+    },
+    {
+      "path": "admet_model_outputs_v296/models/herg/fold0/v145_context_integral16/metadata.json",
+      "sha256": "430170c1529b7f89210ed15aef889c7c79134373d2adc25749213de5193fcdba",
+      "bytes": 611
+    },
+    {
+      "path": "admet_model_outputs_v296/models/herg/fold0/v145_context_integral16/predictions.npz",
+      "sha256": "a5d5c5553a1ccc4d6323950bd6eee1acd076006e0f58bcd1860e1d847a4a6953",
+      "bytes": 1084253
+    },
+    {
+      "path": "admet_model_outputs_v296/models/herg/fold1/v145_context_integral16/metadata.json",
+      "sha256": "0b49c664d8d17ac22468f487aedb9ed2da8c667adca47a02ecf2e69178021d86",
+      "bytes": 626
+    },
+    {
+      "path": "admet_model_outputs_v296/models/herg/fold1/v145_context_integral16/predictions.npz",
+      "sha256": "3c306a19a9cb24d83f88b9367d996679566adcceab4fbe4063eef55ecd280367",
+      "bytes": 1107226
+    },
+    {
+      "path": "tools/v296_local_context_validation.py",
+      "sha256": "61f6bafbfe80c7c087cd2c031100968d6549b6b034e9dc3946232b51d348ad34",
+      "bytes": 6110
+    },
+    {
+      "path": "docs/v296_final_status.json",
+      "sha256": "178cbe4fee98d9b2a0d5617f668909ce3027e446905b282fd6c46b66c185a125",
+      "bytes": 2099
+    },
+    {
+      "path": "docs/ITERATION_V296_20261101.md",
+      "sha256": "65c7f8758987520285123831f57990b3304739623c09ca32fc097bc75f35179a",
+      "bytes": 1779
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "version": "v307",
+  "verification": "v308",
+  "status": "PREDECLARED_SMOKE_PASS_BEFORE_SCORES",
+  "date_hong_kong": "2026-11-01",
+  "created_at_utc": "2026-11-01T10:00:00.2987432Z",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52.0,
+  "source": "tools/v307_differentiable_trees.py",
+  "source_sha256": "8ef672e43b667b5aae6adea5156351a8b1f62976489ed43dbaddee25dfede273",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "tasks": [
+    "caco2_wang",
+    "ppbr_az",
+    "lipophilicity_astrazeneca",
+    "ld50_zhu",
+    "solubility_aqsoldb"
+  ],
+  "configuration": {
+    "maximum_steps": 2500,
+    "epochs": 100,
+    "trees": 64,
+    "fingerprint_columns": 512,
+    "minimum_steps": 1200,
+    "depth": 5,
+    "quantiles": 32
+  },
+  "seeds": [
+    3071101,
+    3071102
+  ],
+  "blend_weights": [
+    0.2,
+    0.45
+  ],
+  "hypothesis": "Joint sparse feature selection, thresholds and leaf optimization can learn interactions missed by greedy splits or frozen topology refitting.",
+  "mechanism": "64 oblivious soft trees of depth5; exact entmax1.5 feature selectors, sigmoid thresholds/temperatures, jointly optimized leaf values; direct MAE, 10 percent tree dropout, two fixed seeds. AdamW lr0.005 cosine to0.0003 weight_decay0.0001. No retrieval or previous model predictions.",
+  "inputs": "512 fit-variance-selected archived count fingerprint features plus augmented official descriptors and target-excluded measured context. No chemistry regeneration.",
+  "fit_only": [
+    "Empirical feature quantiles and missingness",
+    "Fingerprint variance selection",
+    "Threshold initialization from projected fit quantiles",
+    "Target median and IQR"
+  ],
+  "novelty_review": [
+    "No prior differentiable oblivious trees or entmax selectors found in historical Python sources",
+    "v216 greedy scaffold ordered CatBoost differs from joint gradient optimization",
+    "v278 freezes actual v145 topology and fits leaf values only",
+    "v301 shared-weight MLP differs in representation and parameterization",
+    "v304 learned label retrieval is rejected and not used"
+  ],
+  "smoke": [
+    "Independent scalar entmax bisection",
+    "Autograd numerical gradient check",
+    "Empirical quantile reference",
+    "Path probability conservation",
+    "Finite CUDA gradients",
+    "Non-fit labels perturbed",
+    "Checkpoint reload",
+    "Reverse query order"
+  ],
+  "acceptance": "Unmodified v148: max-min development gain>0.012 then freeze one weight0.2/0.45; all four gains positive, mean>0.012, both confirmation scaffold bootstrap90 lower>0; no fallback",
+  "source_immutable_after_start": true,
+  "external_training_data": false,
+  "pretrained_parameters": false,
+  "historical_predictions_as_training_input": false,
+  "manual_submission_only": true,
+  "official_gain_established": false,
+  "credentials_stored": false
+}

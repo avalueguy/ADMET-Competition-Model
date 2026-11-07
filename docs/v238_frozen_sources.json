@@ -1,0 +1,37 @@
+{
+  "status": "FROZEN_BEFORE_DEVELOPMENT",
+  "files": [
+    {
+      "path": "tools/v238_molecular_view_attention.py",
+      "sha256": "530a5109eab332f4cd35b1c891be57bf784fd016e683d1b58ac7778c49b459a9"
+    },
+    {
+      "path": "tools/v239_verify_view_attention.py",
+      "sha256": "b9f834573a5966f92feb7fac076104cf7ac894836b82f7ed7aa8d969e29e704a"
+    },
+    {
+      "path": "tools/v240_package_attention_batch.py",
+      "sha256": "9278ee5e4446a0bc8f12b703b6f5658f372edf3e06a92d367c49577402371517"
+    },
+    {
+      "path": "tools/v241_attention_driver.py",
+      "sha256": "bdb63529f10b03aced4e7242608098afd15e1f11c3459e8d6afa7f8b5b240b61"
+    },
+    {
+      "path": "tools/v242_start_view_attention.py",
+      "sha256": "010e750b19ffc8a2232aebb6ab6eb80354392ecec05558c250b2417f3cc71054"
+    },
+    {
+      "path": "tools/finalize_v239_local.py",
+      "sha256": "46070636c0b7dd2b3023dc36ebf0b5611fe4f8272a18018d6ecec05e29c1ab10"
+    },
+    {
+      "path": "docs/v238_training_plan.json",
+      "sha256": "f8f799c264909dce953dd13b0614c6c045da4e638c215ff8b2dd198271a94cef"
+    },
+    {
+      "path": "docs/v238_source_review.json",
+      "sha256": "6f1e8f76c8c859f037cd0b0b8f7dca662b54e53a65e6a2cb30c51963708ad080"
+    }
+  ]
+}

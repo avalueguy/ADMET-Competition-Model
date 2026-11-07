@@ -1,0 +1,51 @@
+{
+  "status": "FROZEN_BEFORE_SMOKE_AND_DEVELOPMENT",
+  "files": [
+    {
+      "path": "tools/v264_replicate_noise_gp.py",
+      "sha256": "39fbb337cd04e8368bf4ac6fef715b3255743b225a1995621d5ba4adc4ffd822"
+    },
+    {
+      "path": "tools/v265_verify_replicate_noise.py",
+      "sha256": "6bda829d84d017ee8771f68266f70c2de8ec8a9e03ee955ba2e79f2de3e5166f"
+    },
+    {
+      "path": "tools/finalize_v265_local.py",
+      "sha256": "108b884bbc499c5a03070a3be8515f50680394e4fa42663b50df969ec3f69bc4"
+    },
+    {
+      "path": "tools/v266_package_replicate.py",
+      "sha256": "9f76cabc58d89d1635d70c61d4ecee9dcad60c41b39b1c9370aa583547d90544"
+    },
+    {
+      "path": "tools/v267_replicate_driver.py",
+      "sha256": "ea598eb67584944ca20f000aa9b20da5a754e43ca24a272cdacfd76d121b6cda"
+    },
+    {
+      "path": "tools/v268_prepare_replicate_protocol.py",
+      "sha256": "c92e9ac44d334ce14163e6ee810349f8612d5ae9ff82699fa47e05fd3275f3fa"
+    },
+    {
+      "path": "tools/v269_start_replicate.py",
+      "sha256": "78e02b4aa67f3574827c4e92e6256ef68df9779d236cdc2eb910d1cc6ca20946"
+    },
+    {
+      "path": "docs/v264_training_plan.json",
+      "sha256": "7703c65ffb4c7641685442cf77a43ffbf2b8a683dfb146d9e820338dd1075bb4"
+    },
+    {
+      "path": "docs/v264_source_review.json",
+      "sha256": "a6a9a9bb75e1f03bfb34439cf1566dc55790645b79edf2a202211d00bf81a00a"
+    },
+    {
+      "path": "docs/v263_review_decision.json",
+      "sha256": "0a2e04dfa0041e123f185bfa02dc3eda6158f3638a8e8f13f07dae1ba62a6465"
+    },
+    {
+      "path": "tools/v148_experiment_runner.py",
+      "sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871"
+    }
+  ],
+  "credentials_stored": false,
+  "source_immutable_after_start": true
+}

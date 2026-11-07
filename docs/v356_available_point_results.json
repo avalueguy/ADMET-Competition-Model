@@ -1,0 +1,141 @@
+{
+  "status": "PARTIAL_CACHED_POINT_RESULTS_ONLY",
+  "at_hong_kong": "2026-11-02T15:08:17.155799+08:00",
+  "records": [
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.02574750830564776
+        },
+        {
+          "part": "fold1",
+          "gain": 0.025955833882663204
+        },
+        {
+          "part": "fold2",
+          "gain": 0.005098684210526172
+        },
+        {
+          "part": "valid",
+          "gain": 0.0031362007168459494
+        }
+      ],
+      "frozen_choice_unchanged": true
+    },
+    {
+      "task": "dili",
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.006858481097356983
+        },
+        {
+          "part": "fold1",
+          "gain": 0.007646276595744572
+        },
+        {
+          "part": "fold2",
+          "gain": -0.016297043010752632
+        },
+        {
+          "part": "valid",
+          "gain": -0.01978021978021971
+        }
+      ],
+      "frozen_choice_unchanged": true
+    },
+    {
+      "task": "herg",
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.007211538461538214
+        },
+        {
+          "part": "fold1",
+          "gain": 0.010480769230769349
+        },
+        {
+          "part": "fold2",
+          "gain": 0.012139917695473179
+        },
+        {
+          "part": "valid",
+          "gain": 0.010912698412698374
+        }
+      ],
+      "frozen_choice_unchanged": true
+    },
+    {
+      "task": "pgp_broccatelli",
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.007415786827551507
+        },
+        {
+          "part": "fold1",
+          "gain": 0.011455108359133215
+        },
+        {
+          "part": "fold2",
+          "gain": -0.003471533425907669
+        },
+        {
+          "part": "valid",
+          "gain": -0.0073904864283795835
+        }
+      ],
+      "frozen_choice_unchanged": true
+    },
+    {
+      "task": "ppbr_az",
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.018824079135438904
+        },
+        {
+          "part": "fold1",
+          "gain": 0.021213147086841074
+        },
+        {
+          "part": "fold2",
+          "gain": 0.00941003499169306
+        },
+        {
+          "part": "valid",
+          "gain": -0.02137169576195477
+        }
+      ],
+      "frozen_choice_unchanged": true
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.01725728699885584
+        },
+        {
+          "part": "fold1",
+          "gain": 0.020161333439210186
+        },
+        {
+          "part": "fold2",
+          "gain": 0.010223052334603312
+        },
+        {
+          "part": "valid",
+          "gain": -0.01397321001337748
+        }
+      ],
+      "frozen_choice_unchanged": true
+    }
+  ],
+  "used_for_reselection": false,
+  "weights_changed": false,
+  "official_score_estimate": null
+}

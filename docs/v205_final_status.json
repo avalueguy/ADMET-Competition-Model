@@ -1,0 +1,77 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "checked_at_utc": "2026-10-28T07:44:58.015767+00:00",
+  "training_version": "v204",
+  "delivery_version": "v205",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52,
+  "target_achieved": false,
+  "development_tasks": 21,
+  "nominated_tasks": [
+    "cyp2d6_substrate_carbonmangels",
+    "cyp2c9_substrate_carbonmangels"
+  ],
+  "accepted_tasks": [],
+  "confirmation_results": [
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "gains": {
+        "fold0": 0.009112716819373645,
+        "fold1": 0.004662034403290494,
+        "fold2": 0.005253034842967241,
+        "valid": 0.0153615681726611
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.015816019393221935,
+          0.025208023401737074
+        ],
+        "valid": [
+          -0.03004689762275725,
+          0.06592909028559978
+        ]
+      }
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "gains": {
+        "fold0": 0.012070195301312592,
+        "fold1": 0.004603288057943189,
+        "fold2": -0.007011370534322436,
+        "valid": -0.1288886469121453
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.03405901237410894,
+          0.016482149361948938
+        ],
+        "valid": [
+          -0.19552839599832078,
+          0.022261401673586857
+        ]
+      }
+    }
+  ],
+  "archive": {
+    "status": "PASS",
+    "prefix": "v205_clamped_diffusion_20261028",
+    "archive_sha256": "23ceac4f6c0f6ff329d4b5628e7da988964bc7aed10a170141266e431ffe8295",
+    "manifest_files": 325,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 273,
+    "existing_exact": 52,
+    "existing_updated_docs_preserved": []
+  },
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "frozen_gates_unchanged": true,
+  "no_confirmation_fallback": true,
+  "rejected_route_restarted": false,
+  "training_pid_exited": 8852,
+  "pipeline_pid_exited": 8853
+}

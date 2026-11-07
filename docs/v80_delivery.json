@@ -1,0 +1,84 @@
+{
+  "status": "LOCAL_DELIVERY_COMPLETE_AWAITING_PLATFORM",
+  "version": "v80",
+  "csv": "admet_submissions/v80_cyp2c9_residual/我从山北来带着兰花草-小分子药物预测技术创新赛-20261023.csv",
+  "upload_copy": "D:\\bili_download\\v80_cyp2c9_residual\\我从山北来带着兰花草-小分子药物预测技术创新赛-20261023.csv",
+  "sha256": "fd36df4fa66bd5619df228a9748ab57f34e0776c60fb89b301b2f10961036538",
+  "changed_tasks": {
+    "cyp2c9_veith": 2419
+  },
+  "unchanged_tasks": 21,
+  "rows": 16379,
+  "columns": 6,
+  "tasks": 22,
+  "model_reload": "PASS",
+  "models": 29,
+  "final_models": 3,
+  "nonprediction_bytes_exact": true,
+  "archive": {
+    "status": "PASS",
+    "path": "releases/v80_cyp2c9_residual_20261023.tar.gz",
+    "bytes": 112930025,
+    "sha256": "ffd075de856926df683ab541a62ddd540ec9eb6e55f007e0080fd45ff64d6799",
+    "members": 141,
+    "all_member_hashes_verified": true
+  },
+  "all_archive_member_hashes_verified": true,
+  "official_score": null,
+  "best_official_score_user_reported": 50.64,
+  "best_official_version_user_reported": "v73",
+  "test_labels_used": false,
+  "external_data_new_branch": false,
+  "pretrained_weights_new_branch": false,
+  "anchor_contains_historical_pretraining": true,
+  "automatic_upload": false,
+  "github_push": false,
+  "nested_results": [
+    {
+      "part": "legacy_fold2",
+      "baseline_ap": 0.8225508305369083,
+      "candidate_ap": 0.8353929355816404,
+      "gain": 0.012842105044732155
+    },
+    {
+      "part": "official_valid",
+      "baseline_ap": 0.8014245618941327,
+      "candidate_ap": 0.815018507354402,
+      "gain": 0.013593945460269263
+    }
+  ],
+  "meta_diagnostics": [
+    {
+      "part": "fold0",
+      "rows": 2821,
+      "baseline_ap": 0.8403048391841382,
+      "candidate_ap": 0.8440746761966035,
+      "gain": 0.003769837012465249,
+      "accepted": true
+    },
+    {
+      "part": "fold1",
+      "rows": 2821,
+      "baseline_ap": 0.8042860452617954,
+      "candidate_ap": 0.8079178146459035,
+      "gain": 0.003631769384108141,
+      "accepted": true
+    },
+    {
+      "part": "fold2",
+      "rows": 2821,
+      "baseline_ap": 0.8361141977043102,
+      "candidate_ap": 0.8404589361529784,
+      "gain": 0.004344738448668228,
+      "accepted": true
+    },
+    {
+      "part": "valid",
+      "rows": 1210,
+      "baseline_ap": 0.8277515215665524,
+      "candidate_ap": 0.8346907334125089,
+      "gain": 0.006939211845956472,
+      "accepted": true
+    }
+  ]
+}

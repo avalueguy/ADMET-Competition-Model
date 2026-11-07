@@ -1,0 +1,226 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "date_hong_kong": "2026-11-01",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52.0,
+  "target_achieved": false,
+  "training_version": "v304",
+  "verification_version": "v305",
+  "training_pid": 8140,
+  "finalizer_pid": 8160,
+  "remote_project": "/root/autodl-tmp/v76",
+  "smoke": "PASS",
+  "accepted_tasks": [],
+  "csv_created": false,
+  "official_gain_established": false,
+  "official_submission": false,
+  "credentials_stored": false,
+  "development_preliminary": [
+    {
+      "development_pass": true,
+      "gains": [
+        0.030495522690217783,
+        0.028533130419477654
+      ],
+      "weight": 0.45,
+      "task": "solubility_aqsoldb"
+    },
+    {
+      "development_pass": true,
+      "gains": [
+        0.01434795419885787,
+        0.03863269873472608
+      ],
+      "weight": 0.45,
+      "task": "ppbr_az"
+    },
+    {
+      "development_pass": false,
+      "gains": [
+        0.011151404445574921,
+        0.008438979497884509
+      ],
+      "weight": 0.2,
+      "task": "caco2_wang"
+    }
+  ],
+  "independent_preflight_replay": "PASS: solubility fold0, docs/v305_preflight_replay.json",
+  "development_best": [
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 212,
+          "baseline": 0.38815645870734267,
+          "expert": 0.39711752815971585,
+          "candidate": 0.383827969048135,
+          "gain": 0.011151404445574921
+        },
+        {
+          "part": "fold1",
+          "rows": 212,
+          "baseline": 0.3348527606452333,
+          "expert": 0.3724628455862858,
+          "candidate": 0.33202694506333813,
+          "gain": 0.008438979497884509
+        }
+      ],
+      "objective": 0.008438979497884509
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1210,
+          "baseline": 0.4642859078866628,
+          "expert": 0.5676398609534602,
+          "candidate": 0.4631818215184739,
+          "gain": 0.0023780311860302937
+        },
+        {
+          "part": "fold1",
+          "rows": 1210,
+          "baseline": 0.534364444193799,
+          "expert": 0.6179293790734094,
+          "candidate": 0.5358660349841593,
+          "gain": -0.002810049969970849
+        }
+      ],
+      "objective": -0.002810049969970849
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 980,
+          "baseline": 0.4900050804950242,
+          "expert": 0.5859709141085305,
+          "candidate": 0.48369211177257504,
+          "gain": 0.012883476057169762
+        },
+        {
+          "part": "fold1",
+          "rows": 980,
+          "baseline": 0.47650922350658986,
+          "expert": 0.5528975601176057,
+          "candidate": 0.46346071333625716,
+          "gain": 0.0273835416538422
+        }
+      ],
+      "objective": 0.012883476057169762
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 8.068577292713924,
+          "expert": 8.364800199988638,
+          "candidate": 7.95280971526812,
+          "gain": 0.01434795419885787
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.585961846123768,
+          "expert": 7.772634794478876,
+          "candidate": 7.292895667509342,
+          "gain": 0.03863269873472608
+        }
+      ],
+      "objective": 0.01434795419885787
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "config": {
+        "neighbors": 24,
+        "width": 128,
+        "key_width": 32,
+        "bins": 8,
+        "epochs": 100,
+        "minimum_steps": 1200,
+        "maximum_steps": 2500
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1635,
+          "baseline": 0.7675069205648937,
+          "expert": 0.8272680448296248,
+          "candidate": 0.7441013958539078,
+          "gain": 0.030495522690217783
+        },
+        {
+          "part": "fold1",
+          "rows": 1635,
+          "baseline": 0.7502386159917903,
+          "expert": 0.8175015932588173,
+          "candidate": 0.7288319597159681,
+          "gain": 0.028533130419477654
+        }
+      ],
+      "objective": 0.028533130419477654
+    }
+  ],
+  "frozen_confirmation_tasks": [
+    "solubility_aqsoldb",
+    "ppbr_az",
+    "lipophilicity_astrazeneca"
+  ],
+  "confirmation_accepted": [],
+  "independent_verification": "PASS: all16 development/confirmation partitions",
+  "local_archive_verification": "PASS:98members,97manifest_hashes,noCSV",
+  "local_dependency_verification": "PASS:50input_hashes",
+  "archive_sha256": "576abd9f6ee2350fef1fb01af1999eadb7e0ec0c8066c8b798616df493c7bd37"
+}

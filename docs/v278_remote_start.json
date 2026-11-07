@@ -1,0 +1,29 @@
+{
+  "status": "STARTED",
+  "at_utc": "2026-10-30T04:37:22.933403+00:00",
+  "host": "connect.nmb2.seetacloud.com",
+  "port": 24365,
+  "boot_id": "7edb467c-8def-4bf5-b14f-bb31d4469124",
+  "source_sha256": "30743545f399ff86ee8f3c4b4c20db9482329dd842cbe54985f1c9a82bf66760",
+  "signature": "43e05447b86bdbc944bd4dc41c0b546e7a37b2a3d365fa6825553c8fb1b9c5bc",
+  "baseline_cache_verified": 105,
+  "smoke": "PASS",
+  "frozen_sources_verified": true,
+  "dependency_sha256_verified": true,
+  "processes": {
+    "driver": {
+      "pid": 2257,
+      "script": "tools/v281_leaf_driver.py",
+      "start_ticks": "1987956841",
+      "log": "v278_v145_leaf_refit.log"
+    },
+    "pipeline": {
+      "pid": 2258,
+      "script": "tools/v280_package_leaf_refit.py",
+      "start_ticks": "1987956841",
+      "log": "v280_pipeline.log"
+    }
+  },
+  "credentials_stored": false,
+  "original_v145_component_and_all_partitions_replay": "PASS"
+}

@@ -1,0 +1,37 @@
+{
+  "status": "FROZEN_BEFORE_DEVELOPMENT",
+  "files": [
+    {
+      "path": "tools/v228_v145_honest_correction.py",
+      "sha256": "bc21df8518459fc9b71aa57aad3ac04b3e4567ffff767ec55feb2ab8ba97b8f2"
+    },
+    {
+      "path": "tools/v229_verify_honest_correction.py",
+      "sha256": "fa362a6a83e0b9866484dccd6a7e231312fe10c1c77034e1f2a07a44db9fcee4"
+    },
+    {
+      "path": "tools/v230_package_correction_batch.py",
+      "sha256": "5f0418cb5eaac6de9c53b739af9fb426d3f2c6b0793cdb592361ba86d0100f47"
+    },
+    {
+      "path": "tools/v231_correction_driver.py",
+      "sha256": "60483de46c8d9c4bc1df5f001f546e4b85dfcee56827eca65f8213db97665aba"
+    },
+    {
+      "path": "tools/v232_start_honest_correction.py",
+      "sha256": "7a75e00d259f3393b96933cc6affa9cc9cbdad02a894d4d8ce5a88792a7961e5"
+    },
+    {
+      "path": "tools/finalize_v229_local.py",
+      "sha256": "8930a2742eb4b11952d77fbd2f5f46f64ee21b1c93533b60188f9c949c5b0129"
+    },
+    {
+      "path": "docs/v228_training_plan.json",
+      "sha256": "d02fd25bbec756400c51714e47122dde6d42ef05e6e87ee92b4b60d457b17142"
+    },
+    {
+      "path": "docs/v228_source_review.json",
+      "sha256": "f5e42b7c07786ccfc4da18daf0942f11ad0efae62667ad42d5fc1e0ac9686e08"
+    }
+  ]
+}

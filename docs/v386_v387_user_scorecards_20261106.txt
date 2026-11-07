@@ -1,0 +1,361 @@
+我从山北来带着兰花草
+{
+  "metric": "AUROC",
+  "raw_metric": 0.8769096712291213,
+  "reference_score": 0.871945,
+  "direction": "higher",
+  "score": 50.141941,
+  "status": "OK"
+}
+{
+  "metric": "AUROC",
+  "raw_metric": 0.9289790494058787,
+  "reference_score": 0.927779,
+  "direction": "higher",
+  "score": 50.032316,
+  "status": "OK"
+}
+{
+  "metric": "AUROC",
+  "raw_metric": 0.7948121050881277,
+  "reference_score": 0.722248,
+  "direction": "higher",
+  "score": 52.391603,
+  "status": "OK"
+}
+{
+  "metric": "MAE",
+  "raw_metric": 0.27592992051587734,
+  "reference_score": 0.283647,
+  "direction": "lower",
+  "score": 50.689546,
+  "status": "OK"
+}
+{
+  "metric": "Spearman",
+  "raw_metric": 0.565208996561239,
+  "reference_score": 0.55204,
+  "direction": "higher",
+  "score": 50.211228,
+  "status": "OK"
+}
+{
+  "metric": "Spearman",
+  "raw_metric": 0.6756845436053647,
+  "reference_score": 0.642814,
+  "direction": "higher",
+  "score": 50.495262,
+  "status": "OK"
+}
+{
+  "metric": "AUPRC",
+  "raw_metric": 0.5862085536546348,
+  "reference_score": 0.44337,
+  "direction": "higher",
+  "score": 56.936749,
+  "status": "OK"
+}
+{
+  "metric": "AUPRC",
+  "raw_metric": 0.8349408577894758,
+  "reference_score": 0.790586,
+  "direction": "higher",
+  "score": 51.364323,
+  "status": "OK"
+}
+{
+  "metric": "AUPRC",
+  "raw_metric": 0.7583244699983189,
+  "reference_score": 0.747531,
+  "direction": "higher",
+  "score": 50.358383,
+  "status": "OK"
+}
+{
+  "metric": "AUPRC",
+  "raw_metric": 0.7439447168745902,
+  "reference_score": 0.719172,
+  "direction": "higher",
+  "score": 50.846574,
+  "status": "OK"
+}
+{
+  "metric": "AUROC",
+  "raw_metric": 0.7460443037974683,
+  "reference_score": 0.725249,
+  "direction": "higher",
+  "score": 50.706702,
+  "status": "OK"
+}
+{
+  "metric": "AUPRC",
+  "raw_metric": 0.8991915344045904,
+  "reference_score": 0.884121,
+  "direction": "higher",
+  "score": 50.422543,
+  "status": "OK"
+}
+{
+  "metric": "AUROC",
+  "raw_metric": 0.935,
+  "reference_score": 0.908609,
+  "direction": "higher",
+  "score": 50.715743,
+  "status": "OK"
+}
+{
+  "metric": "Spearman",
+  "raw_metric": 0.6509691357439866,
+  "reference_score": 0.49139,
+  "direction": "higher",
+  "score": 52.539161,
+  "status": "OK"
+}
+{
+  "metric": "AUROC",
+  "raw_metric": 0.861119293078056,
+  "reference_score": 0.863358,
+  "direction": "higher",
+  "score": 49.93509,
+  "status": "OK"
+}
+{
+  "metric": "AUROC",
+  "raw_metric": 1,
+  "reference_score": 0.99428,
+  "direction": "higher",
+  "score": 50.14341,
+  "status": "OK"
+}
+{
+  "metric": "MAE",
+  "raw_metric": 0.5550199723529466,
+  "reference_score": 0.603071,
+  "direction": "lower",
+  "score": 52.074579,
+  "status": "OK"
+}
+{
+  "metric": "MAE",
+  "raw_metric": 0.4173184854676313,
+  "reference_score": 0.472895,
+  "direction": "lower",
+  "score": 53.121527,
+  "status": "OK"
+}
+{
+  "metric": "AUROC",
+  "raw_metric": 0.9504798720341242,
+  "reference_score": 0.938363,
+  "direction": "higher",
+  "score": 50.320749,
+  "status": "OK"
+}
+{
+  "metric": "MAE",
+  "raw_metric": 6.442906324588329,
+  "reference_score": 7.330617,
+  "direction": "lower",
+  "score": 53.222526,
+  "status": "OK"
+}
+{
+  "metric": "MAE",
+  "raw_metric": 0.7006168876998713,
+  "reference_score": 0.738443,
+  "direction": "lower",
+  "score": 51.314265,
+  "status": "OK"
+}
+{
+  "metric": "Spearman",
+  "raw_metric": 0.7145137427047057,
+  "reference_score": 0.660995,
+  "direction": "higher",
+  "score": 50.792751,
+  "status": "OK"
+}
+51.308
+未认证
+2026/11/06 12:15
+81
+我从山北来带着兰花草
+{
+  "metric": "AUROC",
+  "raw_metric": 0.8769096712291213,
+  "reference_score": 0.871945,
+  "direction": "higher",
+  "score": 50.141941,
+  "status": "OK"
+}
+{
+  "metric": "AUROC",
+  "raw_metric": 0.9289790494058787,
+  "reference_score": 0.927779,
+  "direction": "higher",
+  "score": 50.032316,
+  "status": "OK"
+}
+{
+  "metric": "AUROC",
+  "raw_metric": 0.7948121050881277,
+  "reference_score": 0.722248,
+  "direction": "higher",
+  "score": 52.391603,
+  "status": "OK"
+}
+{
+  "metric": "MAE",
+  "raw_metric": 0.27592992051587734,
+  "reference_score": 0.283647,
+  "direction": "lower",
+  "score": 50.689546,
+  "status": "OK"
+}
+{
+  "metric": "Spearman",
+  "raw_metric": 0.565208996561239,
+  "reference_score": 0.55204,
+  "direction": "higher",
+  "score": 50.211228,
+  "status": "OK"
+}
+{
+  "metric": "Spearman",
+  "raw_metric": 0.6756845436053647,
+  "reference_score": 0.642814,
+  "direction": "higher",
+  "score": 50.495262,
+  "status": "OK"
+}
+{
+  "metric": "AUPRC",
+  "raw_metric": 0.5862085536546348,
+  "reference_score": 0.44337,
+  "direction": "higher",
+  "score": 56.936749,
+  "status": "OK"
+}
+{
+  "metric": "AUPRC",
+  "raw_metric": 0.8349408577894758,
+  "reference_score": 0.790586,
+  "direction": "higher",
+  "score": 51.364323,
+  "status": "OK"
+}
+{
+  "metric": "AUPRC",
+  "raw_metric": 0.7583244699983189,
+  "reference_score": 0.747531,
+  "direction": "higher",
+  "score": 50.358383,
+  "status": "OK"
+}
+{
+  "metric": "AUPRC",
+  "raw_metric": 0.7439447168745902,
+  "reference_score": 0.719172,
+  "direction": "higher",
+  "score": 50.846574,
+  "status": "OK"
+}
+{
+  "metric": "AUROC",
+  "raw_metric": 0.7460443037974683,
+  "reference_score": 0.725249,
+  "direction": "higher",
+  "score": 50.706702,
+  "status": "OK"
+}
+{
+  "metric": "AUPRC",
+  "raw_metric": 0.8991915344045904,
+  "reference_score": 0.884121,
+  "direction": "higher",
+  "score": 50.422543,
+  "status": "OK"
+}
+{
+  "metric": "AUROC",
+  "raw_metric": 0.935,
+  "reference_score": 0.908609,
+  "direction": "higher",
+  "score": 50.715743,
+  "status": "OK"
+}
+{
+  "metric": "Spearman",
+  "raw_metric": 0.6509691357439866,
+  "reference_score": 0.49139,
+  "direction": "higher",
+  "score": 52.539161,
+  "status": "OK"
+}
+{
+  "metric": "AUROC",
+  "raw_metric": 0.861119293078056,
+  "reference_score": 0.863358,
+  "direction": "higher",
+  "score": 49.93509,
+  "status": "OK"
+}
+{
+  "metric": "AUROC",
+  "raw_metric": 1,
+  "reference_score": 0.99428,
+  "direction": "higher",
+  "score": 50.14341,
+  "status": "OK"
+}
+{
+  "metric": "MAE",
+  "raw_metric": 0.5550199723529466,
+  "reference_score": 0.603071,
+  "direction": "lower",
+  "score": 52.074579,
+  "status": "OK"
+}
+{
+  "metric": "MAE",
+  "raw_metric": 0.41505260605543154,
+  "reference_score": 0.472895,
+  "direction": "lower",
+  "score": 53.257084,
+  "status": "OK"
+}
+{
+  "metric": "AUROC",
+  "raw_metric": 0.9504798720341242,
+  "reference_score": 0.938363,
+  "direction": "higher",
+  "score": 50.320749,
+  "status": "OK"
+}
+{
+  "metric": "MAE",
+  "raw_metric": 6.442906324588329,
+  "reference_score": 7.330617,
+  "direction": "lower",
+  "score": 53.222526,
+  "status": "OK"
+}
+{
+  "metric": "MAE",
+  "raw_metric": 0.7006168876998713,
+  "reference_score": 0.738443,
+  "direction": "lower",
+  "score": 51.314265,
+  "status": "OK"
+}
+{
+  "metric": "Spearman",
+  "raw_metric": 0.7145137427047057,
+  "reference_score": 0.660995,
+  "direction": "higher",
+  "score": 50.792751,
+  "status": "OK"
+}
+51.314
+未认证
+2026/11/06 13:25

@@ -1,0 +1,2683 @@
+{
+  "status": "COMPLETE",
+  "at_hong_kong": "2026-11-02T15:16:14.866046+08:00",
+  "records": [
+    {
+      "task": "ames",
+      "metric": "AUROC",
+      "combinations": 200,
+      "pool": 11,
+      "objective": 0.004521475778160422,
+      "gains": [
+        0.005666567005514711,
+        0.004521475778160422
+      ],
+      "scores": [
+        0.8730516244767791,
+        0.8657714593543471
+      ],
+      "members": [
+        {
+          "version": 172,
+          "module": "v172_graph_message_passing",
+          "family": "graph",
+          "key": "h96_l3",
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v172/models/ames/fold0/h96_l3/predictions.npz",
+              "sha256": "4f1706cdf835f4bb1143a0fc6f35370323e4f0aef832151232fc5f799392e83a"
+            },
+            {
+              "path": "admet_model_outputs_v172/models/ames/fold1/h96_l3/predictions.npz",
+              "sha256": "4bedd8f4af652f1402d2b3c6a918d3da85feb90afd3091861da5863c080e2dd3"
+            }
+          ]
+        },
+        {
+          "version": 221,
+          "module": "v221_fragment_factorization",
+          "family": "factorization",
+          "key": "rank32_epochs100",
+          "config": {
+            "rank": 32,
+            "epochs": 100
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v221/models/ames/fold0/rank32_epochs100/predictions.npz",
+              "sha256": "fcce814a81a9e943d5c910c1709bb1d306be1e11d656cff1bb3342fe2fccfe5a"
+            },
+            {
+              "path": "admet_model_outputs_v221/models/ames/fold1/rank32_epochs100/predictions.npz",
+              "sha256": "ff0c9ea5f65fa269cf685b38cb6340de6d4d9d53b90b1f4842d17df306759af7"
+            }
+          ]
+        },
+        {
+          "version": 224,
+          "module": "v224_rotated_chemistry_forest",
+          "family": "rotation_forest",
+          "key": "rot8_trees24",
+          "config": {
+            "rotations": 8,
+            "trees": 24,
+            "group": 8
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v224/models/ames/fold0/rot8_trees24/predictions.npz",
+              "sha256": "4e26638eb78ee4ff6564a781750c0b62d2b7e03c4bc8f01468d888eab3d5e337"
+            },
+            {
+              "path": "admet_model_outputs_v224/models/ames/fold1/rot8_trees24/predictions.npz",
+              "sha256": "373bc48887f86ce37f3b0e0937a7a505a64d4b47022270ac452ea36bc62e7d6b"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 1561,
+          "baseline": 0.8673850574712644,
+          "candidate": 0.8730516244767791,
+          "gain": 0.005666567005514711
+        },
+        {
+          "part": "fold1",
+          "rows": 1562,
+          "baseline": 0.8612499835761867,
+          "candidate": 0.8657714593543471,
+          "gain": 0.004521475778160422
+        },
+        {
+          "part": "fold2",
+          "rows": 1561,
+          "baseline": 0.879376579178054,
+          "candidate": 0.8819436566458687,
+          "gain": 0.0025670774678147046
+        },
+        {
+          "part": "valid",
+          "rows": 1137,
+          "baseline": 0.8313799645918867,
+          "candidate": 0.8327379101598441,
+          "gain": 0.0013579455679574304
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 749,
+          "gain_ci90": [
+            0.0004947383672589179,
+            0.00471715386248988
+          ],
+          "lower_positive": true
+        },
+        {
+          "part": "valid",
+          "groups": 1,
+          "gain_ci90": null,
+          "lower_positive": false
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": true,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v172/models/ames/fold0/h96_l3/predictions.npz",
+          "sha256": "4f1706cdf835f4bb1143a0fc6f35370323e4f0aef832151232fc5f799392e83a"
+        },
+        {
+          "path": "admet_model_outputs_v221/models/ames/fold0/rank32_epochs100/predictions.npz",
+          "sha256": "fcce814a81a9e943d5c910c1709bb1d306be1e11d656cff1bb3342fe2fccfe5a"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/ames/fold0/rot8_trees24/predictions.npz",
+          "sha256": "4e26638eb78ee4ff6564a781750c0b62d2b7e03c4bc8f01468d888eab3d5e337"
+        },
+        {
+          "path": "admet_model_outputs_v172/models/ames/fold1/h96_l3/predictions.npz",
+          "sha256": "4bedd8f4af652f1402d2b3c6a918d3da85feb90afd3091861da5863c080e2dd3"
+        },
+        {
+          "path": "admet_model_outputs_v221/models/ames/fold1/rank32_epochs100/predictions.npz",
+          "sha256": "ff0c9ea5f65fa269cf685b38cb6340de6d4d9d53b90b1f4842d17df306759af7"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/ames/fold1/rot8_trees24/predictions.npz",
+          "sha256": "373bc48887f86ce37f3b0e0937a7a505a64d4b47022270ac452ea36bc62e7d6b"
+        },
+        {
+          "path": "admet_model_outputs_v172/models/ames/fold2/h96_l3/predictions.npz",
+          "sha256": "b4137fa4144447ddfa17c1d49490b1160d199864e8b5f7c22ec8ad8d361b41e5"
+        },
+        {
+          "path": "admet_model_outputs_v221/models/ames/fold2/rank32_epochs100/predictions.npz",
+          "sha256": "9ace8599e39c5edf9da40a66135c29ad0887de5de28c39f0d87afddee7f4f8c0"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/ames/fold2/rot8_trees24/predictions.npz",
+          "sha256": "e74691efdd3feac48606ed4681e31b1344d07c54fa102fa73bb3cfedaa2f0c6f"
+        },
+        {
+          "path": "admet_model_outputs_v172/models/ames/valid/h96_l3/predictions.npz",
+          "sha256": "5678c52401c26a7175be56b0bbcc43e078f8cb9d21155ebca4bc2ee9d4606ee1"
+        },
+        {
+          "path": "admet_model_outputs_v221/models/ames/valid/rank32_epochs100/predictions.npz",
+          "sha256": "6fad0e4c2c973e093f351f06b178b6c872e2eb10289b1d0e633d4cfd0d86302c"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/ames/valid/rot8_trees24/predictions.npz",
+          "sha256": "e71cee6a71ac292c68f9a533d59044f3604d8e641cc80e6ac322057f2cb1a4ea"
+        }
+      ]
+    },
+    {
+      "task": "bbb_martins",
+      "metric": "AUROC",
+      "combinations": 200,
+      "pool": 11,
+      "objective": 0.0031643213461395314,
+      "gains": [
+        0.0031643213461395314,
+        0.0044163088955128105
+      ],
+      "scores": [
+        0.9272826545553818,
+        0.9546473789275071
+      ],
+      "members": [
+        {
+          "version": 168,
+          "module": "v168_sparse_linear",
+          "family": "sparse_linear",
+          "key": "strength10.0",
+          "config": {
+            "strength": 10.0
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v168/models/bbb_martins/fold0/strength10.0/predictions.npz",
+              "sha256": "2635861540c83973644b5160066640f67e9d814ef2d6a74e3524e7e4a9420d1a"
+            },
+            {
+              "path": "admet_model_outputs_v168/models/bbb_martins/fold1/strength10.0/predictions.npz",
+              "sha256": "a309f8f3556dcc818cf6ab92d44f5d1d8a3a6b39ba070b3dd1b951f7824e2d47"
+            }
+          ]
+        },
+        {
+          "version": 216,
+          "module": "v216_ordered_scaffold",
+          "family": "ordered_boosting",
+          "key": "depth5",
+          "config": {
+            "depth": 5,
+            "trees": 700
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v216/models/bbb_martins/fold0/depth5/predictions.npz",
+              "sha256": "46fc10e38abf1f09e68ef55901559ae88b4e67d7af3b3fc694cd85b8778ce67a"
+            },
+            {
+              "path": "admet_model_outputs_v216/models/bbb_martins/fold1/depth5/predictions.npz",
+              "sha256": "c525cb7d061d4bb4a50314919b8305089c1f70b4d821a803050b9731039b44dd"
+            }
+          ]
+        },
+        {
+          "version": 224,
+          "module": "v224_rotated_chemistry_forest",
+          "family": "rotation_forest",
+          "key": "rot8_trees24",
+          "config": {
+            "rotations": 8,
+            "trees": 24,
+            "group": 8
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v224/models/bbb_martins/fold0/rot8_trees24/predictions.npz",
+              "sha256": "bb56028cf1c7d4c90a7f1dbae515b99c35ccda40015a5d6b6838dc020c3aebf7"
+            },
+            {
+              "path": "admet_model_outputs_v224/models/bbb_martins/fold1/rot8_trees24/predictions.npz",
+              "sha256": "2f7823ae8a8e3646f9c4f681948aad48fbc76867e27c6937f6620540ee59828c"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 474,
+          "baseline": 0.9241183332092423,
+          "candidate": 0.9272826545553818,
+          "gain": 0.0031643213461395314
+        },
+        {
+          "part": "fold1",
+          "rows": 474,
+          "baseline": 0.9502310700319943,
+          "candidate": 0.9546473789275071,
+          "gain": 0.0044163088955128105
+        },
+        {
+          "part": "fold2",
+          "rows": 473,
+          "baseline": 0.9154568560720286,
+          "candidate": 0.9203786671261794,
+          "gain": 0.004921811054150793
+        },
+        {
+          "part": "valid",
+          "rows": 203,
+          "baseline": 0.9348123291076311,
+          "candidate": 0.9292194879443201,
+          "gain": -0.005592841163311046
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 232,
+          "gain_ci90": [
+            0.001166270068807429,
+            0.009054111930542745
+          ],
+          "lower_positive": true
+        },
+        {
+          "part": "valid",
+          "groups": 134,
+          "gain_ci90": [
+            -0.019758809440452454,
+            0.004449891006020016
+          ],
+          "lower_positive": false
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": false,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v168/models/bbb_martins/fold0/strength10.0/predictions.npz",
+          "sha256": "2635861540c83973644b5160066640f67e9d814ef2d6a74e3524e7e4a9420d1a"
+        },
+        {
+          "path": "admet_model_outputs_v216/models/bbb_martins/fold0/depth5/predictions.npz",
+          "sha256": "46fc10e38abf1f09e68ef55901559ae88b4e67d7af3b3fc694cd85b8778ce67a"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/bbb_martins/fold0/rot8_trees24/predictions.npz",
+          "sha256": "bb56028cf1c7d4c90a7f1dbae515b99c35ccda40015a5d6b6838dc020c3aebf7"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/bbb_martins/fold1/strength10.0/predictions.npz",
+          "sha256": "a309f8f3556dcc818cf6ab92d44f5d1d8a3a6b39ba070b3dd1b951f7824e2d47"
+        },
+        {
+          "path": "admet_model_outputs_v216/models/bbb_martins/fold1/depth5/predictions.npz",
+          "sha256": "c525cb7d061d4bb4a50314919b8305089c1f70b4d821a803050b9731039b44dd"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/bbb_martins/fold1/rot8_trees24/predictions.npz",
+          "sha256": "2f7823ae8a8e3646f9c4f681948aad48fbc76867e27c6937f6620540ee59828c"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/bbb_martins/fold2/strength10.0/predictions.npz",
+          "sha256": "7c2366eb5213eb379276e16255a339c29a2b61ce455d3c177a30fdf800fe8673"
+        },
+        {
+          "path": "admet_model_outputs_v216/models/bbb_martins/fold2/depth5/predictions.npz",
+          "sha256": "64dc75ebae3d6703e964993acf61329c3542a4562191225ea9b515b34ce4e1e1"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/bbb_martins/fold2/rot8_trees24/predictions.npz",
+          "sha256": "ea7b9afa321533a458c8903e150b6301245c537266f1287be37197cf029a164b"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/bbb_martins/valid/strength10.0/predictions.npz",
+          "sha256": "372f38e6e1f7d7a39afca0995c05bf1342f02ffd846fdefbc6422f6c17ee1aab"
+        },
+        {
+          "path": "admet_model_outputs_v216/models/bbb_martins/valid/depth5/predictions.npz",
+          "sha256": "11634c9e6f36e37170083af057821a4d2c51e737ed4bb075efe8e2784359a7ed"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/bbb_martins/valid/rot8_trees24/predictions.npz",
+          "sha256": "ca2807e67aab6fcd3f6298c6f8d66b5f59d6d800cbc02de1e2c289a4a7c9057b"
+        }
+      ]
+    },
+    {
+      "task": "bioavailability_ma",
+      "metric": "AUROC",
+      "combinations": 104,
+      "pool": 9,
+      "objective": 0.016393442622950727,
+      "gains": [
+        0.02083333333333326,
+        0.016393442622950727
+      ],
+      "scores": [
+        0.738205467372134,
+        0.7747419550698239
+      ],
+      "members": [
+        {
+          "version": 168,
+          "module": "v168_sparse_linear",
+          "family": "sparse_linear",
+          "key": "strength1.0",
+          "config": {
+            "strength": 1.0
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v168/models/bioavailability_ma/fold0/strength1.0/predictions.npz",
+              "sha256": "110783384183af17700971373ebbf11662a457a9f607485910a7121f5ccafd55"
+            },
+            {
+              "path": "admet_model_outputs_v168/models/bioavailability_ma/fold1/strength1.0/predictions.npz",
+              "sha256": "26588c00275809b9a1938d39119d1fabcae8c6cad686af6c5a86ef0c701e994d"
+            }
+          ]
+        },
+        {
+          "version": 178,
+          "module": "v178_graph_embedding_boosting",
+          "family": "graph_boosting",
+          "key": "d6_t1000",
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v178/models/bioavailability_ma/fold0/d6_t1000/predictions.npz",
+              "sha256": "1bf25a94c0c1659ff58c3bcd1627af4e3710eac95cdd65a87fb1ddb01251910c"
+            },
+            {
+              "path": "admet_model_outputs_v178/models/bioavailability_ma/fold1/d6_t1000/predictions.npz",
+              "sha256": "6b8efecd7bdf8dad9e4c8513458c68e512dc159efca420a609b0f4d1a68a5403"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 150,
+          "baseline": 0.7173721340388007,
+          "candidate": 0.738205467372134,
+          "gain": 0.02083333333333326
+        },
+        {
+          "part": "fold1",
+          "rows": 149,
+          "baseline": 0.7583485124468732,
+          "candidate": 0.7747419550698239,
+          "gain": 0.016393442622950727
+        },
+        {
+          "part": "fold2",
+          "rows": 149,
+          "baseline": 0.7714025500910746,
+          "candidate": 0.7627504553734061,
+          "gain": -0.00865209471766848
+        },
+        {
+          "part": "valid",
+          "rows": 64,
+          "baseline": 0.8106312292358805,
+          "candidate": 0.7901439645625692,
+          "gain": -0.0204872646733113
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 96,
+          "gain_ci90": [
+            -0.03976934523809515,
+            0.01782949484294429
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 47,
+          "gain_ci90": [
+            -0.04763383614315296,
+            0.0060292123842544615
+          ],
+          "lower_positive": false
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": false,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v168/models/bioavailability_ma/fold0/strength1.0/predictions.npz",
+          "sha256": "110783384183af17700971373ebbf11662a457a9f607485910a7121f5ccafd55"
+        },
+        {
+          "path": "admet_model_outputs_v178/models/bioavailability_ma/fold0/d6_t1000/predictions.npz",
+          "sha256": "1bf25a94c0c1659ff58c3bcd1627af4e3710eac95cdd65a87fb1ddb01251910c"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/bioavailability_ma/fold1/strength1.0/predictions.npz",
+          "sha256": "26588c00275809b9a1938d39119d1fabcae8c6cad686af6c5a86ef0c701e994d"
+        },
+        {
+          "path": "admet_model_outputs_v178/models/bioavailability_ma/fold1/d6_t1000/predictions.npz",
+          "sha256": "6b8efecd7bdf8dad9e4c8513458c68e512dc159efca420a609b0f4d1a68a5403"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/bioavailability_ma/fold2/strength1.0/predictions.npz",
+          "sha256": "ca89d897b5832313f7f90ee3e1a4da73435089f4a175144e65bb541dfb4f94c0"
+        },
+        {
+          "path": "admet_model_outputs_v178/models/bioavailability_ma/fold2/d6_t1000/predictions.npz",
+          "sha256": "82d0b951714435a5c825767462f1cfb3128757123de4be06fe427dbb027f3891"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/bioavailability_ma/valid/strength1.0/predictions.npz",
+          "sha256": "f33857955a4b6936eea925acb8c40af9ff31e60da2b45e01f999a08cff94109b"
+        },
+        {
+          "path": "admet_model_outputs_v178/models/bioavailability_ma/valid/d6_t1000/predictions.npz",
+          "sha256": "3e3a4e1d560a451c32be6f1438c98fe8ac3bb137696f03960f62323b95401211"
+        }
+      ]
+    },
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "combinations": 1480,
+      "pool": 21,
+      "objective": 0.031466239883485146,
+      "gains": [
+        0.031466239883485146,
+        0.038278740513992125
+      ],
+      "scores": [
+        0.3759426344653333,
+        0.3220350187101005
+      ],
+      "members": [
+        {
+          "version": 172,
+          "module": "v172_graph_message_passing",
+          "family": "graph",
+          "key": "h96_l3",
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v172/models/caco2_wang/fold0/h96_l3/predictions.npz",
+              "sha256": "afec74fdceb28f16b4ab27a1abc1f23812a6468ece5375d0030c23cbfb51dfee"
+            },
+            {
+              "path": "admet_model_outputs_v172/models/caco2_wang/fold1/h96_l3/predictions.npz",
+              "sha256": "6cf08ad5f4afe28a686fbb0a8641d008ed392d6c389b21b2159fb8a823128464"
+            }
+          ]
+        },
+        {
+          "version": 297,
+          "module": "v297_pair_delta_regression",
+          "family": "pair_regression",
+          "key": "scaffold_pair_delta8",
+          "config": {
+            "neighbors": 8,
+            "fingerprint_columns": 256,
+            "trees": 700,
+            "depth": 5
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v297/models/caco2_wang/fold0/scaffold_pair_delta8/predictions.npz",
+              "sha256": "faba14669d56e88acbf6cc04eafc4e32c2fc2b8ff4f108612b146dbf0eec149a"
+            },
+            {
+              "path": "admet_model_outputs_v297/models/caco2_wang/fold1/scaffold_pair_delta8/predictions.npz",
+              "sha256": "cfb92110e9143128faba4eab106286b00f8e7827b43619fc0d2e6ae208a2dd0e"
+            }
+          ]
+        },
+        {
+          "version": 329,
+          "module": "v329_sharpness_retrieval",
+          "family": "sam_retrieval",
+          "key": "sam005_label_context24",
+          "config": {
+            "neighbors": 24,
+            "width": 128,
+            "key_width": 32,
+            "bins": 8,
+            "epochs": 100,
+            "minimum_steps": 1200,
+            "maximum_steps": 2500,
+            "sam_radius": 0.05
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v329/models/caco2_wang/fold0/sam005_label_context24/predictions.npz",
+              "sha256": "92ff3d579358977935ad81bed207a5bd616aaf6d6d0b76033a9b673fc955d7ec"
+            },
+            {
+              "path": "admet_model_outputs_v329/models/caco2_wang/fold1/sam005_label_context24/predictions.npz",
+              "sha256": "ecc4ac2c3a5e91861ab921db4411a7d9cfd7cdd2fecbfa74c8d7e2d4c39792b0"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 212,
+          "baseline": 0.38815645870734267,
+          "candidate": 0.3759426344653333,
+          "gain": 0.031466239883485146
+        },
+        {
+          "part": "fold1",
+          "rows": 212,
+          "baseline": 0.3348527606452333,
+          "candidate": 0.3220350187101005,
+          "gain": 0.038278740513992125
+        },
+        {
+          "part": "fold2",
+          "rows": 213,
+          "baseline": 0.3570673877285404,
+          "candidate": 0.35768803172962815,
+          "gain": -0.0017381705034333395
+        },
+        {
+          "part": "valid",
+          "rows": 91,
+          "baseline": 0.3583998208980098,
+          "candidate": 0.3496028420417777,
+          "gain": 0.024545154163833863
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 109,
+          "gain_ci90": [
+            -0.026138566272340017,
+            0.0204254716678144
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 53,
+          "gain_ci90": [
+            -0.020737255159732695,
+            0.07122638997839495
+          ],
+          "lower_positive": false
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": false,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v172/models/caco2_wang/fold0/h96_l3/predictions.npz",
+          "sha256": "afec74fdceb28f16b4ab27a1abc1f23812a6468ece5375d0030c23cbfb51dfee"
+        },
+        {
+          "path": "admet_model_outputs_v297/models/caco2_wang/fold0/scaffold_pair_delta8/predictions.npz",
+          "sha256": "faba14669d56e88acbf6cc04eafc4e32c2fc2b8ff4f108612b146dbf0eec149a"
+        },
+        {
+          "path": "admet_model_outputs_v329/models/caco2_wang/fold0/sam005_label_context24/predictions.npz",
+          "sha256": "92ff3d579358977935ad81bed207a5bd616aaf6d6d0b76033a9b673fc955d7ec"
+        },
+        {
+          "path": "admet_model_outputs_v172/models/caco2_wang/fold1/h96_l3/predictions.npz",
+          "sha256": "6cf08ad5f4afe28a686fbb0a8641d008ed392d6c389b21b2159fb8a823128464"
+        },
+        {
+          "path": "admet_model_outputs_v297/models/caco2_wang/fold1/scaffold_pair_delta8/predictions.npz",
+          "sha256": "cfb92110e9143128faba4eab106286b00f8e7827b43619fc0d2e6ae208a2dd0e"
+        },
+        {
+          "path": "admet_model_outputs_v329/models/caco2_wang/fold1/sam005_label_context24/predictions.npz",
+          "sha256": "ecc4ac2c3a5e91861ab921db4411a7d9cfd7cdd2fecbfa74c8d7e2d4c39792b0"
+        },
+        {
+          "path": "admet_model_outputs_v172/models/caco2_wang/fold2/h96_l3/predictions.npz",
+          "sha256": "78c1adc758a21355587334838903087392cf121ec8bb62d432b0aa5f2add7e6c"
+        },
+        {
+          "path": "admet_model_outputs_v297/models/caco2_wang/fold2/scaffold_pair_delta8/predictions.npz",
+          "sha256": "d0408a7e5bb74a63447bb45702805c2677ce23c2357a19db299e2461778298de"
+        },
+        {
+          "path": "admet_model_outputs_v329/models/caco2_wang/fold2/sam005_label_context24/predictions.npz",
+          "sha256": "eca7856dd096f2dea9c58e8f67bf274950cd424e92e2f7ef6ca12c989cd5b3d2"
+        },
+        {
+          "path": "admet_model_outputs_v172/models/caco2_wang/valid/h96_l3/predictions.npz",
+          "sha256": "a9ba44ce624dce65914228971822ce3260c3b85903f00c9cdb213f00bc3fa5f4"
+        },
+        {
+          "path": "admet_model_outputs_v297/models/caco2_wang/valid/scaffold_pair_delta8/predictions.npz",
+          "sha256": "679f7d27445ff27643171cb935ec6fa3ced80a418644f3c30ac22ef4bef3691f"
+        },
+        {
+          "path": "admet_model_outputs_v329/models/caco2_wang/valid/sam005_label_context24/predictions.npz",
+          "sha256": "0566bdce99e617b71d1c9b7f066289a4cd66c32b9b90dde6d2944c0371bac6d0"
+        }
+      ]
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "combinations": 532,
+      "pool": 15,
+      "objective": 0.02707552983377648,
+      "gains": [
+        0.0331970500636547,
+        0.02707552983377648
+      ],
+      "scores": [
+        0.6059528833546471,
+        0.6023065239825445
+      ],
+      "members": [
+        {
+          "version": 250,
+          "module": "v250_hierarchical_atom_matching",
+          "family": "atom_kernel",
+          "key": "hierarchical_atom_matching",
+          "config": {
+            "C": 3.0,
+            "levels": 4
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v250/models/clearance_hepatocyte_az/fold0/hierarchical_atom_matching/predictions.npz",
+              "sha256": "b425a5405881c0fa0ac03ea94690b77166a509fd0f0eb4841debff27d9838ecd"
+            },
+            {
+              "path": "admet_model_outputs_v250/models/clearance_hepatocyte_az/fold1/hierarchical_atom_matching/predictions.npz",
+              "sha256": "7ea468c7f69cc2f2b3bdf447762892842af9954aa0b7222983ce8853e8a5be17"
+            }
+          ]
+        },
+        {
+          "version": 271,
+          "module": "v271_clearance_innovations",
+          "family": "crossfit_context",
+          "key": "crossfit_clearance_innovations",
+          "config": {
+            "inner_folds": 3,
+            "ridge": 0.3,
+            "covariance_prior": 20.0
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v271/models/clearance_hepatocyte_az/fold0/crossfit_clearance_innovations/predictions.npz",
+              "sha256": "133aade066bd8cfe1bf683d13acd13ee93dc3023a0b74069dd9991adb3c37dea"
+            },
+            {
+              "path": "admet_model_outputs_v271/models/clearance_hepatocyte_az/fold1/crossfit_clearance_innovations/predictions.npz",
+              "sha256": "c9503c9dcd1ddbf228d4ade5cc875d88f0f6b1a7edeae1209bf36b1a572d558a"
+            }
+          ]
+        },
+        {
+          "version": 315,
+          "module": "v315_rank_label_retrieval",
+          "family": "label_retrieval",
+          "key": "learned_label_context24",
+          "config": {
+            "neighbors": 24,
+            "width": 128,
+            "key_width": 32,
+            "bins": 8,
+            "epochs": 100,
+            "minimum_steps": 1200,
+            "maximum_steps": 2500
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v315/models/clearance_hepatocyte_az/fold0/learned_label_context24/predictions.npz",
+              "sha256": "719237ccc72402f0579f22c4635480ef25bcbe32a2f0f2874798ad098438856c"
+            },
+            {
+              "path": "admet_model_outputs_v315/models/clearance_hepatocyte_az/fold1/learned_label_context24/predictions.npz",
+              "sha256": "68a86396053ecb959e3c628dff709c0a9d83d8659b306059fd0592a7ea7151f3"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 282,
+          "baseline": 0.5727558332909924,
+          "candidate": 0.6059528833546471,
+          "gain": 0.0331970500636547
+        },
+        {
+          "part": "fold1",
+          "rows": 283,
+          "baseline": 0.575230994148768,
+          "candidate": 0.6023065239825445,
+          "gain": 0.02707552983377648
+        },
+        {
+          "part": "fold2",
+          "rows": 283,
+          "baseline": 0.5979336062289107,
+          "candidate": 0.6131005200527544,
+          "gain": 0.01516691382384372
+        },
+        {
+          "part": "valid",
+          "rows": 122,
+          "baseline": 0.5233668892310847,
+          "candidate": 0.5025167922265458,
+          "gain": -0.02085009700453888
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 175,
+          "gain_ci90": [
+            -0.0037962531790856346,
+            0.033454771696783465
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 72,
+          "gain_ci90": [
+            -0.045935474336243405,
+            0.00031368616750046194
+          ],
+          "lower_positive": false
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": false,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v250/models/clearance_hepatocyte_az/fold0/hierarchical_atom_matching/predictions.npz",
+          "sha256": "b425a5405881c0fa0ac03ea94690b77166a509fd0f0eb4841debff27d9838ecd"
+        },
+        {
+          "path": "admet_model_outputs_v271/models/clearance_hepatocyte_az/fold0/crossfit_clearance_innovations/predictions.npz",
+          "sha256": "133aade066bd8cfe1bf683d13acd13ee93dc3023a0b74069dd9991adb3c37dea"
+        },
+        {
+          "path": "admet_model_outputs_v315/models/clearance_hepatocyte_az/fold0/learned_label_context24/predictions.npz",
+          "sha256": "719237ccc72402f0579f22c4635480ef25bcbe32a2f0f2874798ad098438856c"
+        },
+        {
+          "path": "admet_model_outputs_v250/models/clearance_hepatocyte_az/fold1/hierarchical_atom_matching/predictions.npz",
+          "sha256": "7ea468c7f69cc2f2b3bdf447762892842af9954aa0b7222983ce8853e8a5be17"
+        },
+        {
+          "path": "admet_model_outputs_v271/models/clearance_hepatocyte_az/fold1/crossfit_clearance_innovations/predictions.npz",
+          "sha256": "c9503c9dcd1ddbf228d4ade5cc875d88f0f6b1a7edeae1209bf36b1a572d558a"
+        },
+        {
+          "path": "admet_model_outputs_v315/models/clearance_hepatocyte_az/fold1/learned_label_context24/predictions.npz",
+          "sha256": "68a86396053ecb959e3c628dff709c0a9d83d8659b306059fd0592a7ea7151f3"
+        },
+        {
+          "path": "admet_model_outputs_v250/models/clearance_hepatocyte_az/fold2/hierarchical_atom_matching/predictions.npz",
+          "sha256": "520a969845b9c96bd83986b0dee1c6db6bc543e723c8c655f300ac1b68b8fdba"
+        },
+        {
+          "path": "admet_model_outputs_v271/models/clearance_hepatocyte_az/fold2/crossfit_clearance_innovations/predictions.npz",
+          "sha256": "d91e53f5a584b309f897b307e401f48924b26158077a3ac3d1dedce2fa770e68"
+        },
+        {
+          "path": "admet_model_outputs_v315/models/clearance_hepatocyte_az/fold2/learned_label_context24/predictions.npz",
+          "sha256": "774b70c6788c013f519afc47ed05e4660dec8e36368c015a7dd218fb985342dd"
+        },
+        {
+          "path": "admet_model_outputs_v250/models/clearance_hepatocyte_az/valid/hierarchical_atom_matching/predictions.npz",
+          "sha256": "eb783fa55aa613723fa05197b476ffcb50cc451418daedbfe579df1954325ba7"
+        },
+        {
+          "path": "admet_model_outputs_v271/models/clearance_hepatocyte_az/valid/crossfit_clearance_innovations/predictions.npz",
+          "sha256": "7c3a92b41dbf2846dc2062514a3d25687756a4ca3d2c1e17da5113a3f5699aa2"
+        },
+        {
+          "path": "admet_model_outputs_v315/models/clearance_hepatocyte_az/valid/learned_label_context24/predictions.npz",
+          "sha256": "f1310a65e003604d4fb0b7b08840fb0e426cf2ed8cd8e5f50608cbf89a3cb41b"
+        }
+      ]
+    },
+    {
+      "task": "clearance_microsome_az",
+      "metric": "Spearman",
+      "combinations": 200,
+      "pool": 11,
+      "objective": 0.009026750444421694,
+      "gains": [
+        0.009026750444421694,
+        0.009712972648701412
+      ],
+      "scores": [
+        0.7109343831622733,
+        0.5143734217484985
+      ],
+      "members": [
+        {
+          "version": 271,
+          "module": "v271_clearance_innovations",
+          "family": "crossfit_context",
+          "key": "crossfit_clearance_innovations",
+          "config": {
+            "inner_folds": 3,
+            "ridge": 0.3,
+            "covariance_prior": 20.0
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v271/models/clearance_microsome_az/fold0/crossfit_clearance_innovations/predictions.npz",
+              "sha256": "a578ff5165fbb5f39eed7067c15743adc0802604d19c6a235f38161f0d71995f"
+            },
+            {
+              "path": "admet_model_outputs_v271/models/clearance_microsome_az/fold1/crossfit_clearance_innovations/predictions.npz",
+              "sha256": "6e03628ac77f15e72c8eae26f7f97ccccd98a49c226241c0c06158ad6995f02f"
+            }
+          ]
+        },
+        {
+          "version": 315,
+          "module": "v315_rank_label_retrieval",
+          "family": "label_retrieval",
+          "key": "learned_label_context24",
+          "config": {
+            "neighbors": 24,
+            "width": 128,
+            "key_width": 32,
+            "bins": 8,
+            "epochs": 100,
+            "minimum_steps": 1200,
+            "maximum_steps": 2500
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v315/models/clearance_microsome_az/fold0/learned_label_context24/predictions.npz",
+              "sha256": "1ad6b370760ecc9d85071236c91acb63b0f34f9c4b618dae78f76ec72bb421c3"
+            },
+            {
+              "path": "admet_model_outputs_v315/models/clearance_microsome_az/fold1/learned_label_context24/predictions.npz",
+              "sha256": "b19f030117937db2c7e6f59d0cc0ac2b1f5b5cdd03851ef5804c640cac5ab230"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 256,
+          "baseline": 0.7019076327178516,
+          "candidate": 0.7109343831622733,
+          "gain": 0.009026750444421694
+        },
+        {
+          "part": "fold1",
+          "rows": 257,
+          "baseline": 0.5046604490997971,
+          "candidate": 0.5143734217484985,
+          "gain": 0.009712972648701412
+        },
+        {
+          "part": "fold2",
+          "rows": 257,
+          "baseline": 0.6489244662174136,
+          "candidate": 0.6413213749262959,
+          "gain": -0.007603091291117692
+        },
+        {
+          "part": "valid",
+          "rows": 111,
+          "baseline": 0.7085599112662511,
+          "candidate": 0.6867513145822692,
+          "gain": -0.02180859668398183
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 170,
+          "gain_ci90": [
+            -0.025654265832207458,
+            0.012967504986344414
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 69,
+          "gain_ci90": [
+            -0.04707877680247258,
+            0.0010165420507355293
+          ],
+          "lower_positive": false
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": false,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v271/models/clearance_microsome_az/fold0/crossfit_clearance_innovations/predictions.npz",
+          "sha256": "a578ff5165fbb5f39eed7067c15743adc0802604d19c6a235f38161f0d71995f"
+        },
+        {
+          "path": "admet_model_outputs_v315/models/clearance_microsome_az/fold0/learned_label_context24/predictions.npz",
+          "sha256": "1ad6b370760ecc9d85071236c91acb63b0f34f9c4b618dae78f76ec72bb421c3"
+        },
+        {
+          "path": "admet_model_outputs_v271/models/clearance_microsome_az/fold1/crossfit_clearance_innovations/predictions.npz",
+          "sha256": "6e03628ac77f15e72c8eae26f7f97ccccd98a49c226241c0c06158ad6995f02f"
+        },
+        {
+          "path": "admet_model_outputs_v315/models/clearance_microsome_az/fold1/learned_label_context24/predictions.npz",
+          "sha256": "b19f030117937db2c7e6f59d0cc0ac2b1f5b5cdd03851ef5804c640cac5ab230"
+        },
+        {
+          "path": "admet_model_outputs_v271/models/clearance_microsome_az/fold2/crossfit_clearance_innovations/predictions.npz",
+          "sha256": "53b337141207ab4f268f6540105e9f4737d3de48550e3d849352bedea2379c82"
+        },
+        {
+          "path": "admet_model_outputs_v315/models/clearance_microsome_az/fold2/learned_label_context24/predictions.npz",
+          "sha256": "69f83b186aa386da16974b7d1748a19e201f3709305b2690b557e4b877fe949b"
+        },
+        {
+          "path": "admet_model_outputs_v271/models/clearance_microsome_az/valid/crossfit_clearance_innovations/predictions.npz",
+          "sha256": "d90d79468bfdb016e4e16503a4bdfae733413fa8c31b8e9889d8ce0c8834daef"
+        },
+        {
+          "path": "admet_model_outputs_v315/models/clearance_microsome_az/valid/learned_label_context24/predictions.npz",
+          "sha256": "cbf618a9770623f8d8ca919080259d6ff25a51c732e7576b410b384fc06996fe"
+        }
+      ]
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "combinations": 340,
+      "pool": 13,
+      "objective": 0.029792210922765794,
+      "gains": [
+        0.029792210922765794,
+        0.04266582049233436
+      ],
+      "scores": [
+        0.43084076071049243,
+        0.5367517066583658
+      ],
+      "members": [
+        {
+          "version": 210,
+          "module": "v210_standardized_chemistry",
+          "family": "chemistry_boosting",
+          "key": "depth6",
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v210/models/cyp2c9_substrate_carbonmangels/fold0/depth6/predictions.npz",
+              "sha256": "4addec3f8d9ffe60ce7c424ac668f678422439cf7f5ed23e71e1e9cd1a8e8540"
+            },
+            {
+              "path": "admet_model_outputs_v210/models/cyp2c9_substrate_carbonmangels/fold1/depth6/predictions.npz",
+              "sha256": "ae0e9342874656fd9497694ef50200c9da676af36590e6533dc869b28292eb24"
+            }
+          ]
+        },
+        {
+          "version": 216,
+          "module": "v216_ordered_scaffold",
+          "family": "ordered_boosting",
+          "key": "depth5",
+          "config": {
+            "depth": 5,
+            "trees": 700
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v216/models/cyp2c9_substrate_carbonmangels/fold0/depth5/predictions.npz",
+              "sha256": "e3083cd1adcb99aa51179c214c5c39d8284ac4a5359288076ee761b3eb8836d9"
+            },
+            {
+              "path": "admet_model_outputs_v216/models/cyp2c9_substrate_carbonmangels/fold1/depth5/predictions.npz",
+              "sha256": "860415f27ffa0397076d0d05ae9059e3ab837037f78b73da1db5fcf15a4b68ae"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 156,
+          "baseline": 0.40104854978772664,
+          "candidate": 0.43084076071049243,
+          "gain": 0.029792210922765794
+        },
+        {
+          "part": "fold1",
+          "rows": 156,
+          "baseline": 0.49408588616603144,
+          "candidate": 0.5367517066583658,
+          "gain": 0.04266582049233436
+        },
+        {
+          "part": "fold2",
+          "rows": 155,
+          "baseline": 0.4542813181732907,
+          "candidate": 0.44140297869264145,
+          "gain": -0.012878339480649259
+        },
+        {
+          "part": "valid",
+          "rows": 67,
+          "baseline": 0.6520344239094239,
+          "candidate": 0.5473431082806083,
+          "gain": -0.10469131562881562
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 92,
+          "gain_ci90": [
+            -0.0815242544833798,
+            0.013398915115343666
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 50,
+          "gain_ci90": [
+            -0.18056443126160615,
+            -0.004487622530725987
+          ],
+          "lower_positive": false
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": false,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v210/models/cyp2c9_substrate_carbonmangels/fold0/depth6/predictions.npz",
+          "sha256": "4addec3f8d9ffe60ce7c424ac668f678422439cf7f5ed23e71e1e9cd1a8e8540"
+        },
+        {
+          "path": "admet_model_outputs_v216/models/cyp2c9_substrate_carbonmangels/fold0/depth5/predictions.npz",
+          "sha256": "e3083cd1adcb99aa51179c214c5c39d8284ac4a5359288076ee761b3eb8836d9"
+        },
+        {
+          "path": "admet_model_outputs_v210/models/cyp2c9_substrate_carbonmangels/fold1/depth6/predictions.npz",
+          "sha256": "ae0e9342874656fd9497694ef50200c9da676af36590e6533dc869b28292eb24"
+        },
+        {
+          "path": "admet_model_outputs_v216/models/cyp2c9_substrate_carbonmangels/fold1/depth5/predictions.npz",
+          "sha256": "860415f27ffa0397076d0d05ae9059e3ab837037f78b73da1db5fcf15a4b68ae"
+        },
+        {
+          "path": "admet_model_outputs_v210/models/cyp2c9_substrate_carbonmangels/fold2/depth6/predictions.npz",
+          "sha256": "68f7c3e0270a480b8e87ac722ad56710f6d786e33902fc1bedf9ad8ee25c1c4c"
+        },
+        {
+          "path": "admet_model_outputs_v216/models/cyp2c9_substrate_carbonmangels/fold2/depth5/predictions.npz",
+          "sha256": "c51d1566075b26b1ea283d87cb134578159181e738b735ea744c1c3f5d8e57a1"
+        },
+        {
+          "path": "admet_model_outputs_v210/models/cyp2c9_substrate_carbonmangels/valid/depth6/predictions.npz",
+          "sha256": "25dc869bb9da46838d6ed78b642d90790e9915d7989fb06571178ab9103e8ee8"
+        },
+        {
+          "path": "admet_model_outputs_v216/models/cyp2c9_substrate_carbonmangels/valid/depth5/predictions.npz",
+          "sha256": "70e2231c269187b0ceb6534d002f1d1f2e35e71540c0d7c78e64822a18ee2155"
+        }
+      ]
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "combinations": 340,
+      "pool": 13,
+      "objective": 0.02357512257896066,
+      "gains": [
+        0.02357512257896066,
+        0.027562343303054515
+      ],
+      "scores": [
+        0.6089510528318829,
+        0.6711857145629236
+      ],
+      "members": [
+        {
+          "version": 168,
+          "module": "v168_sparse_linear",
+          "family": "sparse_linear",
+          "key": "strength1.0",
+          "config": {
+            "strength": 1.0
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v168/models/cyp2d6_substrate_carbonmangels/fold0/strength1.0/predictions.npz",
+              "sha256": "76b5cafacb3f5cba5b16f205d8edf92a1a05526eba370552d4930df124f77fd7"
+            },
+            {
+              "path": "admet_model_outputs_v168/models/cyp2d6_substrate_carbonmangels/fold1/strength1.0/predictions.npz",
+              "sha256": "898699c4f19fe402b6aa84812a2962e5ed255c51162edcadf37a44f81cca670d"
+            }
+          ]
+        },
+        {
+          "version": 224,
+          "module": "v224_rotated_chemistry_forest",
+          "family": "rotation_forest",
+          "key": "rot8_trees24",
+          "config": {
+            "rotations": 8,
+            "trees": 24,
+            "group": 8
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v224/models/cyp2d6_substrate_carbonmangels/fold0/rot8_trees24/predictions.npz",
+              "sha256": "7357c3d161870d51bf21feac2922e3b3bc8862e4254c64737216f10604c9ef22"
+            },
+            {
+              "path": "admet_model_outputs_v224/models/cyp2d6_substrate_carbonmangels/fold1/rot8_trees24/predictions.npz",
+              "sha256": "310f441d50e35d6f6e8adafdf7828fae8dba8a7062f17c416810b016c2a1566a"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 155,
+          "baseline": 0.5853759302529222,
+          "candidate": 0.6089510528318829,
+          "gain": 0.02357512257896066
+        },
+        {
+          "part": "fold1",
+          "rows": 155,
+          "baseline": 0.6436233712598691,
+          "candidate": 0.6711857145629236,
+          "gain": 0.027562343303054515
+        },
+        {
+          "part": "fold2",
+          "rows": 155,
+          "baseline": 0.6537775084987401,
+          "candidate": 0.6706660940292194,
+          "gain": 0.01688858553047934
+        },
+        {
+          "part": "valid",
+          "rows": 67,
+          "baseline": 0.7237389617580647,
+          "candidate": 0.6837929645542428,
+          "gain": -0.03994599720382197
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 90,
+          "gain_ci90": [
+            -0.020105663637894098,
+            0.05649711691538154
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 61,
+          "gain_ci90": [
+            -0.14676586059955896,
+            0.045270098322729935
+          ],
+          "lower_positive": false
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": false,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v168/models/cyp2d6_substrate_carbonmangels/fold0/strength1.0/predictions.npz",
+          "sha256": "76b5cafacb3f5cba5b16f205d8edf92a1a05526eba370552d4930df124f77fd7"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/cyp2d6_substrate_carbonmangels/fold0/rot8_trees24/predictions.npz",
+          "sha256": "7357c3d161870d51bf21feac2922e3b3bc8862e4254c64737216f10604c9ef22"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/cyp2d6_substrate_carbonmangels/fold1/strength1.0/predictions.npz",
+          "sha256": "898699c4f19fe402b6aa84812a2962e5ed255c51162edcadf37a44f81cca670d"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/cyp2d6_substrate_carbonmangels/fold1/rot8_trees24/predictions.npz",
+          "sha256": "310f441d50e35d6f6e8adafdf7828fae8dba8a7062f17c416810b016c2a1566a"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/cyp2d6_substrate_carbonmangels/fold2/strength1.0/predictions.npz",
+          "sha256": "1d0fd8243b241635fd01e517463c840e9d666576fe58371423580486612b7af5"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/cyp2d6_substrate_carbonmangels/fold2/rot8_trees24/predictions.npz",
+          "sha256": "16b51d0cfcfb710a1aa3a96d58df9e51dc85d39bffa7635c51ac9bc993d0e6f7"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/cyp2d6_substrate_carbonmangels/valid/strength1.0/predictions.npz",
+          "sha256": "10af5b2e5bfbfc88dd4f5169f112b83973ea55cdbcaa4f1ea51b1ea7afd55b94"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/cyp2d6_substrate_carbonmangels/valid/rot8_trees24/predictions.npz",
+          "sha256": "d2077173c54443430a4bf409d9495aa391a2ed44858bb930dd944fcad639c28b"
+        }
+      ]
+    },
+    {
+      "task": "cyp2d6_veith",
+      "metric": "AUPRC",
+      "combinations": 147,
+      "pool": 10,
+      "objective": 0.006560206672656443,
+      "gains": [
+        0.007537794457279201,
+        0.006560206672656443
+      ],
+      "scores": [
+        0.707472421005737,
+        0.7287940350329473
+      ],
+      "members": [
+        {
+          "version": 168,
+          "module": "v168_sparse_linear",
+          "family": "sparse_linear",
+          "key": "strength10.0",
+          "config": {
+            "strength": 10.0
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v168/models/cyp2d6_veith/fold0/strength10.0/predictions.npz",
+              "sha256": "8c91974bea59924b8934179042a7855c089b7f60ae663a647d2f30ad231185b6"
+            },
+            {
+              "path": "admet_model_outputs_v168/models/cyp2d6_veith/fold1/strength10.0/predictions.npz",
+              "sha256": "a121681812e7636ffe3c847a0d4c2bba752cf288a09d94e92858e4ee30eecd4d"
+            }
+          ]
+        },
+        {
+          "version": 210,
+          "module": "v210_standardized_chemistry",
+          "family": "chemistry_boosting",
+          "key": "depth6",
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v210/models/cyp2d6_veith/fold0/depth6/predictions.npz",
+              "sha256": "690a83237ab9b3732e287e0b5b63947024a12627241cd90fcbe1030cdbb4b203"
+            },
+            {
+              "path": "admet_model_outputs_v210/models/cyp2d6_veith/fold1/depth6/predictions.npz",
+              "sha256": "881c711bab85a7cec4ed3b578914c4f43d33ecb3c8ca61bf26f38474753fa8ed"
+            }
+          ]
+        },
+        {
+          "version": 224,
+          "module": "v224_rotated_chemistry_forest",
+          "family": "rotation_forest",
+          "key": "rot8_trees24",
+          "config": {
+            "rotations": 8,
+            "trees": 24,
+            "group": 8
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v224/models/cyp2d6_veith/fold0/rot8_trees24/predictions.npz",
+              "sha256": "e58e00a097510f6e64d41e826151c18000c409ff53912782bd1a1ae39bae89e0"
+            },
+            {
+              "path": "admet_model_outputs_v224/models/cyp2d6_veith/fold1/rot8_trees24/predictions.npz",
+              "sha256": "c17474f84ad1638c5524486f0e45cc9abc802b56006fb00358bbabb75909a7d8"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 3064,
+          "baseline": 0.6999346265484578,
+          "candidate": 0.707472421005737,
+          "gain": 0.007537794457279201
+        },
+        {
+          "part": "fold1",
+          "rows": 3063,
+          "baseline": 0.7222338283602908,
+          "candidate": 0.7287940350329473,
+          "gain": 0.006560206672656443
+        },
+        {
+          "part": "fold2",
+          "rows": 3064,
+          "baseline": 0.7662088121345493,
+          "candidate": 0.7658207832862733,
+          "gain": -0.0003880288482759342
+        },
+        {
+          "part": "valid",
+          "rows": 1313,
+          "baseline": 0.76915338231687,
+          "candidate": 0.7775075927891988,
+          "gain": 0.00835421047232876
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 1914,
+          "gain_ci90": [
+            -0.005496267919442943,
+            0.005590057675632186
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 893,
+          "gain_ci90": [
+            6.958143389357496e-07,
+            0.017592623241838398
+          ],
+          "lower_positive": true
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": false,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v168/models/cyp2d6_veith/fold0/strength10.0/predictions.npz",
+          "sha256": "8c91974bea59924b8934179042a7855c089b7f60ae663a647d2f30ad231185b6"
+        },
+        {
+          "path": "admet_model_outputs_v210/models/cyp2d6_veith/fold0/depth6/predictions.npz",
+          "sha256": "690a83237ab9b3732e287e0b5b63947024a12627241cd90fcbe1030cdbb4b203"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/cyp2d6_veith/fold0/rot8_trees24/predictions.npz",
+          "sha256": "e58e00a097510f6e64d41e826151c18000c409ff53912782bd1a1ae39bae89e0"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/cyp2d6_veith/fold1/strength10.0/predictions.npz",
+          "sha256": "a121681812e7636ffe3c847a0d4c2bba752cf288a09d94e92858e4ee30eecd4d"
+        },
+        {
+          "path": "admet_model_outputs_v210/models/cyp2d6_veith/fold1/depth6/predictions.npz",
+          "sha256": "881c711bab85a7cec4ed3b578914c4f43d33ecb3c8ca61bf26f38474753fa8ed"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/cyp2d6_veith/fold1/rot8_trees24/predictions.npz",
+          "sha256": "c17474f84ad1638c5524486f0e45cc9abc802b56006fb00358bbabb75909a7d8"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/cyp2d6_veith/fold2/strength10.0/predictions.npz",
+          "sha256": "20de4cb378315f2c48bec3743a66dbec792cb4733241e17adcd9297d9e4165d1"
+        },
+        {
+          "path": "admet_model_outputs_v210/models/cyp2d6_veith/fold2/depth6/predictions.npz",
+          "sha256": "b5ce116d47eafd97b9d383defd8d966c42d160dc2cc3be6003b43accb1469e0f"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/cyp2d6_veith/fold2/rot8_trees24/predictions.npz",
+          "sha256": "ab6473578c873d30faf191ba67d442578e0be461c100a7abe5c7edbdfa10c1ec"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/cyp2d6_veith/valid/strength10.0/predictions.npz",
+          "sha256": "bc67bb53d163eee1c080dc72134ae4c86d705c0bcea5d5ddc48f69fc1a572b7a"
+        },
+        {
+          "path": "admet_model_outputs_v210/models/cyp2d6_veith/valid/depth6/predictions.npz",
+          "sha256": "18ae34c23156db4cd44173a4a5dd7cca633d26c0afead48bf3c3bff0b3326334"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/cyp2d6_veith/valid/rot8_trees24/predictions.npz",
+          "sha256": "c95b635e493b8250c660b40cb8f1c2345cff1289f050b5ce0f2336af6b80d31b"
+        }
+      ]
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "combinations": 200,
+      "pool": 11,
+      "objective": 0.02574750830564776,
+      "gains": [
+        0.02574750830564776,
+        0.025955833882663204
+      ],
+      "scores": [
+        0.7744186046511627,
+        0.7002307185234015
+      ],
+      "members": [
+        {
+          "version": 168,
+          "module": "v168_sparse_linear",
+          "family": "sparse_linear",
+          "key": "strength1.0",
+          "config": {
+            "strength": 1.0
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold0/strength1.0/predictions.npz",
+              "sha256": "bec590273210b09dd9b8fde1262150878a1af34f028fe6bb346f4bc853f73178"
+            },
+            {
+              "path": "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold1/strength1.0/predictions.npz",
+              "sha256": "2e3ca189193d98fc798d3cfced01bb769cd3e28c8e1e0f6bcca5f58a81113eaa"
+            }
+          ]
+        },
+        {
+          "version": 210,
+          "module": "v210_standardized_chemistry",
+          "family": "chemistry_boosting",
+          "key": "depth6",
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold0/depth6/predictions.npz",
+              "sha256": "40bf40cfeb05d99cc8b4c9119c420dc8f841ac0e2b4e501a2627a1ebca997c32"
+            },
+            {
+              "path": "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold1/depth6/predictions.npz",
+              "sha256": "badc116272d4171b103a26df5d7d76ab71446895b22ea8be767f082ef37946a8"
+            }
+          ]
+        },
+        {
+          "version": 224,
+          "module": "v224_rotated_chemistry_forest",
+          "family": "rotation_forest",
+          "key": "rot8_trees24",
+          "config": {
+            "rotations": 8,
+            "trees": 24,
+            "group": 8
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold0/rot8_trees24/predictions.npz",
+              "sha256": "5767528aeb9e8f608513b0840e73d697facc0c9ca8402cc73520f921273b413a"
+            },
+            {
+              "path": "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold1/rot8_trees24/predictions.npz",
+              "sha256": "755a2443d933d8418b3a201ab627c0a494d7cc28abbb0da7d26dcee66783378d"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 156,
+          "baseline": 0.748671096345515,
+          "candidate": 0.7744186046511627,
+          "gain": 0.02574750830564776
+        },
+        {
+          "part": "fold1",
+          "rows": 156,
+          "baseline": 0.6742748846407383,
+          "candidate": 0.7002307185234015,
+          "gain": 0.025955833882663204
+        },
+        {
+          "part": "fold2",
+          "rows": 156,
+          "baseline": 0.660608552631579,
+          "candidate": 0.6657072368421052,
+          "gain": 0.005098684210526172
+        },
+        {
+          "part": "valid",
+          "rows": 67,
+          "baseline": 0.7051971326164874,
+          "candidate": 0.7083333333333334,
+          "gain": 0.0031362007168459494
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 115,
+          "gain_ci90": [
+            -0.010829104468111911,
+            0.022357453208556134
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 50,
+          "gain_ci90": [
+            -0.03342613927291351,
+            0.03970528014645648
+          ],
+          "lower_positive": false
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": true,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold0/strength1.0/predictions.npz",
+          "sha256": "bec590273210b09dd9b8fde1262150878a1af34f028fe6bb346f4bc853f73178"
+        },
+        {
+          "path": "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold0/depth6/predictions.npz",
+          "sha256": "40bf40cfeb05d99cc8b4c9119c420dc8f841ac0e2b4e501a2627a1ebca997c32"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold0/rot8_trees24/predictions.npz",
+          "sha256": "5767528aeb9e8f608513b0840e73d697facc0c9ca8402cc73520f921273b413a"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold1/strength1.0/predictions.npz",
+          "sha256": "2e3ca189193d98fc798d3cfced01bb769cd3e28c8e1e0f6bcca5f58a81113eaa"
+        },
+        {
+          "path": "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold1/depth6/predictions.npz",
+          "sha256": "badc116272d4171b103a26df5d7d76ab71446895b22ea8be767f082ef37946a8"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold1/rot8_trees24/predictions.npz",
+          "sha256": "755a2443d933d8418b3a201ab627c0a494d7cc28abbb0da7d26dcee66783378d"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/fold2/strength1.0/predictions.npz",
+          "sha256": "606dd848c71518107bff4bd5f34f86a7fc0cc79ff18186b41024f8a40420d39d"
+        },
+        {
+          "path": "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/fold2/depth6/predictions.npz",
+          "sha256": "8f9c26e535eae4962991ef7d619b5a03431f166de5e08f1afd275de734eb1a3f"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/fold2/rot8_trees24/predictions.npz",
+          "sha256": "7c86d3fe64ac48b576cfb86008b2441b8b4c68837842dc1ee7569de03da40fe9"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/cyp3a4_substrate_carbonmangels/valid/strength1.0/predictions.npz",
+          "sha256": "b2708ce0da8adbd2d6f89806ced6b171232ef96fc2ac05da69ebdfeac989c07c"
+        },
+        {
+          "path": "admet_model_outputs_v210/models/cyp3a4_substrate_carbonmangels/valid/depth6/predictions.npz",
+          "sha256": "1be815babc5e4a4212f130eadf50f8479c9a1f989bfe80781fcf1932e182a9c6"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/cyp3a4_substrate_carbonmangels/valid/rot8_trees24/predictions.npz",
+          "sha256": "711c5d87069f0a9f8a216bb14a1de34faa862bee9d55ef75c0716665da712de7"
+        }
+      ]
+    },
+    {
+      "task": "cyp3a4_veith",
+      "metric": "AUPRC",
+      "combinations": 147,
+      "pool": 10,
+      "objective": 0.004676350144323549,
+      "gains": [
+        0.004909236381144488,
+        0.004676350144323549
+      ],
+      "scores": [
+        0.8760367622194399,
+        0.8841959918610095
+      ],
+      "members": [
+        {
+          "version": 168,
+          "module": "v168_sparse_linear",
+          "family": "sparse_linear",
+          "key": "strength10.0",
+          "config": {
+            "strength": 10.0
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v168/models/cyp3a4_veith/fold0/strength10.0/predictions.npz",
+              "sha256": "410ad5e96a5f1331b40777c1604014b93927b244db810cb1f59319def00566ae"
+            },
+            {
+              "path": "admet_model_outputs_v168/models/cyp3a4_veith/fold1/strength10.0/predictions.npz",
+              "sha256": "e95d6b157ad2ef5f700fd7d77c32575a65ce73f492dabea1322a19dd0ed71591"
+            }
+          ]
+        },
+        {
+          "version": 210,
+          "module": "v210_standardized_chemistry",
+          "family": "chemistry_boosting",
+          "key": "depth6",
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v210/models/cyp3a4_veith/fold0/depth6/predictions.npz",
+              "sha256": "49709cc43224bcf9d191cfba355204b4569654106abef59c2c12a616bea9174e"
+            },
+            {
+              "path": "admet_model_outputs_v210/models/cyp3a4_veith/fold1/depth6/predictions.npz",
+              "sha256": "9692dd2b8d364788f7c5fd163f87a83d0d3aa7a5ea2b4ebe8ba4af1736c39a55"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 2876,
+          "baseline": 0.8711275258382954,
+          "candidate": 0.8760367622194399,
+          "gain": 0.004909236381144488
+        },
+        {
+          "part": "fold1",
+          "rows": 2876,
+          "baseline": 0.879519641716686,
+          "candidate": 0.8841959918610095,
+          "gain": 0.004676350144323549
+        },
+        {
+          "part": "fold2",
+          "rows": 2876,
+          "baseline": 0.8698486874731598,
+          "candidate": 0.8754176136805258,
+          "gain": 0.005568926207366043
+        },
+        {
+          "part": "valid",
+          "rows": 1233,
+          "baseline": 0.9019332427176102,
+          "candidate": 0.9018730368465162,
+          "gain": -6.02058710940101e-05
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 1692,
+          "gain_ci90": [
+            0.0028500995591911773,
+            0.008480012671364301
+          ],
+          "lower_positive": true
+        },
+        {
+          "part": "valid",
+          "groups": 783,
+          "gain_ci90": [
+            -0.0028911510023804598,
+            0.0029236869665013924
+          ],
+          "lower_positive": false
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": false,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v168/models/cyp3a4_veith/fold0/strength10.0/predictions.npz",
+          "sha256": "410ad5e96a5f1331b40777c1604014b93927b244db810cb1f59319def00566ae"
+        },
+        {
+          "path": "admet_model_outputs_v210/models/cyp3a4_veith/fold0/depth6/predictions.npz",
+          "sha256": "49709cc43224bcf9d191cfba355204b4569654106abef59c2c12a616bea9174e"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/cyp3a4_veith/fold1/strength10.0/predictions.npz",
+          "sha256": "e95d6b157ad2ef5f700fd7d77c32575a65ce73f492dabea1322a19dd0ed71591"
+        },
+        {
+          "path": "admet_model_outputs_v210/models/cyp3a4_veith/fold1/depth6/predictions.npz",
+          "sha256": "9692dd2b8d364788f7c5fd163f87a83d0d3aa7a5ea2b4ebe8ba4af1736c39a55"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/cyp3a4_veith/fold2/strength10.0/predictions.npz",
+          "sha256": "9d466cd17789d14e59fae55851234fd6387474785d3f9331bff3660fb4e0ac65"
+        },
+        {
+          "path": "admet_model_outputs_v210/models/cyp3a4_veith/fold2/depth6/predictions.npz",
+          "sha256": "ac94e7dd2c3e64aa1e6a25033d21aaa027b33bc83e8f7003f7cc0e2f596f3154"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/cyp3a4_veith/valid/strength10.0/predictions.npz",
+          "sha256": "f34d6556bb9868364db00e14bfc11a27a26991a5180b62e1c43d3f281ca04775"
+        },
+        {
+          "path": "admet_model_outputs_v210/models/cyp3a4_veith/valid/depth6/predictions.npz",
+          "sha256": "367ab7cc8bd0aa1ce245b09c04ad2c3c1008eb8e3e6e212b21c2cb9f23ffc8cb"
+        }
+      ]
+    },
+    {
+      "task": "dili",
+      "metric": "AUROC",
+      "combinations": 104,
+      "pool": 9,
+      "objective": 0.006858481097356983,
+      "gains": [
+        0.006858481097356983,
+        0.007646276595744572
+      ],
+      "scores": [
+        0.9024757443961191,
+        0.8713430851063829
+      ],
+      "members": [
+        {
+          "version": 216,
+          "module": "v216_ordered_scaffold",
+          "family": "ordered_boosting",
+          "key": "depth5",
+          "config": {
+            "depth": 5,
+            "trees": 700
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v216/models/dili/fold0/depth5/predictions.npz",
+              "sha256": "c5914c34aa2646109a1d799d0f721ebcc8d25b0b51a90036dbd68d1d9fe8706f"
+            },
+            {
+              "path": "admet_model_outputs_v216/models/dili/fold1/depth5/predictions.npz",
+              "sha256": "951897158dd1154f98f767469797d1fb6ed14c7b49282d5ff397b56b3b2b2f63"
+            }
+          ]
+        },
+        {
+          "version": 221,
+          "module": "v221_fragment_factorization",
+          "family": "factorization",
+          "key": "rank32_epochs100",
+          "config": {
+            "rank": 32,
+            "epochs": 100
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v221/models/dili/fold0/rank32_epochs100/predictions.npz",
+              "sha256": "16bfb02efc92cec1b7d81746befa1b1c28cfdc41f7479f00f59484b945bfcdcc"
+            },
+            {
+              "path": "admet_model_outputs_v221/models/dili/fold1/rank32_epochs100/predictions.npz",
+              "sha256": "bacab48af8b786b7ca5ced03cb323f396298f774745ad16616c26793ca37ac0d"
+            }
+          ]
+        },
+        {
+          "version": 224,
+          "module": "v224_rotated_chemistry_forest",
+          "family": "rotation_forest",
+          "key": "rot8_trees24",
+          "config": {
+            "rotations": 8,
+            "trees": 24,
+            "group": 8
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v224/models/dili/fold0/rot8_trees24/predictions.npz",
+              "sha256": "b8fdc32b81093b07baff23927a64311bb29d1ebf012c5c8704534277219cf611"
+            },
+            {
+              "path": "admet_model_outputs_v224/models/dili/fold1/rot8_trees24/predictions.npz",
+              "sha256": "82bac855aad24d888141e26932da320b6f64607b95b61c60d807573c350505b9"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 110,
+          "baseline": 0.8956172632987621,
+          "candidate": 0.9024757443961191,
+          "gain": 0.006858481097356983
+        },
+        {
+          "part": "fold1",
+          "rows": 111,
+          "baseline": 0.8636968085106383,
+          "candidate": 0.8713430851063829,
+          "gain": 0.007646276595744572
+        },
+        {
+          "part": "fold2",
+          "rows": 110,
+          "baseline": 0.8094758064516129,
+          "candidate": 0.7931787634408602,
+          "gain": -0.016297043010752632
+        },
+        {
+          "part": "valid",
+          "rows": 48,
+          "baseline": 0.9208791208791208,
+          "candidate": 0.9010989010989011,
+          "gain": -0.01978021978021971
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 57,
+          "gain_ci90": [
+            -0.029938844179672984,
+            0.015588670588670585
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 46,
+          "gain_ci90": [
+            -0.056311503811503794,
+            0.0104399304399304
+          ],
+          "lower_positive": false
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": false,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v216/models/dili/fold0/depth5/predictions.npz",
+          "sha256": "c5914c34aa2646109a1d799d0f721ebcc8d25b0b51a90036dbd68d1d9fe8706f"
+        },
+        {
+          "path": "admet_model_outputs_v221/models/dili/fold0/rank32_epochs100/predictions.npz",
+          "sha256": "16bfb02efc92cec1b7d81746befa1b1c28cfdc41f7479f00f59484b945bfcdcc"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/dili/fold0/rot8_trees24/predictions.npz",
+          "sha256": "b8fdc32b81093b07baff23927a64311bb29d1ebf012c5c8704534277219cf611"
+        },
+        {
+          "path": "admet_model_outputs_v216/models/dili/fold1/depth5/predictions.npz",
+          "sha256": "951897158dd1154f98f767469797d1fb6ed14c7b49282d5ff397b56b3b2b2f63"
+        },
+        {
+          "path": "admet_model_outputs_v221/models/dili/fold1/rank32_epochs100/predictions.npz",
+          "sha256": "bacab48af8b786b7ca5ced03cb323f396298f774745ad16616c26793ca37ac0d"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/dili/fold1/rot8_trees24/predictions.npz",
+          "sha256": "82bac855aad24d888141e26932da320b6f64607b95b61c60d807573c350505b9"
+        },
+        {
+          "path": "admet_model_outputs_v216/models/dili/fold2/depth5/predictions.npz",
+          "sha256": "b7a449afddabb2f9357e49d472fa7f5b96983ea9a5afd0c45514da3310a37aeb"
+        },
+        {
+          "path": "admet_model_outputs_v221/models/dili/fold2/rank32_epochs100/predictions.npz",
+          "sha256": "21903c45b788ad7e36b1616a8e6a1de863b3a4382249906e7ab540bd74620b56"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/dili/fold2/rot8_trees24/predictions.npz",
+          "sha256": "ed700a1dd5fb050fd69930df0ca5a05d61e146c742717061ff886f0fb5fa4232"
+        },
+        {
+          "path": "admet_model_outputs_v216/models/dili/valid/depth5/predictions.npz",
+          "sha256": "958bb206de0dd143829ad1ad68f9da0677f505ee4f982928b2288add88baaae1"
+        },
+        {
+          "path": "admet_model_outputs_v221/models/dili/valid/rank32_epochs100/predictions.npz",
+          "sha256": "1b16955bcd2f5c6cdda9139711b9031cdbeb6b83d810c0511f63421d33d43496"
+        },
+        {
+          "path": "admet_model_outputs_v224/models/dili/valid/rot8_trees24/predictions.npz",
+          "sha256": "300433dc1b239f6f6b3648e799b90c57522101fc4c04d6f083aba0fc4a179c7b"
+        }
+      ]
+    },
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "combinations": 784,
+      "pool": 17,
+      "objective": 0.007211538461538214,
+      "gains": [
+        0.007211538461538214,
+        0.010480769230769349
+      ],
+      "scores": [
+        0.8516626602564101,
+        0.8617307692307693
+      ],
+      "members": [
+        {
+          "version": 168,
+          "module": "v168_sparse_linear",
+          "family": "sparse_linear",
+          "key": "strength1.0",
+          "config": {
+            "strength": 1.0
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v168/models/herg/fold0/strength1.0/predictions.npz",
+              "sha256": "d11199e2d30cfa4a4027a843a1058d11de674339ae68a78cd29c851629e7f367"
+            },
+            {
+              "path": "admet_model_outputs_v168/models/herg/fold1/strength1.0/predictions.npz",
+              "sha256": "9e426bec9d6b4c8714dc93197561ebf625fb281fa3ef2f7e1353de5123ada3ef"
+            }
+          ]
+        },
+        {
+          "version": 233,
+          "module": "v233_supervised_chemical_similarity",
+          "family": "supervised_kernel",
+          "key": "cross_scaffold_alignment",
+          "config": {
+            "C": 3.0,
+            "alignment_ridge": 0.05,
+            "landmarks": 256
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v233/models/herg/fold0/cross_scaffold_alignment/predictions.npz",
+              "sha256": "1e8b6bf8ebd3ea91e360548429330e39c04b2311fdc075278c6a66331e33a291"
+            },
+            {
+              "path": "admet_model_outputs_v233/models/herg/fold1/cross_scaffold_alignment/predictions.npz",
+              "sha256": "1e98da2f41e8e419e69735c4a0e48462362c9c979e112a8c5a1b7ab88c8933ef"
+            }
+          ]
+        },
+        {
+          "version": 333,
+          "module": "v333_chemical_domain_dro",
+          "family": "domain_dro",
+          "key": "chemical_domains8_groupdro",
+          "config": {
+            "neighbors": 24,
+            "width": 128,
+            "key_width": 32,
+            "bins": 8,
+            "epochs": 100,
+            "minimum_steps": 1200,
+            "maximum_steps": 2500,
+            "domains": 8,
+            "dro_eta": 0.01,
+            "dro_fraction": 0.5
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v333/models/herg/fold0/chemical_domains8_groupdro/predictions.npz",
+              "sha256": "9147bf86f8784cf1249799c0e168b19e3f33db97c7a65edb92a6aa703c8f1d93"
+            },
+            {
+              "path": "admet_model_outputs_v333/models/herg/fold1/chemical_domains8_groupdro/predictions.npz",
+              "sha256": "33037d3b9b58822b185d429f1b206cbf017f0135915df2538cdc049caf059d77"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 152,
+          "baseline": 0.8444511217948719,
+          "candidate": 0.8516626602564101,
+          "gain": 0.007211538461538214
+        },
+        {
+          "part": "fold1",
+          "rows": 152,
+          "baseline": 0.85125,
+          "candidate": 0.8617307692307693,
+          "gain": 0.010480769230769349
+        },
+        {
+          "part": "fold2",
+          "rows": 153,
+          "baseline": 0.8950617283950617,
+          "candidate": 0.9072016460905349,
+          "gain": 0.012139917695473179
+        },
+        {
+          "part": "valid",
+          "rows": 66,
+          "baseline": 0.9012896825396827,
+          "candidate": 0.912202380952381,
+          "gain": 0.010912698412698374
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 96,
+          "gain_ci90": [
+            0.00040163968862719847,
+            0.021056371347068902
+          ],
+          "lower_positive": true
+        },
+        {
+          "part": "valid",
+          "groups": 45,
+          "gain_ci90": [
+            -0.00270641755461492,
+            0.03136074197120713
+          ],
+          "lower_positive": false
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": true,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v168/models/herg/fold0/strength1.0/predictions.npz",
+          "sha256": "d11199e2d30cfa4a4027a843a1058d11de674339ae68a78cd29c851629e7f367"
+        },
+        {
+          "path": "admet_model_outputs_v233/models/herg/fold0/cross_scaffold_alignment/predictions.npz",
+          "sha256": "1e8b6bf8ebd3ea91e360548429330e39c04b2311fdc075278c6a66331e33a291"
+        },
+        {
+          "path": "admet_model_outputs_v333/models/herg/fold0/chemical_domains8_groupdro/predictions.npz",
+          "sha256": "9147bf86f8784cf1249799c0e168b19e3f33db97c7a65edb92a6aa703c8f1d93"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/herg/fold1/strength1.0/predictions.npz",
+          "sha256": "9e426bec9d6b4c8714dc93197561ebf625fb281fa3ef2f7e1353de5123ada3ef"
+        },
+        {
+          "path": "admet_model_outputs_v233/models/herg/fold1/cross_scaffold_alignment/predictions.npz",
+          "sha256": "1e98da2f41e8e419e69735c4a0e48462362c9c979e112a8c5a1b7ab88c8933ef"
+        },
+        {
+          "path": "admet_model_outputs_v333/models/herg/fold1/chemical_domains8_groupdro/predictions.npz",
+          "sha256": "33037d3b9b58822b185d429f1b206cbf017f0135915df2538cdc049caf059d77"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/herg/fold2/strength1.0/predictions.npz",
+          "sha256": "e9f2d36b87a7c4de993aeeabb9affa13d6a4da43bc32ab059c1d7f7269fca3f8"
+        },
+        {
+          "path": "admet_model_outputs_v233/models/herg/fold2/cross_scaffold_alignment/predictions.npz",
+          "sha256": "cfa0fa767c99566400a1fb5c4e9bb60ec43ce074667f5ef779f1b9db9130e47d"
+        },
+        {
+          "path": "admet_model_outputs_v333/models/herg/fold2/chemical_domains8_groupdro/predictions.npz",
+          "sha256": "2fa3934656c51128df5261f916faf018bc3ece81c3ab722a4ff44f9b4442bcb8"
+        },
+        {
+          "path": "admet_model_outputs_v168/models/herg/valid/strength1.0/predictions.npz",
+          "sha256": "c532dada7e017999fd382d9282e62564ea6db57f03f35cf9fc81e03d58a3b114"
+        },
+        {
+          "path": "admet_model_outputs_v233/models/herg/valid/cross_scaffold_alignment/predictions.npz",
+          "sha256": "08dd5e031eca61624b0f9e1f93c38efb4f917417a9cb6277d2da5d0a514b8133"
+        },
+        {
+          "path": "admet_model_outputs_v333/models/herg/valid/chemical_domains8_groupdro/predictions.npz",
+          "sha256": "002517c64e315955f6b6d9419c5ec1beef717f8ca375322ca13ed2c7fb1dcd67"
+        }
+      ]
+    },
+    {
+      "task": "pgp_broccatelli",
+      "metric": "AUROC",
+      "combinations": 200,
+      "pool": 11,
+      "objective": 0.007415786827551507,
+      "gains": [
+        0.007415786827551507,
+        0.011455108359133215
+      ],
+      "scores": [
+        0.9556561085972851,
+        0.9136222910216719
+      ],
+      "members": [
+        {
+          "version": 178,
+          "module": "v178_graph_embedding_boosting",
+          "family": "graph_boosting",
+          "key": "d6_t1000",
+          "config": {
+            "depth": 6,
+            "trees": 1000
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v178/models/pgp_broccatelli/fold0/d6_t1000/predictions.npz",
+              "sha256": "981a957f56944fdb3757dc3af943ed62a036e7a09ce8aba6e37120ac093cb5e1"
+            },
+            {
+              "path": "admet_model_outputs_v178/models/pgp_broccatelli/fold1/d6_t1000/predictions.npz",
+              "sha256": "3af3196aa3259ae9afbfd77f2aa9400101d6d24c6959be70cc32965270235581"
+            }
+          ]
+        },
+        {
+          "version": 221,
+          "module": "v221_fragment_factorization",
+          "family": "factorization",
+          "key": "rank32_epochs100",
+          "config": {
+            "rank": 32,
+            "epochs": 100
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v221/models/pgp_broccatelli/fold0/rank32_epochs100/predictions.npz",
+              "sha256": "ed95d5faa5048ab16c8101e89eb2b7d2b91f7a4faf11e39c12fc9e3ff2df0fdc"
+            },
+            {
+              "path": "admet_model_outputs_v221/models/pgp_broccatelli/fold1/rank32_epochs100/predictions.npz",
+              "sha256": "fc005f06a51edbafded2bcf933c31ecd227cd16cc945e90913b208e7bbf9258b"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 283,
+          "baseline": 0.9482403217697336,
+          "candidate": 0.9556561085972851,
+          "gain": 0.007415786827551507
+        },
+        {
+          "part": "fold1",
+          "rows": 284,
+          "baseline": 0.9021671826625387,
+          "candidate": 0.9136222910216719,
+          "gain": 0.011455108359133215
+        },
+        {
+          "part": "fold2",
+          "rows": 284,
+          "baseline": 0.9507538186867686,
+          "candidate": 0.9472822852608609,
+          "gain": -0.003471533425907669
+        },
+        {
+          "part": "valid",
+          "rows": 122,
+          "baseline": 0.9510884170921796,
+          "candidate": 0.9436979306638,
+          "gain": -0.0073904864283795835
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 145,
+          "gain_ci90": [
+            -0.009483072188704688,
+            0.0009573581771727759
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 77,
+          "gain_ci90": [
+            -0.01834379747535193,
+            0.001097176570394283
+          ],
+          "lower_positive": false
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": false,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v178/models/pgp_broccatelli/fold0/d6_t1000/predictions.npz",
+          "sha256": "981a957f56944fdb3757dc3af943ed62a036e7a09ce8aba6e37120ac093cb5e1"
+        },
+        {
+          "path": "admet_model_outputs_v221/models/pgp_broccatelli/fold0/rank32_epochs100/predictions.npz",
+          "sha256": "ed95d5faa5048ab16c8101e89eb2b7d2b91f7a4faf11e39c12fc9e3ff2df0fdc"
+        },
+        {
+          "path": "admet_model_outputs_v178/models/pgp_broccatelli/fold1/d6_t1000/predictions.npz",
+          "sha256": "3af3196aa3259ae9afbfd77f2aa9400101d6d24c6959be70cc32965270235581"
+        },
+        {
+          "path": "admet_model_outputs_v221/models/pgp_broccatelli/fold1/rank32_epochs100/predictions.npz",
+          "sha256": "fc005f06a51edbafded2bcf933c31ecd227cd16cc945e90913b208e7bbf9258b"
+        },
+        {
+          "path": "admet_model_outputs_v178/models/pgp_broccatelli/fold2/d6_t1000/predictions.npz",
+          "sha256": "bfdca17a0d7e54f7400ca0d739fc5c1999986e23c040e5cebd96d2141862a5fd"
+        },
+        {
+          "path": "admet_model_outputs_v221/models/pgp_broccatelli/fold2/rank32_epochs100/predictions.npz",
+          "sha256": "a569b96769928481d8b7563e3063ccc301046225e3fd175b3a9822e0aa3c4674"
+        },
+        {
+          "path": "admet_model_outputs_v178/models/pgp_broccatelli/valid/d6_t1000/predictions.npz",
+          "sha256": "557ac50735db97012a124a21ff2deeaa1d30a89fa499ab7f9e4dd2277ee4fadd"
+        },
+        {
+          "path": "admet_model_outputs_v221/models/pgp_broccatelli/valid/rank32_epochs100/predictions.npz",
+          "sha256": "e5f1d5e88f826a0f1f1fc950762da30d9da901a076a2e636177c363e75e6c3e1"
+        }
+      ]
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "combinations": 1708,
+      "pool": 22,
+      "objective": 0.018824079135438904,
+      "gains": [
+        0.018824079135438904,
+        0.021213147086841074
+      ],
+      "scores": [
+        7.803105395838825,
+        7.13819039902548
+      ],
+      "members": [
+        {
+          "version": 172,
+          "module": "v172_graph_message_passing",
+          "family": "graph",
+          "key": "h96_l3",
+          "config": {
+            "hidden": 96,
+            "layers": 3,
+            "steps": 700
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v172/models/ppbr_az/fold0/h96_l3/predictions.npz",
+              "sha256": "a72e4ca5a4f56186e96711d40651285e2b78df90f0736340d74274c34d47ed51"
+            },
+            {
+              "path": "admet_model_outputs_v172/models/ppbr_az/fold1/h96_l3/predictions.npz",
+              "sha256": "837cf5ab4ade1352dd74f96cad4aae00ccb3258a67f5cd4f4cce37552370e1c7"
+            }
+          ]
+        },
+        {
+          "version": 301,
+          "module": "v301_piecewise_batch_ensemble",
+          "family": "shared_neural_ensemble",
+          "key": "piecewise_shared8",
+          "config": {
+            "members": 8,
+            "width": 192,
+            "blocks": 3,
+            "bins": 8,
+            "epochs": 100,
+            "minimum_steps": 1200,
+            "maximum_steps": 3000
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v301/models/ppbr_az/fold0/piecewise_shared8/predictions.npz",
+              "sha256": "24b8dcd6a9c6bc0df9bc49fa3e24683997d5e66bce3e8a203837ee9769647329"
+            },
+            {
+              "path": "admet_model_outputs_v301/models/ppbr_az/fold1/piecewise_shared8/predictions.npz",
+              "sha256": "d3b212eb39a735c1cc7c5e657014c72d39c866ec4cb66603e0bf5ca03f20aa77"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 7.95280971526812,
+          "candidate": 7.803105395838825,
+          "gain": 0.018824079135438904
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.292895667509342,
+          "candidate": 7.13819039902548,
+          "gain": 0.021213147086841074
+        },
+        {
+          "part": "fold2",
+          "rows": 651,
+          "baseline": 8.62639236136588,
+          "candidate": 8.545217707393354,
+          "gain": 0.00941003499169306
+        },
+        {
+          "part": "valid",
+          "rows": 279,
+          "baseline": 9.36669542965183,
+          "candidate": 9.566877594669242,
+          "gain": -0.02137169576195477
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 259,
+          "gain_ci90": [
+            -0.012011002515249723,
+            0.026341312816075216
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 134,
+          "gain_ci90": [
+            -0.04593184707402009,
+            0.004675133303767712
+          ],
+          "lower_positive": false
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": false,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v172/models/ppbr_az/fold0/h96_l3/predictions.npz",
+          "sha256": "a72e4ca5a4f56186e96711d40651285e2b78df90f0736340d74274c34d47ed51"
+        },
+        {
+          "path": "admet_model_outputs_v301/models/ppbr_az/fold0/piecewise_shared8/predictions.npz",
+          "sha256": "24b8dcd6a9c6bc0df9bc49fa3e24683997d5e66bce3e8a203837ee9769647329"
+        },
+        {
+          "path": "admet_model_outputs_v172/models/ppbr_az/fold1/h96_l3/predictions.npz",
+          "sha256": "837cf5ab4ade1352dd74f96cad4aae00ccb3258a67f5cd4f4cce37552370e1c7"
+        },
+        {
+          "path": "admet_model_outputs_v301/models/ppbr_az/fold1/piecewise_shared8/predictions.npz",
+          "sha256": "d3b212eb39a735c1cc7c5e657014c72d39c866ec4cb66603e0bf5ca03f20aa77"
+        },
+        {
+          "path": "admet_model_outputs_v172/models/ppbr_az/fold2/h96_l3/predictions.npz",
+          "sha256": "ce387d0bd09f5facf235684f9cc0b80654ef56e5b84c89d15e556bf345ff9ffe"
+        },
+        {
+          "path": "admet_model_outputs_v301/models/ppbr_az/fold2/piecewise_shared8/predictions.npz",
+          "sha256": "9b05e516de42488f7f1abf46fc101fc6228911b17d22bd25ffbd9c9f154c3876"
+        },
+        {
+          "path": "admet_model_outputs_v172/models/ppbr_az/valid/h96_l3/predictions.npz",
+          "sha256": "25b8349c584fc796d3e54196b5f03964748af85228bf88ae4c04c55ce60c213a"
+        },
+        {
+          "path": "admet_model_outputs_v301/models/ppbr_az/valid/piecewise_shared8/predictions.npz",
+          "sha256": "fb4c646ce22414ceb359a96979d7ceb89f20e7de487e0f2cfa7c18d4681c5ed1"
+        }
+      ]
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "combinations": 1086,
+      "pool": 19,
+      "objective": 0.01725728699885584,
+      "gains": [
+        0.01725728699885584,
+        0.020161333439210186
+      ],
+      "scores": [
+        0.738578629104059,
+        0.7167742320163547
+      ],
+      "members": [
+        {
+          "version": 181,
+          "module": "v181_quantile_forest",
+          "family": "forest",
+          "key": "leaf3",
+          "config": {
+            "leaf": 3,
+            "trees": 400
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v181/models/solubility_aqsoldb/fold0/leaf3/predictions.npz",
+              "sha256": "0a65ff62f902b33ca77234ad06fd8dfd84c38902b7fbbee6b965f465dddf062f"
+            },
+            {
+              "path": "admet_model_outputs_v181/models/solubility_aqsoldb/fold1/leaf3/predictions.npz",
+              "sha256": "abc8d0076287154faeb2d019cd422c44a4982bf5e0380bffd2f2046a477e6a19"
+            }
+          ]
+        },
+        {
+          "version": 297,
+          "module": "v297_pair_delta_regression",
+          "family": "pair_regression",
+          "key": "scaffold_pair_delta8",
+          "config": {
+            "neighbors": 8,
+            "fingerprint_columns": 256,
+            "trees": 700,
+            "depth": 5
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v297/models/solubility_aqsoldb/fold0/scaffold_pair_delta8/predictions.npz",
+              "sha256": "2a938d96edbd432ed66a313616ae6d587b08ad28349797f1c81e7d63662294d8"
+            },
+            {
+              "path": "admet_model_outputs_v297/models/solubility_aqsoldb/fold1/scaffold_pair_delta8/predictions.npz",
+              "sha256": "55de00535a2c228ebb35bd0fa2280a51d37665cce8576cdde5bae5c638fc4983"
+            }
+          ]
+        },
+        {
+          "version": 304,
+          "module": "v304_learned_label_retrieval",
+          "family": "label_retrieval",
+          "key": "learned_label_context24",
+          "config": {
+            "neighbors": 24,
+            "width": 128,
+            "key_width": 32,
+            "bins": 8,
+            "epochs": 100,
+            "minimum_steps": 1200,
+            "maximum_steps": 2500
+          },
+          "development_sources": [
+            {
+              "path": "admet_model_outputs_v304/models/solubility_aqsoldb/fold0/learned_label_context24/predictions.npz",
+              "sha256": "0e5eb6007cce5592c4e6fb625000df935d5ca4b7e21da9269dcf252df011af66"
+            },
+            {
+              "path": "admet_model_outputs_v304/models/solubility_aqsoldb/fold1/learned_label_context24/predictions.npz",
+              "sha256": "937f9e62ea69509d88033f1ae5556f2823c0cc16e109dfe4457efaa2f3872d67"
+            }
+          ]
+        }
+      ],
+      "expert_total_weight": 0.4,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 1635,
+          "baseline": 0.751548314053181,
+          "candidate": 0.738578629104059,
+          "gain": 0.01725728699885584
+        },
+        {
+          "part": "fold1",
+          "rows": 1635,
+          "baseline": 0.7315227051941265,
+          "candidate": 0.7167742320163547,
+          "gain": 0.020161333439210186
+        },
+        {
+          "part": "fold2",
+          "rows": 1775,
+          "baseline": 0.6111601967152441,
+          "candidate": 0.6049122740393977,
+          "gain": 0.010223052334603312
+        },
+        {
+          "part": "valid",
+          "rows": 2940,
+          "baseline": 1.0026509673090696,
+          "candidate": 1.0166612198453953,
+          "gain": -0.01397321001337748
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 14,
+          "gain_ci90": [
+            -0.007584082745445967,
+            0.036480577200693295
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 2874,
+          "gain_ci90": [
+            -0.018757782003822308,
+            -0.008516512394177972
+          ],
+          "lower_positive": false
+        }
+      ],
+      "strict_accepted": false,
+      "four_positive_points": false,
+      "source_files": [
+        {
+          "path": "admet_model_outputs_v181/models/solubility_aqsoldb/fold0/leaf3/predictions.npz",
+          "sha256": "0a65ff62f902b33ca77234ad06fd8dfd84c38902b7fbbee6b965f465dddf062f"
+        },
+        {
+          "path": "admet_model_outputs_v297/models/solubility_aqsoldb/fold0/scaffold_pair_delta8/predictions.npz",
+          "sha256": "2a938d96edbd432ed66a313616ae6d587b08ad28349797f1c81e7d63662294d8"
+        },
+        {
+          "path": "admet_model_outputs_v304/models/solubility_aqsoldb/fold0/learned_label_context24/predictions.npz",
+          "sha256": "0e5eb6007cce5592c4e6fb625000df935d5ca4b7e21da9269dcf252df011af66"
+        },
+        {
+          "path": "admet_model_outputs_v181/models/solubility_aqsoldb/fold1/leaf3/predictions.npz",
+          "sha256": "abc8d0076287154faeb2d019cd422c44a4982bf5e0380bffd2f2046a477e6a19"
+        },
+        {
+          "path": "admet_model_outputs_v297/models/solubility_aqsoldb/fold1/scaffold_pair_delta8/predictions.npz",
+          "sha256": "55de00535a2c228ebb35bd0fa2280a51d37665cce8576cdde5bae5c638fc4983"
+        },
+        {
+          "path": "admet_model_outputs_v304/models/solubility_aqsoldb/fold1/learned_label_context24/predictions.npz",
+          "sha256": "937f9e62ea69509d88033f1ae5556f2823c0cc16e109dfe4457efaa2f3872d67"
+        },
+        {
+          "path": "admet_model_outputs_v181/models/solubility_aqsoldb/fold2/leaf3/predictions.npz",
+          "sha256": "7392836822965c21a6503fdf8ca4b9b8f59ee5356ae36d3fbfedb6528d64a588"
+        },
+        {
+          "path": "admet_model_outputs_v297/models/solubility_aqsoldb/fold2/scaffold_pair_delta8/predictions.npz",
+          "sha256": "4bc148aa0dc02d999247f5d1ad2ad777d0655a5bced1e750d6bb53b37a76fd1b"
+        },
+        {
+          "path": "admet_model_outputs_v304/models/solubility_aqsoldb/fold2/learned_label_context24/predictions.npz",
+          "sha256": "908e9a7a768a30c67a99be8a4f6db5a2fc8ed2134901e6e280cc8b98779e462c"
+        },
+        {
+          "path": "admet_model_outputs_v181/models/solubility_aqsoldb/valid/leaf3/predictions.npz",
+          "sha256": "5a3acd6bd5bf339c83eec65b98f37798528431839531e1b7d057f77cb7fbbff3"
+        },
+        {
+          "path": "admet_model_outputs_v297/models/solubility_aqsoldb/valid/scaffold_pair_delta8/predictions.npz",
+          "sha256": "16b000d95007c2ffbdf5a204ce0592db8802a5f998fe8dd514088f0bcebf87cc"
+        },
+        {
+          "path": "admet_model_outputs_v304/models/solubility_aqsoldb/valid/learned_label_context24/predictions.npz",
+          "sha256": "1bc446c4f42e6f126253f7f254738a46c193e4e83cbe15b03717731d01a2454f"
+        }
+      ]
+    }
+  ],
+  "accepted_tasks": [],
+  "experimental_four_positive_tasks": [
+    "ames",
+    "cyp3a4_substrate_carbonmangels",
+    "herg"
+  ],
+  "csv_created": false,
+  "official_gain_established": false,
+  "platform_submission": false
+}

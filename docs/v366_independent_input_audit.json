@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "task": "ppbr_az",
+      "part": "fold0",
+      "hash_ok": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold1",
+      "hash_ok": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold2",
+      "hash_ok": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "ppbr_az",
+      "part": "valid",
+      "hash_ok": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "ppbr_az",
+      "part": "final",
+      "hash_ok": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "fold0",
+      "hash_ok": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "fold1",
+      "hash_ok": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "fold2",
+      "hash_ok": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "valid",
+      "hash_ok": true,
+      "identity_overlap": 0
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "final",
+      "hash_ok": true,
+      "identity_overlap": 0
+    }
+  ],
+  "test_labels_all_nan": true
+}

@@ -1,0 +1,206 @@
+{
+  "status": "VERIFIED_EXPERIMENTAL_DELIVERY",
+  "version": "v382",
+  "assembly_only": true,
+  "new_training": false,
+  "csv": "admet_submissions/v382_regression9_combined_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+  "csv_sha256": "845b65ac25cf81f4752e638b24bc0ad6cfbed99c271a636f87b9e156f8f13b80",
+  "official_best": 51.271,
+  "new_official_score": null,
+  "experimental_only": true,
+  "strict_stability_confirmed": false,
+  "baseline": {
+    "version": "v374_associated",
+    "official_user_reported": 51.271,
+    "exact_task_mean": 51.27077631818182,
+    "csv": "admet_submissions/v374_mae_experts_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+    "csv_sha256": "fa7feb41ba99dda77b88b3be9427c2c434184ab920945ae6dc60569073a805ac",
+    "source": "docs/platform_scorecard_v374_20261105.json",
+    "platform_uploaded_byte_hash_confirmed": false,
+    "association": "Full human scorecard immediately following v374 delivery; version associated, not explicitly named in this feedback."
+  },
+  "sources": [
+    {
+      "version": "v380",
+      "csv": "admet_submissions/v380_regression9_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+      "sha256": "10407697067b7c84d26833d92aaf37bde1daadeda1a0a030724e7d93330fd297",
+      "tasks": [
+        "lipophilicity_astrazeneca"
+      ],
+      "fusion": [
+        {
+          "task": "lipophilicity_astrazeneca",
+          "config": {
+            "name": "sqrt_polynomial_C30_native",
+            "view": "sqrt_polynomial",
+            "C": 30.0,
+            "mode": "native"
+          },
+          "weight": 0.1,
+          "strict_accepted": false,
+          "rows": 840
+        }
+      ]
+    },
+    {
+      "version": "v381",
+      "csv": "admet_submissions/v381_regression9_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+      "sha256": "0e3ba9f3e560d428ffaf47639d22474310121d4b992f43b6aae679fae7d74a6a",
+      "tasks": [
+        "ppbr_az"
+      ],
+      "fusion": [
+        {
+          "task": "ppbr_az",
+          "config": {
+            "name": "simplex_reg01",
+            "penalty": 0.01,
+            "rank_penalty": 0.0
+          },
+          "weight": 0.25,
+          "strict_accepted": false,
+          "rows": 559
+        }
+      ]
+    }
+  ],
+  "changed_rows": {
+    "ppbr_az": 559,
+    "lipophilicity_astrazeneca": 840
+  },
+  "changed_tasks": [
+    "lipophilicity_astrazeneca",
+    "ppbr_az"
+  ],
+  "unchanged_tasks": 20,
+  "format": {
+    "status": "PASS",
+    "sha256": "845b65ac25cf81f4752e638b24bc0ad6cfbed99c271a636f87b9e156f8f13b80",
+    "rows": 16379,
+    "columns": 6,
+    "tasks": 22,
+    "nonprediction_fields_exact": true,
+    "finite_predictions": true,
+    "unique_task_sample_keys": true,
+    "task_counts": {
+      "ames": 1457,
+      "bbb_martins": 406,
+      "bioavailability_ma": 128,
+      "caco2_wang": 182,
+      "clearance_hepatocyte_az": 243,
+      "clearance_microsome_az": 221,
+      "cyp2c9_substrate_carbonmangels": 135,
+      "cyp2c9_veith": 2419,
+      "cyp2d6_substrate_carbonmangels": 135,
+      "cyp2d6_veith": 2626,
+      "cyp3a4_substrate_carbonmangels": 135,
+      "cyp3a4_veith": 2467,
+      "dili": 96,
+      "half_life_obach": 135,
+      "herg": 132,
+      "hia_hou": 117,
+      "ld50_zhu": 1478,
+      "lipophilicity_astrazeneca": 840,
+      "pgp_broccatelli": 245,
+      "ppbr_az": 559,
+      "solubility_aqsoldb": 1997,
+      "vdss_lombardo": 226
+    },
+    "utf8_bom": true,
+    "crlf_only": true,
+    "official_score": null,
+    "automatically_uploaded": false
+  },
+  "nine_task_mean_relative_MAE_gain_by_part": {
+    "fold0": 0.0028775334440890575,
+    "fold1": 0.0004874412225269685,
+    "fold2": 0.000967816175783697,
+    "valid": 0.0011469435041581136
+  },
+  "five_scored_task_mean_relative_MAE_gain_by_part": {
+    "fold0": 0.005179560199360304,
+    "fold1": 0.0008773942005485434,
+    "fold2": 0.0017420691164106547,
+    "valid": 0.0020644983074846043
+  },
+  "goal_mean_5percent_achieved_local": false,
+  "five_scored_goal_achieved_local": false,
+  "all_fitting_remote": true,
+  "automatic_platform_submission": false,
+  "limitation": "Disjoint experimental updates from repeatedly reused public partitions. Local gains are not official score estimates. Rank task calibrated reference MAEs not original physical-scale errors.",
+  "task_evidence": [
+    {
+      "task": "lipophilicity_astrazeneca",
+      "best": {
+        "name": "sqrt_polynomial_C30_native",
+        "view": "sqrt_polynomial",
+        "C": 30.0,
+        "mode": "native"
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.0018385852721190337,
+          "baseline": 0.48016540927868107,
+          "candidate": 0.4792825842290003
+        },
+        {
+          "part": "fold1",
+          "gain": 0.002023788148649006,
+          "baseline": 0.4548081915781444,
+          "candidate": 0.45388775615012006
+        },
+        {
+          "part": "fold2",
+          "gain": 0.0030283217160421995,
+          "baseline": 0.4709833243780318,
+          "candidate": 0.46955703534892407
+        },
+        {
+          "part": "valid",
+          "gain": 0.006345592239706202,
+          "baseline": 0.4665412147268208,
+          "candidate": 0.4635807344151472
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "task": "ppbr_az",
+      "best": {
+        "name": "simplex_reg01",
+        "penalty": 0.01,
+        "rank_penalty": 0.0
+      },
+      "weight": 0.25,
+      "parts": [
+        {
+          "part": "fold0",
+          "gain": 0.024059215724682486,
+          "baseline": 7.95280971526812,
+          "candidate": 7.761471350711133
+        },
+        {
+          "part": "fold1",
+          "gain": 0.0023631828540937104,
+          "baseline": 7.292895667509342,
+          "candidate": 7.275661221511189
+        },
+        {
+          "part": "fold2",
+          "gain": 0.005682023866011074,
+          "baseline": 8.62639236136588,
+          "candidate": 8.577376994091024
+        },
+        {
+          "part": "valid",
+          "gain": 0.003976899297716821,
+          "baseline": 9.36669542965183,
+          "candidate": 9.32944502517572
+        }
+      ],
+      "accepted": true
+    }
+  ]
+}

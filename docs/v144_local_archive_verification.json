@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v144_broad_task_models_20261027",
+  "archive_sha256": "ab5472af892cd6f149cf1a25ef0d3235011092311d970424eadc8dbb51ead89e",
+  "manifest_files": 1786,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 1683,
+  "existing_exact": 103,
+  "existing_updated_docs_preserved": []
+}

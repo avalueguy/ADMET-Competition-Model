@@ -1,0 +1,225 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "checked_at_utc": "2026-10-29T07:40:52.261265+00:00",
+  "training_version": "v228",
+  "delivery_version": "v229",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52,
+  "target_achieved": false,
+  "trained_development_tasks": 6,
+  "identity_control_tasks": 15,
+  "protected_tasks": 16,
+  "reference_models": 36,
+  "correction_models": 24,
+  "development_best": [
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "config": {
+        "inner_folds": 3,
+        "reference_trees": 450,
+        "correction_trees": 250,
+        "depth": 3
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 152,
+          "baseline": 0.8444511217948719,
+          "expert": 0.8393429487179486,
+          "candidate": 0.844551282051282,
+          "gain": 0.00010016025641013115
+        },
+        {
+          "part": "fold1",
+          "rows": 152,
+          "baseline": 0.85125,
+          "expert": 0.8594230769230768,
+          "candidate": 0.8563461538461539,
+          "gain": 0.005096153846153917
+        }
+      ],
+      "objective": 0.00010016025641013115
+    },
+    {
+      "task": "bbb_martins",
+      "metric": "AUROC",
+      "config": {
+        "inner_folds": 3,
+        "reference_trees": 450,
+        "correction_trees": 250,
+        "depth": 3
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 474,
+          "baseline": 0.9241183332092423,
+          "expert": 0.9249001067182885,
+          "candidate": 0.9248504703050158,
+          "gain": 0.0007321370957734663
+        },
+        {
+          "part": "fold1",
+          "rows": 474,
+          "baseline": 0.9502310700319943,
+          "expert": 0.9495747764499987,
+          "candidate": 0.9505318712570756,
+          "gain": 0.00030080122508135965
+        }
+      ],
+      "objective": 0.00030080122508135965
+    },
+    {
+      "task": "ames",
+      "metric": "AUROC",
+      "config": {
+        "inner_folds": 3,
+        "reference_trees": 450,
+        "correction_trees": 250,
+        "depth": 3
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1561,
+          "baseline": 0.8673850574712644,
+          "expert": 0.8674224304032954,
+          "candidate": 0.867713939273138,
+          "gain": 0.00032888180187362615
+        },
+        {
+          "part": "fold1",
+          "rows": 1562,
+          "baseline": 0.8612499835761867,
+          "expert": 0.8634244964458868,
+          "candidate": 0.8627946432090817,
+          "gain": 0.0015446596328950735
+        }
+      ],
+      "objective": 0.00032888180187362615
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "config": {
+        "inner_folds": 3,
+        "reference_trees": 450,
+        "correction_trees": 250,
+        "depth": 3
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 282,
+          "baseline": 0.5727558332909924,
+          "expert": 0.5877398388483661,
+          "candidate": 0.5811885750512275,
+          "gain": 0.008432741760235007
+        },
+        {
+          "part": "fold1",
+          "rows": 283,
+          "baseline": 0.575230994148768,
+          "expert": 0.5774431767721246,
+          "candidate": 0.577896721532716,
+          "gain": 0.002665727383947991
+        }
+      ],
+      "objective": 0.002665727383947991
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "config": {
+        "inner_folds": 3,
+        "reference_trees": 450,
+        "correction_trees": 250,
+        "depth": 3
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1635,
+          "baseline": 0.7675069205648937,
+          "expert": 0.7791209528348894,
+          "candidate": 0.7650860719130613,
+          "gain": 0.0031541717565889433
+        },
+        {
+          "part": "fold1",
+          "rows": 1635,
+          "baseline": 0.7502386159917903,
+          "expert": 0.7311388107559053,
+          "candidate": 0.7430635076675922,
+          "gain": 0.009563768341506716
+        }
+      ],
+      "objective": 0.0031541717565889433
+    },
+    {
+      "task": "pgp_broccatelli",
+      "metric": "AUROC",
+      "config": {
+        "inner_folds": 3,
+        "reference_trees": 450,
+        "correction_trees": 250,
+        "depth": 3
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 283,
+          "baseline": 0.9482403217697336,
+          "expert": 0.9387631975867271,
+          "candidate": 0.9472599296128709,
+          "gain": -0.0009803921568627416
+        },
+        {
+          "part": "fold1",
+          "rows": 284,
+          "baseline": 0.9021671826625387,
+          "expert": 0.8913828689370484,
+          "candidate": 0.9006965944272446,
+          "gain": -0.0014705882352941124
+        }
+      ],
+      "objective": -0.0014705882352941124
+    }
+  ],
+  "nominated_tasks": [],
+  "accepted_tasks": [],
+  "archive": {
+    "status": "PASS",
+    "prefix": "v229_v145_honest_correction_20261029",
+    "archive_sha256": "bcae36c83508818d9fd86608c3d698e4f8ec2d3f17116d8dc0b992fba5ad2932",
+    "manifest_files": 142,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 96,
+    "existing_exact": 46,
+    "existing_updated_docs_preserved": []
+  },
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "frozen_gates_unchanged": true,
+  "local_gate_recalculation": true,
+  "no_confirmation_fallback": true,
+  "rejected_route_restarted": false,
+  "exited_pids": [
+    19850,
+    19851,
+    19859,
+    19860,
+    19861,
+    21047
+  ]
+}

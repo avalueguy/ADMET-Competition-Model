@@ -1,0 +1,86 @@
+{
+  "status": "VERIFIED_EXPERIMENTAL_DELIVERY",
+  "at_utc": "2026-11-01T10:48:56.798731+00:00",
+  "purpose": "User-authorized experimental CSV for manual official testing; stability not confirmed",
+  "user_authorized_experimental_csv": true,
+  "strict_gate_pass": false,
+  "strict_confirmation_remains_rejected": true,
+  "strict_accepted_tasks": [],
+  "experimental_tasks": [
+    "cyp3a4_substrate_carbonmangels"
+  ],
+  "weights": {
+    "cyp3a4_substrate_carbonmangels": 0.2
+  },
+  "checks": [
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "final",
+      "rows": 135,
+      "feature_rebuild": true,
+      "checkpoint_reload": true,
+      "nonfit_target_label_isolation": true,
+      "independent_attention_reference": true,
+      "reference_labels_fit_only": true,
+      "reference_identity_and_scaffold_disjoint": true,
+      "neighbor_reconstruction": true,
+      "reversed_query_tolerance": 1e-12,
+      "independent_final_rank_fusion": true
+    }
+  ],
+  "csv": "admet_submissions/v321_experimental_cyp3a4/我从山北来带着兰花草-小分子药物预测技术创新赛-20261101.csv",
+  "csv_sha256": "e87ba6d09c1bd9e829ecbc74a43aaade023dc442e4f95825d9304a4cfe5f7466",
+  "csv_created": true,
+  "format_verification": {
+    "status": "PASS",
+    "sha256": "e87ba6d09c1bd9e829ecbc74a43aaade023dc442e4f95825d9304a4cfe5f7466",
+    "rows": 16379,
+    "columns": 6,
+    "tasks": 22,
+    "nonprediction_fields_exact": true,
+    "finite_predictions": true,
+    "unique_task_sample_keys": true,
+    "task_counts": {
+      "ames": 1457,
+      "bbb_martins": 406,
+      "bioavailability_ma": 128,
+      "caco2_wang": 182,
+      "clearance_hepatocyte_az": 243,
+      "clearance_microsome_az": 221,
+      "cyp2c9_substrate_carbonmangels": 135,
+      "cyp2c9_veith": 2419,
+      "cyp2d6_substrate_carbonmangels": 135,
+      "cyp2d6_veith": 2626,
+      "cyp3a4_substrate_carbonmangels": 135,
+      "cyp3a4_veith": 2467,
+      "dili": 96,
+      "half_life_obach": 135,
+      "herg": 132,
+      "hia_hou": 117,
+      "ld50_zhu": 1478,
+      "lipophilicity_astrazeneca": 840,
+      "pgp_broccatelli": 245,
+      "ppbr_az": 559,
+      "solubility_aqsoldb": 1997,
+      "vdss_lombardo": 226
+    },
+    "utf8_bom": true,
+    "crlf_only": true,
+    "official_score": null,
+    "automatically_uploaded": false
+  },
+  "changed_rows": {
+    "cyp3a4_substrate_carbonmangels": 135
+  },
+  "unchanged_tasks": 21,
+  "all_other_task_prediction_bytes_exact": true,
+  "all_nonprediction_bytes_exact": true,
+  "baseline_sha256": "681e9d23100c7ea39b4e6003dd6de4fac738bc467254782b7b8c4b7bc1d2941b",
+  "official_best": 51.205,
+  "official_score": null,
+  "target_score": 52.0,
+  "target_achieved": false,
+  "platform_submission": false,
+  "official_gain_established": false,
+  "no_retuning": true
+}

@@ -1,0 +1,32 @@
+{
+  "status": "RESUMED_TRAINING_HEALTHY",
+  "processes": [
+    {
+      "pid": 5755,
+      "state": "S",
+      "cpu_ticks": 6
+    },
+    {
+      "pid": 5754,
+      "state": "S",
+      "cpu_ticks": 40563
+    }
+  ],
+  "development_status": "IN_PROGRESS",
+  "completed_development_tasks": [
+    "herg",
+    "bbb_martins",
+    "ames",
+    "clearance_hepatocyte_az"
+  ],
+  "pipeline": {
+    "status": "WAITING_TRAINING",
+    "route": "v193"
+  },
+  "recent_log": [
+    "{\"stage\": \"development\", \"best\": {\"task\": \"ames\", \"metric\": \"AUROC\", \"config\": {\"embedding\": 48, \"channels\": 96, \"epochs\": 40, \"minimum_steps\": 700, \"maximum_steps\": 2400}, \"weight\": 0.2, \"parts\": [{\"part\": \"fold0\", \"rows\": 1561, \"baseline\": 0.8673850574712644, \"expert\": 0.8393429008039333, \"candidate\": 0.8698616371005249, \"gain\": 0.0024765796292605113}, {\"part\": \"fold1\", \"rows\": 1562, \"baseline\": 0.8612499835761867, \"expert\": 0.8372761434258761, \"candidate\": 0.8643598326084958, \"gain\": 0.003109849032309153}], \"objective\": 0.0024765796292605113}}",
+    "{\"stage\": \"train\", \"task\": \"clearance_hepatocyte_az\", \"part\": \"fold0\", \"steps\": 700, \"seconds\": 27}",
+    "{\"stage\": \"train\", \"task\": \"clearance_hepatocyte_az\", \"part\": \"fold1\", \"steps\": 700, \"seconds\": 29}",
+    "{\"stage\": \"development\", \"best\": {\"task\": \"clearance_hepatocyte_az\", \"metric\": \"Spearman\", \"config\": {\"embedding\": 48, \"channels\": 96, \"epochs\": 40, \"minimum_steps\": 700, \"maximum_steps\": 2400}, \"weight\": 0.2, \"parts\": [{\"part\": \"fold0\", \"rows\": 282, \"baseline\": 0.5727558332909924, \"expert\": 0.45747072930875043, \"candidate\": 0.5787244421119411, \"gain\": 0.005968608820948629}, {\"part\": \"fold1\", \"rows\": 283, \"baseline\": 0.575230994148768, \"expert\": 0.4524057991200445, \"candidate\": 0.5733681192311383, \"gain\": -0.0018628749176297088}], \"objective\": -0.0018628749176297088}}"
+  ]
+}

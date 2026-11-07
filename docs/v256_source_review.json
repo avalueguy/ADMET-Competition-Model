@@ -1,0 +1,24 @@
+{
+  "status": "STATIC_REVIEW_PASS_FEATURE_BUILD_AND_SMOKE_REQUIRED",
+  "source_sha256": "3a494713c4c9438512bcbf1778c756491b83350134d911f1651c51d3052eda11",
+  "geometry_source_sha256": "20fff137eb936883db1d105bbe717d87533007788185b83f3aac0eb5679cdddc",
+  "reviewed_sources": [
+    "tools/v98_conformer_features.py",
+    "tools/v109_pharmacophore.py",
+    "tools/v210_standardized_chemistry.py",
+    "tools/v216_ordered_scaffold.py",
+    "admet_v51_run.py",
+    "admet_v52_neural.py",
+    "admet_v73_experts.py"
+  ],
+  "diagnostic": "docs/v255_surface_feasibility.json",
+  "checks": [
+    "Distinct atom surface exposure beyond previous wholemolecule shape/topology;not a retry of rejected kernel/density/attention",
+    "No label-based feature selection;24structures selected onlybyheavyatomquantiles",
+    "Originalfullgraph preserved,explicitfeaturemissingness;canonical structureseed invariant torowindex",
+    "All new taskmodel parameters/seeds fixed before score;originalv148 untouched",
+    "No oldmodels/predictions reused;fixedsimpletree reader isolates new physicalinformation hypothesis",
+    "Accepted independent entiretask surface reconstruction plus preserved archives required"
+  ],
+  "limitations": "Conformers approximate aqueous exposure;Gasteigercharges and contactdistances are descriptors,not measuredpKa/Hbonds. Labels reused and historicalbaselineOOF approximate. No hiddengainclaim."
+}

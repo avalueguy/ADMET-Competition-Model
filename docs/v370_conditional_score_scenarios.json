@@ -1,0 +1,36 @@
+{
+  "description": "Conditional arithmetic, not a forecast. Same reduction in all five MAE tasks; all other task scores fixed.",
+  "baseline": 51.26918777272727,
+  "scenarios": [
+    {
+      "five_MAE_relative_reduction": 0.0,
+      "conditional_total": 51.26918777114418
+    },
+    {
+      "five_MAE_relative_reduction": 0.03,
+      "conditional_total": 51.44183378016209
+    },
+    {
+      "five_MAE_relative_reduction": 0.05,
+      "conditional_total": 51.55976670948675
+    },
+    {
+      "five_MAE_relative_reduction": 0.08,
+      "conditional_total": 51.74108972309134
+    },
+    {
+      "five_MAE_relative_reduction": 0.1,
+      "conditional_total": 51.86502513547568
+    },
+    {
+      "five_MAE_relative_reduction": 0.15,
+      "conditional_total": 52.186104660078485
+    },
+    {
+      "five_MAE_relative_reduction": 0.2,
+      "conditional_total": 52.524268467424875
+    }
+  ],
+  "required_equal_MAE_reduction_for_52": 0.12133123066409508,
+  "no_new_official_evaluation": true
+}

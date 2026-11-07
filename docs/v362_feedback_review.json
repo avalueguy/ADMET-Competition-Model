@@ -1,0 +1,27 @@
+{
+  "status": "PASS_USER_REPORTED_OFFICIAL_IMPROVEMENT",
+  "best": {
+    "version": "v361",
+    "official_user_reported": 51.24,
+    "exact_task_mean": 51.2395284090909,
+    "recorded_at_hong_kong": "2026-11-04T13:28:26.274084+08:00",
+    "csv": "admet_submissions/v361_herg_feedback_repair/我从山北来带着兰花草-小分子药物预测技术创新赛-20261102.csv",
+    "csv_sha256": "6e480265b09ab45064f1b6cf437bc1cd42bbb450e3b34b111ce252cb942f10b7",
+    "source": "docs/platform_scorecard_v361_20261104.json",
+    "previous_best": "v346",
+    "previous_best_official": 51.235,
+    "delta_task_mean": 0.004673954545445724,
+    "platform_uploaded_byte_hash_confirmed": false,
+    "reason": "User-reported full official card confirms retained hERG improvement and restored CYP3A4. No historical strict gate rewritten."
+  },
+  "changed_tasks": [
+    "herg"
+  ],
+  "delta_vs_v346": 0.004673954545445724,
+  "delta_vs_v354": 0.01507486363635735,
+  "gap_to52": 0.7604715909090984,
+  "required_sum_task_point_gain_for52": 16.730375000000166,
+  "previous_conditional_arithmetic_matched": true,
+  "platform_submission": false,
+  "note": "Scorecard is feedback evidence, not proof of statistical stability or private-test gain."
+}

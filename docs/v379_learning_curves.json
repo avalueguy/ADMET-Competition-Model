@@ -1,0 +1,693 @@
+{
+  "version": "v379",
+  "signature": "f8c8b90e4a93b1032b13e66c604daeece93892199a28c3761fb9269c119888dd",
+  "purpose": "Descriptive fixed-weight learning curves; no confirmation retuning, no fitting.",
+  "late_better_on_both_parts": 4,
+  "total_task_base_pairs": 18,
+  "records": [
+    {
+      "task": "caco2_wang",
+      "base": "small_ema_l1",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0006619305658047824,
+          "min_relative_MAE_gain": -0.003850935829130211,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0004609121260862951,
+          "min_relative_MAE_gain": -0.0027115371704691488,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0006422547146172259,
+          "min_relative_MAE_gain": -0.0025960403652889232,
+          "rank_gains": [
+            null,
+            null
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": 1.967585118755645e-05,
+      "late_better_on_both_development_parts": false
+    },
+    {
+      "task": "caco2_wang",
+      "base": "small_ema_quantiles",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0012908584651153228,
+          "min_relative_MAE_gain": -0.0039184341061343515,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0009076341521927166,
+          "min_relative_MAE_gain": -0.003009054275956609,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0008303706959743972,
+          "min_relative_MAE_gain": -0.002622563444379246,
+          "rank_gains": [
+            null,
+            null
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": 0.0004604877691409255,
+      "late_better_on_both_development_parts": false
+    },
+    {
+      "task": "ld50_zhu",
+      "base": "small_ema_l1",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0025203055627545214,
+          "min_relative_MAE_gain": -0.003424777251942233,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0029397568680532274,
+          "min_relative_MAE_gain": -0.0034463875459778354,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0032206984510852136,
+          "min_relative_MAE_gain": -0.0035963123935181893,
+          "rank_gains": [
+            null,
+            null
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": -0.0007003928883306922,
+      "late_better_on_both_development_parts": false
+    },
+    {
+      "task": "ld50_zhu",
+      "base": "small_ema_quantiles",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0021040892425136467,
+          "min_relative_MAE_gain": -0.002920746680483822,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0026944673967258794,
+          "min_relative_MAE_gain": -0.002797779916272549,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.002797759105700833,
+          "min_relative_MAE_gain": -0.0028355674229884787,
+          "rank_gains": [
+            null,
+            null
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": -0.0006936698631871863,
+      "late_better_on_both_development_parts": false
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "base": "small_ema_l1",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0027177087348889666,
+          "min_relative_MAE_gain": -0.0031112265872159737,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.002708509329910141,
+          "min_relative_MAE_gain": -0.0030834344397041268,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0024818869441123907,
+          "min_relative_MAE_gain": -0.0030226031740142054,
+          "rank_gains": [
+            null,
+            null
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": 0.00023582179077657594,
+      "late_better_on_both_development_parts": true
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "base": "small_ema_quantiles",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0028300808065409707,
+          "min_relative_MAE_gain": -0.003561885174826611,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0029131657709902895,
+          "min_relative_MAE_gain": -0.0029829979164175996,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.002809053413299885,
+          "min_relative_MAE_gain": -0.00303441741953885,
+          "rank_gains": [
+            null,
+            null
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": 2.1027393241085813e-05,
+      "late_better_on_both_development_parts": false
+    },
+    {
+      "task": "ppbr_az",
+      "base": "small_ema_l1",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.000432769738064749,
+          "min_relative_MAE_gain": -0.003841649896530546,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.0004067692514678799,
+          "min_relative_MAE_gain": -0.004443670792120899,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.0005053561427847352,
+          "min_relative_MAE_gain": -0.003935092338103196,
+          "rank_gains": [
+            null,
+            null
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": 7.258640471998618e-05,
+      "late_better_on_both_development_parts": false
+    },
+    {
+      "task": "ppbr_az",
+      "base": "small_ema_quantiles",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.0014035429563468513,
+          "min_relative_MAE_gain": -0.002997422181829461,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.0012889838657017465,
+          "min_relative_MAE_gain": -0.003987303026399502,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.001344011817544555,
+          "min_relative_MAE_gain": -0.003595220115719922,
+          "rank_gains": [
+            null,
+            null
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": -5.95311388022963e-05,
+      "late_better_on_both_development_parts": false
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "base": "small_ema_l1",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0013963512478295443,
+          "min_relative_MAE_gain": -0.004815393124231275,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0013673020439730588,
+          "min_relative_MAE_gain": -0.005434886181128208,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.001087916865881633,
+          "min_relative_MAE_gain": -0.0053033962403987904,
+          "rank_gains": [
+            null,
+            null
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": 0.00030843438194791124,
+      "late_better_on_both_development_parts": false
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "base": "small_ema_quantiles",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.002014801827866594,
+          "min_relative_MAE_gain": -0.005776291733876937,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0012721618040682197,
+          "min_relative_MAE_gain": -0.004977199431881398,
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": -0.0009948464476948243,
+          "min_relative_MAE_gain": -0.004657237491089794,
+          "rank_gains": [
+            null,
+            null
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": 0.0010199553801717696,
+      "late_better_on_both_development_parts": true
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "base": "small_ema_l1",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.01768027678440947,
+          "min_relative_MAE_gain": 0.01717741985292619,
+          "rank_gains": [
+            0.0010285378382451915,
+            -0.0035911504537875505
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.01755659447130887,
+          "min_relative_MAE_gain": 0.016986445123652598,
+          "rank_gains": [
+            0.0012046591699832465,
+            -0.003228641026057022
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.017514338772529787,
+          "min_relative_MAE_gain": 0.017234914864221684,
+          "rank_gains": [
+            0.002276958863523082,
+            -0.002486915444957938
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": -0.00016593801187968216,
+      "late_better_on_both_development_parts": false
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "base": "small_ema_quantiles",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.018827636717904606,
+          "min_relative_MAE_gain": 0.01786276865235159,
+          "rank_gains": [
+            0.0019698204435407707,
+            -0.0026595516098829597
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.018237579475162635,
+          "min_relative_MAE_gain": 0.017361659860309294,
+          "rank_gains": [
+            0.002214403573439272,
+            -0.003851298038720863
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.018398180284169473,
+          "min_relative_MAE_gain": 0.01767520408647709,
+          "rank_gains": [
+            0.004347458422005568,
+            -0.003301567209397005
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": -0.0004294564337351328,
+      "late_better_on_both_development_parts": false
+    },
+    {
+      "task": "clearance_microsome_az",
+      "base": "small_ema_l1",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.01602821726574606,
+          "min_relative_MAE_gain": 0.013394474275534944,
+          "rank_gains": [
+            0.003325241949221014,
+            -0.018664463267080877
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.01699008187175053,
+          "min_relative_MAE_gain": 0.01535707434421003,
+          "rank_gains": [
+            0.0034001517674648873,
+            -0.019917128877402213
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.017475180632650685,
+          "min_relative_MAE_gain": 0.016285429803977892,
+          "rank_gains": [
+            0.0032684262899733696,
+            -0.020049659835891742
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": 0.0014469633669046238,
+      "late_better_on_both_development_parts": true
+    },
+    {
+      "task": "clearance_microsome_az",
+      "base": "small_ema_quantiles",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.01624500950304133,
+          "min_relative_MAE_gain": 0.013353215177302414,
+          "rank_gains": [
+            0.003600635049141543,
+            -0.02114534358896486
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.01721704623329077,
+          "min_relative_MAE_gain": 0.015564474008151544,
+          "rank_gains": [
+            0.003290863047128556,
+            -0.020481625713962892
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.017323430766169774,
+          "min_relative_MAE_gain": 0.015979425568590572,
+          "rank_gains": [
+            0.0033389935100580637,
+            -0.020501824282502745
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": 0.0010784212631284457,
+      "late_better_on_both_development_parts": false
+    },
+    {
+      "task": "half_life_obach",
+      "base": "small_ema_l1",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.051580765979334336,
+          "min_relative_MAE_gain": 0.046221410398058695,
+          "rank_gains": [
+            -0.005715437556732317,
+            -0.0007794510771677032
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.05232999387794251,
+          "min_relative_MAE_gain": 0.048716282160063136,
+          "rank_gains": [
+            -0.0032949143291067795,
+            -0.0016593816651875315
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.05266516618895768,
+          "min_relative_MAE_gain": 0.04929037474774887,
+          "rank_gains": [
+            -0.0004408886059876771,
+            0.00018589401848034814
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": 0.0010844002096233457,
+      "late_better_on_both_development_parts": false
+    },
+    {
+      "task": "half_life_obach",
+      "base": "small_ema_quantiles",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.052250561010224544,
+          "min_relative_MAE_gain": 0.04679139673003834,
+          "rank_gains": [
+            -0.006659796152863273,
+            0.001367192774924475
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.052225451959139704,
+          "min_relative_MAE_gain": 0.04767777382862553,
+          "rank_gains": [
+            -0.004835540298221197,
+            -0.0022685643799704724
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.05324308257347619,
+          "min_relative_MAE_gain": 0.048465205350364776,
+          "rank_gains": [
+            -0.00259389728249082,
+            -0.002104181742648037
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": 0.000992521563251643,
+      "late_better_on_both_development_parts": true
+    },
+    {
+      "task": "vdss_lombardo",
+      "base": "small_ema_l1",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.029737499103840905,
+          "min_relative_MAE_gain": 0.010197968725253345,
+          "rank_gains": [
+            0.004546354152311194,
+            -0.013277070840058025
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.028660581957187323,
+          "min_relative_MAE_gain": 0.010885946805697736,
+          "rank_gains": [
+            0.0037527295357210333,
+            -0.011451440987369721
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.028529653526637087,
+          "min_relative_MAE_gain": 0.011346310823086625,
+          "rank_gains": [
+            0.002135793596184765,
+            -0.010003668623099093
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": -0.0012078455772038185,
+      "late_better_on_both_development_parts": false
+    },
+    {
+      "task": "vdss_lombardo",
+      "base": "small_ema_quantiles",
+      "curve": [
+        {
+          "rounds": 1000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.02914923746034912,
+          "min_relative_MAE_gain": 0.010985909189456173,
+          "rank_gains": [
+            0.003853334485039439,
+            -0.011423394512319551
+          ]
+        },
+        {
+          "rounds": 3000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.02814743119282276,
+          "min_relative_MAE_gain": 0.010590135547133712,
+          "rank_gains": [
+            0.004989015929311891,
+            -0.010218048328765383
+          ]
+        },
+        {
+          "rounds": 6000,
+          "weight": 0.1,
+          "mean_relative_MAE_gain": 0.027638877977968247,
+          "min_relative_MAE_gain": 0.010990064708360494,
+          "rank_gains": [
+            0.0023350243810643656,
+            -0.009437312732599623
+          ]
+        }
+      ],
+      "late_vs_early_mean_relative_gain": -0.0015103594823808741,
+      "late_better_on_both_development_parts": false
+    }
+  ]
+}

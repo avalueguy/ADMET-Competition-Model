@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "experiments/transformer_stage1_v364/outputs/tasks/lipophilicity_astrazeneca/final/family_transfer/model_3641105.pt",
+      "sha256": "7fc5bc1282943e5ffc79df94438284448eb54114af87d754fc7ac927e376b011",
+      "bytes": 11540871
+    },
+    {
+      "path": "experiments/transformer_stage1_v364/outputs/tasks/lipophilicity_astrazeneca/final/family_transfer/model_3641106.pt",
+      "sha256": "f110730e2c3db8d6afc302ad05d6ff1492139d59f97999fb79d38da6095f12e1",
+      "bytes": 11540871
+    },
+    {
+      "path": "experiments/transformer_stage1_v364/outputs/tasks/solubility_aqsoldb/final/family_transfer/model_3641105.pt",
+      "sha256": "7653afe7cd16026296d1145bd7603a8cc849ebab1b1280ad1d845818637f51f5",
+      "bytes": 11587079
+    },
+    {
+      "path": "experiments/transformer_stage1_v364/outputs/tasks/solubility_aqsoldb/final/family_transfer/model_3641106.pt",
+      "sha256": "1b60eb946764d0379d4340c5fe1ed55cd76cdfd7ec7bebd1332cee8fe4f4a4d0",
+      "bytes": 11587079
+    },
+    {
+      "path": "experiments/transformer_stage2_v366/outputs/tasks/ld50_zhu/final/family_transfer/model_3661105.pt",
+      "sha256": "85802ecbdcedde53d06521a69720f943769a959c9f99147ebaffe1d89f2c303a",
+      "bytes": 11572295
+    },
+    {
+      "path": "experiments/transformer_stage2_v366/outputs/tasks/ld50_zhu/final/family_transfer/model_3661106.pt",
+      "sha256": "ab1f326a3eb842f1015d6dbfa5ce8a41bed586bf653e0ca318ef88bda6e7814b",
+      "bytes": 11572295
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.8.0+cu128",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "rdkit": "2026.09.1",
+    "gpu": "RTX 3090",
+    "training_gpu_remote_only": true
+  },
+  "passwords_included": false
+}

@@ -1,0 +1,17 @@
+{
+  "version": "v379",
+  "mae_only_all_four_positive_tasks": [],
+  "research_only_mean_over_nine_with_others_zero": {
+    "fold0": 0.0,
+    "fold1": 0.0,
+    "fold2": 0.0,
+    "valid": 0.0
+  },
+  "deployable_mean_over_nine": {
+    "fold0": 0.0,
+    "fold1": 0.0,
+    "fold2": 0.0,
+    "valid": 0.0
+  },
+  "caution": "MAE-only signals on four Spearman tasks may lose official points; calibrated reference is not original-model native MAE. This analysis creates no CSV and changes no selection."
+}

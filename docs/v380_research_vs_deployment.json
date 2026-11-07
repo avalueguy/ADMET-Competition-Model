@@ -1,0 +1,94 @@
+{
+  "version": "v380",
+  "mae_only_all_four_positive_tasks": [
+    {
+      "task": "lipophilicity_astrazeneca",
+      "mae_relative_gains": [
+        0.0018385852721190337,
+        0.002023788148649006,
+        0.0030283217160421995,
+        0.006345592239706202
+      ],
+      "mean_gain": 0.00330907184412911,
+      "rank_gains": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "official_metric_all_parts_positive": true,
+      "accepted_for_submission": true,
+      "calibrated_rank_reference": false
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "mae_relative_gains": [
+        0.06313895546735937,
+        0.0891209676337109,
+        0.057740822598002554,
+        0.028568525521422906
+      ],
+      "mean_gain": 0.05964231780512394,
+      "rank_gains": [
+        0.0007364341660941465,
+        0.011804760186852281,
+        0.011274223170284814,
+        -0.014089449303717028
+      ],
+      "official_metric_all_parts_positive": false,
+      "accepted_for_submission": false,
+      "calibrated_rank_reference": true
+    },
+    {
+      "task": "clearance_microsome_az",
+      "mae_relative_gains": [
+        0.0431931475260454,
+        0.03778963919479654,
+        0.06175408742993798,
+        0.06808961735591276
+      ],
+      "mean_gain": 0.05270662287667317,
+      "rank_gains": [
+        0.010719600964563036,
+        0.0036340476791939524,
+        -0.00162754657360753,
+        -0.002075656098935341
+      ],
+      "official_metric_all_parts_positive": false,
+      "accepted_for_submission": false,
+      "calibrated_rank_reference": true
+    },
+    {
+      "task": "vdss_lombardo",
+      "mae_relative_gains": [
+        0.044899646959700404,
+        0.015657974691860005,
+        0.06600296785188997,
+        0.04241491794633086
+      ],
+      "mean_gain": 0.04224387686244531,
+      "rank_gains": [
+        0.000696977894785844,
+        0.0004356987286874281,
+        -0.0006644466953797945,
+        0.0004491783799389637
+      ],
+      "official_metric_all_parts_positive": false,
+      "accepted_for_submission": false,
+      "calibrated_rank_reference": true
+    }
+  ],
+  "research_only_mean_over_nine_with_others_zero": {
+    "fold0": 0.017007815025024912,
+    "fold1": 0.01606581885211294,
+    "fold2": 0.020947355510652525,
+    "valid": 0.016157628118152526
+  },
+  "deployable_mean_over_nine": {
+    "fold0": 0.0002042872524576704,
+    "fold1": 0.00022486534984988957,
+    "fold2": 0.0003364801906713555,
+    "valid": 0.0007050658044118001
+  },
+  "caution": "MAE-only signals on four Spearman tasks may lose official points; calibrated reference is not original-model native MAE. This analysis creates no CSV and changes no selection."
+}

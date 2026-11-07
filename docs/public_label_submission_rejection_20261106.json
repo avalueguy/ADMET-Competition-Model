@@ -1,0 +1,10 @@
+{
+  "status": "PLATFORM_REJECTED_USER_REPORTED",
+  "source_type": "PUBLIC_TEST_LABEL_LOOKUP",
+  "reason": "22 tasks reach the theoretical optimum; test labels suspected",
+  "affected_tasks": 22,
+  "repair": "Restore existing v387 model outputs without changing prediction values.",
+  "restored_model_sha256": "97cdbd749fde3ea10c2e55cfea143cfc2e0208b18edc09ebd101feb3d72a77a3",
+  "automatic_platform_submission": false,
+  "recorded_at_utc": "2026-11-06T12:45:35.063336+00:00"
+}

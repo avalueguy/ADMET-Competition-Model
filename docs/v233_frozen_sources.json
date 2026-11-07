@@ -1,0 +1,37 @@
+{
+  "status": "FROZEN_BEFORE_DEVELOPMENT",
+  "files": [
+    {
+      "path": "tools/v233_supervised_chemical_similarity.py",
+      "sha256": "6c7abadc74a3d905c0c5d8e8a7e22f05a25606c9cdbcac21e86c29cddee91402"
+    },
+    {
+      "path": "tools/v234_verify_chemical_similarity.py",
+      "sha256": "07cbdee9f540b33f4ff0355c3730cc533328a76955dc4688c5f0bdafd6a8721d"
+    },
+    {
+      "path": "tools/v235_package_similarity_batch.py",
+      "sha256": "472b910186d14f243381e84325beb294d9f012c2e03d87ef5a1f89226db0b586"
+    },
+    {
+      "path": "tools/v236_similarity_driver.py",
+      "sha256": "977dec3616444eae738f155ddc660451c6f984b89247e937c9c4160bf1d0b9c7"
+    },
+    {
+      "path": "tools/v237_start_chemical_similarity.py",
+      "sha256": "cb17008efc46470b10053e14fe4300b135251a2c674b5be1d1dd4072deb29600"
+    },
+    {
+      "path": "tools/finalize_v234_local.py",
+      "sha256": "4e7acc61412503cb445a6686cb13991f30ec18ed9695b8f234e37393b5c731f2"
+    },
+    {
+      "path": "docs/v233_training_plan.json",
+      "sha256": "7ab58c06cc8dc62a5d1205816ccf268c334097c6cf272ba54e9bbd39519c452e"
+    },
+    {
+      "path": "docs/v233_source_review.json",
+      "sha256": "b48f484864b5c833405571e2db4c947fe51a4133a7f0ad356b5ded63b365964c"
+    }
+  ]
+}

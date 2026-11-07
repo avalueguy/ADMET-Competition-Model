@@ -1,0 +1,1497 @@
+{
+  "scope": "Post-completion descriptive development/fit-label diagnostics, not additional confirmation tuning or an independent holdout.",
+  "frozen_selection_unchanged": true,
+  "fit_performed": false,
+  "records": [
+    {
+      "task": "caco2_wang",
+      "frozen_config": {
+        "name": "sqrt_native_C3",
+        "view": "sqrt",
+        "mode": "native",
+        "C": 3.0
+      },
+      "transforms": [
+        {
+          "mode": "native",
+          "config": {
+            "name": "sqrt_native_C3",
+            "view": "sqrt",
+            "mode": "native",
+            "C": 3.0
+          },
+          "weight": 0.25,
+          "objective": 0.00124255021444254,
+          "MAE_gains": [
+            0.00124255021444254,
+            0.0029262676262138292
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "asinh",
+          "config": {
+            "name": "sqrt_asinh_C30",
+            "view": "sqrt",
+            "mode": "asinh",
+            "C": 30.0
+          },
+          "weight": 0.1,
+          "objective": -0.001735470061922648,
+          "MAE_gains": [
+            0.001152437187885916,
+            -0.001735470061922648
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "weighted_asinh",
+          "config": {
+            "name": "sqrt_weighted_asinh_C3",
+            "view": "sqrt",
+            "mode": "weighted_asinh",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -0.001673636702536664,
+          "MAE_gains": [
+            0.0006876205013692188,
+            -0.001673636702536664
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "gaussian_rank",
+          "config": {
+            "name": "sqrt_gaussian_rank_C30",
+            "view": "sqrt",
+            "mode": "gaussian_rank",
+            "C": 30.0
+          },
+          "weight": 0.1,
+          "objective": -0.002011461315856253,
+          "MAE_gains": [
+            0.005095477417189387,
+            -0.002011461315856253
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "task": "ld50_zhu",
+      "frozen_config": {
+        "name": "sqrt_gaussian_rank_C30",
+        "view": "sqrt",
+        "mode": "gaussian_rank",
+        "C": 30.0
+      },
+      "transforms": [
+        {
+          "mode": "native",
+          "config": {
+            "name": "sqrt_native_C3",
+            "view": "sqrt",
+            "mode": "native",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -0.0016347507785075975,
+          "MAE_gains": [
+            -0.0016347507785075975,
+            -0.0001408111866972532
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "asinh",
+          "config": {
+            "name": "sqrt_asinh_C3",
+            "view": "sqrt",
+            "mode": "asinh",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -0.0015258485602151345,
+          "MAE_gains": [
+            -0.001446303261627869,
+            -0.0015258485602151345
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "weighted_asinh",
+          "config": {
+            "name": "sqrt_weighted_asinh_C3",
+            "view": "sqrt",
+            "mode": "weighted_asinh",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -0.0016080186190883278,
+          "MAE_gains": [
+            -0.0015716927220792115,
+            -0.0016080186190883278
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "gaussian_rank",
+          "config": {
+            "name": "sqrt_gaussian_rank_C30",
+            "view": "sqrt",
+            "mode": "gaussian_rank",
+            "C": 30.0
+          },
+          "weight": 0.1,
+          "objective": -0.001437036809792545,
+          "MAE_gains": [
+            -0.0008889760275848554,
+            -0.001437036809792545
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "frozen_config": {
+        "name": "sqrt_gaussian_rank_C30",
+        "view": "sqrt",
+        "mode": "gaussian_rank",
+        "C": 30.0
+      },
+      "transforms": [
+        {
+          "mode": "native",
+          "config": {
+            "name": "sqrt_native_C3",
+            "view": "sqrt",
+            "mode": "native",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -0.0006284713569230716,
+          "MAE_gains": [
+            -0.00047701459735627534,
+            -0.0006284713569230716
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "asinh",
+          "config": {
+            "name": "sqrt_asinh_C3",
+            "view": "sqrt",
+            "mode": "asinh",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -0.001290802893318838,
+          "MAE_gains": [
+            -0.0004627185942156385,
+            -0.001290802893318838
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "weighted_asinh",
+          "config": {
+            "name": "sqrt_weighted_asinh_C3",
+            "view": "sqrt",
+            "mode": "weighted_asinh",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -0.0012373090848203725,
+          "MAE_gains": [
+            -8.75932156553498e-05,
+            -0.0012373090848203725
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "gaussian_rank",
+          "config": {
+            "name": "sqrt_gaussian_rank_C30",
+            "view": "sqrt",
+            "mode": "gaussian_rank",
+            "C": 30.0
+          },
+          "weight": 0.1,
+          "objective": 0.0014020662421194386,
+          "MAE_gains": [
+            0.0014020662421194386,
+            0.002753564740290328
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "task": "ppbr_az",
+      "frozen_config": {
+        "name": "sqrt_gaussian_rank_C30",
+        "view": "sqrt",
+        "mode": "gaussian_rank",
+        "C": 30.0
+      },
+      "transforms": [
+        {
+          "mode": "native",
+          "config": {
+            "name": "sqrt_native_C30",
+            "view": "sqrt",
+            "mode": "native",
+            "C": 30.0
+          },
+          "weight": 0.1,
+          "objective": -0.011772282450493034,
+          "MAE_gains": [
+            -0.011011219963155763,
+            -0.011772282450493034
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "asinh",
+          "config": {
+            "name": "sqrt_asinh_C30",
+            "view": "sqrt",
+            "mode": "asinh",
+            "C": 30.0
+          },
+          "weight": 0.1,
+          "objective": -0.009673580558338649,
+          "MAE_gains": [
+            -0.005605493047914651,
+            -0.009673580558338649
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "weighted_asinh",
+          "config": {
+            "name": "sqrt_weighted_asinh_C30",
+            "view": "sqrt",
+            "mode": "weighted_asinh",
+            "C": 30.0
+          },
+          "weight": 0.1,
+          "objective": -0.008482414863651776,
+          "MAE_gains": [
+            -0.0032462925032912216,
+            -0.008482414863651776
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "gaussian_rank",
+          "config": {
+            "name": "sqrt_gaussian_rank_C30",
+            "view": "sqrt",
+            "mode": "gaussian_rank",
+            "C": 30.0
+          },
+          "weight": 0.1,
+          "objective": 0.0011355355044624657,
+          "MAE_gains": [
+            0.007192236414189209,
+            0.0011355355044624657
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "bounded_logit",
+          "config": {
+            "name": "sqrt_bounded_logit_C30",
+            "view": "sqrt",
+            "mode": "bounded_logit",
+            "C": 30.0
+          },
+          "weight": 0.1,
+          "objective": -0.002852174407135739,
+          "MAE_gains": [
+            0.004489580661893721,
+            -0.002852174407135739
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "frozen_config": {
+        "name": "sqrt_native_C3",
+        "view": "sqrt",
+        "mode": "native",
+        "C": 3.0
+      },
+      "transforms": [
+        {
+          "mode": "native",
+          "config": {
+            "name": "sqrt_native_C3",
+            "view": "sqrt",
+            "mode": "native",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -7.79897071251186e-05,
+          "MAE_gains": [
+            0.001404098370622612,
+            -7.79897071251186e-05
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "asinh",
+          "config": {
+            "name": "sqrt_asinh_C3",
+            "view": "sqrt",
+            "mode": "asinh",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -0.0012437323382753621,
+          "MAE_gains": [
+            -0.0012437323382753621,
+            -0.000733066230136799
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "weighted_asinh",
+          "config": {
+            "name": "sqrt_weighted_asinh_C3",
+            "view": "sqrt",
+            "mode": "weighted_asinh",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -0.0009739705240327685,
+          "MAE_gains": [
+            -0.0009605085236967688,
+            -0.0009739705240327685
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        },
+        {
+          "mode": "gaussian_rank",
+          "config": {
+            "name": "sqrt_gaussian_rank_C30",
+            "view": "sqrt",
+            "mode": "gaussian_rank",
+            "C": 30.0
+          },
+          "weight": 0.1,
+          "objective": -0.000944436242732248,
+          "MAE_gains": [
+            -0.0005605219358335279,
+            -0.000944436242732248
+          ],
+          "rank_gains": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "frozen_config": {
+        "name": "sqrt_gaussian_rank_C30",
+        "view": "sqrt",
+        "mode": "gaussian_rank",
+        "C": 30.0
+      },
+      "transforms": [
+        {
+          "mode": "native",
+          "config": {
+            "name": "sqrt_native_C3",
+            "view": "sqrt",
+            "mode": "native",
+            "C": 3.0
+          },
+          "weight": 0.5,
+          "objective": 0.03493412168072508,
+          "MAE_gains": [
+            0.03493412168072508,
+            0.04803157799303544
+          ],
+          "rank_gains": [
+            0.012716098754641525,
+            0.0007149765308287481
+          ]
+        },
+        {
+          "mode": "asinh",
+          "config": {
+            "name": "sqrt_asinh_C3",
+            "view": "sqrt",
+            "mode": "asinh",
+            "C": 3.0
+          },
+          "weight": 0.5,
+          "objective": 0.05076782094654138,
+          "MAE_gains": [
+            0.05076782094654138,
+            0.06619840489782186
+          ],
+          "rank_gains": [
+            0.011862526935720874,
+            0.004933892695855091
+          ]
+        },
+        {
+          "mode": "weighted_asinh",
+          "config": {
+            "name": "sqrt_weighted_asinh_C3",
+            "view": "sqrt",
+            "mode": "weighted_asinh",
+            "C": 3.0
+          },
+          "weight": 0.5,
+          "objective": 0.028985102059894206,
+          "MAE_gains": [
+            0.028985102059894206,
+            0.05712753568917215
+          ],
+          "rank_gains": [
+            0.004436962439121839,
+            0.004462253680733053
+          ]
+        },
+        {
+          "mode": "gaussian_rank",
+          "config": {
+            "name": "sqrt_gaussian_rank_C30",
+            "view": "sqrt",
+            "mode": "gaussian_rank",
+            "C": 30.0
+          },
+          "weight": 0.75,
+          "objective": 0.10499639859480023,
+          "MAE_gains": [
+            0.1140135344129226,
+            0.10499639859480023
+          ],
+          "rank_gains": [
+            0.003508017137478392,
+            0.01962095318395407
+          ]
+        }
+      ]
+    },
+    {
+      "task": "clearance_microsome_az",
+      "frozen_config": {
+        "name": "sqrt_gaussian_rank_C3",
+        "view": "sqrt",
+        "mode": "gaussian_rank",
+        "C": 3.0
+      },
+      "transforms": [
+        {
+          "mode": "native",
+          "config": {
+            "name": "sqrt_native_C3",
+            "view": "sqrt",
+            "mode": "native",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "MAE_gains": [
+            0.016096714629604936,
+            0.0171254776593249
+          ],
+          "rank_gains": [
+            0.004301611741719391,
+            -0.008081834100289176
+          ]
+        },
+        {
+          "mode": "asinh",
+          "config": {
+            "name": "sqrt_asinh_C3",
+            "view": "sqrt",
+            "mode": "asinh",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "MAE_gains": [
+            0.016732078281155693,
+            0.017540110454985255
+          ],
+          "rank_gains": [
+            0.002115068632517203,
+            -0.0046961788572632
+          ]
+        },
+        {
+          "mode": "weighted_asinh",
+          "config": {
+            "name": "sqrt_weighted_asinh_C3",
+            "view": "sqrt",
+            "mode": "weighted_asinh",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "MAE_gains": [
+            0.01645131644189183,
+            0.015910770098470556
+          ],
+          "rank_gains": [
+            0.0020584801510286077,
+            -0.004102978686884251
+          ]
+        },
+        {
+          "mode": "gaussian_rank",
+          "config": {
+            "name": "sqrt_gaussian_rank_C3",
+            "view": "sqrt",
+            "mode": "gaussian_rank",
+            "C": 3.0
+          },
+          "weight": 0.25,
+          "objective": 0.03469779588442392,
+          "MAE_gains": [
+            0.03661096737761671,
+            0.03469779588442392
+          ],
+          "rank_gains": [
+            0.00566622534814365,
+            0.00010691404204898891
+          ]
+        }
+      ]
+    },
+    {
+      "task": "half_life_obach",
+      "frozen_config": {
+        "name": "tanimoto_gaussian_rank_C30",
+        "view": "tanimoto",
+        "mode": "gaussian_rank",
+        "C": 30.0
+      },
+      "transforms": [
+        {
+          "mode": "native",
+          "config": {
+            "name": "sqrt_native_C3",
+            "view": "sqrt",
+            "mode": "native",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "MAE_gains": [
+            0.05893898405448159,
+            0.04810246210295167
+          ],
+          "rank_gains": [
+            -0.00478235969468499,
+            0.001315621751450946
+          ]
+        },
+        {
+          "mode": "asinh",
+          "config": {
+            "name": "sqrt_asinh_C3",
+            "view": "sqrt",
+            "mode": "asinh",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "MAE_gains": [
+            0.05936446786240661,
+            0.04874623050188292
+          ],
+          "rank_gains": [
+            -0.0017011077564557109,
+            0.0023921668664640405
+          ]
+        },
+        {
+          "mode": "weighted_asinh",
+          "config": {
+            "name": "sqrt_weighted_asinh_C3",
+            "view": "sqrt",
+            "mode": "weighted_asinh",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "MAE_gains": [
+            0.05872941446986678,
+            0.04696984142198694
+          ],
+          "rank_gains": [
+            -0.0012240938580688754,
+            0.002316421925737111
+          ]
+        },
+        {
+          "mode": "gaussian_rank",
+          "config": {
+            "name": "tanimoto_gaussian_rank_C30",
+            "view": "tanimoto",
+            "mode": "gaussian_rank",
+            "C": 30.0
+          },
+          "weight": 0.75,
+          "objective": 0.35018539156623407,
+          "MAE_gains": [
+            0.44563754586891446,
+            0.35018539156623407
+          ],
+          "rank_gains": [
+            0.001636652772915359,
+            0.0018286197535262172
+          ]
+        }
+      ]
+    },
+    {
+      "task": "vdss_lombardo",
+      "frozen_config": {
+        "name": "tanimoto_gaussian_rank_C30",
+        "view": "tanimoto",
+        "mode": "gaussian_rank",
+        "C": 30.0
+      },
+      "transforms": [
+        {
+          "mode": "native",
+          "config": {
+            "name": "sqrt_native_C3",
+            "view": "sqrt",
+            "mode": "native",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "MAE_gains": [
+            0.039737142564566785,
+            0.011164553609180509
+          ],
+          "rank_gains": [
+            -0.0063397720650539835,
+            -0.009161785051620241
+          ]
+        },
+        {
+          "mode": "asinh",
+          "config": {
+            "name": "sqrt_asinh_C3",
+            "view": "sqrt",
+            "mode": "asinh",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "MAE_gains": [
+            0.04191788470717386,
+            0.012587260313471581
+          ],
+          "rank_gains": [
+            -0.0034543494685500553,
+            -0.007815227907852496
+          ]
+        },
+        {
+          "mode": "weighted_asinh",
+          "config": {
+            "name": "sqrt_weighted_asinh_C3",
+            "view": "sqrt",
+            "mode": "weighted_asinh",
+            "C": 3.0
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "MAE_gains": [
+            0.04358986162976985,
+            0.011595276236889147
+          ],
+          "rank_gains": [
+            -0.0025574801968532013,
+            -0.008024598139457995
+          ]
+        },
+        {
+          "mode": "gaussian_rank",
+          "config": {
+            "name": "tanimoto_gaussian_rank_C30",
+            "view": "tanimoto",
+            "mode": "gaussian_rank",
+            "C": 30.0
+          },
+          "weight": 0.5,
+          "objective": 0.07869860729135808,
+          "MAE_gains": [
+            0.19070141896362872,
+            0.07869860729135808
+          ],
+          "rank_gains": [
+            0.0002554803436471964,
+            0.0017936487934075984
+          ]
+        }
+      ]
+    }
+  ],
+  "label_summary": [
+    {
+      "task": "caco2_wang",
+      "fit_rows": 728,
+      "quantiles": [
+        -7.7600002,
+        -7.376695704999998,
+        -6.362479749999999,
+        -5.085018600000001,
+        -4.329999900000002,
+        -3.950527688,
+        -3.51
+      ],
+      "ppbr_100_fraction": null
+    },
+    {
+      "task": "ld50_zhu",
+      "fit_rows": 5907,
+      "quantiles": [
+        -0.3429999999999999,
+        0.91612,
+        1.4802000000000002,
+        2.322,
+        3.762,
+        5.185879999999999,
+        7.1
+      ],
+      "ppbr_100_fraction": null
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "fit_rows": 3360,
+      "quantiles": [
+        -1.5,
+        -0.9741,
+        0.4790000000000003,
+        2.32,
+        3.59,
+        4.254099999999998,
+        4.5
+      ],
+      "ppbr_100_fraction": null
+    },
+    {
+      "task": "ppbr_az",
+      "fit_rows": 2231,
+      "quantiles": [
+        10.09,
+        20.305,
+        56.86,
+        94.68,
+        99.58,
+        99.92,
+        99.95
+      ],
+      "ppbr_100_fraction": 0.0
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "fit_rows": 7985,
+      "quantiles": [
+        -12.0605,
+        -8.756997905395998,
+        -6.25889304168,
+        -2.467,
+        0.21183734508000052,
+        1.1300845201,
+        1.9675126996
+      ],
+      "ppbr_100_fraction": null
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "fit_rows": 970,
+      "quantiles": [
+        3.0,
+        3.0,
+        3.0,
+        19.025,
+        150.0,
+        150.0,
+        150.0
+      ],
+      "ppbr_100_fraction": null
+    },
+    {
+      "task": "clearance_microsome_az",
+      "fit_rows": 881,
+      "quantiles": [
+        3.0,
+        3.0,
+        3.0,
+        14.13,
+        120.0,
+        150.0,
+        150.0
+      ],
+      "ppbr_100_fraction": null
+    },
+    {
+      "task": "half_life_obach",
+      "fit_rows": 532,
+      "quantiles": [
+        0.065,
+        0.3186,
+        1.0,
+        4.25,
+        32.0,
+        455.2999999999781,
+        1200.0
+      ],
+      "ppbr_100_fraction": null
+    },
+    {
+      "task": "vdss_lombardo",
+      "fit_rows": 904,
+      "quantiles": [
+        0.01,
+        0.06029999999999999,
+        0.17,
+        1.0,
+        10.0,
+        47.91000000000008,
+        700.0
+      ],
+      "ppbr_100_fraction": null
+    }
+  ],
+  "recursive_metric_ablations": [
+    {
+      "task": "caco2_wang",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -0.012035318197092493,
+          "config": {
+            "name": "laplace_C30_r0",
+            "base": "laplace_C30",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.012035318197092493,
+            -0.00791501315305453
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -0.007349553865498185,
+          "config": {
+            "name": "laplace_C3_r2",
+            "base": "laplace_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.007349553865498185,
+            -0.0028818981933610944
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -0.005831402530692806,
+          "config": {
+            "name": "laplace_C3_r5",
+            "base": "laplace_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.005831402530692806,
+            -0.001930816015236245
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -0.005347036283803759,
+          "config": {
+            "name": "laplace_C3_r8",
+            "base": "laplace_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.005347036283803759,
+            -0.0014780198476464334
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "ld50_zhu",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -0.001606005496554132,
+          "config": {
+            "name": "laplace_C30_r0",
+            "base": "laplace_C30",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.0014592804069983333,
+            -0.001606005496554132
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -0.0019591732944507106,
+          "config": {
+            "name": "laplace_C30_r2",
+            "base": "laplace_C30",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.0007521611932755618,
+            -0.0019591732944507106
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -0.002178498777170108,
+          "config": {
+            "name": "laplace_C30_r5",
+            "base": "laplace_C30",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.00036792701437209926,
+            -0.002178498777170108
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -0.0016464894542885377,
+          "config": {
+            "name": "laplace_C30_r8",
+            "base": "laplace_C30",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            -5.3912376158432495e-05,
+            -0.0016464894542885377
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -0.01597433752126088,
+          "config": {
+            "name": "laplace_C30_r0",
+            "base": "laplace_C30",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.01597433752126088,
+            -0.005937561281966265
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -0.012369381507708988,
+          "config": {
+            "name": "laplace_C30_r2",
+            "base": "laplace_C30",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.012369381507708988,
+            -0.002713168660726722
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -0.01162162617862308,
+          "config": {
+            "name": "laplace_C30_r5",
+            "base": "laplace_C30",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.01162162617862308,
+            -0.0021058580161676687
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -0.010989019567357348,
+          "config": {
+            "name": "laplace_C30_r8",
+            "base": "laplace_C30",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.010989019567357348,
+            -0.0024250445730872212
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "ppbr_az",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -0.015892608571278537,
+          "config": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.015892608571278537,
+            -0.013770389013306152
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -0.011929357363453068,
+          "config": {
+            "name": "laplace_C30_r2",
+            "base": "laplace_C30",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.011929357363453068,
+            -0.010475872514008411
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -0.011594401294384351,
+          "config": {
+            "name": "laplace_C3_r5",
+            "base": "laplace_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.011594401294384351,
+            -0.010693399645802229
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -0.01166193186837191,
+          "config": {
+            "name": "laplace_C3_r8",
+            "base": "laplace_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            -0.010470836915268707,
+            -0.01166193186837191
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -0.008811039057867717,
+          "config": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            0.00198899884075879,
+            -0.008811039057867717
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -0.007429196973772383,
+          "config": {
+            "name": "laplace_C3_r2",
+            "base": "laplace_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.002146048023806347,
+            -0.007429196973772383
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -0.009478870513814368,
+          "config": {
+            "name": "laplace_C3_r5",
+            "base": "laplace_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.0015544213127354264,
+            -0.009478870513814368
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -0.010174447650967524,
+          "config": {
+            "name": "laplace_C3_r8",
+            "base": "laplace_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.0011755944136299804,
+            -0.010174447650967524
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": 0.019091915688925064,
+          "config": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.25,
+          "gains": [
+            0.019091915688925064,
+            0.041943828240730535
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r2",
+            "base": "laplace_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.014509538324803261,
+            0.023795448693409174
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r5",
+            "base": "laplace_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.01524394976159717,
+            0.023565501435110898
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r8",
+            "base": "laplace_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.015862281445592544,
+            0.02320034502654245
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "clearance_microsome_az",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            0.015843387209120766,
+            0.019298992708220396
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r2",
+            "base": "laplace_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.019719789588666062,
+            0.020160298715730128
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r5",
+            "base": "laplace_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.019164929932133073,
+            0.019993961467836788
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r8",
+            "base": "laplace_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.01933415701730862,
+            0.021322559315055205
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "half_life_obach",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            0.060628321708405195,
+            0.04837661386044749
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r2",
+            "base": "laplace_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.05964822053747019,
+            0.04749296665602212
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r5",
+            "base": "laplace_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.05879220617341446,
+            0.04695114481757704
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r8",
+            "base": "laplace_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.05894802942665574,
+            0.04670664439246723
+          ]
+        }
+      ],
+      "no_reselection": true
+    },
+    {
+      "task": "vdss_lombardo",
+      "by_round": [
+        {
+          "round": 0,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r0",
+            "base": "laplace_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "gains": [
+            0.04038329767990876,
+            0.012212996545016211
+          ]
+        },
+        {
+          "round": 2,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r2",
+            "base": "laplace_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "gains": [
+            0.03894349532590407,
+            0.012731940891315095
+          ]
+        },
+        {
+          "round": 5,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r5",
+            "base": "laplace_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "gains": [
+            0.038425446849545554,
+            0.012319225037408012
+          ]
+        },
+        {
+          "round": 8,
+          "objective": -1.0,
+          "config": {
+            "name": "laplace_C3_r8",
+            "base": "laplace_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "gains": [
+            0.03753496447340127,
+            0.012180741998501068
+          ]
+        }
+      ],
+      "no_reselection": true
+    }
+  ]
+}

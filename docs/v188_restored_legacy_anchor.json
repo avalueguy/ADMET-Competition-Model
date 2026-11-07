@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "source_archive": "releases/v101_multi_route_20261026.tar.gz",
+  "source_archive_sha256": "8a40f5eb01a1eb579e59a1b80a490b503c9f42090ba3bdd360a09be6978bd73f",
+  "member": {
+    "path": "admet_submissions/v101_graph_assay_shape/我从山北来带着兰花草-小分子药物预测技术创新赛-20261026.csv",
+    "sha256": "e94961c81deedf98bcb69e04d621a54ae9319aab47bb1ced9d97890f13c8f086",
+    "bytes": 1774515
+  }
+}

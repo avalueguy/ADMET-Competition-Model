@@ -1,0 +1,1 @@
+实验运行目录较大，不直接纳入源码Git追踪。轻量JSON/Python证据在当前源码快照内的experiments/原路径；完整输入、权重和运行产物按HANDOFF_CURRENT.md从Release恢复。

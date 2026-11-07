@@ -1,0 +1,15 @@
+{
+  "status": "PREDECLARED_IMPLEMENTATION_CORRECTION",
+  "at_utc": "2026-10-31T06:12:02.228269+00:00",
+  "source_sha256": "a3fdc68e3bf83964c9b24f6c717869296a0527fdbdd8be857f2db7a0c75bc37b",
+  "review": "docs/v289_schema_defect_review.json",
+  "scopes": [
+    "Only context prefix boundary changes from42 to105; no legacy context retained",
+    "Original model, seeds, folds, labels, blend/gates preserved",
+    "No failed v284 model or prediction reused",
+    "Old source, log, checkpoints and archive untouched"
+  ],
+  "known_score_reuse": true,
+  "fit_predictions_called_oof": false,
+  "hidden_gain_guaranteed": false
+}

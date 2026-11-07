@@ -1,0 +1,1612 @@
+{
+  "checked_at_utc": "2026-10-29T10:11:30.231440+00:00",
+  "boot_id": "7edb467c-8def-4bf5-b14f-bb31d4469124",
+  "frozen_sources_verified": true,
+  "source_and_process_identity_verified": true,
+  "source_sha256": "3a494713c4c9438512bcbf1778c756491b83350134d911f1651c51d3052eda11",
+  "signature": "925cc5473a1cacdc5ca9ac872a7da4daa8fa06ae7062f4b005069635bd8781b4",
+  "preparation": {
+    "status": "TRAINING_STARTED",
+    "at_utc": "2026-10-29T09:57:16.681830+00:00",
+    "boot_id": "7edb467c-8def-4bf5-b14f-bb31d4469124",
+    "pid": 25411,
+    "start_ticks": "1981235780",
+    "signature": "925cc5473a1cacdc5ca9ac872a7da4daa8fa06ae7062f4b005069635bd8781b4",
+    "source_sha256": "3a494713c4c9438512bcbf1778c756491b83350134d911f1651c51d3052eda11",
+    "model_training_started": true,
+    "credentials_stored": false,
+    "children": [
+      {
+        "stage": "PREPARING_FEATURES",
+        "pid": 25420,
+        "script": "tools/v258_build_surface.py",
+        "start_ticks": "1981236087",
+        "log": "v256_feature_build.log",
+        "exit_code": 0
+      },
+      {
+        "stage": "RUNNING_SMOKE",
+        "pid": 25680,
+        "script": "tools/v256_exposed_polarity.py",
+        "start_ticks": "1981295652",
+        "log": "v256_smoke.log",
+        "exit_code": 0
+      },
+      {
+        "stage": "PREFLIGHT_AND_START",
+        "pid": 25763,
+        "script": "tools/v261_start_surface.py",
+        "start_ticks": "1981298474",
+        "log": "v261_start.log",
+        "exit_code": 0
+      }
+    ],
+    "training_start_record": "docs/v256_remote_start.json"
+  },
+  "processes": [
+    {
+      "pid": 25411,
+      "start_ticks": "1981235780",
+      "state": "EXITED"
+    },
+    {
+      "pid": 25781,
+      "script": "tools/v260_surface_driver.py",
+      "start_ticks": "1981300968",
+      "log": "v256_exposed_polarity.log",
+      "state": "EXITED"
+    },
+    {
+      "pid": 25782,
+      "script": "tools/v259_package_surface_batch.py",
+      "start_ticks": "1981300968",
+      "log": "v259_pipeline.log",
+      "state": "EXITED"
+    },
+    {
+      "pid": 25789,
+      "tasks": [
+        "caco2_wang",
+        "ppbr_az",
+        "lipophilicity_astrazeneca"
+      ],
+      "start_ticks": "1981301275",
+      "state": "EXITED"
+    },
+    {
+      "pid": 26025,
+      "start_ticks": "1981306312",
+      "state": "EXITED"
+    }
+  ],
+  "outputs": {
+    "features/build_progress.json": {
+      "status": "COMPLETE",
+      "signature": "925cc5473a1cacdc5ca9ac872a7da4daa8fa06ae7062f4b005069635bd8781b4",
+      "smiles_sha256": "69976b897e139d05c0017ba760e1a39920525ad3a7e884a07d3cc2a7d6029a7b",
+      "features_sha256": "2a29562ee63e0bf62682b08d654d46342bf333ce4c7c1292a2e922a97e6eb060",
+      "records_sha256": "40f57a9a6800219b67046038048cae2d2ac23936e7266f30b21f7f8e4aef532c",
+      "molecules": 5742,
+      "dimensions": 59,
+      "feature_names": [
+        "mean_sasa",
+        "mean_polar_sasa",
+        "mean_apolar_sasa",
+        "mean_donor_sasa",
+        "mean_acceptor_sasa",
+        "mean_positive_charge_sasa",
+        "mean_negative_charge_sasa",
+        "mean_polar_fraction",
+        "mean_polar_burial_fraction",
+        "mean_donor_acceptor_contact_fraction",
+        "mean_minimum_donor_acceptor_distance",
+        "mean_centroid_charge_moment",
+        "mean_absolute_charge_sasa",
+        "sd_sasa",
+        "sd_polar_sasa",
+        "sd_apolar_sasa",
+        "sd_donor_sasa",
+        "sd_acceptor_sasa",
+        "sd_positive_charge_sasa",
+        "sd_negative_charge_sasa",
+        "sd_polar_fraction",
+        "sd_polar_burial_fraction",
+        "sd_donor_acceptor_contact_fraction",
+        "sd_minimum_donor_acceptor_distance",
+        "sd_centroid_charge_moment",
+        "sd_absolute_charge_sasa",
+        "minimum_sasa",
+        "minimum_polar_sasa",
+        "minimum_apolar_sasa",
+        "minimum_donor_sasa",
+        "minimum_acceptor_sasa",
+        "minimum_positive_charge_sasa",
+        "minimum_negative_charge_sasa",
+        "minimum_polar_fraction",
+        "minimum_polar_burial_fraction",
+        "minimum_donor_acceptor_contact_fraction",
+        "minimum_minimum_donor_acceptor_distance",
+        "minimum_centroid_charge_moment",
+        "minimum_absolute_charge_sasa",
+        "maximum_sasa",
+        "maximum_polar_sasa",
+        "maximum_apolar_sasa",
+        "maximum_donor_sasa",
+        "maximum_acceptor_sasa",
+        "maximum_positive_charge_sasa",
+        "maximum_negative_charge_sasa",
+        "maximum_polar_fraction",
+        "maximum_polar_burial_fraction",
+        "maximum_donor_acceptor_contact_fraction",
+        "maximum_minimum_donor_acceptor_distance",
+        "maximum_centroid_charge_moment",
+        "maximum_absolute_charge_sasa",
+        "valid",
+        "conformers",
+        "convergence_fraction",
+        "energy_range",
+        "heavy",
+        "MMFF94",
+        "UFF"
+      ],
+      "outcomes": {
+        "PASS": 5723,
+        "FAILED_FEATURE": 9,
+        "NO_CONFORMER": 2,
+        "OVER80HEAVY": 7,
+        "NO_FORCEFIELD_PARAMETERS": 1
+      },
+      "train_structure_coverage": {
+        "caco2_wang": 0.989010989010989,
+        "ppbr_az": 0.9974385245901639,
+        "lipophilicity_astrazeneca": 0.9993197278911564
+      },
+      "assay_labels_used": false,
+      "seconds": 591.7901363223791,
+      "workers": 6
+    },
+    "features/audit.json": {
+      "status": "PASS",
+      "signature": "925cc5473a1cacdc5ca9ac872a7da4daa8fa06ae7062f4b005069635bd8781b4",
+      "smiles_sha256": "69976b897e139d05c0017ba760e1a39920525ad3a7e884a07d3cc2a7d6029a7b",
+      "features_sha256": "2a29562ee63e0bf62682b08d654d46342bf333ce4c7c1292a2e922a97e6eb060",
+      "records_sha256": "40f57a9a6800219b67046038048cae2d2ac23936e7266f30b21f7f8e4aef532c",
+      "molecules": 5742,
+      "dimensions": 59,
+      "feature_names": [
+        "mean_sasa",
+        "mean_polar_sasa",
+        "mean_apolar_sasa",
+        "mean_donor_sasa",
+        "mean_acceptor_sasa",
+        "mean_positive_charge_sasa",
+        "mean_negative_charge_sasa",
+        "mean_polar_fraction",
+        "mean_polar_burial_fraction",
+        "mean_donor_acceptor_contact_fraction",
+        "mean_minimum_donor_acceptor_distance",
+        "mean_centroid_charge_moment",
+        "mean_absolute_charge_sasa",
+        "sd_sasa",
+        "sd_polar_sasa",
+        "sd_apolar_sasa",
+        "sd_donor_sasa",
+        "sd_acceptor_sasa",
+        "sd_positive_charge_sasa",
+        "sd_negative_charge_sasa",
+        "sd_polar_fraction",
+        "sd_polar_burial_fraction",
+        "sd_donor_acceptor_contact_fraction",
+        "sd_minimum_donor_acceptor_distance",
+        "sd_centroid_charge_moment",
+        "sd_absolute_charge_sasa",
+        "minimum_sasa",
+        "minimum_polar_sasa",
+        "minimum_apolar_sasa",
+        "minimum_donor_sasa",
+        "minimum_acceptor_sasa",
+        "minimum_positive_charge_sasa",
+        "minimum_negative_charge_sasa",
+        "minimum_polar_fraction",
+        "minimum_polar_burial_fraction",
+        "minimum_donor_acceptor_contact_fraction",
+        "minimum_minimum_donor_acceptor_distance",
+        "minimum_centroid_charge_moment",
+        "minimum_absolute_charge_sasa",
+        "maximum_sasa",
+        "maximum_polar_sasa",
+        "maximum_apolar_sasa",
+        "maximum_donor_sasa",
+        "maximum_acceptor_sasa",
+        "maximum_positive_charge_sasa",
+        "maximum_negative_charge_sasa",
+        "maximum_polar_fraction",
+        "maximum_polar_burial_fraction",
+        "maximum_donor_acceptor_contact_fraction",
+        "maximum_minimum_donor_acceptor_distance",
+        "maximum_centroid_charge_moment",
+        "maximum_absolute_charge_sasa",
+        "valid",
+        "conformers",
+        "convergence_fraction",
+        "energy_range",
+        "heavy",
+        "MMFF94",
+        "UFF"
+      ],
+      "outcomes": {
+        "PASS": 5723,
+        "FAILED_FEATURE": 9,
+        "NO_CONFORMER": 2,
+        "OVER80HEAVY": 7,
+        "NO_FORCEFIELD_PARAMETERS": 1
+      },
+      "train_structure_coverage": {
+        "caco2_wang": 0.989010989010989,
+        "ppbr_az": 0.9974385245901639,
+        "lipophilicity_astrazeneca": 0.9993197278911564
+      },
+      "assay_labels_used": false,
+      "seconds": 591.7901363223791,
+      "workers": 6
+    },
+    "smoke.json": {
+      "status": "PASS",
+      "signature": "925cc5473a1cacdc5ca9ac872a7da4daa8fa06ae7062f4b005069635bd8781b4",
+      "query_label_isolation": true,
+      "independent_reload_tasks": [
+        "caco2_wang",
+        "ppbr_az",
+        "lipophilicity_astrazeneca"
+      ],
+      "prediction_row_order": true,
+      "surface_feature_reconstruction": true,
+      "structure_notation_invariant": true,
+      "feature_audit": {
+        "status": "PASS",
+        "signature": "925cc5473a1cacdc5ca9ac872a7da4daa8fa06ae7062f4b005069635bd8781b4",
+        "smiles_sha256": "69976b897e139d05c0017ba760e1a39920525ad3a7e884a07d3cc2a7d6029a7b",
+        "features_sha256": "2a29562ee63e0bf62682b08d654d46342bf333ce4c7c1292a2e922a97e6eb060",
+        "records_sha256": "40f57a9a6800219b67046038048cae2d2ac23936e7266f30b21f7f8e4aef532c",
+        "molecules": 5742,
+        "dimensions": 59,
+        "feature_names": [
+          "mean_sasa",
+          "mean_polar_sasa",
+          "mean_apolar_sasa",
+          "mean_donor_sasa",
+          "mean_acceptor_sasa",
+          "mean_positive_charge_sasa",
+          "mean_negative_charge_sasa",
+          "mean_polar_fraction",
+          "mean_polar_burial_fraction",
+          "mean_donor_acceptor_contact_fraction",
+          "mean_minimum_donor_acceptor_distance",
+          "mean_centroid_charge_moment",
+          "mean_absolute_charge_sasa",
+          "sd_sasa",
+          "sd_polar_sasa",
+          "sd_apolar_sasa",
+          "sd_donor_sasa",
+          "sd_acceptor_sasa",
+          "sd_positive_charge_sasa",
+          "sd_negative_charge_sasa",
+          "sd_polar_fraction",
+          "sd_polar_burial_fraction",
+          "sd_donor_acceptor_contact_fraction",
+          "sd_minimum_donor_acceptor_distance",
+          "sd_centroid_charge_moment",
+          "sd_absolute_charge_sasa",
+          "minimum_sasa",
+          "minimum_polar_sasa",
+          "minimum_apolar_sasa",
+          "minimum_donor_sasa",
+          "minimum_acceptor_sasa",
+          "minimum_positive_charge_sasa",
+          "minimum_negative_charge_sasa",
+          "minimum_polar_fraction",
+          "minimum_polar_burial_fraction",
+          "minimum_donor_acceptor_contact_fraction",
+          "minimum_minimum_donor_acceptor_distance",
+          "minimum_centroid_charge_moment",
+          "minimum_absolute_charge_sasa",
+          "maximum_sasa",
+          "maximum_polar_sasa",
+          "maximum_apolar_sasa",
+          "maximum_donor_sasa",
+          "maximum_acceptor_sasa",
+          "maximum_positive_charge_sasa",
+          "maximum_negative_charge_sasa",
+          "maximum_polar_fraction",
+          "maximum_polar_burial_fraction",
+          "maximum_donor_acceptor_contact_fraction",
+          "maximum_minimum_donor_acceptor_distance",
+          "maximum_centroid_charge_moment",
+          "maximum_absolute_charge_sasa",
+          "valid",
+          "conformers",
+          "convergence_fraction",
+          "energy_range",
+          "heavy",
+          "MMFF94",
+          "UFF"
+        ],
+        "outcomes": {
+          "PASS": 5723,
+          "FAILED_FEATURE": 9,
+          "NO_CONFORMER": 2,
+          "OVER80HEAVY": 7,
+          "NO_FORCEFIELD_PARAMETERS": 1
+        },
+        "train_structure_coverage": {
+          "caco2_wang": 0.989010989010989,
+          "ppbr_az": 0.9974385245901639,
+          "lipophilicity_astrazeneca": 0.9993197278911564
+        },
+        "assay_labels_used": false,
+        "seconds": 591.7901363223791,
+        "workers": 6
+      },
+      "no_query_scores_used": true
+    },
+    "parallel_scheduling.json": {
+      "status": "COMPLETE",
+      "driver_pid": 25781,
+      "source_signature": "925cc5473a1cacdc5ca9ac872a7da4daa8fa06ae7062f4b005069635bd8781b4",
+      "workers": [
+        {
+          "pid": 25789,
+          "tasks": [
+            "caco2_wang",
+            "ppbr_az",
+            "lipophilicity_astrazeneca"
+          ],
+          "start_ticks": "1981301275"
+        }
+      ],
+      "threads_per_worker": 4,
+      "max_cpu_threads": 4,
+      "selection_performed": false,
+      "confirmation_observed": false,
+      "worker_exit_codes": [
+        0
+      ],
+      "selector_pid": 26025,
+      "selector_start_ticks": "1981306312",
+      "selector_exit_code": 0
+    },
+    "development.json": {
+      "status": "COMPLETE",
+      "signature": "925cc5473a1cacdc5ca9ac872a7da4daa8fa06ae7062f4b005069635bd8781b4",
+      "records": [
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 152,
+              "baseline": 0.8444511217948719,
+              "expert": 0.8444511217948719,
+              "candidate": 0.8444511217948719,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 152,
+              "baseline": 0.85125,
+              "expert": 0.85125,
+              "candidate": 0.85125,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "herg",
+          "metric": "AUROC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 152,
+              "baseline": 0.8444511217948719,
+              "expert": 0.8444511217948719,
+              "candidate": 0.8444511217948719,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 152,
+              "baseline": 0.85125,
+              "expert": 0.85125,
+              "candidate": 0.85125,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 474,
+              "baseline": 0.9241183332092423,
+              "expert": 0.9241183332092423,
+              "candidate": 0.9241183332092423,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 474,
+              "baseline": 0.9502310700319943,
+              "expert": 0.9502310700319943,
+              "candidate": 0.9502310700319943,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "bbb_martins",
+          "metric": "AUROC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 474,
+              "baseline": 0.9241183332092423,
+              "expert": 0.9241183332092423,
+              "candidate": 0.9241183332092423,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 474,
+              "baseline": 0.9502310700319943,
+              "expert": 0.9502310700319943,
+              "candidate": 0.9502310700319943,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 1561,
+              "baseline": 0.8673850574712644,
+              "expert": 0.8673850574712644,
+              "candidate": 0.8673850574712644,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 1562,
+              "baseline": 0.8612499835761867,
+              "expert": 0.8612499835761867,
+              "candidate": 0.8612499835761867,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "ames",
+          "metric": "AUROC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 1561,
+              "baseline": 0.8673850574712644,
+              "expert": 0.8673850574712644,
+              "candidate": 0.8673850574712644,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 1562,
+              "baseline": 0.8612499835761867,
+              "expert": 0.8612499835761867,
+              "candidate": 0.8612499835761867,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 282,
+              "baseline": 0.5727558332909924,
+              "expert": 0.5727558332909924,
+              "candidate": 0.5727558332909924,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 283,
+              "baseline": 0.575230994148768,
+              "expert": 0.575230994148768,
+              "candidate": 0.575230994148768,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "clearance_hepatocyte_az",
+          "metric": "Spearman",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 282,
+              "baseline": 0.5727558332909924,
+              "expert": 0.5727558332909924,
+              "candidate": 0.5727558332909924,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 283,
+              "baseline": 0.575230994148768,
+              "expert": 0.575230994148768,
+              "candidate": 0.575230994148768,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 1635,
+              "baseline": 0.7675069205648937,
+              "expert": 0.7675069205648937,
+              "candidate": 0.7675069205648937,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 1635,
+              "baseline": 0.7502386159917903,
+              "expert": 0.7502386159917903,
+              "candidate": 0.7502386159917903,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "solubility_aqsoldb",
+          "metric": "MAE",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 1635,
+              "baseline": 0.7675069205648937,
+              "expert": 0.7675069205648937,
+              "candidate": 0.7675069205648937,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 1635,
+              "baseline": 0.7502386159917903,
+              "expert": 0.7502386159917903,
+              "candidate": 0.7502386159917903,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 283,
+              "baseline": 0.9482403217697336,
+              "expert": 0.9482403217697336,
+              "candidate": 0.9482403217697336,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 284,
+              "baseline": 0.9021671826625387,
+              "expert": 0.9021671826625387,
+              "candidate": 0.9021671826625387,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "pgp_broccatelli",
+          "metric": "AUROC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 283,
+              "baseline": 0.9482403217697336,
+              "expert": 0.9482403217697336,
+              "candidate": 0.9482403217697336,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 284,
+              "baseline": 0.9021671826625387,
+              "expert": 0.9021671826625387,
+              "candidate": 0.9021671826625387,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 155,
+              "baseline": 0.5853759302529222,
+              "expert": 0.5853759302529222,
+              "candidate": 0.5853759302529222,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 155,
+              "baseline": 0.6436233712598691,
+              "expert": 0.6436233712598691,
+              "candidate": 0.6436233712598691,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "cyp2d6_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 155,
+              "baseline": 0.5853759302529222,
+              "expert": 0.5853759302529222,
+              "candidate": 0.5853759302529222,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 155,
+              "baseline": 0.6436233712598691,
+              "expert": 0.6436233712598691,
+              "candidate": 0.6436233712598691,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 2876,
+              "baseline": 0.8711275258382954,
+              "expert": 0.8711275258382954,
+              "candidate": 0.8711275258382954,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 2876,
+              "baseline": 0.879519641716686,
+              "expert": 0.879519641716686,
+              "candidate": 0.879519641716686,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "cyp3a4_veith",
+          "metric": "AUPRC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 2876,
+              "baseline": 0.8711275258382954,
+              "expert": 0.8711275258382954,
+              "candidate": 0.8711275258382954,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 2876,
+              "baseline": 0.879519641716686,
+              "expert": 0.879519641716686,
+              "candidate": 0.879519641716686,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 256,
+              "baseline": 0.7019076327178516,
+              "expert": 0.7019076327178516,
+              "candidate": 0.7019076327178516,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 257,
+              "baseline": 0.5046604490997971,
+              "expert": 0.5046604490997971,
+              "candidate": 0.5046604490997971,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "clearance_microsome_az",
+          "metric": "Spearman",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 256,
+              "baseline": 0.7019076327178516,
+              "expert": 0.7019076327178516,
+              "candidate": 0.7019076327178516,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 257,
+              "baseline": 0.5046604490997971,
+              "expert": 0.5046604490997971,
+              "candidate": 0.5046604490997971,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 212,
+              "baseline": 0.38815645870734267,
+              "expert": 0.4115528701973106,
+              "candidate": 0.3910958341935071,
+              "gain": -0.007572656386945764
+            },
+            {
+              "part": "fold1",
+              "rows": 212,
+              "baseline": 0.3348527606452333,
+              "expert": 0.351313588423728,
+              "candidate": 0.33483739923381195,
+              "gain": 4.5875122521710155e-05
+            }
+          ],
+          "objective": -0.007572656386945764
+        },
+        {
+          "task": "caco2_wang",
+          "metric": "MAE",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 212,
+              "baseline": 0.38815645870734267,
+              "expert": 0.4115528701973106,
+              "candidate": 0.3950720643200412,
+              "gain": -0.017816541390884576
+            },
+            {
+              "part": "fold1",
+              "rows": 212,
+              "baseline": 0.3348527606452333,
+              "expert": 0.351313588423728,
+              "candidate": 0.3377693487810831,
+              "gain": -0.008710061491593521
+            }
+          ],
+          "objective": -0.017816541390884576
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 156,
+              "baseline": 0.748671096345515,
+              "expert": 0.748671096345515,
+              "candidate": 0.748671096345515,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 156,
+              "baseline": 0.6742748846407383,
+              "expert": 0.6742748846407383,
+              "candidate": 0.6742748846407383,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "cyp3a4_substrate_carbonmangels",
+          "metric": "AUROC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 156,
+              "baseline": 0.748671096345515,
+              "expert": 0.748671096345515,
+              "candidate": 0.748671096345515,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 156,
+              "baseline": 0.6742748846407383,
+              "expert": 0.6742748846407383,
+              "candidate": 0.6742748846407383,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 110,
+              "baseline": 0.8956172632987621,
+              "expert": 0.8956172632987621,
+              "candidate": 0.8956172632987621,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 111,
+              "baseline": 0.8636968085106383,
+              "expert": 0.8636968085106383,
+              "candidate": 0.8636968085106383,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "dili",
+          "metric": "AUROC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 110,
+              "baseline": 0.8956172632987621,
+              "expert": 0.8956172632987621,
+              "candidate": 0.8956172632987621,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 111,
+              "baseline": 0.8636968085106383,
+              "expert": 0.8636968085106383,
+              "candidate": 0.8636968085106383,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 263,
+              "baseline": 0.6991369429686888,
+              "expert": 0.6991369429686888,
+              "candidate": 0.6991369429686888,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 264,
+              "baseline": 0.7317602544137639,
+              "expert": 0.7317602544137639,
+              "candidate": 0.7317602544137639,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "vdss_lombardo",
+          "metric": "Spearman",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 263,
+              "baseline": 0.6991369429686888,
+              "expert": 0.6991369429686888,
+              "candidate": 0.6991369429686888,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 264,
+              "baseline": 0.7317602544137639,
+              "expert": 0.7317602544137639,
+              "candidate": 0.7317602544137639,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 3064,
+              "baseline": 0.6999346265484578,
+              "expert": 0.6999346265484578,
+              "candidate": 0.6999346265484578,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 3063,
+              "baseline": 0.7222338283602908,
+              "expert": 0.7222338283602908,
+              "candidate": 0.7222338283602908,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "cyp2d6_veith",
+          "metric": "AUPRC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 3064,
+              "baseline": 0.6999346265484578,
+              "expert": 0.6999346265484578,
+              "candidate": 0.6999346265484578,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 3063,
+              "baseline": 0.7222338283602908,
+              "expert": 0.7222338283602908,
+              "candidate": 0.7222338283602908,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 2821,
+              "baseline": 0.8498539291362396,
+              "expert": 0.8498539291362396,
+              "candidate": 0.8498539291362396,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 2821,
+              "baseline": 0.8133401115977079,
+              "expert": 0.8133401115977079,
+              "candidate": 0.8133401115977079,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "cyp2c9_veith",
+          "metric": "AUPRC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 2821,
+              "baseline": 0.8498539291362396,
+              "expert": 0.8498539291362396,
+              "candidate": 0.8498539291362396,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 2821,
+              "baseline": 0.8133401115977079,
+              "expert": 0.8133401115977079,
+              "candidate": 0.8133401115977079,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 650,
+              "baseline": 8.068577292713924,
+              "expert": 8.855397082006885,
+              "candidate": 8.078536898557513,
+              "gain": -0.0012343695155009066
+            },
+            {
+              "part": "fold1",
+              "rows": 651,
+              "baseline": 7.585961846123768,
+              "expert": 8.274843310658525,
+              "candidate": 7.5867825886059395,
+              "gain": -0.00010819227657876585
+            }
+          ],
+          "objective": -0.0012343695155009066
+        },
+        {
+          "task": "ppbr_az",
+          "metric": "MAE",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 650,
+              "baseline": 8.068577292713924,
+              "expert": 8.855397082006885,
+              "candidate": 8.23817452839367,
+              "gain": -0.021019472148193333
+            },
+            {
+              "part": "fold1",
+              "rows": 651,
+              "baseline": 7.585961846123768,
+              "expert": 8.274843310658525,
+              "candidate": 7.687767807960491,
+              "gain": -0.013420310291798262
+            }
+          ],
+          "objective": -0.021019472148193333
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 1210,
+              "baseline": 0.4642859078866628,
+              "expert": 0.4642859078866628,
+              "candidate": 0.4642859078866628,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 1210,
+              "baseline": 0.534364444193799,
+              "expert": 0.534364444193799,
+              "candidate": 0.534364444193799,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "ld50_zhu",
+          "metric": "MAE",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 1210,
+              "baseline": 0.4642859078866628,
+              "expert": 0.4642859078866628,
+              "candidate": 0.4642859078866629,
+              "gain": -2.3912485943815767e-16
+            },
+            {
+              "part": "fold1",
+              "rows": 1210,
+              "baseline": 0.534364444193799,
+              "expert": 0.534364444193799,
+              "candidate": 0.534364444193799,
+              "gain": 0.0
+            }
+          ],
+          "objective": -2.3912485943815767e-16
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 980,
+              "baseline": 0.4900050804950242,
+              "expert": 0.6530244476841338,
+              "candidate": 0.5046552056056627,
+              "gain": -0.029897904519353695
+            },
+            {
+              "part": "fold1",
+              "rows": 980,
+              "baseline": 0.47650922350658986,
+              "expert": 0.6065498459929878,
+              "candidate": 0.47800691382651506,
+              "gain": -0.003143045813266364
+            }
+          ],
+          "objective": -0.029897904519353695
+        },
+        {
+          "task": "lipophilicity_astrazeneca",
+          "metric": "MAE",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 980,
+              "baseline": 0.4900050804950242,
+              "expert": 0.6530244476841338,
+              "candidate": 0.5376710361978433,
+              "gain": -0.09727645202099713
+            },
+            {
+              "part": "fold1",
+              "rows": 980,
+              "baseline": 0.47650922350658986,
+              "expert": 0.6065498459929878,
+              "candidate": 0.5000387999817968,
+              "gain": -0.04937905776944845
+            }
+          ],
+          "objective": -0.09727645202099713
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 150,
+              "baseline": 0.7173721340388007,
+              "expert": 0.7173721340388007,
+              "candidate": 0.7173721340388007,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 149,
+              "baseline": 0.7583485124468732,
+              "expert": 0.7583485124468732,
+              "candidate": 0.7583485124468732,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "bioavailability_ma",
+          "metric": "AUROC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 150,
+              "baseline": 0.7173721340388007,
+              "expert": 0.7173721340388007,
+              "candidate": 0.7173721340388007,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 149,
+              "baseline": 0.7583485124468732,
+              "expert": 0.7583485124468732,
+              "candidate": 0.7583485124468732,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 155,
+              "baseline": 0.5749026026062931,
+              "expert": 0.5749026026062931,
+              "candidate": 0.5749026026062931,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 155,
+              "baseline": 0.6039670343812906,
+              "expert": 0.6039670343812906,
+              "candidate": 0.6039670343812906,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "half_life_obach",
+          "metric": "Spearman",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 155,
+              "baseline": 0.5749026026062931,
+              "expert": 0.5749026026062931,
+              "candidate": 0.5749026026062931,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 155,
+              "baseline": 0.6039670343812906,
+              "expert": 0.6039670343812906,
+              "candidate": 0.6039670343812906,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.2,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 156,
+              "baseline": 0.40104854978772664,
+              "expert": 0.40104854978772664,
+              "candidate": 0.40104854978772664,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 156,
+              "baseline": 0.49408588616603144,
+              "expert": 0.49408588616603144,
+              "candidate": 0.49408588616603144,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        },
+        {
+          "task": "cyp2c9_substrate_carbonmangels",
+          "metric": "AUPRC",
+          "config": {
+            "trees": 700,
+            "depth": 4
+          },
+          "weight": 0.45,
+          "parts": [
+            {
+              "part": "fold0",
+              "rows": 156,
+              "baseline": 0.40104854978772664,
+              "expert": 0.40104854978772664,
+              "candidate": 0.40104854978772664,
+              "gain": 0.0
+            },
+            {
+              "part": "fold1",
+              "rows": 156,
+              "baseline": 0.49408588616603144,
+              "expert": 0.49408588616603144,
+              "candidate": 0.49408588616603144,
+              "gain": 0.0
+            }
+          ],
+          "objective": 0.0
+        }
+      ]
+    },
+    "frozen_selection.json": {
+      "signature": "925cc5473a1cacdc5ca9ac872a7da4daa8fa06ae7062f4b005069635bd8781b4",
+      "selected": []
+    },
+    "confirmation.json": {
+      "status": "COMPLETE",
+      "signature": "925cc5473a1cacdc5ca9ac872a7da4daa8fa06ae7062f4b005069635bd8781b4",
+      "records": [],
+      "accepted": []
+    }
+  },
+  "completed_development_partitions": 6,
+  "saved_development_models": 12,
+  "logs": {
+    "v256_exposed_polarity.log": "\": 0.7583485124468732, \"candidate\": 0.7583485124468732, \"gain\": 0.0}], \"objective\": 0.0}}\n{\"stage\": \"development\", \"best\": {\"task\": \"half_life_obach\", \"metric\": \"Spearman\", \"config\": {\"trees\": 700, \"depth\": 4}, \"weight\": 0.2, \"parts\": [{\"part\": \"fold0\", \"rows\": 155, \"baseline\": 0.5749026026062931, \"expert\": 0.5749026026062931, \"candidate\": 0.5749026026062931, \"gain\": 0.0}, {\"part\": \"fold1\", \"rows\": 155, \"baseline\": 0.6039670343812906, \"expert\": 0.6039670343812906, \"candidate\": 0.6039670343812906, \"gain\": 0.0}], \"objective\": 0.0}}\n{\"stage\": \"development\", \"best\": {\"task\": \"cyp2c9_substrate_carbonmangels\", \"metric\": \"AUPRC\", \"config\": {\"trees\": 700, \"depth\": 4}, \"weight\": 0.2, \"parts\": [{\"part\": \"fold0\", \"rows\": 156, \"baseline\": 0.40104854978772664, \"expert\": 0.40104854978772664, \"candidate\": 0.40104854978772664, \"gain\": 0.0}, {\"part\": \"fold1\", \"rows\": 156, \"baseline\": 0.49408588616603144, \"expert\": 0.49408588616603144, \"candidate\": 0.49408588616603144, \"gain\": 0.0}], \"objective\": 0.0}}\n",
+    "v260_worker_0.log": "{\"stage\": \"train\", \"task\": \"caco2_wang\", \"part\": \"fold0\", \"seconds\": 5}\n{\"stage\": \"train\", \"task\": \"caco2_wang\", \"part\": \"fold1\", \"seconds\": 4}\n{\"stage\": \"train\", \"task\": \"ppbr_az\", \"part\": \"fold0\", \"seconds\": 6}\n{\"stage\": \"train\", \"task\": \"ppbr_az\", \"part\": \"fold1\", \"seconds\": 5}\n{\"stage\": \"train\", \"task\": \"lipophilicity_astrazeneca\", \"part\": \"fold0\", \"seconds\": 6}\n{\"stage\": \"train\", \"task\": \"lipophilicity_astrazeneca\", \"part\": \"fold1\", \"seconds\": 5}\n{\"status\": \"PRECOMPUTE_COMPLETE\", \"tasks\": [\"caco2_wang\", \"ppbr_az\", \"lipophilicity_astrazeneca\"]}\n",
+    "v259_pipeline.log": "{\"path\": \"releases/v257_exposed_polarity_20261029.tar.gz\", \"sha256\": \"7f1d94baf6dbcc2bf33948e5970c4bc582104896fdb15494c3617cb20175623f\", \"bytes\": 9186001, \"files\": 153, \"manifest_sha256\": \"1ce3a3a67fab498448af1119d19dddcc0e81e46113d427d418572f740aef3367\", \"submission_created\": false, \"official_score\": null}\n"
+  },
+  "start": {
+    "status": "STARTED",
+    "at_utc": "2026-10-29T10:08:05.491280+00:00",
+    "host": "connect.nmb2.seetacloud.com",
+    "port": 24365,
+    "boot_id": "7edb467c-8def-4bf5-b14f-bb31d4469124",
+    "source_sha256": "3a494713c4c9438512bcbf1778c756491b83350134d911f1651c51d3052eda11",
+    "signature": "925cc5473a1cacdc5ca9ac872a7da4daa8fa06ae7062f4b005069635bd8781b4",
+    "baseline_cache_verified": 105,
+    "smoke": "PASS",
+    "frozen_sources_verified": true,
+    "dependency_sha256_verified": true,
+    "processes": {
+      "driver": {
+        "pid": 25781,
+        "script": "tools/v260_surface_driver.py",
+        "start_ticks": "1981300968",
+        "log": "v256_exposed_polarity.log"
+      },
+      "pipeline": {
+        "pid": 25782,
+        "script": "tools/v259_package_surface_batch.py",
+        "start_ticks": "1981300968",
+        "log": "v259_pipeline.log"
+      }
+    },
+    "credentials_stored": false
+  },
+  "pipeline": {
+    "status": "COMPLETE",
+    "submission_created": false,
+    "official_score": null,
+    "automatically_uploaded": false
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE_NO_ELIGIBLE_CANDIDATE",
+  "version": "v370",
+  "baseline": "v364:51.269",
+  "tasks": [
+    "caco2_wang",
+    "ld50_zhu",
+    "lipophilicity_astrazeneca",
+    "ppbr_az",
+    "solubility_aqsoldb"
+  ],
+  "modes": [
+    "selfsupervised",
+    "sam"
+  ],
+  "seeds": [
+    3701105,
+    3701106
+  ],
+  "weights": [
+    0.0,
+    0.2,
+    0.45
+  ],
+  "training_host": "connect.nmb2.seetacloud.com:25870",
+  "external_data": false,
+  "external_weights": false,
+  "independent_fold_encoders": true,
+  "confirmation_fallback": false,
+  "official_score": null,
+  "experiment": "Graph + count fingerprint, AdamW versus fixed-rho SAM; final bounded experiment this session.",
+  "remote_pid": 3854,
+  "signature": "357a38eec15721049214c76e77c43e805c5a3225da2a86468a0bc225a9d53848",
+  "smoke": "PASS",
+  "parameters": 3964189,
+  "new_submission_delivered": false,
+  "known_best_unchanged": "v364:51.269"
+}

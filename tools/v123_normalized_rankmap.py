@@ -1,0 +1,80 @@
+"""Correct regularization scale for XGBoost normalized ranking gradients.
+
+v121 rank:map grew zero splits with regression-scale minimum Hessian. This
+branch uses small Hessian regularization and rejects constant predictions.
+"""
+import os
+for key in ('OMP_NUM_THREADS','MKL_NUM_THREADS','OPENBLAS_NUM_THREADS'):os.environ[key]='3'
+import hashlib,json,sys,time
+from pathlib import Path
+import numpy as np
+import xgboost as xgb
+ROOT=Path(__file__).resolve().parents[1];sys.path[:0]=[str(ROOT),str(ROOT/'tools')]
+import v117_conditional_structure as v
+b,r83=v.b,v.r83
+OUT=ROOT/'admet_model_outputs_v123';WEIGHT=.4;SEEDS=(1234026,1234027)
+TASKS=('cyp2d6_substrate_carbonmangels','cyp3a4_substrate_carbonmangels','herg',
+       'clearance_hepatocyte_az','clearance_microsome_az','pgp_broccatelli')
+
+def sig():return hashlib.sha256((b.sha(__file__)+v.sig()).encode()).hexdigest()
+def emit(**x):print(json.dumps(x),flush=True)
+def predict(d,k,part):
+    folder=OUT/'models'/d['tasks'][k]/part;path=folder/'predictions.npz'
+    if path.exists():
+        z=np.load(path);assert str(z['signature'])==sig();np.testing.assert_array_equal(z['query'],r83.split(d,k,part)[1]);return z['p'].copy()
+    fit,q,x,qx,source=v.design(d,k,part,'full');y=d['y'][fit];m=d['metrics'][k]
+    label=np.minimum(30,np.floor(31*(r83.rankdata(y)-1)/len(y))) if m=='Spearman' else y
+    dm=xgb.DMatrix(x,label=label);dm.set_group([len(fit)]);qm=xgb.DMatrix(qx)
+    objective='rank:map' if m=='AUPRC' else 'rank:pairwise'
+    folder.mkdir(parents=True,exist_ok=True);members=[];diagnostics=[];started=time.monotonic()
+    for seed in SEEDS:
+        model=xgb.train(dict(objective=objective,max_depth=3,eta=.025,reg_lambda=.1,reg_alpha=0,
+            min_child_weight=.001,subsample=.85,colsample_bytree=.8,max_bin=64,nthread=3,
+            lambdarank_pair_method='mean',lambdarank_num_pair_per_sample=32,
+            seed=seed,device='cpu',tree_method='hist',verbosity=0),dm,num_boost_round=500)
+        raw=model.predict(qm);mp=folder/f'model_{seed}.ubj';model.save_model(mp)
+        replay=xgb.Booster();replay.load_model(mp);np.testing.assert_array_equal(raw,replay.predict(qm))
+        trees=[json.loads(t) for t in model.get_dump(dump_format='json')]
+        split_trees=sum('split' in t for t in trees)
+        assert split_trees>0 and len(np.unique(raw))>1,'Degenerate ranking model'
+        diagnostics.append(dict(seed=seed,split_trees=split_trees,unique_predictions=len(np.unique(raw))))
+        members.append(r83.rankdata(raw)/len(raw))
+    p=np.mean(members,axis=0)
+    np.savez_compressed(path,signature=sig(),fit=fit,query=q,source=source,p=p)
+    b.save(folder/'metadata.json',dict(signature=sig(),diagnostics=diagnostics))
+    emit(stage='train',task=d['tasks'][k],part=part,objective=objective,seconds=round(time.monotonic()-started),diagnostics=diagnostics)
+    return p
+def record(d,k,part):
+    q=r83.split(d,k,part)[1];y=d['y'][q];m=d['metrics'][k];a=v.prev.base(d,k,part);z=predict(d,k,part)
+    p=(1-WEIGHT)*r83.rankdata(a)/len(a)+WEIGHT*r83.rankdata(z)/len(z)
+    return dict(part=part,rows=len(q),baseline_proxy=r83.score(m,y,a),expert=r83.score(m,y,z),
+        candidate=r83.score(m,y,p),gain=r83.gain(m,y,a,p))
+def run():
+    d=v.prev.load();OUT.mkdir(exist_ok=True)
+    doc=dict(signature=sig(),tasks=TASKS,weight=WEIGHT,seeds=SEEDS,
+        model='CPU XGBoost LambdaRank500treesdepth3:MAP forAP,pairwise forAUROC/Spearman,32uniform pairs;minchild.001,lambda.1.',
+        reason='v121 rank:map generated650stumps. Adjust regularization to normalized ranking Hessian scale; require nonconstant predictions.',
+        features='Full12288fingerprints+435physchem+target-excluded official other-task assays.',
+        selection='Fixed model; both fold0/1 gains>.0025 classification/.008Spearman; freeze tasks.',
+        confirmation='All4 gains positive,mean above practical threshold. No fallback.',test_labels_used=False,external_data=False,
+        limitations='Development labels historically reused; v101 proxy except exact hERGv85; no official score estimate.')
+    pp=OUT/'protocol.json'
+    if pp.exists():assert json.loads(pp.read_text())==json.loads(json.dumps(doc))
+    else:b.save(pp,doc)
+    records=[];selected=[]
+    for task in TASKS:
+        k=d['tasks'].index(task);m=d['metrics'][k];parts=[record(d,k,p) for p in ('fold0','fold1')]
+        r=dict(task=task,metric=m,parts=parts);r['selected']=min(p['gain'] for p in parts)>v.prev.threshold(m)
+        records.append(r)
+        if r['selected']:selected.append(r)
+        emit(stage='development',**r);b.save(OUT/'development.json',dict(status='IN_PROGRESS',records=records))
+    b.save(OUT/'development.json',dict(status='COMPLETE',signature=sig(),records=records))
+    b.save(OUT/'frozen_selection.json',dict(status='FROZEN_BEFORE_CONFIRMATION',signature=sig(),selected=selected))
+    confirmation=[]
+    for r in selected:
+        k=d['tasks'].index(r['task']);parts=[record(d,k,p) for p in ('fold0','fold1','fold2','valid')]
+        z=dict(**r,confirmation=parts,accepted=bool(min(p['gain'] for p in parts)>0 and np.mean([p['gain'] for p in parts])>v.prev.threshold(r['metric'])))
+        confirmation.append(z);emit(stage='confirmation',**z)
+    b.save(OUT/'confirmation.json',dict(status='COMPLETE',signature=sig(),records=confirmation,accepted=[r['task'] for r in confirmation if r['accepted']]))
+
+if __name__=='__main__':run()

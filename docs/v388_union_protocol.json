@@ -1,0 +1,15 @@
+{
+  "registered_at_utc": "2026-11-06T04:45:10.255394+00:00",
+  "baseline": "docs/current_best_after_v385_20261106.json",
+  "baseline_csv_sha256": "355d8cf8f67bfd1e81b67f99e476a9780f1737d1e598a795d651bc589eeff1d0",
+  "source_priority": [
+    "v386",
+    "v387"
+  ],
+  "eligibility": "Use only each frozen experiment experimental_eligible tasks; all four MAE gains positive, plus all four Spearman gains positive for ranking tasks.",
+  "overlap_rule": "v386 wins any overlap regardless of relative validation gains; calibration route has fixed priority. No averaging, weight search or molecule routing.",
+  "union_rule": "Whole-task replacement from the first eligible source. Source predictions and weights remain unchanged.",
+  "emit_rule": "Create v388 only if v387 adds at least one nonoverlapping task to v386; otherwise use the original eligible experiment CSV.",
+  "new_official_score": null,
+  "repeated_public_partitions_are_not_blind": true
+}

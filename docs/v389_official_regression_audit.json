@@ -1,0 +1,19 @@
+{
+  "baseline": "v387",
+  "baseline_official_reported": 51.314,
+  "candidate": "v389",
+  "candidate_official_reported": 51.313,
+  "changed_rows": {
+    "ppbr_az": 559
+  },
+  "nonprediction_columns_changed": 0,
+  "mean_delta": -0.0016335454545455264,
+  "ppbr_relative_MAE_increase": 0.0014444891845155627,
+  "remaining_to52": 0.6857941818181814,
+  "sum_task_score_gain_needed": 15.087471999999991,
+  "all5_MAE_5percent_conditional_score": 51.60462589982814,
+  "all5_MAE_10percent_conditional_score": 51.90965436235822,
+  "all5_equal_MAE_reduction_required_to52": 0.11434182755418787,
+  "scenario_warning": "Conditional arithmetic only; not an experiment prediction.",
+  "decision": "Reject v389; retain v387 as best submitted association."
+}

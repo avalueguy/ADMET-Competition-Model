@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "archive_sha256": "4a520454237e9b00978217bcbc0c5b8dcd5be370f8cc633e2bbce75c4181e4a9",
+  "archive_members": 60,
+  "verified_files": 59,
+  "signature": "357a38eec15721049214c76e77c43e805c5a3225da2a86468a0bc225a9d53848",
+  "source_files_match": true
+}

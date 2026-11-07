@@ -1,0 +1,123 @@
+{
+  "version": "v145",
+  "status": "VERIFIED_TASK_ROUTING_AWAITING_PLATFORM",
+  "baseline": "v130",
+  "baseline_official_score": 51.146,
+  "csv": "admet_submissions/v145_feedback_repair/我从山北来带着兰花草-小分子药物预测技术创新赛-20261027.csv",
+  "sha256": "3ffd68785b3fc321c8e81a32b23a09cf2493ff26240555a3472a315c572706e7",
+  "kept_v144_tasks": [
+    "ames",
+    "cyp2c9_veith",
+    "cyp2d6_veith"
+  ],
+  "reverted_v144_tasks": [
+    "clearance_hepatocyte_az",
+    "cyp3a4_substrate_carbonmangels"
+  ],
+  "changed_tasks": {
+    "ames": 1457,
+    "cyp2c9_veith": 2419,
+    "cyp2d6_veith": 2626
+  },
+  "changed_predictions": 6502,
+  "sources": {
+    "ames": {
+      "version": "v144",
+      "csv_sha256": "fc523b1e1068775983d7ee1f68696bdb9b6332b4e08bb845fb8cb54db85ee8db"
+    },
+    "bbb_martins": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "bioavailability_ma": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "caco2_wang": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "clearance_hepatocyte_az": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "clearance_microsome_az": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "cyp2c9_substrate_carbonmangels": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "cyp2c9_veith": {
+      "version": "v144",
+      "csv_sha256": "fc523b1e1068775983d7ee1f68696bdb9b6332b4e08bb845fb8cb54db85ee8db"
+    },
+    "cyp2d6_substrate_carbonmangels": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "cyp2d6_veith": {
+      "version": "v144",
+      "csv_sha256": "fc523b1e1068775983d7ee1f68696bdb9b6332b4e08bb845fb8cb54db85ee8db"
+    },
+    "cyp3a4_substrate_carbonmangels": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "cyp3a4_veith": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "dili": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "half_life_obach": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "herg": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "hia_hou": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "ld50_zhu": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "lipophilicity_astrazeneca": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "pgp_broccatelli": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "ppbr_az": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "solubility_aqsoldb": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    "vdss_lombardo": {
+      "version": "v130",
+      "csv_sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    }
+  },
+  "official_score": null,
+  "retrospective_recombined_task_mean": 51.166127499999995,
+  "retrospective_recombined_task_mean_is_official": false,
+  "new_model_trained": false,
+  "automatically_uploaded": false,
+  "test_labels_used": false,
+  "external_data_added": false,
+  "method": "Deterministic whole-task routing of immutable model outputs. No sample-specific editing, retraining, new blend tuning, or label inference.",
+  "limitations": "Selected using public leaderboard feedback; retrospective 51.1661275 is arithmetic from prior measured task scores, not a new official result or unbiased validation.",
+  "upload_copy": "D:\\bili_download\\v145_feedback_repair\\我从山北来带着兰花草-小分子药物预测技术创新赛-20261027.csv"
+}

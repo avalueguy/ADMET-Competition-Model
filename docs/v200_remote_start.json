@@ -1,0 +1,47 @@
+{
+  "status": "STARTED",
+  "boot_id": "0147efe4-5fc2-4881-9c47-fcd4cd66909e",
+  "processes": {
+    "training": {
+      "pid": 8385,
+      "start_ticks": "2023513799",
+      "script": "v200_exact_newton_splines.py",
+      "log": "v200_exact_newton_splines.log"
+    },
+    "pipeline": {
+      "pid": 8386,
+      "start_ticks": "2023513799",
+      "script": "v202_package_exact_newton_batch.py",
+      "log": "v202_pipeline.log"
+    }
+  },
+  "smoke": {
+    "status": "PASS",
+    "signature": "f3824212cba9efacc8313293ecd62a1e6cd6007fcaa0207dff6b425a77599b18",
+    "checks": [
+      {
+        "task": "solubility_aqsoldb",
+        "part": "fold1",
+        "query_label_perturbation_invariant": true,
+        "converged": true,
+        "gradient_inf": 3.764805047573594e-10,
+        "iterations": 15,
+        "objective_monotonic": true,
+        "query_metrics_not_examined": true
+      },
+      {
+        "task": "caco2_wang",
+        "part": "fold0",
+        "query_label_perturbation_invariant": true,
+        "converged": true,
+        "gradient_inf": 2.2615331562851095e-08,
+        "iterations": 14,
+        "objective_monotonic": true,
+        "query_metrics_not_examined": true
+      }
+    ],
+    "finite_difference_gradient": true,
+    "finite_difference_hessian": true,
+    "independent_BFGS_reference_match": true
+  }
+}

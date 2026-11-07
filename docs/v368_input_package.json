@@ -1,0 +1,194 @@
+{
+  "status": "PASS",
+  "archive": "releases/v368_stage3_inputs.tar.gz",
+  "sha256": "caf79f61bc9192ed518a240e946a06e2677fb6ab0cdffa0b0bbc300ad3c8d816",
+  "bytes": 27356084,
+  "tasks": [
+    "ames",
+    "clearance_microsome_az",
+    "half_life_obach",
+    "vdss_lombardo"
+  ],
+  "controls": [
+    {
+      "task": "ames",
+      "part": "fold0",
+      "fit": 3123,
+      "query": 1561,
+      "file": "controls/ames/fold0.npz",
+      "sha256": "ae34e9e0ab43a0e45273ab02b8fb27bd1009380df68926781774eba7f7fa53fb",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "ames",
+      "part": "fold1",
+      "fit": 3122,
+      "query": 1562,
+      "file": "controls/ames/fold1.npz",
+      "sha256": "b710931cf11b456b8bf23882022bd2f9d71826014e6dd24e1d10d0955dc1872a",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "ames",
+      "part": "fold2",
+      "fit": 3123,
+      "query": 1561,
+      "file": "controls/ames/fold2.npz",
+      "sha256": "e34f039168730d025fd9e8c1360af2d6d9ba051b028a9194bfc6b3d069a524f4",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "ames",
+      "part": "valid",
+      "fit": 4684,
+      "query": 1137,
+      "file": "controls/ames/valid.npz",
+      "sha256": "9f4e43b2a68bdf6920307ebcc84e6b6c035a4ba365e190bcc31c42aa015704fe",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "ames",
+      "part": "final",
+      "fit": 5821,
+      "query": 1457,
+      "file": "controls/ames/final.npz",
+      "sha256": "5f03acbb0725f8fbe773a0b7ed1128370c8670b40dec5a1d362ee33247f87066",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "fold0",
+      "fit": 514,
+      "query": 256,
+      "file": "controls/clearance_microsome_az/fold0.npz",
+      "sha256": "6282c4b749c7497ef3ebefbd0d60ea6c5fe2969db6e51df9f32cc6d270c4f899",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "fold1",
+      "fit": 513,
+      "query": 257,
+      "file": "controls/clearance_microsome_az/fold1.npz",
+      "sha256": "ceae29c7309aaf50c03d13b9ffae035e3bc0fbb24daf2e64a32aef1f1bc08ae8",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "fold2",
+      "fit": 513,
+      "query": 257,
+      "file": "controls/clearance_microsome_az/fold2.npz",
+      "sha256": "4f1d0fb428e781f8b11823369d6a88df6224ef86f44c76f5b7c5d9cd8b539454",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "valid",
+      "fit": 770,
+      "query": 111,
+      "file": "controls/clearance_microsome_az/valid.npz",
+      "sha256": "4ee3515f0b2905ffe1c8375202f4e9869c3bc8387675617f68d457719f11bce2",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "final",
+      "fit": 881,
+      "query": 221,
+      "file": "controls/clearance_microsome_az/final.npz",
+      "sha256": "d7db50309dfac880e622fb53fbded3550c959c4cbfe97ae05bdff3894aa583e5",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "half_life_obach",
+      "part": "fold0",
+      "fit": 310,
+      "query": 155,
+      "file": "controls/half_life_obach/fold0.npz",
+      "sha256": "8018947dad1ac98f68ac04daf180726f0c6ab4b42a7c261188dd5ce47de9f16a",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "half_life_obach",
+      "part": "fold1",
+      "fit": 310,
+      "query": 155,
+      "file": "controls/half_life_obach/fold1.npz",
+      "sha256": "81c5676fa8c30ea51136bb733d04e84df5743b4f9fbb2a8dae9833c15692ed9c",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "half_life_obach",
+      "part": "fold2",
+      "fit": 310,
+      "query": 155,
+      "file": "controls/half_life_obach/fold2.npz",
+      "sha256": "29a626fa4bb72d34fcf5c935398bd7f438db7c3b867c99e2050beabb63192c13",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "half_life_obach",
+      "part": "valid",
+      "fit": 160,
+      "query": 67,
+      "file": "controls/half_life_obach/valid.npz",
+      "sha256": "b9ddfc1a92bee61493a22c48390afa8e1bf2d88a3c2622aeb949a6dfbc38da2b",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "half_life_obach",
+      "part": "final",
+      "fit": 532,
+      "query": 135,
+      "file": "controls/half_life_obach/final.npz",
+      "sha256": "22bb825149daea5a4b6f72fc8ef8429d9328aa63f8c01c4db4dac481d8afb53e",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "vdss_lombardo",
+      "part": "fold0",
+      "fit": 528,
+      "query": 263,
+      "file": "controls/vdss_lombardo/fold0.npz",
+      "sha256": "074d62c62dab6cf48b86073090f93bc4ec985e57e775678ba873318bfa3a3f27",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "vdss_lombardo",
+      "part": "fold1",
+      "fit": 527,
+      "query": 264,
+      "file": "controls/vdss_lombardo/fold1.npz",
+      "sha256": "0baa872dd26abf32193cda975c0ebb20122abea2e46d06743934556e1c5f0b3c",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "vdss_lombardo",
+      "part": "fold2",
+      "fit": 527,
+      "query": 264,
+      "file": "controls/vdss_lombardo/fold2.npz",
+      "sha256": "697cc457d83bfdccd2a2357cd02c1bad48b4f3e9d8244f5e23ff5d6cab260a29",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "vdss_lombardo",
+      "part": "valid",
+      "fit": 791,
+      "query": 113,
+      "file": "controls/vdss_lombardo/valid.npz",
+      "sha256": "948c0bef10e4be8143228cc272c141e4f9b010597dd51cd20bc477d66030e69e",
+      "upstream_OOF": "partial historical proxy"
+    },
+    {
+      "task": "vdss_lombardo",
+      "part": "final",
+      "fit": 904,
+      "query": 226,
+      "file": "controls/vdss_lombardo/final.npz",
+      "sha256": "278eef23913fe3773fd90120a2949c93918094b1693197f368da7054a7bed8b1",
+      "upstream_OOF": "partial historical proxy"
+    }
+  ]
+}

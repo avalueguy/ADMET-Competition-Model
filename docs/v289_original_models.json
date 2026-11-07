@@ -1,0 +1,157 @@
+{
+  "status": "FROZEN_ORIGINAL_V145_COMPONENTS",
+  "files": [
+    {
+      "path": "admet_model_outputs_v127/models/herg/fold0/physchem/model_1274026.cbm",
+      "sha256": "6382cb996ef8cbcc2deadadbf0a38a5f54fda40e446f613665a0359eae222a34",
+      "bytes": 319616
+    },
+    {
+      "path": "admet_model_outputs_v127/models/herg/fold0/physchem/model_1274027.cbm",
+      "sha256": "5ba2ce8cfbf7297df889f4a614d3626fdb16b986ffa3b28a64a0853e8c21b15b",
+      "bytes": 321104
+    },
+    {
+      "path": "admet_model_outputs_v127/models/herg/fold0/physchem/predictions.npz",
+      "sha256": "bf6678136c27fdb515b1479a2362a423353c97f317d19c1aeedda0b142a1f8b9",
+      "bytes": 83676
+    },
+    {
+      "path": "admet_model_outputs_v127/models/herg/fold1/physchem/model_1274026.cbm",
+      "sha256": "a51fabb9bdbcc3a28742ced144990294d11a82b5c8208a8bc32c9c8d67c6c7e0",
+      "bytes": 321048
+    },
+    {
+      "path": "admet_model_outputs_v127/models/herg/fold1/physchem/model_1274027.cbm",
+      "sha256": "88d81b2d36fcfdcdde460340300fb01ba3b71984cfed97a06b31d5dd0ebdfdcb",
+      "bytes": 320664
+    },
+    {
+      "path": "admet_model_outputs_v127/models/herg/fold1/physchem/predictions.npz",
+      "sha256": "ecc645040c1a6dd0ed8e2e72f25edd6c24444b7d02f4be8ee870f163affe6528",
+      "bytes": 83707
+    },
+    {
+      "path": "admet_model_outputs_v127/models/herg/fold2/physchem/model_1274026.cbm",
+      "sha256": "6384a17970246f5a3eadade0de459f25e466c80e01f13d732f6f243813e19d4c",
+      "bytes": 320936
+    },
+    {
+      "path": "admet_model_outputs_v127/models/herg/fold2/physchem/model_1274027.cbm",
+      "sha256": "2251b78c81bcbcb56071144b0aa4b872132adbb907f62a14c987b52f819013b0",
+      "bytes": 320928
+    },
+    {
+      "path": "admet_model_outputs_v127/models/herg/fold2/physchem/predictions.npz",
+      "sha256": "f7ee53986464bf8e9041423a171b51634ada0f25a7fcc08a299c7bcf38a0fbec",
+      "bytes": 83699
+    },
+    {
+      "path": "admet_model_outputs_v127/models/herg/valid/physchem/model_1274026.cbm",
+      "sha256": "9cd393deb0452f331c3e45faf42e56e8e907b6c2c8c6359ef055f23dc96f3b21",
+      "bytes": 320816
+    },
+    {
+      "path": "admet_model_outputs_v127/models/herg/valid/physchem/model_1274027.cbm",
+      "sha256": "ffa161df2648d060a54b105dd76fde073a8b74585321b932428303b666f7cca3",
+      "bytes": 320616
+    },
+    {
+      "path": "admet_model_outputs_v127/models/herg/valid/physchem/predictions.npz",
+      "sha256": "5b12906dc866be227a52dfb0f56b390d674317a253e61622b2eb905996eb9e97",
+      "bytes": 83068
+    },
+    {
+      "path": "admet_model_outputs_v127/models/herg/final/physchem/model_1274026.cbm",
+      "sha256": "79e9bfdd55af06d7e03edade23975e8d5c48d48a42aeac5e17c93f39e1885aef",
+      "bytes": 320552
+    },
+    {
+      "path": "admet_model_outputs_v127/models/herg/final/physchem/model_1274027.cbm",
+      "sha256": "a4867a8d65c201313a5a8ebdf51e67251a7044179f011b26d0b8fb9941876181",
+      "bytes": 321112
+    },
+    {
+      "path": "admet_model_outputs_v127/models/herg/final/physchem/predictions.npz",
+      "sha256": "4bd7fe575ad1ec97d8164320615dd5478e902db15de1d2438fe987d12312066b",
+      "bytes": 101486
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/fold0/physchem/model_1274026.cbm",
+      "sha256": "85590ffb3a75e6d7a3542dcbfac05350ad286163aecb1ce380887161db87d740",
+      "bytes": 321808
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/fold0/physchem/model_1274027.cbm",
+      "sha256": "18257fa60cf820e0a4ae91565e9ed1984e020ad51ce59e414286c9ae9e5efe27",
+      "bytes": 321368
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/fold0/physchem/predictions.npz",
+      "sha256": "30983bacb9730280b373d732a9df0b0a0e2c63e7e964a8d954bb5330e8a7d342",
+      "bytes": 83757
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/fold1/physchem/model_1274026.cbm",
+      "sha256": "cfdda00ebc18d652669d4f30a8ae5523fb961521e3a2404206ae98ec5ae03143",
+      "bytes": 321336
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/fold1/physchem/model_1274027.cbm",
+      "sha256": "f03c56b5b3a4adedab759b830aed4cf7fc6d74e31cf7115417bade6ee3007c87",
+      "bytes": 321496
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/fold1/physchem/predictions.npz",
+      "sha256": "d57b57ca728d58e4c48e253b921cdd3b543c72370a3cce105e9196739ebc32d5",
+      "bytes": 83761
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/fold2/physchem/model_1274026.cbm",
+      "sha256": "0c50ca16657db9b6532ffe67e2bf31a1f27c098ef3c9efbb89ae3e53fad6ce27",
+      "bytes": 321608
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/fold2/physchem/model_1274027.cbm",
+      "sha256": "b4d331dde39dd49cac2cd7701412db7c00041aa670b08835076250c334b52e1a",
+      "bytes": 322232
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/fold2/physchem/predictions.npz",
+      "sha256": "e01ab30634482a3f5af5f58d12049f31cd36a91739a1e1de6f225ade2bf0f43c",
+      "bytes": 83749
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/valid/physchem/model_1274026.cbm",
+      "sha256": "ef819fb678892c09ddd64789dc00bcb2babaa44aa016a1588946bf04b7376888",
+      "bytes": 320968
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/valid/physchem/model_1274027.cbm",
+      "sha256": "80cb88b4773d5178f16da8ecef8fd9708c0f4368c4b245ca23ee3bd5e4b8b070",
+      "bytes": 321880
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/valid/physchem/predictions.npz",
+      "sha256": "098dcf80a3b2156e9e769a9c30ca7e89ea2470e0f5960f69bed83ada989f1fe4",
+      "bytes": 82680
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/final/physchem/model_1274026.cbm",
+      "sha256": "ccebda3238c5fb562e8be083b3d86588fa5a35d131489829cc016c797dc55145",
+      "bytes": 321384
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/final/physchem/model_1274027.cbm",
+      "sha256": "9fa836dca9706604b1714a4a5c6f82af1ce64b62068edb201d6c102c7d0f2786",
+      "bytes": 321440
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/final/physchem/predictions.npz",
+      "sha256": "131a041a83fba00c98fc7658d6010348252367db1fee1a9fa06ce79aac757b3a",
+      "bytes": 101539
+    }
+  ],
+  "expected_checkpoints": 20,
+  "baseline": "v145"
+}

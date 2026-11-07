@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "archive": "releases/v334_chemical_domain_dro_20261101.tar.gz",
+  "sha256": "09836f1d20e867c69467a6fcf44979b28213c63c086555c707fe01d31611a061",
+  "bytes": 140210883,
+  "members": 60,
+  "manifest_files": 59,
+  "all_member_hashes_verified": true,
+  "csv_members": [],
+  "restored_absent": 48,
+  "existing_different_preserved": [],
+  "dependency_contents_reverified": true,
+  "dependency_hashes_checked": 50
+}

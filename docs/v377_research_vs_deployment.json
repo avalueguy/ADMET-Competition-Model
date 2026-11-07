@@ -1,0 +1,75 @@
+{
+  "version": "v377",
+  "mae_only_all_four_positive_tasks": [
+    {
+      "task": "clearance_hepatocyte_az",
+      "mae_relative_gains": [
+        0.054799330101672844,
+        0.05891633849819413,
+        0.058182357330235475,
+        0.06002940123752732
+      ],
+      "mean_gain": 0.05798185679190744,
+      "rank_gains": [
+        0.003494094453298291,
+        0.00876538044804831,
+        -0.005228697549277128,
+        -0.03664284432322634
+      ],
+      "official_metric_all_parts_positive": false,
+      "accepted_for_submission": false,
+      "calibrated_rank_reference": true
+    },
+    {
+      "task": "clearance_microsome_az",
+      "mae_relative_gains": [
+        0.0757093912385688,
+        0.05911690378300986,
+        0.09155481643444124,
+        0.1443244696158427
+      ],
+      "mean_gain": 0.09267639526796564,
+      "rank_gains": [
+        0.0074279598038076156,
+        0.024298717387439495,
+        -0.03375073143799212,
+        -0.038038950852571585
+      ],
+      "official_metric_all_parts_positive": false,
+      "accepted_for_submission": false,
+      "calibrated_rank_reference": true
+    },
+    {
+      "task": "vdss_lombardo",
+      "mae_relative_gains": [
+        0.10251531440262632,
+        0.04084105037972855,
+        0.1640344391980728,
+        0.10006559992615853
+      ],
+      "mean_gain": 0.10186410097664655,
+      "rank_gains": [
+        0.0002868692668448469,
+        0.0014520999773751653,
+        -0.0016878426938867763,
+        -0.0013903337351509615
+      ],
+      "official_metric_all_parts_positive": false,
+      "accepted_for_submission": false,
+      "calibrated_rank_reference": true
+    }
+  ],
+  "research_only_mean_over_nine_with_others_zero": {
+    "fold0": 0.02589155952698533,
+    "fold1": 0.017652699184548058,
+    "fold2": 0.03486351255141661,
+    "valid": 0.03382438564216984
+  },
+  "deployable_mean_over_nine": {
+    "fold0": 0.0,
+    "fold1": 0.0,
+    "fold2": 0.0,
+    "valid": 0.0
+  },
+  "caution": "MAE-only signals on four Spearman tasks may lose official points; calibrated reference is not original-model native MAE. This analysis creates no CSV and changes no selection."
+}

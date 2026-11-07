@@ -1,0 +1,14 @@
+{
+  "version": "v364",
+  "official_user_reported": 51.269,
+  "exact_task_mean": 51.26918777272727,
+  "recorded_at_hong_kong": "2026-11-04T15:28:56.689382+08:00",
+  "csv": "admet_submissions/v364_graph_transformer_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261104.csv",
+  "csv_sha256": "777eca282b59101463fe02f71802c24502a87ba7352482b24a64943ef81ede79",
+  "source": "docs/platform_scorecard_v364_20261104.json",
+  "previous_best": "v361",
+  "previous_best_official": 51.24,
+  "delta_task_mean": 0.029659363636369562,
+  "platform_uploaded_byte_hash_confirmed": false,
+  "reason": "User-reported full scorecard improves both changed endpoints, other20 match. Original local strict-validation failures are preserved."
+}

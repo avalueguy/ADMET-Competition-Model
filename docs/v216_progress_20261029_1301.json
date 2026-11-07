@@ -1,0 +1,454 @@
+{
+  "checked_at_utc": "2026-10-29T05:01:36.930319+00:00",
+  "checked_at_hong_kong": "2026-10-29 13:01:36",
+  "training_version": "v216",
+  "delivery_version": "v217",
+  "evaluated_development_tasks": 0,
+  "completed_development_model_tasks": 19,
+  "total_tasks": 21,
+  "saved_development_models": 78,
+  "planned_development_models": 84,
+  "completed_development_partitions": 39,
+  "processes": {
+    "training": {
+      "pid": 5795,
+      "exists": true,
+      "state": "T",
+      "start_ticks": "1979053054",
+      "elapsed_seconds": 4090,
+      "lifetime_cpu_percent": 0.9,
+      "rss_gib": 5.22,
+      "sampled_cpu_percent": 0.0
+    },
+    "pipeline": {
+      "pid": 5796,
+      "exists": true,
+      "state": "S",
+      "start_ticks": "1979053054",
+      "elapsed_seconds": 4090,
+      "lifetime_cpu_percent": 0.0,
+      "rss_gib": 0.02
+    },
+    "coordinator": {
+      "pid": 5827,
+      "exists": true,
+      "state": "S",
+      "start_ticks": "1979055141",
+      "elapsed_seconds": 4069,
+      "lifetime_cpu_percent": 0.1,
+      "rss_gib": 0.68
+    },
+    "workers": [
+      {
+        "pid": 5836,
+        "exists": true,
+        "state": "R",
+        "start_ticks": "1979055484",
+        "elapsed_seconds": 4066,
+        "lifetime_cpu_percent": 332.2,
+        "rss_gib": 5.35,
+        "tasks": [
+          "bbb_martins",
+          "solubility_aqsoldb",
+          "cyp3a4_veith",
+          "cyp3a4_substrate_carbonmangels",
+          "cyp2d6_veith",
+          "ld50_zhu",
+          "half_life_obach"
+        ],
+        "sampled_cpu_percent": 331.6
+      },
+      {
+        "pid": 5837,
+        "exists": true,
+        "state": "Z",
+        "start_ticks": "1979055484",
+        "elapsed_seconds": 4066,
+        "lifetime_cpu_percent": 299.1,
+        "rss_gib": 0.0,
+        "tasks": [
+          "ames",
+          "pgp_broccatelli",
+          "clearance_microsome_az",
+          "dili",
+          "cyp2c9_veith",
+          "lipophilicity_astrazeneca",
+          "cyp2c9_substrate_carbonmangels"
+        ],
+        "sampled_cpu_percent": 0.0
+      },
+      {
+        "pid": 5838,
+        "exists": true,
+        "state": "Z",
+        "start_ticks": "1979055484",
+        "elapsed_seconds": 4066,
+        "lifetime_cpu_percent": 247.2,
+        "rss_gib": 0.0,
+        "tasks": [
+          "clearance_hepatocyte_az",
+          "cyp2d6_substrate_carbonmangels",
+          "caco2_wang",
+          "vdss_lombardo",
+          "ppbr_az",
+          "bioavailability_ma"
+        ],
+        "sampled_cpu_percent": 0.0
+      }
+    ]
+  },
+  "scheduling": {
+    "status": "PARALLEL_DEVELOPMENT",
+    "started_at_utc": "2026-10-29T03:53:51.105625+00:00",
+    "coordinator_pid": 5827,
+    "main_pid": 5795,
+    "main_temporarily_stopped": true,
+    "signature": "9925dd5b16b5306492a6f85b869ae05b816f621bcfbab785b80fbac970428f2e",
+    "source_sha256": "58c7d6d51a72493dd29444c271c82b8c121ec5771e0f0023f56eb995e3d71305",
+    "tasks": [
+      "bbb_martins",
+      "ames",
+      "clearance_hepatocyte_az",
+      "solubility_aqsoldb",
+      "pgp_broccatelli",
+      "cyp2d6_substrate_carbonmangels",
+      "cyp3a4_veith",
+      "clearance_microsome_az",
+      "caco2_wang",
+      "cyp3a4_substrate_carbonmangels",
+      "dili",
+      "vdss_lombardo",
+      "cyp2d6_veith",
+      "cyp2c9_veith",
+      "ppbr_az",
+      "ld50_zhu",
+      "lipophilicity_astrazeneca",
+      "bioavailability_ma",
+      "half_life_obach",
+      "cyp2c9_substrate_carbonmangels"
+    ],
+    "workers": [
+      {
+        "pid": 5836,
+        "tasks": [
+          "bbb_martins",
+          "solubility_aqsoldb",
+          "cyp3a4_veith",
+          "cyp3a4_substrate_carbonmangels",
+          "cyp2d6_veith",
+          "ld50_zhu",
+          "half_life_obach"
+        ],
+        "log": "v219_worker_0.log"
+      },
+      {
+        "pid": 5837,
+        "tasks": [
+          "ames",
+          "pgp_broccatelli",
+          "clearance_microsome_az",
+          "dili",
+          "cyp2c9_veith",
+          "lipophilicity_astrazeneca",
+          "cyp2c9_substrate_carbonmangels"
+        ],
+        "log": "v219_worker_1.log"
+      },
+      {
+        "pid": 5838,
+        "tasks": [
+          "clearance_hepatocyte_az",
+          "cyp2d6_substrate_carbonmangels",
+          "caco2_wang",
+          "vdss_lombardo",
+          "ppbr_az",
+          "bioavailability_ma"
+        ],
+        "log": "v219_worker_2.log"
+      }
+    ],
+    "concurrent_model_fits": 3,
+    "threads_per_model": 4,
+    "max_cpu_threads": 12,
+    "configuration_or_validation_changed": false,
+    "confirmation_observed": false
+  },
+  "cpu_quota": "1400000 100000",
+  "gpu": {
+    "status": "MEASURED",
+    "utilization_percent": 0,
+    "memory_mib": 0
+  },
+  "frozen_selection": null,
+  "sampled_total_training_cpu_percent": 331.6,
+  "total_memory_gib": 10.96,
+  "completed_partition_seconds": {
+    "median": 270,
+    "maximum": 393
+  },
+  "tasks": [
+    {
+      "task": "herg",
+      "name": "hERG心脏毒性",
+      "saved_development_models": 0,
+      "completed_partitions": 0,
+      "active_part": "fold0",
+      "status": "原主进程保留现场，等待并行预计算完成",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 0
+    },
+    {
+      "task": "bbb_martins",
+      "name": "血脑屏障",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 454
+    },
+    {
+      "task": "ames",
+      "name": "AMES致突变",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 531
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "name": "肝细胞清除率",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 405
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "name": "溶解度",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 602
+    },
+    {
+      "task": "pgp_broccatelli",
+      "name": "P-gp抑制",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 397
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "name": "CYP2D6底物",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 592
+    },
+    {
+      "task": "cyp3a4_veith",
+      "name": "CYP3A4抑制",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 756
+    },
+    {
+      "task": "clearance_microsome_az",
+      "name": "肝微粒体清除率",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 384
+    },
+    {
+      "task": "caco2_wang",
+      "name": "Caco-2通透性",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 608
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "name": "CYP3A4底物",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 604
+    },
+    {
+      "task": "dili",
+      "name": "肝损伤DILI",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 489
+    },
+    {
+      "task": "vdss_lombardo",
+      "name": "分布容积VDSS",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 466
+    },
+    {
+      "task": "cyp2d6_veith",
+      "name": "CYP2D6抑制",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 782
+    },
+    {
+      "task": "cyp2c9_veith",
+      "name": "CYP2C9抑制",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 761
+    },
+    {
+      "task": "ppbr_az",
+      "name": "血浆蛋白结合率",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 445
+    },
+    {
+      "task": "ld50_zhu",
+      "name": "急性毒性LD50",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 483
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "name": "脂溶性",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 487
+    },
+    {
+      "task": "bioavailability_ma",
+      "name": "生物利用度",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 599
+    },
+    {
+      "task": "half_life_obach",
+      "name": "半衰期",
+      "saved_development_models": 2,
+      "completed_partitions": 1,
+      "active_part": "fold1",
+      "status": "训练fold1，已保存0/2种子",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 306
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "name": "CYP2C9底物",
+      "saved_development_models": 4,
+      "completed_partitions": 2,
+      "active_part": null,
+      "status": "开发模型完成，等原选择器评分",
+      "saved_confirmation_and_final_models": 0,
+      "development": null,
+      "confirmation": null,
+      "train_seconds": 604
+    }
+  ],
+  "failure": null,
+  "scheduler_failure": null,
+  "pipeline": {
+    "status": "WAITING_TRAINING",
+    "route": "v216"
+  },
+  "confirmation": null,
+  "csv_created": false,
+  "automatic_submission": false,
+  "official_best": 51.166,
+  "limitation": "Saved models and development gains are local evidence; no official improvement or final eligibility implied."
+}

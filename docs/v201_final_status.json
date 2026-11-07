@@ -1,0 +1,176 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "checked_at_utc": "2026-10-28T07:23:23.410286+00:00",
+  "training_version": "v200",
+  "delivery_version": "v201",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52,
+  "target_achieved": false,
+  "development_tasks": 5,
+  "nominated_tasks": [],
+  "accepted_tasks": [],
+  "best_development": [
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "config": {
+        "strength": 0.003
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1635,
+          "baseline": 0.7675069205648937,
+          "expert": 0.9581462582197825,
+          "candidate": 0.7776126433783775,
+          "gain": -0.0131669468283699
+        },
+        {
+          "part": "fold1",
+          "rows": 1635,
+          "baseline": 0.7502386159917903,
+          "expert": 0.8716638492244903,
+          "candidate": 0.752101378368896,
+          "gain": -0.002482893225434935
+        }
+      ],
+      "objective": -0.0131669468283699
+    },
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "config": {
+        "strength": 0.003
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 212,
+          "baseline": 0.38815645870734267,
+          "expert": 0.5036610345695344,
+          "candidate": 0.40133334087466993,
+          "gain": -0.03394734744646412
+        },
+        {
+          "part": "fold1",
+          "rows": 212,
+          "baseline": 0.3348527606452333,
+          "expert": 0.41149212809307634,
+          "candidate": 0.3413734887295434,
+          "gain": -0.019473418919244364
+        }
+      ],
+      "objective": -0.03394734744646412
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "config": {
+        "strength": 0.003
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 650,
+          "baseline": 8.068577292713924,
+          "expert": 9.591245606281404,
+          "candidate": 8.153679130813222,
+          "gain": -0.010547316461372544
+        },
+        {
+          "part": "fold1",
+          "rows": 651,
+          "baseline": 7.585961846123768,
+          "expert": 8.97061200918053,
+          "candidate": 7.670977465152285,
+          "gain": -0.011206966335054589
+        }
+      ],
+      "objective": -0.011206966335054589
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "config": {
+        "strength": 0.003
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 1210,
+          "baseline": 0.4642859078866628,
+          "expert": 0.5806032857339258,
+          "candidate": 0.47277573715036286,
+          "gain": -0.018285778481505248
+        },
+        {
+          "part": "fold1",
+          "rows": 1210,
+          "baseline": 0.534364444193799,
+          "expert": 0.6438750158411585,
+          "candidate": 0.5449095090801329,
+          "gain": -0.019733844571644982
+        }
+      ],
+      "objective": -0.019733844571644982
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "config": {
+        "strength": 0.003
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 980,
+          "baseline": 0.4900050804950242,
+          "expert": 0.8432197625061344,
+          "candidate": 0.5275259416261028,
+          "gain": -0.0765723920518811
+        },
+        {
+          "part": "fold1",
+          "rows": 980,
+          "baseline": 0.47650922350658986,
+          "expert": 0.7310434452798897,
+          "candidate": 0.4885290456699264,
+          "gain": -0.025224741873585782
+        }
+      ],
+      "objective": -0.0765723920518811
+    }
+  ],
+  "confirmation_results": [],
+  "archive": {
+    "status": "PASS",
+    "prefix": "v201_exact_newton_splines_20261028",
+    "archive_sha256": "b89817c8b0cf6b7c9736f5a0b387415d6ffe7b539a884dae39c9a23ef47efe75",
+    "manifest_files": 121,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 69,
+    "existing_exact": 52,
+    "existing_updated_docs_preserved": []
+  },
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "frozen_gates_unchanged": true,
+  "no_confirmation_fallback": true,
+  "rejected_route_restarted": false,
+  "numerical_nonconvergence_resolved": true,
+  "original_objective_unchanged": true,
+  "five_mae_models_converged": true,
+  "development_nominees": 0,
+  "remote_process_exit_checked_at_utc": "2026-10-28T07:24:07.423242+00:00",
+  "training_pid_exited": 8385,
+  "pipeline_pid_exited": 8386,
+  "next_method_requirement": "Do not tune or rerun the rejected additive route; investigate a genuinely different model family under original gates."
+}

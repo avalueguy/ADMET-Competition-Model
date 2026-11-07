@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "path": "releases/v354_experimental_combinations_20261102.tar.gz",
+  "sha256": "ff3f8aaf56138724fe7b0e118d23b898fdace5ac3d885c8271302713be5c268b",
+  "files": 227,
+  "all_member_hashes_verified": true,
+  "experimental_only": true
+}

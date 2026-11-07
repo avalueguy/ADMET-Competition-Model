@@ -1,0 +1,575 @@
+{
+  "version": "v386",
+  "status": "VERIFIED_EXPERIMENTAL_DELIVERY",
+  "baseline": {
+    "version": "v385_associated",
+    "official_user_reported": 51.308,
+    "exact_task_mean": 51.308044136363634,
+    "csv": "admet_submissions/v385_v382_warped_median_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+    "csv_sha256": "355d8cf8f67bfd1e81b67f99e476a9780f1737d1e598a795d651bc589eeff1d0",
+    "source": "docs/platform_scorecard_v385_20261106.json",
+    "platform_uploaded_byte_hash_confirmed": false,
+    "association": "User full22 scorecard immediately following v385 delivery; only PPBR changed exactly as expected. Version associated, not explicitly named in this feedback."
+  },
+  "signature": "91e843a18e8b19fb95f0b1f04703e0cf611c9f2c14e299fbd733d213606067a0",
+  "official_best": 51.308,
+  "new_official_score": null,
+  "csv": "admet_submissions/v386_v385_oof_monotone_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+  "accepted_tasks": [
+    "lipophilicity_astrazeneca"
+  ],
+  "task_evidence": [
+    {
+      "task": "caco2_wang",
+      "best": {
+        "name": "sqrt_median_mono02",
+        "base": "sqrt_median",
+        "calibration": "mono02",
+        "penalty": 0.02
+      },
+      "weight": 0.5,
+      "parts": [
+        {
+          "part": "fold0",
+          "baseline": 0.38815645870734267,
+          "candidate": 0.3815709279879447,
+          "gain": 0.016966175807893145
+        },
+        {
+          "part": "fold1",
+          "baseline": 0.3348527606452333,
+          "candidate": 0.3295052561058406,
+          "gain": 0.015969719135922624
+        },
+        {
+          "part": "fold2",
+          "baseline": 0.3570673877285404,
+          "candidate": 0.35357111578261424,
+          "gain": 0.009791630560739414
+        },
+        {
+          "part": "valid",
+          "baseline": 0.3583998208980098,
+          "candidate": 0.35995322609459496,
+          "gain": -0.004334280058212414
+        }
+      ],
+      "accepted": false,
+      "strict_accepted": false,
+      "rejection_reasons": [
+        "valid:MAE不改善"
+      ]
+    },
+    {
+      "task": "ld50_zhu",
+      "best": {
+        "name": "tanimoto_median_mono02",
+        "base": "tanimoto_median",
+        "calibration": "mono02",
+        "penalty": 0.02
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "baseline": 0.4623870980111785,
+          "candidate": 0.4622847620485202,
+          "gain": 0.00022132097348404243
+        },
+        {
+          "part": "fold1",
+          "baseline": 0.5305508449297317,
+          "candidate": 0.5300414548450522,
+          "gain": 0.0009601154904333539
+        },
+        {
+          "part": "fold2",
+          "baseline": 0.4445216135337673,
+          "candidate": 0.44450573573747754,
+          "gain": 3.5718839773687864e-05
+        },
+        {
+          "part": "valid",
+          "baseline": 0.5148793871172143,
+          "candidate": 0.5166661935261968,
+          "gain": -0.003470339760515157
+        }
+      ],
+      "accepted": false,
+      "strict_accepted": false,
+      "rejection_reasons": [
+        "valid:MAE不改善"
+      ]
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "best": {
+        "name": "sqrt_gaussian_rank_mono02",
+        "base": "sqrt_gaussian_rank",
+        "calibration": "mono02",
+        "penalty": 0.02
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "baseline": 0.4792825842290003,
+          "candidate": 0.47830423467832256,
+          "gain": 0.0020412791594577565
+        },
+        {
+          "part": "fold1",
+          "baseline": 0.45388775615012006,
+          "candidate": 0.45244808968897426,
+          "gain": 0.0031718556881927327
+        },
+        {
+          "part": "fold2",
+          "baseline": 0.46955703534892407,
+          "candidate": 0.4692320316296325,
+          "gain": 0.0006921496108562264
+        },
+        {
+          "part": "valid",
+          "baseline": 0.4635807344151472,
+          "candidate": 0.4615251448027317,
+          "gain": 0.004434156684722468
+        }
+      ],
+      "accepted": true,
+      "strict_accepted": false,
+      "rejection_reasons": []
+    },
+    {
+      "task": "ppbr_az",
+      "best": {
+        "name": "sqrt_gaussian_rank_mono02",
+        "base": "sqrt_gaussian_rank",
+        "calibration": "mono02",
+        "penalty": 0.02
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "baseline": 7.705649013834862,
+          "candidate": 7.669305112100724,
+          "gain": 0.00471652701399791
+        },
+        {
+          "part": "fold1",
+          "baseline": 7.267399449875723,
+          "candidate": 7.272758248437784,
+          "gain": -0.0007373749852366732
+        }
+      ],
+      "accepted": false,
+      "strict_accepted": false,
+      "rejection_reasons": [
+        "fold1:MAE不改善",
+        "开发门槛未过，未运行确认"
+      ]
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "best": {
+        "name": "sqrt_median_mono02",
+        "base": "sqrt_median",
+        "calibration": "mono02",
+        "penalty": 0.02
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "baseline": 0.7360725561987135,
+          "candidate": 0.7351528904144525,
+          "gain": 0.0012494227321968934
+        },
+        {
+          "part": "fold1",
+          "baseline": 0.7161434295213145,
+          "candidate": 0.7155464671210804,
+          "gain": 0.0008335793859522312
+        },
+        {
+          "part": "fold2",
+          "baseline": 0.5980757752371045,
+          "candidate": 0.6025119094156247,
+          "gain": -0.007417344694761283
+        },
+        {
+          "part": "valid",
+          "baseline": 0.983661760866286,
+          "candidate": 0.9781107119968937,
+          "gain": 0.005643249631360698
+        }
+      ],
+      "accepted": false,
+      "strict_accepted": false,
+      "rejection_reasons": [
+        "fold2:MAE不改善"
+      ]
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "best": {
+        "name": "sqrt_gaussian_rank_mono10",
+        "base": "sqrt_gaussian_rank",
+        "calibration": "mono10",
+        "penalty": 0.1
+      },
+      "weight": 0.75,
+      "parts": [
+        {
+          "part": "fold0",
+          "baseline": 31.964365097329107,
+          "candidate": 28.37916160751849,
+          "gain": 0.11216251218799246,
+          "rank_gain": 0.0026469943722055023
+        },
+        {
+          "part": "fold1",
+          "baseline": 29.556240307657728,
+          "candidate": 26.447563858795025,
+          "gain": 0.10517834530047705,
+          "rank_gain": 0.020797345756442764
+        },
+        {
+          "part": "fold2",
+          "baseline": 29.302112399955053,
+          "candidate": 27.900581572945338,
+          "gain": 0.04783036826423016,
+          "rank_gain": -0.0029914028582339602
+        },
+        {
+          "part": "valid",
+          "baseline": 34.67105717549046,
+          "candidate": 33.6398848781266,
+          "gain": 0.029741587980559536,
+          "rank_gain": -0.04820359984033623
+        }
+      ],
+      "accepted": false,
+      "strict_accepted": false,
+      "rejection_reasons": [
+        "fold2:Spearman不改善",
+        "valid:Spearman不改善"
+      ]
+    },
+    {
+      "task": "clearance_microsome_az",
+      "best": {
+        "name": "sqrt_median_raw",
+        "base": "sqrt_median",
+        "calibration": "raw",
+        "penalty": 0.0
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "baseline": 27.116399993896483,
+          "candidate": 26.6994860471182,
+          "gain": 0.015374974070013897,
+          "rank_gain": 0.0035132070976717777
+        },
+        {
+          "part": "fold1",
+          "baseline": 26.81884782509955,
+          "candidate": 26.458592113590846,
+          "gain": 0.013432930223480464,
+          "rank_gain": -0.004369910380044417
+        }
+      ],
+      "accepted": false,
+      "strict_accepted": false,
+      "rejection_reasons": [
+        "fold1:Spearman不改善",
+        "开发门槛未过，未运行确认"
+      ]
+    },
+    {
+      "task": "half_life_obach",
+      "best": {
+        "name": "sqrt_gaussian_rank_mono02",
+        "base": "sqrt_gaussian_rank",
+        "calibration": "mono02",
+        "penalty": 0.02
+      },
+      "weight": 0.75,
+      "parts": [
+        {
+          "part": "fold0",
+          "baseline": 20.806086576482805,
+          "candidate": 11.61189159692615,
+          "gain": 0.4418992945049497,
+          "rank_gain": 0.01269083265250237
+        },
+        {
+          "part": "fold1",
+          "baseline": 22.383562434963547,
+          "candidate": 14.532572438533698,
+          "gain": 0.35074801069942535,
+          "rank_gain": 0.005113834855686505
+        },
+        {
+          "part": "fold2",
+          "baseline": 23.89586253902183,
+          "candidate": 22.874196962294118,
+          "gain": 0.04275491521008451,
+          "rank_gain": -0.022966949549173776
+        },
+        {
+          "part": "valid",
+          "baseline": 23.279000891067103,
+          "candidate": 30.81846400377828,
+          "gain": -0.3238739990599988,
+          "rank_gain": 0.0018368905403581826
+        }
+      ],
+      "accepted": false,
+      "strict_accepted": false,
+      "rejection_reasons": [
+        "valid:MAE不改善",
+        "fold2:Spearman不改善"
+      ]
+    },
+    {
+      "task": "vdss_lombardo",
+      "best": {
+        "name": "sqrt_median_raw",
+        "base": "sqrt_median",
+        "calibration": "raw",
+        "penalty": 0.0
+      },
+      "weight": 0.1,
+      "parts": [
+        {
+          "part": "fold0",
+          "baseline": 4.419333877893289,
+          "candidate": 4.251904167598572,
+          "gain": 0.037885734574671,
+          "rank_gain": -0.021329248028338355
+        },
+        {
+          "part": "fold1",
+          "baseline": 6.180262281910009,
+          "candidate": 6.169478371829171,
+          "gain": 0.001744895214625983,
+          "rank_gain": -0.03170021327743833
+        }
+      ],
+      "accepted": false,
+      "strict_accepted": false,
+      "rejection_reasons": [
+        "fold0:Spearman不改善",
+        "fold1:Spearman不改善",
+        "开发门槛未过，未运行确认"
+      ]
+    }
+  ],
+  "nine_task_mean_relative_MAE_gain_by_part": {
+    "fold0": 0.00022680879549530627,
+    "fold1": 0.0003524284097991925,
+    "fold2": 7.690551231735848e-05,
+    "valid": 0.0004926840760802742
+  },
+  "five_scored_task_mean_relative_MAE_gain_by_part": {
+    "fold0": 0.0004082558318915513,
+    "fold1": 0.0006343711376385465,
+    "fold2": 0.00013842992217124526,
+    "valid": 0.0008868313369444936
+  },
+  "goal_mean_5percent_achieved_local": false,
+  "five_scored_goal_achieved_local": false,
+  "full_development_base_fits": 216,
+  "full_development_calibration_fits": 108,
+  "prediction_packages_verified": 175,
+  "all_base_fits_verified": 372,
+  "all_calibration_fits_verified": 121,
+  "model_replay_max_error": 0.0,
+  "confirmation_bootstrap": {
+    "caco2_wang": [
+      {
+        "part": "fold2",
+        "groups": 109,
+        "ci90": [
+          -0.02750299268301046,
+          0.053146533989993756
+        ],
+        "lower_positive": false
+      },
+      {
+        "part": "valid",
+        "groups": 53,
+        "ci90": [
+          -0.04551192582223459,
+          0.04462584346043378
+        ],
+        "lower_positive": false
+      }
+    ],
+    "ld50_zhu": [
+      {
+        "part": "fold2",
+        "groups": 9,
+        "ci90": [
+          -0.005917503548206287,
+          0.014854863821734794
+        ],
+        "lower_positive": false
+      },
+      {
+        "part": "valid",
+        "groups": 1930,
+        "ci90": [
+          -0.005192581241624013,
+          -0.001927916679880927
+        ],
+        "lower_positive": false
+      }
+    ],
+    "lipophilicity_astrazeneca": [
+      {
+        "part": "fold2",
+        "groups": 537,
+        "ci90": [
+          -0.0036957319775933603,
+          0.005338971592951023
+        ],
+        "lower_positive": false
+      },
+      {
+        "part": "valid",
+        "groups": 239,
+        "ci90": [
+          -0.0016810127749350805,
+          0.01029689867337725
+        ],
+        "lower_positive": false
+      }
+    ],
+    "solubility_aqsoldb": [
+      {
+        "part": "fold2",
+        "groups": 14,
+        "ci90": [
+          -0.015077381348921622,
+          0.009113312329324504
+        ],
+        "lower_positive": false
+      },
+      {
+        "part": "valid",
+        "groups": 2874,
+        "ci90": [
+          0.003881284422554579,
+          0.0076331216373524855
+        ],
+        "lower_positive": true
+      }
+    ],
+    "clearance_hepatocyte_az": [
+      {
+        "part": "fold2",
+        "groups": 175,
+        "ci90": [
+          -0.036323810713894004,
+          0.1280050502038131
+        ],
+        "lower_positive": false
+      },
+      {
+        "part": "valid",
+        "groups": 72,
+        "ci90": [
+          -0.11084961617531262,
+          0.1439923198255915
+        ],
+        "lower_positive": false
+      }
+    ],
+    "half_life_obach": [
+      {
+        "part": "fold2",
+        "groups": 108,
+        "ci90": [
+          -0.03719189797744846,
+          0.17796868246571373
+        ],
+        "lower_positive": false
+      },
+      {
+        "part": "valid",
+        "groups": 56,
+        "ci90": [
+          -1.4527374277296197,
+          0.027850707262433907
+        ],
+        "lower_positive": false
+      }
+    ]
+  },
+  "all_fitting_remote": true,
+  "strict_stability_confirmed": false,
+  "automatic_platform_submission": false,
+  "limitation": "Repeatedly used public partitions, historical controls partly proxy. Four ranking MAEs use calibrated references. Positive direction is not proof of hidden-test improvement.",
+  "csv_sha256": "3d37c20bf74db5304a3a783683b90e8d18984f3237b3c6813f60310c5363447b",
+  "fusion": [
+    {
+      "task": "lipophilicity_astrazeneca",
+      "config": {
+        "name": "sqrt_gaussian_rank_mono02",
+        "base": "sqrt_gaussian_rank",
+        "calibration": "mono02",
+        "penalty": 0.02
+      },
+      "weight": 0.1,
+      "strict_accepted": false,
+      "rows": 840
+    }
+  ],
+  "changed_rows": {
+    "lipophilicity_astrazeneca": 840
+  },
+  "unchanged_tasks": 21,
+  "format": {
+    "status": "PASS",
+    "sha256": "3d37c20bf74db5304a3a783683b90e8d18984f3237b3c6813f60310c5363447b",
+    "rows": 16379,
+    "columns": 6,
+    "tasks": 22,
+    "nonprediction_fields_exact": true,
+    "finite_predictions": true,
+    "unique_task_sample_keys": true,
+    "task_counts": {
+      "ames": 1457,
+      "bbb_martins": 406,
+      "bioavailability_ma": 128,
+      "caco2_wang": 182,
+      "clearance_hepatocyte_az": 243,
+      "clearance_microsome_az": 221,
+      "cyp2c9_substrate_carbonmangels": 135,
+      "cyp2c9_veith": 2419,
+      "cyp2d6_substrate_carbonmangels": 135,
+      "cyp2d6_veith": 2626,
+      "cyp3a4_substrate_carbonmangels": 135,
+      "cyp3a4_veith": 2467,
+      "dili": 96,
+      "half_life_obach": 135,
+      "herg": 132,
+      "hia_hou": 117,
+      "ld50_zhu": 1478,
+      "lipophilicity_astrazeneca": 840,
+      "pgp_broccatelli": 245,
+      "ppbr_az": 559,
+      "solubility_aqsoldb": 1997,
+      "vdss_lombardo": 226
+    },
+    "utf8_bom": true,
+    "crlf_only": true,
+    "official_score": null,
+    "automatically_uploaded": false
+  }
+}

@@ -1,0 +1,3046 @@
+{
+  "status": "COMPLETE_FIT_ONLY_DIAGNOSTIC",
+  "source_sha256": "994bc76ddc9469461d7ef5cf360d044de3d9a790e2f411345eb3096133d63d28",
+  "baseline_signature": "5a79bb5fd6cd135690d750fa5beae79f7a5674958ef83b87689f190be5067c91",
+  "parts": [
+    "fold0_fit",
+    "fold1_fit"
+  ],
+  "records": [
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 305,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 1.0,
+              "count": 208,
+              "fraction": 0.6819672131147541
+            },
+            {
+              "value": 0.0,
+              "count": 97,
+              "fraction": 0.3180327868852459
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 303,
+            "repeated_identities": 2,
+            "repeated_rows": 4,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 286,
+            "repeated_identities": 19,
+            "repeated_rows": 38,
+            "conflicting_identities": 2,
+            "conflicting_rows": 4,
+            "conflicting_row_fraction": 0.013114754098360656,
+            "median_disagreement_iqr": 1.0,
+            "binary_conflicting_identities": 2
+          },
+          "neutral_parent": {
+            "unique_identities": 272,
+            "repeated_identities": 33,
+            "repeated_rows": 66,
+            "conflicting_identities": 4,
+            "conflicting_rows": 8,
+            "conflicting_row_fraction": 0.02622950819672131,
+            "median_disagreement_iqr": 1.0,
+            "binary_conflicting_identities": 4
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 305,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 1.0,
+              "count": 212,
+              "fraction": 0.6950819672131148
+            },
+            {
+              "value": 0.0,
+              "count": 93,
+              "fraction": 0.30491803278688523
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 302,
+            "repeated_identities": 3,
+            "repeated_rows": 6,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 281,
+            "repeated_identities": 24,
+            "repeated_rows": 48,
+            "conflicting_identities": 1,
+            "conflicting_rows": 2,
+            "conflicting_row_fraction": 0.006557377049180328,
+            "median_disagreement_iqr": 1.0,
+            "binary_conflicting_identities": 1
+          },
+          "neutral_parent": {
+            "unique_identities": 274,
+            "repeated_identities": 29,
+            "repeated_rows": 60,
+            "conflicting_identities": 3,
+            "conflicting_rows": 6,
+            "conflicting_row_fraction": 0.019672131147540985,
+            "median_disagreement_iqr": 1.0,
+            "binary_conflicting_identities": 3
+          }
+        }
+      ]
+    },
+    {
+      "task": "bbb_martins",
+      "metric": "AUROC",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 947,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 1.0,
+              "count": 711,
+              "fraction": 0.750791974656811
+            },
+            {
+              "value": 0.0,
+              "count": 236,
+              "fraction": 0.249208025343189
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 924,
+            "repeated_identities": 23,
+            "repeated_rows": 46,
+            "conflicting_identities": 7,
+            "conflicting_rows": 14,
+            "conflicting_row_fraction": 0.014783526927138331,
+            "median_disagreement_iqr": 20.0,
+            "binary_conflicting_identities": 7
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 913,
+            "repeated_identities": 32,
+            "repeated_rows": 66,
+            "conflicting_identities": 8,
+            "conflicting_rows": 17,
+            "conflicting_row_fraction": 0.01795142555438226,
+            "median_disagreement_iqr": 20.0,
+            "binary_conflicting_identities": 8
+          },
+          "neutral_parent": {
+            "unique_identities": 908,
+            "repeated_identities": 36,
+            "repeated_rows": 75,
+            "conflicting_identities": 8,
+            "conflicting_rows": 17,
+            "conflicting_row_fraction": 0.01795142555438226,
+            "median_disagreement_iqr": 20.0,
+            "binary_conflicting_identities": 8
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 947,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 1.0,
+              "count": 697,
+              "fraction": 0.7360084477296727
+            },
+            {
+              "value": 0.0,
+              "count": 250,
+              "fraction": 0.26399155227032733
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 920,
+            "repeated_identities": 25,
+            "repeated_rows": 52,
+            "conflicting_identities": 5,
+            "conflicting_rows": 10,
+            "conflicting_row_fraction": 0.010559662090813094,
+            "median_disagreement_iqr": 1.0,
+            "binary_conflicting_identities": 5
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 908,
+            "repeated_identities": 36,
+            "repeated_rows": 75,
+            "conflicting_identities": 7,
+            "conflicting_rows": 14,
+            "conflicting_row_fraction": 0.014783526927138331,
+            "median_disagreement_iqr": 1.0,
+            "binary_conflicting_identities": 7
+          },
+          "neutral_parent": {
+            "unique_identities": 902,
+            "repeated_identities": 41,
+            "repeated_rows": 86,
+            "conflicting_identities": 8,
+            "conflicting_rows": 16,
+            "conflicting_row_fraction": 0.01689545934530095,
+            "median_disagreement_iqr": 1.0,
+            "binary_conflicting_identities": 8
+          }
+        }
+      ]
+    },
+    {
+      "task": "ames",
+      "metric": "AUROC",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 3123,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 1.0,
+              "count": 1760,
+              "fraction": 0.563560678834454
+            },
+            {
+              "value": 0.0,
+              "count": 1363,
+              "fraction": 0.43643932116554596
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 3111,
+            "repeated_identities": 12,
+            "repeated_rows": 24,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 2899,
+            "repeated_identities": 222,
+            "repeated_rows": 446,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "neutral_parent": {
+            "unique_identities": 2899,
+            "repeated_identities": 222,
+            "repeated_rows": 446,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 3122,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 1.0,
+              "count": 1811,
+              "fraction": 0.5800768737988469
+            },
+            {
+              "value": 0.0,
+              "count": 1311,
+              "fraction": 0.41992312620115313
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 3108,
+            "repeated_identities": 14,
+            "repeated_rows": 28,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 2895,
+            "repeated_identities": 224,
+            "repeated_rows": 451,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "neutral_parent": {
+            "unique_identities": 2895,
+            "repeated_identities": 224,
+            "repeated_rows": 451,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          }
+        }
+      ]
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 566,
+          "unique_labels": 241,
+          "label_quantiles": [
+            3.0,
+            3.0,
+            3.0,
+            19.93,
+            150.0,
+            150.0,
+            150.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 3.0,
+              "count": 82,
+              "fraction": 0.14487632508833923
+            },
+            {
+              "value": 150.0,
+              "count": 62,
+              "fraction": 0.10954063604240283
+            },
+            {
+              "value": 10.0,
+              "count": 6,
+              "fraction": 0.01060070671378092
+            },
+            {
+              "value": 12.3,
+              "count": 6,
+              "fraction": 0.01060070671378092
+            },
+            {
+              "value": 4.0,
+              "count": 5,
+              "fraction": 0.0088339222614841
+            },
+            {
+              "value": 4.79,
+              "count": 5,
+              "fraction": 0.0088339222614841
+            },
+            {
+              "value": 5.13,
+              "count": 5,
+              "fraction": 0.0088339222614841
+            },
+            {
+              "value": 6.0,
+              "count": 5,
+              "fraction": 0.0088339222614841
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 474,
+            "repeated_identities": 92,
+            "repeated_rows": 184,
+            "conflicting_identities": 92,
+            "conflicting_rows": 184,
+            "conflicting_row_fraction": 0.3250883392226148,
+            "median_disagreement_iqr": 0.3302447552447552,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 463,
+            "repeated_identities": 97,
+            "repeated_rows": 200,
+            "conflicting_identities": 97,
+            "conflicting_rows": 200,
+            "conflicting_row_fraction": 0.35335689045936397,
+            "median_disagreement_iqr": 0.32045454545454544,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 463,
+            "repeated_identities": 97,
+            "repeated_rows": 200,
+            "conflicting_identities": 97,
+            "conflicting_rows": 200,
+            "conflicting_row_fraction": 0.35335689045936397,
+            "median_disagreement_iqr": 0.32045454545454544,
+            "binary_conflicting_identities": null
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 565,
+          "unique_labels": 240,
+          "label_quantiles": [
+            3.0,
+            3.0,
+            3.0,
+            16.22,
+            150.0,
+            150.0,
+            150.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 3.0,
+              "count": 93,
+              "fraction": 0.16460176991150444
+            },
+            {
+              "value": 150.0,
+              "count": 67,
+              "fraction": 0.11858407079646018
+            },
+            {
+              "value": 8.0,
+              "count": 7,
+              "fraction": 0.012389380530973451
+            },
+            {
+              "value": 4.0,
+              "count": 6,
+              "fraction": 0.010619469026548672
+            },
+            {
+              "value": 10.0,
+              "count": 6,
+              "fraction": 0.010619469026548672
+            },
+            {
+              "value": 5.0,
+              "count": 5,
+              "fraction": 0.008849557522123894
+            },
+            {
+              "value": 6.0,
+              "count": 5,
+              "fraction": 0.008849557522123894
+            },
+            {
+              "value": 7.0,
+              "count": 5,
+              "fraction": 0.008849557522123894
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 478,
+            "repeated_identities": 87,
+            "repeated_rows": 174,
+            "conflicting_identities": 87,
+            "conflicting_rows": 174,
+            "conflicting_row_fraction": 0.30796460176991153,
+            "median_disagreement_iqr": 0.33661075766338927,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 470,
+            "repeated_identities": 92,
+            "repeated_rows": 187,
+            "conflicting_identities": 91,
+            "conflicting_rows": 185,
+            "conflicting_row_fraction": 0.3274336283185841,
+            "median_disagreement_iqr": 0.3169462116830538,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 470,
+            "repeated_identities": 92,
+            "repeated_rows": 187,
+            "conflicting_identities": 91,
+            "conflicting_rows": 185,
+            "conflicting_row_fraction": 0.3274336283185841,
+            "median_disagreement_iqr": 0.3169462116830538,
+            "binary_conflicting_identities": null
+          }
+        }
+      ]
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 3410,
+          "unique_labels": 2820,
+          "label_quantiles": [
+            -12.0605,
+            -8.362902274921,
+            -5.6474456686,
+            -2.69,
+            -0.68761545919,
+            0.8531171826769995,
+            1.5823133383
+          ],
+          "most_frequent_values": [
+            {
+              "value": -3.55,
+              "count": 8,
+              "fraction": 0.002346041055718475
+            },
+            {
+              "value": -4.7,
+              "count": 7,
+              "fraction": 0.0020527859237536657
+            },
+            {
+              "value": -2.68,
+              "count": 7,
+              "fraction": 0.0020527859237536657
+            },
+            {
+              "value": -2.3,
+              "count": 7,
+              "fraction": 0.0020527859237536657
+            },
+            {
+              "value": -1.23,
+              "count": 7,
+              "fraction": 0.0020527859237536657
+            },
+            {
+              "value": -4.52,
+              "count": 6,
+              "fraction": 0.0017595307917888563
+            },
+            {
+              "value": -3.98,
+              "count": 6,
+              "fraction": 0.0017595307917888563
+            },
+            {
+              "value": -3.82,
+              "count": 6,
+              "fraction": 0.0017595307917888563
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 3410,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 3301,
+            "repeated_identities": 99,
+            "repeated_rows": 208,
+            "conflicting_identities": 91,
+            "conflicting_rows": 190,
+            "conflicting_row_fraction": 0.05571847507331378,
+            "median_disagreement_iqr": 0.015726956792364674,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 3254,
+            "repeated_identities": 137,
+            "repeated_rows": 293,
+            "conflicting_identities": 129,
+            "conflicting_rows": 275,
+            "conflicting_row_fraction": 0.08064516129032258,
+            "median_disagreement_iqr": 0.039296644016805854,
+            "binary_conflicting_identities": null
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 3410,
+          "unique_labels": 2843,
+          "label_quantiles": [
+            -11.6,
+            -9.09571067758,
+            -6.496961805480002,
+            -2.7485272480000003,
+            -0.85,
+            0.675173,
+            1.2878896498
+          ],
+          "most_frequent_values": [
+            {
+              "value": -2.67,
+              "count": 9,
+              "fraction": 0.0026392961876832845
+            },
+            {
+              "value": -1.78,
+              "count": 8,
+              "fraction": 0.002346041055718475
+            },
+            {
+              "value": -9.1,
+              "count": 7,
+              "fraction": 0.0020527859237536657
+            },
+            {
+              "value": -3.0,
+              "count": 7,
+              "fraction": 0.0020527859237536657
+            },
+            {
+              "value": -2.82,
+              "count": 7,
+              "fraction": 0.0020527859237536657
+            },
+            {
+              "value": -2.48,
+              "count": 7,
+              "fraction": 0.0020527859237536657
+            },
+            {
+              "value": -1.72,
+              "count": 7,
+              "fraction": 0.0020527859237536657
+            },
+            {
+              "value": -3.55,
+              "count": 6,
+              "fraction": 0.0017595307917888563
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 3410,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 3334,
+            "repeated_identities": 70,
+            "repeated_rows": 146,
+            "conflicting_identities": 65,
+            "conflicting_rows": 136,
+            "conflicting_row_fraction": 0.03988269794721408,
+            "median_disagreement_iqr": 0.027517152248811242,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 3281,
+            "repeated_identities": 111,
+            "repeated_rows": 240,
+            "conflicting_identities": 106,
+            "conflicting_rows": 230,
+            "conflicting_row_fraction": 0.06744868035190615,
+            "median_disagreement_iqr": 0.11704828551224072,
+            "binary_conflicting_identities": null
+          }
+        }
+      ]
+    },
+    {
+      "task": "pgp_broccatelli",
+      "metric": "AUROC",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 568,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 1.0,
+              "count": 312,
+              "fraction": 0.5492957746478874
+            },
+            {
+              "value": 0.0,
+              "count": 256,
+              "fraction": 0.4507042253521127
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 565,
+            "repeated_identities": 3,
+            "repeated_rows": 6,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 537,
+            "repeated_identities": 27,
+            "repeated_rows": 58,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "neutral_parent": {
+            "unique_identities": 537,
+            "repeated_identities": 27,
+            "repeated_rows": 58,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 567,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 1.0,
+              "count": 295,
+              "fraction": 0.5202821869488536
+            },
+            {
+              "value": 0.0,
+              "count": 272,
+              "fraction": 0.47971781305114636
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 564,
+            "repeated_identities": 3,
+            "repeated_rows": 6,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 547,
+            "repeated_identities": 18,
+            "repeated_rows": 38,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "neutral_parent": {
+            "unique_identities": 547,
+            "repeated_identities": 18,
+            "repeated_rows": 38,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          }
+        }
+      ]
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 310,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 0.0,
+              "count": 213,
+              "fraction": 0.6870967741935484
+            },
+            {
+              "value": 1.0,
+              "count": 97,
+              "fraction": 0.31290322580645163
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 310,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 310,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "neutral_parent": {
+            "unique_identities": 310,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 310,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 0.0,
+              "count": 220,
+              "fraction": 0.7096774193548387
+            },
+            {
+              "value": 1.0,
+              "count": 90,
+              "fraction": 0.2903225806451613
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 308,
+            "repeated_identities": 2,
+            "repeated_rows": 4,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 308,
+            "repeated_identities": 2,
+            "repeated_rows": 4,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "neutral_parent": {
+            "unique_identities": 308,
+            "repeated_identities": 2,
+            "repeated_rows": 4,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          }
+        }
+      ]
+    },
+    {
+      "task": "cyp3a4_veith",
+      "metric": "AUPRC",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 5752,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 0.0,
+              "count": 3424,
+              "fraction": 0.5952712100139083
+            },
+            {
+              "value": 1.0,
+              "count": 2328,
+              "fraction": 0.4047287899860918
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 5752,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 5651,
+            "repeated_identities": 97,
+            "repeated_rows": 198,
+            "conflicting_identities": 3,
+            "conflicting_rows": 6,
+            "conflicting_row_fraction": 0.001043115438108484,
+            "median_disagreement_iqr": 1.0,
+            "binary_conflicting_identities": 3
+          },
+          "neutral_parent": {
+            "unique_identities": 5631,
+            "repeated_identities": 113,
+            "repeated_rows": 234,
+            "conflicting_identities": 3,
+            "conflicting_rows": 6,
+            "conflicting_row_fraction": 0.001043115438108484,
+            "median_disagreement_iqr": 1.0,
+            "binary_conflicting_identities": 3
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 5752,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 0.0,
+              "count": 3542,
+              "fraction": 0.6157858136300417
+            },
+            {
+              "value": 1.0,
+              "count": 2210,
+              "fraction": 0.3842141863699583
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 5752,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 5684,
+            "repeated_identities": 64,
+            "repeated_rows": 132,
+            "conflicting_identities": 3,
+            "conflicting_rows": 6,
+            "conflicting_row_fraction": 0.001043115438108484,
+            "median_disagreement_iqr": 1.0,
+            "binary_conflicting_identities": 3
+          },
+          "neutral_parent": {
+            "unique_identities": 5666,
+            "repeated_identities": 81,
+            "repeated_rows": 167,
+            "conflicting_identities": 4,
+            "conflicting_rows": 8,
+            "conflicting_row_fraction": 0.0013908205841446453,
+            "median_disagreement_iqr": 1.0,
+            "binary_conflicting_identities": 4
+          }
+        }
+      ]
+    },
+    {
+      "task": "clearance_microsome_az",
+      "metric": "Spearman",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 514,
+          "unique_labels": 207,
+          "label_quantiles": [
+            3.0,
+            3.0,
+            3.0,
+            14.45,
+            118.54699999999998,
+            150.0,
+            150.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 3.0,
+              "count": 110,
+              "fraction": 0.2140077821011673
+            },
+            {
+              "value": 150.0,
+              "count": 39,
+              "fraction": 0.07587548638132295
+            },
+            {
+              "value": 6.0,
+              "count": 13,
+              "fraction": 0.02529182879377432
+            },
+            {
+              "value": 7.0,
+              "count": 11,
+              "fraction": 0.021400778210116732
+            },
+            {
+              "value": 4.0,
+              "count": 9,
+              "fraction": 0.017509727626459144
+            },
+            {
+              "value": 5.0,
+              "count": 8,
+              "fraction": 0.01556420233463035
+            },
+            {
+              "value": 9.0,
+              "count": 8,
+              "fraction": 0.01556420233463035
+            },
+            {
+              "value": 12.0,
+              "count": 8,
+              "fraction": 0.01556420233463035
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 514,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 509,
+            "repeated_identities": 4,
+            "repeated_rows": 9,
+            "conflicting_identities": 3,
+            "conflicting_rows": 7,
+            "conflicting_row_fraction": 0.013618677042801557,
+            "median_disagreement_iqr": 0.2755683597419678,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 509,
+            "repeated_identities": 4,
+            "repeated_rows": 9,
+            "conflicting_identities": 3,
+            "conflicting_rows": 7,
+            "conflicting_row_fraction": 0.013618677042801557,
+            "median_disagreement_iqr": 0.2755683597419678,
+            "binary_conflicting_identities": null
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 513,
+          "unique_labels": 184,
+          "label_quantiles": [
+            3.0,
+            3.0,
+            3.0,
+            13.49,
+            111.16000000000007,
+            150.0,
+            150.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 3.0,
+              "count": 140,
+              "fraction": 0.2729044834307992
+            },
+            {
+              "value": 150.0,
+              "count": 44,
+              "fraction": 0.08576998050682261
+            },
+            {
+              "value": 5.0,
+              "count": 10,
+              "fraction": 0.01949317738791423
+            },
+            {
+              "value": 4.0,
+              "count": 9,
+              "fraction": 0.017543859649122806
+            },
+            {
+              "value": 7.0,
+              "count": 9,
+              "fraction": 0.017543859649122806
+            },
+            {
+              "value": 6.0,
+              "count": 8,
+              "fraction": 0.015594541910331383
+            },
+            {
+              "value": 11.0,
+              "count": 7,
+              "fraction": 0.01364522417153996
+            },
+            {
+              "value": 8.0,
+              "count": 6,
+              "fraction": 0.011695906432748537
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 513,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 508,
+            "repeated_identities": 5,
+            "repeated_rows": 10,
+            "conflicting_identities": 3,
+            "conflicting_rows": 6,
+            "conflicting_row_fraction": 0.011695906432748537,
+            "median_disagreement_iqr": 0.3625641025641025,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 508,
+            "repeated_identities": 5,
+            "repeated_rows": 10,
+            "conflicting_identities": 3,
+            "conflicting_rows": 6,
+            "conflicting_row_fraction": 0.011695906432748537,
+            "median_disagreement_iqr": 0.3625641025641025,
+            "binary_conflicting_identities": null
+          }
+        }
+      ]
+    },
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 425,
+          "unique_labels": 337,
+          "label_quantiles": [
+            -7.5214391,
+            -7.102690812000002,
+            -6.22967356,
+            -5.0700002,
+            -4.329999900000002,
+            -3.952607848,
+            -3.51
+          ],
+          "most_frequent_values": [
+            {
+              "value": -5.0,
+              "count": 5,
+              "fraction": 0.011764705882352941
+            },
+            {
+              "value": -4.5100002,
+              "count": 5,
+              "fraction": 0.011764705882352941
+            },
+            {
+              "value": -4.3899999,
+              "count": 5,
+              "fraction": 0.011764705882352941
+            },
+            {
+              "value": -5.6999998,
+              "count": 4,
+              "fraction": 0.009411764705882352
+            },
+            {
+              "value": -4.7399998,
+              "count": 4,
+              "fraction": 0.009411764705882352
+            },
+            {
+              "value": -4.6999998,
+              "count": 4,
+              "fraction": 0.009411764705882352
+            },
+            {
+              "value": -4.6599998,
+              "count": 4,
+              "fraction": 0.009411764705882352
+            },
+            {
+              "value": -4.329999900000002,
+              "count": 4,
+              "fraction": 0.009411764705882352
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 422,
+            "repeated_identities": 3,
+            "repeated_rows": 6,
+            "conflicting_identities": 3,
+            "conflicting_rows": 6,
+            "conflicting_row_fraction": 0.01411764705882353,
+            "median_disagreement_iqr": 0.29313694444444366,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 401,
+            "repeated_identities": 21,
+            "repeated_rows": 45,
+            "conflicting_identities": 21,
+            "conflicting_rows": 45,
+            "conflicting_row_fraction": 0.10588235294117647,
+            "median_disagreement_iqr": 0.17592592592592546,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 399,
+            "repeated_identities": 23,
+            "repeated_rows": 49,
+            "conflicting_identities": 23,
+            "conflicting_rows": 49,
+            "conflicting_row_fraction": 0.11529411764705882,
+            "median_disagreement_iqr": 0.17592592592592546,
+            "binary_conflicting_identities": null
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 425,
+          "unique_labels": 340,
+          "label_quantiles": [
+            -7.7600002,
+            -7.388085876000001,
+            -6.48264324,
+            -5.0,
+            -4.3099999,
+            -3.8671291720000003,
+            -3.51
+          ],
+          "most_frequent_values": [
+            {
+              "value": -4.5100002,
+              "count": 5,
+              "fraction": 0.011764705882352941
+            },
+            {
+              "value": -5.8000002,
+              "count": 4,
+              "fraction": 0.009411764705882352
+            },
+            {
+              "value": -5.0,
+              "count": 4,
+              "fraction": 0.009411764705882352
+            },
+            {
+              "value": -4.6799998,
+              "count": 4,
+              "fraction": 0.009411764705882352
+            },
+            {
+              "value": -4.3899999,
+              "count": 4,
+              "fraction": 0.009411764705882352
+            },
+            {
+              "value": -5.8899999,
+              "count": 3,
+              "fraction": 0.007058823529411765
+            },
+            {
+              "value": -5.7979398,
+              "count": 3,
+              "fraction": 0.007058823529411765
+            },
+            {
+              "value": -5.6999998,
+              "count": 3,
+              "fraction": 0.007058823529411765
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 424,
+            "repeated_identities": 1,
+            "repeated_rows": 2,
+            "conflicting_identities": 1,
+            "conflicting_rows": 2,
+            "conflicting_row_fraction": 0.004705882352941176,
+            "median_disagreement_iqr": 0.2720854886433046,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 398,
+            "repeated_identities": 22,
+            "repeated_rows": 49,
+            "conflicting_identities": 22,
+            "conflicting_rows": 49,
+            "conflicting_row_fraction": 0.11529411764705882,
+            "median_disagreement_iqr": 0.16889776413841523,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 397,
+            "repeated_identities": 23,
+            "repeated_rows": 51,
+            "conflicting_identities": 23,
+            "conflicting_rows": 51,
+            "conflicting_row_fraction": 0.12,
+            "median_disagreement_iqr": 0.17527315298801924,
+            "binary_conflicting_identities": null
+          }
+        }
+      ]
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 312,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 0.0,
+              "count": 158,
+              "fraction": 0.5064102564102564
+            },
+            {
+              "value": 1.0,
+              "count": 154,
+              "fraction": 0.4935897435897436
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 311,
+            "repeated_identities": 1,
+            "repeated_rows": 2,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 311,
+            "repeated_identities": 1,
+            "repeated_rows": 2,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "neutral_parent": {
+            "unique_identities": 311,
+            "repeated_identities": 1,
+            "repeated_rows": 2,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 312,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 1.0,
+              "count": 166,
+              "fraction": 0.532051282051282
+            },
+            {
+              "value": 0.0,
+              "count": 146,
+              "fraction": 0.46794871794871795
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 311,
+            "repeated_identities": 1,
+            "repeated_rows": 2,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 311,
+            "repeated_identities": 1,
+            "repeated_rows": 2,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "neutral_parent": {
+            "unique_identities": 311,
+            "repeated_identities": 1,
+            "repeated_rows": 2,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          }
+        }
+      ]
+    },
+    {
+      "task": "dili",
+      "metric": "AUROC",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 221,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 1.0,
+              "count": 112,
+              "fraction": 0.5067873303167421
+            },
+            {
+              "value": 0.0,
+              "count": 109,
+              "fraction": 0.49321266968325794
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 221,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 221,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "neutral_parent": {
+            "unique_identities": 220,
+            "repeated_identities": 1,
+            "repeated_rows": 2,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 220,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 0.0,
+              "count": 111,
+              "fraction": 0.5045454545454545
+            },
+            {
+              "value": 1.0,
+              "count": 109,
+              "fraction": 0.4954545454545455
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 220,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 220,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "neutral_parent": {
+            "unique_identities": 220,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          }
+        }
+      ]
+    },
+    {
+      "task": "vdss_lombardo",
+      "metric": "Spearman",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 528,
+          "unique_labels": 206,
+          "label_quantiles": [
+            0.04,
+            0.07,
+            0.16,
+            1.0,
+            8.260000000000002,
+            47.92000000000007,
+            700.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 0.13,
+              "count": 13,
+              "fraction": 0.02462121212121212
+            },
+            {
+              "value": 1.1,
+              "count": 11,
+              "fraction": 0.020833333333333332
+            },
+            {
+              "value": 1.8,
+              "count": 11,
+              "fraction": 0.020833333333333332
+            },
+            {
+              "value": 0.23,
+              "count": 10,
+              "fraction": 0.01893939393939394
+            },
+            {
+              "value": 0.24,
+              "count": 10,
+              "fraction": 0.01893939393939394
+            },
+            {
+              "value": 1.3,
+              "count": 10,
+              "fraction": 0.01893939393939394
+            },
+            {
+              "value": 0.12,
+              "count": 9,
+              "fraction": 0.017045454545454544
+            },
+            {
+              "value": 0.15,
+              "count": 9,
+              "fraction": 0.017045454545454544
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 523,
+            "repeated_identities": 5,
+            "repeated_rows": 10,
+            "conflicting_identities": 4,
+            "conflicting_rows": 8,
+            "conflicting_row_fraction": 0.015151515151515152,
+            "median_disagreement_iqr": 0.07481751824817517,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 522,
+            "repeated_identities": 6,
+            "repeated_rows": 12,
+            "conflicting_identities": 5,
+            "conflicting_rows": 10,
+            "conflicting_row_fraction": 0.01893939393939394,
+            "median_disagreement_iqr": 0.0218978102189781,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 522,
+            "repeated_identities": 6,
+            "repeated_rows": 12,
+            "conflicting_identities": 5,
+            "conflicting_rows": 10,
+            "conflicting_row_fraction": 0.01893939393939394,
+            "median_disagreement_iqr": 0.0218978102189781,
+            "binary_conflicting_identities": null
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 527,
+          "unique_labels": 216,
+          "label_quantiles": [
+            0.01,
+            0.06,
+            0.17600000000000002,
+            1.1,
+            11.0,
+            45.0,
+            80.5
+          ],
+          "most_frequent_values": [
+            {
+              "value": 0.21,
+              "count": 12,
+              "fraction": 0.022770398481973434
+            },
+            {
+              "value": 12.0,
+              "count": 12,
+              "fraction": 0.022770398481973434
+            },
+            {
+              "value": 1.1,
+              "count": 11,
+              "fraction": 0.020872865275142316
+            },
+            {
+              "value": 0.22,
+              "count": 9,
+              "fraction": 0.017077798861480076
+            },
+            {
+              "value": 0.23,
+              "count": 9,
+              "fraction": 0.017077798861480076
+            },
+            {
+              "value": 1.3,
+              "count": 9,
+              "fraction": 0.017077798861480076
+            },
+            {
+              "value": 1.8,
+              "count": 9,
+              "fraction": 0.017077798861480076
+            },
+            {
+              "value": 0.13,
+              "count": 8,
+              "fraction": 0.015180265654648957
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 519,
+            "repeated_identities": 8,
+            "repeated_rows": 16,
+            "conflicting_identities": 7,
+            "conflicting_rows": 14,
+            "conflicting_row_fraction": 0.026565464895635674,
+            "median_disagreement_iqr": 0.13758389261744972,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 517,
+            "repeated_identities": 10,
+            "repeated_rows": 20,
+            "conflicting_identities": 9,
+            "conflicting_rows": 18,
+            "conflicting_row_fraction": 0.03415559772296015,
+            "median_disagreement_iqr": 0.11409395973154361,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 517,
+            "repeated_identities": 10,
+            "repeated_rows": 20,
+            "conflicting_identities": 9,
+            "conflicting_rows": 18,
+            "conflicting_row_fraction": 0.03415559772296015,
+            "median_disagreement_iqr": 0.11409395973154361,
+            "binary_conflicting_identities": null
+          }
+        }
+      ]
+    },
+    {
+      "task": "cyp2d6_veith",
+      "metric": "AUPRC",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 6127,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 0.0,
+              "count": 4884,
+              "fraction": 0.7971274685816876
+            },
+            {
+              "value": 1.0,
+              "count": 1243,
+              "fraction": 0.20287253141831238
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 6127,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 6015,
+            "repeated_identities": 108,
+            "repeated_rows": 220,
+            "conflicting_identities": 14,
+            "conflicting_rows": 28,
+            "conflicting_row_fraction": 0.004569936347315162,
+            "median_disagreement_iqr": 20.0,
+            "binary_conflicting_identities": 14
+          },
+          "neutral_parent": {
+            "unique_identities": 5991,
+            "repeated_identities": 127,
+            "repeated_rows": 263,
+            "conflicting_identities": 17,
+            "conflicting_rows": 35,
+            "conflicting_row_fraction": 0.005712420434143953,
+            "median_disagreement_iqr": 20.0,
+            "binary_conflicting_identities": 17
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 6128,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 0.0,
+              "count": 4887,
+              "fraction": 0.7974869451697127
+            },
+            {
+              "value": 1.0,
+              "count": 1241,
+              "fraction": 0.2025130548302872
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 6128,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 6033,
+            "repeated_identities": 89,
+            "repeated_rows": 184,
+            "conflicting_identities": 13,
+            "conflicting_rows": 26,
+            "conflicting_row_fraction": 0.004242819843342037,
+            "median_disagreement_iqr": 20.0,
+            "binary_conflicting_identities": 13
+          },
+          "neutral_parent": {
+            "unique_identities": 6013,
+            "repeated_identities": 108,
+            "repeated_rows": 223,
+            "conflicting_identities": 14,
+            "conflicting_rows": 28,
+            "conflicting_row_fraction": 0.0045691906005221935,
+            "median_disagreement_iqr": 20.0,
+            "binary_conflicting_identities": 14
+          }
+        }
+      ]
+    },
+    {
+      "task": "cyp2c9_veith",
+      "metric": "AUPRC",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 5642,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 0.0,
+              "count": 3761,
+              "fraction": 0.6666075859624246
+            },
+            {
+              "value": 1.0,
+              "count": 1881,
+              "fraction": 0.3333924140375753
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 5642,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 5529,
+            "repeated_identities": 111,
+            "repeated_rows": 224,
+            "conflicting_identities": 8,
+            "conflicting_rows": 16,
+            "conflicting_row_fraction": 0.002835873803615739,
+            "median_disagreement_iqr": 1.0,
+            "binary_conflicting_identities": 8
+          },
+          "neutral_parent": {
+            "unique_identities": 5516,
+            "repeated_identities": 123,
+            "repeated_rows": 249,
+            "conflicting_identities": 11,
+            "conflicting_rows": 23,
+            "conflicting_row_fraction": 0.004076568592697625,
+            "median_disagreement_iqr": 1.0,
+            "binary_conflicting_identities": 11
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 5642,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 0.0,
+              "count": 3731,
+              "fraction": 0.6612903225806451
+            },
+            {
+              "value": 1.0,
+              "count": 1911,
+              "fraction": 0.3387096774193548
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 5642,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 5539,
+            "repeated_identities": 97,
+            "repeated_rows": 200,
+            "conflicting_identities": 7,
+            "conflicting_rows": 15,
+            "conflicting_row_fraction": 0.0026586316908897554,
+            "median_disagreement_iqr": 1.0,
+            "binary_conflicting_identities": 7
+          },
+          "neutral_parent": {
+            "unique_identities": 5521,
+            "repeated_identities": 114,
+            "repeated_rows": 235,
+            "conflicting_identities": 10,
+            "conflicting_rows": 22,
+            "conflicting_row_fraction": 0.0038993264799716413,
+            "median_disagreement_iqr": 1.0,
+            "binary_conflicting_identities": 10
+          }
+        }
+      ]
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 1302,
+          "unique_labels": 312,
+          "label_quantiles": [
+            10.09,
+            20.83,
+            59.715999999999994,
+            94.68,
+            99.51,
+            99.9199,
+            99.95
+          ],
+          "most_frequent_values": [
+            {
+              "value": 98.81,
+              "count": 16,
+              "fraction": 0.01228878648233487
+            },
+            {
+              "value": 94.56,
+              "count": 14,
+              "fraction": 0.010752688172043012
+            },
+            {
+              "value": 97.38,
+              "count": 14,
+              "fraction": 0.010752688172043012
+            },
+            {
+              "value": 98.09,
+              "count": 14,
+              "fraction": 0.010752688172043012
+            },
+            {
+              "value": 98.61,
+              "count": 14,
+              "fraction": 0.010752688172043012
+            },
+            {
+              "value": 97.32,
+              "count": 13,
+              "fraction": 0.009984639016897081
+            },
+            {
+              "value": 95.53,
+              "count": 12,
+              "fraction": 0.009216589861751152
+            },
+            {
+              "value": 95.63,
+              "count": 12,
+              "fraction": 0.009216589861751152
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 868,
+            "repeated_identities": 310,
+            "repeated_rows": 744,
+            "conflicting_identities": 310,
+            "conflicting_rows": 744,
+            "conflicting_row_fraction": 0.5714285714285714,
+            "median_disagreement_iqr": 0.20068863748155447,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 843,
+            "repeated_identities": 310,
+            "repeated_rows": 769,
+            "conflicting_identities": 309,
+            "conflicting_rows": 767,
+            "conflicting_row_fraction": 0.5890937019969278,
+            "median_disagreement_iqr": 0.205935399245778,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 843,
+            "repeated_identities": 310,
+            "repeated_rows": 769,
+            "conflicting_identities": 309,
+            "conflicting_rows": 767,
+            "conflicting_row_fraction": 0.5890937019969278,
+            "median_disagreement_iqr": 0.205935399245778,
+            "binary_conflicting_identities": null
+          },
+          "bounded_observations": {
+            "zero": 0,
+            "hundred": 0,
+            "outside_0_100": 0
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 1301,
+          "unique_labels": 310,
+          "label_quantiles": [
+            10.09,
+            21.21,
+            55.73,
+            95.43,
+            99.6,
+            99.93,
+            99.95
+          ],
+          "most_frequent_values": [
+            {
+              "value": 98.61,
+              "count": 17,
+              "fraction": 0.013066871637202153
+            },
+            {
+              "value": 96.42,
+              "count": 13,
+              "fraction": 0.009992313604919293
+            },
+            {
+              "value": 98.51,
+              "count": 13,
+              "fraction": 0.009992313604919293
+            },
+            {
+              "value": 98.81,
+              "count": 13,
+              "fraction": 0.009992313604919293
+            },
+            {
+              "value": 89.91,
+              "count": 12,
+              "fraction": 0.009223674096848577
+            },
+            {
+              "value": 97.32,
+              "count": 12,
+              "fraction": 0.009223674096848577
+            },
+            {
+              "value": 98.21,
+              "count": 12,
+              "fraction": 0.009223674096848577
+            },
+            {
+              "value": 98.7,
+              "count": 12,
+              "fraction": 0.009223674096848577
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 862,
+            "repeated_identities": 323,
+            "repeated_rows": 762,
+            "conflicting_identities": 323,
+            "conflicting_rows": 762,
+            "conflicting_row_fraction": 0.5857033051498847,
+            "median_disagreement_iqr": 0.15912208504801054,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 839,
+            "repeated_identities": 322,
+            "repeated_rows": 784,
+            "conflicting_identities": 322,
+            "conflicting_rows": 784,
+            "conflicting_row_fraction": 0.6026133743274404,
+            "median_disagreement_iqr": 0.16632373113854626,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 839,
+            "repeated_identities": 322,
+            "repeated_rows": 784,
+            "conflicting_identities": 322,
+            "conflicting_rows": 784,
+            "conflicting_row_fraction": 0.6026133743274404,
+            "median_disagreement_iqr": 0.16632373113854626,
+            "binary_conflicting_identities": null
+          },
+          "bounded_observations": {
+            "zero": 0,
+            "hundred": 0,
+            "outside_0_100": 0
+          }
+        }
+      ]
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 2760,
+          "unique_labels": 1747,
+          "label_quantiles": [
+            0.539,
+            1.116,
+            1.625,
+            2.3845,
+            3.829,
+            5.175739999999998,
+            7.1
+          ],
+          "most_frequent_values": [
+            {
+              "value": 2.005,
+              "count": 7,
+              "fraction": 0.002536231884057971
+            },
+            {
+              "value": 2.2030000000000003,
+              "count": 7,
+              "fraction": 0.002536231884057971
+            },
+            {
+              "value": 1.793,
+              "count": 6,
+              "fraction": 0.002173913043478261
+            },
+            {
+              "value": 1.922,
+              "count": 6,
+              "fraction": 0.002173913043478261
+            },
+            {
+              "value": 2.449,
+              "count": 6,
+              "fraction": 0.002173913043478261
+            },
+            {
+              "value": 2.457,
+              "count": 6,
+              "fraction": 0.002173913043478261
+            },
+            {
+              "value": 1.475,
+              "count": 5,
+              "fraction": 0.0018115942028985507
+            },
+            {
+              "value": 1.641,
+              "count": 5,
+              "fraction": 0.0018115942028985507
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 2748,
+            "repeated_identities": 10,
+            "repeated_rows": 22,
+            "conflicting_identities": 8,
+            "conflicting_rows": 17,
+            "conflicting_row_fraction": 0.006159420289855073,
+            "median_disagreement_iqr": 0.1516738783876111,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 2748,
+            "repeated_identities": 10,
+            "repeated_rows": 22,
+            "conflicting_identities": 8,
+            "conflicting_rows": 17,
+            "conflicting_row_fraction": 0.006159420289855073,
+            "median_disagreement_iqr": 0.1516738783876111,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 2748,
+            "repeated_identities": 10,
+            "repeated_rows": 22,
+            "conflicting_identities": 8,
+            "conflicting_rows": 17,
+            "conflicting_row_fraction": 0.006159420289855073,
+            "median_disagreement_iqr": 0.1516738783876111,
+            "binary_conflicting_identities": null
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 2760,
+          "unique_labels": 1732,
+          "label_quantiles": [
+            0.618,
+            1.16631,
+            1.6398,
+            2.3675,
+            3.696,
+            4.975609999999997,
+            6.402
+          ],
+          "most_frequent_values": [
+            {
+              "value": 1.854,
+              "count": 7,
+              "fraction": 0.002536231884057971
+            },
+            {
+              "value": 1.6969999999999998,
+              "count": 6,
+              "fraction": 0.002173913043478261
+            },
+            {
+              "value": 1.78,
+              "count": 6,
+              "fraction": 0.002173913043478261
+            },
+            {
+              "value": 1.888,
+              "count": 6,
+              "fraction": 0.002173913043478261
+            },
+            {
+              "value": 1.92,
+              "count": 6,
+              "fraction": 0.002173913043478261
+            },
+            {
+              "value": 1.922,
+              "count": 6,
+              "fraction": 0.002173913043478261
+            },
+            {
+              "value": 1.934,
+              "count": 6,
+              "fraction": 0.002173913043478261
+            },
+            {
+              "value": 2.253,
+              "count": 6,
+              "fraction": 0.002173913043478261
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 2746,
+            "repeated_identities": 11,
+            "repeated_rows": 25,
+            "conflicting_identities": 7,
+            "conflicting_rows": 17,
+            "conflicting_row_fraction": 0.006159420289855073,
+            "median_disagreement_iqr": 0.15922330097087353,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 2746,
+            "repeated_identities": 11,
+            "repeated_rows": 25,
+            "conflicting_identities": 7,
+            "conflicting_rows": 17,
+            "conflicting_row_fraction": 0.006159420289855073,
+            "median_disagreement_iqr": 0.15922330097087353,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 2746,
+            "repeated_identities": 11,
+            "repeated_rows": 25,
+            "conflicting_identities": 7,
+            "conflicting_rows": 17,
+            "conflicting_row_fraction": 0.006159420289855073,
+            "median_disagreement_iqr": 0.15922330097087353,
+            "binary_conflicting_identities": null
+          }
+        }
+      ]
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 1960,
+          "unique_labels": 479,
+          "label_quantiles": [
+            -1.48,
+            -0.9041,
+            0.62,
+            2.41,
+            3.6,
+            4.26,
+            4.5
+          ],
+          "most_frequent_values": [
+            {
+              "value": 3.1,
+              "count": 31,
+              "fraction": 0.015816326530612244
+            },
+            {
+              "value": 3.3,
+              "count": 30,
+              "fraction": 0.015306122448979591
+            },
+            {
+              "value": 2.8,
+              "count": 26,
+              "fraction": 0.013265306122448979
+            },
+            {
+              "value": 3.0,
+              "count": 25,
+              "fraction": 0.012755102040816327
+            },
+            {
+              "value": 3.4,
+              "count": 25,
+              "fraction": 0.012755102040816327
+            },
+            {
+              "value": 3.5,
+              "count": 25,
+              "fraction": 0.012755102040816327
+            },
+            {
+              "value": 2.9,
+              "count": 24,
+              "fraction": 0.012244897959183673
+            },
+            {
+              "value": 3.6,
+              "count": 24,
+              "fraction": 0.012244897959183673
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 1960,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 1916,
+            "repeated_identities": 38,
+            "repeated_rows": 82,
+            "conflicting_identities": 33,
+            "conflicting_rows": 72,
+            "conflicting_row_fraction": 0.036734693877551024,
+            "median_disagreement_iqr": 0.06240249609984406,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 1916,
+            "repeated_identities": 38,
+            "repeated_rows": 82,
+            "conflicting_identities": 33,
+            "conflicting_rows": 72,
+            "conflicting_row_fraction": 0.036734693877551024,
+            "median_disagreement_iqr": 0.06240249609984406,
+            "binary_conflicting_identities": null
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 1960,
+          "unique_labels": 481,
+          "label_quantiles": [
+            -1.42,
+            -1.0482,
+            0.31,
+            2.21,
+            3.511000000000001,
+            4.222300000000002,
+            4.5
+          ],
+          "most_frequent_values": [
+            {
+              "value": 2.8,
+              "count": 28,
+              "fraction": 0.014285714285714285
+            },
+            {
+              "value": 2.7,
+              "count": 27,
+              "fraction": 0.013775510204081633
+            },
+            {
+              "value": 3.0,
+              "count": 27,
+              "fraction": 0.013775510204081633
+            },
+            {
+              "value": 3.1,
+              "count": 27,
+              "fraction": 0.013775510204081633
+            },
+            {
+              "value": 2.0,
+              "count": 24,
+              "fraction": 0.012244897959183673
+            },
+            {
+              "value": 3.2,
+              "count": 23,
+              "fraction": 0.01173469387755102
+            },
+            {
+              "value": 2.4,
+              "count": 22,
+              "fraction": 0.011224489795918367
+            },
+            {
+              "value": 2.5,
+              "count": 22,
+              "fraction": 0.011224489795918367
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 1960,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 1910,
+            "repeated_identities": 41,
+            "repeated_rows": 91,
+            "conflicting_identities": 36,
+            "conflicting_rows": 81,
+            "conflicting_row_fraction": 0.0413265306122449,
+            "median_disagreement_iqr": 0.057720057720057776,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 1910,
+            "repeated_identities": 41,
+            "repeated_rows": 91,
+            "conflicting_identities": 36,
+            "conflicting_rows": 81,
+            "conflicting_row_fraction": 0.0413265306122449,
+            "median_disagreement_iqr": 0.057720057720057776,
+            "binary_conflicting_identities": null
+          }
+        }
+      ]
+    },
+    {
+      "task": "bioavailability_ma",
+      "metric": "AUROC",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 298,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 1.0,
+              "count": 244,
+              "fraction": 0.8187919463087249
+            },
+            {
+              "value": 0.0,
+              "count": 54,
+              "fraction": 0.18120805369127516
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 298,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 298,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "neutral_parent": {
+            "unique_identities": 298,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 299,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 1.0,
+              "count": 230,
+              "fraction": 0.7692307692307693
+            },
+            {
+              "value": 0.0,
+              "count": 69,
+              "fraction": 0.23076923076923078
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 299,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 299,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "neutral_parent": {
+            "unique_identities": 299,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          }
+        }
+      ]
+    },
+    {
+      "task": "half_life_obach",
+      "metric": "Spearman",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 310,
+          "unique_labels": 136,
+          "label_quantiles": [
+            0.12,
+            0.3,
+            0.96,
+            3.75,
+            32.0,
+            529.5000000000113,
+            1200.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 2.0,
+              "count": 9,
+              "fraction": 0.02903225806451613
+            },
+            {
+              "value": 2.4,
+              "count": 9,
+              "fraction": 0.02903225806451613
+            },
+            {
+              "value": 1.6,
+              "count": 8,
+              "fraction": 0.025806451612903226
+            },
+            {
+              "value": 1.0,
+              "count": 7,
+              "fraction": 0.02258064516129032
+            },
+            {
+              "value": 1.4,
+              "count": 7,
+              "fraction": 0.02258064516129032
+            },
+            {
+              "value": 1.8,
+              "count": 7,
+              "fraction": 0.02258064516129032
+            },
+            {
+              "value": 10.0,
+              "count": 7,
+              "fraction": 0.02258064516129032
+            },
+            {
+              "value": 11.0,
+              "count": 7,
+              "fraction": 0.02258064516129032
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 309,
+            "repeated_identities": 1,
+            "repeated_rows": 2,
+            "conflicting_identities": 1,
+            "conflicting_rows": 2,
+            "conflicting_row_fraction": 0.0064516129032258064,
+            "median_disagreement_iqr": 0.9638554216867469,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 305,
+            "repeated_identities": 5,
+            "repeated_rows": 10,
+            "conflicting_identities": 5,
+            "conflicting_rows": 10,
+            "conflicting_row_fraction": 0.03225806451612903,
+            "median_disagreement_iqr": 0.48192771084337344,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 305,
+            "repeated_identities": 5,
+            "repeated_rows": 10,
+            "conflicting_identities": 5,
+            "conflicting_rows": 10,
+            "conflicting_row_fraction": 0.03225806451612903,
+            "median_disagreement_iqr": 0.48192771084337344,
+            "binary_conflicting_identities": null
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 310,
+          "unique_labels": 135,
+          "label_quantiles": [
+            0.065,
+            0.3054,
+            1.0,
+            4.5,
+            32.0,
+            200.0,
+            850.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 2.0,
+              "count": 8,
+              "fraction": 0.025806451612903226
+            },
+            {
+              "value": 10.0,
+              "count": 8,
+              "fraction": 0.025806451612903226
+            },
+            {
+              "value": 1.1,
+              "count": 7,
+              "fraction": 0.02258064516129032
+            },
+            {
+              "value": 1.4,
+              "count": 7,
+              "fraction": 0.02258064516129032
+            },
+            {
+              "value": 2.1,
+              "count": 7,
+              "fraction": 0.02258064516129032
+            },
+            {
+              "value": 11.0,
+              "count": 7,
+              "fraction": 0.02258064516129032
+            },
+            {
+              "value": 1.0,
+              "count": 6,
+              "fraction": 0.01935483870967742
+            },
+            {
+              "value": 1.5,
+              "count": 6,
+              "fraction": 0.01935483870967742
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 309,
+            "repeated_identities": 1,
+            "repeated_rows": 2,
+            "conflicting_identities": 1,
+            "conflicting_rows": 2,
+            "conflicting_row_fraction": 0.0064516129032258064,
+            "median_disagreement_iqr": 0.8791208791208791,
+            "binary_conflicting_identities": null
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 306,
+            "repeated_identities": 4,
+            "repeated_rows": 8,
+            "conflicting_identities": 4,
+            "conflicting_rows": 8,
+            "conflicting_row_fraction": 0.025806451612903226,
+            "median_disagreement_iqr": 0.32417582417582413,
+            "binary_conflicting_identities": null
+          },
+          "neutral_parent": {
+            "unique_identities": 306,
+            "repeated_identities": 4,
+            "repeated_rows": 8,
+            "conflicting_identities": 4,
+            "conflicting_rows": 8,
+            "conflicting_row_fraction": 0.025806451612903226,
+            "median_disagreement_iqr": 0.32417582417582413,
+            "binary_conflicting_identities": null
+          }
+        }
+      ]
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 311,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 0.0,
+              "count": 255,
+              "fraction": 0.819935691318328
+            },
+            {
+              "value": 1.0,
+              "count": 56,
+              "fraction": 0.18006430868167203
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 311,
+            "repeated_identities": 0,
+            "repeated_rows": 0,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 310,
+            "repeated_identities": 1,
+            "repeated_rows": 2,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "neutral_parent": {
+            "unique_identities": 310,
+            "repeated_identities": 1,
+            "repeated_rows": 2,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          }
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 311,
+          "unique_labels": 2,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "most_frequent_values": [
+            {
+              "value": 0.0,
+              "count": 249,
+              "fraction": 0.8006430868167203
+            },
+            {
+              "value": 1.0,
+              "count": 62,
+              "fraction": 0.19935691318327975
+            }
+          ],
+          "exact_structure": {
+            "unique_identities": 309,
+            "repeated_identities": 2,
+            "repeated_rows": 4,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "nonstereo_canonical": {
+            "unique_identities": 309,
+            "repeated_identities": 2,
+            "repeated_rows": 4,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          },
+          "neutral_parent": {
+            "unique_identities": 309,
+            "repeated_identities": 2,
+            "repeated_rows": 4,
+            "conflicting_identities": 0,
+            "conflicting_rows": 0,
+            "conflicting_row_fraction": 0.0,
+            "median_disagreement_iqr": 0.0,
+            "binary_conflicting_identities": 0
+          }
+        }
+      ]
+    }
+  ],
+  "model_fitted": false,
+  "new_predictions": false,
+  "confirmation_labels_used_by_diagnostic": false,
+  "shared_loader_contains_public_labels": true,
+  "confirmation_scores_computed": false,
+  "labels_changed": false,
+  "limitations": "Canonical and neutral equivalence may merge distinct stereochemistry/salts. Label repetitions and boundary masses do not establish assay censoring, measurement error, or justified relabeling."
+}

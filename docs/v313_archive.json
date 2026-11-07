@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "path": "releases/v313_experimental_ppbr_lipo_20261101.tar.gz",
+  "sha256": "deb2de6c6c9d93599a5f61d04f46ba2d8fdb984009e9f729f21fdb056afdc4fd",
+  "files": 25,
+  "all_member_hashes_verified": true,
+  "experimental_only": true
+}

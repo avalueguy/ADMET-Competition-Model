@@ -1,0 +1,28 @@
+{
+  "version": "v181",
+  "delivery_version": "v182",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "source_sha256": "b7d1828a0e5802f61edea3e6e23eeb4c8f8cf2bbf3bfc105383a5eba59e4218d",
+  "model": "Conditional weighted-median ExtraTrees forests for all five MAE tasks",
+  "configs": [
+    {
+      "leaf": 3,
+      "trees": 400
+    },
+    {
+      "leaf": 12,
+      "trees": 400
+    }
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "selection": "Unchanged v148 fold0/1 max minimum; freeze before confirmation; no fallback",
+  "confirmation": "All4 positive; practical mean; both scaffold bootstrap90 lower bounds>0",
+  "source_immutable_after_start": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "official_gain_guaranteed": false
+}

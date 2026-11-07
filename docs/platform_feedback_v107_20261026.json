@@ -1,0 +1,17 @@
+{
+  "version": "v107",
+  "official_score_user_reported": 50.909,
+  "baseline": "v101",
+  "baseline_official_score_user_reported": 50.932,
+  "delta": -0.023,
+  "source": "user direct report",
+  "uploaded_byte_hash_confirmed": false,
+  "delivered_sha256": "dd8866859ebf10bf44b14f2f55ea9dc992552c164831b5360b74074ec7206b21",
+  "per_task_scores_available": false,
+  "status": "USER_REPORTED_OFFICIAL_REGRESSION",
+  "recommended": false,
+  "audit": "docs/v107_regression_audit_20261026.json",
+  "action": "Retain v101 as development anchor; withdraw v107 recommendation.",
+  "test_labels_read": false,
+  "new_submission_created": false
+}

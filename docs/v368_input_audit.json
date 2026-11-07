@@ -1,0 +1,211 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "task": "ames",
+      "part": "fold0",
+      "fit": 3123,
+      "query": 1561,
+      "scaffolds": 770,
+      "labels_hidden": false
+    },
+    {
+      "task": "ames",
+      "part": "fold1",
+      "fit": 3122,
+      "query": 1562,
+      "scaffolds": 773,
+      "labels_hidden": false
+    },
+    {
+      "task": "ames",
+      "part": "fold2",
+      "fit": 3123,
+      "query": 1561,
+      "scaffolds": 749,
+      "labels_hidden": false
+    },
+    {
+      "task": "ames",
+      "part": "valid",
+      "fit": 4684,
+      "query": 1137,
+      "scaffolds": 1,
+      "labels_hidden": false
+    },
+    {
+      "task": "ames",
+      "part": "final",
+      "fit": 5821,
+      "query": 1457,
+      "scaffolds": 449,
+      "labels_hidden": true
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "fold0",
+      "fit": 514,
+      "query": 256,
+      "scaffolds": 177,
+      "labels_hidden": false
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "fold1",
+      "fit": 513,
+      "query": 257,
+      "scaffolds": 171,
+      "labels_hidden": false
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "fold2",
+      "fit": 513,
+      "query": 257,
+      "scaffolds": 170,
+      "labels_hidden": false
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "valid",
+      "fit": 770,
+      "query": 111,
+      "scaffolds": 69,
+      "labels_hidden": false
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "final",
+      "fit": 881,
+      "query": 221,
+      "scaffolds": 124,
+      "labels_hidden": true
+    },
+    {
+      "task": "half_life_obach",
+      "part": "fold0",
+      "fit": 310,
+      "query": 155,
+      "scaffolds": 101,
+      "labels_hidden": false
+    },
+    {
+      "task": "half_life_obach",
+      "part": "fold1",
+      "fit": 310,
+      "query": 155,
+      "scaffolds": 90,
+      "labels_hidden": false
+    },
+    {
+      "task": "half_life_obach",
+      "part": "fold2",
+      "fit": 310,
+      "query": 155,
+      "scaffolds": 108,
+      "labels_hidden": false
+    },
+    {
+      "task": "half_life_obach",
+      "part": "valid",
+      "fit": 160,
+      "query": 67,
+      "scaffolds": 56,
+      "labels_hidden": false
+    },
+    {
+      "task": "half_life_obach",
+      "part": "final",
+      "fit": 532,
+      "query": 135,
+      "scaffolds": 104,
+      "labels_hidden": true
+    },
+    {
+      "task": "vdss_lombardo",
+      "part": "fold0",
+      "fit": 528,
+      "query": 263,
+      "scaffolds": 188,
+      "labels_hidden": false
+    },
+    {
+      "task": "vdss_lombardo",
+      "part": "fold1",
+      "fit": 527,
+      "query": 264,
+      "scaffolds": 183,
+      "labels_hidden": false
+    },
+    {
+      "task": "vdss_lombardo",
+      "part": "fold2",
+      "fit": 527,
+      "query": 264,
+      "scaffolds": 158,
+      "labels_hidden": false
+    },
+    {
+      "task": "vdss_lombardo",
+      "part": "valid",
+      "fit": 791,
+      "query": 113,
+      "scaffolds": 84,
+      "labels_hidden": false
+    },
+    {
+      "task": "vdss_lombardo",
+      "part": "final",
+      "fit": 904,
+      "query": 226,
+      "scaffolds": 190,
+      "labels_hidden": true
+    }
+  ],
+  "test_labels_nan": true,
+  "syntax_parsed": true,
+  "training_performed_locally": false,
+  "port": 25870,
+  "global_pretraining_isolation": [
+    {
+      "part": "fold0",
+      "official_fit_rows": 46260,
+      "unique_fit_molecules": 29955,
+      "query_rows": 2235,
+      "global_scaffold_overlap": 0,
+      "global_canonical_overlap": 0
+    },
+    {
+      "part": "fold1",
+      "official_fit_rows": 41503,
+      "unique_fit_molecules": 26528,
+      "query_rows": 2238,
+      "global_scaffold_overlap": 0,
+      "global_canonical_overlap": 0
+    },
+    {
+      "part": "fold2",
+      "official_fit_rows": 42133,
+      "unique_fit_molecules": 26716,
+      "query_rows": 2237,
+      "global_scaffold_overlap": 0,
+      "global_canonical_overlap": 0
+    },
+    {
+      "part": "valid",
+      "official_fit_rows": 46708,
+      "unique_fit_molecules": 29876,
+      "query_rows": 1428,
+      "global_scaffold_overlap": 0,
+      "global_canonical_overlap": 0
+    },
+    {
+      "part": "final",
+      "official_fit_rows": 65430,
+      "unique_fit_molecules": 40229,
+      "query_rows": 2039,
+      "global_scaffold_overlap": null,
+      "global_canonical_overlap": null
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "status": "TRAINING_AND_PIPELINE_STARTED",
+  "training_pid": 5754,
+  "pipeline_pid": 5755,
+  "source_sha256": "14d7a8ac838d1fdbd49f6675c671304b7c70527da79daa52438963d27c153ae7",
+  "source_immutable": true
+}

@@ -1,0 +1,66 @@
+{
+  "at_unix": 1793877233.7383957,
+  "experiments": {
+    "377": {
+      "run_status": {
+        "stage": "EVIDENCE_READY",
+        "pid": 17186,
+        "at_unix": 1793876783.6068332,
+        "seconds": 1638.4496771954,
+        "signature": "b44c3d36fbd9187866bd738a367456e4353c9b88c00b5d84230972ee4040212d"
+      },
+      "launch": {
+        "status": "STARTED",
+        "pid": 17186,
+        "root": "/root/autodl-tmp/regression9_v377"
+      },
+      "development_curves": {
+        "stage": "curve_job_done",
+        "completed": 54,
+        "total": 54
+      },
+      "latest_event": {
+        "stage": "EVIDENCE_READY",
+        "seconds": 1638.4496771954
+      },
+      "curve_states_saved": 64,
+      "prediction_packages_saved": 192,
+      "runner_pid_exists": false
+    },
+    "378": {
+      "run_status": {
+        "stage": "DEVELOPMENT",
+        "pid": 18226,
+        "at_unix": 1793876809.295094,
+        "signature": "e9bc3964a7355838f72b0f3ac81e5edf43ec95f68f99fd77e6a3ae2b73222a93"
+      },
+      "launch": {
+        "status": "STARTED",
+        "pid": 18226,
+        "root": "/root/autodl-tmp/regression9_v378"
+      },
+      "queue_status": {
+        "status": "QUEUED_AFTER_V377",
+        "pid": 17368
+      },
+      "development_curves": {
+        "stage": "curve_job_done",
+        "completed": 1,
+        "total": 36
+      },
+      "latest_event": {
+        "stage": "curve_job_done"
+      },
+      "parallel_prefit": {
+        "completed": 3,
+        "total": 34,
+        "failed": 0
+      },
+      "scheduling": "original driver suspended until independent unchanged curve jobs finish",
+      "curve_states_saved": 4,
+      "prediction_packages_saved": 12,
+      "runner_pid_exists": true
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 3090, 2285 MiB, 94 %"
+}

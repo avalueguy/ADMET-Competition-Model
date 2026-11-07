@@ -1,0 +1,34 @@
+{
+  "status": "LOCAL_DELIVERY_COMPLETE_AWAITING_PLATFORM",
+  "version": "v81",
+  "csv": "admet_submissions/v81_multitask_residual/我从山北来带着兰花草-小分子药物预测技术创新赛-20261024.csv",
+  "upload_copy": "D:\\bili_download\\v81_multitask_residual\\我从山北来带着兰花草-小分子药物预测技术创新赛-20261024.csv",
+  "sha256": "7b87ff33bb24002ddfc0cca62132a35f67febc4afd9b6d59f6bbb4572955ddf0",
+  "changed_tasks": {
+    "bioavailability_ma": 128,
+    "cyp2d6_veith": 2626,
+    "pgp_broccatelli": 245
+  },
+  "unchanged_tasks": 18,
+  "rows": 16379,
+  "columns": 6,
+  "tasks": 22,
+  "model_reload": "PASS",
+  "models": 9,
+  "nonprediction_bytes_exact": true,
+  "archive": {
+    "status": "PASS",
+    "path": "releases/v81_multitask_residual_20261024.tar.gz",
+    "bytes": 106779532,
+    "sha256": "1628292123c75e260e52c7bc10e447f1d2a1d47755abb86e29aae7222868f7ae",
+    "members": 48,
+    "all_member_hashes_verified": true
+  },
+  "all_archive_member_hashes_verified": true,
+  "official_score": null,
+  "anchor": "v80",
+  "anchor_official_score_user_reported": 50.647,
+  "test_labels_used": false,
+  "external_data": false,
+  "automatic_upload": false
+}

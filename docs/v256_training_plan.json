@@ -1,0 +1,48 @@
+{
+  "version": "v256",
+  "delivery_version": "v257",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-29T09:56:03.361662+00:00",
+  "source_sha256": "3a494713c4c9438512bcbf1778c756491b83350134d911f1651c51d3052eda11",
+  "geometry_source_sha256": "20fff137eb936883db1d105bbe717d87533007788185b83f3aac0eb5679cdddc",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "tasks": [
+    "caco2_wang",
+    "ppbr_az",
+    "lipophilicity_astrazeneca"
+  ],
+  "protected_tasks": 19,
+  "development_partitions": 6,
+  "seed_models": 12,
+  "seeds": [
+    2561029,
+    2561030
+  ],
+  "configs": [
+    {
+      "trees": 700,
+      "depth": 4
+    }
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "hypothesis": "Molecules with similar total TPSA and global shape can have different solvent-exposed polar/charged area through intramolecular shielding. Conformer-resolved exposure and its variability may explain Caco2 permeability/PPBR/lipophilicity residual structure without arbitrary mean correction.",
+  "historical_distinction": "v98 has mean/std global3D descriptors RDF/MORSE/WHIM/PMI but no atom SASA or donor-acceptor burial. v109 has 2D role-pair graph distances. v210 standardized2D descriptors. v51/v52/v73 contain MolLogP/ESOL priors, not exposed polar surface. Fixed plain CatBoost is a reader of new physical information; no reuse of v216 ordered gradients/scaffold risk weighting or any old predictor.",
+  "structure_features": "All original atoms, canonical SMILES atom order. 6ETKDGv3 conformers using structure-derived seed,MMFF94/UFF150iterations. Atom SASA using rdFreeSASA and periodic-table vdW radii; N/O/S and attached H polar. Exposed donor/acceptor surface,positive/negative Gasteiger-charge area,donor/acceptor contacts at graphdistance>=4,centroid-relative charge moment. Boltzmann-style energy weights at0.593kcal; weightedmean/sd/min/max. Unsupported structuresexplicitmissingness; no guessed pH/pKa.",
+  "inputs": "59newexposurefeatures+original435physicaldescriptors+target-excluded exact/neutral otherassaycontext. No circular fingerprints,old globalshape,pharmacophore,old predictions or external pretraining.",
+  "model": "MAE CatBoostPlain700depth4 lr.03 L2=30,2seeds2561029/2561030,CPU4threads. Fitmedian/IQR labelscale;mean2seedoutputs;PPBR clipped0..100.",
+  "feasibility": "24/24 fixed heavyatom-quantile Caco2train structures passed,17.73seconds,notationinvariancePASS;zero assay labels or predictive scores. This demonstrates computational viability only.",
+  "preconditions": "6workers label-free feature construction;each target train structurecoverage>=90%;actual feature rebuild/synthetic notation invariance;3MAE task querylabel isolation/save-reload/roworder smoke;105 immutablebaselinecache/dependency/frozenrunner preflight before modeltraining.",
+  "scheduling": "One preparation coordinator;6feature workers then smoke and preflight. Only then driver CPU4thread worker3tasks;6developmentpartitions12seedmodels;workerexit0 before originalselector. GPUunused.",
+  "selection": "Originalv148 unique config/.2or.45 frozen onfold0/1;all4pointgains>0;meanoriginalthreshold;fold2/valid pairedscaffoldbootstrap90lower>0;no confirmationfallback.",
+  "accepted_verification": "Recompute every acceptedtask molecule exposure from originalSMILES in separateprocess,exactfeature/modelreload,originalgate/finalfusion,roworder,Drug_IDstrings,nonpredictionbytes,backuphash. Release/download/restoreallmembersdependenciesPASS beforemanualCSVdelivery.",
+  "source_immutable_after_start": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "manual_submission_only": true,
+  "official_gain_guaranteed": false,
+  "limitations": "Conformers approximate aqueous exposure;Gasteigercharges and contactdistances are descriptors,not measuredpKa/Hbonds. Labels reused and historicalbaselineOOF approximate. No hiddengainclaim."
+}

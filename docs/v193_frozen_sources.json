@@ -1,0 +1,27 @@
+{
+  "path": "releases/v193_frozen_sources_20261028.tar.gz",
+  "sha256": "727476c5824475d2d789766e6239fcbba7a1463f7c73f0d32bd21fbac145dbf6",
+  "files": [
+    {
+      "path": "tools/v193_smiles_convolution.py",
+      "sha256": "14d7a8ac838d1fdbd49f6675c671304b7c70527da79daa52438963d27c153ae7"
+    },
+    {
+      "path": "tools/v194_verify_smiles_convolution.py",
+      "sha256": "513adae59d6cbb2f2b23c4690f8e0ce50a913f9bd990999eca5ee247620d40a0"
+    },
+    {
+      "path": "tools/v195_package_smiles_batch.py",
+      "sha256": "cbf7bb44f173777be66a29c375842828140350fd90a7435678e5fe729bd02c47"
+    },
+    {
+      "path": "tools/finalize_v194_local.py",
+      "sha256": "08e41c8d23394eaa09a96f3d504b3eaa7f3a17c0d1f22abac4d6081b70179b93"
+    },
+    {
+      "path": "docs/v193_training_plan.json",
+      "sha256": "35467a4c4e9474d659c3ed4aa61b6dbd722d5a101909ac58de64b948c71619fd"
+    }
+  ],
+  "credentials_included": false
+}

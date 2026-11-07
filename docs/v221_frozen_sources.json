@@ -1,0 +1,29 @@
+{
+  "status": "FROZEN_BEFORE_DEVELOPMENT",
+  "files": [
+    {
+      "path": "tools/v221_fragment_factorization.py",
+      "sha256": "3ea824cf48ea30e3e53fa1c2f272f6981cca1b3aca6d081c974e6b40978e5f98"
+    },
+    {
+      "path": "tools/v222_verify_fragment_factorization.py",
+      "sha256": "00a392a4e4258bac030f6cd676f2a60b0c8dac05abd8bfdff62932cfdf9e691e"
+    },
+    {
+      "path": "tools/v223_package_factorization_batch.py",
+      "sha256": "cddfa0b4feae4d28b1229393d6ab622e03fb08e32b1fdda3b1821ceb419909fc"
+    },
+    {
+      "path": "tools/finalize_v222_local.py",
+      "sha256": "08664bd4772255f1274ffc3c76bb150b31fdf61fb562c3ee7f9d94069ebf75f0"
+    },
+    {
+      "path": "docs/v221_training_plan.json",
+      "sha256": "7123cf06a6c2155ce183f6c17d7a00f318a45cdd79b4e8e3ea788c2869490225"
+    },
+    {
+      "path": "docs/v221_source_review.json",
+      "sha256": "4eee65adf3a17dfaec69b555dd5e17915e58d81503a38d5f040ec7361f9893bf"
+    }
+  ]
+}

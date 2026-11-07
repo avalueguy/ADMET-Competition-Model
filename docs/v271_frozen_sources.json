@@ -1,0 +1,55 @@
+{
+  "status": "FROZEN_BEFORE_SMOKE_AND_DEVELOPMENT",
+  "files": [
+    {
+      "path": "tools/v271_clearance_innovations.py",
+      "sha256": "2ccc5e91e9ecb32b0f3ce4082689a702adcf2e8a12478c47dfdbefbaee1bf9a4"
+    },
+    {
+      "path": "tools/v272_verify_clearance_innovations.py",
+      "sha256": "6de1789cb55a03c9983d1d18a2d010d69adc83c3d46a845affe3e562e53e3565"
+    },
+    {
+      "path": "tools/v273_package_innovations.py",
+      "sha256": "1678713939e7c43cdf073138286df6d0bc349a1428734198bd40cf6ffde54d1c"
+    },
+    {
+      "path": "tools/v274_innovation_driver.py",
+      "sha256": "a5443ccaf6b646e612d349530cc4caec6e42277985b0496e75f345d4bf4d9eb9"
+    },
+    {
+      "path": "tools/v275_start_innovations.py",
+      "sha256": "64800df0bbe8fe7b028e1c0e63e44b8b86efd29e7a1f850b16706e4a0c565525"
+    },
+    {
+      "path": "tools/finalize_v272_local.py",
+      "sha256": "44fd3267139d221d1a8f6eb797bc0ce5358431b96440728b31ead4e3c2c0ac86"
+    },
+    {
+      "path": "docs/v271_training_plan.json",
+      "sha256": "34578d980198a733a5b14d86b737af109c874f1ec6fba63d541d87630e7a79fe"
+    },
+    {
+      "path": "docs/v271_source_review.json",
+      "sha256": "90f5671ce111462dfdba3fb9c2d8e3b5574722e0738c81289bad47894c62e4f5"
+    },
+    {
+      "path": "tools/v270_assay_dependence_audit.py",
+      "sha256": "a8c1df4e9eb2a458ce3b44ab29f5397853c92d2067a82785f4faa0aa278e85f3"
+    },
+    {
+      "path": "docs/v270_assay_dependence_audit.json",
+      "sha256": "4ba7f57649370348e9879205fef5a83f6a32e3b4bf5fcc5e3c4249c4d53b7ee7"
+    },
+    {
+      "path": "docs/v270_review_decision.json",
+      "sha256": "12cf11296374dfc317443d627c315e2eb0281f7f9148f1235ccbb9643cd64fd7"
+    },
+    {
+      "path": "tools/v148_experiment_runner.py",
+      "sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871"
+    }
+  ],
+  "credentials_stored": false,
+  "source_immutable_after_start": true
+}

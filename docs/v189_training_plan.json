@@ -1,0 +1,40 @@
+{
+  "version": "v189",
+  "delivery_version": "v190",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "source_sha256": "5639e63484938a8f14e8c23d3dcdd84dd5ebe6dd3f7e58923e4ff7e69e849835",
+  "model": "New deterministic leaf-wise LightGBM two-seed ensembles",
+  "configs": [
+    {
+      "view": "augmented",
+      "leaves": 7,
+      "trees": 900,
+      "extra": false
+    },
+    {
+      "view": "full",
+      "leaves": 15,
+      "trees": 900,
+      "extra": true
+    }
+  ],
+  "seeds": [
+    1894026,
+    1894027
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "lightgbm_version": "4.7.0",
+  "tasks": "All21 improvable endpoints, HIA locked",
+  "selection": "Original v148: max minimum fold0/1, freeze before confirmation, no fallback",
+  "confirmation": "Original frozen practical mean threshold, all4 point gains>0, both scaffold-bootstrap90 lower bounds>0",
+  "query_label_perturbation_required": true,
+  "independent_model_reload_required": true,
+  "source_immutable_after_start": true,
+  "external_data": false,
+  "test_labels_used": false,
+  "official_gain_guaranteed": false
+}

@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "files": 1852,
+  "source_files": 1526,
+  "runtime_files": 326,
+  "source_zip_sha256": "a2a6b74fe90ff04992f5eb0bf56aa059b49aafa27607c88f8aa8c11d8369a4d3",
+  "runtime_sha256": "0612281359f84e9806faaab722bff7461177d3e2f51bfcd78cf76bc92aa68df5",
+  "parts": [
+    {
+      "name": "admet-v366-runtime.tar.gz.part001",
+      "sha256": "004f7bbaf010dad68cfbb269843b8395de93072bf68bf28b4bb4e151f8759e49",
+      "bytes": 20971520
+    },
+    {
+      "name": "admet-v366-runtime.tar.gz.part002",
+      "sha256": "969a2294ce26d17d47c158010ce1ae469d62c53a3aab44aac77f08346bc9938a",
+      "bytes": 20971520
+    },
+    {
+      "name": "admet-v366-runtime.tar.gz.part003",
+      "sha256": "014a1e52d380eefff4456d7864db3c471a4c4242e810799b90e28bc6daf94faa",
+      "bytes": 20971520
+    },
+    {
+      "name": "admet-v366-runtime.tar.gz.part004",
+      "sha256": "fc3a4b5d0b54b97af6dada675cc3f22e0e7203e4c3237f4948fe07faa59795ca",
+      "bytes": 20971520
+    },
+    {
+      "name": "admet-v366-runtime.tar.gz.part005",
+      "sha256": "b94ce61516eefaaf4776dc69aa8077f0759113dcce3a9daddd342ca183875208",
+      "bytes": 20971520
+    },
+    {
+      "name": "admet-v366-runtime.tar.gz.part006",
+      "sha256": "7d4cc003a3378923467013bff8290ce06bc3a5547febbad01bbddaea982338a6",
+      "bytes": 19475701
+    }
+  ],
+  "final_checkpoints": 6,
+  "all_member_hashes_verified": true
+}

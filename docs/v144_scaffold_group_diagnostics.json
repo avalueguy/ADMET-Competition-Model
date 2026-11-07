@@ -1,0 +1,96 @@
+{
+  "status": "DIAGNOSTIC_ONLY",
+  "records": [
+    {
+      "task": "ames",
+      "part": "fold2",
+      "query_rows": 1561,
+      "unique_scaffold_groups": 749,
+      "largest_group_rows": 51,
+      "bootstrap_interpretable": true,
+      "note": "Cluster bootstrap diagnostic only; label reuse and selection bias remain."
+    },
+    {
+      "task": "ames",
+      "part": "valid",
+      "query_rows": 1137,
+      "unique_scaffold_groups": 1,
+      "largest_group_rows": 1137,
+      "bootstrap_interpretable": false,
+      "note": "Single group: scaffold resampling cannot quantify uncertainty."
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "part": "fold2",
+      "query_rows": 283,
+      "unique_scaffold_groups": 175,
+      "largest_group_rows": 12,
+      "bootstrap_interpretable": true,
+      "note": "Cluster bootstrap diagnostic only; label reuse and selection bias remain."
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "part": "valid",
+      "query_rows": 122,
+      "unique_scaffold_groups": 72,
+      "largest_group_rows": 10,
+      "bootstrap_interpretable": true,
+      "note": "Cluster bootstrap diagnostic only; label reuse and selection bias remain."
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "fold2",
+      "query_rows": 156,
+      "unique_scaffold_groups": 115,
+      "largest_group_rows": 10,
+      "bootstrap_interpretable": true,
+      "note": "Cluster bootstrap diagnostic only; label reuse and selection bias remain."
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "part": "valid",
+      "query_rows": 67,
+      "unique_scaffold_groups": 50,
+      "largest_group_rows": 7,
+      "bootstrap_interpretable": true,
+      "note": "Cluster bootstrap diagnostic only; label reuse and selection bias remain."
+    },
+    {
+      "task": "cyp2d6_veith",
+      "part": "fold2",
+      "query_rows": 3064,
+      "unique_scaffold_groups": 1914,
+      "largest_group_rows": 35,
+      "bootstrap_interpretable": true,
+      "note": "Cluster bootstrap diagnostic only; label reuse and selection bias remain."
+    },
+    {
+      "task": "cyp2d6_veith",
+      "part": "valid",
+      "query_rows": 1313,
+      "unique_scaffold_groups": 893,
+      "largest_group_rows": 26,
+      "bootstrap_interpretable": true,
+      "note": "Cluster bootstrap diagnostic only; label reuse and selection bias remain."
+    },
+    {
+      "task": "cyp2c9_veith",
+      "part": "fold2",
+      "query_rows": 2821,
+      "unique_scaffold_groups": 1578,
+      "largest_group_rows": 476,
+      "bootstrap_interpretable": true,
+      "note": "Cluster bootstrap diagnostic only; label reuse and selection bias remain."
+    },
+    {
+      "task": "cyp2c9_veith",
+      "part": "valid",
+      "query_rows": 1210,
+      "unique_scaffold_groups": 744,
+      "largest_group_rows": 30,
+      "bootstrap_interpretable": true,
+      "note": "Cluster bootstrap diagnostic only; label reuse and selection bias remain."
+    }
+  ],
+  "selection_changed": false
+}

@@ -1,0 +1,28 @@
+{
+  "status": "STARTED",
+  "at_utc": "2026-10-29T09:33:23.474290+00:00",
+  "host": "connect.nmb2.seetacloud.com",
+  "port": 24365,
+  "boot_id": "7edb467c-8def-4bf5-b14f-bb31d4469124",
+  "source_sha256": "b444023116c4fe09b154332fe127447b3e73a87b6250142e0bd7b34843eba15b",
+  "signature": "dc5f2c9c1788175d60964dadf0fd07079e1e0bf5fa6b140139e514741a49ad8d",
+  "baseline_cache_verified": 105,
+  "smoke": "PASS",
+  "frozen_sources_verified": true,
+  "dependency_sha256_verified": true,
+  "processes": {
+    "driver": {
+      "pid": 24505,
+      "script": "tools/v253_matching_driver.py",
+      "start_ticks": "1981092767",
+      "log": "v250_hierarchical_atom_matching.log"
+    },
+    "pipeline": {
+      "pid": 24506,
+      "script": "tools/v252_package_matching_batch.py",
+      "start_ticks": "1981092767",
+      "log": "v252_pipeline.log"
+    }
+  },
+  "credentials_stored": false
+}

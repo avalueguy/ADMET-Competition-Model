@@ -1,0 +1,311 @@
+{
+  "status": "COMPLETE",
+  "version": "v378",
+  "completed_at_utc": "2026-11-05T12:03:37.872356+00:00",
+  "training_host": "connect.nmb2.seetacloud.com:25870",
+  "official_best": 51.271,
+  "official_new_score": null,
+  "delivery": {
+    "status": "NO_ELIGIBLE_CANDIDATE",
+    "version": "v378",
+    "signature": "e9bc3964a7355838f72b0f3ac81e5edf43ec95f68f99fd77e6a3ae2b73222a93",
+    "baseline": "v374_associated",
+    "official_best": 51.271,
+    "new_official_score": null,
+    "csv": null,
+    "accepted_tasks": [],
+    "nine_task_mean_relative_MAE_gain_by_part": {
+      "fold0": 0.0,
+      "fold1": 0.0,
+      "fold2": 0.0,
+      "valid": 0.0
+    },
+    "five_scored_task_mean_relative_MAE_gain_by_part": {
+      "fold0": 0.0,
+      "fold1": 0.0,
+      "fold2": 0.0,
+      "valid": 0.0
+    },
+    "goal_mean_5percent_achieved_local": false,
+    "five_scored_goal_achieved_local": false,
+    "all_fitting_remote": true,
+    "models_verified": 120,
+    "model_replay_max_error": 0.0,
+    "final_model_states": [],
+    "automatic_platform_submission": false,
+    "limitation": "Four ranking task MAE references are fit-label empirical-quantile calibrated score ranks, not recovered historical native predictions. Historical control partly proxy; public labels reused.",
+    "task_evidence": [
+      {
+        "task": "caco2_wang",
+        "best": {
+          "name": "feature_transformer_n800",
+          "base": "feature_transformer",
+          "rounds": 800
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": 0.004356643074881808,
+            "baseline": 0.38815645870734267,
+            "candidate": 0.3864653995595447
+          },
+          {
+            "part": "fold1",
+            "gain": -0.0025559712574057965,
+            "baseline": 0.3348527606452333,
+            "candidate": 0.3357086346769055
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "ld50_zhu",
+        "best": {
+          "name": "retrieval_transformer_n2400",
+          "base": "retrieval_transformer",
+          "rounds": 2400
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": -0.0014772161401759947,
+            "baseline": 0.4623870980111785,
+            "candidate": 0.46307014369536975
+          },
+          {
+            "part": "fold1",
+            "gain": -0.001278233208052621,
+            "baseline": 0.5305508449297317,
+            "candidate": 0.5312290126382813
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "lipophilicity_astrazeneca",
+        "best": {
+          "name": "feature_transformer_n800",
+          "base": "feature_transformer",
+          "rounds": 800
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": -0.004588496107393212,
+            "baseline": 0.48016540927868107,
+            "candidate": 0.48236864639006116
+          },
+          {
+            "part": "fold1",
+            "gain": -0.0017972758181353085,
+            "baseline": 0.4548081915781444,
+            "candidate": 0.45562560734275764
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "ppbr_az",
+        "best": {
+          "name": "retrieval_transformer_n800",
+          "base": "retrieval_transformer",
+          "rounds": 800
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": 0.004073058574623164,
+            "baseline": 7.95280971526812,
+            "candidate": 7.920417455465
+          },
+          {
+            "part": "fold1",
+            "gain": -0.0026450032132802315,
+            "baseline": 7.292895667509342,
+            "candidate": 7.312185399984021
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "solubility_aqsoldb",
+        "best": {
+          "name": "retrieval_transformer_n800",
+          "base": "retrieval_transformer",
+          "rounds": 800
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": 0.002563624461757396,
+            "baseline": 0.7360725561987135,
+            "candidate": 0.7341855425880142
+          },
+          {
+            "part": "fold1",
+            "gain": -0.0013091749450621726,
+            "baseline": 0.7161434295213145,
+            "candidate": 0.7170809865563147
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "clearance_hepatocyte_az",
+        "best": {
+          "name": "retrieval_transformer_n4800",
+          "base": "retrieval_transformer",
+          "rounds": 4800
+        },
+        "weight": 0.25,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": 0.04559316971031933,
+            "baseline": 31.964365097329107,
+            "candidate": 30.507008374763974,
+            "rank_gain": 0.0009381967892438947
+          },
+          {
+            "part": "fold1",
+            "gain": 0.03763917467462482,
+            "baseline": 29.556240307657728,
+            "candidate": 28.44376781599261,
+            "rank_gain": 0.006934104770182192
+          },
+          {
+            "part": "fold2",
+            "gain": 0.03452989478341202,
+            "baseline": 29.302112399955053,
+            "candidate": 28.290313541852893,
+            "rank_gain": 0.0020769288687807475
+          },
+          {
+            "part": "valid",
+            "gain": 0.04345909302690754,
+            "baseline": 34.67105717549046,
+            "candidate": 33.16428447635959,
+            "rank_gain": -0.010591685216453595
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "clearance_microsome_az",
+        "best": {
+          "name": "feature_transformer_n4800",
+          "base": "feature_transformer",
+          "rounds": 4800
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": 0.019159310043156096,
+            "baseline": 27.116399993896483,
+            "candidate": 26.596868479159184,
+            "rank_gain": 7.036848974317778e-05
+          },
+          {
+            "part": "fold1",
+            "gain": 0.01632589600791132,
+            "baseline": 26.81884782509955,
+            "candidate": 26.381006104454976,
+            "rank_gain": 0.0030907273488149922
+          },
+          {
+            "part": "fold2",
+            "gain": 0.0336732886919378,
+            "baseline": 24.008446759224213,
+            "candidate": 23.200003400455838,
+            "rank_gain": 0.0028503568238857913
+          },
+          {
+            "part": "valid",
+            "gain": 0.028755524464981353,
+            "baseline": 29.474799529258988,
+            "candidate": 28.62723621029496,
+            "rank_gain": -0.005375397944747062
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "half_life_obach",
+        "best": {
+          "name": "feature_transformer_n800",
+          "base": "feature_transformer",
+          "rounds": 800
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": 0.055764627640153046,
+            "baseline": 20.806086576482805,
+            "candidate": 19.645842905896455,
+            "rank_gain": -0.007220849270393126
+          },
+          {
+            "part": "fold1",
+            "gain": 0.046587876754227334,
+            "baseline": 22.383562434963547,
+            "candidate": 21.340759786922913,
+            "rank_gain": -0.005743327809696885
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "vdss_lombardo",
+        "best": {
+          "name": "feature_transformer_n800",
+          "base": "feature_transformer",
+          "rounds": 800
+        },
+        "weight": 0.1,
+        "parts": [
+          {
+            "part": "fold0",
+            "gain": 0.04727074820794731,
+            "baseline": 4.419333877893289,
+            "candidate": 4.210428658904544,
+            "rank_gain": 0.003937848638331354
+          },
+          {
+            "part": "fold1",
+            "gain": 0.011831649682637465,
+            "baseline": 6.180262281910009,
+            "candidate": 6.107139583643632,
+            "rank_gain": -0.006253654180384038
+          }
+        ],
+        "accepted": false
+      }
+    ]
+  },
+  "models_verified": 120,
+  "remote_idle": {
+    "status": "PASS",
+    "at_unix": 1793880028.069085,
+    "no_training_processes_running": true,
+    "experiment_pids": [
+      17186,
+      18226
+    ],
+    "gpu": "NVIDIA GeForce RTX 3090, 0 MiB, 0 %\n",
+    "gpu_compute_processes": "",
+    "statuses": {
+      "regression9_v377": "EVIDENCE_READY",
+      "regression9_v378": "EVIDENCE_READY"
+    },
+    "scope": "Both v377/v378 runners and verifiers absent; no GPU compute processes."
+  },
+  "late_better_on_both_parts": 3,
+  "total_task_base_pairs": 18
+}

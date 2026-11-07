@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "archive": "releases/v321_experimental_cyp3a4_20261101.tar.gz",
+  "sha256": "fa05874ebdb63baaf1b4f17e34119eef9bd7c1fd86a9a41cc392092d9f5c3348",
+  "bytes": 16538646,
+  "members": 22,
+  "manifest_files": 21,
+  "all_member_hashes_verified": true,
+  "csv_members": [
+    "admet_submissions/v321_experimental_cyp3a4/我从山北来带着兰花草-小分子药物预测技术创新赛-20261101.csv"
+  ],
+  "restored_absent": 1,
+  "existing_different_preserved": [],
+  "dependency_contents_reverified": true,
+  "dependency_hashes_checked": 50
+}

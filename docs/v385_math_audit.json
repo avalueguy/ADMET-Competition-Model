@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "no_fitting_performed": true,
+  "source_records": [
+    {
+      "version": "v384",
+      "source": "v371_mae_experts.py",
+      "sha256": "64ba5ff605f3a71b0065817e7d99ffb27cdede65baf218296e1bb1159c09020f"
+    },
+    {
+      "version": "v384",
+      "source": "v377_regression_experts.py",
+      "sha256": "c0af57f620695bbfc1c25dbe50335b58a53b94ff04f2c50122c7f559687518a1"
+    },
+    {
+      "version": "v384",
+      "source": "v384_recursive_median.py",
+      "sha256": "06be24c0dd5e877c1e918380a82e1c3afd3fdd57592fb8673b10d6f37aa95142"
+    },
+    {
+      "version": "v384",
+      "source": "v384_run_experts.py",
+      "sha256": "984cbc71c35932c2281ce4a8b242238447fc0106846b0645cfaadaf369c5d26d"
+    },
+    {
+      "version": "v384",
+      "source": "v384_verify_experts.py",
+      "sha256": "989d21011f861d80d48477c1f90c376721b0c549585499690b2abc0d0d8d9e9f"
+    },
+    {
+      "version": "v384",
+      "source": "v384_smoke.py",
+      "sha256": "15b70c098d683b954b38757c52158e88b7bd82f4250293116dbdbcb1ae229087"
+    },
+    {
+      "version": "v384",
+      "source": "v384_monitor.py",
+      "sha256": "c5bdb006a017a947e29c587c3ebd5f2ae42e21841c99f534d4622d9a895a8f63"
+    },
+    {
+      "version": "v384",
+      "source": "v384_completion.py",
+      "sha256": "4df7a6d56bdecb5d2f40aadbe651b3c35447696fca996f83dc2a0c9629fc62a3"
+    },
+    {
+      "version": "v385",
+      "source": "v371_mae_experts.py",
+      "sha256": "64ba5ff605f3a71b0065817e7d99ffb27cdede65baf218296e1bb1159c09020f"
+    },
+    {
+      "version": "v385",
+      "source": "v377_regression_experts.py",
+      "sha256": "c0af57f620695bbfc1c25dbe50335b58a53b94ff04f2c50122c7f559687518a1"
+    },
+    {
+      "version": "v385",
+      "source": "v380_histogram_median.py",
+      "sha256": "be79212314c874d5d75847d0e067024e0cfc21f612580b069a8f141944073257"
+    },
+    {
+      "version": "v385",
+      "source": "v385_warped_median.py",
+      "sha256": "a2efdd6122603a5006fa28d4506e0571729295f17fb3f7b849525e66fc064d49"
+    },
+    {
+      "version": "v385",
+      "source": "v385_run_experts.py",
+      "sha256": "6a43eb1ae59ccaf3aaad3eead52025266e33acf1ed9689a7f4fe5afcc7aa67a2"
+    },
+    {
+      "version": "v385",
+      "source": "v385_verify_experts.py",
+      "sha256": "0a2ae2a61bf536149975e407bc86a41434959af5e6e596cd3f58e2aaef838e52"
+    },
+    {
+      "version": "v385",
+      "source": "v385_smoke.py",
+      "sha256": "f59598c9399c0766506e727193199fd955d4cf991b4ae1d4933c8eeaac3e349d"
+    },
+    {
+      "version": "v385",
+      "source": "v385_completion.py",
+      "sha256": "5fa00849a571a2df330594c91e9e30ff31d773f6cc08e801aff72a27a421420b"
+    }
+  ],
+  "laplace_gradient_finite_difference_max_error": 6.081687237147193e-12,
+  "bounded_logit_exact_roundtrip": true,
+  "MAE_score_formula_max_rounding_error": 3.324675716953607e-07,
+  "scope": "Algebra verification on synthetic fixed coefficients, no hyperparameter selection or model fit."
+}

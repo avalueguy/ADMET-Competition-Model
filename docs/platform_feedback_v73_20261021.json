@@ -1,0 +1,18 @@
+{
+  "version": "v73",
+  "score": 50.640,
+  "previous_version": "v72",
+  "previous_score": 50.628,
+  "observed_gain": 0.012,
+  "best_prior_version": "v56",
+  "best_prior_score": 50.603,
+  "gain_over_v56": 0.037,
+  "tenth_place_score_last_known": 51.7,
+  "gap_to_tenth_last_known": 1.060,
+  "source": "user report",
+  "reported_date": "2026-10-21",
+  "platform_displays": "current submission score, not historical best",
+  "per_task_platform_scores": null,
+  "uploaded_byte_hash_independently_confirmed": false,
+  "interpretation": "The v73 candidate was valid but produced only a small aggregate gain. The platform aggregation formula and per-task scores are unavailable, so task-level causes cannot be inferred from the aggregate score alone."
+}

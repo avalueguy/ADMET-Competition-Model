@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "signature": "a906da1890fc76b4f9b353545f2eb3c18fa5226ac5734267ffebbcd8a8598ac6",
+  "csv_sha256": "45982f798555d88f2c934d187c709091db02841e257c1f2450b470b9a02c04fc",
+  "rows": 16379,
+  "tasks": 22,
+  "changed_rows": {
+    "ld50_zhu": 1478
+  },
+  "endpoints": [
+    {
+      "task": "ld50_zhu",
+      "rows": 1478,
+      "actual_smiles_order_verified": true,
+      "fusion_error": 0.0
+    }
+  ],
+  "archive_current_bytes_and_members_verified": true,
+  "verified_release_files": 66,
+  "official_score": null
+}

@@ -1,0 +1,22 @@
+{
+  "status": "FROZEN_BEFORE_DEVELOPMENT_SCORES",
+  "at_hong_kong": "2026-11-01T18:34:00+08:00",
+  "baseline": "v313",
+  "official_best_user_reported": 51.205,
+  "target_score": 52.0,
+  "source_sha256": "dd648d2e7eee6ec0cf0cb997a5162fb51a8ebc4a9677d81276b76fe714873198a",
+  "baseline_adapter_sha256": "be19cbdc09034bf1e41548c636246392baa5922d98005d4a4083e429b80db677",
+  "runner_sha256": "b01f7fd2512c88cf9d40fedd9a0b4b764597fc872240c51996fff6d8a8e60dce",
+  "smoke_signature": "4b09684c3607be5641c19d0c5930d878b3b4ece1a51979b3660fd76923417404",
+  "tasks": ["caco2_wang", "ppbr_az", "lipophilicity_astrazeneca", "ld50_zhu", "solubility_aqsoldb"],
+  "config": {"depth": 3, "C": 10.0, "epsilon": 0.03, "fingerprint_weight": 0.65, "input_bias": 0.1},
+  "seeds": [],
+  "method": "Deterministic analytic normalized ReLU neural tangent kernel, six cosine fingerprint blocks and fit-only robust numeric/other-assay block; epsilon-insensitive SVR on median/IQR fit targets.",
+  "selection": "Original v148 algorithm through v314 baseline adapter: maximize minimum fold0/1 gain over frozen blends 0.20 and 0.45; require relative MAE reduction >0.012; freeze before fold2/valid; no fallback.",
+  "confirmation": "All four gains positive; average >0.012; both 500-replicate paired scaffold bootstrap 90% lower bounds positive.",
+  "smoke": "PASS: independent dense/scalar kernel reference, sampled PSD and diagonal, validation-target perturbation invariance, checkpoint reload and reversed queries. No query scores computed.",
+  "test_labels_used": false,
+  "external_data": false,
+  "automatic_platform_submission": false,
+  "limitations": "Historical public validation reused and upstream OOF approximate; local gains are not official evidence. PPBR/lipophilicity controls preserve exact v313 frozen update. No promise of 52."
+}

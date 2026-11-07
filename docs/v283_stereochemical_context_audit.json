@@ -1,0 +1,92 @@
+{
+  "status": "FIT_ONLY_CONTEXT_AUDIT_COMPLETE",
+  "at_utc": "2026-10-30T04:51:56.412827+00:00",
+  "source_sha256": "04fc696d89f6c71b21b0c46dba6a6a012926b412597e4e4d0f7c983d7a8eed4e",
+  "original_smiles_sha256": "14e1fa04138f1931cf569e9fdd736da656eeeadb6d977234fa06b3c8a5e9a3a0",
+  "tasks_predeclared": [
+    "herg",
+    "cyp3a4_substrate_carbonmangels",
+    "cyp2d6_veith"
+  ],
+  "minimum_changed_fraction": 0.05,
+  "minimum_changed_rows": 10,
+  "records": [
+    {
+      "task": "herg",
+      "parts": [
+        {
+          "part": "fold0",
+          "fitting_rows": 305,
+          "changed_rows": 99,
+          "changed_fraction": 0.32459016393442625,
+          "mixed_other_assay_identity_groups": 306,
+          "mixed_source_rows": 694,
+          "supported": true
+        },
+        {
+          "part": "fold1",
+          "fitting_rows": 305,
+          "changed_rows": 88,
+          "changed_fraction": 0.28852459016393445,
+          "mixed_other_assay_identity_groups": 306,
+          "mixed_source_rows": 694,
+          "supported": true
+        }
+      ],
+      "supported": true
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "parts": [
+        {
+          "part": "fold0",
+          "fitting_rows": 312,
+          "changed_rows": 140,
+          "changed_fraction": 0.44871794871794873,
+          "mixed_other_assay_identity_groups": 308,
+          "mixed_source_rows": 698,
+          "supported": true
+        },
+        {
+          "part": "fold1",
+          "fitting_rows": 312,
+          "changed_rows": 141,
+          "changed_fraction": 0.4519230769230769,
+          "mixed_other_assay_identity_groups": 308,
+          "mixed_source_rows": 698,
+          "supported": true
+        }
+      ],
+      "supported": true
+    },
+    {
+      "task": "cyp2d6_veith",
+      "parts": [
+        {
+          "part": "fold0",
+          "fitting_rows": 6127,
+          "changed_rows": 264,
+          "changed_fraction": 0.04308797127468582,
+          "mixed_other_assay_identity_groups": 290,
+          "mixed_source_rows": 662,
+          "supported": false
+        },
+        {
+          "part": "fold1",
+          "fitting_rows": 6128,
+          "changed_rows": 225,
+          "changed_fraction": 0.03671671018276763,
+          "mixed_other_assay_identity_groups": 290,
+          "mixed_source_rows": 662,
+          "supported": false
+        }
+      ],
+      "supported": false
+    }
+  ],
+  "query_labels_used": false,
+  "query_predictions_computed": false,
+  "target_labels_changed": false,
+  "qualification": "Pooling differences support a possible input-identity correction, not evidence of gain.",
+  "next_step": "Only supported actual carried components may be considered; preserve original model settings and seeds, do not tune on audit."
+}

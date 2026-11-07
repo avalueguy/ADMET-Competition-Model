@@ -1,0 +1,194 @@
+{
+  "status": "PASS_ARITHMETIC_ONLY",
+  "at_hong_kong": "2026-11-01T19:47:37.084580+08:00",
+  "baseline": "v313",
+  "official_user_reported": 51.205,
+  "exact_task_mean": 51.20533122727272,
+  "gap_to52": 0.7946687727272774,
+  "summed_task_point_gain_required": 17.482713000000103,
+  "formula_max_rounding_residual": 4.973915395112272e-07,
+  "all_five_MAE_minus10percent_total_gain": 0.5961478649969439,
+  "all_five_MAE_uniform_relative_reduction_needed_if_all_other_tasks_identical": 0.13118834120833606,
+  "sensitivities": [
+    {
+      "task": "ames",
+      "metric": "AUROC",
+      "scenario_raw": 0.8869096712291213,
+      "scenario": "AUROC/AUPRC +0.01",
+      "scenario_total_gain": 0.012884949861189458,
+      "perfect_task_total_gain": 0.14901964917349372
+    },
+    {
+      "task": "bbb_martins",
+      "metric": "AUROC",
+      "scenario_raw": 0.9389790494058787,
+      "scenario": "AUROC/AUPRC +0.01",
+      "scenario_total_gain": 0.012166859958945186,
+      "perfect_task_total_gain": 0.08367501095266308
+    },
+    {
+      "task": "bioavailability_ma",
+      "metric": "AUROC",
+      "scenario_raw": 0.8048121050881277,
+      "scenario": "AUROC/AUPRC +0.01",
+      "scenario_total_gain": 0.014171138683789053,
+      "perfect_task_total_gain": 0.2578201912842056
+    },
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "scenario_raw": 0.24833692846428962,
+      "scenario": "MAE -10%",
+      "scenario_total_gain": 0.11950773172102526,
+      "perfect_task_total_gain": 2.2413842770347405
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "scenario_raw": 0.665208996561239,
+      "scenario": "Spearman +0.1",
+      "scenario_total_gain": 0.07034351425327562,
+      "perfect_task_total_gain": 0.27702019888763857
+    },
+    {
+      "task": "clearance_microsome_az",
+      "metric": "Spearman",
+      "scenario_raw": 0.7756845436053647,
+      "scenario": "Spearman +0.1",
+      "scenario_total_gain": 0.06582466898430087,
+      "perfect_task_total_gain": 0.20033403253735377
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "scenario_raw": 0.5962085536546348,
+      "scenario": "AUROC/AUPRC +0.01",
+      "scenario_total_gain": 0.01882898129473144,
+      "perfect_task_total_gain": 0.5611616325976265
+    },
+    {
+      "task": "cyp2c9_veith",
+      "metric": "AUPRC",
+      "scenario_raw": 0.8449408577894758,
+      "scenario": "AUROC/AUPRC +0.01",
+      "scenario_total_gain": 0.01351682243836711,
+      "perfect_task_total_gain": 0.20378709962798425
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "scenario_raw": 0.7683244699983189,
+      "scenario": "AUROC/AUPRC +0.01",
+      "scenario_total_gain": 0.014885569013405845,
+      "perfect_task_total_gain": 0.3120549147373388
+    },
+    {
+      "task": "cyp2d6_veith",
+      "metric": "AUPRC",
+      "scenario_raw": 0.7539447168745902,
+      "scenario": "AUROC/AUPRC +0.01",
+      "scenario_total_gain": 0.015166799978433428,
+      "perfect_task_total_gain": 0.3327710437554617
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "scenario_raw": 0.7560443037974683,
+      "scenario": "AUROC/AUPRC +0.01",
+      "scenario_total_gain": 0.015126001524274941,
+      "perfect_task_total_gain": 0.32981573668495334
+    },
+    {
+      "task": "cyp3a4_veith",
+      "metric": "AUPRC",
+      "scenario_raw": 0.9091915344045904,
+      "scenario": "AUROC/AUPRC +0.01",
+      "scenario_total_gain": 0.01256624663550228,
+      "perfect_task_total_gain": 0.1205729196913665
+    },
+    {
+      "task": "dili",
+      "metric": "AUROC",
+      "scenario_raw": 0.9450000000000001,
+      "scenario": "AUROC/AUPRC +0.01",
+      "scenario_total_gain": 0.012085577410503716,
+      "perfect_task_total_gain": 0.07629251348966258
+    },
+    {
+      "task": "half_life_obach",
+      "metric": "Spearman",
+      "scenario_raw": 0.7509691357439866,
+      "scenario": "Spearman +0.1",
+      "scenario_total_gain": 0.0665352219954504,
+      "perfect_task_total_gain": 0.215664268398958
+    },
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "scenario_raw": 0.8675846833578792,
+      "scenario": "AUROC/AUPRC +0.01",
+      "scenario_total_gain": 0.01317404501934728,
+      "perfect_task_total_gain": 0.17428588981931173
+    },
+    {
+      "task": "hia_hou",
+      "metric": "AUROC",
+      "scenario_raw": 1.0,
+      "scenario": "AUROC/AUPRC +0.01",
+      "scenario_total_gain": 0.0,
+      "perfect_task_total_gain": 0.0
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "scenario_raw": 0.499927831829667,
+      "scenario": "MAE -10%",
+      "scenario_total_gain": 0.1191576960026501,
+      "perfect_task_total_gain": 2.179358640930138
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "scenario_raw": 0.3788038829951668,
+      "scenario": "MAE -10%",
+      "scenario_total_gain": 0.11884837774652336,
+      "perfect_task_total_gain": 2.1404969511731293
+    },
+    {
+      "task": "pgp_broccatelli",
+      "metric": "AUROC",
+      "scenario_raw": 0.9604798720341242,
+      "scenario": "AUROC/AUPRC +0.01",
+      "scenario_total_gain": 0.011892230930196555,
+      "perfect_task_total_gain": 0.05768979685278097
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "scenario_raw": 5.9989360798935785,
+      "scenario": "MAE -10%",
+      "scenario_total_gain": 0.11904931506540609,
+      "perfect_task_total_gain": 2.164721147332212
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "scenario_raw": 0.6583351786731878,
+      "scenario": "MAE -10%",
+      "scenario_total_gain": 0.11958474446133914,
+      "perfect_task_total_gain": 2.261966889330763
+    },
+    {
+      "task": "vdss_lombardo",
+      "metric": "Spearman",
+      "scenario_raw": 0.8145137427047057,
+      "scenario": "Spearman +0.1",
+      "scenario_total_gain": 0.0643558486733259,
+      "perfect_task_total_gain": 0.17441847237672678
+    }
+  ],
+  "source": "docs/platform_scorecard_v313_20261101.json",
+  "model_selection_changed": false,
+  "test_labels_used": false,
+  "limitations": "Arithmetic scenarios, not model forecasts. Scoring identities empirically match supplied scorecards; not a newly fetched official specification. No hidden labels inferred, no blend tuning and no new submission produced."
+}

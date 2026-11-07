@@ -1,0 +1,14 @@
+{
+  "status": "STATIC_REVIEW_PASS_SMOKE_REQUIRED",
+  "checks": [
+    "pretraining_design never reads y and uses split0 unique original structure indices.",
+    "Physchem preprocessing and fragment frequency use training structures only; all label arrays may be perturbed without change.",
+    "Two seeds,6000fixed steps, no validation-guided encoder duration or architecture selection.",
+    "Frozen embeddings combined with original target-excluded chemistry/context; no historical predictions.",
+    "Originalv148 runner untouched, same practical thresholds and confirmation bootstrap gates.",
+    "Independent full embedding/model reload and hash verification required before new CSV.",
+    "Label-free training-structure overlap across endpoint validation is disclosed."
+  ],
+  "frozen_source_sha256": "40358539719841bd387a3d82f11486d33488b64dc4db8b73b704f8c060c6f5a0",
+  "smoke_required": true
+}

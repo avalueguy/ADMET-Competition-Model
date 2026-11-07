@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "archive": "releases/v366_stage2_inputs.tar.gz",
+  "sha256": "e5c0318a9fbf81fd4b494d8808c11f2335dfafd75b93d2c7d0004f6c10f87823",
+  "bytes": 891982,
+  "official_rows_sha256": "fab716190f822a331bdaf7395ed4da5029f5a5388819db8e3e35c0d2f57a5712",
+  "official_rows_to_copy_on_remote": true,
+  "controls": [
+    {
+      "task": "ppbr_az",
+      "part": "fold0",
+      "fit": 1302,
+      "query": 650,
+      "file": "controls/ppbr_az/fold0.npz",
+      "sha256": "3a006edb0876ee3ef225411c95743082a1b47b5ac8dd776a667adee9e4d86b6a",
+      "upstream_OOF": "Partial historical proxy; adopted PPBR v30445% layer replayed exactly"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold1",
+      "fit": 1301,
+      "query": 651,
+      "file": "controls/ppbr_az/fold1.npz",
+      "sha256": "625ca1a229304afa82fe72ed65791a8cd6fcba90e4ac91e96b92dfabe3aee54f",
+      "upstream_OOF": "Partial historical proxy; adopted PPBR v30445% layer replayed exactly"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold2",
+      "fit": 1301,
+      "query": 651,
+      "file": "controls/ppbr_az/fold2.npz",
+      "sha256": "31a95657e865c9bc0077794ef30ca087a2686e2bad98bec3962c135d6ed1358d",
+      "upstream_OOF": "Partial historical proxy; adopted PPBR v30445% layer replayed exactly"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "valid",
+      "fit": 1952,
+      "query": 279,
+      "file": "controls/ppbr_az/valid.npz",
+      "sha256": "8f757d03ef572f3984c14002a4e774436621407f73f2d56c485c5ad53b3684c9",
+      "upstream_OOF": "Partial historical proxy; adopted PPBR v30445% layer replayed exactly"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "final",
+      "fit": 2231,
+      "query": 559,
+      "file": "controls/ppbr_az/final.npz",
+      "sha256": "a1417ab54820891d29ced6062fc7f136064d6dab8d73bf9ba130e45864c9bb91",
+      "upstream_OOF": "Partial historical proxy; adopted PPBR v30445% layer replayed exactly"
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "fold0",
+      "fit": 2760,
+      "query": 1210,
+      "file": "controls/ld50_zhu/fold0.npz",
+      "sha256": "1c540843929cef4fea8d6474a398f7c670a6b6532f06b301e5e522c540803ba8",
+      "upstream_OOF": "Partial historical proxy; adopted PPBR v30445% layer replayed exactly"
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "fold1",
+      "fit": 2760,
+      "query": 1210,
+      "file": "controls/ld50_zhu/fold1.npz",
+      "sha256": "6bdf83f5b3b277d2649cd5ddc119b7d1077ef057c967fc5e9ed784dbff316f64",
+      "upstream_OOF": "Partial historical proxy; adopted PPBR v30445% layer replayed exactly"
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "fold2",
+      "fit": 2420,
+      "query": 1550,
+      "file": "controls/ld50_zhu/fold2.npz",
+      "sha256": "8abb83487837b012818c4ce4fb527fc0122c7800a344da93f0c628cae18acd34",
+      "upstream_OOF": "Partial historical proxy; adopted PPBR v30445% layer replayed exactly"
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "valid",
+      "fit": 3970,
+      "query": 1937,
+      "file": "controls/ld50_zhu/valid.npz",
+      "sha256": "7bede40780ad40489462fd1075c6e44a7c97113ce7a7452c07483105fd1c72c6",
+      "upstream_OOF": "Partial historical proxy; adopted PPBR v30445% layer replayed exactly"
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "final",
+      "fit": 5907,
+      "query": 1478,
+      "file": "controls/ld50_zhu/final.npz",
+      "sha256": "7e680cdd6e4c2e8e00d9bcbfb3e24b094f824e1a56edb7b4cc0b2bd2289147b9",
+      "upstream_OOF": "Partial historical proxy; adopted PPBR v30445% layer replayed exactly"
+    }
+  ]
+}

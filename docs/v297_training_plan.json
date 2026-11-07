@@ -1,0 +1,33 @@
+{
+  "version": "v297",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52.0,
+  "method": "Scaffold-excluded molecular pair-difference regression with fit anchor weighted medians",
+  "tasks": [
+    "caco2_wang",
+    "ppbr_az",
+    "lipophilicity_astrazeneca",
+    "ld50_zhu",
+    "solubility_aqsoldb"
+  ],
+  "single_configuration": {
+    "neighbors": 8,
+    "fingerprint_columns": 256,
+    "trees": 700,
+    "depth": 5
+  },
+  "seeds": [
+    2971101,
+    2971102
+  ],
+  "selection": "Original v148: choose unique config/weight on fold0/1 max minimum gain; MAE relative reduction must exceed .012 on both development folds; freeze before fold2/valid.",
+  "confirmation": "All4 gains >0, mean gain>.012, 500 paired scaffold bootstrap 90% lower bounds >0 for both fold2 and valid; no fallback.",
+  "data": "Official data and archived official structure features only. No external training data or pretrained weights.",
+  "label_isolation": "Pair labels and anchor labels from current target fit rows only. Context excludes target task and follows original train/valid permissions.",
+  "platform_submission": false,
+  "verification": "Independent rebuild/reload and recomputation before byte-preserving CSV assembly; protect every unchanged task.",
+  "source": "tools/v297_pair_delta_regression.py",
+  "verifier": "tools/v298_verify_pair_delta.py",
+  "runtime": "User supplied authorized remote server; active project /root/autodl-tmp/v76; credentials kept in memory only."
+}

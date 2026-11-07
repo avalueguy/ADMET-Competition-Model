@@ -1,0 +1,54 @@
+{
+  "status": "FROZEN_BEFORE_SMOKE_AND_TRAINING",
+  "created_at_utc": "2026-10-30T04:55:28.857555+00:00",
+  "files": [
+    {
+      "path": "tools/v284_stereo_context_repair.py",
+      "sha256": "3f7f111a75053710369247e89cf835fa2567fceaf8e54a7c2a3187350582df91"
+    },
+    {
+      "path": "tools/v285_verify_stereo_repair.py",
+      "sha256": "e53617dede6de92def51f5e3dac032451c3d6db85bd384f75a9f956b1c288f28"
+    },
+    {
+      "path": "tools/v286_package_stereo_repair.py",
+      "sha256": "088da96daea4be396f4c97abdb3286f5ac1a77a2dc364e9a4afcd1a029e7c417"
+    },
+    {
+      "path": "tools/v287_stereo_driver.py",
+      "sha256": "91baa7ea02191df2d2dca4fef03da95b88328136b379cbb83bcc534cad087f02"
+    },
+    {
+      "path": "tools/v288_start_stereo_repair.py",
+      "sha256": "335c226845b4dc2d279815c067e273596c2a02959a27f1e53d0148112f2a9d5d"
+    },
+    {
+      "path": "tools/finalize_v285_local.py",
+      "sha256": "c8f66f58d81188d67701f63f804052ab4e741970c2c0e5f8845e24c51f6532e1"
+    },
+    {
+      "path": "tools/v283_stereochemical_context_audit.py",
+      "sha256": "04fc696d89f6c71b21b0c46dba6a6a012926b412597e4e4d0f7c983d7a8eed4e"
+    },
+    {
+      "path": "docs/v283_stereochemical_context_audit.json",
+      "sha256": "d0825f35c3249996b9168c01979720d1c4753ae056551e33abb8dfed9b0ec747"
+    },
+    {
+      "path": "docs/v283_review_decision.json",
+      "sha256": "f3cee5c4d5f8c10ee9d11ca4c70a2584ea155a5e82d4761048062f77e4cd99e9"
+    },
+    {
+      "path": "docs/v284_training_plan.json",
+      "sha256": "f8ea74de490455a5746b7a56575f4283ae1e73fd8a69c25236b7227ad55d125b"
+    },
+    {
+      "path": "docs/v284_source_review.json",
+      "sha256": "8dd2d599a7bc2d9564c83bbf54fa055a3ea0fa91edcfd87059594589cfb05bde"
+    },
+    {
+      "path": "docs/v284_original_models.json",
+      "sha256": "ee8feae52c4ed6b4b3cf2e8a6f34920a63b16de292d7df925993899dffc39807"
+    }
+  ]
+}

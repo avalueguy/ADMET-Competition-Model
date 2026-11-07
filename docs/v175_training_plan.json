@@ -1,0 +1,28 @@
+{
+  "version": "v175",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "source_sha256": "cea7b0412af2bb1bc293e75da71024a140bfb295a2bc118e5359bbff867b70ff",
+  "new_direction": "Joint graph+fingerprint shared encoder with separate task heads; all query scaffolds excluded from every auxiliary label",
+  "configs": [
+    {
+      "hidden": 96,
+      "layers": 3,
+      "steps": 5000
+    }
+  ],
+  "seeds": [
+    1754026,
+    1754027
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "acceptance": "Unchanged v148: freeze on fold0/fold1; four positive point gains, practical mean threshold, fold2 AND valid scaffold bootstrap90 lower>0",
+  "test_labels_used": false,
+  "new_external_data": false,
+  "baseline_retained_until_official_improvement": true,
+  "no_official_nonregression_guarantee": true,
+  "source_immutable_after_start": true
+}

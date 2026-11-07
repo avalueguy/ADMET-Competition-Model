@@ -1,0 +1,10 @@
+{
+  "status": "REVIEWED_BEFORE_DEVELOPMENT",
+  "review": "docs/v263_review_decision.json",
+  "label_isolation": "Only fit labels enter sufficient statistics/optimizer. Other-assay context uses unchanged target-excluded loader.",
+  "novelty": "Replicate-derived heterogeneous observation covariance with fit-only marginal-likelihood calibration. No claim that the existing Tanimoto/RBF inputs are new.",
+  "prior_failed_routes_retried": false,
+  "parameters_chosen_without_query_scores": true,
+  "no_confirmation_fallback": true,
+  "thresholds_unchanged": true
+}

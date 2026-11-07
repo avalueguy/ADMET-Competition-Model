@@ -1,0 +1,74 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "at_utc": "2026-11-01T08:20:49.567207+00:00",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "validation_version": "v296",
+  "hypothesis_version": "v295",
+  "signature": "86dec45e2ea065034afc077684ce2949ddb36d741e314a449ce1415f688c0f33",
+  "development_best": [
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "config": {
+        "integration_points": 16,
+        "rule": "unscrambled_sobol_empirical_marginals"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 152,
+          "baseline": 0.8444511217948719,
+          "expert": 0.8444511217948719,
+          "candidate": 0.8444511217948719,
+          "gain": 0.0
+        },
+        {
+          "part": "fold1",
+          "rows": 152,
+          "baseline": 0.85125,
+          "expert": 0.85125,
+          "candidate": 0.85125,
+          "gain": 0.0
+        }
+      ],
+      "objective": 0.0
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "config": {
+        "integration_points": 16,
+        "rule": "unscrambled_sobol_empirical_marginals"
+      },
+      "weight": 0.2,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 156,
+          "baseline": 0.748671096345515,
+          "expert": 0.7488372093023257,
+          "candidate": 0.7487541528239202,
+          "gain": 8.305647840523012e-05
+        },
+        {
+          "part": "fold1",
+          "rows": 156,
+          "baseline": 0.6742748846407383,
+          "expert": 0.6749340804218853,
+          "candidate": 0.6745220830586683,
+          "gain": 0.00024719841793008346
+        }
+      ],
+      "objective": 8.305647840523012e-05
+    }
+  ],
+  "accepted_tasks": [],
+  "confirmation": [],
+  "new_csv_created": false,
+  "new_models_trained": 0,
+  "platform_submission": false,
+  "official_score_updated": false,
+  "limitations": "Repeatedly used public labels and approximate historical upstream OOF; no hidden-test gain established."
+}

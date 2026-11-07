@@ -1,0 +1,14 @@
+{
+  "version": 105,
+  "baseline": "v101",
+  "baseline_official_score_user_reported": 50.932,
+  "anchor_sha256": "e94961c81deedf98bcb69e04d621a54ae9319aab47bb1ced9d97890f13c8f086",
+  "branches": [102, 103, 104],
+  "frozen_before_v103_or_v104_confirmation": true,
+  "selection": "Union of accepted branch tasks; one update per endpoint. If multiple accepted branches, choose highest minimum fold0/1 gain, ties lower version. Never choose by confirmation magnitude. No failed fallback.",
+  "submission": "Replace only y_pred over exact v101 anchor; nonprediction template bytes preserved. No automatic upload.",
+  "test_labels_used": false,
+  "new_external_data": false,
+  "new_pretrained_weights": false,
+  "official_score": null
+}

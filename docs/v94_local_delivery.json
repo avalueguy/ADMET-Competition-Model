@@ -1,0 +1,35 @@
+{
+  "version": "v94",
+  "baseline": "v92",
+  "baseline_official_score_user_reported": 50.915,
+  "accepted": [
+    "hia_hou"
+  ],
+  "model_replay": "PASS",
+  "checkpoints": 10,
+  "archive": {
+    "path": "releases/v94_isolated_assay_20261025.tar.gz",
+    "sha256": "3c212746ee9de3a4801533e660f5605794c559d91dffc04fa850eaac23472134",
+    "bytes": 1376711102,
+    "files": 525,
+    "no_csv": false
+  },
+  "all_archive_member_hashes_verified": true,
+  "official_score": null,
+  "automatically_uploaded": false,
+  "server_shutdown": false,
+  "new_csv": true,
+  "invalid_attempt1_discarded": true,
+  "status": "LOCAL_DELIVERY_COMPLETE_AWAITING_PLATFORM",
+  "csv": "admet_submissions/v94_isolated_assay/我从山北来带着兰花草-小分子药物预测技术创新赛-20261025.csv",
+  "upload_copy": "D:\\bili_download\\v94_isolated_assay\\我从山北来带着兰花草-小分子药物预测技术创新赛-20261025.csv",
+  "sha256": "78f228a4025d55149ce08fbd102b02c2b365e75627140bb4c300f9d7292d2583",
+  "changed_tasks": {
+    "hia_hou": 115
+  },
+  "unchanged_tasks": 21,
+  "rows": 16379,
+  "columns": 6,
+  "tasks": 22,
+  "nonprediction_bytes_exact": true
+}

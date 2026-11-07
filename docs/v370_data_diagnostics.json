@@ -1,0 +1,1240 @@
+{
+  "status": "COMPLETE",
+  "purpose": "Read-only diagnostics; no retuning, test labels never accessed.",
+  "group_definition": "Frozen historical canonical/scaffold exclusion components; counts describe structures, not independent sample size.",
+  "caveat": "Official-split overlap does not imply model leakage. Fitting controls and pretraining explicitly exclude their own query groups.",
+  "records": [
+    {
+      "task": "ames",
+      "metric": "AUROC",
+      "splits": {
+        "train": {
+          "rows": 4684,
+          "unique_identities": 4339,
+          "exclusion_groups": 2292,
+          "largest_group_rows": 90,
+          "largest_group_fraction": 0.019214346712211786,
+          "effective_group_count": 347.50152052711604,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "valid": {
+          "rows": 1137,
+          "unique_identities": 1098,
+          "exclusion_groups": 1,
+          "largest_group_rows": 1137,
+          "largest_group_fraction": 1.0,
+          "effective_group_count": 1.0,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 1457,
+          "unique_identities": 1292,
+          "exclusion_groups": 449,
+          "largest_group_rows": 98,
+          "largest_group_fraction": 0.06726149622512011,
+          "effective_group_count": 55.286845326457794,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 379,
+      "repeated_identity_groups_with_unequal_labels": 0,
+      "largest_repeated_label_range": 0.0
+    },
+    {
+      "task": "bbb_martins",
+      "metric": "AUROC",
+      "splits": {
+        "train": {
+          "rows": 1421,
+          "unique_identities": 1368,
+          "exclusion_groups": 695,
+          "largest_group_rows": 136,
+          "largest_group_fraction": 0.09570724841660802,
+          "effective_group_count": 66.78046763898534,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "valid": {
+          "rows": 203,
+          "unique_identities": 194,
+          "exclusion_groups": 134,
+          "largest_group_rows": 12,
+          "largest_group_fraction": 0.059113300492610835,
+          "effective_group_count": 62.722983257229835,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 406,
+          "unique_identities": 391,
+          "exclusion_groups": 290,
+          "largest_group_rows": 18,
+          "largest_group_fraction": 0.04433497536945813,
+          "effective_group_count": 145.10211267605635,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 56,
+      "repeated_identity_groups_with_unequal_labels": 11,
+      "largest_repeated_label_range": 1.0
+    },
+    {
+      "task": "bioavailability_ma",
+      "metric": "AUROC",
+      "splits": {
+        "train": {
+          "rows": 448,
+          "unique_identities": 448,
+          "exclusion_groups": 316,
+          "largest_group_rows": 49,
+          "largest_group_fraction": 0.109375,
+          "effective_group_count": 65.37589576547231,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "valid": {
+          "rows": 64,
+          "unique_identities": 64,
+          "exclusion_groups": 47,
+          "largest_group_rows": 7,
+          "largest_group_fraction": 0.109375,
+          "effective_group_count": 31.03030303030303,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 128,
+          "unique_identities": 124,
+          "exclusion_groups": 93,
+          "largest_group_rows": 9,
+          "largest_group_fraction": 0.0703125,
+          "effective_group_count": 51.2,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 0,
+      "repeated_identity_groups_with_unequal_labels": 0,
+      "largest_repeated_label_range": 0.0
+    },
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "splits": {
+        "train": {
+          "rows": 637,
+          "unique_identities": 599,
+          "exclusion_groups": 348,
+          "largest_group_rows": 47,
+          "largest_group_fraction": 0.07378335949764521,
+          "effective_group_count": 98.70323522257358,
+          "label_quantiles": [
+            -7.7600002,
+            -6.757891160000001,
+            -5.7141905,
+            -5.0499268,
+            -4.5999999,
+            -4.148000060000002,
+            -3.51
+          ]
+        },
+        "valid": {
+          "rows": 91,
+          "unique_identities": 86,
+          "exclusion_groups": 53,
+          "largest_group_rows": 12,
+          "largest_group_fraction": 0.13186813186813187,
+          "effective_group_count": 26.973941368078176,
+          "label_quantiles": [
+            -7.3400002,
+            -6.7209243999999995,
+            -5.7044358,
+            -5.223299,
+            -4.7449999,
+            -4.3360555000000005,
+            -3.9978395
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 182,
+          "unique_identities": 140,
+          "exclusion_groups": 72,
+          "largest_group_rows": 44,
+          "largest_group_fraction": 0.24175824175824176,
+          "effective_group_count": 13.39967637540453,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 37,
+      "repeated_identity_groups_with_unequal_labels": 37,
+      "largest_repeated_label_range": 0.9953226999999996
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "splits": {
+        "train": {
+          "rows": 848,
+          "unique_identities": 699,
+          "exclusion_groups": 529,
+          "largest_group_rows": 17,
+          "largest_group_fraction": 0.020047169811320754,
+          "effective_group_count": 279.80700389105056,
+          "label_quantiles": [
+            3.0,
+            3.0,
+            5.75,
+            17.58,
+            61.66,
+            150.0,
+            150.0
+          ]
+        },
+        "valid": {
+          "rows": 122,
+          "unique_identities": 100,
+          "exclusion_groups": 72,
+          "largest_group_rows": 10,
+          "largest_group_fraction": 0.08196721311475409,
+          "effective_group_count": 38.760416666666664,
+          "label_quantiles": [
+            3.0,
+            3.0,
+            10.0,
+            28.5,
+            82.38250000000001,
+            150.0,
+            150.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 243,
+          "unique_identities": 201,
+          "exclusion_groups": 147,
+          "largest_group_rows": 31,
+          "largest_group_fraction": 0.12757201646090535,
+          "effective_group_count": 38.46840390879479,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 160,
+      "repeated_identity_groups_with_unequal_labels": 159,
+      "largest_repeated_label_range": 145.43
+    },
+    {
+      "task": "clearance_microsome_az",
+      "metric": "Spearman",
+      "splits": {
+        "train": {
+          "rows": 770,
+          "unique_identities": 761,
+          "exclusion_groups": 518,
+          "largest_group_rows": 20,
+          "largest_group_fraction": 0.025974025974025976,
+          "effective_group_count": 193.88489208633092,
+          "label_quantiles": [
+            3.0,
+            3.0,
+            4.0,
+            14.13,
+            45.0,
+            150.0,
+            150.0
+          ]
+        },
+        "valid": {
+          "rows": 111,
+          "unique_identities": 110,
+          "exclusion_groups": 69,
+          "largest_group_rows": 15,
+          "largest_group_fraction": 0.13513513513513514,
+          "effective_group_count": 28.99058823529412,
+          "label_quantiles": [
+            3.0,
+            3.0,
+            3.5,
+            14.0,
+            58.5,
+            140.91500000000002,
+            150.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 221,
+          "unique_identities": 217,
+          "exclusion_groups": 124,
+          "largest_group_rows": 32,
+          "largest_group_fraction": 0.14479638009049775,
+          "effective_group_count": 25.008192524321558,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 9,
+      "repeated_identity_groups_with_unequal_labels": 7,
+      "largest_repeated_label_range": 18.0
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "splits": {
+        "train": {
+          "rows": 467,
+          "unique_identities": 464,
+          "exclusion_groups": 316,
+          "largest_group_rows": 54,
+          "largest_group_fraction": 0.11563169164882227,
+          "effective_group_count": 58.83166981386566,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "valid": {
+          "rows": 67,
+          "unique_identities": 66,
+          "exclusion_groups": 50,
+          "largest_group_rows": 6,
+          "largest_group_fraction": 0.08955223880597014,
+          "effective_group_count": 32.29496402877698,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 135,
+          "unique_identities": 135,
+          "exclusion_groups": 105,
+          "largest_group_rows": 7,
+          "largest_group_fraction": 0.05185185185185185,
+          "effective_group_count": 70.36679536679537,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 4,
+      "repeated_identity_groups_with_unequal_labels": 0,
+      "largest_repeated_label_range": 0.0
+    },
+    {
+      "task": "cyp2c9_veith",
+      "metric": "AUPRC",
+      "splits": {
+        "train": {
+          "rows": 8463,
+          "unique_identities": 8299,
+          "exclusion_groups": 4983,
+          "largest_group_rows": 476,
+          "largest_group_fraction": 0.05624483043837883,
+          "effective_group_count": 266.87819846406654,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "valid": {
+          "rows": 1210,
+          "unique_identities": 1190,
+          "exclusion_groups": 744,
+          "largest_group_rows": 30,
+          "largest_group_fraction": 0.024793388429752067,
+          "effective_group_count": 231.58810503005378,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 2419,
+          "unique_identities": 2369,
+          "exclusion_groups": 1684,
+          "largest_group_rows": 28,
+          "largest_group_fraction": 0.011575031004547334,
+          "effective_group_count": 752.0320010281455,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 174,
+      "repeated_identity_groups_with_unequal_labels": 14,
+      "largest_repeated_label_range": 1.0
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "splits": {
+        "train": {
+          "rows": 465,
+          "unique_identities": 463,
+          "exclusion_groups": 312,
+          "largest_group_rows": 54,
+          "largest_group_fraction": 0.11612903225806452,
+          "effective_group_count": 57.89156626506024,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "valid": {
+          "rows": 67,
+          "unique_identities": 67,
+          "exclusion_groups": 61,
+          "largest_group_rows": 3,
+          "largest_group_fraction": 0.04477611940298507,
+          "effective_group_count": 55.41975308641975,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 135,
+          "unique_identities": 133,
+          "exclusion_groups": 97,
+          "largest_group_rows": 7,
+          "largest_group_fraction": 0.05185185185185185,
+          "effective_group_count": 66.27272727272727,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 2,
+      "repeated_identity_groups_with_unequal_labels": 0,
+      "largest_repeated_label_range": 0.0
+    },
+    {
+      "task": "cyp2d6_veith",
+      "metric": "AUPRC",
+      "splits": {
+        "train": {
+          "rows": 9191,
+          "unique_identities": 9040,
+          "exclusion_groups": 5750,
+          "largest_group_rows": 64,
+          "largest_group_fraction": 0.006963333696006963,
+          "effective_group_count": 1795.6865208426334,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "valid": {
+          "rows": 1313,
+          "unique_identities": 1287,
+          "exclusion_groups": 893,
+          "largest_group_rows": 26,
+          "largest_group_fraction": 0.019801980198019802,
+          "effective_group_count": 404.97275076344846,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 2626,
+          "unique_identities": 2585,
+          "exclusion_groups": 1401,
+          "largest_group_rows": 522,
+          "largest_group_fraction": 0.19878141660319879,
+          "effective_group_count": 24.55848771697401,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 166,
+      "repeated_identity_groups_with_unequal_labels": 21,
+      "largest_repeated_label_range": 1.0
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "splits": {
+        "train": {
+          "rows": 468,
+          "unique_identities": 466,
+          "exclusion_groups": 325,
+          "largest_group_rows": 53,
+          "largest_group_fraction": 0.11324786324786325,
+          "effective_group_count": 61.24832214765101,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "valid": {
+          "rows": 67,
+          "unique_identities": 67,
+          "exclusion_groups": 50,
+          "largest_group_rows": 7,
+          "largest_group_fraction": 0.1044776119402985,
+          "effective_group_count": 32.76642335766423,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 135,
+          "unique_identities": 133,
+          "exclusion_groups": 98,
+          "largest_group_rows": 7,
+          "largest_group_fraction": 0.05185185185185185,
+          "effective_group_count": 64.39929328621908,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 2,
+      "repeated_identity_groups_with_unequal_labels": 0,
+      "largest_repeated_label_range": 0.0
+    },
+    {
+      "task": "cyp3a4_veith",
+      "metric": "AUPRC",
+      "splits": {
+        "train": {
+          "rows": 8628,
+          "unique_identities": 8499,
+          "exclusion_groups": 5298,
+          "largest_group_rows": 508,
+          "largest_group_fraction": 0.05887807139545665,
+          "effective_group_count": 251.51663321778264,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "valid": {
+          "rows": 1233,
+          "unique_identities": 1222,
+          "exclusion_groups": 783,
+          "largest_group_rows": 30,
+          "largest_group_fraction": 0.024330900243309004,
+          "effective_group_count": 297.80391772771793,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 2467,
+          "unique_identities": 2424,
+          "exclusion_groups": 1616,
+          "largest_group_rows": 40,
+          "largest_group_fraction": 0.016214025131738953,
+          "effective_group_count": 588.3121314644756,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 133,
+      "repeated_identity_groups_with_unequal_labels": 4,
+      "largest_repeated_label_range": 1.0
+    },
+    {
+      "task": "dili",
+      "metric": "AUROC",
+      "splits": {
+        "train": {
+          "rows": 331,
+          "unique_identities": 331,
+          "exclusion_groups": 219,
+          "largest_group_rows": 54,
+          "largest_group_fraction": 0.16314199395770393,
+          "effective_group_count": 32.08228404099561,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "valid": {
+          "rows": 48,
+          "unique_identities": 48,
+          "exclusion_groups": 46,
+          "largest_group_rows": 2,
+          "largest_group_fraction": 0.041666666666666664,
+          "effective_group_count": 44.30769230769231,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 96,
+          "unique_identities": 96,
+          "exclusion_groups": 80,
+          "largest_group_rows": 4,
+          "largest_group_fraction": 0.041666666666666664,
+          "effective_group_count": 66.78260869565217,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 0,
+      "repeated_identity_groups_with_unequal_labels": 0,
+      "largest_repeated_label_range": 0.0
+    },
+    {
+      "task": "half_life_obach",
+      "metric": "Spearman",
+      "splits": {
+        "train": {
+          "rows": 465,
+          "unique_identities": 459,
+          "exclusion_groups": 299,
+          "largest_group_rows": 58,
+          "largest_group_fraction": 0.12473118279569892,
+          "effective_group_count": 50.86450247000706,
+          "label_quantiles": [
+            0.065,
+            0.7640000000000001,
+            1.7,
+            4.0,
+            10.0,
+            45.0,
+            1200.0
+          ]
+        },
+        "valid": {
+          "rows": 67,
+          "unique_identities": 67,
+          "exclusion_groups": 56,
+          "largest_group_rows": 5,
+          "largest_group_fraction": 0.07462686567164178,
+          "effective_group_count": 43.58252427184466,
+          "label_quantiles": [
+            0.37,
+            0.8210000000000001,
+            1.85,
+            5.3,
+            21.5,
+            62.499999999999936,
+            820.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 135,
+          "unique_identities": 132,
+          "exclusion_groups": 104,
+          "largest_group_rows": 5,
+          "largest_group_fraction": 0.037037037037037035,
+          "effective_group_count": 78.8961038961039,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 6,
+      "repeated_identity_groups_with_unequal_labels": 6,
+      "largest_repeated_label_range": 8.0
+    },
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "splits": {
+        "train": {
+          "rows": 457,
+          "unique_identities": 426,
+          "exclusion_groups": 296,
+          "largest_group_rows": 32,
+          "largest_group_fraction": 0.0700218818380744,
+          "effective_group_count": 93.61228148812192,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "valid": {
+          "rows": 66,
+          "unique_identities": 59,
+          "exclusion_groups": 45,
+          "largest_group_rows": 5,
+          "largest_group_fraction": 0.07575757575757576,
+          "effective_group_count": 32.029411764705884,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 132,
+          "unique_identities": 121,
+          "exclusion_groups": 69,
+          "largest_group_rows": 15,
+          "largest_group_fraction": 0.11363636363636363,
+          "effective_group_count": 25.473684210526315,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 38,
+      "repeated_identity_groups_with_unequal_labels": 2,
+      "largest_repeated_label_range": 1.0
+    },
+    {
+      "task": "hia_hou",
+      "metric": "AUROC",
+      "splits": {
+        "train": {
+          "rows": 403,
+          "unique_identities": 402,
+          "exclusion_groups": 276,
+          "largest_group_rows": 64,
+          "largest_group_fraction": 0.1588089330024814,
+          "effective_group_count": 34.47442156654638,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "valid": {
+          "rows": 58,
+          "unique_identities": 58,
+          "exclusion_groups": 41,
+          "largest_group_rows": 8,
+          "largest_group_fraction": 0.13793103448275862,
+          "effective_group_count": 22.72972972972973,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 117,
+          "unique_identities": 117,
+          "exclusion_groups": 86,
+          "largest_group_rows": 6,
+          "largest_group_fraction": 0.05128205128205128,
+          "effective_group_count": 59.777292576419214,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 1,
+      "repeated_identity_groups_with_unequal_labels": 0,
+      "largest_repeated_label_range": 0.0
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "splits": {
+        "train": {
+          "rows": 3970,
+          "unique_identities": 3946,
+          "exclusion_groups": 1206,
+          "largest_group_rows": 1540,
+          "largest_group_fraction": 0.3879093198992443,
+          "effective_group_count": 6.584567590737346,
+          "label_quantiles": [
+            0.539,
+            1.47,
+            1.9412500000000001,
+            2.393,
+            3.012,
+            4.3,
+            7.1
+          ]
+        },
+        "valid": {
+          "rows": 1937,
+          "unique_identities": 1930,
+          "exclusion_groups": 1930,
+          "largest_group_rows": 2,
+          "largest_group_fraction": 0.0010325245224574084,
+          "effective_group_count": 1923.1004613018965,
+          "label_quantiles": [
+            -0.3429999999999999,
+            1.0698,
+            1.579,
+            2.129,
+            2.8280000000000003,
+            4.388599999999998,
+            6.282
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 1478,
+          "unique_identities": 1466,
+          "exclusion_groups": 470,
+          "largest_group_rows": 131,
+          "largest_group_fraction": 0.08863328822733424,
+          "effective_group_count": 45.240525203992874,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 26,
+      "repeated_identity_groups_with_unequal_labels": 20,
+      "largest_repeated_label_range": 3.0000000000000013
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "splits": {
+        "train": {
+          "rows": 2940,
+          "unique_identities": 2873,
+          "exclusion_groups": 1693,
+          "largest_group_rows": 76,
+          "largest_group_fraction": 0.02585034013605442,
+          "effective_group_count": 432.3529411764706,
+          "label_quantiles": [
+            -1.48,
+            -0.12099999999999965,
+            1.4,
+            2.34,
+            3.09,
+            3.8,
+            4.5
+          ]
+        },
+        "valid": {
+          "rows": 420,
+          "unique_identities": 409,
+          "exclusion_groups": 239,
+          "largest_group_rows": 25,
+          "largest_group_fraction": 0.05952380952380952,
+          "effective_group_count": 79.74683544303798,
+          "label_quantiles": [
+            -1.5,
+            -0.2219999999999999,
+            1.2,
+            2.1950000000000003,
+            3.0,
+            3.8404999999999996,
+            4.49
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 840,
+          "unique_identities": 820,
+          "exclusion_groups": 480,
+          "largest_group_rows": 20,
+          "largest_group_fraction": 0.023809523809523808,
+          "effective_group_count": 186.46934460887948,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 67,
+      "repeated_identity_groups_with_unequal_labels": 60,
+      "largest_repeated_label_range": 1.5500000000000003
+    },
+    {
+      "task": "pgp_broccatelli",
+      "metric": "AUROC",
+      "splits": {
+        "train": {
+          "rows": 851,
+          "unique_identities": 814,
+          "exclusion_groups": 469,
+          "largest_group_rows": 66,
+          "largest_group_fraction": 0.07755581668625147,
+          "effective_group_count": 87.13764889904945,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "valid": {
+          "rows": 122,
+          "unique_identities": 120,
+          "exclusion_groups": 77,
+          "largest_group_rows": 15,
+          "largest_group_fraction": 0.12295081967213115,
+          "effective_group_count": 33.67420814479638,
+          "label_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.5,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 245,
+          "unique_identities": 239,
+          "exclusion_groups": 154,
+          "largest_group_rows": 38,
+          "largest_group_fraction": 0.15510204081632653,
+          "effective_group_count": 30.087719298245613,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 35,
+      "repeated_identity_groups_with_unequal_labels": 0,
+      "largest_repeated_label_range": 0.0
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "splits": {
+        "train": {
+          "rows": 1952,
+          "unique_identities": 1248,
+          "exclusion_groups": 812,
+          "largest_group_rows": 39,
+          "largest_group_fraction": 0.019979508196721313,
+          "effective_group_count": 273.53223259152907,
+          "label_quantiles": [
+            10.09,
+            42.318000000000005,
+            83.68,
+            95.01,
+            98.48,
+            99.78450000000001,
+            99.95
+          ]
+        },
+        "valid": {
+          "rows": 279,
+          "unique_identities": 168,
+          "exclusion_groups": 134,
+          "largest_group_rows": 11,
+          "largest_group_fraction": 0.03942652329749104,
+          "effective_group_count": 77.91891891891892,
+          "label_quantiles": [
+            12.63,
+            36.953,
+            75.75999999999999,
+            91.99,
+            97.975,
+            99.811,
+            99.94
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 559,
+          "unique_identities": 339,
+          "exclusion_groups": 222,
+          "largest_group_rows": 33,
+          "largest_group_fraction": 0.059033989266547404,
+          "effective_group_count": 92.368016553355,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 552,
+      "repeated_identity_groups_with_unequal_labels": 551,
+      "largest_repeated_label_range": 62.769999999999996
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "splits": {
+        "train": {
+          "rows": 5045,
+          "unique_identities": 4886,
+          "exclusion_groups": 1325,
+          "largest_group_rows": 1753,
+          "largest_group_fraction": 0.34747274529236866,
+          "effective_group_count": 8.06190065171084,
+          "label_quantiles": [
+            -12.0605,
+            -7.6025302016,
+            -4.48,
+            -2.8799222949,
+            -1.73,
+            -0.020476970199999566,
+            1.5823133383
+          ]
+        },
+        "valid": {
+          "rows": 2940,
+          "unique_identities": 2874,
+          "exclusion_groups": 2874,
+          "largest_group_rows": 4,
+          "largest_group_fraction": 0.0013605442176870747,
+          "effective_group_count": 2793.665158371041,
+          "label_quantiles": [
+            -11.9989378619,
+            -6.8411535539249995,
+            -3.323558060875,
+            -1.41715354785,
+            -0.055349999999999996,
+            0.9867,
+            1.9675126996
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 1997,
+          "unique_identities": 1932,
+          "exclusion_groups": 622,
+          "largest_group_rows": 152,
+          "largest_group_fraction": 0.07611417125688533,
+          "effective_group_count": 47.59017410708958,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 202,
+      "repeated_identity_groups_with_unequal_labels": 185,
+      "largest_repeated_label_range": 2.3996999999999997
+    },
+    {
+      "task": "vdss_lombardo",
+      "metric": "Spearman",
+      "splits": {
+        "train": {
+          "rows": 791,
+          "unique_identities": 778,
+          "exclusion_groups": 529,
+          "largest_group_rows": 85,
+          "largest_group_fraction": 0.10745891276864729,
+          "effective_group_count": 71.69485504755357,
+          "label_quantiles": [
+            0.01,
+            0.12,
+            0.28500000000000003,
+            1.0,
+            3.2,
+            16.15,
+            700.0
+          ]
+        },
+        "valid": {
+          "rows": 113,
+          "unique_identities": 110,
+          "exclusion_groups": 84,
+          "largest_group_rows": 7,
+          "largest_group_fraction": 0.061946902654867256,
+          "effective_group_count": 57.26008968609865,
+          "label_quantiles": [
+            0.05,
+            0.168,
+            0.38,
+            0.95,
+            2.4,
+            15.123999999999997,
+            48.0
+          ],
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        },
+        "test": {
+          "rows": 226,
+          "unique_identities": 221,
+          "exclusion_groups": 190,
+          "largest_group_rows": 7,
+          "largest_group_fraction": 0.030973451327433628,
+          "effective_group_count": 141.0939226519337,
+          "label_quantiles": null,
+          "identity_seen_in_official_fit_fraction": 0.0,
+          "group_seen_in_official_fit_fraction": 0.0
+        }
+      },
+      "repeated_identity_groups": 16,
+      "repeated_identity_groups_with_unequal_labels": 14,
+      "largest_repeated_label_range": 23.0
+    }
+  ]
+}

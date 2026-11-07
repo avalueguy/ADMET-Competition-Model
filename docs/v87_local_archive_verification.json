@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "archive_sha256": "99ae79afc5e71e2591d7e89083a66c5a7cb5b3449407b444d9253028341eaf9e",
+  "all_member_hashes_verified": true,
+  "manifest_files": 665,
+  "restored": 650,
+  "no_csv": true
+}

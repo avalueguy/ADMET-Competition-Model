@@ -1,0 +1,59 @@
+{
+  "version": "v250",
+  "created_at_utc": "2026-10-29T09:27:00.365101+00:00",
+  "files": [
+    {
+      "path": "tools/v250_hierarchical_atom_matching.py",
+      "sha256": "b444023116c4fe09b154332fe127447b3e73a87b6250142e0bd7b34843eba15b"
+    },
+    {
+      "path": "tools/v251_verify_atom_matching.py",
+      "sha256": "994fdfe838b645d4ccf00e269c0a6bf673249cd1f72fd025a3d84c302dadb718"
+    },
+    {
+      "path": "tools/v252_package_matching_batch.py",
+      "sha256": "fd42ec115eb7d07ad4f3cda67b3a72f7d923959f7f66a785d20ea709e43bb4b8"
+    },
+    {
+      "path": "tools/v253_matching_driver.py",
+      "sha256": "a7dc0c244cadefef3a062802ac4026f10cee7217b1544e43ed57e6ae9553d24b"
+    },
+    {
+      "path": "tools/v254_start_matching.py",
+      "sha256": "5f95c947b03ef226a3267ca6d6cb04fb47ce228c15191bacbdeeb475dfe98882"
+    },
+    {
+      "path": "tools/finalize_v251_local.py",
+      "sha256": "004ea2a025166917fe4b6299588dccb4abddc51b15320766e029a6ac6954509b"
+    },
+    {
+      "path": "docs/v250_training_plan.json",
+      "sha256": "bd49bc033cbe5eabc8ac997a00bd6034c86b10590433ae651d5b6c1ff6371478"
+    },
+    {
+      "path": "docs/v250_source_review.json",
+      "sha256": "0e6f7d278edae2991f49d42c70fb252ab8c0ba7dcdbb361ae8c4a78b65cfae16"
+    },
+    {
+      "path": "docs/v243_v145_error_review.json",
+      "sha256": "29c63f47dbc2d940a362e2384a23d8fb4549a9c04966228858e720dfc8d04f26"
+    },
+    {
+      "path": "docs/v249_review_decision.json",
+      "sha256": "dca4f076120e36a0325b6d6deaf3ac912181eb272b993e2cc7f9f0af49015ffb"
+    },
+    {
+      "path": "tools/v148_experiment_runner.py",
+      "sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871"
+    },
+    {
+      "path": "tools/v146_current_baseline.py",
+      "sha256": "a6c9066555fc6fc78e81372415c2f5f55611cb3ed421d0f6a36e3f797b4c77b5"
+    },
+    {
+      "path": "admet_v67_data.py",
+      "sha256": "393f81a939b7d59a39b3b5d974910203f96769a309590828c92dabc083fc7bbb"
+    }
+  ],
+  "credentials_included": false
+}

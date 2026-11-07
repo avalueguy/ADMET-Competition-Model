@@ -1,0 +1,13 @@
+{
+  "status": "STATIC_REVIEW_PASS_SMOKE_REQUIRED",
+  "source_sha256": "58c7d6d51a72493dd29444c271c82b8c121ec5771e0f0023f56eb995e3d71305",
+  "checks": [
+    "Allfitweights use fitting scaffold counts only, noqueryoutcomes",
+    "Originalv148sourceunchanged",
+    "No v210 predictions, normalized features or rejected trainedmodels",
+    "Two fixed seeds and one config",
+    "Independent replay rebuilds fitting-only weight state",
+    "Manualdelivery only"
+  ],
+  "pretraining_smoke_note": "Uniform-weight analytic expectation differed2.22e-16; use1e-14 relative tolerance for mathematical reference only. No model training,development scores,confirmation or gate changed. Original assertion/log/source preserved."
+}

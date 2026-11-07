@@ -1,0 +1,913 @@
+{
+  "status": "PASS_DOCUMENTARY_AND_PREDICTION_AUDIT",
+  "version": "v361",
+  "user_reported_official": 51.24,
+  "exact_task_mean": 51.2395284090909,
+  "gap_to_52": 0.7604715909090984,
+  "task_score_sum_gain_to_52": 16.730375000000166,
+  "csv": "admet_submissions/v361_herg_feedback_repair/我从山北来带着兰花草-小分子药物预测技术创新赛-20261102.csv",
+  "csv_sha256": "6e480265b09ab45064f1b6cf437bc1cd42bbb450e3b34b111ce252cb942f10b7",
+  "platform_uploaded_byte_hash_confirmed": false,
+  "association": "v361 inferred from recent delivery and exact21 v346 tasks plus v354 hERG. Platform byte hash unavailable.",
+  "rows": [
+    {
+      "task": "ames",
+      "name_zh": "AMES 致突变",
+      "adopted_model": "65% 历史 v20 +35% 乘积核 SVC（v139，C=1）；秩融合",
+      "details": "v124 恢复 v112 的 v20 AMES；v145 保留 v139 product/C1 专家。v20 有残差树/早期表征相关源码，缺少该输出完整选型，不能认定为单一 CatBoost。",
+      "sources": [
+        "tools/v145_feedback_repair.py",
+        "admet_model_outputs_v144/evidence.json",
+        "admet_model_outputs_v124/evidence.json",
+        "admet_submissions/v112_history_expansion/evidence.json",
+        "admet_v20_protocol.json"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "AUROC",
+      "official_raw_metric": 0.8769096712291213,
+      "official_task_score": 50.141941,
+      "submission_rows": 1457
+    },
+    {
+      "task": "bbb_martins",
+      "name_zh": "血脑屏障 BBB",
+      "adopted_model": "历史 v29 组合；精确内部成员及权重待恢复",
+      "details": "v113 保留 v112 的完整 v29 BBB 输出。v29 的搜索菜单不能直接当作最终采用列表。",
+      "sources": [
+        "admet_submissions/v112_history_expansion/evidence.json",
+        "admet_submissions/v113_v111_restore_keep_bbb_hia/evidence.json"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "AUROC",
+      "official_raw_metric": 0.9289790494058787,
+      "official_task_score": 50.032316,
+      "submission_rows": 406
+    },
+    {
+      "task": "bioavailability_ma",
+      "name_zh": "口服生物利用度",
+      "adopted_model": "历史基线 + 中性母体/原分子测量上下文 CatBoost 残差（v96，深3、100树、双种子）",
+      "details": "采用 assay_d3/residual/step100；选择权重1意味着使用完整“基线偏置+残差”输出，不意味着消除历史基线。更早含 v81 深3/100树条件残差层。",
+      "sources": [
+        "tools/v96_normalized_assays.py",
+        "admet_model_outputs_v96/release.json",
+        "admet_model_outputs_v101/release.json",
+        "tools/v81_export.py"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "AUROC",
+      "official_raw_metric": 0.7948121050881277,
+      "official_task_score": 52.391603,
+      "submission_rows": 128
+    },
+    {
+      "task": "caco2_wang",
+      "name_zh": "Caco-2 通透性",
+      "adopted_model": "历史 v23 完整输出；不能确认只是多任务神经网络",
+      "details": "v111 从历史 v23 整任务复制；同一输出也存在于历史 v20。v24 协议明确历史 v23 完整集成不可用，v23 神经组件重训不能代表整套模型。",
+      "sources": [
+        "admet_submissions/v111_historical_task_blend/evidence.json",
+        "admet_v24_protocol.json"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "MAE",
+      "official_raw_metric": 0.27592992051587734,
+      "official_task_score": 50.689546,
+      "submission_rows": 182
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "name_zh": "肝细胞清除率",
+      "adopted_model": "历史排序基线 + 其他测量上下文的岭回归残差（v85，alpha=1、strength=1）",
+      "details": "选中 assay_a1。通过 Gaussian rank 基线偏置与线性残差生成预测；不是把 v84 邻居树再简单叠加一次。",
+      "sources": [
+        "tools/v85_smooth_residual.py",
+        "admet_model_outputs_v85/release.json",
+        "tools/v125_low_task_baseline.py"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "Spearman",
+      "official_raw_metric": 0.565208996561239,
+      "official_task_score": 50.211228,
+      "submission_rows": 243
+    },
+    {
+      "task": "clearance_microsome_az",
+      "name_zh": "肝微粒体清除率",
+      "adopted_model": "历史 v46 中继承的连续任务组合；内部配比待恢复",
+      "details": "v111 恢复历史 v46 输出。v46 本轮只更新分类任务，因此不能称该连续任务采用 v46 图网络微调。",
+      "sources": [
+        "admet_submissions/v111_historical_task_blend/evidence.json",
+        "admet_submissions/v112_history_expansion/evidence.json",
+        "docs/history/v46_report.md"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "Spearman",
+      "official_raw_metric": 0.6756845436053647,
+      "official_task_score": 50.495262,
+      "submission_rows": 221
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "name_zh": "CYP2C9 底物",
+      "adopted_model": "历史基线 + 其他测量上下文 CatBoost 残差（v82，深2、100树、3种子）",
+      "details": "官方其他任务测量值、缺失掩码和历史预测 rank-logit 为输入；目标任务及其掩码排除；均值原始 logit 后 sigmoid。",
+      "sources": [
+        "tools/v82_export.py",
+        "admet_model_outputs_v82_final/release.json",
+        "tools/v83_residual.py"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "AUPRC",
+      "official_raw_metric": 0.5862085536546348,
+      "official_task_score": 56.936749,
+      "submission_rows": 135
+    },
+    {
+      "task": "cyp2c9_veith",
+      "name_zh": "CYP2C9 抑制",
+      "adopted_model": "65% 条件残差基线 +35% 加和核 SVC（v139，C=10）；秩融合",
+      "details": "基线保留 v80 深4/300树、3种子 CatBoost 偏置残差。v139 sum 核由结构指纹、增强理化/构象/药效团与其他测量上下文组成。",
+      "sources": [
+        "admet_model_outputs_v144/evidence.json",
+        "tools/v139_classification_kernels.py",
+        "admet_model_outputs_v80_final/release.json",
+        "tools/verify_v80_models.py",
+        "tools/v83_residual.py"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "AUPRC",
+      "official_raw_metric": 0.8349408577894758,
+      "official_task_score": 51.364323,
+      "submission_rows": 2419
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "name_zh": "CYP2D6 底物",
+      "adopted_model": "75% 条件残差基线 +25% XGBoost（v86，深3、200树）；秩融合",
+      "details": "v86 aux_logloss_d3_t200，用二分类 logloss，不能因文件名 ranking 宣称选中的是排序损失。基线有 v82 深2/50树、3种子 CatBoost。",
+      "sources": [
+        "admet_model_outputs_v86/release.json",
+        "tools/v86_metric_ranking.py",
+        "tools/v82_export.py",
+        "tools/v125_low_task_baseline.py"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "AUPRC",
+      "official_raw_metric": 0.7583244699983189,
+      "official_task_score": 50.358383,
+      "submission_rows": 135
+    },
+    {
+      "task": "cyp2d6_veith",
+      "name_zh": "CYP2D6 抑制",
+      "adopted_model": "65% 多层树/核基线 +35% XGBoost（v135，深6、900树、双种子）；秩融合",
+      "details": "基线包括 v81 深4/300树 CatBoost 条件残差，v92 多指纹 Tanimoto 核岭回归25%（alpha=.3），以及 v100 2D/3D加和核岭回归25%（alpha=.1）。各层重新计算秩，不能把嵌套比例平铺相乘。",
+      "sources": [
+        "admet_model_outputs_v144/evidence.json",
+        "tools/v135_broad_boosting.py",
+        "admet_model_outputs_v101/release.json",
+        "admet_model_outputs_v92/release.json",
+        "tools/v92_full_kernel.py",
+        "tools/v100_shape_kernel.py",
+        "tools/v81_export.py"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "AUPRC",
+      "official_raw_metric": 0.7439447168745902,
+      "official_task_score": 50.846574,
+      "submission_rows": 2626
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "name_zh": "CYP3A4 底物",
+      "adopted_model": "50% 共享多任务神经网络（v67）+50% CatBoost（v127，深4、900树）；秩融合",
+      "details": "v67 指纹+RDKit描述符，2种子、5500/7000步快照；v68 核分支该任务未通过，所以历史源不是核SVM。v127 physchem 包含理化特征和目标排除的其他测量上下文。v354 的168/210/224组合已撤回。",
+      "sources": [
+        "admet_v67_protocol.json",
+        "admet_model_outputs_v67/fresh.json",
+        "admet_model_outputs_v68/selection.json",
+        "tools/v125_low_task_baseline.py",
+        "tools/v127_low_classification.py",
+        "admet_model_outputs_v130/evidence.json",
+        "tools/v361_herg_feedback_repair.py"
+      ],
+      "lineage_completeness": "adopted_route_confirmed",
+      "limitations": "",
+      "metric": "AUROC",
+      "official_raw_metric": 0.7460443037974683,
+      "official_task_score": 50.706702,
+      "submission_rows": 135
+    },
+    {
+      "task": "cyp3a4_veith",
+      "name_zh": "CYP3A4 抑制",
+      "adopted_model": "25% 历史基线 +75% v75 专家；专家内部50%条件 CatBoost +50%混合核 SVC",
+      "details": "v75 conditional_kernel3：树深6、851树、3种子；SVC C=10，85%化学核+15%理化RBF。两级均为秩融合。协议变量 anchor_weight=.75 在实际融合中是专家权重，应按源码语义解释。",
+      "sources": [
+        "admet_model_outputs_v75/release.json",
+        "admet_v75_protocol.json",
+        "admet_v75_experiments.py",
+        "tools/select_v75.py",
+        "tools/verify_v75_models.py",
+        "admet_submissions/v111_historical_task_blend/evidence.json"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "AUPRC",
+      "official_raw_metric": 0.8991915344045904,
+      "official_task_score": 50.422543,
+      "submission_rows": 2467
+    },
+    {
+      "task": "dili",
+      "name_zh": "药物性肝损伤 DILI",
+      "adopted_model": "75% 历史基线 +25% 多视图 CatBoost（v73，深6、391树、双种子）；秩融合",
+      "details": "v73 multiview：多种结构计数指纹、整分子与母体描述符；之后各采用版本未再改变该任务。",
+      "sources": [
+        "admet_model_outputs_v73/release.json",
+        "admet_v73_experts.py",
+        "tools/finalize_v73.py"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "AUROC",
+      "official_raw_metric": 0.935,
+      "official_task_score": 50.715743,
+      "submission_rows": 96
+    },
+    {
+      "task": "half_life_obach",
+      "name_zh": "半衰期",
+      "adopted_model": "50% v68 神经网络/SVR组合 +50% 双目标 CatBoost（v119，深4、900树、双种子）",
+      "details": "v68 内部65%共享多任务NN秩+35%混合结构核SVR秩（C=3，85%指纹核+15%描述符RBF）。v119 MultiRMSE 同时拟合log1p及Gaussian rank，逐输出取秩再融合。",
+      "sources": [
+        "tools/v119_matched_half_life.py",
+        "tools/v118_exact_half_life.py",
+        "admet_model_outputs_v124/evidence.json",
+        "admet_v68_protocol.json",
+        "admet_v68_kernel.py"
+      ],
+      "lineage_completeness": "adopted_route_confirmed",
+      "limitations": "",
+      "metric": "Spearman",
+      "official_raw_metric": 0.6509691357439866,
+      "official_task_score": 52.539161,
+      "submission_rows": 135
+    },
+    {
+      "task": "herg",
+      "name_zh": "hERG 心脏毒性",
+      "adopted_model": "60% v346基线 +各13⅓%稀疏逻辑回归、监督多核SVC、GroupDRO神经标签检索；秩融合",
+      "details": "三专家：v168 strength1 的TF-IDF/NB-logratio+L2逻辑回归；v233 C=3监督核加权SVC；v333 8化学域GroupDRO标签检索。v346基线hERG=50%v85理化平滑残差+50%v127 CatBoost。v361保留v354完整hERG输出。原严格bootstrap未通过记录仍保留；本次官方反馈确认本轮公开评测小幅改善。",
+      "sources": [
+        "admet_model_outputs_v354/frozen_before_final.json",
+        "tools/v349_diverse_model_combinations.py",
+        "tools/v168_sparse_linear.py",
+        "tools/v233_supervised_chemical_similarity.py",
+        "tools/v333_chemical_domain_dro.py",
+        "admet_model_outputs_v130/evidence.json",
+        "admet_submissions/v114_herg_history52/evidence.json",
+        "tools/v85_smooth_residual.py",
+        "tools/v361_herg_feedback_repair.py"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "AUROC",
+      "official_raw_metric": 0.861119293078056,
+      "official_task_score": 49.93509,
+      "submission_rows": 132
+    },
+    {
+      "task": "hia_hou",
+      "name_zh": "人体肠道吸收 HIA",
+      "adopted_model": "共享多任务神经网络（v67，经v68输出继承）",
+      "details": "v67 gated候选在fresh检查下降，final_weight=0，实际退回shared；v68核候选也未通过。v113保留v112从v68恢复的输出。双种子与5500/7000步快照；当前官方AUROC=1，无上升空间。",
+      "sources": [
+        "admet_v67_protocol.json",
+        "admet_model_outputs_v67/fresh.json",
+        "admet_model_outputs_v68/selection.json",
+        "admet_submissions/v112_history_expansion/evidence.json"
+      ],
+      "lineage_completeness": "adopted_route_confirmed",
+      "limitations": "",
+      "metric": "AUROC",
+      "official_raw_metric": 1.0,
+      "official_task_score": 50.14341,
+      "submission_rows": 117
+    },
+    {
+      "task": "ld50_zhu",
+      "name_zh": "急性毒性 LD50",
+      "adopted_model": "历史 v44 连续任务组合；最终内部模型和配比待恢复",
+      "details": "当前预测字符串与历史v44/v46/v56均一致。v44曾比较成对性质差树与直接树，但缺少该任务最终选型，不能直接宣称采用全部这些候选。",
+      "sources": [
+        "admet_v44_protocol.json",
+        "docs/history/v46_report.md",
+        "admet_model_outputs_v56/release.json"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "MAE",
+      "official_raw_metric": 0.55547536869963,
+      "official_task_score": 52.05411,
+      "submission_rows": 1478
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "name_zh": "脂溶性",
+      "adopted_model": "80% v56物理残差神经网络组合 +20% v304可学习标签检索；数值加权",
+      "details": "v56内部65%更早输出+35%物理残差神经分支（variant1），随后仿射校准1.025082651919374*x-.033204669702501285。v304近邻24、width128/key32，双种子、直接MAE；当前外层比例由v313固定。",
+      "sources": [
+        "admet_model_outputs_v56/release.json",
+        "admet_model_outputs_v56/fusion_replay.json",
+        "docs/history/v56_report.md",
+        "tools/v304_learned_label_retrieval.py",
+        "docs/v313_experimental_delivery.json",
+        "tools/v314_current_baseline.py"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "MAE",
+      "official_raw_metric": 0.42089320332796315,
+      "official_task_score": 52.909067,
+      "submission_rows": 840
+    },
+    {
+      "task": "pgp_broccatelli",
+      "name_zh": "P-gp",
+      "adopted_model": "历史基线 + 其他测量上下文 CatBoost 残差（v81，深3、100树、3种子）",
+      "details": "用基线rank-logit及其他测量值/缺失掩码，原始logit均值后sigmoid；v125有当前采用分支的精确最终预测重放记录。",
+      "sources": [
+        "tools/v81_export.py",
+        "admet_model_outputs_v81_final/release.json",
+        "tools/v125_low_task_baseline.py"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "AUROC",
+      "official_raw_metric": 0.9504798720341242,
+      "official_task_score": 50.320749,
+      "submission_rows": 245
+    },
+    {
+      "task": "ppbr_az",
+      "name_zh": "血浆蛋白结合率 PPBR",
+      "adopted_model": "55% v83残差校准组合 +45% v304可学习标签检索；数值加权",
+      "details": "v83内部50%旧基线+50%其他测量上下文CatBoost MAE残差（深3/250树、3种子），旧基线含v56偏差校准。v304近邻24、width128/key32，2种子，直接MAE，输出限制[0,100]。",
+      "sources": [
+        "admet_model_outputs_v83/release.json",
+        "tools/v83_residual.py",
+        "admet_model_outputs_v56/release.json",
+        "tools/v304_learned_label_retrieval.py",
+        "docs/v313_experimental_delivery.json",
+        "tools/v314_current_baseline.py"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "MAE",
+      "official_raw_metric": 6.665484533215087,
+      "official_task_score": 52.376135,
+      "submission_rows": 559
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "name_zh": "水溶解度",
+      "adopted_model": "80% 历史 v44输出 +20% v329 SAM神经标签检索；数值加权",
+      "details": "v329继承v304标签检索结构，SAM半径.05配合AdamW；近邻24、双种子，直接MAE。历史v44内部选型不完整，不能仅凭v44研究菜单断言采用成对回归。",
+      "sources": [
+        "admet_submissions/v111_historical_task_blend/evidence.json",
+        "admet_v44_protocol.json",
+        "tools/v329_sharpness_retrieval.py",
+        "tools/v346_experimental_solubility.py",
+        "docs/v346_experimental_delivery.json"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "MAE",
+      "official_raw_metric": 0.7127214187464622,
+      "official_task_score": 50.886239,
+      "submission_rows": 1997
+    },
+    {
+      "task": "vdss_lombardo",
+      "name_zh": "稳态分布容积 VDss",
+      "adopted_model": "历史 v46 中继承的连续任务组合；内部配比待恢复",
+      "details": "v112恢复来源记录表明同历史v46输出；本地逐字符串复核一致。该任务不是v46当轮分类图微调分支。",
+      "sources": [
+        "admet_submissions/v112_history_expansion/evidence.json",
+        "docs/history/v46_report.md"
+      ],
+      "lineage_completeness": "partial_legacy",
+      "limitations": "旧组合输出可核对，但更早成员、全部配比和完整 OOF 未能从现存本地记录还原。",
+      "metric": "Spearman",
+      "official_raw_metric": 0.7145137427047057,
+      "official_task_score": 50.792751,
+      "submission_rows": 226
+    }
+  ],
+  "checks": [
+    {
+      "task": "ppbr_az",
+      "check": "v304 arithmetic blend",
+      "max_abs_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "check": "v304 arithmetic blend",
+      "max_abs_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "check": "v329 arithmetic blend",
+      "max_abs_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "task": "herg",
+      "check": "three experts and baseline rank blend",
+      "max_abs_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "check": "v127 rank blend",
+      "max_abs_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "task": "half_life_obach",
+      "check": "v119 rank blend",
+      "max_abs_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "task": "cyp2d6_veith",
+      "check": "v135 rank blend",
+      "max_abs_error": 2.220446049250313e-16,
+      "status": "PASS"
+    },
+    {
+      "task": "caco2_wang",
+      "check": "exact historical prediction strings",
+      "source": "recovered_history/official_scorecard_sources/admet_submissions/v23/v23_upload.csv",
+      "status": "PASS"
+    },
+    {
+      "task": "bbb_martins",
+      "check": "exact historical prediction strings",
+      "source": "recovered_history/official_scorecard_sources/admet_submissions/v29/我从山北来带着兰花草-小分子药物预测技术创新赛-20261006.csv",
+      "status": "PASS"
+    },
+    {
+      "task": "clearance_microsome_az",
+      "check": "exact historical prediction strings",
+      "source": "recovered_history/official_scorecard_sources/admet_submissions/v46/我从山北来带着兰花草-小分子药物预测技术创新赛-20261015-v46.csv",
+      "status": "PASS"
+    },
+    {
+      "task": "ld50_zhu",
+      "check": "exact historical prediction strings",
+      "source": "recovered_history/official_scorecard_sources/admet_submissions/v44/我从山北来带着兰花草-小分子药物预测技术创新赛-20261012.csv",
+      "status": "PASS"
+    },
+    {
+      "task": "vdss_lombardo",
+      "check": "exact historical prediction strings",
+      "source": "recovered_history/official_scorecard_sources/admet_submissions/v46/我从山北来带着兰花草-小分子药物预测技术创新赛-20261015-v46.csv",
+      "status": "PASS"
+    },
+    {
+      "task": "hia_hou",
+      "check": "exact historical prediction strings",
+      "source": "admet_submissions/v68_official_only/我从山北来带着兰花草-小分子药物预测技术创新赛-20261020.csv",
+      "status": "PASS"
+    },
+    {
+      "task": "dili",
+      "check": "exact historical prediction strings",
+      "source": "admet_submissions/v73_v72/我从山北来带着兰花草-小分子药物预测技术创新赛-20261021.csv",
+      "status": "PASS"
+    },
+    {
+      "task": "pgp_broccatelli",
+      "check": "exact historical prediction strings",
+      "source": "admet_submissions/v83_matched_residual/我从山北来带着兰花草-小分子药物预测技术创新赛-20261025.csv",
+      "status": "PASS"
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "check": "exact historical prediction strings",
+      "source": "admet_submissions/v83_matched_residual/我从山北来带着兰花草-小分子药物预测技术创新赛-20261025.csv",
+      "status": "PASS"
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "check": "exact historical prediction strings",
+      "source": "admet_submissions/v85_smooth_residual/我从山北来带着兰花草-小分子药物预测技术创新赛-20261025.csv",
+      "status": "PASS"
+    },
+    {
+      "task": "cyp3a4_veith",
+      "check": "exact historical prediction strings",
+      "source": "admet_submissions/v75_v73/我从山北来带着兰花草-小分子药物预测技术创新赛-20261022.csv",
+      "status": "PASS"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "admet_model_outputs_v101/release.json",
+      "sha256": "bc917522638764848142af78db1267a69e516b6fae3341e4dc4c6e35e7eeaa2e"
+    },
+    {
+      "path": "admet_model_outputs_v119/models/final/full/predictions.npz",
+      "sha256": "adb1590e2ce39d7f1728607ed3b1799f99e0794ec05771880cb02acfb45ce6b3"
+    },
+    {
+      "path": "admet_model_outputs_v124/evidence.json",
+      "sha256": "bd1ef8db1d4fc0b0eb8e19f99d253e35f5637c5ee56fb62e530c487122f05e38"
+    },
+    {
+      "path": "admet_model_outputs_v127/models/cyp3a4_substrate_carbonmangels/final/physchem/predictions.npz",
+      "sha256": "131a041a83fba00c98fc7658d6010348252367db1fee1a9fa06ce79aac757b3a"
+    },
+    {
+      "path": "admet_model_outputs_v130/evidence.json",
+      "sha256": "3870f9e07af25d86b25171448a2f135f6d8266f50fc4feabb593db2fa72e0e68"
+    },
+    {
+      "path": "admet_model_outputs_v135/models/cyp2d6_veith/final/full_d6/predictions.npz",
+      "sha256": "d09c037ba7e2b9def050f2ed2c0c95a4c41bb09936e5d433c1d9892076461b8f"
+    },
+    {
+      "path": "admet_model_outputs_v144/evidence.json",
+      "sha256": "c5e3628aa6f03cd6175f56213c07070d2a1611f15af1b413c4d3cf5a33f42531"
+    },
+    {
+      "path": "admet_model_outputs_v168/models/herg/final/strength1.0/predictions.npz",
+      "sha256": "9eeaef55a46175d3eec5f5f12136724a37332b9af94c57a5dbc56065325552b2"
+    },
+    {
+      "path": "admet_model_outputs_v233/models/herg/final/cross_scaffold_alignment/predictions.npz",
+      "sha256": "f73ea2eb16be239f6455d5aee139d04a57674433ef9c35a06ec8f770d255807b"
+    },
+    {
+      "path": "admet_model_outputs_v313/expert/models/lipophilicity_astrazeneca/final/learned_label_context24/predictions.npz",
+      "sha256": "2dcd5e46100df9c6cd8f84a13dd33514dd92b51743f1f4f4c8b3bb08f1b0b361"
+    },
+    {
+      "path": "admet_model_outputs_v313/expert/models/ppbr_az/final/learned_label_context24/predictions.npz",
+      "sha256": "6e0dbd56d9010b1eedccf4fd401443122cef45b1b05864a9d3bde6dd849eff1a"
+    },
+    {
+      "path": "admet_model_outputs_v333/models/herg/final/chemical_domains8_groupdro/predictions.npz",
+      "sha256": "aa856a9738654ba36cc644ccde9856b168c0d9b195d178243487914ea1802f5a"
+    },
+    {
+      "path": "admet_model_outputs_v346/expert/models/solubility_aqsoldb/final/sam005_label_context24/predictions.npz",
+      "sha256": "3a9224a83a6a2a753f1c7616207d8789e5f74d785dab6a69d200f45a7a316808"
+    },
+    {
+      "path": "admet_model_outputs_v354/frozen_before_final.json",
+      "sha256": "82059183788c44bfa951a7c89e791dc760011646d2ae63b0cb3e01b596ef8817"
+    },
+    {
+      "path": "admet_model_outputs_v56/fusion_replay.json",
+      "sha256": "916e196827f65e2e381e8e247ee20365594e721d2023dd01b1046cc5c69050e4"
+    },
+    {
+      "path": "admet_model_outputs_v56/release.json",
+      "sha256": "a2dbbbcc9c838c889c01363a76a749a1364e5c630ac5085b356b30dc557f9c7e"
+    },
+    {
+      "path": "admet_model_outputs_v67/fresh.json",
+      "sha256": "041ae68ae14a3f0f10f8689c335b4af860b549b5b2fc9f467f90c4c76d73acbe"
+    },
+    {
+      "path": "admet_model_outputs_v68/selection.json",
+      "sha256": "94e2492a5ad3006c77adc8b594f0b688f4db39bfdab10e39eb22e276c8b3f541"
+    },
+    {
+      "path": "admet_model_outputs_v73/release.json",
+      "sha256": "7967fb5b9f2471718b00c060b6d0e09f3da0ae2ae8fce435024c04a6e50d4bf2"
+    },
+    {
+      "path": "admet_model_outputs_v75/release.json",
+      "sha256": "1ea23ffffef2ffb0de585dbd4fbe7b44d98d5832819c894992748a759faac0f9"
+    },
+    {
+      "path": "admet_model_outputs_v80_final/release.json",
+      "sha256": "a1b86e23d3154f72a3a73692f3d661a49fc2f8cd0d2759f6117f663dad7743b0"
+    },
+    {
+      "path": "admet_model_outputs_v81_final/release.json",
+      "sha256": "3106468930735f06b047d895ef352f2a3fe83c2dc989f22f89c07b8a4bebc00f"
+    },
+    {
+      "path": "admet_model_outputs_v82_final/release.json",
+      "sha256": "a160aa16483e70e8d755d74e1bf4bd574c9887b0b47bccb196e28fb4a4318996"
+    },
+    {
+      "path": "admet_model_outputs_v83/release.json",
+      "sha256": "d80bc71ac90ca996cbe4ed92f8597627cfef6c00276cfe5e73982445e7a868c8"
+    },
+    {
+      "path": "admet_model_outputs_v85/release.json",
+      "sha256": "662ba8865470d80d3ae4652cb6c627fa65d78c2ccf74ceb3f0db7ffecb012f0b"
+    },
+    {
+      "path": "admet_model_outputs_v86/release.json",
+      "sha256": "574f1fb358badd31f7c98e0e81a2b924633d398c5e0b9cad0d6228a24a56bd20"
+    },
+    {
+      "path": "admet_model_outputs_v92/release.json",
+      "sha256": "b0f577e31612c1acc7442ee26617e5e65af725236011f4eed80d70a0b92bd263"
+    },
+    {
+      "path": "admet_model_outputs_v96/release.json",
+      "sha256": "67cedf9d330373b7d113d356cfaaa3bca576b5b20e9d994edcd69352db9d4869"
+    },
+    {
+      "path": "admet_submissions/v111_historical_task_blend/evidence.json",
+      "sha256": "0a753cbcdb651bed2fb040576babefbb7eee16638e3f4ce47a146db2724726e3"
+    },
+    {
+      "path": "admet_submissions/v112_history_expansion/evidence.json",
+      "sha256": "76dc9095dd6113c3e4ed2131377c4478933a661a9e88eea6980b869534c3ae52"
+    },
+    {
+      "path": "admet_submissions/v113_v111_restore_keep_bbb_hia/evidence.json",
+      "sha256": "510ea409e1a995fd769f853be0673dcf83568db4cca42e498b8685ee2ec7a260"
+    },
+    {
+      "path": "admet_submissions/v114_herg_history52/evidence.json",
+      "sha256": "d500245d43851ce2899dc71010afa1ac624ccdc55ef3650cb6c09a817efc9d2a"
+    },
+    {
+      "path": "admet_submissions/v124_matched_models_history/我从山北来带着兰花草-小分子药物预测技术创新赛-20261027.csv",
+      "sha256": "a1e175b53c5d5933fd89923c190e4a16c74c116776f5dc1a0abcca771d106faf"
+    },
+    {
+      "path": "admet_submissions/v130_low_task_experts/我从山北来带着兰花草-小分子药物预测技术创新赛-20261027.csv",
+      "sha256": "4d1d24761f737b0ffe79e707022fabd1db01cf14799abdab3b23d4b2f249e5cb"
+    },
+    {
+      "path": "admet_submissions/v145_feedback_repair/我从山北来带着兰花草-小分子药物预测技术创新赛-20261027.csv",
+      "sha256": "3ffd68785b3fc321c8e81a32b23a09cf2493ff26240555a3472a315c572706e7"
+    },
+    {
+      "path": "admet_submissions/v313_experimental_ppbr_lipo/我从山北来带着兰花草-小分子药物预测技术创新赛-20261101.csv",
+      "sha256": "681e9d23100c7ea39b4e6003dd6de4fac738bc467254782b7b8c4b7bc1d2941b"
+    },
+    {
+      "path": "admet_submissions/v346_experimental_solubility/我从山北来带着兰花草-小分子药物预测技术创新赛-20261101.csv",
+      "sha256": "bef15e3a892afddd661173e3496b671078067e03ee2022b2abbfde02da45a906"
+    },
+    {
+      "path": "admet_submissions/v354_experimental_model_combinations/我从山北来带着兰花草-小分子药物预测技术创新赛-20261102.csv",
+      "sha256": "96807c67421481871f6772dfe06ee37ba2ffcf9e0203fa576b08a10d4b87fedd"
+    },
+    {
+      "path": "admet_submissions/v361_herg_feedback_repair/我从山北来带着兰花草-小分子药物预测技术创新赛-20261102.csv",
+      "sha256": "6e480265b09ab45064f1b6cf437bc1cd42bbb450e3b34b111ce252cb942f10b7"
+    },
+    {
+      "path": "admet_submissions/v56/我从山北来带着兰花草-小分子药物预测技术创新赛-20261016.csv",
+      "sha256": "ef8a199bedb658ed4fc2147581589cfd5d830a568d4505a83ff05ecfa3cfc8f3"
+    },
+    {
+      "path": "admet_submissions/v68_official_only/我从山北来带着兰花草-小分子药物预测技术创新赛-20261020.csv",
+      "sha256": "0aa975b4e2dfce0890296854fbe621de0beb4955bfd5ed0a0131e88cd4625ccf"
+    },
+    {
+      "path": "admet_submissions/v73_v72/我从山北来带着兰花草-小分子药物预测技术创新赛-20261021.csv",
+      "sha256": "beab85b972b336526a30c8baa6d181552927f0d004ac6360f42ecdbd96399763"
+    },
+    {
+      "path": "admet_submissions/v75_v73/我从山北来带着兰花草-小分子药物预测技术创新赛-20261022.csv",
+      "sha256": "ccab5fd1176180f3ce34410486511a9a1f03f3123b326063a51727a8cbb09af6"
+    },
+    {
+      "path": "admet_submissions/v83_matched_residual/我从山北来带着兰花草-小分子药物预测技术创新赛-20261025.csv",
+      "sha256": "47d384497619e437d9baa295307cdfc8014b65402833ce75a91978f69c996c4c"
+    },
+    {
+      "path": "admet_submissions/v85_smooth_residual/我从山北来带着兰花草-小分子药物预测技术创新赛-20261025.csv",
+      "sha256": "dc77e226bb9f9e5136d9f59a2d01f92696a5a6084939b7dda878741af6fd9e44"
+    },
+    {
+      "path": "admet_v20_protocol.json",
+      "sha256": "71f60894e75fb5ec04d0cbc0a631ee67c581ef6520629d74a71bf98a39b2147d"
+    },
+    {
+      "path": "admet_v24_protocol.json",
+      "sha256": "ee12fbdbad0ba21f49c4f4a18d8da2f445ff877928a1f7e1526e04ea129b89f4"
+    },
+    {
+      "path": "admet_v44_protocol.json",
+      "sha256": "447928296bb934ae095666738ff07fd3e0dd1dfaceb5e3ff2ae4e2a185249935"
+    },
+    {
+      "path": "admet_v67_protocol.json",
+      "sha256": "593a2e8aa8eeed17bd9a455c167f2ae096ee371a2f3107457854cfe9df08a49b"
+    },
+    {
+      "path": "admet_v68_kernel.py",
+      "sha256": "9b11f2e3fcb52702899793a55ef7bdef1bbaa7d9d6202b241757d44ce6f956bc"
+    },
+    {
+      "path": "admet_v68_protocol.json",
+      "sha256": "20ecfb58b1399aa6d72cacbadf6ede0847ec11828184a8c9ed6a6ec556d10b97"
+    },
+    {
+      "path": "admet_v73_experts.py",
+      "sha256": "a52d1c74df687cc303df4f22eaab91f0f8fda020368e00c6348a0f21666548c9"
+    },
+    {
+      "path": "admet_v75_experiments.py",
+      "sha256": "218c4b6b7f96c9bb5ab528458103c7d1827fadacced37bf99885c71aa3e4defa"
+    },
+    {
+      "path": "admet_v75_protocol.json",
+      "sha256": "f2bd1024dd3970bb2732adc03ead1c69404f583f789af57bdc6c56fac4ebd0b5"
+    },
+    {
+      "path": "docs/current_best_after_v361_20261104.json",
+      "sha256": "c41d3361208aeb396fb0e91e91fc0bac9b40c3f7893e007379b8a0de85a1ffd5"
+    },
+    {
+      "path": "docs/history/v46_report.md",
+      "sha256": "ab99c1c05579326aee4c3f7336054b452d95003ac9ae7750a1bdc06c2f3e0c0a"
+    },
+    {
+      "path": "docs/history/v56_report.md",
+      "sha256": "39b72fc22c00e3f580b90f662d1de8d0873dc9260078b73b5f124f9640df5c0f"
+    },
+    {
+      "path": "docs/platform_scorecard_v361_20261104.json",
+      "sha256": "8a10442e3908946db3ea66babe26a37770474d9b3be3cbaca2a07a5f0c3c36bb"
+    },
+    {
+      "path": "docs/v313_experimental_delivery.json",
+      "sha256": "57984cf9a21c0c3313cfc13981dfc5b67adb382594ef6be567cbac96fd6184f0"
+    },
+    {
+      "path": "docs/v346_experimental_delivery.json",
+      "sha256": "38546eebbacce8b66c92811992f2e34235ea384966d393e579fa63e05587ac9a"
+    },
+    {
+      "path": "recovered_history/official_scorecard_sources/admet_submissions/v23/v23_upload.csv",
+      "sha256": "b2dc3eacc5c621f007fbacde47b55f751d87509e4721e76d47b686dde36004e1"
+    },
+    {
+      "path": "recovered_history/official_scorecard_sources/admet_submissions/v29/我从山北来带着兰花草-小分子药物预测技术创新赛-20261006.csv",
+      "sha256": "b0b2b872986f06699b80e77f7d13ac61510a6835891fa6a0f9e73c41daebcb53"
+    },
+    {
+      "path": "recovered_history/official_scorecard_sources/admet_submissions/v44/我从山北来带着兰花草-小分子药物预测技术创新赛-20261012.csv",
+      "sha256": "45b72ad8f9f697962690091c59de09905bbb3c2e06065e1a1235eb1daa7a538c"
+    },
+    {
+      "path": "recovered_history/official_scorecard_sources/admet_submissions/v46/我从山北来带着兰花草-小分子药物预测技术创新赛-20261015-v46.csv",
+      "sha256": "579383a3c91a3c57c9cd9a216b37830723f8de1bf65d66d0de80f0b77a1c1e95"
+    },
+    {
+      "path": "tools/audit_v361_task_inventory.py",
+      "sha256": "08ec1fe31ae5216a0877f8c06f468693df1d0997ade0c5c86acc3bb8e2530566"
+    },
+    {
+      "path": "tools/finalize_v73.py",
+      "sha256": "cfc40ed0ef374607b55751e53bc442fcef2f63b7904e3013c3be4eebfe44bf80"
+    },
+    {
+      "path": "tools/select_v75.py",
+      "sha256": "5944b61b9f88c275d2761a5a7109d7698225b6c6ae805b719c858bf598b708d4"
+    },
+    {
+      "path": "tools/v100_shape_kernel.py",
+      "sha256": "5eb5e25556c18b19c0142828d2339490e33d0712cd31531330aae7985bbf6a4b"
+    },
+    {
+      "path": "tools/v118_exact_half_life.py",
+      "sha256": "3f251404bb25226b1cb552e1e4b7b1092520acf2403c1ab869b074068c976c37"
+    },
+    {
+      "path": "tools/v119_matched_half_life.py",
+      "sha256": "81fe82ab716b9dd5217d65eb93641c010273fb18ab952749cb13a82e8b21ff7f"
+    },
+    {
+      "path": "tools/v125_low_task_baseline.py",
+      "sha256": "6879cda4ca27d332673338b94d805da637f52315ea0f85fcaf58d5aea87447d2"
+    },
+    {
+      "path": "tools/v127_low_classification.py",
+      "sha256": "3b03c342575b9cea2ed58b80ddbd5348b121d72b5c330d765d0c96b75faab80c"
+    },
+    {
+      "path": "tools/v135_broad_boosting.py",
+      "sha256": "e77caa7b7eeaf6d31571f05d7820cb7016fa9ac5726d366467b9d5f624ddb91e"
+    },
+    {
+      "path": "tools/v139_classification_kernels.py",
+      "sha256": "7eeda46993d4fffb3ba2e387b813f757d8274c5acef26708d0747443d6c28480"
+    },
+    {
+      "path": "tools/v145_feedback_repair.py",
+      "sha256": "16586eac92ba393039228654dba1060e1bbdf2c5f1200ddb571696a4ccce5005"
+    },
+    {
+      "path": "tools/v168_sparse_linear.py",
+      "sha256": "b3f5c6aedfaafa5cb6e371dc7ef2ec0d08ac4b6825e765a9135ff028b5bf6917"
+    },
+    {
+      "path": "tools/v233_supervised_chemical_similarity.py",
+      "sha256": "6c7abadc74a3d905c0c5d8e8a7e22f05a25606c9cdbcac21e86c29cddee91402"
+    },
+    {
+      "path": "tools/v304_learned_label_retrieval.py",
+      "sha256": "76c5b91336521105b62fe2556965f6c4c7d26d85adaec41049ec7902b5dd3bd0"
+    },
+    {
+      "path": "tools/v314_current_baseline.py",
+      "sha256": "be19cbdc09034bf1e41548c636246392baa5922d98005d4a4083e429b80db677"
+    },
+    {
+      "path": "tools/v329_sharpness_retrieval.py",
+      "sha256": "55975e65e18ef4b13cb3c663bef3db664e3e59fb8898efeec086870d2e078cae"
+    },
+    {
+      "path": "tools/v333_chemical_domain_dro.py",
+      "sha256": "4105d6243023b1d3c161b01a718e5306f7a20a8c558b55a8ed35438f5cb816b6"
+    },
+    {
+      "path": "tools/v346_experimental_solubility.py",
+      "sha256": "783321ab4d5ab6ccdef13b8fbefebbd4bb57789c26663b430e16d7d6a19c7722"
+    },
+    {
+      "path": "tools/v349_diverse_model_combinations.py",
+      "sha256": "c4024153f46798fd10c4ab38825cb6a21e16120889b9e43aa97f2be3a2ec1e88"
+    },
+    {
+      "path": "tools/v361_herg_feedback_repair.py",
+      "sha256": "e2ac0332e994fc4160bd6ac7e320e6befc4ed445bbe093678fa277aed077e19f"
+    },
+    {
+      "path": "tools/v81_export.py",
+      "sha256": "6aa845b987d07b9002904724c2ca6d1a84f90232fdd51edce1a77a1f8e34c622"
+    },
+    {
+      "path": "tools/v82_export.py",
+      "sha256": "d082a90d1db05c1a6c8e72da96650c0b4327dce4582d4d784d390eea331af260"
+    },
+    {
+      "path": "tools/v83_residual.py",
+      "sha256": "de9c80558727cf69788a30c395652119b734188d8b772556d9dc07288afd8bfa"
+    },
+    {
+      "path": "tools/v85_smooth_residual.py",
+      "sha256": "9feef784f04b9686494bea3d664da5fc9ba156e4806dcd4bd00bf2976f51dc86"
+    },
+    {
+      "path": "tools/v86_metric_ranking.py",
+      "sha256": "8ac10b8c9cc48d47d2c3143cf5002e78537e2fcf05b65c76003f51d408a784de"
+    },
+    {
+      "path": "tools/v92_full_kernel.py",
+      "sha256": "3c795d5a1729e1227be6f960ec8e17f4a51321e618b5b59e000cb1822be23983"
+    },
+    {
+      "path": "tools/v96_normalized_assays.py",
+      "sha256": "ee07b342701758854ad4654627f607b8316a7af543a9a17c2828a26816bdcced"
+    },
+    {
+      "path": "tools/verify_v75_models.py",
+      "sha256": "042680d300edee32ce2f05000e464be582a0c31deebf398318bdaa7313c18e88"
+    },
+    {
+      "path": "tools/verify_v80_models.py",
+      "sha256": "4d87bf7c73d646368c164370e42bea857e516ef883d28d9c0e80aa5812f61431"
+    }
+  ],
+  "no_training": true,
+  "no_new_submission": true,
+  "no_platform_access": true,
+  "limitations": [
+    "This documents adopted routes, not all attempted models.",
+    "Historical baseline internal composition remains partly unavailable; source scripts alone do not prove every searched component was adopted.",
+    "Recent additions had no new external data or weights, but early anchors contain historical pretrained sources.",
+    "Historical validation labels were repeatedly reused; some upstream OOF is approximate. Public platform feedback used for whole-task selection is not independent private-test validation.",
+    "Numeric checks replay cached expert predictions and fusion; they do not establish fresh full checkpoint inference of every historical model."
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "training_version": "v271",
+  "delivery_version": "v272",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "at_utc": "2026-10-30T04:33:28.487682+00:00",
+  "development_tasks": 2,
+  "development_partitions": 4,
+  "new_reference_models_development": 32,
+  "development_best": [
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "config": {
+        "inner_folds": 3,
+        "ridge": 0.3,
+        "covariance_prior": 20.0
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 282,
+          "baseline": 0.5727558332909924,
+          "expert": 0.5684993887888943,
+          "candidate": 0.5930434254819916,
+          "gain": 0.020287592190999182
+        },
+        {
+          "part": "fold1",
+          "rows": 283,
+          "baseline": 0.575230994148768,
+          "expert": 0.5735298251810345,
+          "candidate": 0.5924495233193774,
+          "gain": 0.017218529170609398
+        }
+      ],
+      "objective": 0.017218529170609398
+    },
+    {
+      "task": "clearance_microsome_az",
+      "metric": "Spearman",
+      "config": {
+        "inner_folds": 3,
+        "ridge": 0.3,
+        "covariance_prior": 20.0
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 256,
+          "baseline": 0.7019076327178516,
+          "expert": 0.6923273967047016,
+          "candidate": 0.7155581255566013,
+          "gain": 0.01365049283874964
+        },
+        {
+          "part": "fold1",
+          "rows": 257,
+          "baseline": 0.5046604490997971,
+          "expert": 0.48805978343229517,
+          "candidate": 0.5095071196130844,
+          "gain": 0.004846670513287243
+        }
+      ],
+      "objective": 0.004846670513287243
+    }
+  ],
+  "confirmation": [
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "config": {
+        "inner_folds": 3,
+        "ridge": 0.3,
+        "covariance_prior": 20.0
+      },
+      "weight": 0.45,
+      "parts": [
+        {
+          "part": "fold0",
+          "rows": 282,
+          "baseline": 0.5727558332909924,
+          "expert": 0.5684993887888943,
+          "candidate": 0.5930434254819916,
+          "gain": 0.020287592190999182
+        },
+        {
+          "part": "fold1",
+          "rows": 283,
+          "baseline": 0.575230994148768,
+          "expert": 0.5735298251810345,
+          "candidate": 0.5924495233193774,
+          "gain": 0.017218529170609398
+        }
+      ],
+      "objective": 0.017218529170609398,
+      "confirmation": [
+        {
+          "part": "fold0",
+          "rows": 282,
+          "baseline": 0.5727558332909924,
+          "expert": 0.5684993887888943,
+          "candidate": 0.5930434254819916,
+          "gain": 0.020287592190999182
+        },
+        {
+          "part": "fold1",
+          "rows": 283,
+          "baseline": 0.575230994148768,
+          "expert": 0.5735298251810345,
+          "candidate": 0.5924495233193774,
+          "gain": 0.017218529170609398
+        },
+        {
+          "part": "fold2",
+          "rows": 283,
+          "baseline": 0.5979336062289107,
+          "expert": 0.5827330089466041,
+          "candidate": 0.614140212421799,
+          "gain": 0.016206606192888273
+        },
+        {
+          "part": "valid",
+          "rows": 122,
+          "baseline": 0.5233668892310847,
+          "expert": 0.5190535896793707,
+          "candidate": 0.5333186187651466,
+          "gain": 0.009951729534061982
+        }
+      ],
+      "bootstrap": [
+        {
+          "part": "fold2",
+          "groups": 175,
+          "gain_ci90": [
+            -0.008522447609706994,
+            0.041494463849611286
+          ],
+          "lower_positive": false
+        },
+        {
+          "part": "valid",
+          "groups": 72,
+          "gain_ci90": [
+            -0.019543687591557005,
+            0.04499826199346947
+          ],
+          "lower_positive": false
+        }
+      ],
+      "accepted": false
+    }
+  ],
+  "accepted_tasks": [],
+  "archive": {
+    "status": "PASS",
+    "prefix": "v272_clearance_innovations_20261029",
+    "archive_sha256": "298c93b7164fe0b61244f12029a4f4eb5a7c621427a52a4465b10f8212313e6f",
+    "manifest_files": 87,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 35,
+    "existing_exact": 52,
+    "existing_updated_docs_preserved": []
+  },
+  "recovery_evidence": "docs/v276_recovery.json",
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "model_training_repeated": false,
+  "frozen_gates_unchanged": true,
+  "interpretation": "Hepatocyte has four positive point gains but both frozen scaffold bootstrap lower bounds cross zero. Rejected without fallback or parameter retry. Microsome fails original .008 minimum development gain."
+}

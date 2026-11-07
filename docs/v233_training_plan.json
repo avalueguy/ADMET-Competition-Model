@@ -1,0 +1,43 @@
+{
+  "version": "v233",
+  "delivery_version": "v234",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "created_at_utc": "2026-10-29T07:44:49.491189+00:00",
+  "source_sha256": "6c7abadc74a3d905c0c5d8e8a7e22f05a25606c9cdbcac21e86c29cddee91402",
+  "runner_sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871",
+  "model": "Cross-scaffold target-aligned nonnegative multiple-kernel SVC/SVR",
+  "tasks": [
+    "herg",
+    "bbb_martins",
+    "ames",
+    "clearance_hepatocyte_az",
+    "solubility_aqsoldb",
+    "pgp_broccatelli"
+  ],
+  "configs": [
+    {
+      "C": 3.0,
+      "alignment_ridge": 0.05,
+      "landmarks": 256
+    }
+  ],
+  "weights": [
+    0.2,
+    0.45
+  ],
+  "seeds": "Deterministic alignmentlandmarks2331029+taskindex; exactdeterministicSVC/SVR,no artificialseedensemble",
+  "distinct_from_completed_routes": "Priorv139/v150/v157 usedfixedsimilarityweights. This learnsnonnegative regularized targetalignmentusingonly crossscaffold fittingpairs; covariancegeometry andconditionalSchurinteractions differ. Notv103pairdifferenceregression; nooldmodel/predictionreuse.",
+  "channels": "15 PSDchannels:6(.5T+.5T^2)countfingerprints;fit-scaledphysical/shape/pharmacophoreRBF;target-excludedmeasuredassayRBF;7chemical-orphysical timesassaySchurproducts. Fit-onlymedian/std/missingness.",
+  "geometry_learning": "256fixedfitrowlandmarks; targetbinarywhitened/ranknormal/medianIQR,clip3,center. Centerchannelgrids onfitlandmarks; onlydifferent-scaffoldtargetcovariances. NNLSridge.05towarduniformprior,nonnegativeweightsdividedbychannelRMSandnormalized. KKTchecksrequired.",
+  "estimator": "ExactprecomputedSVC/SVR C3,tol1e-5,SVRepsilon.04. NativeMAEorfitranknormalSpearman. Originalv148fusionwithv145querycontrol,other16tasksprotected.",
+  "scheduling": "3disjointqueues2tasks each,4threads,12maxcores,all0beforeoriginalv148selector.",
+  "selection": "Unchangedfold0/1uniqueconfigweightfreeze",
+  "confirmation": "Unchangedall4pointgains>0,originalmeanthreshold,bothscaffoldbootstrap90lower>0,no fallback",
+  "verification": "NNLSclosedformreference/KKT,diagonalone/PSDsubmatrix,3metrictypesquerylabelperturbation andactualmodelreload,roworder; acceptedfullgeometryrebuild/gates/templatebytes/backupSHA",
+  "source_immutable_after_start": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "official_gain_guaranteed": false,
+  "limitations": "Publiclabelsreused,approxhistoricaloutercontrols; alignmentusesfitlabelsbutmayoverfit. Noofficialpointestimate. Noquerylabelsforgeometry/fitting."
+}

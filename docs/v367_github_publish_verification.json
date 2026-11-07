@@ -1,0 +1,203 @@
+{
+  "verified_at_utc": "2026-11-04T14:38:14.830736+00:00",
+  "repository": "avalueguy/ADMET-Competition-Model",
+  "branch": "main",
+  "commit": "61b85a53ba988b556417dd487f0f5b0bce18d163",
+  "commit_url": "https://github.com/avalueguy/ADMET-Competition-Model/commit/61b85a53ba988b556417dd487f0f5b0bce18d163",
+  "verification": "Downloaded immutable-commit raw files; compared bytes, SHA256, and Git blob SHA1 to the local upload manifest.",
+  "status": "PASS",
+  "files": [
+    {
+      "name": "CURRENT_STATUS.json",
+      "url": "https://raw.githubusercontent.com/avalueguy/ADMET-Competition-Model/61b85a53ba988b556417dd487f0f5b0bce18d163/CURRENT_STATUS.json",
+      "expected": {
+        "name": "CURRENT_STATUS.json",
+        "bytes": 265544,
+        "sha256": "27c1a7822fa1d8775e81cdadab35aae52f5847ad6d482987c07c4cd22a3885d5",
+        "git_blob_sha": "d07e88c59b75152548ff6dff56ef42a4180cbf56"
+      },
+      "actual": {
+        "bytes": 265544,
+        "sha256": "27c1a7822fa1d8775e81cdadab35aae52f5847ad6d482987c07c4cd22a3885d5",
+        "git_blob_sha": "d07e88c59b75152548ff6dff56ef42a4180cbf56"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "HANDOFF_CURRENT.md",
+      "url": "https://raw.githubusercontent.com/avalueguy/ADMET-Competition-Model/61b85a53ba988b556417dd487f0f5b0bce18d163/HANDOFF_CURRENT.md",
+      "expected": {
+        "name": "HANDOFF_CURRENT.md",
+        "bytes": 8316,
+        "sha256": "e7fcbb8cde1666e39d822bc7d7b2125d4411731a1130de83c78390870fd17adf",
+        "git_blob_sha": "ec2df6313119a08635ab11905a4b5e70b42317f4"
+      },
+      "actual": {
+        "bytes": 8316,
+        "sha256": "e7fcbb8cde1666e39d822bc7d7b2125d4411731a1130de83c78390870fd17adf",
+        "git_blob_sha": "ec2df6313119a08635ab11905a4b5e70b42317f4"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/avalueguy/ADMET-Competition-Model/61b85a53ba988b556417dd487f0f5b0bce18d163/README.md",
+      "expected": {
+        "name": "README.md",
+        "bytes": 3444,
+        "sha256": "d0cdf6a5685689fdffd79df71e6a8e454c2713b97cab76bb7bb1eb57b964c44a",
+        "git_blob_sha": "4b8bc2a1737bf114f54f26c05a6ce095740dff09"
+      },
+      "actual": {
+        "bytes": 3444,
+        "sha256": "d0cdf6a5685689fdffd79df71e6a8e454c2713b97cab76bb7bb1eb57b964c44a",
+        "git_blob_sha": "4b8bc2a1737bf114f54f26c05a6ce095740dff09"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "admet-v366-runtime.tar.gz.part001",
+      "url": "https://raw.githubusercontent.com/avalueguy/ADMET-Competition-Model/61b85a53ba988b556417dd487f0f5b0bce18d163/admet-v366-runtime.tar.gz.part001",
+      "expected": {
+        "name": "admet-v366-runtime.tar.gz.part001",
+        "bytes": 20971520,
+        "sha256": "004f7bbaf010dad68cfbb269843b8395de93072bf68bf28b4bb4e151f8759e49",
+        "git_blob_sha": "94522730051d666c0488b09a4f89e1e470d33919"
+      },
+      "actual": {
+        "bytes": 20971520,
+        "sha256": "004f7bbaf010dad68cfbb269843b8395de93072bf68bf28b4bb4e151f8759e49",
+        "git_blob_sha": "94522730051d666c0488b09a4f89e1e470d33919"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "admet-v366-runtime.tar.gz.part002",
+      "url": "https://raw.githubusercontent.com/avalueguy/ADMET-Competition-Model/61b85a53ba988b556417dd487f0f5b0bce18d163/admet-v366-runtime.tar.gz.part002",
+      "expected": {
+        "name": "admet-v366-runtime.tar.gz.part002",
+        "bytes": 20971520,
+        "sha256": "969a2294ce26d17d47c158010ce1ae469d62c53a3aab44aac77f08346bc9938a",
+        "git_blob_sha": "a94da15a295f2ac750dda2713efeac80e12728f1"
+      },
+      "actual": {
+        "bytes": 20971520,
+        "sha256": "969a2294ce26d17d47c158010ce1ae469d62c53a3aab44aac77f08346bc9938a",
+        "git_blob_sha": "a94da15a295f2ac750dda2713efeac80e12728f1"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "admet-v366-runtime.tar.gz.part003",
+      "url": "https://raw.githubusercontent.com/avalueguy/ADMET-Competition-Model/61b85a53ba988b556417dd487f0f5b0bce18d163/admet-v366-runtime.tar.gz.part003",
+      "expected": {
+        "name": "admet-v366-runtime.tar.gz.part003",
+        "bytes": 20971520,
+        "sha256": "014a1e52d380eefff4456d7864db3c471a4c4242e810799b90e28bc6daf94faa",
+        "git_blob_sha": "9a161d456a4619c24c9af7b65a7978a13a3add43"
+      },
+      "actual": {
+        "bytes": 20971520,
+        "sha256": "014a1e52d380eefff4456d7864db3c471a4c4242e810799b90e28bc6daf94faa",
+        "git_blob_sha": "9a161d456a4619c24c9af7b65a7978a13a3add43"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "admet-v366-runtime.tar.gz.part004",
+      "url": "https://raw.githubusercontent.com/avalueguy/ADMET-Competition-Model/61b85a53ba988b556417dd487f0f5b0bce18d163/admet-v366-runtime.tar.gz.part004",
+      "expected": {
+        "name": "admet-v366-runtime.tar.gz.part004",
+        "bytes": 20971520,
+        "sha256": "fc3a4b5d0b54b97af6dada675cc3f22e0e7203e4c3237f4948fe07faa59795ca",
+        "git_blob_sha": "c611a01093a8596fa0825f3cccd074908d587034"
+      },
+      "actual": {
+        "bytes": 20971520,
+        "sha256": "fc3a4b5d0b54b97af6dada675cc3f22e0e7203e4c3237f4948fe07faa59795ca",
+        "git_blob_sha": "c611a01093a8596fa0825f3cccd074908d587034"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "admet-v366-runtime.tar.gz.part005",
+      "url": "https://raw.githubusercontent.com/avalueguy/ADMET-Competition-Model/61b85a53ba988b556417dd487f0f5b0bce18d163/admet-v366-runtime.tar.gz.part005",
+      "expected": {
+        "name": "admet-v366-runtime.tar.gz.part005",
+        "bytes": 20971520,
+        "sha256": "b94ce61516eefaaf4776dc69aa8077f0759113dcce3a9daddd342ca183875208",
+        "git_blob_sha": "162db505326c9327c56a9061bb73b7bd3e4c7577"
+      },
+      "actual": {
+        "bytes": 20971520,
+        "sha256": "b94ce61516eefaaf4776dc69aa8077f0759113dcce3a9daddd342ca183875208",
+        "git_blob_sha": "162db505326c9327c56a9061bb73b7bd3e4c7577"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "admet-v366-runtime.tar.gz.part006",
+      "url": "https://raw.githubusercontent.com/avalueguy/ADMET-Competition-Model/61b85a53ba988b556417dd487f0f5b0bce18d163/admet-v366-runtime.tar.gz.part006",
+      "expected": {
+        "name": "admet-v366-runtime.tar.gz.part006",
+        "bytes": 19475701,
+        "sha256": "7d4cc003a3378923467013bff8290ce06bc3a5547febbad01bbddaea982338a6",
+        "git_blob_sha": "0dcb69ab6e5b70bf2a82317086068811a4cd2a2b"
+      },
+      "actual": {
+        "bytes": 19475701,
+        "sha256": "7d4cc003a3378923467013bff8290ce06bc3a5547febbad01bbddaea982338a6",
+        "git_blob_sha": "0dcb69ab6e5b70bf2a82317086068811a4cd2a2b"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "admet-v366-source.zip",
+      "url": "https://raw.githubusercontent.com/avalueguy/ADMET-Competition-Model/61b85a53ba988b556417dd487f0f5b0bce18d163/admet-v366-source.zip",
+      "expected": {
+        "name": "admet-v366-source.zip",
+        "bytes": 3255428,
+        "sha256": "a2a6b74fe90ff04992f5eb0bf56aa059b49aafa27607c88f8aa8c11d8369a4d3",
+        "git_blob_sha": "62817a461298a41782ef37c992938e280bc6d7af"
+      },
+      "actual": {
+        "bytes": 3255428,
+        "sha256": "a2a6b74fe90ff04992f5eb0bf56aa059b49aafa27607c88f8aa8c11d8369a4d3",
+        "git_blob_sha": "62817a461298a41782ef37c992938e280bc6d7af"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "handoff-manifest-v366.json",
+      "url": "https://raw.githubusercontent.com/avalueguy/ADMET-Competition-Model/61b85a53ba988b556417dd487f0f5b0bce18d163/handoff-manifest-v366.json",
+      "expected": {
+        "name": "handoff-manifest-v366.json",
+        "bytes": 333389,
+        "sha256": "8ad753b11a650d0cef218296da912a70194ea99f556dc4d48e1a34c8bae8a19b",
+        "git_blob_sha": "5c3b3b5309159a0404bb71d4a094a73c227ee599"
+      },
+      "actual": {
+        "bytes": 333389,
+        "sha256": "8ad753b11a650d0cef218296da912a70194ea99f556dc4d48e1a34c8bae8a19b",
+        "git_blob_sha": "5c3b3b5309159a0404bb71d4a094a73c227ee599"
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "restore_v366_handoff.py",
+      "url": "https://raw.githubusercontent.com/avalueguy/ADMET-Competition-Model/61b85a53ba988b556417dd487f0f5b0bce18d163/restore_v366_handoff.py",
+      "expected": {
+        "name": "restore_v366_handoff.py",
+        "bytes": 2845,
+        "sha256": "ab50e69d46418ba6584bc55c3bc9dad16377b6c10c0c8b34fd7e3dac08934712",
+        "git_blob_sha": "5c3e6df9dd598bd7aeb62589b2c35962989e2280"
+      },
+      "actual": {
+        "bytes": 2845,
+        "sha256": "ab50e69d46418ba6584bc55c3bc9dad16377b6c10c0c8b34fd7e3dac08934712",
+        "git_blob_sha": "5c3e6df9dd598bd7aeb62589b2c35962989e2280"
+      },
+      "status": "PASS"
+    }
+  ]
+}

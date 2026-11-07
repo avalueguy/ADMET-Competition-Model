@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v176_shared_graph_batch_20261027",
+  "archive_sha256": "021a548b62c47c9a861e3e4d3ca133d1e0d84d68aac8a88ce8c4f77693ea4d21",
+  "manifest_files": 387,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 343,
+  "existing_exact": 44,
+  "existing_updated_docs_preserved": []
+}

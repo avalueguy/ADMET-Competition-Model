@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v90_rejected_broad_residual_20261025",
+  "archive_sha256": "2786314aab2360507185dc997448cc38fcb57f2bbc9d17a981953d818dfe41da",
+  "manifest_files": 1218,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 1214,
+  "existing_exact": 4,
+  "existing_updated_docs_preserved": []
+}

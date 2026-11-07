@@ -1,0 +1,58 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "checked_at_utc": "2026-10-29T07:53:13.619716+00:00",
+  "training_version": "v233",
+  "delivery_version": "v234",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52,
+  "target_achieved": false,
+  "trained_development_tasks": 6,
+  "identity_control_tasks": 15,
+  "protected_tasks": 16,
+  "development_models": 12,
+  "total_models": 14,
+  "nominated_tasks": [
+    "herg"
+  ],
+  "accepted_tasks": [],
+  "confirmation_results": [
+    {
+      "task": "herg",
+      "gains": {
+        "fold0": 0.0031049679487178405,
+        "fold1": 0.01913461538461536,
+        "fold2": 0.014197530864197505,
+        "valid": 0.004464285714285587
+      },
+      "bootstrap90": {
+        "fold2": [
+          0.0016940161644594613,
+          0.02347777957336783
+        ],
+        "valid": [
+          -0.00387748304263566,
+          0.018534942925186895
+        ]
+      }
+    }
+  ],
+  "archive": {
+    "status": "PASS",
+    "prefix": "v234_supervised_chemical_similarity_20261029",
+    "archive_sha256": "bd899cbcd17e391aa91fe35eac0e8db0b7492ab13b94e5bd7e7c1f983140a602",
+    "manifest_files": 100,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 55,
+    "existing_exact": 45,
+    "existing_updated_docs_preserved": []
+  },
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "frozen_gates_unchanged": true,
+  "local_gate_recalculation": true,
+  "no_confirmation_fallback": true,
+  "rejected_route_restarted": false
+}

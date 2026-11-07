@@ -1,0 +1,49 @@
+{
+  "status": "STARTED",
+  "boot_id": "0147efe4-5fc2-4881-9c47-fcd4cd66909e",
+  "processes": {
+    "training": {
+      "pid": 8852,
+      "start_ticks": "2023606931",
+      "script": "v204_clamped_diffusion.py",
+      "log": "v204_clamped_diffusion.log"
+    },
+    "pipeline": {
+      "pid": 8853,
+      "start_ticks": "2023606931",
+      "script": "v206_package_diffusion_batch.py",
+      "log": "v206_pipeline.log"
+    }
+  },
+  "smoke": {
+    "status": "PASS",
+    "signature": "ce997b55d370ab3b9215b7a6ff1d88608c66573fcfadc927f16c04b270bec84d",
+    "checks": [
+      {
+        "task": "herg",
+        "query_label_perturbation_invariant": true,
+        "graph_edges": 21552,
+        "maximum_principle": true,
+        "linear_solve_residual": 5.551115123125783e-16
+      },
+      {
+        "task": "caco2_wang",
+        "query_label_perturbation_invariant": true,
+        "graph_edges": 28532,
+        "maximum_principle": true,
+        "linear_solve_residual": 6.106226635438361e-16
+      },
+      {
+        "task": "clearance_hepatocyte_az",
+        "query_label_perturbation_invariant": true,
+        "graph_edges": 39694,
+        "maximum_principle": true,
+        "linear_solve_residual": 1.1102230246251565e-15
+      }
+    ],
+    "dense_solve_reference_match": true,
+    "isolated_node_prior": true,
+    "only_fit_labels_as_boundary": true,
+    "query_structures_used_without_labels": true
+  }
+}

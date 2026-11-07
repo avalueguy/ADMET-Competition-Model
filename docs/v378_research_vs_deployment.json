@@ -1,0 +1,56 @@
+{
+  "version": "v378",
+  "mae_only_all_four_positive_tasks": [
+    {
+      "task": "clearance_hepatocyte_az",
+      "mae_relative_gains": [
+        0.04559316971031933,
+        0.03763917467462482,
+        0.03452989478341202,
+        0.04345909302690754
+      ],
+      "mean_gain": 0.04030533304881593,
+      "rank_gains": [
+        0.0009381967892438947,
+        0.006934104770182192,
+        0.0020769288687807475,
+        -0.010591685216453595
+      ],
+      "official_metric_all_parts_positive": false,
+      "accepted_for_submission": false,
+      "calibrated_rank_reference": true
+    },
+    {
+      "task": "clearance_microsome_az",
+      "mae_relative_gains": [
+        0.019159310043156096,
+        0.01632589600791132,
+        0.0336732886919378,
+        0.028755524464981353
+      ],
+      "mean_gain": 0.024478504801996644,
+      "rank_gains": [
+        7.036848974317778e-05,
+        0.0030907273488149922,
+        0.0028503568238857913,
+        -0.005375397944747062
+      ],
+      "official_metric_all_parts_positive": false,
+      "accepted_for_submission": false,
+      "calibrated_rank_reference": true
+    }
+  ],
+  "research_only_mean_over_nine_with_others_zero": {
+    "fold0": 0.007194719972608381,
+    "fold1": 0.005996118964726238,
+    "fold2": 0.007578131497261091,
+    "valid": 0.008023846387987655
+  },
+  "deployable_mean_over_nine": {
+    "fold0": 0.0,
+    "fold1": 0.0,
+    "fold2": 0.0,
+    "valid": 0.0
+  },
+  "caution": "MAE-only signals on four Spearman tasks may lose official points; calibrated reference is not original-model native MAE. This analysis creates no CSV and changes no selection."
+}

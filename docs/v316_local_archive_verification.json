@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "archive": "releases/v316_learned_retrieval_20261101.tar.gz",
+  "sha256": "7f2594bd2b6fa04bd1752578be2acbc1ef156029d17485281bfe6acae1f6507b",
+  "bytes": 341178480,
+  "members": 119,
+  "manifest_files": 118,
+  "all_member_hashes_verified": true,
+  "csv_members": [],
+  "restored_absent": 105,
+  "existing_different_preserved": [],
+  "dependency_contents_reverified": true,
+  "dependency_hashes_checked": 50
+}

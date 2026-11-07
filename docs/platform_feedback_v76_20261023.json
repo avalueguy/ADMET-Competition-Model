@@ -1,0 +1,32 @@
+{
+  "reported_date": "2026-10-23",
+  "source": "user direct reports",
+  "scores": {
+    "v73": 50.64,
+    "v74": 50.63,
+    "v75": 50.628,
+    "v76_aggressive": 50.618,
+    "v76_conditional": 50.624
+  },
+  "conservative_name_mapping": "User conservative interpreted as delivered v76_conditional",
+  "uploaded_byte_hashes_independently_confirmed": false,
+  "tenth_place_last_user_reported": 52.2,
+  "gap_to_tenth": 1.56,
+  "best": "v73",
+  "best_csv": "admet_submissions/v73_v72/我从山北来带着兰花草-小分子药物预测技术创新赛-20261021.csv",
+  "best_sha256": "beab85b972b336526a30c8baa6d181552927f0d004ac6360f42ecdbd96399763",
+  "withdrawn": [
+    "v74",
+    "v75",
+    "v76_aggressive",
+    "v76_conditional",
+    "v76_v73"
+  ],
+  "known_implementation_issues": [
+    "v76_v73 reapplied experts already contained in the v73 anchor.",
+    "v76 final conditional trees hard-coded 120; evaluation and final model not fully aligned.",
+    "Historical v57 proxy arrays do not constitute exact v73 OOF."
+  ],
+  "inference_limit": "Aggregate feedback does not identify which task caused a loss.",
+  "next_experiment": "v77: direct ranking vs same-row regression, no assay auxiliary features"
+}

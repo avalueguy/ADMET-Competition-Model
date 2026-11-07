@@ -1,0 +1,29 @@
+{
+  "status": "FROZEN_BEFORE_DEVELOPMENT",
+  "files": [
+    {
+      "path": "tools/v216_ordered_scaffold.py",
+      "sha256": "58c7d6d51a72493dd29444c271c82b8c121ec5771e0f0023f56eb995e3d71305"
+    },
+    {
+      "path": "tools/v217_verify_ordered_scaffold.py",
+      "sha256": "52ef237de851afcc40a973125327f3cf8c975c03410b158bf5c61efb32836e2f"
+    },
+    {
+      "path": "tools/v218_package_ordered_batch.py",
+      "sha256": "195b1892f2603344c88fadf8f04689f0c28ccaf21ab4bec6a50742f3eed91950"
+    },
+    {
+      "path": "tools/finalize_v217_local.py",
+      "sha256": "2957d2003070c0de63390d568b4206f9abf073f41bc0095cc38d5c1e3be81357"
+    },
+    {
+      "path": "docs/v216_training_plan.json",
+      "sha256": "3fcd71b721bf4acdbcccb57a33c429e90f1690312d91d4ae8ec808b24843b50f"
+    },
+    {
+      "path": "docs/v216_source_review.json",
+      "sha256": "b9b783d1bf314d6c6c3613edc250c1a80adf21704613870839444f33f7714ecf"
+    }
+  ]
+}

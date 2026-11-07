@@ -1,0 +1,15 @@
+{
+  "version": "v100",
+  "baseline": "v94",
+  "frozen_before": "Any supervised v100 fit or confirmation; v98 training in progress",
+  "kernels": "Fit-only median/std/clip descriptors, equal 2D+3D RBF views with bandwidth coefficients .5 and 2. Sum or product with six-view Tanimoto+.5Tanimoto^2. Exact GPU ridge .1/1/10.",
+  "modes": ["direct", "residual"],
+  "weights": [0.25, 0.5, 1.0],
+  "selection": "One configuration by maximum minimum fold0/fold1 metric gain, both above 1% relative MAE/.005 Spearman/.002 AUC or AP.",
+  "confirmation": "Freeze before fold2/valid, all four gains positive and mean above threshold. No fallback.",
+  "final_assembly": "v101: union of accepted v95/v96/v98/v100 task experts over v94. Same-task conflict: greater minimum fold0/fold1 development gain, exact ties lower version number. Apply a single expert per task once; no confirmation-based blending.",
+  "test_labels_used": false,
+  "external_data": false,
+  "new_pretrained_weights": false,
+  "official_score_estimate": null
+}

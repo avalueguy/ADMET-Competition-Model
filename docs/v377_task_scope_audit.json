@@ -1,0 +1,422 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "task": "caco2_wang",
+      "official_metric": "MAE",
+      "official_raw": 0.27592992051587734,
+      "counts": {
+        "train": 637,
+        "valid": 91,
+        "test": 182
+      },
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 425,
+          "query_rows": 212,
+          "groups": 118,
+          "reference_MAE": 0.38815645870734267,
+          "reference_spearman": 0.815413224673056
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 425,
+          "query_rows": 212,
+          "groups": 121,
+          "reference_MAE": 0.3348527606452333,
+          "reference_spearman": 0.7888717216134918
+        },
+        {
+          "part": "fold2",
+          "fit_rows": 424,
+          "query_rows": 213,
+          "groups": 109,
+          "reference_MAE": 0.3570673877285404,
+          "reference_spearman": 0.7657748472737199
+        },
+        {
+          "part": "valid",
+          "fit_rows": 637,
+          "query_rows": 91,
+          "groups": 53,
+          "reference_MAE": 0.3583998208980098,
+          "reference_spearman": 0.8018888963741917
+        }
+      ],
+      "five_percent_official_MAE_target": 0.2621334244900835,
+      "native_reference_is_calibrated_rank": false
+    },
+    {
+      "task": "ld50_zhu",
+      "official_metric": "MAE",
+      "official_raw": 0.5550199723529466,
+      "counts": {
+        "train": 3970,
+        "valid": 1937,
+        "test": 1478
+      },
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 2760,
+          "query_rows": 1210,
+          "groups": 598,
+          "reference_MAE": 0.4623870980111785,
+          "reference_spearman": 0.5984723113740411
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 2760,
+          "query_rows": 1210,
+          "groups": 599,
+          "reference_MAE": 0.5305508449297317,
+          "reference_spearman": 0.5973614182813587
+        },
+        {
+          "part": "fold2",
+          "fit_rows": 2420,
+          "query_rows": 1550,
+          "groups": 9,
+          "reference_MAE": 0.4445216135337673,
+          "reference_spearman": 0.6641955388971073
+        },
+        {
+          "part": "valid",
+          "fit_rows": 3970,
+          "query_rows": 1937,
+          "groups": 1930,
+          "reference_MAE": 0.5148793871172143,
+          "reference_spearman": 0.6920581911288651
+        }
+      ],
+      "five_percent_official_MAE_target": 0.5272689737352992,
+      "native_reference_is_calibrated_rank": false
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "official_metric": "MAE",
+      "official_raw": 0.4168746341957797,
+      "counts": {
+        "train": 2940,
+        "valid": 420,
+        "test": 840
+      },
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 1960,
+          "query_rows": 980,
+          "groups": 578,
+          "reference_MAE": 0.48016540927868107,
+          "reference_spearman": 0.8526940292100913
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 1960,
+          "query_rows": 980,
+          "groups": 578,
+          "reference_MAE": 0.4548081915781444,
+          "reference_spearman": 0.8263901202791121
+        },
+        {
+          "part": "fold2",
+          "fit_rows": 1960,
+          "query_rows": 980,
+          "groups": 537,
+          "reference_MAE": 0.4709833243780318,
+          "reference_spearman": 0.8335052336533809
+        },
+        {
+          "part": "valid",
+          "fit_rows": 2940,
+          "query_rows": 420,
+          "groups": 239,
+          "reference_MAE": 0.4665412147268208,
+          "reference_spearman": 0.8407782716731724
+        }
+      ],
+      "five_percent_official_MAE_target": 0.3960309024859907,
+      "native_reference_is_calibrated_rank": false
+    },
+    {
+      "task": "ppbr_az",
+      "official_metric": "MAE",
+      "official_raw": 6.665484533215087,
+      "counts": {
+        "train": 1952,
+        "valid": 279,
+        "test": 559
+      },
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 1302,
+          "query_rows": 650,
+          "groups": 276,
+          "reference_MAE": 7.95280971526812,
+          "reference_spearman": 0.6902172044672533
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 1301,
+          "query_rows": 651,
+          "groups": 277,
+          "reference_MAE": 7.292895667509342,
+          "reference_spearman": 0.6873436315912442
+        },
+        {
+          "part": "fold2",
+          "fit_rows": 1301,
+          "query_rows": 651,
+          "groups": 259,
+          "reference_MAE": 8.62639236136588,
+          "reference_spearman": 0.7352238001305501
+        },
+        {
+          "part": "valid",
+          "fit_rows": 1952,
+          "query_rows": 279,
+          "groups": 134,
+          "reference_MAE": 9.36669542965183,
+          "reference_spearman": 0.7391969970428517
+        }
+      ],
+      "five_percent_official_MAE_target": 6.332210306554333,
+      "native_reference_is_calibrated_rank": false
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "official_metric": "MAE",
+      "official_raw": 0.7006168876998713,
+      "counts": {
+        "train": 5045,
+        "valid": 2940,
+        "test": 1997
+      },
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 3410,
+          "query_rows": 1635,
+          "groups": 661,
+          "reference_MAE": 0.7360725561987135,
+          "reference_spearman": 0.8989254783454516
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 3410,
+          "query_rows": 1635,
+          "groups": 650,
+          "reference_MAE": 0.7161434295213145,
+          "reference_spearman": 0.9038953622536503
+        },
+        {
+          "part": "fold2",
+          "fit_rows": 3270,
+          "query_rows": 1775,
+          "groups": 14,
+          "reference_MAE": 0.5980757752371045,
+          "reference_spearman": 0.8230924683188515
+        },
+        {
+          "part": "valid",
+          "fit_rows": 5045,
+          "query_rows": 2940,
+          "groups": 2874,
+          "reference_MAE": 0.983661760866286,
+          "reference_spearman": 0.7396678232795834
+        }
+      ],
+      "five_percent_official_MAE_target": 0.6655860433148777,
+      "native_reference_is_calibrated_rank": false
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "official_metric": "Spearman",
+      "official_raw": 0.565208996561239,
+      "counts": {
+        "train": 848,
+        "valid": 122,
+        "test": 243
+      },
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 566,
+          "query_rows": 282,
+          "groups": 176,
+          "reference_MAE": 31.964365097329107,
+          "reference_spearman": 0.5727558332909924
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 565,
+          "query_rows": 283,
+          "groups": 178,
+          "reference_MAE": 29.556240307657728,
+          "reference_spearman": 0.575230994148768
+        },
+        {
+          "part": "fold2",
+          "fit_rows": 565,
+          "query_rows": 283,
+          "groups": 175,
+          "reference_MAE": 29.302112399955053,
+          "reference_spearman": 0.5979336062289107
+        },
+        {
+          "part": "valid",
+          "fit_rows": 848,
+          "query_rows": 122,
+          "groups": 72,
+          "reference_MAE": 34.67105717549046,
+          "reference_spearman": 0.5233668892310847
+        }
+      ],
+      "five_percent_official_MAE_target": null,
+      "native_reference_is_calibrated_rank": true
+    },
+    {
+      "task": "clearance_microsome_az",
+      "official_metric": "Spearman",
+      "official_raw": 0.6756845436053647,
+      "counts": {
+        "train": 770,
+        "valid": 111,
+        "test": 221
+      },
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 514,
+          "query_rows": 256,
+          "groups": 177,
+          "reference_MAE": 27.116399993896483,
+          "reference_spearman": 0.7019076327178516
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 513,
+          "query_rows": 257,
+          "groups": 171,
+          "reference_MAE": 26.81884782509955,
+          "reference_spearman": 0.5046604490997971
+        },
+        {
+          "part": "fold2",
+          "fit_rows": 513,
+          "query_rows": 257,
+          "groups": 170,
+          "reference_MAE": 24.008446759224213,
+          "reference_spearman": 0.6489244662174136
+        },
+        {
+          "part": "valid",
+          "fit_rows": 770,
+          "query_rows": 111,
+          "groups": 69,
+          "reference_MAE": 29.474799529258988,
+          "reference_spearman": 0.7085599112662511
+        }
+      ],
+      "five_percent_official_MAE_target": null,
+      "native_reference_is_calibrated_rank": true
+    },
+    {
+      "task": "half_life_obach",
+      "official_metric": "Spearman",
+      "official_raw": 0.6509691357439866,
+      "counts": {
+        "train": 465,
+        "valid": 67,
+        "test": 135
+      },
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 310,
+          "query_rows": 155,
+          "groups": 101,
+          "reference_MAE": 20.806086576482805,
+          "reference_spearman": 0.5749026026062931
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 310,
+          "query_rows": 155,
+          "groups": 90,
+          "reference_MAE": 22.383562434963547,
+          "reference_spearman": 0.6039670343812906
+        },
+        {
+          "part": "fold2",
+          "fit_rows": 310,
+          "query_rows": 155,
+          "groups": 108,
+          "reference_MAE": 23.89586253902183,
+          "reference_spearman": 0.5690784312474458
+        },
+        {
+          "part": "valid",
+          "fit_rows": 160,
+          "query_rows": 67,
+          "groups": 56,
+          "reference_MAE": 23.279000891067103,
+          "reference_spearman": 0.5653380172052453
+        }
+      ],
+      "five_percent_official_MAE_target": null,
+      "native_reference_is_calibrated_rank": true
+    },
+    {
+      "task": "vdss_lombardo",
+      "official_metric": "Spearman",
+      "official_raw": 0.7145137427047057,
+      "counts": {
+        "train": 791,
+        "valid": 113,
+        "test": 226
+      },
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 528,
+          "query_rows": 263,
+          "groups": 188,
+          "reference_MAE": 4.419333877893289,
+          "reference_spearman": 0.6991369429686888
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 527,
+          "query_rows": 264,
+          "groups": 183,
+          "reference_MAE": 6.180262281910009,
+          "reference_spearman": 0.7317602544137639
+        },
+        {
+          "part": "fold2",
+          "fit_rows": 527,
+          "query_rows": 264,
+          "groups": 158,
+          "reference_MAE": 3.2070862029384677,
+          "reference_spearman": 0.7719052282547829
+        },
+        {
+          "part": "valid",
+          "fit_rows": 791,
+          "query_rows": 113,
+          "groups": 84,
+          "reference_MAE": 3.0564171039235655,
+          "reference_spearman": 0.8078306800838101
+        }
+      ],
+      "five_percent_official_MAE_target": null,
+      "native_reference_is_calibrated_rank": true
+    }
+  ],
+  "no_fitting": true,
+  "test_labels_used": false,
+  "warning": "Historical OOF is partly proxy. Four Spearman task MAEs use explicitly calibrated rank references; not exact old-model native error."
+}

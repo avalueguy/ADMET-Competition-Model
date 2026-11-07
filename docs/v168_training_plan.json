@@ -1,0 +1,16 @@
+{
+  "version": "v168",
+  "baseline": "v145",
+  "official_baseline_score": 51.166,
+  "reason": "Six-route v161 batch has not established a confirmed new task. Try a distinct sparse linear inductive bias rather than relax that batch's acceptance criteria.",
+  "features": "Five unfolded structural views, fit-only prevalence and TF-IDF, classification NB ratios, augmented structure/target-excluded official context",
+  "configs": [1.0, 10.0],
+  "weights": [0.2, 0.45],
+  "selection": "Unchanged v148 maximum minimum fold0/1 gain, freeze all tasks before confirmation, no failed fallback",
+  "confirmation": "Unchanged v148 all4 positive and practical mean plus both fold2 and valid paired scaffold-bootstrap90 lower bounds positive",
+  "source_immutable_after_start": true,
+  "test_labels_used": false,
+  "new_external_data": false,
+  "official_gain_guaranteed": false,
+  "automatic_submission": "Only after new predictions, model replay, template preservation and local archived evidence are verified"
+}

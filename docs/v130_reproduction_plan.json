@@ -1,0 +1,13 @@
+{
+  "baseline": "v124",
+  "baseline_official_score": 51.115,
+  "experiments": [
+    "v126_dual_target_clearance",
+    "v127_low_classification",
+    "v128_conditional_margin"
+  ],
+  "selection": "Each route freezes config on fold0/1; all4part positive; choose overlap by min development gain, never confirmation result.",
+  "high_score_tasks_immutable": true,
+  "official_score": null,
+  "target_achieved": false
+}

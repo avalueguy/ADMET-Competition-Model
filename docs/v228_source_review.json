@@ -1,0 +1,15 @@
+{
+  "status": "STATIC_REVIEW_PASS_SMOKE_REQUIRED",
+  "source_sha256": "bc21df8518459fc9b71aa57aad3ac04b3e4567ffff767ec55feb2ab8ba97b8f2",
+  "checks": [
+    "InnerGroupKFold reference never fits its heldrow/scaffold",
+    "All3references fit actualouterfit only; noquerytargetread",
+    "Historicalproxy never used as correctiontraining offset",
+    "Alltargetassay context excluded",
+    "v145query controls immutable; finalexactCSVanchor",
+    "Other16tasks protected; originalv148runner source unchanged",
+    "Boundreference, actual3metrictypes save/reload and querylabelperturbation smoke required",
+    "No queryearlystopping or confirmation-basedfallback"
+  ],
+  "known_limitation": "OOF reference is newly trainedsurrogate. Do notclaim exactfullv145re-OOF."
+}

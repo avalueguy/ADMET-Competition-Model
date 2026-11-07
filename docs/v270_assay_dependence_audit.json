@@ -1,0 +1,316 @@
+{
+  "status": "COMPLETE_FIT_ONLY_DIAGNOSTIC",
+  "source_sha256": "a8c1df4e9eb2a458ce3b44ab29f5397853c92d2067a82785f4faa0aa278e85f3",
+  "baseline_signature": "5a79bb5fd6cd135690d750fa5beae79f7a5674958ef83b87689f190be5067c91",
+  "predeclared_pairs": {
+    "caco2_wang": [
+      "lipophilicity_astrazeneca",
+      "solubility_aqsoldb"
+    ],
+    "ppbr_az": [
+      "lipophilicity_astrazeneca"
+    ],
+    "clearance_hepatocyte_az": [
+      "clearance_microsome_az",
+      "half_life_obach"
+    ],
+    "clearance_microsome_az": [
+      "clearance_hepatocyte_az",
+      "half_life_obach"
+    ],
+    "vdss_lombardo": [
+      "ppbr_az",
+      "lipophilicity_astrazeneca"
+    ],
+    "solubility_aqsoldb": [
+      "lipophilicity_astrazeneca"
+    ],
+    "herg": [
+      "lipophilicity_astrazeneca"
+    ]
+  },
+  "records": [
+    {
+      "task": "caco2_wang",
+      "other": "lipophilicity_astrazeneca",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 425,
+          "paired_rows": 29,
+          "unique_paired_identities": 25,
+          "distinct_other_values": 24,
+          "rho": -0.2850548235072879,
+          "target_binary": false
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 425,
+          "paired_rows": 27,
+          "unique_paired_identities": 26,
+          "distinct_other_values": 23,
+          "rho": 0.33521568427195686,
+          "target_binary": false
+        }
+      ],
+      "supported": false
+    },
+    {
+      "task": "caco2_wang",
+      "other": "solubility_aqsoldb",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 425,
+          "paired_rows": 45,
+          "unique_paired_identities": 39,
+          "distinct_other_values": 38,
+          "rho": -0.017916793197692075,
+          "target_binary": false
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 425,
+          "paired_rows": 40,
+          "unique_paired_identities": 35,
+          "distinct_other_values": 35,
+          "rho": -0.4120448179271709,
+          "target_binary": false
+        }
+      ],
+      "supported": false
+    },
+    {
+      "task": "ppbr_az",
+      "other": "lipophilicity_astrazeneca",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 1302,
+          "paired_rows": 533,
+          "unique_paired_identities": 363,
+          "distinct_other_values": 234,
+          "rho": 0.43261763262167,
+          "target_binary": false
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 1301,
+          "paired_rows": 542,
+          "unique_paired_identities": 370,
+          "distinct_other_values": 247,
+          "rho": 0.32001458444421776,
+          "target_binary": false
+        }
+      ],
+      "supported": false
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "other": "clearance_microsome_az",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 566,
+          "paired_rows": 295,
+          "unique_paired_identities": 234,
+          "distinct_other_values": 131,
+          "rho": 0.5557957617899643,
+          "target_binary": false
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 565,
+          "paired_rows": 278,
+          "unique_paired_identities": 228,
+          "distinct_other_values": 117,
+          "rho": 0.6221691358516391,
+          "target_binary": false
+        }
+      ],
+      "supported": true
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "other": "half_life_obach",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 566,
+          "paired_rows": 47,
+          "unique_paired_identities": 31,
+          "distinct_other_values": 31,
+          "rho": -0.06373332818342514,
+          "target_binary": false
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 565,
+          "paired_rows": 32,
+          "unique_paired_identities": 24,
+          "distinct_other_values": 23,
+          "rho": 0.09521811605751691,
+          "target_binary": false
+        }
+      ],
+      "supported": false
+    },
+    {
+      "task": "clearance_microsome_az",
+      "other": "clearance_hepatocyte_az",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 514,
+          "paired_rows": 237,
+          "unique_paired_identities": 234,
+          "distinct_other_values": 154,
+          "rho": 0.5557957617899643,
+          "target_binary": false
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 513,
+          "paired_rows": 230,
+          "unique_paired_identities": 228,
+          "distinct_other_values": 148,
+          "rho": 0.6221691358516391,
+          "target_binary": false
+        }
+      ],
+      "supported": true
+    },
+    {
+      "task": "clearance_microsome_az",
+      "other": "half_life_obach",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 514,
+          "paired_rows": 23,
+          "unique_paired_identities": 23,
+          "distinct_other_values": 22,
+          "rho": -0.20879249519516277,
+          "target_binary": false
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 513,
+          "paired_rows": 23,
+          "unique_paired_identities": 22,
+          "distinct_other_values": 21,
+          "rho": -0.009199047958330982,
+          "target_binary": false
+        }
+      ],
+      "supported": false
+    },
+    {
+      "task": "vdss_lombardo",
+      "other": "ppbr_az",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 528,
+          "paired_rows": 18,
+          "unique_paired_identities": 18,
+          "distinct_other_values": 17,
+          "rho": 0.23255817059046743,
+          "target_binary": false
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 527,
+          "paired_rows": 22,
+          "unique_paired_identities": 22,
+          "distinct_other_values": 22,
+          "rho": -0.1921447426733124,
+          "target_binary": false
+        }
+      ],
+      "supported": false
+    },
+    {
+      "task": "vdss_lombardo",
+      "other": "lipophilicity_astrazeneca",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 528,
+          "paired_rows": 23,
+          "unique_paired_identities": 23,
+          "distinct_other_values": 21,
+          "rho": 0.5110066938403353,
+          "target_binary": false
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 527,
+          "paired_rows": 16,
+          "unique_paired_identities": 16,
+          "distinct_other_values": 15,
+          "rho": 0.37821938127562965,
+          "target_binary": false
+        }
+      ],
+      "supported": false
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "other": "lipophilicity_astrazeneca",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 3410,
+          "paired_rows": 74,
+          "unique_paired_identities": 65,
+          "distinct_other_values": 56,
+          "rho": -0.5605390062529613,
+          "target_binary": false
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 3410,
+          "paired_rows": 77,
+          "unique_paired_identities": 69,
+          "distinct_other_values": 66,
+          "rho": -0.38936743550379843,
+          "target_binary": false
+        }
+      ],
+      "supported": true
+    },
+    {
+      "task": "herg",
+      "other": "lipophilicity_astrazeneca",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 305,
+          "paired_rows": 16,
+          "unique_paired_identities": 15,
+          "distinct_other_values": 14,
+          "rho": 0.36253979418173515,
+          "target_binary": true
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 305,
+          "paired_rows": 16,
+          "unique_paired_identities": 15,
+          "distinct_other_values": 15,
+          "rho": 0.5876600954251548,
+          "target_binary": true
+        }
+      ],
+      "supported": false
+    }
+  ],
+  "support_rule": "Both fitting folds at least40 distinct target identities and10 other-assay values; absSpearman>=.35 and same sign. Fixed before diagnostic.",
+  "model_fitted": false,
+  "predictions_created": false,
+  "query_targets_read_by_diagnostic": false,
+  "confirmation_scores_computed": false,
+  "labels_changed": false,
+  "limitation": "Correlation among observed assays may reflect selection or unrecorded assay conditions. Support is a rationale for a distinct observation model, not evidence of predictive improvement. Other endpoint official training measurements are permitted context, target/query labels are not."
+}

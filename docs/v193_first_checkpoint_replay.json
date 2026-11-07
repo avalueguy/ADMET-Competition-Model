@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "task": "herg",
+  "part": "fold0",
+  "independent_checkpoint_reload": true,
+  "predictions_exact": true,
+  "model_hashes": {
+    "model_1934026.pt": "93c8ff31566c728ffad16c59ff1eca0abad1181dafce1b293d826494002f36bb",
+    "model_1934027.pt": "56d6545ee94c66129bae45c4c4f3e2e6841db4a39c30bbf552c3e87a70f1f8e9"
+  },
+  "signature": "e41b218c4b5ed44feef7feca59498662c42086c89bd9ff0b14ed89efff54b491"
+}

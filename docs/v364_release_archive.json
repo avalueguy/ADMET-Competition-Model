@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "path": "releases/v364_graph_transformer_stage1_20261104.tar.gz",
+  "sha256": "fb51aca73f6ac0328f9d6771fce6d5ad9059c33ede43aec5c4ba0ceeccf28935",
+  "bytes": 568369,
+  "files": 31,
+  "all_member_hashes_verified": true
+}

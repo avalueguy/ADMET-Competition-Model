@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "archive": "releases/v372_crossfit_expert_review.tar.gz",
+  "sha256": "f4cea318bfe77661a8f3b5954e836f9371da6fc754e0b8f18d03f6e6475b52ba",
+  "bytes": 777032,
+  "files": 124,
+  "all_member_hashes_verified": true
+}

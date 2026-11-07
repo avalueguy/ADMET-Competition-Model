@@ -1,0 +1,19 @@
+{
+  "baseline": "v145",
+  "official_score": 51.166,
+  "target": 52,
+  "routes": {
+    "v149": "Target-assay honest scaffold-excluded molecular neighbors + boosted specialists",
+    "v150": "New atom-pair/torsion/path kernel SVM/SVR",
+    "v151": "Fit-pruned unfolded path/circular fragment XGBoost",
+    "v153": "Fit-only latent path SVD and multi-target CatBoost"
+  },
+  "high_score_tasks_included": true,
+  "hia_locked_at_auc_1": true,
+  "cross_route_selection": "Highest minimum fold0/1 gain among frozen nominees regardless of confirmation; no fallback if winner fails",
+  "acceptance": "All4 positive, both fold2/valid scaffold bootstrap90 lower bounds>0; historical upstream OOF caveat retained",
+  "final_candidate_version": "v155",
+  "new_external_data": false,
+  "test_labels_used": false,
+  "official_gain_guaranteed": false
+}

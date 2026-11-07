@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "archive": "releases/v378_neural_delta.tar.gz",
+  "sha256": "28d9d538e78e43159f086ae70002a1b28d051fa4601e0e23be4755749206360e",
+  "bytes": 12874,
+  "reused_inputs": "v377 immutable design, controls and official arrays",
+  "all_fitting_remote": true
+}

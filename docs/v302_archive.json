@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "path": "releases/v302_piecewise_ensemble_20261101.tar.gz",
+  "sha256": "977bcb7591977e877b29fb21185ceaa9841eb6406364bc6dfce4f2b4f849aab4",
+  "files": 87,
+  "all_member_hashes_verified": true
+}

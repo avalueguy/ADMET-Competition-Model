@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "path": "releases/v346_experimental_solubility_20261101.tar.gz",
+  "sha256": "05cebd3d81089099cc88930b2d0db70591cd8053c740074df7b769622da85d78",
+  "files": 25,
+  "all_member_hashes_verified": true,
+  "experimental_only": true
+}

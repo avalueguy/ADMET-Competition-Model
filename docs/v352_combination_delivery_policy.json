@@ -1,0 +1,41 @@
+{
+  "status": "FROZEN_BEFORE_REMAINING_CONFIRMATIONS",
+  "at_hong_kong": "2026-11-02T14:44:11.105187+08:00",
+  "source_sha256": "e70a72ce057e6e7972afef9a841a99cee227476cf215ae837fe0bf56783ab9d3",
+  "model_search_source_sha256": "c4024153f46798fd10c4ab38825cb6a21e16120889b9e43aa97f2be3a2ec1e88",
+  "selection_sha256": "3098824200efa8d9145636a5447830b50008525c14e90f37322ea369a31fe5cf",
+  "frozen_selected_tasks": [
+    "ames",
+    "bbb_martins",
+    "bioavailability_ma",
+    "caco2_wang",
+    "clearance_hepatocyte_az",
+    "clearance_microsome_az",
+    "cyp2c9_substrate_carbonmangels",
+    "cyp2d6_substrate_carbonmangels",
+    "cyp2d6_veith",
+    "cyp3a4_substrate_carbonmangels",
+    "cyp3a4_veith",
+    "dili",
+    "herg",
+    "pgp_broccatelli",
+    "ppbr_az",
+    "solubility_aqsoldb"
+  ],
+  "already_observed_confirmation_tasks": [
+    "ames"
+  ],
+  "strict_rule": "Unchanged: four positive gains, mean practical threshold, both paired scaffold90 lower bounds positive.",
+  "experimental_rule": "Exactly the already-frozen per-task winner. Four positive gains, mean above original practical threshold, both confirmation partitions have more than one scaffold and nonnull intervals. All such tasks included; no weight/config/seed fallback. Both-CI strict rejection remains recorded.",
+  "no_delivery_if_zero_eligible_tasks": true,
+  "require_independent_member_replay": true,
+  "require_nonfit_target_label_isolation": true,
+  "require_exact_baseline_preservation": true,
+  "baseline": "v346",
+  "official_best": 51.235,
+  "official_gain_established": false,
+  "user_authorized_experimental_csv": true,
+  "manual_submission_only": true,
+  "rationale": "User asks for broad model combinations and any real gain. A finite fixed export rule prevents choosing a different failed combination after confirmation. Previously observed AMES is excluded because valid contains only one scaffold; its strict rejection is unchanged.",
+  "limitations": "No claim of statistical certainty or official improvement. Many historical models/public labels repeatedly reused, selection multiplicity and approximate inherited OOF remain. File may regress."
+}

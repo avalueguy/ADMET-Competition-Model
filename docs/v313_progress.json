@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE_VERIFIED_EXPERIMENTAL_CSV_READY_FOR_MANUAL_TEST",
+  "date_hong_kong": "2026-11-01",
+  "user_authorized_experimental_csv": true,
+  "strict_gate_pass": false,
+  "strict_confirmation_remains_rejected": true,
+  "experimental_tasks": [
+    "ppbr_az",
+    "lipophilicity_astrazeneca"
+  ],
+  "weights": {
+    "ppbr_az": 0.45,
+    "lipophilicity_astrazeneca": 0.2
+  },
+  "csv": "admet_submissions/v313_experimental_ppbr_lipo/我从山北来带着兰花草-小分子药物预测技术创新赛-20261101.csv",
+  "csv_sha256": "681e9d23100c7ea39b4e6003dd6de4fac738bc467254782b7b8c4b7bc1d2941b",
+  "csv_created": true,
+  "local_delivery_verification": "PASS",
+  "local_archive_verification": "PASS:25members,24manifest_files,50input_dependencies",
+  "official_best": 51.166,
+  "official_score": null,
+  "target_score": 52.0,
+  "target_achieved": false,
+  "official_gain_established": false,
+  "platform_submission": false
+}

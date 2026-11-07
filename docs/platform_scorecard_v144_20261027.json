@@ -1,0 +1,196 @@
+{
+  "tasks": [
+    {
+      "task": "ames",
+      "metric": "AUROC",
+      "score": 50.141941,
+      "raw": 0.8769096712291213
+    },
+    {
+      "task": "bbb_martins",
+      "metric": "AUROC",
+      "score": 50.032316,
+      "raw": 0.9289790494058787
+    },
+    {
+      "task": "bioavailability_ma",
+      "metric": "AUROC",
+      "score": 52.391603,
+      "raw": 0.7948121050881277
+    },
+    {
+      "task": "caco2_wang",
+      "metric": "MAE",
+      "score": 50.689546,
+      "raw": 0.27592992051587734
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "metric": "Spearman",
+      "score": 50.064522,
+      "raw": 0.5560507844295146
+    },
+    {
+      "task": "clearance_microsome_az",
+      "metric": "Spearman",
+      "score": 50.495262,
+      "raw": 0.6756845436053647
+    },
+    {
+      "task": "cyp2c9_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "score": 56.936749,
+      "raw": 0.5862085536546348
+    },
+    {
+      "task": "cyp2c9_veith",
+      "metric": "AUPRC",
+      "score": 51.364323,
+      "raw": 0.8349408577894758
+    },
+    {
+      "task": "cyp2d6_substrate_carbonmangels",
+      "metric": "AUPRC",
+      "score": 50.358383,
+      "raw": 0.7583244699983189
+    },
+    {
+      "task": "cyp2d6_veith",
+      "metric": "AUPRC",
+      "score": 50.846574,
+      "raw": 0.7439447168745902
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "metric": "AUROC",
+      "score": 49.380756,
+      "raw": 0.7075045207956601
+    },
+    {
+      "task": "cyp3a4_veith",
+      "metric": "AUPRC",
+      "score": 50.422543,
+      "raw": 0.8991915344045904
+    },
+    {
+      "task": "dili",
+      "metric": "AUROC",
+      "score": 50.715743,
+      "raw": 0.935
+    },
+    {
+      "task": "half_life_obach",
+      "metric": "Spearman",
+      "score": 52.539161,
+      "raw": 0.6509691357439866
+    },
+    {
+      "task": "herg",
+      "metric": "AUROC",
+      "score": 49.832263,
+      "raw": 0.8575846833578792
+    },
+    {
+      "task": "hia_hou",
+      "metric": "AUROC",
+      "score": 50.14341,
+      "raw": 1.0
+    },
+    {
+      "task": "ld50_zhu",
+      "metric": "MAE",
+      "score": 52.05411,
+      "raw": 0.55547536869963
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "metric": "MAE",
+      "score": 52.375585,
+      "raw": 0.4299970704970541
+    },
+    {
+      "task": "pgp_broccatelli",
+      "metric": "AUROC",
+      "score": 50.320749,
+      "raw": 0.9504798720341242
+    },
+    {
+      "task": "ppbr_az",
+      "metric": "MAE",
+      "score": 52.047135,
+      "raw": 6.753956500491535
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "score": 50.236728,
+      "raw": 0.7314835318590975
+    },
+    {
+      "task": "vdss_lombardo",
+      "metric": "Spearman",
+      "score": 50.792751,
+      "raw": 0.7145137427047057
+    }
+  ],
+  "version": "v144",
+  "date": "2026-10-27",
+  "score": 51.099,
+  "task_score_mean": 51.099188772727274,
+  "status": "user_reported_official",
+  "submitted_at": "2026-10-27 17:09",
+  "source": "User-pasted 22-task official scorecard; association to most recently delivered v144 inferred; platform CSV hash not exposed.",
+  "submission_sha256": "fc523b1e1068775983d7ee1f68696bdb9b6332b4e08bb845fb8cb54db85ee8db",
+  "uploaded_byte_hash_confirmed": false,
+  "baseline": "v130",
+  "baseline_score": 51.146,
+  "delta_task_mean": -0.0464274545454586,
+  "task_deltas": [
+    {
+      "task": "ames",
+      "baseline_raw": 0.8740135894574008,
+      "candidate_raw": 0.8769096712291213,
+      "baseline_score": 50.059239,
+      "candidate_score": 50.141941,
+      "score_delta": 0.08270200000000472,
+      "contribution_to_total": 0.0037591818181820324
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "baseline_raw": 0.565208996561239,
+      "candidate_raw": 0.5560507844295146,
+      "baseline_score": 50.211228,
+      "candidate_score": 50.064522,
+      "score_delta": -0.14670600000000178,
+      "contribution_to_total": -0.006668454545454627
+    },
+    {
+      "task": "cyp2c9_veith",
+      "baseline_raw": 0.8247986048699945,
+      "candidate_raw": 0.8349408577894758,
+      "baseline_score": 51.058962,
+      "candidate_score": 51.364323,
+      "score_delta": 0.3053609999999978,
+      "contribution_to_total": 0.013880045454545353
+    },
+    {
+      "task": "cyp2d6_veith",
+      "baseline_raw": 0.7420663670333222,
+      "candidate_raw": 0.7439447168745902,
+      "baseline_score": 50.783389,
+      "candidate_score": 50.846574,
+      "score_delta": 0.06318499999999716,
+      "contribution_to_total": 0.0028720454545453256
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "baseline_raw": 0.7460443037974683,
+      "candidate_raw": 0.7075045207956601,
+      "baseline_score": 50.706702,
+      "candidate_score": 49.380756,
+      "score_delta": -1.3259460000000018,
+      "contribution_to_total": -0.06027027272727281
+    }
+  ],
+  "unchanged_tasks": 17
+}

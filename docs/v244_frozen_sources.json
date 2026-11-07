@@ -1,0 +1,55 @@
+{
+  "version": "v244",
+  "created_at_utc": "2026-10-29T08:59:35.740895+00:00",
+  "files": [
+    {
+      "path": "tools/v243_v145_error_review.py",
+      "sha256": "4238b7bf64994ca18ff9d2528f1252b02f433d56ac82e46bb25dc3bd82cc121c"
+    },
+    {
+      "path": "tools/v244_conditional_density.py",
+      "sha256": "54416a1cea2ebadb1d8a16d2fa34d02db2f653795cd35a6a9e8a93c4616cf52e"
+    },
+    {
+      "path": "tools/v245_verify_conditional_density.py",
+      "sha256": "3c205e5e24a9bd590ccc6267100bb72bbd66ca307bddce7e4085be6d9163863d"
+    },
+    {
+      "path": "tools/v246_package_density_batch.py",
+      "sha256": "4618b4a6a5e0aeb30eeaf015dad361560bddcf4f546af70dc4ddf5643d0926fd"
+    },
+    {
+      "path": "tools/v247_density_driver.py",
+      "sha256": "b0b2b696f160f97afea6f76191dc49e57285021680bb8ff541fe2cb562d5e8d5"
+    },
+    {
+      "path": "tools/v248_start_density.py",
+      "sha256": "2846eb56418ce001e7d3a48b20253ae1342ef7354eae5762b6bdd43dcd3dc486"
+    },
+    {
+      "path": "tools/finalize_v245_local.py",
+      "sha256": "8885a1abdfe6d55c988e5f930358a096c9f732d590e1d9e7a48294408806aa36"
+    },
+    {
+      "path": "docs/v243_v145_error_review.json",
+      "sha256": "29c63f47dbc2d940a362e2384a23d8fb4549a9c04966228858e720dfc8d04f26"
+    },
+    {
+      "path": "docs/v244_training_plan.json",
+      "sha256": "99e4aa95d91feeee9808dd1b7cc53c48b63a5538336c4278dd97f931d29bca32"
+    },
+    {
+      "path": "docs/v244_source_review.json",
+      "sha256": "6c404d8cff4562de68e44a53e6a9890b9514e41b64eef1bad116a9e87c7fdff0"
+    },
+    {
+      "path": "tools/v148_experiment_runner.py",
+      "sha256": "8f6d93f517d1a4acf6877f3effa63e3b2c171141b5a637b8ad51573498c0b871"
+    },
+    {
+      "path": "tools/v146_current_baseline.py",
+      "sha256": "a6c9066555fc6fc78e81372415c2f5f55611cb3ed421d0f6a36e3f797b4c77b5"
+    }
+  ],
+  "credentials_included": false
+}

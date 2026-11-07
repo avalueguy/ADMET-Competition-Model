@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "prefix": "v208_denoising_encoder_20261028",
+  "archive_sha256": "87f5e5396350eba98804e2a756d873605171a920573376d08563e7ced030a4e6",
+  "manifest_files": 252,
+  "all_member_hashes_verified": true,
+  "dependency_hashes_verified": true,
+  "restored": 199,
+  "existing_exact": 53,
+  "existing_updated_docs_preserved": []
+}

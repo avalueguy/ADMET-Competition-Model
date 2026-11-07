@@ -1,0 +1,372 @@
+{
+  "at_utc": "2026-10-29T06:26:13.045568+00:00",
+  "processes": {
+    "training": {
+      "pid": 12026,
+      "stat": "EXITED"
+    },
+    "pipeline": {
+      "pid": 12027,
+      "stat": "EXITED"
+    }
+  },
+  "identity_and_sources_verified": true,
+  "development": {
+    "status": "COMPLETE",
+    "tasks": 21
+  },
+  "frozen_selection": {
+    "signature": "6cc68c8784e35cdd875b739cd4a88c2215b8e098f6d57dbd95fb8cc6474076d5",
+    "selected": [
+      {
+        "task": "pgp_broccatelli",
+        "metric": "AUROC",
+        "config": {
+          "rank": 32,
+          "epochs": 100
+        },
+        "weight": 0.45,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 283,
+            "baseline": 0.9482403217697336,
+            "expert": 0.9456008044243338,
+            "candidate": 0.9513826043237807,
+            "gain": 0.0031422825540471377
+          },
+          {
+            "part": "fold1",
+            "rows": 284,
+            "baseline": 0.9021671826625387,
+            "expert": 0.9013415892672859,
+            "candidate": 0.9073787409700722,
+            "gain": 0.005211558307533504
+          }
+        ],
+        "objective": 0.0031422825540471377
+      },
+      {
+        "task": "cyp3a4_substrate_carbonmangels",
+        "metric": "AUROC",
+        "config": {
+          "rank": 32,
+          "epochs": 100
+        },
+        "weight": 0.45,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 156,
+            "baseline": 0.748671096345515,
+            "expert": 0.7287375415282392,
+            "candidate": 0.7622923588039866,
+            "gain": 0.013621262458471617
+          },
+          {
+            "part": "fold1",
+            "rows": 156,
+            "baseline": 0.6742748846407383,
+            "expert": 0.6895187870797628,
+            "candidate": 0.692649967040211,
+            "gain": 0.01837508239947272
+          }
+        ],
+        "objective": 0.013621262458471617
+      },
+      {
+        "task": "bioavailability_ma",
+        "metric": "AUROC",
+        "config": {
+          "rank": 32,
+          "epochs": 100
+        },
+        "weight": 0.45,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 150,
+            "baseline": 0.7173721340388007,
+            "expert": 0.7014991181657848,
+            "candidate": 0.7237654320987654,
+            "gain": 0.006393298059964692
+          },
+          {
+            "part": "fold1",
+            "rows": 149,
+            "baseline": 0.7583485124468732,
+            "expert": 0.7334547662416515,
+            "candidate": 0.7671523982999393,
+            "gain": 0.008803885853066129
+          }
+        ],
+        "objective": 0.006393298059964692
+      }
+    ]
+  },
+  "confirmation": {
+    "status": "COMPLETE",
+    "signature": "6cc68c8784e35cdd875b739cd4a88c2215b8e098f6d57dbd95fb8cc6474076d5",
+    "records": [
+      {
+        "task": "pgp_broccatelli",
+        "metric": "AUROC",
+        "config": {
+          "rank": 32,
+          "epochs": 100
+        },
+        "weight": 0.45,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 283,
+            "baseline": 0.9482403217697336,
+            "expert": 0.9456008044243338,
+            "candidate": 0.9513826043237807,
+            "gain": 0.0031422825540471377
+          },
+          {
+            "part": "fold1",
+            "rows": 284,
+            "baseline": 0.9021671826625387,
+            "expert": 0.9013415892672859,
+            "candidate": 0.9073787409700722,
+            "gain": 0.005211558307533504
+          }
+        ],
+        "objective": 0.0031422825540471377,
+        "confirmation": [
+          {
+            "part": "fold0",
+            "rows": 283,
+            "baseline": 0.9482403217697336,
+            "expert": 0.9456008044243338,
+            "candidate": 0.9513826043237807,
+            "gain": 0.0031422825540471377
+          },
+          {
+            "part": "fold1",
+            "rows": 284,
+            "baseline": 0.9021671826625387,
+            "expert": 0.9013415892672859,
+            "candidate": 0.9073787409700722,
+            "gain": 0.005211558307533504
+          },
+          {
+            "part": "fold2",
+            "rows": 284,
+            "baseline": 0.9507538186867686,
+            "expert": 0.9268498313826622,
+            "candidate": 0.9445050585201349,
+            "gain": -0.006248760166633671
+          },
+          {
+            "part": "valid",
+            "rows": 122,
+            "baseline": 0.9510884170921796,
+            "expert": 0.9234076861058855,
+            "candidate": 0.944638538027412,
+            "gain": -0.006449879064767572
+          }
+        ],
+        "bootstrap": [
+          {
+            "part": "fold2",
+            "groups": 145,
+            "gain_ci90": [
+              -0.01620786767010684,
+              -0.0003712234325334648
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 77,
+            "gain_ci90": [
+              -0.018322652757079037,
+              0.0032498722534489975
+            ],
+            "lower_positive": false
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "cyp3a4_substrate_carbonmangels",
+        "metric": "AUROC",
+        "config": {
+          "rank": 32,
+          "epochs": 100
+        },
+        "weight": 0.45,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 156,
+            "baseline": 0.748671096345515,
+            "expert": 0.7287375415282392,
+            "candidate": 0.7622923588039866,
+            "gain": 0.013621262458471617
+          },
+          {
+            "part": "fold1",
+            "rows": 156,
+            "baseline": 0.6742748846407383,
+            "expert": 0.6895187870797628,
+            "candidate": 0.692649967040211,
+            "gain": 0.01837508239947272
+          }
+        ],
+        "objective": 0.013621262458471617,
+        "confirmation": [
+          {
+            "part": "fold0",
+            "rows": 156,
+            "baseline": 0.748671096345515,
+            "expert": 0.7287375415282392,
+            "candidate": 0.7622923588039866,
+            "gain": 0.013621262458471617
+          },
+          {
+            "part": "fold1",
+            "rows": 156,
+            "baseline": 0.6742748846407383,
+            "expert": 0.6895187870797628,
+            "candidate": 0.692649967040211,
+            "gain": 0.01837508239947272
+          },
+          {
+            "part": "fold2",
+            "rows": 156,
+            "baseline": 0.660608552631579,
+            "expert": 0.6332236842105263,
+            "candidate": 0.6553453947368421,
+            "gain": -0.0052631578947369695
+          },
+          {
+            "part": "valid",
+            "rows": 67,
+            "baseline": 0.7051971326164874,
+            "expert": 0.6469534050179211,
+            "candidate": 0.6899641577060932,
+            "gain": -0.015232974910394215
+          }
+        ],
+        "bootstrap": [
+          {
+            "part": "fold2",
+            "groups": 115,
+            "gain_ci90": [
+              -0.03012685641717892,
+              0.022471901999196273
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 50,
+            "gain_ci90": [
+              -0.06483494363929153,
+              0.033517219387755114
+            ],
+            "lower_positive": false
+          }
+        ],
+        "accepted": false
+      },
+      {
+        "task": "bioavailability_ma",
+        "metric": "AUROC",
+        "config": {
+          "rank": 32,
+          "epochs": 100
+        },
+        "weight": 0.45,
+        "parts": [
+          {
+            "part": "fold0",
+            "rows": 150,
+            "baseline": 0.7173721340388007,
+            "expert": 0.7014991181657848,
+            "candidate": 0.7237654320987654,
+            "gain": 0.006393298059964692
+          },
+          {
+            "part": "fold1",
+            "rows": 149,
+            "baseline": 0.7583485124468732,
+            "expert": 0.7334547662416515,
+            "candidate": 0.7671523982999393,
+            "gain": 0.008803885853066129
+          }
+        ],
+        "objective": 0.006393298059964692,
+        "confirmation": [
+          {
+            "part": "fold0",
+            "rows": 150,
+            "baseline": 0.7173721340388007,
+            "expert": 0.7014991181657848,
+            "candidate": 0.7237654320987654,
+            "gain": 0.006393298059964692
+          },
+          {
+            "part": "fold1",
+            "rows": 149,
+            "baseline": 0.7583485124468732,
+            "expert": 0.7334547662416515,
+            "candidate": 0.7671523982999393,
+            "gain": 0.008803885853066129
+          },
+          {
+            "part": "fold2",
+            "rows": 149,
+            "baseline": 0.7714025500910746,
+            "expert": 0.6235579842137219,
+            "candidate": 0.7258652094717668,
+            "gain": -0.04553734061930781
+          },
+          {
+            "part": "valid",
+            "rows": 64,
+            "baseline": 0.8106312292358805,
+            "expert": 0.6832779623477298,
+            "candidate": 0.7596899224806202,
+            "gain": -0.05094130675526032
+          }
+        ],
+        "bootstrap": [
+          {
+            "part": "fold2",
+            "groups": 96,
+            "gain_ci90": [
+              -0.12854497580686017,
+              -0.0017830891957635363
+            ],
+            "lower_positive": false
+          },
+          {
+            "part": "valid",
+            "groups": 47,
+            "gain_ci90": [
+              -0.08436822192645177,
+              -0.017595619483491358
+            ],
+            "lower_positive": false
+          }
+        ],
+        "accepted": false
+      }
+    ],
+    "accepted": []
+  },
+  "failure": null,
+  "pipeline": {
+    "status": "COMPLETE",
+    "submission_created": false,
+    "official_score": null,
+    "automatically_uploaded": false
+  },
+  "models": 96,
+  "last_log": "pert\": 0.7014991181657848, \"candidate\": 0.7237654320987654, \"gain\": 0.006393298059964692}, {\"part\": \"fold1\", \"rows\": 149, \"baseline\": 0.7583485124468732, \"expert\": 0.7334547662416515, \"candidate\": 0.7671523982999393, \"gain\": 0.008803885853066129}], \"objective\": 0.006393298059964692, \"confirmation\": [{\"part\": \"fold0\", \"rows\": 150, \"baseline\": 0.7173721340388007, \"expert\": 0.7014991181657848, \"candidate\": 0.7237654320987654, \"gain\": 0.006393298059964692}, {\"part\": \"fold1\", \"rows\": 149, \"baseline\": 0.7583485124468732, \"expert\": 0.7334547662416515, \"candidate\": 0.7671523982999393, \"gain\": 0.008803885853066129}, {\"part\": \"fold2\", \"rows\": 149, \"baseline\": 0.7714025500910746, \"expert\": 0.6235579842137219, \"candidate\": 0.7258652094717668, \"gain\": -0.04553734061930781}, {\"part\": \"valid\", \"rows\": 64, \"baseline\": 0.8106312292358805, \"expert\": 0.6832779623477298, \"candidate\": 0.7596899224806202, \"gain\": -0.05094130675526032}], \"bootstrap\": [{\"part\": \"fold2\", \"groups\": 96, \"gain_ci90\": [-0.12854497580686017, -0.0017830891957635363], \"lower_positive\": false}, {\"part\": \"valid\", \"groups\": 47, \"gain_ci90\": [-0.08436822192645177, -0.017595619483491358], \"lower_positive\": false}], \"accepted\": false}\n"
+}

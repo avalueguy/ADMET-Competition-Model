@@ -1,0 +1,1149 @@
+{
+  "signature": "c476803dd39bc3b695cd1d0594a5fb05a265a85f15946ed3ac7050a6175c5022",
+  "descriptive_only": true,
+  "no_confirmation_reselection": true,
+  "no_fitting": true,
+  "records": [
+    {
+      "task": "caco2_wang",
+      "frozen_choice": {
+        "name": "gaussian_full_C30_r2",
+        "base": "gaussian_full_C30",
+        "round": 2
+      },
+      "weight": 0.1,
+      "fixed_base_weight_by_round": [
+        {
+          "round": 0,
+          "config": {
+            "name": "gaussian_full_C30_r0",
+            "base": "gaussian_full_C30",
+            "round": 0
+          },
+          "weight": 0.1,
+          "objective": -0.0018291326933435109,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.38815645870734267,
+              "candidate": 0.3877037774901617,
+              "expert": 0.43413588290298094,
+              "gain": 0.0011662338910667389
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.3348527606452333,
+              "candidate": 0.3354652507771858,
+              "expert": 0.38367528834085163,
+              "gain": -0.0018291326933435109
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "config": {
+            "name": "gaussian_full_C30_r2",
+            "base": "gaussian_full_C30",
+            "round": 2
+          },
+          "weight": 0.1,
+          "objective": 0.0009362971805039026,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.38815645870734267,
+              "candidate": 0.3877930289094606,
+              "expert": 0.4715422426075877,
+              "gain": 0.0009362971805039026
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.3348527606452333,
+              "candidate": 0.3335509102222017,
+              "expert": 0.44467057151039635,
+              "gain": 0.0038878294463603824
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "config": {
+            "name": "gaussian_full_C30_r5",
+            "base": "gaussian_full_C30",
+            "round": 5
+          },
+          "weight": 0.1,
+          "objective": -0.001139297892161618,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.38815645870734267,
+              "candidate": 0.386990378504772,
+              "expert": 0.49137639646172554,
+              "gain": 0.0030041499411190458
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.3348527606452333,
+              "candidate": 0.3352342576896209,
+              "expert": 0.488149285869626,
+              "gain": -0.001139297892161618
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "config": {
+            "name": "gaussian_full_C30_r8",
+            "base": "gaussian_full_C30",
+            "round": 8
+          },
+          "weight": 0.1,
+          "objective": -0.003334195065635684,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.38815645870734267,
+              "candidate": 0.3860845628359685,
+              "expert": 0.5016378713291295,
+              "gain": 0.005337785382405107
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.3348527606452333,
+              "candidate": 0.3359692250674911,
+              "expert": 0.5024139282974542,
+              "gain": -0.003334195065635684
+            }
+          ]
+        }
+      ],
+      "round2_better_on_both_development_parts": false
+    },
+    {
+      "task": "ld50_zhu",
+      "frozen_choice": {
+        "name": "gaussian_full_C3_r0",
+        "base": "gaussian_full_C3",
+        "round": 0
+      },
+      "weight": 0.1,
+      "fixed_base_weight_by_round": [
+        {
+          "round": 0,
+          "config": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "objective": -0.0018927833988579194,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4623870980111785,
+              "candidate": 0.46280954118919304,
+              "expert": 0.5084516141079783,
+              "gain": -0.0009136136796021269
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.5305508449297317,
+              "candidate": 0.5315550627612647,
+              "expert": 0.5795944950533217,
+              "gain": -0.0018927833988579194
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "objective": -0.005364753857706471,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4623870980111785,
+              "candidate": 0.46486769097898767,
+              "expert": 0.597342444430467,
+              "gain": -0.005364753857706471
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.5305508449297317,
+              "candidate": 0.5327920294659652,
+              "expert": 0.6535935250636133,
+              "gain": -0.004224259668326954
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "objective": -0.006639114033976328,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4623870980111785,
+              "candidate": 0.46505787983881414,
+              "expert": 0.6417166583244743,
+              "gain": -0.0057760734222975
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.5305508449297317,
+              "candidate": 0.5340732324900427,
+              "expert": 0.7084871435317057,
+              "gain": -0.006639114033976328
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "objective": -0.007883383285737726,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4623870980111785,
+              "candidate": 0.4648826331803766,
+              "expert": 0.6660032071197012,
+              "gain": -0.005397069208747174
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.5305508449297317,
+              "candidate": 0.5347333805928848,
+              "expert": 0.7297575864047017,
+              "gain": -0.007883383285737726
+            }
+          ]
+        }
+      ],
+      "round2_better_on_both_development_parts": false
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "frozen_choice": {
+        "name": "gaussian_full_C3_r2",
+        "base": "gaussian_full_C3",
+        "round": 2
+      },
+      "weight": 0.1,
+      "fixed_base_weight_by_round": [
+        {
+          "round": 0,
+          "config": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "objective": -0.006251573602669723,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4792825842290003,
+              "candidate": 0.4822788545807856,
+              "expert": 0.5815010757980283,
+              "gain": -0.006251573602669723
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.45388775615012006,
+              "candidate": 0.4539024319378461,
+              "expert": 0.5228634686452792,
+              "gain": -3.2333517542960924e-05
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "objective": 0.004098183987527226,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4792825842290003,
+              "candidate": 0.47731244709964415,
+              "expert": 0.6027894527595309,
+              "gain": 0.004110596116329552
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.45388775615012006,
+              "candidate": 0.452027640615731,
+              "expert": 0.563143113878582,
+              "gain": 0.004098183987527226
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "objective": 0.0025253945427399964,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4792825842290003,
+              "candidate": 0.4755624616624851,
+              "expert": 0.6296083942695815,
+              "gain": 0.007761856343058135
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.45388775615012006,
+              "candidate": 0.45274151048772204,
+              "expert": 0.604833212865979,
+              "gain": 0.0025253945427399964
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "objective": 0.0016233017011523104,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.4792825842290003,
+              "candidate": 0.47522240232715346,
+              "expert": 0.6493956671823553,
+              "gain": 0.008471373747865765
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.45388775615012006,
+              "candidate": 0.45315095938342936,
+              "expert": 0.625685983752659,
+              "gain": 0.0016233017011523104
+            }
+          ]
+        }
+      ],
+      "round2_better_on_both_development_parts": true
+    },
+    {
+      "task": "ppbr_az",
+      "frozen_choice": {
+        "name": "gaussian_full_C3_r8",
+        "base": "gaussian_full_C3",
+        "round": 8
+      },
+      "weight": 0.1,
+      "fixed_base_weight_by_round": [
+        {
+          "round": 0,
+          "config": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "objective": -0.01186459777418459,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 7.705649013834862,
+              "candidate": 7.777011299948201,
+              "expert": 9.492576947161798,
+              "gain": -0.009261035116602612
+            },
+            {
+              "part": "fold1",
+              "baseline": 7.267399449875723,
+              "candidate": 7.353624221212828,
+              "expert": 9.02159282868743,
+              "gain": -0.01186459777418459
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "objective": -0.0051803549566604825,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 7.705649013834862,
+              "candidate": 7.686586481621006,
+              "expert": 8.870733818847578,
+              "gain": 0.0024738386318440917
+            },
+            {
+              "part": "fold1",
+              "baseline": 7.267399449875723,
+              "candidate": 7.305047158637918,
+              "expert": 8.819868470726039,
+              "gain": -0.0051803549566604825
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "objective": -0.0035968120577885045,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 7.705649013834862,
+              "candidate": 7.661052830805996,
+              "expert": 8.981361486137645,
+              "gain": 0.005787466175632623
+            },
+            {
+              "part": "fold1",
+              "baseline": 7.267399449875723,
+              "candidate": 7.293538919845801,
+              "expert": 9.049202267635511,
+              "gain": -0.0035968120577885045
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "objective": -0.0003341920581692154,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 7.705649013834862,
+              "candidate": 7.6515545707166925,
+              "expert": 9.09066948446496,
+              "gain": 0.007020102138190781
+            },
+            {
+              "part": "fold1",
+              "baseline": 7.267399449875723,
+              "candidate": 7.269828157055414,
+              "expert": 9.203351935059898,
+              "gain": -0.0003341920581692154
+            }
+          ]
+        }
+      ],
+      "round2_better_on_both_development_parts": true
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "frozen_choice": {
+        "name": "gaussian_full_C3_r0",
+        "base": "gaussian_full_C3",
+        "round": 0
+      },
+      "weight": 0.1,
+      "fixed_base_weight_by_round": [
+        {
+          "round": 0,
+          "config": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "objective": -0.00443340899722281,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.7360725561987135,
+              "candidate": 0.7347161069162377,
+              "expert": 0.863891543403721,
+              "gain": 0.0018428200739895662
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.7161434295213145,
+              "candidate": 0.7193183862450563,
+              "expert": 0.8809301997340949,
+              "gain": -0.00443340899722281
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "objective": -0.005492432488494739,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.7360725561987135,
+              "candidate": 0.7320901954632342,
+              "expert": 0.893750000576687,
+              "gain": 0.005410282861305606
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.7161434295213145,
+              "candidate": 0.7200767989600394,
+              "expert": 0.9672193109705326,
+              "gain": -0.005492432488494739
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "objective": -0.00697689552654005,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.7360725561987135,
+              "candidate": 0.7340439581511705,
+              "expert": 0.9890016188332625,
+              "gain": 0.0027559756581867624
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.7161434295213145,
+              "candidate": 0.7211398874111028,
+              "expert": 1.0369592535171703,
+              "gain": -0.00697689552654005
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "objective": -0.0071460393751367505,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 0.7360725561987135,
+              "candidate": 0.7361129546195627,
+              "expert": 1.0681411096422453,
+              "gain": -5.488374822431941e-05
+            },
+            {
+              "part": "fold1",
+              "baseline": 0.7161434295213145,
+              "candidate": 0.7212610186669193,
+              "expert": 1.0792846612195777,
+              "gain": -0.0071460393751367505
+            }
+          ]
+        }
+      ],
+      "round2_better_on_both_development_parts": false
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "frozen_choice": {
+        "name": "gaussian_full_C3_r0",
+        "base": "gaussian_full_C3",
+        "round": 0
+      },
+      "weight": 0.5,
+      "fixed_base_weight_by_round": [
+        {
+          "round": 0,
+          "config": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.5,
+          "objective": 0.04186811980815962,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 31.964365097329107,
+              "candidate": 30.626077229842377,
+              "expert": 31.85401129171786,
+              "gain": 0.04186811980815962,
+              "baseline_spearman": 0.5727558332909924,
+              "candidate_spearman": 0.5905272132814742,
+              "rank_gain": 0.017771379990481728
+            },
+            {
+              "part": "fold1",
+              "baseline": 29.556240307657728,
+              "candidate": 27.673736149467427,
+              "expert": 28.88114981305882,
+              "gain": 0.06369227407122423,
+              "baseline_spearman": 0.575230994148768,
+              "candidate_spearman": 0.5894411758327175,
+              "rank_gain": 0.014210181683949497
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.5,
+          "objective": -1.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 31.964365097329107,
+              "candidate": 31.231086779848138,
+              "expert": 32.77603728209582,
+              "gain": 0.022940493741958962,
+              "baseline_spearman": 0.5727558332909924,
+              "candidate_spearman": 0.5552705648360183,
+              "rank_gain": -0.017485268454974112
+            },
+            {
+              "part": "fold1",
+              "baseline": 29.556240307657728,
+              "candidate": 27.346956265274596,
+              "expert": 29.958648847727297,
+              "gain": 0.07474848016480393,
+              "baseline_spearman": 0.575230994148768,
+              "candidate_spearman": 0.5730878784042077,
+              "rank_gain": -0.0021431157445602755
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.5,
+          "objective": -1.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 31.964365097329107,
+              "candidate": 31.07893816335012,
+              "expert": 32.911083240667686,
+              "gain": 0.02770043863793097,
+              "baseline_spearman": 0.5727558332909924,
+              "candidate_spearman": 0.5486575094774093,
+              "rank_gain": -0.024098323813583122
+            },
+            {
+              "part": "fold1",
+              "baseline": 29.556240307657728,
+              "candidate": 27.11770911650602,
+              "expert": 30.486938643404706,
+              "gain": 0.0825047829415539,
+              "baseline_spearman": 0.575230994148768,
+              "candidate_spearman": 0.5784724263409893,
+              "rank_gain": 0.003241432192221283
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.5,
+          "objective": -1.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 31.964365097329107,
+              "candidate": 30.97264967958068,
+              "expert": 32.85819392221228,
+              "gain": 0.031025656687649752,
+              "baseline_spearman": 0.5727558332909924,
+              "candidate_spearman": 0.5457206271102288,
+              "rank_gain": -0.027035206180763605
+            },
+            {
+              "part": "fold1",
+              "baseline": 29.556240307657728,
+              "candidate": 27.263215378808848,
+              "expert": 30.959829367350462,
+              "gain": 0.0775817527865606,
+              "baseline_spearman": 0.575230994148768,
+              "candidate_spearman": 0.5739903857790317,
+              "rank_gain": -0.0012406083697362735
+            }
+          ]
+        }
+      ],
+      "round2_better_on_both_development_parts": false
+    },
+    {
+      "task": "clearance_microsome_az",
+      "frozen_choice": {
+        "name": "gaussian_full_C3_r0",
+        "base": "gaussian_full_C3",
+        "round": 0
+      },
+      "weight": 0.1,
+      "fixed_base_weight_by_round": [
+        {
+          "round": 0,
+          "config": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 27.116399993896483,
+              "candidate": 26.603424810553047,
+              "expert": 25.499497617670297,
+              "gain": 0.018917525315266737,
+              "baseline_spearman": 0.7019076327178516,
+              "candidate_spearman": 0.7047934803565373,
+              "rank_gain": 0.0028858476386857124
+            },
+            {
+              "part": "fold1",
+              "baseline": 26.81884782509955,
+              "candidate": 26.36387106889187,
+              "expert": 29.300712499682977,
+              "gain": 0.016964813670401938,
+              "baseline_spearman": 0.5046604490997971,
+              "candidate_spearman": 0.4938342506686318,
+              "rank_gain": -0.010826198431165335
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 27.116399993896483,
+              "candidate": 26.63303924654874,
+              "expert": 27.397438718640107,
+              "gain": 0.017825402614526257,
+              "baseline_spearman": 0.7019076327178516,
+              "candidate_spearman": 0.6949824769286564,
+              "rank_gain": -0.00692515578919517
+            },
+            {
+              "part": "fold1",
+              "baseline": 26.81884782509955,
+              "candidate": 26.53391182363694,
+              "expert": 32.38093160759408,
+              "gain": 0.010624468408219182,
+              "baseline_spearman": 0.5046604490997971,
+              "candidate_spearman": 0.48799787818430485,
+              "rank_gain": -0.01666257091549228
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 27.116399993896483,
+              "candidate": 26.734095679030204,
+              "expert": 29.170933362807148,
+              "gain": 0.01409863827618451,
+              "baseline_spearman": 0.7019076327178516,
+              "candidate_spearman": 0.6921149712780876,
+              "rank_gain": -0.009792661439763983
+            },
+            {
+              "part": "fold1",
+              "baseline": 26.81884782509955,
+              "candidate": 26.70061635219361,
+              "expert": 34.92935689850261,
+              "gain": 0.004408521711185819,
+              "baseline_spearman": 0.5046604490997971,
+              "candidate_spearman": 0.4818492533500675,
+              "rank_gain": -0.022811195749729618
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 27.116399993896483,
+              "candidate": 26.715095838341007,
+              "expert": 29.532758447239956,
+              "gain": 0.014799315382786933,
+              "baseline_spearman": 0.7019076327178516,
+              "candidate_spearman": 0.6930454968617605,
+              "rank_gain": -0.00886213585609108
+            },
+            {
+              "part": "fold1",
+              "baseline": 26.81884782509955,
+              "candidate": 26.711045698742208,
+              "expert": 35.855461866011176,
+              "gain": 0.004019640480470258,
+              "baseline_spearman": 0.5046604490997971,
+              "candidate_spearman": 0.47837758926531554,
+              "rank_gain": -0.026282859834481587
+            }
+          ]
+        }
+      ],
+      "round2_better_on_both_development_parts": false
+    },
+    {
+      "task": "half_life_obach",
+      "frozen_choice": {
+        "name": "gaussian_full_C3_r0",
+        "base": "gaussian_full_C3",
+        "round": 0
+      },
+      "weight": 0.25,
+      "fixed_base_weight_by_round": [
+        {
+          "round": 0,
+          "config": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.25,
+          "objective": 0.1232866636115452,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 20.806086576482805,
+              "candidate": 17.63855979991955,
+              "expert": 9.915271069806897,
+              "gain": 0.15224039200834258,
+              "baseline_spearman": 0.5749026026062931,
+              "candidate_spearman": 0.5778314304243835,
+              "rank_gain": 0.0029288278180903404
+            },
+            {
+              "part": "fold1",
+              "baseline": 22.383562434963547,
+              "candidate": 19.623967702616177,
+              "expert": 13.140884607701036,
+              "gain": 0.1232866636115452,
+              "baseline_spearman": 0.6039670343812906,
+              "candidate_spearman": 0.6106234802512353,
+              "rank_gain": 0.006656445869944627
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.25,
+          "objective": 0.11107038459755403,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 20.806086576482805,
+              "candidate": 17.67754511524886,
+              "expert": 10.623486817051402,
+              "gain": 0.1503666463048436,
+              "baseline_spearman": 0.5749026026062931,
+              "candidate_spearman": 0.605841493153651,
+              "rank_gain": 0.030938890547357878
+            },
+            {
+              "part": "fold1",
+              "baseline": 22.383562434963547,
+              "candidate": 19.897411546648783,
+              "expert": 13.781157541449176,
+              "gain": 0.11107038459755403,
+              "baseline_spearman": 0.6039670343812906,
+              "candidate_spearman": 0.6157585163593996,
+              "rank_gain": 0.011791481978108975
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.25,
+          "objective": 0.10628199702359316,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 20.806086576482805,
+              "candidate": 17.782866960133234,
+              "expert": 11.356781445887265,
+              "gain": 0.1453045773522219,
+              "baseline_spearman": 0.5749026026062931,
+              "candidate_spearman": 0.604974488162664,
+              "rank_gain": 0.03007188555637086
+            },
+            {
+              "part": "fold1",
+              "baseline": 22.383562434963547,
+              "candidate": 20.00459271887334,
+              "expert": 14.354102351658112,
+              "gain": 0.10628199702359316,
+              "baseline_spearman": 0.6039670343812906,
+              "candidate_spearman": 0.608743239920663,
+              "rank_gain": 0.004776205539372413
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.25,
+          "objective": 0.10347934918949539,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 20.806086576482805,
+              "candidate": 17.811560755423635,
+              "expert": 11.424043323668613,
+              "gain": 0.14392547152254445,
+              "baseline_spearman": 0.5749026026062931,
+              "candidate_spearman": 0.6087682130189737,
+              "rank_gain": 0.03386561041268055
+            },
+            {
+              "part": "fold1",
+              "baseline": 22.383562434963547,
+              "candidate": 20.067325961651083,
+              "expert": 14.74964252687582,
+              "gain": 0.10347934918949539,
+              "baseline_spearman": 0.6039670343812906,
+              "candidate_spearman": 0.6082404220367011,
+              "rank_gain": 0.004273387655410521
+            }
+          ]
+        }
+      ],
+      "round2_better_on_both_development_parts": false
+    },
+    {
+      "task": "vdss_lombardo",
+      "frozen_choice": {
+        "name": "gaussian_full_C3_r0",
+        "base": "gaussian_full_C3",
+        "round": 0
+      },
+      "weight": 0.1,
+      "fixed_base_weight_by_round": [
+        {
+          "round": 0,
+          "config": {
+            "name": "gaussian_full_C3_r0",
+            "base": "gaussian_full_C3",
+            "round": 0
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 4.419333877893289,
+              "candidate": 4.243751113798417,
+              "expert": 3.4364428252305053,
+              "gain": 0.03973059491458296,
+              "baseline_spearman": 0.6991369429686888,
+              "candidate_spearman": 0.6968127079268064,
+              "rank_gain": -0.0023242350418823943
+            },
+            {
+              "part": "fold1",
+              "baseline": 6.180262281910009,
+              "candidate": 6.096800427280416,
+              "expert": 5.869552216699689,
+              "gain": 0.013504581330454277,
+              "baseline_spearman": 0.7317602544137639,
+              "candidate_spearman": 0.7237411831823041,
+              "rank_gain": -0.00801907123145984
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "config": {
+            "name": "gaussian_full_C3_r2",
+            "base": "gaussian_full_C3",
+            "round": 2
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 4.419333877893289,
+              "candidate": 4.2295752509307,
+              "expert": 3.282063264927452,
+              "gain": 0.04293828712779841,
+              "baseline_spearman": 0.6991369429686888,
+              "candidate_spearman": 0.6928052126094375,
+              "rank_gain": -0.006331730359251275
+            },
+            {
+              "part": "fold1",
+              "baseline": 6.180262281910009,
+              "candidate": 6.125767592269094,
+              "expert": 6.169402157129541,
+              "gain": 0.008817536725006679,
+              "baseline_spearman": 0.7317602544137639,
+              "candidate_spearman": 0.712778496153249,
+              "rank_gain": -0.018981758260514958
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "config": {
+            "name": "gaussian_full_C3_r5",
+            "base": "gaussian_full_C3",
+            "round": 5
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 4.419333877893289,
+              "candidate": 4.238507885875361,
+              "expert": 3.4620314127965814,
+              "gain": 0.04091702437837265,
+              "baseline_spearman": 0.6991369429686888,
+              "candidate_spearman": 0.6919983937680768,
+              "rank_gain": -0.0071385492006119655
+            },
+            {
+              "part": "fold1",
+              "baseline": 6.180262281910009,
+              "candidate": 6.149283094364488,
+              "expert": 6.45473132036193,
+              "gain": 0.005012600781717414,
+              "baseline_spearman": 0.7317602544137639,
+              "candidate_spearman": 0.7019739399215262,
+              "rank_gain": -0.029786314492237675
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "config": {
+            "name": "gaussian_full_C3_r8",
+            "base": "gaussian_full_C3",
+            "round": 8
+          },
+          "weight": 0.1,
+          "objective": -1.0,
+          "parts": [
+            {
+              "part": "fold0",
+              "baseline": 4.419333877893289,
+              "candidate": 4.244823525661777,
+              "expert": 3.6337663725324094,
+              "gain": 0.03948793122521483,
+              "baseline_spearman": 0.6991369429686888,
+              "candidate_spearman": 0.6893768922383487,
+              "rank_gain": -0.00976005073034003
+            },
+            {
+              "part": "fold1",
+              "baseline": 6.180262281910009,
+              "candidate": 6.161267800428713,
+              "expert": 6.598188294663256,
+              "gain": 0.0030734102558873373,
+              "baseline_spearman": 0.7317602544137639,
+              "candidate_spearman": 0.6997588997788776,
+              "rank_gain": -0.03200135463488629
+            }
+          ]
+        }
+      ],
+      "round2_better_on_both_development_parts": false
+    }
+  ],
+  "limitation": "Existing public partitions reused; comparisons are descriptions of the completed budget, not independent estimates."
+}

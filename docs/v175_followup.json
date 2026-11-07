@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "training_pid": 20508,
+  "pipeline_pid": 20654,
+  "transport": "tools/remote_admet_session.py",
+  "remote_workspace": "/root/autodl-tmp/v76",
+  "python": "/root/miniconda3/bin/python",
+  "log": "v175_shared_graph.log",
+  "archive_prefix": "v176_shared_graph_batch_20261027",
+  "next_steps": [
+    "Read remote v176 pipeline status; do not relaunch training.",
+    "If complete, retrieve archive, manifest, archive.json then restore_iteration_archive.py verification.",
+    "If evidence exists, independently recalculate saved final blend locally and compare all nonprediction bytes and unchanged task outputs.",
+    "Copy verified CSV to D:/bili_download/v176_shared_graph_hybrid and verify SHA256.",
+    "Through actual visible Edge upload only then read the new submission scorecard; never use prior best as new result.",
+    "v174 is REJECTED with no CSV, wrong score mapping; do not create or upload it."
+  ],
+  "failed_routes": [
+    172,
+    173
+  ],
+  "source_frozen": true,
+  "accepted_tasks": [],
+  "submission_created": false,
+  "local_archive_verification": "docs/v176_local_archive_verification.json",
+  "superseded_by_followup": "docs/v181_followup.json"
+}

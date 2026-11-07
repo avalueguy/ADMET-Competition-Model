@@ -1,0 +1,7 @@
+{
+  "admet_v67_data.py": "393f81a939b7d59a39b3b5d974910203f96769a309590828c92dabc083fc7bbb",
+  "admet_v67_train.py": "f2d2f3666e067ed046867ce69197607a040354c02bef9af7d64b0206979a11f3",
+  "admet_v67_protocol.json": "593a2e8aa8eeed17bd9a455c167f2ae096ee371a2f3107457854cfe9df08a49b",
+  "tools/run_v67_pipeline.py": "169d272f441dafe7e32a3e5ba4ff879f4b4444d09996ca545ba6d7f1763de40b",
+  "tools/verify_submission.py": "6f1cf2a5b4eed0e3f0f404bef3320f797c5820c338575c081304108cda5c6421"
+}

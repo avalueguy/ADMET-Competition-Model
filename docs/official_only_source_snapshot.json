@@ -1,0 +1,14 @@
+{
+  "admet_v67_data.py": "393f81a939b7d59a39b3b5d974910203f96769a309590828c92dabc083fc7bbb",
+  "admet_v67_train.py": "f2d2f3666e067ed046867ce69197607a040354c02bef9af7d64b0206979a11f3",
+  "admet_v67_protocol.json": "593a2e8aa8eeed17bd9a455c167f2ae096ee371a2f3107457854cfe9df08a49b",
+  "admet_v68_kernel.py": "9b11f2e3fcb52702899793a55ef7bdef1bbaa7d9d6202b241757d44ce6f956bc",
+  "admet_v68_protocol.json": "20ecfb58b1399aa6d72cacbadf6ede0847ec11828184a8c9ed6a6ec556d10b97",
+  "tools/verify_submission.py": "6f1cf2a5b4eed0e3f0f404bef3320f797c5820c338575c081304108cda5c6421",
+  "tools/verify_v67_models.py": "35af5e2131bc7605fadbe58d2d2ff8845e840b06e4a8db13437e7dcfc917e2ab",
+  "tools/verify_v68_models.py": "f0322b84d631712c5fef76840e97059ad29020ebff6712e1534bd38dbcd56fe4",
+  "tools/run_v67_pipeline.py": "169d272f441dafe7e32a3e5ba4ff879f4b4444d09996ca545ba6d7f1763de40b",
+  "tools/run_v68_pipeline.py": "38c61116a511bcf0c37ec4644eb3dec82d57b1e4e8526609708bd5ebfc2f85d6",
+  "tools/report_v68_valid.py": "753a4ac9b202d78519cf71b7a141e51b5cfa94c8bab5c4231e9d2bcd8e93fb05",
+  "tools/package_official_only_release.py": "ddd0d2e4537944340e8bcaaf59a55a28061801b1901a6d16acafc0356310e69d"
+}

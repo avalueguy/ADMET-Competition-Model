@@ -1,0 +1,669 @@
+{
+  "tasks": [
+    "ames",
+    "bbb_martins",
+    "bioavailability_ma",
+    "caco2_wang",
+    "clearance_hepatocyte_az",
+    "clearance_microsome_az",
+    "cyp2c9_substrate_carbonmangels",
+    "cyp2c9_veith",
+    "cyp2d6_substrate_carbonmangels",
+    "cyp2d6_veith",
+    "cyp3a4_substrate_carbonmangels",
+    "cyp3a4_veith",
+    "dili",
+    "half_life_obach",
+    "herg",
+    "hia_hou",
+    "ld50_zhu",
+    "lipophilicity_astrazeneca",
+    "pgp_broccatelli",
+    "ppbr_az",
+    "solubility_aqsoldb",
+    "vdss_lombardo"
+  ],
+  "metrics": [
+    "AUROC",
+    "AUROC",
+    "AUROC",
+    "MAE",
+    "Spearman",
+    "Spearman",
+    "AUPRC",
+    "AUPRC",
+    "AUPRC",
+    "AUPRC",
+    "AUROC",
+    "AUPRC",
+    "AUROC",
+    "Spearman",
+    "AUROC",
+    "AUROC",
+    "MAE",
+    "MAE",
+    "AUROC",
+    "MAE",
+    "MAE",
+    "Spearman"
+  ],
+  "pilot_tasks": [
+    "caco2_wang",
+    "ld50_zhu",
+    "lipophilicity_astrazeneca",
+    "ppbr_az",
+    "solubility_aqsoldb",
+    "clearance_hepatocyte_az",
+    "clearance_microsome_az",
+    "half_life_obach",
+    "vdss_lombardo"
+  ],
+  "baseline": {
+    "version": "v385_associated",
+    "official_user_reported": 51.308,
+    "exact_task_mean": 51.308044136363634,
+    "csv": "admet_submissions/v385_v382_warped_median_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261106.csv",
+    "csv_sha256": "355d8cf8f67bfd1e81b67f99e476a9780f1737d1e598a795d651bc589eeff1d0",
+    "source": "docs/platform_scorecard_v385_20261106.json",
+    "platform_uploaded_byte_hash_confirmed": false,
+    "association": "User full22 scorecard immediately following v385 delivery; only PPBR changed exactly as expected. Version associated, not explicitly named in this feedback."
+  },
+  "rows": 81809,
+  "official_rows_sha256": "fab716190f822a331bdaf7395ed4da5029f5a5388819db8e3e35c0d2f57a5712",
+  "expert_features_sha256": "17850a1c6143b04077b3b9a41df84b9f702153e30ce7945f275141be47455c4b",
+  "stereo_keys_sha256": "9b5b4ac376469195188a0737325be23c6d1755b568f380b8ca498e0088a5412c",
+  "controls": [
+    {
+      "task": "caco2_wang",
+      "part": "fold0",
+      "fit": 425,
+      "query": 212,
+      "control": "controls/caco2_wang/fold0.npz",
+      "control_sha256": "4615a1983b86fee46bf104cea095b28e9937cc53163ac3194ab5448b08ff4878",
+      "design": "design/caco2_wang/fold0.npz",
+      "design_sha256": "1b59a90507176e7bf8d556cab9f395e71bd3064d668e6ab9627eb082e38d3dca"
+    },
+    {
+      "task": "caco2_wang",
+      "part": "fold1",
+      "fit": 425,
+      "query": 212,
+      "control": "controls/caco2_wang/fold1.npz",
+      "control_sha256": "62ae014cc102695d943c109a1ab028e59a7caa0dfd609649a0974b9431aa75e0",
+      "design": "design/caco2_wang/fold1.npz",
+      "design_sha256": "d2c237a329cd64f4289580e1d3d260cbbdc7bc570a50071ff7795da45bdc4116"
+    },
+    {
+      "task": "caco2_wang",
+      "part": "fold2",
+      "fit": 424,
+      "query": 213,
+      "control": "controls/caco2_wang/fold2.npz",
+      "control_sha256": "f37c2aa959f862997522955b27ba126792e1f5d962abaaeb2a3f85eb960bd4cc",
+      "design": "design/caco2_wang/fold2.npz",
+      "design_sha256": "ed99ba0af606306f0a384c10b8e4301cc90de35d6373c50f2c804aaca3d72906"
+    },
+    {
+      "task": "caco2_wang",
+      "part": "valid",
+      "fit": 637,
+      "query": 91,
+      "control": "controls/caco2_wang/valid.npz",
+      "control_sha256": "b13db09df655976ac8a75cea8f4787b1753c1302cb1be39c1aaeae5c5e99e33c",
+      "design": "design/caco2_wang/valid.npz",
+      "design_sha256": "04e090b0183e24e5659993d2d6a81f0b9cc49476319d452238cb5bcb29a6800f"
+    },
+    {
+      "task": "caco2_wang",
+      "part": "final",
+      "fit": 728,
+      "query": 182,
+      "control": "controls/caco2_wang/final.npz",
+      "control_sha256": "5ef81fa5a544dcf767959661e0fbf85390d9699c63bae45bf6a6973bb98a9a91",
+      "design": "design/caco2_wang/final.npz",
+      "design_sha256": "d85a610ad6932981d2df386d28f0611533b99cf20e7fc206bafda6b920e970a9"
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "fold0",
+      "fit": 2760,
+      "query": 1210,
+      "control": "controls/ld50_zhu/fold0.npz",
+      "control_sha256": "13c596186b9d3c087ac0c54c2a7e920c86c4b3d5009a906f8e1e788a267cc51d",
+      "design": "design/ld50_zhu/fold0.npz",
+      "design_sha256": "ad0c90c365390376882b1cee7ffc9776282e7778a84b0ee6984fd2dd244312eb"
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "fold1",
+      "fit": 2760,
+      "query": 1210,
+      "control": "controls/ld50_zhu/fold1.npz",
+      "control_sha256": "ca9e370754525dc6de21fc1c1842ea122a15445ad27840cb04dd0ac813f2a605",
+      "design": "design/ld50_zhu/fold1.npz",
+      "design_sha256": "b3e8b9bd993f42d28626c4aaac532a25957a034d50c299989f41307405e241e6"
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "fold2",
+      "fit": 2420,
+      "query": 1550,
+      "control": "controls/ld50_zhu/fold2.npz",
+      "control_sha256": "eac0c39506ddf2c6f627baff75bdfba99fa1be7d616eea8007b573be0e089d6e",
+      "design": "design/ld50_zhu/fold2.npz",
+      "design_sha256": "f49c39cf36354bba21bec4c234c8092680228bc32d8093121e65b9f19e33941c"
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "valid",
+      "fit": 3970,
+      "query": 1937,
+      "control": "controls/ld50_zhu/valid.npz",
+      "control_sha256": "cdffd44449afa0e9f6a2551739992ca44b6ef9a00c626c7c951a4630df1572b1",
+      "design": "design/ld50_zhu/valid.npz",
+      "design_sha256": "e59f268ae2d245f78addad9289b9897e9af2661240013963f6c7d6d6aed560d1"
+    },
+    {
+      "task": "ld50_zhu",
+      "part": "final",
+      "fit": 5907,
+      "query": 1478,
+      "control": "controls/ld50_zhu/final.npz",
+      "control_sha256": "230b51ff11a4e42ccd447b9261faff0f6073355eb3cc72dd1bf7f16a73ecddb2",
+      "design": "design/ld50_zhu/final.npz",
+      "design_sha256": "4bca536d82ae3d628fd2c07b3796f6278ddefbd0342c2eedb068d9541600a700"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "fold0",
+      "fit": 1960,
+      "query": 980,
+      "control": "controls/lipophilicity_astrazeneca/fold0.npz",
+      "control_sha256": "6a1bc6cb8b4c75cc31d3a2a6a8bae984ff34534bf2d59ca535a4a96172f69fdb",
+      "design": "design/lipophilicity_astrazeneca/fold0.npz",
+      "design_sha256": "d1fc49e32d8e11fa3255570aa6afb502512e8655264c789eab27b90c2e0b266f"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "fold1",
+      "fit": 1960,
+      "query": 980,
+      "control": "controls/lipophilicity_astrazeneca/fold1.npz",
+      "control_sha256": "6a86fb56f52c7f7f518170af968d468f9a1fc238add24637f6d139d5e8dd0a05",
+      "design": "design/lipophilicity_astrazeneca/fold1.npz",
+      "design_sha256": "b06e1998b92dd47d3630b9305fe2ac109fe7b433fc222650cf2c86da8e25af3e"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "fold2",
+      "fit": 1960,
+      "query": 980,
+      "control": "controls/lipophilicity_astrazeneca/fold2.npz",
+      "control_sha256": "4885c18fdd85d74634e99b8618448c91769c7129ddd9f5be6abd8a78fb8e8a8e",
+      "design": "design/lipophilicity_astrazeneca/fold2.npz",
+      "design_sha256": "0bedf22083d10029d523b1cddc5508011bd070eac4f22b549d290d0a73f6ae3e"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "valid",
+      "fit": 2940,
+      "query": 420,
+      "control": "controls/lipophilicity_astrazeneca/valid.npz",
+      "control_sha256": "76cf0ef198d6e3de53405fcc470adb69f4161c0678839e2bf041b513a71d6ade",
+      "design": "design/lipophilicity_astrazeneca/valid.npz",
+      "design_sha256": "db98655f9e99b81780033648491c9a47d4baabdf3ed8fdf204882889658cc4c1"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "final",
+      "fit": 3360,
+      "query": 840,
+      "control": "controls/lipophilicity_astrazeneca/final.npz",
+      "control_sha256": "91a0bfc78e364f416e222e082059dbba5f4fb9270ce8b945e8cc5cb9949e8813",
+      "design": "design/lipophilicity_astrazeneca/final.npz",
+      "design_sha256": "6599f5723aae74566cf1903e5419c7aa6893bf8fd5a4cc19bbf766e6a5167be6"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold0",
+      "fit": 1302,
+      "query": 650,
+      "control": "controls/ppbr_az/fold0.npz",
+      "control_sha256": "8b538f3c902b7765785deafe5202afe92f8518448b00706d8f7b1c5c7d2416c3",
+      "design": "design/ppbr_az/fold0.npz",
+      "design_sha256": "38d46ad44e1b1d149805d6801da0ec1fc3c68cf1b932d93fb4030a78f05bb94d"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold1",
+      "fit": 1301,
+      "query": 651,
+      "control": "controls/ppbr_az/fold1.npz",
+      "control_sha256": "28e81e683154c78c1d904b8b6d41551b27fa158f7733418199da91471fe5de3a",
+      "design": "design/ppbr_az/fold1.npz",
+      "design_sha256": "ad8102be8aaa84e20b0b535ae756936b86e09619885c13960c9dc52760575e83"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold2",
+      "fit": 1301,
+      "query": 651,
+      "control": "controls/ppbr_az/fold2.npz",
+      "control_sha256": "58bced1a502bce485581282beb7eece969e6be2ad599763ba42c47bde6a59b59",
+      "design": "design/ppbr_az/fold2.npz",
+      "design_sha256": "23770b1c2bb9081153880da482a54e8ffbb34221ed7481596fe17f013c3abd3e"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "valid",
+      "fit": 1952,
+      "query": 279,
+      "control": "controls/ppbr_az/valid.npz",
+      "control_sha256": "2703fe467cffbce90cd48838852d7f0ab0588a062919e2bfc34ec137295f0805",
+      "design": "design/ppbr_az/valid.npz",
+      "design_sha256": "ac8c9d628e5856e8a093e82c3b1fdc2816418614a8446e54e56d92d0a9b20c72"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "final",
+      "fit": 2231,
+      "query": 559,
+      "control": "controls/ppbr_az/final.npz",
+      "control_sha256": "86966dc67c34c99df7f998fb23f6ed2076806cc403996e6d19f0a897a83bb0d9",
+      "design": "design/ppbr_az/final.npz",
+      "design_sha256": "cde425e80fe00ed428e7d0e571b651713ecc77abb354edbf1ff5f9f5572ae84f"
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "fold0",
+      "fit": 3410,
+      "query": 1635,
+      "control": "controls/solubility_aqsoldb/fold0.npz",
+      "control_sha256": "2c05b5f2b300fb742f68d6203c30ab787159f57d076724e3a27b6fbc9d6eea04",
+      "design": "design/solubility_aqsoldb/fold0.npz",
+      "design_sha256": "23dab33b7892e2245f7ce4dfe884c300d640159180d4cf08c41a4c862b53accc"
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "fold1",
+      "fit": 3410,
+      "query": 1635,
+      "control": "controls/solubility_aqsoldb/fold1.npz",
+      "control_sha256": "97fc818f4c80a0afaacdf1fa3da480927080db547d184ea90c4bdcf853ea1c9c",
+      "design": "design/solubility_aqsoldb/fold1.npz",
+      "design_sha256": "45a6fa6854ab04c2a9621c4cdd9c2093c1c519a1aae6fc2d6663265118dd767b"
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "fold2",
+      "fit": 3270,
+      "query": 1775,
+      "control": "controls/solubility_aqsoldb/fold2.npz",
+      "control_sha256": "9099adeda08197682a8db6575900ae252ea73e7087187e6d40a12bbb0bcfeb2d",
+      "design": "design/solubility_aqsoldb/fold2.npz",
+      "design_sha256": "ef0d4cba681820dc5e1d1233654546401717d06a61e75534b204329c52e4162f"
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "valid",
+      "fit": 5045,
+      "query": 2940,
+      "control": "controls/solubility_aqsoldb/valid.npz",
+      "control_sha256": "f75f80e768d932ce293e9e214a20b796ad849bf5862d8273b3ee42923aee1677",
+      "design": "design/solubility_aqsoldb/valid.npz",
+      "design_sha256": "c28dd1aa79cdd7ce3f464ce3685e4e57f511ed94d6271fd9c116155e0bcd85be"
+    },
+    {
+      "task": "solubility_aqsoldb",
+      "part": "final",
+      "fit": 7985,
+      "query": 1997,
+      "control": "controls/solubility_aqsoldb/final.npz",
+      "control_sha256": "655e4e7b156eb3f4c5dc2d1e334b355d63a6b1fd788031e2f31e186df4e2ff2d",
+      "design": "design/solubility_aqsoldb/final.npz",
+      "design_sha256": "c6038177df1ab152ea0016ddc3118aa2335aa160d02b62130931de5676043f32"
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "part": "fold0",
+      "fit": 566,
+      "query": 282,
+      "control": "controls/clearance_hepatocyte_az/fold0.npz",
+      "control_sha256": "10acd4de7cb61996d2b3c03d0ee7dc5cf98c267749416751e34d6261cab4155d",
+      "design": "design/clearance_hepatocyte_az/fold0.npz",
+      "design_sha256": "98c6b13a30e5181ac69ec41bef13d351e2dac01f48e877bfb9dee31c348f4fa3"
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "part": "fold1",
+      "fit": 565,
+      "query": 283,
+      "control": "controls/clearance_hepatocyte_az/fold1.npz",
+      "control_sha256": "e1a856aafd17b55d61a428ba4d2683dad3dd75466e53b1df7fd261d301725c4d",
+      "design": "design/clearance_hepatocyte_az/fold1.npz",
+      "design_sha256": "7956c109c548571d27ba67b429dff6c42b345c767af70f901b5e703c9b1a951c"
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "part": "fold2",
+      "fit": 565,
+      "query": 283,
+      "control": "controls/clearance_hepatocyte_az/fold2.npz",
+      "control_sha256": "af9a07764438e029f41367739687d6e67e761b37f7c19935f9239c002ba2c2cd",
+      "design": "design/clearance_hepatocyte_az/fold2.npz",
+      "design_sha256": "7c1aeacbd3277ad41d075b010c66b42625ddb61201548c75c637eb23cfc63c89"
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "part": "valid",
+      "fit": 848,
+      "query": 122,
+      "control": "controls/clearance_hepatocyte_az/valid.npz",
+      "control_sha256": "c563c8a6efe2133d51806b1f9620d1465f54a37b84298fd8a98eea8d4d7aa645",
+      "design": "design/clearance_hepatocyte_az/valid.npz",
+      "design_sha256": "3854c6869c80b22b008b2d8250e7871b6049a8375e5a0ad64e118739e80e3d1a"
+    },
+    {
+      "task": "clearance_hepatocyte_az",
+      "part": "final",
+      "fit": 970,
+      "query": 243,
+      "control": "controls/clearance_hepatocyte_az/final.npz",
+      "control_sha256": "b7450d7ad66531816f442b3d8b6b55d03f51176ec61cbac4ab1a947c41222118",
+      "design": "design/clearance_hepatocyte_az/final.npz",
+      "design_sha256": "c9dfea60fb4eff03e5a8cb5aacc9a07820540669a334021627c2d879b21899a2"
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "fold0",
+      "fit": 514,
+      "query": 256,
+      "control": "controls/clearance_microsome_az/fold0.npz",
+      "control_sha256": "a84d173af29da0597a7caf66dc1c5d288b59f10a9f8d2b8ef28e383306c41e44",
+      "design": "design/clearance_microsome_az/fold0.npz",
+      "design_sha256": "9361c8568772148b7393c170ab837f299a7efca7f36ef79093644dfe2d26e002"
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "fold1",
+      "fit": 513,
+      "query": 257,
+      "control": "controls/clearance_microsome_az/fold1.npz",
+      "control_sha256": "16b626f5164e7019a16dd53282ed0ef2af39d11c0be2761896aac82c9f43469b",
+      "design": "design/clearance_microsome_az/fold1.npz",
+      "design_sha256": "ae1b42df3503ae53ae1ff80f5553a040861ffb35c0216a9251fb451dfbaee7f3"
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "fold2",
+      "fit": 513,
+      "query": 257,
+      "control": "controls/clearance_microsome_az/fold2.npz",
+      "control_sha256": "21791cd0fa29fc9107539b86aa97523cc644fbb1f2ba1403fe3af601d06574b8",
+      "design": "design/clearance_microsome_az/fold2.npz",
+      "design_sha256": "c38d5ec7e86996c020734a20325126dc04820bb7cfeb9fe4d1957501c43aa500"
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "valid",
+      "fit": 770,
+      "query": 111,
+      "control": "controls/clearance_microsome_az/valid.npz",
+      "control_sha256": "4df85215f3357fee177901acf5df60da0d661b363df9e819787a33c1ce269111",
+      "design": "design/clearance_microsome_az/valid.npz",
+      "design_sha256": "ea17354af8044da770e18707597f27577a907f607111245a4f206f1a635bd9d4"
+    },
+    {
+      "task": "clearance_microsome_az",
+      "part": "final",
+      "fit": 881,
+      "query": 221,
+      "control": "controls/clearance_microsome_az/final.npz",
+      "control_sha256": "92f95216d5a49968444cf3fb3b5be1ea519d2c732778a06741f814ce87fae2a6",
+      "design": "design/clearance_microsome_az/final.npz",
+      "design_sha256": "c8fd7a5a7c2e17048ef889bc1d5cc54276976de26ac884673135bff31ab6a685"
+    },
+    {
+      "task": "half_life_obach",
+      "part": "fold0",
+      "fit": 310,
+      "query": 155,
+      "control": "controls/half_life_obach/fold0.npz",
+      "control_sha256": "62348b29c203d5a88e0f79893cb00c544c00f1493cd48b87de3a4a3ccddd5b0b",
+      "design": "design/half_life_obach/fold0.npz",
+      "design_sha256": "ceca7d8b01b33a5280ecacb883a9f91111fe3a3b44d1580ae09b02795fe924d2"
+    },
+    {
+      "task": "half_life_obach",
+      "part": "fold1",
+      "fit": 310,
+      "query": 155,
+      "control": "controls/half_life_obach/fold1.npz",
+      "control_sha256": "d62f0de6ebe208add924b3b57f200de17f266f34d2fcda3bf1cd5241739914e9",
+      "design": "design/half_life_obach/fold1.npz",
+      "design_sha256": "b26b547c1315370c842061b5e37ee2b73acce89ff464793014deb377f60e4ad0"
+    },
+    {
+      "task": "half_life_obach",
+      "part": "fold2",
+      "fit": 310,
+      "query": 155,
+      "control": "controls/half_life_obach/fold2.npz",
+      "control_sha256": "a8bd805f811a84411e4a245d31ec557178715c4da38b4bf12d99d2eaa7132d71",
+      "design": "design/half_life_obach/fold2.npz",
+      "design_sha256": "3c36af69cf333674489a7d403b594b7aaceab7402f56c3cf1ea22933714437e2"
+    },
+    {
+      "task": "half_life_obach",
+      "part": "valid",
+      "fit": 160,
+      "query": 67,
+      "control": "controls/half_life_obach/valid.npz",
+      "control_sha256": "da2c491c72f5de8947c0de603ac3207810828d849d54fd831dec2fe363a010eb",
+      "design": "design/half_life_obach/valid.npz",
+      "design_sha256": "43a5674c2b1477fce55b40fee615536923889f4e4633a9c9712e35ad37e3dc12"
+    },
+    {
+      "task": "half_life_obach",
+      "part": "final",
+      "fit": 532,
+      "query": 135,
+      "control": "controls/half_life_obach/final.npz",
+      "control_sha256": "a76a50fb77e3953e40ae5398bdbecfd1e81ccfd245282637805f89c40bb69630",
+      "design": "design/half_life_obach/final.npz",
+      "design_sha256": "4970a5999e6531d1a4eaaa399565e1f74ae2fb806782b37a009c91fc5cb48a28"
+    },
+    {
+      "task": "vdss_lombardo",
+      "part": "fold0",
+      "fit": 528,
+      "query": 263,
+      "control": "controls/vdss_lombardo/fold0.npz",
+      "control_sha256": "16e4061523073119134b6489f7a75cdaa941ba2150900dd409b9890d24776301",
+      "design": "design/vdss_lombardo/fold0.npz",
+      "design_sha256": "e5c40026a01d38f0199570f682e3381616e4fbfb7c08a05d75ec80d8e753f719"
+    },
+    {
+      "task": "vdss_lombardo",
+      "part": "fold1",
+      "fit": 527,
+      "query": 264,
+      "control": "controls/vdss_lombardo/fold1.npz",
+      "control_sha256": "8c0bbd26a4b9c651cf21e1950e9bb4582b1fa9055aa27347dc0f98eb31fd6fdf",
+      "design": "design/vdss_lombardo/fold1.npz",
+      "design_sha256": "a1ba11072aa86436e393c28e1d7d992bd337e71044f5c3044c52eeaf85e65aa4"
+    },
+    {
+      "task": "vdss_lombardo",
+      "part": "fold2",
+      "fit": 527,
+      "query": 264,
+      "control": "controls/vdss_lombardo/fold2.npz",
+      "control_sha256": "79436e34945bb42fa78ce78fe31159c07c952e7c60b8bbcfa7e483cd0868fb69",
+      "design": "design/vdss_lombardo/fold2.npz",
+      "design_sha256": "f24bf3d6cfcd4555a32913a5741155928824faa556f5281cf92a63968837028a"
+    },
+    {
+      "task": "vdss_lombardo",
+      "part": "valid",
+      "fit": 791,
+      "query": 113,
+      "control": "controls/vdss_lombardo/valid.npz",
+      "control_sha256": "4e7f0d9701e00233691cbf1f8f364a611f167e8261e6e0daaedf233d5e061f7b",
+      "design": "design/vdss_lombardo/valid.npz",
+      "design_sha256": "4531f5bd47e9545581111f9ecb90fd228f4c71cad7577f61ada9bc6a1d6fc27c"
+    },
+    {
+      "task": "vdss_lombardo",
+      "part": "final",
+      "fit": 904,
+      "query": 226,
+      "control": "controls/vdss_lombardo/final.npz",
+      "control_sha256": "37ebc116a49748d5ae68dadb697659ed1992d05b832102b04544a8f854751fce",
+      "design": "design/vdss_lombardo/final.npz",
+      "design_sha256": "9fc38121db7ddf6f02440c12d4f8eac7fb93134051d88b782489b4ba5d997e6d"
+    }
+  ],
+  "units": "Native official Y values. Four rank-task controls calibrated by fit-label empirical quantiles of query score ranks; not historical native-unit model errors.",
+  "historical_control_limitation": "Partial historical proxy OOF, exact recent layers. Four rank MAEs are calibrated reference only. Public labels reused; no new blind set.",
+  "all_fitting_remote": true,
+  "training_host": "connect.nmb2.seetacloud.com:25870",
+  "external_data": false,
+  "test_labels_parsed": false,
+  "control_updates": [
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "fold0",
+      "old_sha256": "b4f92fbb8eff89c8a8ae8f6027573b75b77ccac605f3a2244565ed1c96db7be3",
+      "expert": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold0/sqrt_polynomial_C30_native/predictions.npz",
+      "expert_sha256": "6e1460d463179ec9253a3ca8d405f97db8d1c0bf27162382fc3298242318010f",
+      "weight": 0.1,
+      "new_sha256": "6a1bc6cb8b4c75cc31d3a2a6a8bae984ff34534bf2d59ca535a4a96172f69fdb"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "fold1",
+      "old_sha256": "b493ad64d0ea459edfee4d9d25821959eeaf52f34afee73969bca582477d7b9d",
+      "expert": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold1/sqrt_polynomial_C30_native/predictions.npz",
+      "expert_sha256": "9063a76b43cd24a3a620b192348ed581d8d609d6b9fbd8b2ce961a2b4a10bf33",
+      "weight": 0.1,
+      "new_sha256": "6a86fb56f52c7f7f518170af968d468f9a1fc238add24637f6d139d5e8dd0a05"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "fold2",
+      "old_sha256": "71ab5c60a0e6817b485d31e77650bb0021581e473f6cbc83df13e5c72e0da21a",
+      "expert": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/fold2/sqrt_polynomial_C30_native/predictions.npz",
+      "expert_sha256": "e63ea3757411fcab3d39cc0b77494be46ca9bd7d32cd66bcceafb2aac063a030",
+      "weight": 0.1,
+      "new_sha256": "4885c18fdd85d74634e99b8618448c91769c7129ddd9f5be6abd8a78fb8e8a8e"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "valid",
+      "old_sha256": "1faefe8823d98be5ca3156897395679b8f1570d03d242ab2bc0280ceb7a44d0e",
+      "expert": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/valid/sqrt_polynomial_C30_native/predictions.npz",
+      "expert_sha256": "145a4f4e1ea133068dde063dac6c29a92ea445ed332f14528d953f2d9a73fb0f",
+      "weight": 0.1,
+      "new_sha256": "76cf0ef198d6e3de53405fcc470adb69f4161c0678839e2bf041b513a71d6ade"
+    },
+    {
+      "task": "lipophilicity_astrazeneca",
+      "part": "final",
+      "old_sha256": "387f26b545548e5f97927e56b620b24322cca3db256027463d8cde1de1d9ed78",
+      "expert": "experiments/regression9_v380/outputs/tasks/lipophilicity_astrazeneca/final/sqrt_polynomial_C30_native/predictions.npz",
+      "expert_sha256": "7b9ba73fc097df671382d7d04d20aaf5676896d1dc554f1b87dde43ca3ac280b",
+      "weight": 0.1,
+      "new_sha256": "91a0bfc78e364f416e222e082059dbba5f4fb9270ce8b945e8cc5cb9949e8813"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold0",
+      "old_sha256": "2ee7b9f91eb1e7dbbe9e7caaed7817d122f394c6b2bf720a87cadc7c83db9a44",
+      "expert": "experiments/regression9_v381/outputs/tasks/ppbr_az/fold0/simplex_reg01/predictions.npz",
+      "expert_sha256": "5c8f70511eb39304c673bdf8bf23b17429aa8e5860f325ae27109143d16a5252",
+      "weight": 0.25,
+      "new_sha256": "86ec8a78d5f1cbb4662bdb9e32e46f7407e4dc59ea3fb5b55c5bf86ac340d55c"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold1",
+      "old_sha256": "0aa3358aef66ff284f65fe715df9432fc06f526a95a5b0f5ec84f3bf5a4489b1",
+      "expert": "experiments/regression9_v381/outputs/tasks/ppbr_az/fold1/simplex_reg01/predictions.npz",
+      "expert_sha256": "3ccd10307f7e4e708762afaf1def2a4bc9d64bdbacbf8371a2ab25d978c49553",
+      "weight": 0.25,
+      "new_sha256": "e0ffa9623977599844a313bfcf2be6fec60ad5dacf036311be91f8231b515bff"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold2",
+      "old_sha256": "4cc278055caf64f7eecb0537152f1e08ac237ef7671e7c9633a1ce3fd5b8f898",
+      "expert": "experiments/regression9_v381/outputs/tasks/ppbr_az/fold2/simplex_reg01/predictions.npz",
+      "expert_sha256": "bffdb7a7696965ead237c7bca41f686d9883f6788a64fbfa02909cfa8d74c78f",
+      "weight": 0.25,
+      "new_sha256": "48e4c86ea0744dbeacbcec7d12097f7194319f2b99987d9e2a2bab088623345f"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "valid",
+      "old_sha256": "2abf5f21fd7a7682926ed9233c972c8d7c961c3e171d66a03740d608a4def0b6",
+      "expert": "experiments/regression9_v381/outputs/tasks/ppbr_az/valid/simplex_reg01/predictions.npz",
+      "expert_sha256": "307502646cc7beafaea8c0cf4741eb8b2e9cd9d04228220e5595a8b92478217e",
+      "weight": 0.25,
+      "new_sha256": "158d6312ca58466868d7023fa875f3a0886edbf5705d69993316c32f5e0ba6dd"
+    },
+    {
+      "task": "ppbr_az",
+      "part": "final",
+      "old_sha256": "694f571cd5ca0c9631223f3ee5de5e44090f21ce7cd2b5a1ae5cc4110cc41595",
+      "expert": "experiments/regression9_v381/outputs/tasks/ppbr_az/final/simplex_reg01/predictions.npz",
+      "expert_sha256": "db1f59ad82f37f3fb1021bd82acce7171766fe15abfe9d0b2b6ad7bb58cea5fe",
+      "weight": 0.25,
+      "new_sha256": "a6b3d8ad5b1ea199dc5f1fbb859960ef331ae9968d06cfe159c170c71204ad0b"
+    }
+  ],
+  "baseline_csv": "v385_baseline.csv",
+  "baseline_csv_sha256": "355d8cf8f67bfd1e81b67f99e476a9780f1737d1e598a795d651bc589eeff1d0",
+  "v385_control_updates": [
+    {
+      "task": "ppbr_az",
+      "part": "fold0",
+      "prior_sha256": "86ec8a78d5f1cbb4662bdb9e32e46f7407e4dc59ea3fb5b55c5bf86ac340d55c",
+      "new_sha256": "8b538f3c902b7765785deafe5202afe92f8518448b00706d8f7b1c5c7d2416c3",
+      "expert_sha256": "0b9fb4e8a2dfcefb6df66eb448a19f5c5d8d3a9a93a3aa21c79aad7690c8142a",
+      "weight": 0.1
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold1",
+      "prior_sha256": "e0ffa9623977599844a313bfcf2be6fec60ad5dacf036311be91f8231b515bff",
+      "new_sha256": "28e81e683154c78c1d904b8b6d41551b27fa158f7733418199da91471fe5de3a",
+      "expert_sha256": "c685133db643a91d60c091c618206d1976a417e97ce6dc36e7a96af12c745b05",
+      "weight": 0.1
+    },
+    {
+      "task": "ppbr_az",
+      "part": "fold2",
+      "prior_sha256": "48e4c86ea0744dbeacbcec7d12097f7194319f2b99987d9e2a2bab088623345f",
+      "new_sha256": "58bced1a502bce485581282beb7eece969e6be2ad599763ba42c47bde6a59b59",
+      "expert_sha256": "af7886f21e06bd7d216d41c01e7080585c891d58dff226214bda407b1b16dc21",
+      "weight": 0.1
+    },
+    {
+      "task": "ppbr_az",
+      "part": "valid",
+      "prior_sha256": "158d6312ca58466868d7023fa875f3a0886edbf5705d69993316c32f5e0ba6dd",
+      "new_sha256": "2703fe467cffbce90cd48838852d7f0ab0588a062919e2bfc34ec137295f0805",
+      "expert_sha256": "852c55d00ba94c2eb606b7dcb446fbd7892e719df673b1521999eeaa971176ae",
+      "weight": 0.1
+    },
+    {
+      "task": "ppbr_az",
+      "part": "final",
+      "prior_sha256": "a6b3d8ad5b1ea199dc5f1fbb859960ef331ae9968d06cfe159c170c71204ad0b",
+      "new_sha256": "86966dc67c34c99df7f998fb23f6ed2076806cc403996e6d19f0a897a83bb0d9",
+      "expert_sha256": "0184a6793baf1738b8634212bd53cf157b35b6a49b9d8774bc315711dacd05f4",
+      "weight": 0.1
+    }
+  ]
+}

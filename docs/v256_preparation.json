@@ -1,0 +1,38 @@
+{
+  "status": "TRAINING_STARTED",
+  "at_utc": "2026-10-29T09:57:16.681830+00:00",
+  "boot_id": "7edb467c-8def-4bf5-b14f-bb31d4469124",
+  "pid": 25411,
+  "start_ticks": "1981235780",
+  "signature": "925cc5473a1cacdc5ca9ac872a7da4daa8fa06ae7062f4b005069635bd8781b4",
+  "source_sha256": "3a494713c4c9438512bcbf1778c756491b83350134d911f1651c51d3052eda11",
+  "model_training_started": true,
+  "credentials_stored": false,
+  "children": [
+    {
+      "stage": "PREPARING_FEATURES",
+      "pid": 25420,
+      "script": "tools/v258_build_surface.py",
+      "start_ticks": "1981236087",
+      "log": "v256_feature_build.log",
+      "exit_code": 0
+    },
+    {
+      "stage": "RUNNING_SMOKE",
+      "pid": 25680,
+      "script": "tools/v256_exposed_polarity.py",
+      "start_ticks": "1981295652",
+      "log": "v256_smoke.log",
+      "exit_code": 0
+    },
+    {
+      "stage": "PREFLIGHT_AND_START",
+      "pid": 25763,
+      "script": "tools/v261_start_surface.py",
+      "start_ticks": "1981298474",
+      "log": "v261_start.log",
+      "exit_code": 0
+    }
+  ],
+  "training_start_record": "docs/v256_remote_start.json"
+}

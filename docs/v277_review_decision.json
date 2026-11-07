@@ -1,0 +1,20 @@
+{
+  "status": "FIT_ONLY_REVIEW_COMPLETE_PROTOCOL_REQUIRED_BEFORE_DEVELOPMENT",
+  "baseline": "v145",
+  "user_request": "Improve existing v145 model components; preserve task predictions unless fixed validation supports change.",
+  "candidate_mechanism": "Refit terminal values of existing v127 CatBoost trees carried into v145. Freeze every split, tree, source feature and seed. Joint regularized logistic leaf estimation can correct stagewise shrinkage without learning a new topology.",
+  "tasks": ["herg", "cyp3a4_substrate_carbonmangels"],
+  "fit_only_diagnostic": "docs/v277_v145_leaf_audit.json",
+  "support_interpretation": "Topology is exactly reconstructible and fit leaves have finite nonzero gradients. Approximately 29-35 percent of occupied leaves contain fewer than five observations. This supports studying shrinkage, not claiming accuracy gain.",
+  "historical_overlap_review": {
+    "v127": "Original carried 900 depth4 stagewise tree ensembles; not retrained.",
+    "v228": "Fresh surrogate crossfit reference plus new correction-tree topology; rejected and not reused.",
+    "v197_v200": "New spline basis fit; unrelated to archived leaf topology.",
+    "v216": "Fresh ordered trees/scaffold risk weighting; rejected and not reused.",
+    "search": "No use of CatBoost leaf-value updates, fixed-topology logistic re-estimation, init_model or warm_start found in existing project model tools."
+  },
+  "constraints": "No query labels or scores for feasibility, no in-sample estimate called OOF, no tree growth, no old failed expert predictions, no seed sweep, no confirmation retry. Original v148 source and gates unchanged; original v145 component routing must independently replay before any replacement.",
+  "not_gain_evidence": true,
+  "training_started": false,
+  "next_step": "Read actual audit; fix a single regularized objective and task protocol before smoke and development."
+}

@@ -1,0 +1,27 @@
+{
+  "path": "releases/v197_frozen_sources_20261028.tar.gz",
+  "sha256": "27bceb8c6906d75666e42f4af69118471d0e97faba9426b5c073c195de5d5ccf",
+  "files": [
+    {
+      "path": "tools/v197_additive_splines.py",
+      "sha256": "ea76946c3287379cd6040de76de0e9ea2fcf066fb53bbfb015432b29fadc146b"
+    },
+    {
+      "path": "tools/v198_verify_additive_splines.py",
+      "sha256": "6620f7fa64a101de1079915a3b6858b845a26d4d9fd476f5d56efd5e9047e19a"
+    },
+    {
+      "path": "tools/v199_package_spline_batch.py",
+      "sha256": "f334a7c607715a4a1100a621fcdf7137641f63e606e9416c51cfe27ed70ce380"
+    },
+    {
+      "path": "tools/finalize_v198_local.py",
+      "sha256": "61f5a59739122c9edc3b67198e0398f6e6305a0ffe8c4813b1e1d631bd61d948"
+    },
+    {
+      "path": "docs/v197_training_plan.json",
+      "sha256": "ec9e6d47934c01e1a42be568402402e0f9779342ed609756fa8259b902078486"
+    }
+  ],
+  "credentials_included": false
+}

@@ -1,0 +1,75 @@
+{
+  "status": "COMPLETE_NO_CONFIRMED_NEW_MODEL",
+  "checked_at_utc": "2026-10-28T07:01:16.840906+00:00",
+  "training_version": "v193",
+  "delivery_version": "v194",
+  "baseline": "v145",
+  "official_best": 51.166,
+  "target_score": 52,
+  "target_achieved": false,
+  "development_tasks": 21,
+  "nominated_tasks": [
+    "solubility_aqsoldb",
+    "bioavailability_ma"
+  ],
+  "accepted_tasks": [],
+  "confirmation_results": [
+    {
+      "task": "solubility_aqsoldb",
+      "metric": "MAE",
+      "gains": {
+        "fold0": 0.013944896567037887,
+        "fold1": 0.03558645699861802,
+        "fold2": 0.056515588948146775,
+        "valid": -0.013347046975104125
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.09805211830187832,
+          0.05815835087290677
+        ],
+        "valid": [
+          -0.021941495840022612,
+          -0.004157403504696758
+        ]
+      }
+    },
+    {
+      "task": "bioavailability_ma",
+      "metric": "AUROC",
+      "gains": {
+        "fold0": 0.0071649029982362444,
+        "fold1": 0.015786278081359906,
+        "fold2": -0.05464480874316935,
+        "valid": -0.04983388704318947
+      },
+      "bootstrap90": {
+        "fold2": [
+          -0.09257233473718977,
+          -0.029556241599462352
+        ],
+        "valid": [
+          -0.10257875457875465,
+          -0.0008979206049149854
+        ]
+      }
+    }
+  ],
+  "archive": {
+    "status": "PASS",
+    "prefix": "v194_smiles_convolution_20261028",
+    "archive_sha256": "301c364367b3e13e6c0c1a9c441bb9900c10517995afdd6c716d9e5c8ab7a3f4",
+    "manifest_files": 251,
+    "all_member_hashes_verified": true,
+    "dependency_hashes_verified": true,
+    "restored": 201,
+    "existing_exact": 50,
+    "existing_updated_docs_preserved": []
+  },
+  "new_csv_created": false,
+  "new_upload_performed": false,
+  "new_official_score": null,
+  "frozen_gates_unchanged": true,
+  "no_confirmation_fallback": true,
+  "rejected_route_restarted": false
+}

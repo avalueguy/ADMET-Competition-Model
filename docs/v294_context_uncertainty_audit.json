@@ -1,0 +1,93 @@
+{
+  "status": "FIT_ONLY_FEASIBILITY_COMPLETE",
+  "at_utc": "2026-10-31T06:21:48.959219+00:00",
+  "source_sha256": "535bf069681dc988a620a1656a1147c3a9094152b946802e21ad5386ac9af1cf",
+  "tasks_predeclared": [
+    "herg",
+    "cyp3a4_substrate_carbonmangels"
+  ],
+  "records": [
+    {
+      "task": "herg",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 305,
+          "affected_rows": 31,
+          "affected_fraction": 0.10163934426229508,
+          "changed_logit_rows": 11,
+          "delta_absolute_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.03018201980739832
+          ],
+          "supported": true
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 305,
+          "affected_rows": 29,
+          "affected_fraction": 0.09508196721311475,
+          "changed_logit_rows": 10,
+          "delta_absolute_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.02514513093262849
+          ],
+          "supported": true
+        }
+      ],
+      "supported": true
+    },
+    {
+      "task": "cyp3a4_substrate_carbonmangels",
+      "parts": [
+        {
+          "part": "fold0",
+          "fit_rows": 312,
+          "affected_rows": 62,
+          "affected_fraction": 0.1987179487179487,
+          "changed_logit_rows": 42,
+          "delta_absolute_quantiles": [
+            0.0,
+            0.0,
+            0.0030288887236793053,
+            0.05112125157847913
+          ],
+          "supported": true
+        },
+        {
+          "part": "fold1",
+          "fit_rows": 312,
+          "affected_rows": 52,
+          "affected_fraction": 0.16666666666666666,
+          "changed_logit_rows": 36,
+          "delta_absolute_quantiles": [
+            0.0,
+            0.0,
+            0.0015469421710122507,
+            0.1287538672968367
+          ],
+          "supported": true
+        }
+      ],
+      "supported": true
+    }
+  ],
+  "target_labels_read": false,
+  "query_predictions_computed": false,
+  "scores_computed": false,
+  "old_model_changes": false,
+  "new_models_trained": false,
+  "hypothesis": "Original component inputs collapse repeated other-assay observations to medians. For nonlinear trees E[f(context)] differs from f(median(context)). Integrate empirical replicate values while preserving existing identities/masks/spreads/physical inputs and immutable checkpoints.",
+  "qualification": "Fit-only context conflicts and prediction sensitivity justify feasibility only, not generalization or hidden gain.",
+  "historical_overlap": {
+    "v264": "Noise model on own-target repeated labels and newGP fitting. Here only input uncertainty of other-assay measurements, fixed existing v145 checkpoints.",
+    "v271": "Paired-task residual/innovation covariance with newreference models. Here no target fitting, innovation covariance or proxy offsets.",
+    "v284_v289": "Stereochemical identity replacement/newtrees. Here original identities and trees retained; repeated measurement marginalization only.",
+    "v94": "Assay-dropout neural training. Here no dropout, imputation, newnet, label fitting or parameter sweep."
+  },
+  "protocol_required_before_scores": true
+}

@@ -1,0 +1,10 @@
+{
+  "status": "LIVE_PUBLIC_API_CHECKED",
+  "url": "http://www.aiinnovation.com.cn/api/app/getTrack",
+  "method": "POST form id=159",
+  "title": "小分子药物预测技术创新赛",
+  "external_data_rule": "数据集的赛事使用及解释权归支持单位所有， 【重要更新】本赛题不允许使用其他外部数据 。 4. 赛程赛制 （1）主题赛/专项赛：8月-11月（",
+  "edit_time": 1793368943,
+  "external_pretrained_weights_explicitly_authorized": false,
+  "interpretation": "Do not introduce external pretrained weights into the proposed new route without an explicit organizer clarification. No clarification requested or assumed."
+}

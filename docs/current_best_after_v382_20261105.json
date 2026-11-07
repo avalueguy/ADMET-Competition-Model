@@ -1,0 +1,10 @@
+{
+  "version": "v382",
+  "official_user_reported": 51.299,
+  "exact_task_mean": 51.29890740909091,
+  "csv": "admet_submissions/v382_regression9_combined_experimental/我从山北来带着兰花草-小分子药物预测技术创新赛-20261105.csv",
+  "csv_sha256": "845b65ac25cf81f4752e638b24bc0ad6cfbed99c271a636f87b9e156f8f13b80",
+  "source": "docs/platform_scorecard_v382_20261105.json",
+  "platform_uploaded_byte_hash_confirmed": false,
+  "association": "User explicitly identifies v382 and provides complete 22-task official scorecard."
+}
