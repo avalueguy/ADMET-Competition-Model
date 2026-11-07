@@ -1,0 +1,94 @@
+{
+  "published_at_utc": "2026-11-07T06:20:30.241999+00:00",
+  "repository": "https://github.com/avalueguy/ADMET-Competition-Model",
+  "main_commit": "afa86a9ceba880a9523085b2824a92d0539f128c",
+  "tag": "research-sync-20261106-offline-diagnostics",
+  "release_id": 437384503,
+  "release_url": "https://github.com/avalueguy/ADMET-Competition-Model/releases/tag/research-sync-20261106-offline-diagnostics",
+  "draft": false,
+  "prerelease": true,
+  "assets": [
+    {
+      "name": "admet-research-source-20261106.zip",
+      "bytes": 54655213,
+      "sha256": "a6f77052b7a2169a58d03ad5437ebe349f0ccebd0fd471c57e951f79d21690ef",
+      "url": "https://github.com/avalueguy/ADMET-Competition-Model/releases/download/research-sync-20261106-offline-diagnostics/admet-research-source-20261106.zip",
+      "github_digest": "sha256:a6f77052b7a2169a58d03ad5437ebe349f0ccebd0fd471c57e951f79d21690ef"
+    },
+    {
+      "name": "source_manifest.json",
+      "bytes": 956060,
+      "sha256": "2e63473f59fc31fe9457a818b59671f4b192b0e1fe8278ff43f0bd5f20acdc0c",
+      "url": "https://github.com/avalueguy/ADMET-Competition-Model/releases/download/research-sync-20261106-offline-diagnostics/source_manifest.json",
+      "github_digest": "sha256:2e63473f59fc31fe9457a818b59671f4b192b0e1fe8278ff43f0bd5f20acdc0c"
+    },
+    {
+      "name": "tdc-public-labels-and-offline-synthetic-20261106.zip",
+      "bytes": 3012194,
+      "sha256": "8c36892fe5dac72dd001e3c8b8352ef7dab42a57636c90d1af3aa970cbd33a4b",
+      "url": "https://github.com/avalueguy/ADMET-Competition-Model/releases/download/research-sync-20261106-offline-diagnostics/tdc-public-labels-and-offline-synthetic-20261106.zip",
+      "github_digest": "sha256:8c36892fe5dac72dd001e3c8b8352ef7dab42a57636c90d1af3aa970cbd33a4b"
+    },
+    {
+      "name": "v390_complete_results.tar.gz",
+      "bytes": 68706342,
+      "sha256": "f765c95280a61dc408592860e7ef06b3aa03807cafddff5b5dd0a3ce2e2c1f80",
+      "url": "https://github.com/avalueguy/ADMET-Competition-Model/releases/download/research-sync-20261106-offline-diagnostics/v390_complete_results.tar.gz",
+      "github_digest": "sha256:f765c95280a61dc408592860e7ef06b3aa03807cafddff5b5dd0a3ce2e2c1f80"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 406,
+      "sha256": "9fb7177792ad0b7cf9155f948c34613a393fc8fd47d75bae26534f98bc1948e2",
+      "url": "https://github.com/avalueguy/ADMET-Competition-Model/releases/download/research-sync-20261106-offline-diagnostics/SHA256SUMS.txt",
+      "github_digest": "sha256:9fb7177792ad0b7cf9155f948c34613a393fc8fd47d75bae26534f98bc1948e2"
+    }
+  ],
+  "synthetic_is_model_result": false,
+  "best_user_reported_model_score": 51.314,
+  "release_assets_verified_after_publish": true,
+  "raw_file_checks": [
+    {
+      "path": "README.md",
+      "bytes": 2469,
+      "sha256": "c409007271fada9f40b9f59a66dc4dc7c9d9e8a948e023e12193f390bf57f829"
+    },
+    {
+      "path": "HANDOFF_CURRENT.md",
+      "bytes": 2362,
+      "sha256": "ca8648b6fc69c856590518fb6cdfb52e34bb5a6d0fd3a8379c8369b8d5666088"
+    },
+    {
+      "path": "docs/REPOSITORY_INDEX.md",
+      "bytes": 1554,
+      "sha256": "c87518f8ffbfd55e1a6b8a4f2120d578483b9237b2e1b9bc488ad1fbc8222306"
+    },
+    {
+      "path": "tools/v390_auxiliary_residual.py",
+      "bytes": 15753,
+      "sha256": "5649fd4dba318457854c36681540746c7fa438c1bdb4ceabd046a994524e7286"
+    },
+    {
+      "path": "diagnostics/tdc_public_test_overlap/scripts/verify_offline.py",
+      "bytes": 4177,
+      "sha256": "4e92c71080c2d5609b5dd633bedf62862633e21b97f4b18976a8c71c6e7bd1eb"
+    },
+    {
+      "path": "diagnostics/tdc_public_test_overlap/synthetic_offline/OFFLINE_SYNTHETIC_seed20261106.csv",
+      "bytes": 1597355,
+      "sha256": "b966be3113d1d2f5d458a0758b115cdf36ebc1e0aade0c28db3477e39908fc6f"
+    },
+    {
+      "path": "diagnostics/tdc_public_test_overlap/public_labels/PUBLIC_TEST_LABELS_NOT_MODEL.csv",
+      "bytes": 1523252,
+      "sha256": "c9f4839000828c35a0456387dc896d8ea4d4583d15cd748f72390adeb410b58f"
+    },
+    {
+      "path": "archives/research-sync-20261106/source_manifest.json",
+      "bytes": 956060,
+      "sha256": "2e63473f59fc31fe9457a818b59671f4b192b0e1fe8278ff43f0bd5f20acdc0c"
+    }
+  ],
+  "tag_commit": "afa86a9ceba880a9523085b2824a92d0539f128c",
+  "checked_at_utc": "2026-11-07T06:23:25.813972+00:00"
+}
